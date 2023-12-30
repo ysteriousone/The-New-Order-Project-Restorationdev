@@ -1,0 +1,106 @@
+﻿division_template = {
+	name = "Piyade Tumeni"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Dag Tugayi"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Topcu Tugayi"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Motorlu Tumen"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Zirhli Tugay"
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 0 y = 1 }
+		IFV = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "Altinci Motorlu Tumeni"
+		location = 9833
+		division_template = "Motorlu Tumen"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Yirmiucuncu Motorlu Tumeni"
+		location = 9833
+		division_template = "Motorlu Tumen"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Otuzdokuzuncu Piyade Tugayi"
+		location = 11746
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Yuzaltinci Topcu Tugayi"
+		location = 9893
+		division_template = "Topcu Tugayi"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Kirksekizinci Motorlu Tumeni"
+		location = 12016
+		division_template = "Motorlu Tumen"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Kirksekizinci Motorlu Tumeni"
+		location = 11778
+		division_template = "Motorlu Tumen"
+		start_experience_factor = 0.2
+	}
+}

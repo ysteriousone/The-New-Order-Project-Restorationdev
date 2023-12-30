@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+		SRT_Freedom_or_Death = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRT_Freedom_or_Death" }
+			picture = SRT_Freedom_or_Death
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 1
+				war_support_factor = 0.2
+				defence = 0.1
+			}
+		}
+
+		SRT_Partisan_Alliance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRT_Partisan_Alliance" }
+			picture = SRT_Partisan_Alliance
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				offence = -0.25
+				defence = 0.1
+				planning_speed = -0.10
+			}
+		}
+
+		SRT_Unity_in_Diversity = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRT_Unity_in_Diversity" }
+			picture = SRT_Unity_in_Diversity
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				planning_speed = -0.10
+			}
+		}
+
+		SRT_Free_Slaves_Recruits = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRT_Free_Slaves_Recruits" }
+			picture = SRT_Free_Slaves_Recruits
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 250
+			}
+		}
+
+	}
+
+}

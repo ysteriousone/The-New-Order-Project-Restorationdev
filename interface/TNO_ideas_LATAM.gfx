@@ -1,0 +1,842 @@
+spriteTypes = {
+	## MEXICO ##
+	spriteType = {
+		name = "GFX_idea_MEX_the_Zaibatsus"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_Zaibatsus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_The_Imperfect_Dictatorship"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_The_Imperfect_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_the_leviathan_4"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_leviathan_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_rural_depression"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_rural_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_mexican_miracle"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_mexican_miracle.dds"
+	}	
+
+	## ARGENTINA ##
+	SpriteType = {
+		name = "GFX_idea_ARG_peronist_resistance"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_peronist_resistance.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_azules_and_colorados"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_azules_and_colorados.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_anti_americanism"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_anti_americanism.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_economic_woes"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_economic_woes.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_political_radicalization"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_political_radicalization.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Union_Civica_Radical"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Union_Civica_Radical.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Greenback_Lira_Blues"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Greenback_Lira_Blues.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Juan_Domingo_el_Ausente"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Juan_Domingo_el_Ausente.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Structural_Unhingment"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Structural_Unhingment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Armed_Forces_The_Death_of_Discipline"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Armed_Forces_The_Death_of_Discipline.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Reign_of_the_Cavalry"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Reign_of_the_Cavalry.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Anarchy_in_the_Army"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Anarchy_in_the_Army.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ARG_Navy_Controlled_Army"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARG_Navy_Controlled_Army.dds"
+	}
+	
+	## TDF ##
+	SpriteType = {
+		name = "GFX_idea_TDF_navy_fiefdom"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_TDF_navy_fiefdom.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TDF_conflict_zone"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_TDF_conflict_zone.dds"
+	}
+
+	## BRAZIL ##
+	spriteType = {
+		name = "GFX_idea_BRA_fifth_constitution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_fifth_constitution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_national_security"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_national_security.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_oligarch_influence"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_oligarch_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_overbearing_military"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_overbearing_military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_highway_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_highway.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_lobster_war_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_lobster_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_lobster_settlement_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_lobster_settlement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_japanese_immigration_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_Japanese_Immigration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_rampant_corruption_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_rampant_corruption.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_industrialization_crisis"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_industrialization_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_eletrobras_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_eletrobras.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_joint_operations_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_joint_operations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_hundred_days_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_hundred_days.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nepotism"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nepotism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_Agrarian_Reform"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_Agrarian_Reform.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_Lott_Act"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_The_Lott_Act_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_max_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_max.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_high_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_high.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_medhigh_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_medhigh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_medhigh_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_medhigh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_med_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_med.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_lowmed_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_lowmed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_nationwide_chaos_low_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_nationwide_chaos_low.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_Brazilian_tech_assistance_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_Brazilian_tech_assistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_Brazilian_search_and_destroy_operations_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_Brazilian_search_and_destroy_operations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_SAW_Blockade_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_SAW_Blockade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BRA_democracy_survives"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BRA_democracy_survives.dds"
+	}
+
+	## CHILE ##
+	spriteType = {
+		name = "GFX_idea_CHL_social_question_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_social_question.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHL_la_hacienda_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_la_hacienda.dds"
+	}
+	#spriteType = {
+	#	name = "GFX_idea_CHL_social_question_idea"
+	#	texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_social_question.dds"
+	#}
+	spriteType = {
+		name = "GFX_idea_CHL_political_fragmentation_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_political_fragmentation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHL_economic_subservience_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_economic_subservience.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHL_agrarian_timebomb_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_agrarian_timebomb.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHL_rural_collapse_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CHL_rural_collapse.dds"
+	}
+
+	## URUGUAY ##
+	SpriteType = {
+		name = "GFX_idea_URG_sectarian_violence"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_sectarian_violence.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_URG_free_breadbasket"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_the_free_breadbasket.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_switzerland_mirage_0"
+		texturefile = "gfx/interface/ideas/national_spirits/GFX_idea_URG_switzerland_mirage_0.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_switzerland_mirage_1"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_switzerland_mirage_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_switzerland_mirage_2"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_switzerland_mirage_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_switzerland_mirage_3"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_switzerland_mirage_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_switzerland_mirage_4"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_switzerland_mirage_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_the_enemy_within"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_the_enemy_within.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_the_severed_limb"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_the_severed_limb.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_merchants_of_death"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_merchants_of_death.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_shadow_war"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_shadow_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_blancos_colorados_colegiado"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_blancos_colorados_colegiado.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_URG_shadow_war"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_URG_shadow_war.dds"
+	}
+
+	## PARAGUAY ##
+	spriteType = {
+		name = "GFX_idea_PAR_bastion_of_latin_american_fascism"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PAR_bastion_of_latin_american_fascism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAR_Avane"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PAR_Avane.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAR_The_Chokehold"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PAR_The_Chokehold.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAR_political_tarot"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PAR_political_tarot.dds"
+	}
+
+	## SANTA CRUZ ##
+	spriteType = {
+		name = "GFX_idea_STC_oriental_racist_party"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_STC_oriental_racist_party.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_STC_pozo_cano_ghost"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_STC_pozo_cano_ghost.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_STC_masonic_shadow_war"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_STC_masonic_shadow_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_STC_rapid_growth"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_STC_rapid_growth.dds"
+	}
+
+	## BOLIVIA ##
+	spriteType = {
+		name = "GFX_idea_BOL_century_of_humiliation"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BOL_century_of_humiliation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_boiling_point"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BOL_boiling_point.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BOL_patchwork_country"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_BOL_patchwork_country.dds"
+	}
+
+	## COLOMBIA ##
+	spriteType = {
+		name = "GFX_idea_COL_El_Bavaro_y_Su_Ejercito"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_El_Bavaro_y_Su_Ejercito.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_The_Hardships_of_Ariocriollismo"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_The_Hardships_of_Ariocriollismo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Heldanomics"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Heldanomics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_La_Violencia"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_La_Violencia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Shoulder_of_Giant"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Shoulder_of_Giant.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Agrarian_Crisis"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Agrarian_Crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Saints_Sinners"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Saints_Sinners.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_The_Collapse_of_Colombo_American_Cordiality"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_The_Collapse_of_Colombo_American_Cordiality.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Leaving_past_Grudges_Behind"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Leaving_past_Grudges_Behind.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Colombo_American_Treaty_on_Friendship"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Colombo_American_Treaty_on_Friendship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_COL_Off_to_a_Fresh_Start"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Off_to_a_Fresh_Start.dds"
+	}
+
+	# COL
+	spriteType = {
+		name = "GFX_idea_COL_Sham_Liberty"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COL_Sham_Liberty.dds"
+	}
+
+	# CLL
+	spriteType = {
+		name = "GFX_idea_CLL_OFN_Support"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLL_OFN_Support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CLL_Salvation_And_Its_Costs"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLL_Salvation_And_Its_Costs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CLL_The_National_Salvation_Corps"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLL_The_National_Salvation_Corps.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLD_The_Rigidity_Of_Sparta"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLD_The_Rigidity_Of_Sparta.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLD_The_Free_Dissipation_of_Babylon"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLD_The_Free_Dissipation_of_Babylon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLD_Bolivarian_Evocations"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLD_Bolivarian_Evocations.dds"
+	}
+
+	# CLC
+	spriteType = {
+		name = "GFX_idea_CLC_Reactionary_Den"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLC_Reactionary_Den.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLC_Back_To_Basics"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLC_Back_To_Basics.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLC_The_Foreigners_Stigma"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLC_The_Foreigners_Stigma.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CLC_DIN"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CLC_DIN.dds"
+	}
+
+	## ECUADOR ##
+	spriteType = {
+		name = "GFX_idea_ECU_communist_underbelly"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_communist_underbelly.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_puppet_in_all_but_name"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_puppet_in_all_but_name.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_the_wolves_from_outside"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_the_wolves_from_outside.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_and_the_wolves_from_within"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_and_the_wolves_from_within.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_vencer_o_morir"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_vencer_o_morir.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_morir"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_morir.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_true_home_of_the_revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_true_home_of_the_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_a_non_partisan_government"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_a_non_partisan_government.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_shifting_tides"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_shifting_tides.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_pragmatism_above_all"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_pragmatism_above_all.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_el_plan_quinquenal"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_el_plan_quinquenal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_our_iberian_friends"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_our_iberian_friends.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_populism_and_progressivism"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_populism_and_progressivism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ECU_public_enemy_number_one"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ECU_public_enemy_number_one.dds"
+	}
+
+	## PERU ##
+	spriteType = {
+		name = "GFX_idea_PRU_silent_liberation_idea"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PRU_Silent_Liberation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Peruvian_Armed_Forces"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PRU_Peruvian_Armed_Forces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Diverse_Country_Problems"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PRU_Diverse_Country_Problems.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Fake_Dream"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PRU_Fake_Dream.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Death_of_Dream"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PRU_Death_of_Dream.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRU_Two_SPPW_One_Economy"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PRU_Two_SPPW_One_Economy.dds"
+	}
+
+	## CUBA ##
+	spriteType = {
+		name = "GFX_idea_CUB_cuban_revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CUB_cuban_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CUB_question_democracy"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CUB_question_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CUB_reform_frenzy"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CUB_reform_frenzy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CUB_uncertain_direction"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CUB_uncertain_direction.dds"
+	}
+
+	## HISPANIOLA ##
+	spriteType = {
+		name = "GFX_idea_CARIB_Sugar_Cocoa"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CARIB_Sugar_Cocoa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HIS_Hispaniola_War"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HIS_Hispaniola_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PPI_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PPI_civil_war.dds"
+	}
+
+	# Legion
+	spriteType = {
+		name = "GFX_idea_CAL_PPI_cosmopolitan_brotherhood"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CAL_PPI_cosmopolitan_brotherhood.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAL_PPI_rebels_of_fortune"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CAL_PPI_rebels_of_fortune.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAL_PPI_Internal_Sectarianism"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CAL_PPI_Internal_Sectarianism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAL_ceasefire_United_Front"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CAL_ceasefire_United_Front.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAL_ceasefire_Champions"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_CAL_ceasefire_Champions.dds"
+	}
+
+	## DOMINICAN REPUBLIC ##
+	spriteType = {
+		name = "GFX_idea_DOM_Dios_Trujillo"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Dios_y_Trujillo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Blanqueamiento"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Blanqueamiento.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Rising_Resistance"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Rising_Resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_ceasefire_Mobilization"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_ceasefire_Mobilization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_ceasefire_New_State"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_ceasefire_New_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_The_Defense_State"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_The_Defense_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_The_Defense_State_2"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_The_Defense_State_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Black_Spot_of_the_Caribbean"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Black_Spot_of_the_Caribbean.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Black_Spot_of_the_Caribbean_2"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Black_Spot_of_the_Caribbean_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_La_Patria_Nueva"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_La_Patria_Nueva.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_A_New_State"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_A_New_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Auxiliary_Occupation"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Auxiliary_Occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Pan_American_Force"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Pan_American_Force.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_The_Living_Ghost"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_The_Living_Ghost.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Reform_Program"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Reform_Program.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Fourth_Dominican_Republic"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Fourth_Dominican_Republic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Common_Sense_Program"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Common_Sense_Program.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Limits_Of_Tolerance"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Limits_Of_Tolerance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Doctor_Prescription"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Doctor_Prescription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Mending_Our_Path"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Mending_Our_Path.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Dios_Trujillo_ramfis"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Dios_Trujillo_ramfis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Puppet_Caudillo"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Puppet_Caudillo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_National_Rescue"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_National_Rescue.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_The_Dominican_Peoples_Revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_The_Dominican_Peoples_Revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_The_Dominican_Cultural_Revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_The_Dominican_Cultural_Revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Starting_from_Scratch"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Starting_from_Scratch.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Economic_Revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Economic_Revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Autonomous_Hinche"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Autonomous_Hinche.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DOM_Exodus"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DOM_Exodus.dds"
+	}
+
+	## HAITI ##
+	spriteType = {
+		name = "GFX_idea_HAI_Noirisme_Socialism"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Noirisme_Socialism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Occupation"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Mulatocratie"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Mulatocratie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Mulatocratie_Lavaud"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Mulatocratie_Lavaud.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Rising_PPLN_Insurgency"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Rising_PPLN_Insurgency.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Protracted_Guerrilla_Campaign"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Protracted_Guerrilla_Campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Renewed_Haitian_Sovereignty"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Renewed_Haitian_Sovereignty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_La_Fausse_Democratie"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_La_Fausse_Democratie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Lunite_Instable"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Lunite_Instable.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_La_Renaissance_dHaiti"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_La_Renaissance_dHaiti.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Le_Souverain"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Le_Souverain.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Struggle_for_Sovereignty"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Struggle_for_Sovereignty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_La_Tonton_Macoute"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_La_Tonton_Macoute.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_La_Cantavecratie"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_La_Cantavecratie.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Haitian_Social_Revolution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Haitian_Social_Revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_LArmee_Rouge_dHaiti"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_LArmee_Rouge_dHaiti.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Socialist_Economy"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Socialist_Economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HAI_Exiles_and_Enemies"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_HAI_Exiles_and_Enemies.dds"
+	}
+
+	## PPLN ##
+	spriteType = {
+		name = "GFX_idea_PPLN_Government_of_the_Alliance_Generale"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PPLN_Government_of_the_Alliance_Generale.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PPLN_Army_of_Insurgents"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PPLN_Army_of_Insurgents.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PPLN_Mass_Revolutionary_Movement"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PPLN_Mass_Revolutionary_Movement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PPLN_Through_the_Hinche_Highway"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PPLN_Through_the_Hinche_Highway.dds"
+	}
+	
+	
+	## GUYANA ##
+	spriteType = {
+		name = "GFX_idea_GUY_Elizabeth_British_Legacy"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_GUY_Elizabeth_British_Legacy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GUY_Venezuela_border_dispute"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_GUY_Venezuela_border_dispute.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GUY_US_investment"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_GUY_US_investment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GUY_Fragile_Coalition"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_GUY_Fragile_Coalition.dds"
+	}
+
+	## CAYENNE ##
+	spriteType = {
+		name = "GFX_idea_GUC_International_Ambiguity"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_GUC_International_Ambiguity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GUC_Brazilian_Immigration"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_GUC_Brazilian_Immigration.dds"
+	}
+
+	## SURINAME ##
+	spriteType = {
+		name = "GFX_idea_SUR_1947_Constitution"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_SUR_1947_Constitution.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SUR_Poster_Boy_OFN"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_SUR_Poster_Boy_OFN.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SUR_queen_wilhelmina"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_SUR_queen_wilhelmina.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SUR_queen_juliana"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_SUR_queen_juliana.dds"
+	}
+
+	## VENEZUELA ##
+	spriteType = {
+		name = "GFX_idea_VEN_Puntofijo_Pact"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_VEN_Puntofijo_Pact.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_VEN_Essequibo_Dispute"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_VEN_Essequibo_Dispute.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_VEN_King_of_Oil"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_VEN_King_of_Oil.dds"
+	}
+}

@@ -1,0 +1,6154 @@
+shared_focus = {
+	id = USA_SAW_Smash_the_Dominoes
+	icon = GFX_USA_SAW_Smash_the_Dominoes
+	cost = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Smash_the_Dominoes"
+
+		add_war_support = 0.02
+	}
+	allow_branch = {
+		AND = {
+			has_country_flag = USA_sa_ofn
+			NOT = { has_country_flag = USA_JFK_is_president }
+		}
+	}
+	x = 5
+	y = 0
+	offset = {
+		x = 0
+		y = 8
+		trigger = {
+			tag = USA
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_kickstart_media
+	icon = GFX_USA_SAW_kickstart_media
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_Smash_the_Dominoes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_kickstart_media"
+
+		country_event = {
+			id = OFN.13
+			days = 1
+		}
+
+		add_political_power = 100
+	}
+	relative_position_id = USA_SAW_Smash_the_Dominoes
+	x = 0
+	y = 1
+}
+
+
+shared_focus = {
+	id = USA_SAW_logistical_nightmare
+	icon = GFX_USA_SAW_logistical_nightmare
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_kickstart_media
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_logistical_nightmare"
+
+		add_timed_idea = {
+			idea = USA_SAW_logistical_effort
+			days = 14
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = CAN
+					tag = BRA
+					tag = AST
+				}
+			}
+			add_timed_idea = {
+				idea = USA_SAW_logistical_effort
+				days = 30
+			}
+		}
+
+		set_temp_variable = { proxy = SAW }
+		USA_increase_service_manpower_depletion_rate_small = yes
+
+		hidden_effect = {
+			NZL = {
+				add_timed_idea = {
+					idea = USA_SAW_logistical_effort
+					days = 30
+				}
+			}
+		}
+	}
+	relative_position_id = USA_SAW_kickstart_media
+	x = -2
+	y = 1
+}
+
+shared_focus = {
+	id = USA_SAW_security_resolution_14
+	icon = GFX_USA_SAW_security_resolution_14
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_kickstart_media
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_security_resolution_14"
+
+		country_event = SAF_USA.3
+		
+		add_command_power = 10
+		
+		swap_ideas = {
+			remove_idea = USA_african_adventure
+			add_idea = USA_african_adventure_2
+		}
+
+		USA_increase_trust_in_government_large = yes
+
+		hidden_effect = {
+			country_event = {
+				id = SAF_USA.5
+				days = 28
+			}
+		}
+	}
+	relative_position_id = USA_SAW_kickstart_media
+	x = 0
+	y = 1
+}
+
+shared_focus = {
+	id = USA_SAW_humanitarian_effort
+	icon = GFX_CAN_SAF_in_OFN
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_kickstart_media
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_humanitarian_effort"
+
+		country_event = SAF_USA.4
+
+		USA_increase_optics_small = yes
+
+		set_temp_variable = { proxy = SAW }
+		USA_increase_service_manpower_depletion_rate_small = yes
+	}
+	relative_position_id = USA_SAW_kickstart_media
+	x = 2
+	y = 1
+}
+
+shared_focus = {
+	id = USA_SAW_take_the_skies
+	icon = GFX_USA_SAW_take_the_skies
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_logistical_nightmare
+	}
+	prerequisite = {
+		focus = USA_SAW_security_resolution_14
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_take_the_skies"
+
+		add_command_power = 5
+		custom_effect_tooltip = USA_SAW_take_the_skies_tt
+		USA_increase_trust_in_government_small = yes
+
+		set_country_flag = USA_SAW_air_ops_available
+	}
+	relative_position_id = USA_SAW_logistical_nightmare
+	x = -1
+	y = 1
+}
+
+shared_focus = {
+	id = USA_SAW_coordinate_allies
+	icon = GFX_USA_SAW_coordinate_allies
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_humanitarian_effort
+	}
+	prerequisite = {
+		focus = USA_SAW_security_resolution_14
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_coordinate_allies"
+
+		add_command_power = 5
+
+		custom_effect_tooltip = USA_add_OFN_unity
+		add_to_variable = { OFN_unity = 1 }
+
+		CAN = {
+			add_war_support = 0.025
+			set_temp_variable = { target = SAF }
+			hidden_effect = { TNO_increase_volunteer_cap_1 = yes }
+			custom_effect_tooltip = "TNO_increase_volunteers_SAF_1"
+		}
+		AST = {
+			add_war_support = 0.025
+			set_temp_variable = { target = SAF }
+			hidden_effect = { TNO_increase_volunteer_cap_1 = yes }
+			custom_effect_tooltip = "TNO_increase_volunteers_SAF_1"
+		}
+		NZL = {
+			add_war_support = 0.025
+			set_temp_variable = { target = SAF }
+			hidden_effect = { TNO_increase_volunteer_cap_1 = yes }
+			custom_effect_tooltip = "TNO_increase_volunteers_SAF_1"
+		}
+	}
+	relative_position_id = USA_SAW_humanitarian_effort
+	x = 1
+	y = 1
+}
+
+shared_focus = {
+	id = USA_SAW_tables_tabling
+	icon = GFX_USA_SAW_tables_tabling
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_coordinate_allies
+	}
+	prerequisite = {
+		focus = USA_SAW_take_the_skies
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_tables_tabling"
+
+		add_command_power = 10
+
+		custom_effect_tooltip = USA_SAW_tables_tabling_tt
+		USA_increase_trust_in_government_small = yes
+		USA_increase_optics_medium = yes
+
+		set_country_flag = USA_SAW_land_ops_available
+	}
+	relative_position_id = USA_SAW_take_the_skies
+	x = 3
+	y = 1
+}
+
+shared_focus = {
+	id = USA_SAW_declare_emergency
+	icon = GFX_USA_SAW_declare_emergency
+	cost = 1
+	prerequisite = {
+		focus = USA_SAW_tables_tabling
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_declare_emergency"
+
+		country_event = SAF_USA.6
+
+		add_political_power = 25
+
+		custom_effect_tooltip = USA_SAW_declare_emergency_tt
+
+		USA_increase_trust_in_government_medium = yes
+
+		hidden_effect = {
+			set_country_flag = USA_SAW_escalation_available
+			subtract_from_variable = { USA_crisis_counter = 1 }
+			clamp_variable = { var = USA_crisis_counter min = 0 }
+		}
+	}
+	x = 5
+	y = 5
+	offset = {
+		x = 0
+		y = 8
+		trigger = {
+			tag = USA
+		}
+	}
+}
+
+###INITIAL USA PATH###
+shared_focus = {
+	id = USA_the_nixon_presidency
+	icon = GFX_USA_60_Nixon
+	cost = 5.00
+	x = 19
+	y = 0
+	allow_branch = {
+		AND = {
+			has_country_flag = USA_initial_tree_flag
+			NOT = { has_country_flag = USA_JFK_is_president }
+		}
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_nixon_presidency"
+		custom_effect_tooltip = USA_nixon_presidency_tooltip
+	}
+}
+
+shared_focus = {
+	id = USA_the_campaign_trail
+	icon = GFX_USA_Campaign_Trail
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_nixon_presidency
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_campaign_trail"
+		custom_effect_tooltip = USA_campaign_trail_tooltip
+	}
+	x = -14
+	y = 1
+	relative_position_id = USA_the_nixon_presidency
+}
+
+shared_focus = {
+	id = USA_keep_it_clean
+	icon = GFX_USA_Keep_It_Clean2
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_campaign_trail
+	}
+	available = {
+		has_country_flag = USA_keep_it_clean_flag
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	mutually_exclusive = {
+		focus = USA_get_our_hands_dirty
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_keep_it_clean"
+		custom_effect_tooltip = USA_keep_it_clean_tooltip
+	}
+	x = -3
+	y = 1
+	relative_position_id = USA_the_campaign_trail
+}
+
+shared_focus = {
+	id = USA_campaign_in_the_south
+	icon = GFX_USA_Campaign_in_the_South
+	cost = 5.00
+	prerequisite = {
+		focus = USA_keep_it_clean
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_campaign_in_the_south"
+		custom_effect_tooltip = USA_campaign_in_the_south_tooltip
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_keep_it_clean
+}
+
+shared_focus = {
+	id = USA_campaign_in_the_west
+	icon = GFX_USA_Campaign_in_the_West2
+	cost = 5.00
+	prerequisite = {
+		focus = USA_keep_it_clean
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_campaign_in_the_west"
+		custom_effect_tooltip = USA_campaign_in_the_west_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_keep_it_clean
+}
+
+shared_focus = {
+	id = USA_calm_the_progressives
+	icon = GFX_USA_Calm_Progressives_Lady_Liberty
+	cost = 5.00
+	prerequisite = { focus = USA_campaign_in_the_west }
+	prerequisite = { focus = USA_campaign_in_the_north }
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_calm_the_progressives"
+		custom_effect_tooltip = USA_calm_the_progressives_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_campaign_in_the_west
+}
+
+shared_focus = {
+	id = USA_campaign_in_the_north
+	icon = GFX_USA_Campaign_in_the_North2
+	cost = 5.00
+	prerequisite = {
+		focus = USA_keep_it_clean
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_campaign_in_the_north"
+		custom_effect_tooltip = USA_campaign_in_the_north_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_keep_it_clean
+}
+
+shared_focus = {
+	id = USA_get_our_hands_dirty
+	icon = GFX_USA_Get_Our_Hands_Dirty2
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_campaign_trail
+	}
+	mutually_exclusive = {
+		focus = USA_keep_it_clean
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_get_our_hands_dirty"
+		custom_effect_tooltip = USA_get_our_hands_dirty_tooltip
+	}
+	x = 3
+	y = 1
+	relative_position_id = USA_the_campaign_trail
+}
+
+shared_focus = {
+	id = USA_steal_their_files
+	icon = GFX_Generic_Espionage
+	cost = 5.00
+	prerequisite = {
+		focus = USA_get_our_hands_dirty
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_steal_their_files"
+		custom_effect_tooltip = USA_steal_their_files_tooltip
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_get_our_hands_dirty
+}
+
+shared_focus = {
+	id = USA_wiretap_the_NPP
+	icon = GFX_USA_Wiretap_the_NPP2
+	cost = 5.00
+	prerequisite = {
+		focus = USA_steal_their_files
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_wiretap_the_NPP"
+		custom_effect_tooltip = USA_wiretap_the_NPP_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_steal_their_files
+}
+
+shared_focus = {
+	id = USA_split_our_enemies
+	icon = GFX_USA_Split_our_Enemies
+	cost = 5.00
+	prerequisite = {
+		focus = USA_wiretap_the_NPP
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_split_our_enemies"
+		custom_effect_tooltip = USA_split_our_enemies_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_wiretap_the_NPP
+}
+
+shared_focus = {
+	id = USA_the_juiciest_blackmail
+	icon = GFX_USA_The_Juciest_Blackmail
+	cost = 5.00
+	prerequisite = {
+		focus = USA_get_our_hands_dirty
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_juiciest_blackmail"
+		custom_effect_tooltip = USA_the_juiciest_blackmail_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_get_our_hands_dirty
+}
+
+shared_focus = {
+	id = USA_estrange_the_democrats
+	icon = GFX_USA_Estrange_the_Democrats
+	cost = 5.00
+	prerequisite = {
+		focus = USA_steal_their_files
+	}
+	prerequisite = {
+		focus = USA_the_juiciest_blackmail
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_estrange_the_democrats"
+		custom_effect_tooltip = USA_estrange_the_democrats_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_steal_their_files
+}
+
+shared_focus = {
+	id = USA_proto_progressives
+	icon = GFX_USA_Proto_Progressives
+	cost = 5.00
+	prerequisite = {
+		focus = USA_estrange_the_democrats
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_proto_progressives"
+		custom_effect_tooltip = USA_proto_progressives_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_estrange_the_democrats
+}
+
+shared_focus = {
+	id = USA_everyone_i_dont_agree_with_is_hitler
+	icon = GFX_USA_Everyone_I_Dont_Agree_With_Is_Hitler
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_juiciest_blackmail
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_everyone_i_dont_agree_with_is_hitler"
+		custom_effect_tooltip = USA_everyone_i_dont_agree_with_is_hitler_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_juiciest_blackmail
+}
+
+shared_focus = {
+	id = USA_turn_the_people
+	icon = GFX_USA_Turn_the_People
+	cost = 5.00
+	prerequisite = {
+		focus = USA_everyone_i_dont_agree_with_is_hitler
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_turn_the_people"
+		custom_effect_tooltip = USA_turn_the_people_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_everyone_i_dont_agree_with_is_hitler
+}
+
+shared_focus = {
+	id = USA_secure_the_party
+	icon = GFX_USA_Secure_the_Party
+	cost = 5.00
+	prerequisite = {
+		focus = USA_proto_progressives
+	}
+	prerequisite = {
+		focus = USA_split_our_enemies
+	}
+	prerequisite = {
+		focus = USA_turn_the_people
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_secure_the_party"
+		custom_effect_tooltip = USA_secure_the_party_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_proto_progressives
+}
+
+shared_focus = {
+	id = USA_the_civil_rights_dillema
+	icon = GFX_USA_Civil_Rights_Dilemma
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_nixon_presidency
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_civil_rights_dillema"
+		custom_effect_tooltip = USA_civil_rights_dillema_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_nixon_presidency
+}
+
+shared_focus = {
+	id = USA_begin_integration
+	icon = GFX_USA_Begin_Integration
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_civil_rights_dillema
+	}
+	available = {
+		has_country_flag = USA_begin_integration_flag
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	mutually_exclusive = {
+		focus = USA_toe_the_middle_line
+	}
+	mutually_exclusive = {
+		focus = USA_bend_to_the_segregationists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_begin_integration"
+		custom_effect_tooltip = USA_begin_integration_tooltip
+	}
+	x = -5
+	y = 1
+	relative_position_id = USA_the_civil_rights_dillema
+}
+
+shared_focus = {
+	id = USA_meet_with_african_leaders
+	icon = GFX_USA_Meet_With_African_Leaders
+	cost = 5.00
+	prerequisite = {
+		focus = USA_begin_integration
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_meet_with_african_leaders"
+		custom_effect_tooltip = USA_meet_with_african_leaders_tooltip
+	}
+	x = 0
+	y = 2
+	relative_position_id = USA_begin_integration
+}
+
+shared_focus = {
+	id = USA_the_handshake_with_mlk
+	icon = GFX_USA_Handshake_with_MLK
+	cost = 5.00
+	prerequisite = {
+		focus = USA_meet_with_african_leaders
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_handshake_with_mlk"
+		custom_effect_tooltip = USA_the_handshake_with_mlk_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_meet_with_african_leaders
+}
+
+shared_focus = {
+	id = USA_ease_peoples_fears
+	icon = GFX_USA_Civil_Rights_Act_Deluxe
+	cost = 5.00
+	prerequisite = {
+		focus = USA_begin_integration
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_ease_peoples_fears"
+		custom_effect_tooltip = USA_ease_peoples_fears_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_begin_integration
+}
+
+shared_focus = {
+	id = USA_discuss_with_southern_leaders
+	icon = GFX_USA_discuss_with_southern_leaders
+	cost = 5.00
+	prerequisite = {
+		focus = USA_meet_with_african_leaders
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_discuss_with_southern_leaders"
+		custom_effect_tooltip = USA_discuss_with_southern_leaders_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_meet_with_african_leaders
+}
+
+shared_focus = {
+	id = USA_toe_the_middle_line
+	icon = GFX_USA_Toe_the_Middle_Line
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_civil_rights_dillema
+	}
+	available = {
+		has_country_flag = USA_toe_the_middle_line_flag
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	mutually_exclusive = {
+		focus = USA_begin_integration
+	}
+	mutually_exclusive = {
+		focus = USA_bend_to_the_segregationists
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_toe_the_middle_line"
+		custom_effect_tooltip = USA_toe_the_middle_line_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_civil_rights_dillema
+}
+
+shared_focus = {
+	id = USA_ease_civil_rights_leaders_fears
+	icon = GFX_USA_anti_segregation_propaganda
+	cost = 5.00
+	prerequisite = {
+		focus = USA_toe_the_middle_line
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_ease_civil_rights_leaders_fears"
+		add_political_power = 50
+		custom_effect_tooltip = USA_ease_civil_rights_leaders_fears_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_toe_the_middle_line
+}
+
+shared_focus = {
+	id = USA_rally_segregationists_support
+	icon = GFX_USA_Rally_Dixie
+	cost = 5.00
+	prerequisite = {
+		focus = USA_toe_the_middle_line
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rally_segregationists_support"
+		add_political_power = 50
+		custom_effect_tooltip = USA_rally_segregationists_support_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_toe_the_middle_line
+}
+
+shared_focus = {
+	id = USA_nationwide_riots
+	icon = GFX_USA_Nationwide_Riots
+	cost = 5.00
+	prerequisite = {
+		focus = USA_ease_civil_rights_leaders_fears
+	}
+	prerequisite = {
+		focus = USA_rally_segregationists_support
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_nationwide_riots"
+		add_stability = -0.15
+		add_political_power = -200
+		custom_effect_tooltip = USA_nationwide_riots_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_ease_civil_rights_leaders_fears
+}
+
+shared_focus = {
+	id = USA_reinforce_the_police
+	icon = GFX_Generic_Police
+	cost = 5.00
+	prerequisite = {
+		focus = USA_nationwide_riots
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reinforce_the_police"
+		custom_effect_tooltip = USA_reinforce_the_police_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_nationwide_riots
+}
+
+shared_focus = {
+	id = USA_they_have_a_dream
+	icon = GFX_USA_They_have_a_dream
+	cost = 5.00
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = USA_nixon_neutral_tooltip
+			has_country_flag = USA_nixon_neutral
+		}
+	}
+	prerequisite = {
+		focus = USA_reinforce_the_police
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = USA_civil_rights_intensify_tt
+			always = no
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_they_have_a_dream"
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_reinforce_the_police
+}
+
+shared_focus = {
+	id = USA_the_party_splits
+	icon = GFX_USA_The_Party_Splits
+	cost = 5.00
+	prerequisite = {
+		focus = USA_they_have_a_dream
+	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = USA_nixon_neutral_tooltip
+			has_country_flag = USA_nixon_neutral
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_they_have_a_dream
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = USA_civil_rights_intensify_tt
+			always = no
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_party_splits"
+	}
+}
+
+shared_focus = {
+	id = USA_the_kennedy_plan
+	icon = GFX_USA_The_Kennedy_Plan
+	cost = 5
+	ai_will_do = {
+		factor = 1.1
+	}
+	available = {
+		NOT = { has_country_flag = nixon_neutral_veto }
+		custom_trigger_tooltip = {
+			tooltip = USA_nixon_not_neutral_tooltip
+			NOT = {
+				has_country_flag = USA_nixon_neutral
+				has_country_flag = USA_nixon_lock
+			}
+		}
+	}
+	cancel = {
+		has_country_flag = USA_nixon_neutral
+	}
+	prerequisite = {
+		focus = USA_the_party_splits
+	}
+	bypass = {
+		has_country_flag = nixon_neutral_pass
+
+	}
+	mutually_exclusive = {
+		focus = USA_crack_down_on_the_movement
+	}
+	continue_if_invalid = no
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_kennedy_plan"
+		add_political_power = -50
+		country_event = USA.109
+		custom_effect_tooltip = USA_the_kennedy_plan_tooltip
+		hidden_effect = {
+			country_event = { id = USA.early_flavor.10 days = 20 } #GLD says he'll vote against the CRA
+		}
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_the_party_splits
+}
+
+shared_focus = {
+	id = USA_crack_down_on_the_movement
+	icon = GFX_USA_Angry_Nixon
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		NOT = { has_country_flag = nixon_neutral_pass }
+		custom_trigger_tooltip = {
+			tooltip = USA_nixon_not_neutral_tooltip
+			NOT = {
+				has_country_flag = USA_nixon_neutral
+				has_country_flag = USA_nixon_lock
+			}
+		}
+	}
+	cancel = {
+		has_country_flag = USA_nixon_neutral
+	}
+	prerequisite = {
+		focus = USA_the_party_splits
+	}
+	mutually_exclusive = {
+		focus = USA_the_kennedy_plan
+	}
+	bypass = {
+		has_country_flag = nixon_neutral_veto
+	}
+	continue_if_invalid = no
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_crack_down_on_the_movement"
+		add_political_power = -50
+		country_event = USA.113
+		custom_effect_tooltip = USA_crack_down_on_the_movement_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_the_party_splits
+}
+
+shared_focus = {
+	id = USA_bend_to_the_segregationists
+	icon = GFX_USA_Bend_to_the_Segregationists
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_civil_rights_dillema
+	}
+	available = {
+		has_country_flag = USA_bend_to_the_segregationists_flag
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	mutually_exclusive = {
+		focus = USA_toe_the_middle_line
+	}
+	mutually_exclusive = {
+		focus = USA_begin_integration
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_bend_to_the_segregationists"
+		custom_effect_tooltip = USA_bend_to_the_segregationists_tooltip
+	}
+	x = 5
+	y = 1
+	relative_position_id = USA_the_civil_rights_dillema
+}
+
+shared_focus = {
+	id = USA_meet_with_southern_leaders
+	icon = GFX_USA_Meet_with_Southern_Leaders
+	cost = 5.00
+	prerequisite = {
+		focus = USA_bend_to_the_segregationists
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_meet_with_southern_leaders"
+		custom_effect_tooltip = USA_meet_with_southern_leaders_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_bend_to_the_segregationists
+}
+
+shared_focus = {
+	id = USA_unite_segregationists
+	icon = GFX_USA_unite_segregationists
+	cost = 5.00
+	prerequisite = {
+		focus = USA_meet_with_southern_leaders
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_unite_segregationists"
+		custom_effect_tooltip = USA_unite_segregationists_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_meet_with_southern_leaders
+}
+
+shared_focus = {
+	id = USA_raise_the_fear
+	icon = GFX_USA_Raise_the_Fear
+	cost = 5.00
+	prerequisite = {
+		focus = USA_meet_with_southern_leaders
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_raise_the_fear"
+		custom_effect_tooltip = USA_raise_the_fear_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_meet_with_southern_leaders
+}
+
+shared_focus = {
+	id = USA_deploy_the_national_guard2
+	icon = GFX_USA_Deploy_the_National_Guard
+	cost = 5.00
+	prerequisite = {
+		focus = USA_unite_segregationists
+	}
+
+	prerequisite = {
+		focus = USA_raise_the_fear
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_deploy_the_national_guard2"
+		custom_effect_tooltip = USA_deploy_the_national_guard2_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_unite_segregationists
+}
+
+shared_focus = {
+	id = USA_arrest_civil_rights_leaders
+	icon = GFX_USA_Arrest_Civil_Rights_Leaders
+	cost = 5.00
+	prerequisite = {
+		focus = USA_deploy_the_national_guard2
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_arrest_civil_rights_leaders"
+		custom_effect_tooltip = USA_arrest_civil_rights_leaders_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_deploy_the_national_guard2
+}
+
+shared_focus = {
+	id = USA_stomp_down_on_protest
+	icon = GFX_USA_Stomp_Down_on_Protests
+	cost = 5.00
+	prerequisite = {
+		focus = USA_deploy_the_national_guard2
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_stomp_down_on_protest"
+		custom_effect_tooltip = USA_stomp_down_on_protest_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_deploy_the_national_guard2
+}
+
+shared_focus = {
+	id = USA_ban_further_rallies
+	icon = GFX_USA_Ban_Further_Rallies
+	cost = 5.00
+	prerequisite = {
+		focus = USA_arrest_civil_rights_leaders
+	}
+	prerequisite = {
+		focus = USA_stomp_down_on_protest
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_ban_further_rallies"
+		custom_effect_tooltip = USA_ban_further_rallies_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_arrest_civil_rights_leaders
+}
+
+shared_focus = {
+	id = USA_break_further_rallies
+	icon = GFX_Riot_Police
+	cost = 5.00
+	prerequisite = {
+		focus = USA_stomp_down_on_protest
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_break_further_rallies"
+		custom_effect_tooltip = USA_break_further_rallies_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_stomp_down_on_protest
+}
+
+shared_focus = {
+	id = USA_a_cold_war
+	icon = GFX_USA_A_cold_war
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_nixon_presidency
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_cold_war"
+		custom_effect_tooltip = USA_cold_war_tooltip
+	}
+	x = 19
+	y = 1
+	relative_position_id = USA_the_nixon_presidency
+}
+
+shared_focus = {
+	id = USA_splendid_isolation
+	icon = GFX_USA_Splendid_Isolation
+	cost = 5.00
+	prerequisite = {
+		focus = USA_a_cold_war
+	}
+	mutually_exclusive = {
+		focus = USA_containment_theory
+	}
+	available = {
+		has_country_flag = USA_splendid_isolation_flag
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_splendid_isolation"
+		custom_effect_tooltip = USA_splendid_isolation_tooltip
+	}
+	x = -7
+	y = 1
+	relative_position_id = USA_a_cold_war
+}
+
+shared_focus = {
+	id = USA_america_for_america
+	icon = GFX_COG_Our_Friends_Abroad
+	cost = 5.00
+	prerequisite = {
+		focus = USA_splendid_isolation
+	}
+	mutually_exclusive = {
+		focus = USA_reinforce_the_OFN
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_america_for_america"
+		custom_effect_tooltip = USA_america_for_america_tooltip
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_splendid_isolation
+}
+
+shared_focus = {
+	id = USA_reinforce_the_OFN
+	icon = GFX_AST_maintain_ofn
+	cost = 5.00
+	prerequisite = {
+		focus = USA_splendid_isolation
+	}
+	mutually_exclusive = {
+		focus = USA_america_for_america
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reinforce_the_OFN"
+		custom_effect_tooltip = USA_reinforce_ofn_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_splendid_isolation
+}
+
+shared_focus = {
+	id = USA_the_australian_plan
+	icon = GFX_USA_The_Australian_Plan
+	cost = 5.00
+	prerequisite = {
+		focus = USA_reinforce_the_OFN
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_australian_plan"
+		custom_effect_tooltip = USA_australia_plan_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_reinforce_the_OFN
+}
+
+shared_focus = {
+	id = USA_reinforce_the_oceanic_armies
+	icon = GFX_USA_Reinforce_Oceanic_Armies
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_australian_plan
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reinforce_the_oceanic_armies"
+		custom_effect_tooltip = USA_reinforce_oceanic_armies_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_australian_plan
+}
+
+shared_focus = {
+	id = USA_the_iceland_plan
+	icon = GFX_USA_The_Iceland_Plan
+	cost = 5.00
+	prerequisite = {
+		focus = USA_reinforce_the_OFN
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_iceland_plan"
+		custom_effect_tooltip = USA_iceland_plan_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_reinforce_the_OFN
+}
+
+shared_focus = {
+	id = USA_redouble_american_posts
+	icon = GFX_COG_Fortify_The_Border
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_iceland_plan
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_redouble_american_posts"
+		custom_effect_tooltip = USA_redouble_american_posts_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_iceland_plan
+}
+
+shared_focus = {
+	id = USA_the_last_light_of_freedom_will_burn_on
+	icon = GFX_USA_Last_Light_of_Freedom
+	cost = 5.00
+	prerequisite = {
+		focus = USA_reinforce_the_oceanic_armies
+	}
+	prerequisite = {
+		focus = USA_redouble_american_posts
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_last_light_of_freedom_will_burn_on"
+		custom_effect_tooltip = USA_last_light_of_freedom_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_reinforce_the_oceanic_armies
+}
+
+shared_focus = {
+	id = USA_containment_theory
+	icon = GFX_USA_Containment_Theory
+	cost = 5.00
+	prerequisite = {
+		focus = USA_a_cold_war
+	}
+	mutually_exclusive = {
+		focus = USA_splendid_isolation
+	}
+	available = {
+		has_country_flag = USA_containment_theory_flag
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_containment_theory"
+		custom_effect_tooltip = USA_containment_theory_tooltip
+	}
+	x = 7
+	y = 1
+	relative_position_id = USA_a_cold_war
+}
+
+shared_focus = {
+	id = USA_Boxing_In_the_Sphere
+	icon = GFX_USA_Crack_the_Sphere
+	cost = 5
+	ai_will_do = {
+		base = 40
+		modifier = { factor = 80 MLY = { has_war_with = SHO } }
+	}
+	prerequisite = {
+		focus = USA_containment_theory
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_western_plan"
+		custom_effect_tooltip = USA_western_plan_tooltip
+		country_event = USA.1913
+	}
+	x = -5
+	y = 1
+	relative_position_id = USA_containment_theory
+}
+
+shared_focus = {
+	id = USA_the_indian_subcontinent
+	icon = GFX_Focus_India_Orthographic
+	cost = 5
+	prerequisite = {
+		focus = USA_Boxing_In_the_Sphere
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_indian_subcontinent"
+		custom_effect_tooltip = USA_the_indian_subcontinent_tooltip
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_Boxing_In_the_Sphere
+}
+
+shared_focus = {
+	id = USA_recognize_the_roi
+	icon = GFX_IND_India_in_the_OFN
+	cost = 5
+	prerequisite = {
+		focus = USA_the_indian_subcontinent
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_recognize_the_roi"
+		add_political_power = 50
+		country_event = { id = USA.1908 }
+		IND = {
+			country_event = {
+				id = USA.1621
+				days = 2
+			}
+		}
+		AZH = {
+			country_event = {
+				id = USA.1622
+				days = 2
+			}
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_indian_subcontinent
+}
+
+shared_focus = {
+	id = USA_And_Our_Money
+	icon = GFX_TNO_Generic_Foreign_Investment
+	cost = 5
+	prerequisite = {
+		focus = USA_recognize_the_roi
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_sanction_not_free_india"
+		country_event = { id = USA.1909 }
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_recognize_the_roi
+}
+
+shared_focus = {
+	id = USA_Give_Them_Our_Arms
+	icon = GFX_SAF_Buy_American_Guns
+	cost = 5
+	prerequisite = {
+		focus = USA_recognize_the_roi
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_arm_the_republic_of_india"
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1000
+			target = IND
+		}
+		send_equipment = {
+			equipment = anti_tank_equipment
+			amount = 400
+			target = IND
+		}
+		set_country_flag = USA_arm_IND
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_recognize_the_roi
+}
+
+shared_focus = {
+	id = USA_The_Start_Of_Something_Beautiful
+	icon = GFX_usa_trade_deal
+	cost = 5
+	prerequisite = {
+		focus = USA_And_Our_Money
+	}
+	prerequisite = {
+		focus = USA_Give_Them_Our_Arms
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_arm_the_republic_of_india"
+		set_temp_variable = { gdp_growth_temp = 0.1 }
+		econ_gdp_growth_change = yes
+		IND = {
+			add_stability = 0.05
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Give_Them_Our_Arms
+}
+
+shared_focus = {
+	id = USA_The_Tinderbox
+	icon = GFX_JAP_sphere_failing_generic
+	cost = 5
+	ai_will_do = {
+		base = 40
+		modifier = { factor = 80 MLY = { has_war_with = SHO } }
+	}
+	prerequisite = {
+		focus = USA_Boxing_In_the_Sphere
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_The_Tinderbox"
+		custom_effect_tooltip = USA_Tinderbox.TT
+		hidden_effect = { country_event = { id = USA.1914 } }
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_Boxing_In_the_Sphere
+}
+
+shared_focus = {
+	id = USA_friends_in_the_philippines
+	icon = GFX_TNO_Generic_Philippines
+	cost = 5
+	ai_will_do = {
+		base = 40
+		modifier = { factor = 20 MLY = { has_war_with = SHO } }
+	}
+	bypass = {
+		has_global_flag = PHI_proxy_war_started
+	}
+	prerequisite = {
+		focus = USA_The_Tinderbox
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_friends_in_the_philippines"
+		country_event = { id = PHI_flavor.5 days = 1 }
+		custom_effect_tooltip = USA_philippines_support
+		hidden_effect = {
+			TNO_fopo_add_philippines_tab = yes
+			set_country_flag = USA_Supporting_Philippines
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_The_Tinderbox
+}
+
+shared_focus = {
+	id = USA_the_fighting_filipinos
+	icon = GFX_USA_The_Fighting_Filipinos
+	cost = 5
+	ai_will_do = {
+		base = 40
+		modifier = { factor = 20 MLY = { has_war_with = SHO } }
+	}
+	prerequisite = {
+		focus = USA_friends_in_the_philippines
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_fighting_filipinos"
+		add_command_power = 20
+		UPH = {
+			add_war_support = 0.15
+		}
+		SPH = {
+			add_war_support = 0.15
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_friends_in_the_philippines
+}
+
+shared_focus = {
+	id = USA_malayan_rebellion
+	icon = GFX_The_Malayan_Rebellion
+	cost = 5
+	ai_will_do = {
+		base = 40
+		modifier = { factor = 80 MLY = { has_war_with = SHO } }
+	}
+	prerequisite = {
+		focus = USA_The_Tinderbox
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	bypass = {
+		NOT = { MLY = { has_war_with = SHO } }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_malayan_rebellion"
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1250
+			target = MLY
+		}
+		send_equipment = {
+			equipment = support_equipment
+			amount = 500
+			target = MLY
+		}
+		send_equipment = {
+			equipment = artillery_equipment
+			amount = 250
+			target = MLY
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_The_Tinderbox
+}
+
+shared_focus = {
+	id = USA_vanguard_of_freedom
+	icon = GFX_OFN_handshake
+	cost = 5
+	ai_will_do = {
+		base = 40
+		modifier = { factor = 80 MLY = { has_war_with = SHO } }
+	}
+	prerequisite = {
+		focus = USA_malayan_rebellion
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	bypass = { NOT = { MLY = { has_war_with = SHO } } }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_vanguard_of_freedom"
+		set_temp_variable = { target = MLY }
+		TNO_increase_volunteer_cap_1 = yes
+		custom_effect_tooltip = "TNO_increase_volunteers_MLY_1"
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_malayan_rebellion
+}
+
+shared_focus = {
+	id = USA_Strike_The_Match
+	icon = GFX_JAP_Baptism_by_Fire
+	cost = 5
+	ai_will_do = {
+		factor = 10
+	}
+	prerequisite = {
+		focus = USA_vanguard_of_freedom
+	}
+	prerequisite = {
+		focus = USA_the_fighting_filipinos
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_friends_with_the_dutch"
+		custom_effect_tooltip = USA_more_sphere_support
+		set_country_flag = USA_support_FRI
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_vanguard_of_freedom
+}
+
+shared_focus = {
+	id = USA_Cracking_The_Steel_Curtain
+	icon = GFX_USA_Subvert_the_Pact
+	cost = 5
+	ai_will_do = {
+		base = 20
+		modifier = { factor = 40 MLY = { OR = { has_war_with = SHO exists = no } } }
+	}
+	prerequisite = {
+		focus = USA_containment_theory
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Cracking_The_Steel_Curtain"
+		custom_effect_tooltip = USA_Cracking_The_Steel_Curtain_tooltip
+		hidden_effect = { country_event = { id = USA.ct.1 days = 4 } }
+	}
+	x = 5
+	y = 1
+	relative_position_id = USA_containment_theory
+}
+
+shared_focus = {
+	id = USA_The_Forgotten_Allies
+	icon = GFX_Focus_Europe_Orthographic
+	cost = 5
+	ai_will_do = {
+		factor = 20
+		modifier = { MLY = { has_war_with = SHO } factor = 10 }
+		modifier = { has_global_flag = PPI_proxy_war_preparation factor = 60 }
+	}
+	prerequisite = {
+		focus = USA_Cracking_The_Steel_Curtain
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_The_Forgotten_Allies"
+		add_stability = 0.01
+		add_war_support = 0.02
+		custom_effect_tooltip = USA_The_Forgotten_Allies_tooltip
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_Cracking_The_Steel_Curtain
+}
+
+shared_focus = {
+	id = USA_Helping_Out_A_Friend
+	icon = GFX_USA_Mother_Britannia_Needs_Us
+	cost = 5
+	prerequisite = {
+		focus = USA_The_Forgotten_Allies
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	bypass = {
+		has_country_flag = USA_CIA_ECW_started
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_finance_the_ports"
+		custom_effect_tooltip = USA_increase_OFN_opinion_England
+
+		ENG = {
+			add_to_variable = { ENG_OFN_Relations = 5 }
+			ENG_ClampOFNRelations = yes
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_The_Forgotten_Allies
+}
+
+shared_focus = {
+	id = USA_Break_Open_The_Caches
+	icon = GFX_BRT_arsenals_of_democracy
+	cost = 5
+	prerequisite = {
+		focus = USA_Helping_Out_A_Friend
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	bypass = {
+		has_country_flag = USA_CIA_ECW_started
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_friends_in_the_government"
+		custom_effect_tooltip = USA_Give_England_Guns
+		ENG = { add_to_variable = { ENG_HmmlrGuns = 750 } }
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Helping_Out_A_Friend
+}
+
+shared_focus = {
+	id = USA_Fuck_Trujillo
+	icon = GFX_USA_Dominican_Republic
+	cost = 5
+	ai_will_do = {
+		factor = 40
+		modifier = { has_global_flag = PPI_proxy_war_preparation factor = 80 }
+		modifier = { has_global_flag = PPI_landing_ongoing factor = 80 }
+	}
+	prerequisite = {
+		focus = USA_The_Forgotten_Allies
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	bypass = {
+		OR = {
+			has_country_flag = USA_puerto_plata_over
+			has_global_flag = PPI_ceasefire_happened
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_in_need_of_protection"
+		custom_effect_tooltip = USA_Fuck_Trujillo_tooltip
+		if = {
+			limit = {
+				OR = {
+					has_global_flag = PPI_proxy_war_preparation 
+					has_global_flag = PPI_landing_ongoing
+				}
+			}
+			set_temp_variable = { spy_strength_temp = 15 }
+			TNO_PP_spy_strength_increase_USA = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_global_flag = PPI_landing_ongoing }
+				set_temp_variable = { insurgency_strength_temp = 15 }
+				TNO_PP_insurgency_strength_increase = yes
+			}
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_The_Forgotten_Allies
+}
+
+shared_focus = {
+	id = USA_A_Meeting_With_Cassin
+	icon = GFX_a_meeting_with_cassin
+	cost = 5
+	ai_will_do = {
+		factor = 4
+	}
+	prerequisite = {
+		focus = USA_Fuck_Trujillo
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_A_Meeting_With_Cassin"
+		custom_effect_tooltip = USA_wac_boost
+		set_country_flag = USA_strengthened_FFR_ties
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Fuck_Trujillo
+}
+
+shared_focus = {
+	id = USA_Integrate_The_Support
+	icon = GFX_USA_Only_American_Future
+	cost = 5
+	prerequisite = {
+		focus = USA_A_Meeting_With_Cassin
+	}
+	prerequisite = {
+		focus = USA_Break_Open_The_Caches
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	bypass = {
+		has_global_flag = german_civil_war
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Integrate_The_Support"
+		custom_effect_tooltip = USA_integrate_support_tt
+		set_country_flag = USA_integrated_support_flag
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Break_Open_The_Caches
+}
+
+shared_focus = {
+	id = USA_the_south_african_plan
+	icon = GFX_USA_fuck_you_fedacking
+	cost = 5
+	prerequisite = {
+		focus = USA_Cracking_The_Steel_Curtain
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_south_african_plan"
+		country_event = { id = USA.ct.2 days = 3 }
+		custom_effect_tooltip = USA_south_african_plan_tooltip
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_Cracking_The_Steel_Curtain
+}
+
+shared_focus = {
+	id = USA_our_commitment_to_african_democracy
+	icon = GFX_USA_Our_Commitment_to_South_African_Democracy
+	cost = 5
+	ai_will_do = {
+		factor = 4
+	}
+	prerequisite = {
+		focus = USA_the_south_african_plan
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_our_commitment_to_african_democracy"
+		custom_effect_tooltip = USA_african_democracy_tooltip
+		add_war_support = 0.025
+		SAF = { add_war_support = 0.05 }
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_the_south_african_plan
+}
+
+shared_focus = {
+	id = USA_a_base_in_south_africa
+	icon = GFX_USA_Base_in_South_Africa
+	cost = 5
+	ai_will_do = {
+		factor = 3
+	}
+	prerequisite = {
+		focus = USA_our_commitment_to_african_democracy
+	}
+	prerequisite = {
+		focus = USA_business_ties
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_base_in_south_africa"
+		681 = {
+			add_building_construction = {
+				type = naval_base
+				level = 3
+				instant_build = yes
+				province = 13488
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = air_base
+				level = 4
+				instant_build = yes
+			}
+		}
+		set_country_flag = USA_SAF_commitments
+		custom_effect_tooltip = USA_SAF_commitments_loc
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_our_commitment_to_african_democracy
+}
+
+shared_focus = {
+	id = USA_business_ties
+	icon = GFX_American_Funding
+	cost = 5
+	ai_will_do = {
+		factor = 3
+	}
+	prerequisite = {
+		focus = USA_the_south_african_plan
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_business_ties"
+		SAF = {
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 10
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		custom_effect_tooltip = USA_SAF_commitments_growing_loc
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_the_south_african_plan
+}
+
+shared_focus = {
+	id = USA_South_Africa_Secured
+	icon = GFX_USA_CORDS
+	cost = 5
+	ai_will_do = {
+		factor = 4
+	}
+	prerequisite = {
+		focus = USA_a_base_in_south_africa
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_south_africa_in_the_OFN"
+		USA_add_5_HR_RDC_approval = yes
+		USA_add_5_RR_RDC_approval = yes
+		USA_add_5_LD_RDC_approval = yes
+		USA_add_5_DC_RDC_approval = yes
+		SAF = { add_stability = 0.025 add_war_support = 0.025 }
+		if = {
+			limit = { NOT = { has_global_flag = south_african_war_happening } }
+			country_event = { id = USA.ct.3 days = 4 }
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_a_base_in_south_africa
+}
+
+shared_focus = {
+	id = USA_Look_into_the_the_reformer
+	icon = GFX_USA_Speerian_Diplomacy
+	cost = 5
+	prerequisite = {
+		focus = USA_Integrate_The_Support
+	}
+	prerequisite = {
+		focus = USA_South_Africa_Secured
+	}
+	available = {
+		country_exists = SGR
+		has_global_flag = german_civil_war
+		US_doesnt_have_crisis = yes
+		custom_trigger_tooltip = {
+			tooltip = USA_not_passing_bill_tooltip
+			OR = {
+				US_has_no_bill_in_senate = yes
+				check_variable = { bill_id = 103 }
+			}
+		}
+	}
+	allow_branch = { # Remove if it breaks anything
+		country_exists = SGR
+		has_global_flag = german_civil_war
+		has_country_leader = { character = USA_Richard_Nixon ruling_only = yes }
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	select_effect = {
+		USA_bill_clear = yes
+		USA_Support_Speer_Act = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_silk_road_opens"
+		custom_effect_tooltip = USA_support_speer_tooltip
+		hidden_effect = { country_event = { id = USA_sen_bill.102 } }
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_South_Africa_Secured
+}
+
+shared_focus = {
+	id = USA_crack_the_sphere
+	icon = GFX_USA_Crack_the_Sphere
+	cost = 5
+	#prerequisite = {
+	#	focus = USA_nixon_cia
+	#}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_crack_the_sphere"
+		# Start off with a 5% chance for your shipments/fuckery to be detected
+		unlock_decision_category_tooltip = USA_destabilize_sphere_category
+		set_country_flag = USA_destabilize_sphere
+		set_variable = {
+			var = USA_destabilize_sphere_detection_chance
+			value = 0.05
+		}
+	}
+	x = -3
+	y = 1
+	#relative_position_id = USA_nixon_cia
+}
+
+shared_focus = {
+	id = USA_subvert_the_pakt
+	icon = GFX_USA_Subvert_the_Pact
+	cost = 5
+	#prerequisite = {
+	#	focus = USA_the_eastern_plan
+	#}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_subvert_the_pakt"
+		set_country_flag = USA_subvert_pakt
+		unlock_decision_category_tooltip = USA_subvert_pakt_category
+	}
+	x = 4
+	y = 1
+	#relative_position_id = USA_the_eastern_plan
+}
+
+shared_focus = {
+	id = USA_mother_britannia_needs_us
+	icon = GFX_USA_Mother_Britannia_Needs_Us
+	cost = 5
+	prerequisite = {
+		focus = USA_subvert_the_pakt
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		ENG = {
+			OR = {
+				NOT = {
+					#has_completed_focus = ENG_final_london_battle
+				}
+				NOT = {
+					#has_completed_focus = ENG_collab_battle_for_london
+				}
+			}
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+		ENG = {
+			OR = {
+				#has_completed_focus = ENG_final_london_battle
+				#has_completed_focus = ENG_collab_battle_for_london
+			}
+		}
+	}
+	#prerequisite = {
+	#	focus = USA_the_breton_route
+	#}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mother_britannia_needs_us"
+		add_political_power = 50
+		custom_effect_tooltip = USA_mother_britannia_needs_us_tt
+		add_to_variable = { rebellion = 5 }
+		custom_effect_tooltip = Rebellion_minor
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_subvert_the_pakt
+}
+
+shared_focus = {
+	id = USA_the_breton_connection
+	icon = GFX_BRT_The_Breton_Standard
+	cost = 5
+	prerequisite = {
+		focus = USA_mother_britannia_needs_us
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		ENG = {
+			OR = {
+				NOT = {
+					#has_completed_focus = ENG_final_london_battle
+				}
+				NOT = {
+					#has_completed_focus = ENG_collab_battle_for_london
+				}
+			}
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+		ENG = {
+			OR = {
+				#has_completed_focus = ENG_final_london_battle
+				#has_completed_focus = ENG_collab_battle_for_london
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_breton_connection"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1500
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = -600
+			producer = USA
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = USA_funds_diverted
+				}
+			}
+			add_timed_idea = {
+				idea = USA_funds_diverted
+				days = 180
+			}
+		}
+		custom_effect_tooltip = USA_the_breton_connection_tt
+		add_to_variable = { rebellion = 5 }
+		custom_effect_tooltip = Rebellion_minor
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_mother_britannia_needs_us
+}
+
+shared_focus = {
+	id = USA_arms_for_freedom
+	icon = GFX_ENG_arms_in_every_home
+	cost = 5
+	prerequisite = {
+		focus = USA_the_breton_connection
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		ENG = {
+			OR = {
+				NOT = {
+					#has_completed_focus = ENG_final_london_battle
+				}
+				NOT = {
+					#has_completed_focus = ENG_collab_battle_for_london
+				}
+			}
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+		ENG = {
+			OR = {
+				#has_completed_focus = ENG_final_london_battle
+				#has_completed_focus = ENG_collab_battle_for_london
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_arms_for_freedom"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -3000
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = -1000
+			producer = USA
+		}
+		custom_effect_tooltip = USA_arms_for_freedom_tt
+		add_to_variable = { rebellion = 5 }
+		custom_effect_tooltip = Rebellion_minor
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_breton_connection
+}
+
+shared_focus = {
+	id = USA_Canadian_Facilitation
+	icon = GFX_USA_canadian_facilitation
+	cost = 5
+	prerequisite = {
+		focus = USA_arms_for_freedom
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		ENG = {
+			OR = {
+				NOT = {
+					#has_completed_focus = ENG_final_london_battle
+				}
+				NOT = {
+					#has_completed_focus = ENG_collab_battle_for_london
+				}
+			}
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+		ENG = {
+			OR = {
+				#has_completed_focus = ENG_final_london_battle
+				#has_completed_focus = ENG_collab_battle_for_london
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Canadian_Facilitation"
+		add_political_power = -100
+		if = {
+			limit = {
+				NOT = {
+					has_idea = USA_funds_diverted
+				}
+			}
+			add_timed_idea = {
+				idea = USA_funds_diverted
+				days = 180
+			}
+		}
+		custom_effect_tooltip = USA_Canadian_Facilitation_tt
+		add_to_variable = { rebellion = 5 }
+		custom_effect_tooltip = Rebellion_minor
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_arms_for_freedom
+}
+
+shared_focus = {
+	id = USA_the_road_through_brittany
+	icon = GFX_IBR_open_road
+	cost = 5
+	#prerequisite = {
+	#	focus = USA_speerian_diplomacy
+	#}
+	available = {
+		US_doesnt_have_crisis = yes
+		custom_trigger_tooltip = {
+			tooltip = USA_support_speer_tooltip
+			country_exists = SGR
+		}
+		custom_trigger_tooltip = {
+			tooltip = USA_has_arms_shipment_tooltip
+			USA_has_arms_shipment = yes
+		}
+		OR = {
+			has_country_flag = USA_support_speer_hawks_support
+			has_country_flag = USA_support_speer_progressive_support
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_road_through_brittany"
+		send_equipment = {
+			equipment = anti_tank_equipment
+			amount = 400
+			target = SGR
+		}
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1000
+			target = SGR
+		}
+		BRT = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	x = 0
+	y = 1
+	#relative_position_id = USA_speerian_diplomacy
+}
+
+shared_focus = {
+	id = USA_print_more_books
+	icon = GFX_USA_Print_More_Books
+	cost = 5
+	prerequisite = {
+		focus = USA_the_road_through_brittany
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		custom_trigger_tooltip = {
+			tooltip = USA_support_speer_tooltip
+			country_exists = SGR
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_print_more_books"
+		SGR = {
+			add_war_support = 0.03
+			add_manpower = 10000
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_road_through_brittany
+}
+
+shared_focus = {
+	id = USA_freedom_packets
+	icon = GFX_end_arms_ban
+	cost = 5
+	prerequisite = {
+		focus = USA_print_more_books
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		custom_trigger_tooltip = {
+			tooltip = USA_support_speer_tooltip
+			country_exists = SGR
+		}
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_freedom_packets"
+		SGR = {
+			add_war_support = 0.03
+			add_manpower = 25000
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_print_more_books
+}
+
+shared_focus = {
+	id = USA_guns_for_germanys_heroes
+	icon = GFX_USA_Guns_for_Germany
+	cost = 5
+	prerequisite = {
+		focus = USA_freedom_packets
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+		custom_trigger_tooltip = {
+			tooltip = USA_support_speer_tooltip
+			country_exists = SGR
+		}
+		has_country_flag = USA_support_speer_senate_support
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	# send speer that good shit
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_guns_for_germanys_heroes"
+		set_country_flag = USA_support_speer_material
+		custom_effect_tooltip = USA_support_speer_material_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_freedom_packets
+}
+
+#shared_focus = {
+#	id = USA_o_triumvirate
+#	icon =
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_nixon_cia
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_o_triumvirate"
+#		unlock_decision_category_tooltip = USA_aid_triumvirate_category
+#		custom_effect_tooltip = USA_o_triumvirate_tooltip
+#		hidden_effect = {
+#			set_country_flag = USA_aid_triumvirate
+#		}
+#	}
+#	x = 51
+#	y = 5
+#} Fuck you todd why do you make me drink
+#
+## shared_focus = {
+## id = USA_the_iberian_miracle
+## icon = GFX_generic_money_handout
+## cost = 3.00
+## prerequisite = {
+## focus = USA_o_triumvirate
+## }
+## available = {
+## custom_trigger_tooltip = {
+## tooltip = USA_not_in_crisis_tooltip
+## NOT = { check_variable = { USA_crisis_counter > 0 } }
+## }
+## }
+## cancel = {
+## custom_trigger_tooltip = {
+## tooltip = USA_in_crisis_tooltip
+## check_variable = { USA_crisis_counter > 0 }
+## }
+## }
+## completion_reward = {
+## custom_effect_tooltip = USA_the_iberian_miracle_tooltip
+## }
+## x = 50
+## y = 5
+## }
+#shared_focus = {
+#	id = USA_infiltrate_advisors
+#	icon = GFX_research
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_o_triumvirate
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_infiltrate_advisors"
+#		custom_effect_tooltip = USA_infiltrate_advisors_tt
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = IBR.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 50
+#	y = 6
+#}
+#
+#shared_focus = {
+#	id = USA_exploit_regional_divides
+#	icon = GFX_generic_dangerous_deal
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_infiltrate_advisors
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_exploit_regional_divides"
+#		custom_effect_tooltip = USA_exploit_regional_divides_tt
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = IBR.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 50
+#	y = 7
+#}
+#
+#shared_focus = {
+#	id = USA_buddy_up_with_franco
+#	icon = GFX_USA_Buddy_Up_with_Franco
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_exploit_regional_divides
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_buddy_up_with_franco"
+#		custom_effect_tooltip = USA_buddy_up_with_franco_tt
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = IBR.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 50
+#	y = 8
+#}
+#
+#shared_focus = {
+#	id = USA_buddy_up_with_salazar
+#	icon = GFX_American_Funding
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_buddy_up_with_franco
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_buddy_up_with_salazar"
+#		custom_effect_tooltip = USA_buddy_up_with_salazar_tt
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = IBR.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 50
+#	y = 9
+#}
+#
+## shared_focus = {
+## id = USA_iberian_liberalization
+## icon =
+## cost = 3.00
+## prerequisite = {
+## focus = USA_buddy_up_with_franco
+## }
+## available = {
+## custom_trigger_tooltip = {
+## tooltip = USA_not_in_crisis_tooltip
+## NOT = { check_variable = { USA_crisis_counter > 0 } }
+## }
+## }
+## cancel = {
+## custom_trigger_tooltip = {
+## tooltip = USA_in_crisis_tooltip
+## check_variable = { USA_crisis_counter > 0 }
+## }
+## }
+## completion_reward = {
+## custom_effect_tooltip = USA_iberian_liberalization_tooltip
+## }
+## x = 50
+## y = 8
+##
+## }
+#shared_focus = {
+#	id = USA_brave_ciano
+#	icon = GFX_USA_Brave_Ciano
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_o_triumvirate
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_brave_ciano"
+#		custom_effect_tooltip = USA_brave_ciano_tooltip
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = ITA.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 52
+#	y = 6
+#}
+#
+#shared_focus = {
+#	id = USA_support_liberalization
+#	icon = GFX_TNO_generic_italy
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_brave_ciano
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_support_liberalization"
+#		custom_effect_tooltip = USA_support_liberalization_tooltip
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = ITA.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 52
+#	y = 7
+#}
+#
+#shared_focus = {
+#	id = USA_steady_our_friends
+#	icon = GFX_Generic_Global_Diplomacy
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_support_liberalization
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_steady_our_friends"
+#		custom_effect_tooltip = USA_steady_our_friends_tooltip
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = ITA.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 52
+#	y = 8
+#}
+#
+#shared_focus = {
+#	id = USA_polish_the_boot
+#	icon =
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_steady_our_friends
+#	}
+#	available = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_not_in_crisis_tooltip
+#			NOT = {
+#				check_variable = { USA_crisis_counter > 0 }
+#			}
+#		}
+#	}
+#	cancel = {
+#		custom_trigger_tooltip = {
+#			tooltip = USA_in_crisis_tooltip
+#			check_variable = { USA_crisis_counter > 0 }
+#		}
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_polish_the_boot"
+#		custom_effect_tooltip = USA_polish_the_boot_tooltip
+#		hidden_effect = {
+#			set_variable = {
+#				target_CIA_nation = ITA.id
+#			}
+#			USA_CIA_increase_political_influence = yes
+#		}
+#	}
+#	x = 52
+#	y = 9
+#}
+#
+## shared_focus = {
+## id = USA_arm_ciano
+## icon = GFX_IND_rifles_guns_cannons
+## cost = 3.00
+## prerequisite = {
+## focus = USA_support_liberalization
+## }
+## available = {
+## custom_trigger_tooltip = {
+## tooltip = USA_not_in_crisis_tooltip
+## NOT = { check_variable = { USA_crisis_counter > 0 } }
+## }
+## }
+## cancel = {
+## custom_trigger_tooltip = {
+## tooltip = USA_in_crisis_tooltip
+## check_variable = { USA_crisis_counter > 0 }
+## }
+## }
+## completion_reward = {
+## custom_effect_tooltip = USA_arm_ciano_tooltip
+## }
+## x = 52
+## y = 7
+##
+## }
+
+shared_focus = {
+	id = USA_desegregate_little_rock
+	icon = GFX_USA_Desegregate_The_Department_Of_Defense
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_handshake_with_mlk
+	}
+	prerequisite = {
+		focus = USA_discuss_with_southern_leaders
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_desegregate_little_rock"
+		custom_effect_tooltip = USA_desegregate_little_rock_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_the_handshake_with_mlk
+}
+
+shared_focus = {
+	id = USA_southern_riots
+	icon = GFX_USA_Southern_Riots
+	cost = 5.00
+	prerequisite = {
+		focus = USA_desegregate_little_rock
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_southern_riots"
+		custom_effect_tooltip = USA_southern_riots_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_desegregate_little_rock
+}
+
+shared_focus = {
+	id = USA_crack_down
+	icon = GFX_USA_crackdown
+	cost = 5.00
+	prerequisite = {
+		focus = USA_southern_riots
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_crack_down"
+		custom_effect_tooltip = USA_crack_down_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_southern_riots
+}
+
+shared_focus = {
+	id = USA_a_gentle_hand_across_america
+	icon = GFX_USA_A_Gentle_Hand_Across_America
+	cost = 5.00
+	prerequisite = {
+		focus = USA_southern_riots
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_gentle_hand_across_america"
+		custom_effect_tooltip = USA_a_gentle_hand_across_america_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_southern_riots
+}
+
+shared_focus = {
+	id = USA_unite_the_nation
+	icon = GFX_USA_african_american_south
+	cost = 5.00
+	prerequisite = {
+		focus = USA_a_gentle_hand_across_america
+	}
+	prerequisite = {
+		focus = USA_crack_down
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_unite_the_nation"
+		custom_effect_tooltip = USA_unite_the_nation_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_a_gentle_hand_across_america
+}
+
+shared_focus = {
+	id = USA_the_1962_civil_rights_act
+	icon = GFX_USA_1962_Bill_of_Rights
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = USA_the_kennedy_plan
+	ai_will_do = {
+		factor = 1.1
+	}
+	bypass = {
+		has_country_flag = nixon_neutral_pass
+	}
+	prerequisite = {
+		focus = USA_the_kennedy_plan
+	}
+	available = {
+		NOT = { has_country_flag = nixon_neutral_veto }
+		custom_trigger_tooltip = {
+			tooltip = USA_nixon_not_neutral_tooltip
+			NOT = {
+				has_country_flag = USA_nixon_neutral
+			}
+		}
+	}
+	cancel = {
+		has_country_flag = USA_nixon_neutral
+	}
+	select_effect = { USA_Civil_Rights_Act = yes }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_1962_civil_rights_act"
+		custom_effect_tooltip = USA_the_1962_civil_rights_act_tooltip
+		custom_effect_tooltip = USA_the_1962_civil_rights_act.tt
+		hidden_effect = {
+			country_event = { id = USA_sen_bill.101 days = 1}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_veto_the_civil_rights_act
+	icon = GFX_USA_Veto_the_Civil_Rights_Act
+	cost = 5
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = USA_crack_down_on_the_movement
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = USA_nixon_not_neutral_tooltip
+			NOT = {
+				has_country_flag = USA_nixon_neutral
+			}
+		}
+		NOT = { has_country_flag = nixon_neutral_pass }
+	}
+	bypass = {
+		has_country_flag = nixon_neutral_veto
+	}
+	cancel = {
+		has_country_flag = USA_nixon_neutral
+	}
+	select_effect = {
+		USA_Civil_Rights_Act = yes
+		clr_country_flag = RD_D_discussing
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_veto_the_civil_rights_act"
+		custom_effect_tooltip = USA_veto_the_civil_rights_act_tooltip
+		custom_effect_tooltip = USA_veto_the_civil_rights_act.tt
+		hidden_effect = {
+			every_country = { news_event = USA.68 }
+			set_country_flag = USA_civil_rights_blocked
+			clr_country_flag = USA_anti_civil_rights_demonstrations
+			USA_bill_clear = yes
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_crack_down_on_the_movement
+}
+
+
+shared_focus = {
+	id = USA_enforced_segregation
+	icon = GFX_USA_Enforce_Segregation
+	cost = 5.00
+	prerequisite = {
+		focus = USA_ban_further_rallies
+	}
+	prerequisite = {
+		focus = USA_break_further_rallies
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_enforced_segregation"
+		custom_effect_tooltip = USA_enforced_segregation_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_ban_further_rallies
+}
+
+
+shared_focus = {
+	id = USA_calm_the_hell_down
+	icon = GFX_USA_Calm_the_Hell_Down
+	cost = 5.00
+	prerequisite = {
+		focus = USA_enforced_segregation
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_calm_the_hell_down"
+		custom_effect_tooltip = USA_calm_the_hell_down_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_enforced_segregation
+}
+
+shared_focus = {
+	id = USA_withdraw_OFN_commitments
+	icon = GFX_USA_The_Pacific_Blitz_alt
+	cost = 5.00
+	prerequisite = {
+		focus = USA_america_for_america
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_withdraw_OFN_commitments"
+		custom_effect_tooltip = USA_withdraw_OFN_commitments_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_america_for_america
+}
+
+shared_focus = {
+	id = USA_raise_OFN_demands
+	icon = GFX_focus_MAD_the_OFNs_offer
+	cost = 5.00
+	prerequisite = {
+		focus = USA_withdraw_OFN_commitments
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_raise_OFN_demands"
+		custom_effect_tooltip = USA_raise_OFN_demands_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_withdraw_OFN_commitments
+}
+
+shared_focus = {
+	id = USA_review_the_akagi_accords
+	icon = GFX_IND_india_diplomatic_usa
+	cost = 5.00
+	prerequisite = {
+		focus = USA_withdraw_OFN_commitments
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_review_the_akagi_accords"
+		custom_effect_tooltip = USA_review_akagi_accords_tooltip
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_withdraw_OFN_commitments
+}
+
+shared_focus = {
+	id = USA_withdraw_american_soldiers
+	icon = GFX_USA_Withdraw_American_Soldiers
+	cost = 5.00
+	prerequisite = {
+		focus = USA_raise_OFN_demands
+	}
+	prerequisite = {
+		focus = USA_review_the_akagi_accords
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_withdraw_american_soldiers"
+		custom_effect_tooltip = USA_withdraw_american_soldiers_tooltip
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_review_the_akagi_accords
+}
+
+shared_focus = {
+	id = USA_affirm_international_neutrality
+	icon = GFX_generic_diplomacy_peace
+	cost = 5.00
+	prerequisite = {
+		focus = USA_withdraw_american_soldiers
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_affirm_international_neutrality"
+		custom_effect_tooltip = USA_affirm_international_neutrality_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_withdraw_american_soldiers
+}
+
+shared_focus = {
+	id = USA_an_only_american_future
+	icon = GFX_USA_Only_American_Future
+	cost = 5.00
+	prerequisite = {
+		focus = USA_affirm_international_neutrality
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_an_only_american_future"
+		custom_effect_tooltip = USA_only_american_future_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_affirm_international_neutrality
+}
+
+shared_focus = {
+	id = USA_withdraw_from_the_OFN
+	icon = GFX_AST_fate_of_ofn
+	cost = 5.00
+	prerequisite = {
+		focus = USA_an_only_american_future
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_withdraw_from_the_OFN"
+		custom_effect_tooltip = USA_withdraw_from_OFN_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_an_only_american_future
+}
+
+shared_focus = {
+	id = USA_get_them_onboard
+	icon = GFX_generic_diplomacy_defense
+	cost = 5.00
+	prerequisite = {
+		focus = USA_the_last_light_of_freedom_will_burn_on
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_get_them_onboard"
+		custom_effect_tooltip = USA_get_them_onboard_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_last_light_of_freedom_will_burn_on
+}
+
+shared_focus = {
+	id = USA_cautious_policy
+	icon = GFX_ENG_Export_To_The_OFN
+	cost = 5.00
+	prerequisite = {
+		focus = USA_get_them_onboard
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cautious_policy"
+		custom_effect_tooltip = USA_cautious_policy_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_get_them_onboard
+}
+
+shared_focus = {
+	id = USA_naval_fortresses
+	icon = GFX_KOM_new_northern_fleet
+	cost = 5.00
+	prerequisite = {
+		focus = USA_cautious_policy
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_naval_fortresses"
+		custom_effect_tooltip = USA_naval_fortresses_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_cautious_policy
+}
+
+shared_focus = {
+	id = USA_reassure_dixiecrats
+	icon = GFX_USA_Reassure_Dixiecrats
+	cost = 5.00
+	prerequisite = {
+		focus = USA_campaign_in_the_south
+	}
+	prerequisite = {
+		focus = USA_campaign_in_the_west
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reassure_dixiecrats"
+		custom_effect_tooltip = USA_reassure_dixiecrats_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_campaign_in_the_south
+}
+
+shared_focus = {
+	id = USA_reestablish_the_party
+	icon = GFX_USA_Reestablish_Party
+	cost = 5.00
+	prerequisite = {
+		focus = USA_calm_the_progressives
+	}
+	prerequisite = {
+		focus = USA_reassure_dixiecrats
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reestablish_the_party"
+		custom_effect_tooltip = USA_add_RD_unity
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_calm_the_progressives
+}
+
+
+shared_focus = {
+	id = USA_investigate_NPP_corruption
+	icon = GFX_USA_Investigate_NPP_Corruption
+	cost = 5.00
+	prerequisite = {
+		focus = USA_reestablish_the_party
+	}
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_investigate_NPP_corruption"
+		custom_effect_tooltip = USA_investigate_NPP_corruption_tooltip
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_reestablish_the_party
+}
+
+#########################
+#   JFK SAVES AMERICA   #
+#########################
+shared_focus = {
+	id = USA_the_jfk_presidency
+	icon = GFX_USA_JFK
+	cost = 3.00
+	allow_branch = {
+		has_country_flag = USA_JFK_is_president
+		NOT = {
+			has_country_flag = USA_JFK_killed
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_jfk_presidency"
+		add_political_power = 100
+		subtract_from_variable = { USA_crisis_counter = 1 }
+	}
+	x = 8
+	y = 0
+}
+
+shared_focus = {
+	id = USA_jfk_mend_the_rifts
+	icon = GFX_USA_Tape_Together_the_Seams
+	cost = 2.00
+	prerequisite = {
+		focus = USA_the_jfk_presidency
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_mend_the_rifts"
+		USA_add_5_LD_RDC_approval = yes
+		USA_add_5_DC_RDC_approval = yes
+		USA_add_5_RR_RDC_approval = yes
+		USA_add_5_HR_RDC_approval = yes
+	}
+	x = -4
+	y = 1
+	relative_position_id = USA_the_jfk_presidency
+}
+
+shared_focus = {
+	id = USA_jfk_fucking_dixiecrats
+	icon = GFX_USA_Reassure_Dixiecrats
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_mend_the_rifts
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_fucking_dixiecrats"
+		custom_effect_tooltip = USA_rural_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_dem = 2 }
+		add_to_variable = { Demographic_Shift_rural_dem_Weeks = USA_week_change_rural_dem }
+		set_temp_variable = { USA_BONUS_rural_dem_val = .03 }
+		custom_effect_tooltip = USA_rural_dem_shift
+		custom_effect_tooltip = USA_bonus_tooltip
+		set_temp_variable = { USA_week_change_rural_civil_rights_con = 6 }
+		add_to_variable = { Policy_Shift_rural_civil_rights_con_Weeks = USA_week_change_rural_civil_rights_con }
+		custom_effect_tooltip = USA_rural_civil_rights_con
+		custom_effect_tooltip = USA_nativists_voters_header_tt
+		set_temp_variable = { USA_week_change_nativists_dem = 2 }
+		add_to_variable = { Demographic_Shift_nativists_dem_Weeks = USA_week_change_nativists_dem }
+		set_temp_variable = { USA_BONUS_nativists_dem_val = .02 }
+		custom_effect_tooltip = USA_nativists_dem_shift
+		custom_effect_tooltip = USA_bonus_tooltip
+
+		USA_add_5_DC_RDC_approval = yes
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_jfk_mend_the_rifts
+}
+
+shared_focus = {
+	id = USA_jfk_fucking_progressives
+	icon = GFX_USA_Last_Light_of_Freedom
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_mend_the_rifts
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_fucking_progressives"
+		custom_effect_tooltip = USA_urban_voters_header_tt
+		set_temp_variable = { USA_week_change_urban_dem = 2 }
+		add_to_variable = { Demographic_Shift_urban_dem_Weeks = USA_week_change_urban_dem }
+		set_temp_variable = { USA_BONUS_urban_dem_val = .03 }
+		custom_effect_tooltip = USA_urban_dem_shift
+		USA_add_5_LD_RDC_approval = yes
+
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_jfk_mend_the_rifts
+}
+
+shared_focus = {
+	id = USA_jfk_one_last_chance
+	icon = GFX_USA_duty_to_country
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_fucking_progressives
+	}
+	prerequisite = {
+		focus = USA_jfk_fucking_dixiecrats
+	}
+	prerequisite = {
+		focus = USA_jfk_meet_with_politicians
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_one_last_chance"
+		custom_effect_tooltip = USA_add_NPP_unity
+		add_to_variable = { USA_NPP_Unity = 1 }
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_jfk_fucking_progressives
+}
+
+shared_focus = {
+	id = USA_jfk_bring_back_the_npp
+	icon = GFX_USA_Investigate_NPP_Corruption
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_one_last_chance
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_bring_back_the_npp"
+		custom_effect_tooltip = USA_rural_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_nat = 3 }
+		add_to_variable = { Demographic_Shift_rural_rep_Weeks = USA_week_change_rural_nat }
+		set_temp_variable = { USA_BONUS_rural_nat_val = .01 }
+		custom_effect_tooltip = USA_rural_nat_shift
+		custom_effect_tooltip = USA_urban_voters_header_tt
+		set_temp_variable = { USA_week_change_urban_pro = 3 }
+		add_to_variable = { Demographic_Shift_urban_pro_Weeks = USA_week_change_urban_pro }
+		set_temp_variable = { USA_BONUS_urban_pro_val = .04 }
+		custom_effect_tooltip = USA_urban_pro_shift
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_jfk_one_last_chance
+}
+
+shared_focus = {
+	id = USA_jfk_save_the_country
+	icon = GFX_USA_A_Great_Society
+	cost = 2.00
+	prerequisite = {
+		focus = USA_the_jfk_presidency
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_save_the_country"
+		add_stability = 0.03
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_the_jfk_presidency
+}
+
+shared_focus = {
+	id = USA_jfk_meet_with_politicians
+	icon = GFX_IND_reluctant_cooperation
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_save_the_country
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_meet_with_politicians"
+		USA_add_5_DC_RDC_approval = yes
+		USA_add_5_LD_RDC_approval = yes
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_jfk_save_the_country
+}
+
+shared_focus = {
+	id = USA_jfk_meet_with_people
+	icon = GFX_Generic_Minority_Affairs
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_save_the_country
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_meet_with_people"
+		add_political_power = 50		
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_jfk_save_the_country
+}
+
+shared_focus = {
+	id = USA_jfk_put_out_fires
+	icon = GFX_USA_Nationwide_Riots
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_meet_with_people
+	}
+	prerequisite = {
+		focus = USA_jfk_meet_with_politicians
+	}
+	cancel = {
+		OR = {
+			US_has_crisis = yes
+			has_country_flag = USA_JFK_killed
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_put_out_fires"
+		custom_effect_tooltip = USA_all_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_dem = 4 }
+		add_to_variable = { Demographic_Shift_rural_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_urban_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_black_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_hispanic_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_minority_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_union_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_nativists_dem_Weeks = USA_week_change_rural_dem }
+		custom_effect_tooltip = USA_rural_dem_shift
+		set_temp_variable = { USA_week_change_rural_rep = 4 }
+		add_to_variable = { Demographic_Shift_rural_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_urban_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_black_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_hispanic_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_minority_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_union_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_nativists_rep_Weeks = USA_week_change_rural_rep }
+		custom_effect_tooltip = USA_rural_rep_shift
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_jfk_meet_with_people
+}
+
+shared_focus = {
+	id = USA_jfk_one_nation
+	icon = GFX_USA_anti_segregation_propaganda
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_put_out_fires
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_one_nation"
+		custom_effect_tooltip = jfk_one_nation_tt
+		add_to_variable = { USA_unity = 1 }
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_jfk_put_out_fires
+}
+
+shared_focus = {
+	id = USA_jfk_heal_the_people
+	icon = GFX_Generic_Bill_of_Rights
+	cost = 2.00
+	prerequisite = {
+		focus = USA_the_jfk_presidency
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_heal_the_people"
+		USA_add_5_HR_RDC_approval = yes
+		USA_add_5_RR_RDC_approval = yes
+		USA_add_5_LD_RDC_approval = yes
+		USA_add_5_DC_RDC_approval = yes
+	}
+	x = 4
+	y = 1
+	relative_position_id = USA_the_jfk_presidency
+}
+
+shared_focus = {
+	id = USA_jfk_shake_on_it
+	icon = GFX_Generic_Liberty_Handshake
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_heal_the_people
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_shake_on_it"
+		custom_effect_tooltip = USA_rural_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_nat = 3 }
+		add_to_variable = { Demographic_Shift_rural_rep_Weeks = USA_week_change_rural_nat }
+		set_temp_variable = { USA_BONUS_rural_nat_val = .02 }
+		custom_effect_tooltip = USA_rural_nat_shift
+	}
+	x = 1
+	y = 2
+	relative_position_id = USA_jfk_heal_the_people
+}
+
+shared_focus = {
+	id = USA_jfk_swear_on_it
+	icon = GFX_USA_Promise_What_They_Want
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_heal_the_people
+	}
+	prerequisite = {
+		focus = USA_jfk_meet_with_people
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_swear_on_it"
+		
+		custom_effect_tooltip = USA_urban_voters_header_tt
+		set_temp_variable = { USA_week_change_urban_pro = 4 }
+		set_temp_variable = { USA_BONUS_urban_pro_val = .03 }
+		add_to_variable = { Demographic_Shift_urban_pro_Weeks = USA_week_change_urban_pro }
+		custom_effect_tooltip = USA_urban_pro_shift
+		
+		custom_effect_tooltip = USA_rural_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_pro = 2 }
+		set_temp_variable = { USA_BONUS_rural_pro_val = .03 }
+		add_to_variable = { Demographic_Shift_rural_pro_Weeks = USA_week_change_rural_pro }
+		custom_effect_tooltip = USA_rural_pro_shift
+		
+	}
+	x = -1
+	y = 2
+	relative_position_id = USA_jfk_heal_the_people
+}
+
+shared_focus = {
+	id = USA_jfk_rolling_wake_of_change
+	icon = GFX_USA_Turn_the_People
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_swear_on_it
+	}
+	prerequisite = {
+		focus = USA_jfk_shake_on_it
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_rolling_wake_of_change"
+		USA_add_5_LD_RDC_approval = yes
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_jfk_swear_on_it
+}
+
+shared_focus = {
+	id = USA_jfk_brighter_future
+	icon = GFX_USA_Civil_Rights_Act_Deluxe
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_rolling_wake_of_change
+	}
+	prerequisite = {
+		focus = USA_jfk_one_nation
+	}
+	prerequisite = {
+		focus = USA_jfk_bring_back_the_npp
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_brighter_future"
+		custom_effect_tooltip = USA_jfk_brighter_future_tt
+	}
+	x = -4
+	y = 1
+	relative_position_id = USA_jfk_rolling_wake_of_change
+}
+
+shared_focus = {
+	id = USA_jfk_the_eagle_soars
+	icon = GFX_USA_Crying_Eagle
+	cost = 3.00
+	prerequisite = {
+		focus = USA_jfk_brighter_future
+	}
+	cancel = {
+		US_has_crisis = yes
+		has_country_flag = USA_JFK_killed
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jfk_the_eagle_soars"
+		custom_effect_tooltip = USA_jfk_the_eagle_soars_tt
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_jfk_brighter_future
+}
+
+###################################
+# MCCORMACK TRIES TO STOP THE NPP #
+###################################
+shared_focus = {
+	id = USA_mccormack_against_the_npp
+	icon = GFX_USA_McCormack_Presidency
+	cost = 1.00
+	allow_branch = {
+		has_country_flag = mccormack_against_npp
+		NOT = { has_country_flag = USA_JFK_is_president }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_against_the_npp"
+		country_event = { id = RD_mccormack.1 }
+		add_stability = 0.01
+		subtract_from_variable = { USA_crisis_counter = 1 }
+		clamp_variable = { var = USA_crisis_counter min = 0 }
+	}
+	x = 19
+	y = 0
+}
+
+shared_focus = {
+	id = USA_mccormack_remain_calm
+	icon = GFX_USA_Nationwide_Riots
+	cost = 1.00
+	prerequisite = { focus = USA_mccormack_against_the_npp }
+	relative_position_id = USA_mccormack_against_the_npp
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_remain_calm"
+		USA_add_5_DC_RDC_approval = yes
+		USA_add_5_LD_RDC_approval = yes
+		USA_add_5_RR_RDC_approval = yes
+		USA_add_5_HR_RDC_approval = yes
+	}
+}
+shared_focus = {
+	id = USA_mccormack_healing_nation
+	icon = GFX_USA_Healing_the_Nation
+	cost = 1.00
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_mccormack_remain_calm }
+	relative_position_id = USA_mccormack_remain_calm
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_healing_nation"
+		add_political_power = 40
+		add_stability = 0.01
+	}
+}
+shared_focus = {
+	id = USA_mccormack_moving_past_nixon
+	icon = GFX_USA_One_foot_in_front_of_another
+	cost = 2.00
+	x = -4
+	y = 1
+	prerequisite = { focus = USA_mccormack_healing_nation }
+	relative_position_id = USA_mccormack_healing_nation
+	mutually_exclusive = { focus = USA_mccormack_saving_nixon }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_moving_past_nixon"
+		custom_effect_tooltip = USA_mccormack_save_rds
+		custom_effect_tooltip = USA_all_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_dem = 1 }
+		add_to_variable = { Demographic_Shift_rural_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_urban_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_black_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_hispanic_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_minority_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_union_dem_Weeks = USA_week_change_rural_dem }
+		add_to_variable = { Demographic_Shift_nativists_dem_Weeks = USA_week_change_rural_dem }
+		custom_effect_tooltip = USA_rural_dem_shift
+		set_temp_variable = { USA_week_change_rural_rep = 1 }
+		add_to_variable = { Demographic_Shift_rural_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_urban_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_black_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_hispanic_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_minority_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_union_rep_Weeks = USA_week_change_rural_rep }
+		add_to_variable = { Demographic_Shift_nativists_rep_Weeks = USA_week_change_rural_rep }
+		custom_effect_tooltip = USA_rural_rep_shift
+	}
+}
+shared_focus = {
+	id = USA_mccormack_speaker_of_the_white_house
+	icon = GFX_USA_duty_to_country
+	cost = 2.00
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_mccormack_moving_past_nixon }
+	relative_position_id = USA_mccormack_moving_past_nixon
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_speaker_of_the_white_house"
+		custom_effect_tooltip = USA_urban_voters_header_tt
+		set_temp_variable = { USA_week_change_urban_rep = 2 }
+		add_to_variable = { Demographic_Shift_urban_rep_Weeks = USA_week_change_urban_rep }
+		custom_effect_tooltip = USA_urban_rep_shift
+		set_temp_variable = { USA_week_change_urban_dem = 2 }
+		add_to_variable = { Demographic_Shift_urban_dem_Weeks = USA_week_change_urban_dem }
+		custom_effect_tooltip = USA_urban_dem_shift
+	}
+}
+shared_focus = {
+	id = USA_mccormack_curb_radicalism
+	icon = GFX_USA_Against_the_NPP
+	cost = 2.00
+	x = 1
+	y = 1
+	prerequisite = { focus = USA_mccormack_speaker_of_the_white_house }
+	relative_position_id = USA_mccormack_speaker_of_the_white_house
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_curb_radicalism"
+		custom_effect_tooltip = USA_rural_voters_header_tt
+		set_temp_variable = { USA_week_change_rural_dem = 2 }
+		add_to_variable = { Demographic_Shift_nativists_dem_Weeks = USA_week_change_rural_dem }
+		custom_effect_tooltip = USA_rural_dem_shift
+	}
+}
+shared_focus = {
+	id = USA_mccormack_saving_nixon
+	icon = GFX_USA_Campaign_Trail
+	cost = 2.00
+	x = 4
+	y = 1
+	prerequisite = { focus = USA_mccormack_healing_nation }
+	relative_position_id = USA_mccormack_healing_nation
+	mutually_exclusive = { focus = USA_mccormack_moving_past_nixon }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_saving_nixon"
+		custom_effect_tooltip = USA_mccormack_saving_nixon_path
+		add_war_support = 0.03
+	}
+}
+shared_focus = {
+	id = USA_mccormack_african_gamble
+	icon = GFX_SAF_for_south_africa
+	cost = 2.00
+	cancel = {
+		custom_trigger_tooltip = {
+			tooltip = USA_mccormack_saf_over
+			NOT = { has_global_flag = south_african_war_happening }
+		}
+	}
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_mccormack_saving_nixon }
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = USA_mccormack_saf_over
+			NOT = { has_global_flag = south_african_war_happening }
+		}
+	}
+	relative_position_id = USA_mccormack_saving_nixon
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_african_gamble"
+		country_event = { id = RD_mccormack.2 }
+		add_timed_idea = { idea = USA_mccormack_african_gamble_idea days = 60 }
+	}
+}
+shared_focus = {
+	id = USA_mccormack_home_by_chrsitmas
+	icon = GFX_USA_The_Pacific_Blitz_alt
+	cost = 2.00
+	cancel = {
+		custom_trigger_tooltip = {
+			tooltip = USA_mccormack_saf_over
+			NOT = { has_global_flag = south_african_war_happening }
+		}
+	}
+	x = -1
+	y = 1
+	prerequisite = { focus = USA_mccormack_african_gamble }
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = USA_mccormack_saf_over
+			NOT = { has_global_flag = south_african_war_happening }
+		}
+	}
+	relative_position_id = USA_mccormack_african_gamble
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_home_by_chrsitmas"
+		add_timed_idea = { idea = USA_mccormack_home_by_christmas_idea days = 60 }
+	}
+}
+shared_focus = {
+	id = USA_mccormack_soul_in_torment
+	icon = GFX_USA_Toe_the_Middle_Line
+	cost = 2.00
+	x = -1
+	y = 2
+	prerequisite = { focus = USA_mccormack_healing_nation }
+	relative_position_id = USA_mccormack_healing_nation
+	mutually_exclusive = { focus = USA_mccormack_he_was_a_crock }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_soul_in_torment"
+		custom_effect_tooltip = USA_pardon_nixon_warning
+		hidden_effect = {
+			set_country_flag = USA_pardoned_nixon
+			set_temp_variable = { USA_week_change_rural_pro = 4 }
+			add_to_variable = { Demographic_Shift_rural_pro_Weeks = USA_week_change_rural_pro }
+			add_to_variable = { Demographic_Shift_urban_pro_Weeks = USA_week_change_rural_pro }
+			add_to_variable = { Demographic_Shift_black_pro_Weeks = USA_week_change_rural_pro }
+			add_to_variable = { Demographic_Shift_hispanic_pro_Weeks = USA_week_change_rural_pro }
+			add_to_variable = { Demographic_Shift_minority_pro_Weeks = USA_week_change_rural_pro }
+			add_to_variable = { Demographic_Shift_union_pro_Weeks = USA_week_change_rural_pro }
+			add_to_variable = { Demographic_Shift_nativists_pro_Weeks = USA_week_change_rural_pro }
+		}
+	}
+}
+shared_focus = {
+	id = USA_mccormack_he_was_a_crock
+	icon = GFX_USA_Angry_Nixon
+	cost = 2.00
+	x = 1
+	y = 2
+	prerequisite = { focus = USA_mccormack_healing_nation }
+	relative_position_id = USA_mccormack_healing_nation
+	mutually_exclusive = { focus = USA_mccormack_soul_in_torment }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_he_was_a_crock"
+		custom_effect_tooltip = USA_condemn_nixon_warning
+		hidden_effect = {
+			set_country_flag = USA_condemned_nixon
+			set_temp_variable = { USA_week_change_rural_nat = 4 }
+			add_to_variable = { Demographic_Shift_rural_nat_Weeks = USA_week_change_rural_nat }
+			add_to_variable = { Demographic_Shift_urban_nat_Weeks = USA_week_change_rural_nat }
+			add_to_variable = { Demographic_Shift_black_nat_Weeks = USA_week_change_rural_nat }
+			add_to_variable = { Demographic_Shift_hispanic_nat_Weeks = USA_week_change_rural_nat }
+			add_to_variable = { Demographic_Shift_minority_nat_Weeks = USA_week_change_rural_nat }
+			add_to_variable = { Demographic_Shift_union_nat_Weeks = USA_week_change_rural_nat }
+			add_to_variable = { Demographic_Shift_nativists_nat_Weeks = USA_week_change_rural_nat }
+		}
+	}
+}
+shared_focus = {
+	id = USA_mccormack_passing_of_the_torch
+	icon = GFX_USA_get_in_loser_were_saving_america
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mccormack_soul_in_torment
+		focus = USA_mccormack_he_was_a_crock
+	}
+	prerequisite = {
+		focus = USA_mccormack_home_by_chrsitmas
+		focus = USA_mccormack_curb_radicalism
+	}
+	x = 0
+	y = 4
+	relative_position_id = USA_mccormack_healing_nation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mccormack_passing_of_the_torch"
+		country_event = { id = RD_mccormack.3 }
+		add_political_power = 50
+		add_stability = 0.02
+	}
+}
+
+
+
+# post-'64 SAW Tree
+shared_focus = {
+	id = USA_SAW_Inherited_Duty
+	icon = GFX_USA_SAW_Inherited_Duty
+	cost = 1
+	x = 27
+	y = 0
+	offset = {
+		x = 0
+		y = 0
+		trigger = {
+			has_government = conservatism
+		}
+	}
+	offset = {
+		x = 3
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	offset = {
+		x = 4
+		y = 1
+		trigger = {
+			has_government = progressivism
+		}
+	}
+	offset = {
+		x = 30
+		y = 1
+		trigger = {
+			has_government = paternalism
+		}
+	}
+	allow_branch = {
+		has_country_flag = USA_show_south_africa_tree
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Inherited_Duty"
+		custom_effect_tooltip = USA_SAW_Inherited_Duty_tt
+	}
+}
+shared_focus = {
+	id = USA_SAW_Recruitment_Surge
+	icon = GFX_USA_SAW_Recruitment_Surge
+	cost = 1
+
+	x = -2
+	y = 1
+	relative_position_id = USA_SAW_Inherited_Duty
+
+	prerequisite = {
+		focus = USA_SAW_Inherited_Duty
+	}
+
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Recruitment_Surge"
+
+		USA_increase_hawkishness_small = yes
+
+		set_temp_variable = { proxy = SAW }
+		USA_decrease_service_manpower_depletion_rate_small = yes
+	}
+}
+shared_focus = {
+	id = USA_SAW_Support_Allies
+	icon = GFX_USA_SAW_Support_Allies
+	cost = 1
+	x = 2
+	y= 1
+	relative_position_id = USA_SAW_Inherited_Duty
+	prerequisite = {
+		focus = USA_SAW_Inherited_Duty
+	}
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Support_Allies"
+
+		add_command_power = 25
+		custom_effect_tooltip = USA_SAW_Support_Allies_tt
+		set_country_flag = USA_SAW_support_decisions_enabled
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1250
+			target = SAF
+		}
+		send_equipment = {
+			equipment = support_equipment
+			amount = 110
+			target = SAF
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Expand_Media_Coverage
+	icon = GFX_USA_SAW_Expand_Media_Coverage
+	cost = 1
+	x = -1
+	y = 1
+	relative_position_id = USA_SAW_Recruitment_Surge
+	prerequisite = {
+		focus = USA_SAW_Recruitment_Surge
+	}
+
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Expand_Media_Coverage"
+
+		add_war_support = 0.025
+		country_event = {
+			id = SAF_USA.7
+			days = 2
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Universal_Service_Act
+	icon = GFX_USA_SAW_Universal_Service_Act
+	cost = 3
+	x = 2
+	y = 1
+	relative_position_id = USA_SAW_Recruitment_Surge
+	prerequisite = {
+		focus = USA_SAW_Recruitment_Surge
+	}
+	prerequisite = {
+		focus = USA_SAW_Support_Allies
+	}
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Universal_Service_Act"
+
+		set_temp_variable = { target = SAF }
+		hidden_effect = { TNO_increase_volunteer_cap_1 = yes }
+		custom_effect_tooltip = "TNO_increase_volunteers_SAF_1"
+
+		custom_effect_tooltip = USA_SAW_Universal_Service_Act_tt
+
+		set_temp_variable = { proxy = SAW }
+		USA_decrease_service_manpower_depletion_rate_medium = yes
+	}
+}
+shared_focus = {
+	id = USA_SAW_Ramp_Up_Production
+	icon = GFX_USA_SAW_Ramp_Up_Production
+	cost = 1
+
+	relative_position_id = USA_SAW_Support_Allies
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = USA_SAW_Support_Allies
+	}
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = conservatism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Ramp_Up_Production"
+
+		USA_increase_trust_in_government_small = yes
+		add_timed_idea = {
+			idea = USA_SAW_war_industries_mobilized
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_SAW_Break_Front
+	icon = GFX_USA_SAW_Break_Front
+	cost = 3
+
+	relative_position_id = USA_SAW_Expand_Media_Coverage
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_SAW_Expand_Media_Coverage }
+	prerequisite = { focus = USA_SAW_Universal_Service_Act }
+	prerequisite = { focus = USA_SAW_Ramp_Up_Production }
+
+	mutually_exclusive = { focus = USA_SAW_Escalate_Air_War }
+
+	ai_will_do = { factor = 80 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Break_Front"
+
+		set_country_flag = USA_SAW_Break_Front_flag
+		add_war_support = 0.025
+		USA_increase_optics_medium = yes
+		custom_effect_tooltip = USA_SAW_Break_Front_tt
+		add_ideas = USA_SAW_breaking_thru_front_1
+		every_country = {
+			limit = {
+				OR = {
+					tag = SAF
+					tag = CAN
+					tag = NZL
+					tag = AST
+					AND = {
+						tag = BRA
+						NOT = { has_country_flag = BRA_withdrew_from_saw }
+					}
+				}
+			}
+			add_ideas = USA_SAW_breaking_thru_front_1
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Applying_Lessons
+	icon = GFX_USA_SAW_Applying_Lessons
+	cost = 2
+
+	relative_position_id = USA_SAW_Break_Front
+	x = -2
+	y = 1
+	prerequisite = { focus = USA_SAW_Break_Front }
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Applying_Lessons"
+
+		army_experience = 25
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.33
+			uses = 2
+			category = land_doctrine
+		}
+		add_tech_bonus = {
+			name = USA_heliborne_research_tb
+			bonus = 0.25
+			uses = 1
+			category = helicopter
+		}
+		USA_fopo_improve_breakfront_natspirit = yes
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAF
+						tag = CAN
+						tag = NZL
+						tag = AST
+						AND = {
+							tag = BRA
+							NOT = { has_country_flag = BRA_withdrew_from_saw }
+						}
+					}
+				}
+				USA_fopo_improve_breakfront_natspirit = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Hand_In_Hand
+	icon = GFX_USA_SAW_Hand_In_Hand
+	cost = 2
+
+	relative_position_id = USA_SAW_Break_Front
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_SAW_Break_Front }
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Hand_In_Hand"
+
+		add_command_power = 30
+		USA_increase_optics_small = yes
+		custom_effect_tooltip = USA_add_OFN_unity
+		add_to_variable = { OFN_unity = 1 }
+		USA_fopo_improve_breakfront_natspirit = yes
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAF
+						tag = CAN
+						tag = NZL
+						tag = AST
+						AND = {
+							tag = BRA
+							NOT = { has_country_flag = BRA_withdrew_from_saw }
+						}
+					}
+				}
+				USA_fopo_improve_breakfront_natspirit = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Order_Disorder
+	icon = GFX_USA_SAW_Order_Disorder
+	cost = 3
+
+	relative_position_id = USA_SAW_Hand_In_Hand
+	x = -1
+	y = 1
+	prerequisite = { focus = USA_SAW_Applying_Lessons }
+	prerequisite = { focus = USA_SAW_Hand_In_Hand }
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Order_Disorder"
+
+		USA_increase_trust_in_government_medium = yes
+		custom_effect_tooltip = USA_SAW_Order_Disorder_tt
+		custom_effect_tooltip = USA_SAW_Order_Disorder_tt_2
+		USA_fopo_improve_breakfront_natspirit = yes
+		hidden_effect = {
+			set_country_flag = SAW_large_shipments_enabled
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAF
+						tag = CAN
+						tag = NZL
+						tag = AST
+						AND = {
+							tag = BRA
+							NOT = { has_country_flag = BRA_withdrew_from_saw }
+						}
+					}
+				}
+				USA_fopo_improve_breakfront_natspirit = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_SAW_Escalate_Air_War
+	icon = GFX_USA_SAW_Escalate_Air_War
+	cost = 2
+
+	relative_position_id = USA_SAW_Ramp_Up_Production
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_SAW_Expand_Media_Coverage }
+	prerequisite = { focus = USA_SAW_Universal_Service_Act }
+	prerequisite = { focus = USA_SAW_Ramp_Up_Production }
+
+	mutually_exclusive = { focus = USA_SAW_Break_Front }
+
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = paternalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Escalate_Air_War"
+		add_war_support = 0.025
+		USA_increase_trust_in_government_medium = yes
+		add_ideas = USA_SAW_controlling_skies
+		if = {
+			limit = {
+				OR = {
+					has_government = liberalism
+					has_government = conservatism
+				}
+			}
+			country_event = { id = RD_SAF.4 days = 2 }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = SAF
+					tag = CAN
+					tag = NZL
+					tag = AST
+					AND = {
+						tag = BRA
+						NOT = { has_country_flag = BRA_withdrew_from_saw }
+					}
+				}
+			}
+			add_ideas = USA_SAW_controlling_skies
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Monsoon_Rain
+	icon = GFX_USA_SAW_Monsoon_Rain
+	cost = 2
+
+	relative_position_id = USA_SAW_Escalate_Air_War
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_SAW_Escalate_Air_War }
+	mutually_exclusive = { focus = USA_SAW_Support_Role }
+	ai_will_do = {
+		factor = 80
+		modifier = {
+			factor = 4
+			has_government = paternalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Monsoon_Rain"
+		USA_increase_trust_in_government_small = yes
+		USA_decrease_optics_medium = yes
+		custom_effect_tooltip = USA_SAW_Monsoon_Rain_tt
+		set_country_flag = USA_SAW_Operation_Monsoon_enabled
+		swap_ideas = {
+			remove_idea = USA_SAW_controlling_skies
+			add_idea = USA_SAW_controlling_skies_bombing_1
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+					}
+				}
+				country_event = { id = RD_SAF.5 days = 2 }
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAF
+						tag = CAN
+						tag = NZL
+						tag = AST
+						AND = {
+							tag = BRA
+							NOT = { has_country_flag = BRA_withdrew_from_saw }
+						}
+					}
+				}
+				swap_ideas = {
+					remove_idea = USA_SAW_controlling_skies
+					add_idea = USA_SAW_controlling_skies_bombing_1
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Support_Role
+	icon = GFX_USA_SAW_Support_Role
+	cost = 1
+
+	relative_position_id = USA_SAW_Escalate_Air_War
+	x = 2
+	y = 1
+	prerequisite = { focus = USA_SAW_Escalate_Air_War }
+	mutually_exclusive = { focus = USA_SAW_Monsoon_Rain }
+	ai_will_do = {
+		factor = 80
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Support_Role"
+		custom_effect_tooltip = USA_SAW_control_the_sky_tt
+		USA_increase_trust_in_government_small = yes
+		set_country_flag = USA_SAW_Support_Role_Flag
+		swap_ideas = {
+			remove_idea = USA_SAW_controlling_skies
+			add_idea = USA_SAW_controlling_skies_cas_1
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_government = liberalism
+						has_government = conservatism
+					}
+				}
+				country_event = { id = RD_SAF.5 days = 2 }
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAF
+						tag = CAN
+						tag = NZL
+						tag = AST
+						AND = {
+							tag = BRA
+							NOT = { has_country_flag = BRA_withdrew_from_saw }
+						}
+					}
+				}
+				swap_ideas = {
+					remove_idea = USA_SAW_controlling_skies
+					add_idea = USA_SAW_controlling_skies_cas_1
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_SAW_Supreme_Excellence
+	icon = GFX_USA_SAW_Supreme_Excellence
+	cost = 3
+
+	relative_position_id = USA_SAW_Monsoon_Rain
+	x = 1
+	y = 1
+	prerequisite = { focus = USA_SAW_Monsoon_Rain focus = USA_SAW_Support_Role }
+	ai_will_do = { factor = 80 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_SAW_Supreme_Excellence"
+		USA_increase_trust_in_government_medium = yes
+		if = {
+			limit = {
+				has_completed_focus = USA_SAW_Monsoon_Rain
+			}
+			swap_ideas = {
+				remove_idea = USA_SAW_controlling_skies_bombing_1
+				add_idea = USA_SAW_controlling_skies_bombing_2
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = SAF
+							tag = CAN
+							tag = NZL
+							tag = AST
+							AND = {
+								tag = BRA
+								NOT = { has_country_flag = BRA_withdrew_from_saw }
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = USA_SAW_controlling_skies_bombing_1
+						add_idea = USA_SAW_controlling_skies_bombing_2
+					}
+				}
+			}
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = USA_SAW_controlling_skies_cas_1
+				add_idea = USA_SAW_controlling_skies_cas_2
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							tag = SAF
+							tag = CAN
+							tag = NZL
+							tag = AST
+							AND = {
+								tag = BRA
+								NOT = { has_country_flag = BRA_withdrew_from_saw }
+							}
+						}
+					}
+					swap_ideas = {
+						remove_idea = USA_SAW_controlling_skies_cas_1
+						add_idea = USA_SAW_controlling_skies_cas_2
+					}
+				}
+			}
+		}
+	}
+}
+
+#GIS Gap
+shared_focus = {
+	id = USA_RD_64_GIS_gap
+	icon = GFX_USA_Patrol_the_Waters
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	allow_branch = {
+		has_country_flag = USA_RD_64_GIS_tree
+	}
+	x = 24
+	y = 6
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_GIS_gap"
+		country_event = {
+			id = RD_GIS.1
+			days = 2
+		}
+	}
+}
+
+shared_focus = { #coastal forts in iceland/greenland
+	id = USA_RD_64_the_northern_bastions
+	icon = GFX_generic_coastal_fort
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_GIS_gap
+	}
+	x = 21
+	y = 7
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_the_northern_bastions"
+		100 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 3
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+		}
+		101 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 3
+				instant_build = yes
+				province = 12512
+			}
+		}
+	}
+}
+
+shared_focus = { #give iceland/usfi manpower
+	id = USA_RD_64_supplement_the_garrisons
+	icon = GFX_CAU_Militarize_The_Outskirts
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_the_northern_bastions
+	}
+	x = 20
+	y = 8
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_supplement_the_garrisons"
+		country_event = {
+			id = RD_GIS.3
+			days = 3
+		}
+	}
+}
+
+shared_focus = { #airbases in iceland
+	id = USA_RD_64_247_aerial_coverage
+	icon = GFX_TNO_generic_carrier
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_the_northern_bastions
+	}
+	x = 22
+	y = 8
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_247_aerial_coverage"
+		100 = {
+			add_building_construction = {
+				type = air_base
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = { #nat spirit maybe
+	id = USA_RD_64_USLANTCOM
+	icon = GFX_USA_Ready_the_Fleets
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_supplement_the_garrisons
+	}
+	prerequisite = {
+		focus = USA_RD_64_247_aerial_coverage
+	}
+	x = 21
+	y = 9
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_USLANTCOM"
+		country_event = {
+			id = RD_GIS.2
+			days = 3
+		}
+	}
+}
+
+shared_focus = { #build radar
+	id = USA_RD_64_SOSUS
+	icon = GFX_generic_cryptologic_bomb
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_GIS_gap
+	}
+	x = 24
+	y = 7
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_SOSUS"
+		100 = {
+			add_building_construction = {
+				type = radar_station
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_RD_64_expand_the_navy_divers
+	icon = GFX_generic_amphibious_assault
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_SOSUS
+	}
+	x = 24
+	y = 8
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_expand_the_navy_divers"
+	}
+}
+
+shared_focus = {
+	id = USA_RD_64_fly_in_hydrophone_arrays
+	icon = GFX_generic_air_fighter2
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_expand_the_navy_divers
+	}
+	x = 24
+	y = 9
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_fly_in_hydrophone_arrays"
+		country_event = {
+			id = RD_GIS.4
+			days = 3
+		}
+	}
+}
+
+shared_focus = { #event for scotland
+	id = USA_RD_64_secure_scottish_support
+	icon = GFX_scotland
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_GIS_gap
+	}
+	x = 27
+	y = 7
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_secure_scottish_support"
+		SCO = {
+			country_event = {
+				id = SCO_OFN.1
+				days = 2
+			}
+		}
+	}
+}
+
+shared_focus = { #give scotland money, american eco influence
+	id = USA_RD_64_financial_incentives
+	icon = GFX_generic_money_handout
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+		has_country_flag = USA_RD_GIS_SCO_accepted
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_secure_scottish_support
+	}
+	x = 26
+	y = 8
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_financial_incentives"
+		SCO = {
+			country_event = {
+				id = SCO_OFN.4
+				days = 3
+			}
+		}
+	}
+}
+
+shared_focus = { #american poli influence, steps towards OFN
+	id = USA_RD_64_permanent_advisory_roles
+	icon = GFX_USA_Withdraw_American_Soldiers
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+		has_country_flag = USA_RD_GIS_SCO_accepted
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_secure_scottish_support
+	}
+	x = 28
+	y = 8
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_permanent_advisory_roles"
+		SCO = {
+			country_event = {
+				id = SCO_OFN.5
+				days = 3
+			}
+		}
+	}
+}
+
+shared_focus = { #lease the faroes
+	id = USA_RD_64_an_indefinite_lease
+	icon = GFX_Generic_Naval_Treaty
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+		has_country_flag = USA_RD_GIS_SCO_accepted_advisors
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_financial_incentives
+	}
+	prerequisite = {
+		focus = USA_RD_64_permanent_advisory_roles
+	}
+	x = 27
+	y = 9
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_an_indefinite_lease"
+		SCO = {
+			country_event = {
+				id = SCO_OFN.6
+				days = 6
+			}
+		}
+	}
+}
+
+shared_focus = { #nat spirit
+	id = USA_RD_64_to_know_all
+	icon = GFX_SGR_Observing_the_People
+	cost = 3.00
+	available = {
+		US_doesnt_have_crisis = yes
+		has_country_flag = USA_RD_GIS_SCO_accepted_lease
+	}
+	cancel = {
+		US_has_crisis = yes
+	}
+	prerequisite = {
+		focus = USA_RD_64_USLANTCOM
+	}
+	prerequisite = {
+		focus = USA_RD_64_fly_in_hydrophone_arrays
+	}
+	prerequisite = {
+		focus = USA_RD_64_an_indefinite_lease
+	}
+	x = 24
+	y = 10
+	offset = {
+		x = 10
+		y = 0
+		trigger = {
+			has_government = liberalism
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_RD_64_to_know_all"
+		add_ideas = USA_RD_to_know_all
+	}
+}
+
+### MILITARY TREES ###
+# 1964-1968
+shared_focus = {
+	id = USA_mil_64_1964_policy_outlook
+	icon = GFX_IND_Question_The_Army
+	cost = 2.00
+	offset = {
+		x = -2
+		y = 0
+		trigger = {
+			has_government = liberalism
+			NOT = { has_country_flag = USA_72_D_RDC }
+		}
+	}
+	offset = {
+		x = 36
+		y = 0
+		trigger = {
+			has_government = conservatism
+			NOT = { has_country_flag = USA_72_R_RDC }
+		}
+	}
+	offset = {
+		x = -15
+		y = 0
+		trigger = {
+			has_government = conservatism
+			NOT = { has_country_flag = USA_show_south_africa_tree }
+			NOT = { has_country_flag = USA_72_R_RDC }
+		}
+	}
+	offset = {
+		x = 8
+		y = 0
+		trigger = {
+			OR = {
+				has_country_flag = USA_72_R_RDC
+				has_country_flag = USA_72_D_RDC
+			}
+		}
+	}
+	allow_branch = {
+		has_country_flag = USA_mil_64_tree_available
+	}
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_1964_policy_outlook"
+		if = {
+			limit = {
+				USA_RD_ruling_party = yes
+			}
+			add_timed_idea = {
+				idea = USA_64_RD_mil_bonus
+				days = 1460
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = USA_64_NPP_mil_bonus
+				days = 1460
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_arpa_funding
+	icon = GFX_CHI_Adapt_Computer_Designs
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_1964_policy_outlook
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_arpa_funding"
+		country_event = {
+			id = USA.2000
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_department_of_the_army
+	icon = GFX_CAU_Militarize_The_Outskirts
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_arpa_funding
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = -6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_department_of_the_army"
+		if = {
+			limit = {
+				USA_RD_ruling_party = yes
+			}
+			add_timed_idea = {
+				idea = USA_64_RD_army_bonus
+				days = 2190
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = USA_64_NPP_army_bonus
+				days = 2190
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_xm16_acquisition_program
+	icon = GFX_TNO_generic_gun_production
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_department_of_the_army
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = -6
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_xm16_acquisition_program"
+		add_tech_bonus = {
+			name = USA_xm16_research_tb
+			bonus = 0.25
+			ahead_reduction = 1.00
+			uses = 2
+			technology = infantry_weapons_improvements_ammo_2
+			technology = infantry_weapons_improvements_grenade_2
+			technology = infantry_weapons_4
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_3
+			amount = 200
+			producer = USA
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_m60_enhancement_project
+	icon = GFX_the_military_academy
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_xm16_acquisition_program
+	}
+	mutually_exclusive = {
+		focus = USA_mil_64_m113_enhancement_project
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = -7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_m60_enhancement_project"
+		add_tech_bonus = {
+			name = USA_m60_research_tb
+			bonus = 0.75
+			uses = 1
+			technology = MBT_1950_basic_turret
+			#technology = MBT_1950_basic_engine
+			technology = MBT_1950_basic_armor
+
+			technology = MBT_1950_improved_turret
+			#technology = MBT_1950_improved_engine
+			technology = MBT_1950_improved_armor
+
+			technology = MBT_1950_advanced_turret
+			#technology = MBT_1950_advanced_engine
+			technology = MBT_1950_advanced_armor
+
+			technology = MBT_1960_basic_turret
+			#technology = MBT_1960_basic_engine
+			technology = MBT_1960_basic_armor
+
+			technology = MBT_1960_improved_turret
+			#technology = MBT_1960_improved_engine
+			technology = MBT_1960_improved_armor
+
+			technology = MBT_1960_advanced_turret
+			#technology = MBT_1960_advanced_engine
+			technology = MBT_1960_advanced_armor
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_m113_enhancement_project
+	icon = GFX_goal_generic_army_motorized
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_xm16_acquisition_program
+	}
+	mutually_exclusive = {
+		focus = USA_mil_64_m60_enhancement_project
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = -5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_m113_enhancement_project"
+		add_tech_bonus = {
+			name = USA_m113_research_tb
+			bonus = 0.75
+			uses = 1
+			technology = APC_1950_basic_turret
+			#technology = APC_1950_basic_engine
+			technology = APC_1950_basic_armor
+
+			technology = APC_1950_improved_turret
+			#technology = APC_1950_improved_engine
+			technology = APC_1950_improved_armor
+
+			technology = APC_1950_advanced_turret
+			#technology = APC_1950_advanced_engine
+			technology = APC_1950_advanced_armor
+
+			technology = APC_1960_basic_turret
+			#technology = APC_1960_basic_engine
+			technology = APC_1960_basic_armor
+
+			technology = APC_1960_improved_turret
+			#technology = APC_1960_improved_engine
+			technology = APC_1960_improved_armor
+
+			technology = APC_1960_advanced_turret
+			#technology = APC_1960_advanced_engine
+			technology = APC_1960_advanced_armor
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_expand_west_point
+	icon = GFX_OST_Unite_the_Garrison
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_m60_enhancement_project
+		focus = USA_mil_64_m113_enhancement_project
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = -6
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_expand_west_point"
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.4
+			uses = 2
+			category = land_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_department_of_the_navy
+	icon = GFX_IND_India_New_Naval_Estimates
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_arpa_funding
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_department_of_the_navy"
+		if = {
+			limit = {
+				USA_RD_ruling_party = yes
+			}
+			add_timed_idea = {
+				idea = USA_64_RD_navy_bonus
+				days = 2190
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = USA_64_NPP_navy_bonus
+				days = 2190
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_two_seas_concept
+	icon = GFX_TNO_generic_carrier
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_department_of_the_navy
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_two_seas_concept"
+		add_timed_idea = {
+			idea = USA_mil_64_two_seas_concept_bonus
+			days = 1825
+		}
+		custom_effect_tooltip = USA_add_OFN_unity
+		add_to_variable = { OFN_unity = 1 }
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_an_sqs-23_sonar
+	icon = GFX_goal_generic_radar
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_two_seas_concept
+	}
+	mutually_exclusive = {
+		focus = USA_mil_64_an_sps-40_radar
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = -1
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_an_sqs-23_sonar"
+		add_timed_idea = {
+			idea = USA_mil_64_an_sqs-23_sonar_bonus
+			days = 1460
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_an_sps-40_radar
+	icon = GFX_GER_new_radar
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_two_seas_concept
+	}
+	mutually_exclusive = {
+		focus = USA_mil_64_an_sqs-23_sonar
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_an_sps-40_radar"
+		add_timed_idea = {
+			idea = USA_mil_64_an_sps-40_radar_bonus
+			days = 1460
+		}
+	}
+	x = 1
+	y = 4
+}
+
+shared_focus = {
+	id = USA_mil_64_ssbn_program
+	icon = GFX_JAP_The_Hidden_Menace_submarine
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_an_sqs-23_sonar
+		focus = USA_mil_64_an_sps-40_radar
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_ssbn_program"
+		add_timed_idea = {
+			idea = USA_mil_64_ssbn_program_bonus
+			days = 1460
+		}
+		add_doctrine_cost_reduction = {
+			name = naval_doc_bonus
+			cost_reduction = 0.4
+			uses = 2
+			category = naval_doctrine
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_department_of_the_air_force
+	icon = GFX_focus_generic_air_defense
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_arpa_funding
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_department_of_the_air_force"
+		if = {
+			limit = {
+				USA_RD_ruling_party = yes
+			}
+			add_timed_idea = {
+				idea = USA_64_RD_air_bonus
+				days = 1460
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = USA_64_NPP_air_bonus
+				days = 1460
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_heliborne_division_proposal
+	icon = GFX_TNO_generic_helicopter
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_department_of_the_air_force
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_heliborne_division_proposal"
+		add_tech_bonus = {
+			name = USA_heliborne_research_tb
+			bonus = 0.40
+			uses = 1
+			category = helicopter
+		}
+	}
+	x = 6
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_64_laser_guided_munitions_development
+	icon = GFX_focus_generic_cryptologic_bomb
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_heliborne_division_proposal
+	}
+	mutually_exclusive = {
+		focus = USA_mil_64_short_range_missile_project
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_laser_guided_munitions_development"
+		add_timed_idea = {
+			idea = USA_mil_64_laser_guided_munitions_development_bonus
+			days = 1460
+		}
+	}
+	x = 5
+	y = 4
+}
+
+shared_focus = {
+	id = USA_mil_64_short_range_missile_project
+	icon = GFX_GER_New_Missile_Designs
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_heliborne_division_proposal
+	}
+	mutually_exclusive = {
+		focus = USA_mil_64_laser_guided_munitions_development
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 7
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_short_range_missile_project"
+		add_timed_idea = {
+			idea = USA_mil_64_short_range_missile_project_bonus
+			days = 1460
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_mil_64_expand_the_sentinel_program
+	icon = GFX_USA_Operation_Rolling_Thunder
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_laser_guided_munitions_development
+		focus = USA_mil_64_short_range_missile_project
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mil_64_expand_the_sentinel_program"
+		add_doctrine_cost_reduction = {
+			name = air_doc_bonus
+			cost_reduction = 0.25
+			uses = 1
+			category = air_doctrine
+		}
+	}
+	x = 6
+	y = 5
+}
+
+shared_focus = {
+	id = USA_mil_64_third_generation_warfare
+	icon = GFX_USA_The_Pacific_Blitz
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_64_expand_west_point
+	}
+	prerequisite = {
+		focus = USA_mil_64_ssbn_program
+	}
+	prerequisite = {
+		focus = USA_mil_64_expand_the_sentinel_program
+	}
+	relative_position_id = USA_mil_64_1964_policy_outlook
+	x = 0
+	y = 6
+	completion_reward = {
+		custom_effect_tooltip = USA_MIL_64_Third_Gen_Ready_2_Go
+		add_political_power = 50
+		add_war_support = 0.03
+		custom_effect_tooltip = USA_add_OFN_unity
+		add_to_variable = { OFN_unity = 1 }
+		hidden_effect = {
+			clr_country_flag = USA_mil_64_tree_available
+			USA_reload_presidential_tree = yes
+		}
+	}
+}
+
+# 1968-1972
+shared_focus = {
+	id = USA_mil_68_1968_policy_outlook
+	icon = GFX_goal_unknown
+	cost = 2.00
+	allow_branch = {
+		has_country_flag = USA_mil_68_tree_available
+	}
+	x = 8
+	y = 0
+}
+
+shared_focus = {
+	id = USA_mil_68_arpanet
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_1968_policy_outlook
+	}
+	x = 8
+	y = 1
+}
+
+shared_focus = {
+	id = USA_mil_68_department_of_the_army
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_arpanet
+	}
+	x = 2
+	y = 2
+}
+
+shared_focus = {
+	id = USA_mil_68_advanced_aerial_fire_support_system
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_department_of_the_army
+	}
+	mutually_exclusive = {
+		focus = USA_mil_68_xm-551_development_program
+	}
+	x = 1
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_68_xm-551_development_program
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_department_of_the_army
+	}
+	mutually_exclusive = {
+		focus = USA_mil_68_advanced_aerial_fire_support_system
+	}
+	x = 3
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_68_m69_fragmentation_vest
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_advanced_aerial_fire_support_system
+		focus = USA_mil_68_xm-551_development_program
+	}
+	x = 2
+	y = 4
+}
+
+shared_focus = {
+	id = USA_mil_68_department_of_the_navy
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_arpanet
+	}
+	x = 8
+	y = 2
+}
+
+shared_focus = {
+	id = USA_mil_68_ssn_prioritisation
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_department_of_the_navy
+	}
+	mutually_exclusive = {
+		focus = USA_mil_68_dd_prioritisation
+	}
+	x = 7
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_68_dd_prioritisation
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_department_of_the_navy
+	}
+	mutually_exclusive = {
+		focus = USA_mil_68_ssn_prioritisation
+	}
+	x = 9
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_68_nuclear_supercarrier_development
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_ssn_prioritisation
+		focus = USA_mil_68_dd_prioritisation
+	}
+	x = 8
+	y = 4
+}
+
+shared_focus = {
+	id = USA_mil_68_LHA_carrier_construction
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_m69_fragmentation_vest
+	}
+	prerequisite = {
+		focus = USA_mil_68_nuclear_supercarrier_development
+	}
+	x = 5
+	y = 5
+}
+
+shared_focus = {
+	id = USA_mil_68_department_of_the_air_force
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_arpanet
+	}
+	x = 14
+	y = 2
+}
+
+shared_focus = {
+	id = USA_mil_68_ws-110a_project
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_department_of_the_air_force
+	}
+	mutually_exclusive = {
+		focus = USA_mil_68_expand_f-111_procurement
+	}
+	x = 13
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_68_expand_f-111_procurement
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_department_of_the_air_force
+	}
+	mutually_exclusive = {
+		focus = USA_mil_68_ws-110a_project
+	}
+	x = 15
+	y = 3
+}
+
+shared_focus = {
+	id = USA_mil_68_cx-x_heavy_logistics_system
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_ws-110a_project
+		focus = USA_mil_68_expand_f-111_procurement
+	}
+	x = 14
+	y = 4
+}
+
+shared_focus = {
+	id = USA_mil_68_vfx
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_nuclear_supercarrier_development
+	}
+	prerequisite = {
+		focus = USA_mil_68_cx-x_heavy_logistics_system
+	}
+	x = 11
+	y = 5
+}
+
+shared_focus = {
+	id = USA_mil_68_top_gun
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_vfx
+	}
+	x = 11
+	y = 6
+}
+
+shared_focus = {
+	id = USA_mil_68_combined_action_program
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_LHA_carrier_construction
+	}
+	x = 5
+	y = 6
+}
+
+shared_focus = {
+	id = USA_mil_68_nuclear_operations
+	icon = GFX_goal_unknown
+	cost = 2.00
+	prerequisite = {
+		focus = USA_mil_68_combined_action_program
+	}
+	prerequisite = {
+		focus = USA_mil_68_top_gun
+	}
+	x = 8
+	y = 7
+}

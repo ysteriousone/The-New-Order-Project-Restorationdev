@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Indonesia_GUI_Key"
+		texturefile = "gfx/interface/indonesia_gui/Indonesia_GUI_Key.dds"
+	}
+	spriteType = {
+		name = "GFX_Indonesia_GUI_Lock_Broken"
+		texturefile = "gfx/interface/indonesia_gui/Indonesia_GUI_Lock_Broken.dds"
+	}
+	spriteType = {
+		name = "GFX_Indonesia_GUI_Lock_Locked"
+		texturefile = "gfx/interface/indonesia_gui/Indonesia_GUI_Lock_Locked.dds"
+	}
+	spriteType = {
+		name = "GFX_Indonesia_GUI_Lock_Unlocked"
+		texturefile = "gfx/interface/indonesia_gui/Indonesia_GUI_Lock_Unlocked.dds"
+	}
+}

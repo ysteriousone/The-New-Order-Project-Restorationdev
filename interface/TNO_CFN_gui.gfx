@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_USA_WFB_CFN_hotel"
+		texturefile = "gfx/interface/cfn_gui/USA_WFB_CFN_hotel.dds"
+	}
+	spriteType = {
+		name = "GFX_TNO_CFN_button"
+		texturefile = "gfx/interface/cfn_gui/CFN_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "empty"
+		texturefile = "gfx/interface/cfn_gui/empty.dds"
+	}
+}

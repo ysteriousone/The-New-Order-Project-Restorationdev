@@ -1,0 +1,35 @@
+##################
+## Panama Events##
+##################
+
+add_namespace = PAN
+
+country_event = { #1964 elections PP win
+	id = PAN.7
+	title = PAN.7.t
+	desc = PAN.7.desc
+	picture = GFX_report_event_GER_ostsonne
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PAN.7.a
+		set_variable = { corruption = 70 }
+		set_variable = { party_stability = 30 }
+		set_variable = { Panamaparty = 11 }
+		clr_country_flag = PAN_1964_elections_PP
+		clr_country_flag = PAN_1964_elections_PLN
+		clr_country_flag = PAN_1964_elections_PS
+		set_politics = { ruling_party = paternalism }
+		set_country_flag = PP_1964_election
+		remove_ideas = {
+			PAN_Jose_Bazan_hog
+			PAN_Eric_Devalle_eco
+		}
+		add_ideas = {
+			PAN_Raul_Arango_hog
+			PAN_Gilberto_Guardia_eco
+		}
+	}
+}

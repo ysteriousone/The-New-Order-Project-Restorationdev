@@ -1,0 +1,23 @@
+﻿units = {
+	division = {
+		name = "Sulawesi Militia"
+		location = "1574"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "Sulawesi Militia"
+		location = "7413"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "Sulawesi Militia"
+		location = "10409"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.65
+	}
+}

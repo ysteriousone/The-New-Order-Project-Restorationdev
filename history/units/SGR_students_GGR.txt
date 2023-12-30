@@ -1,0 +1,49 @@
+﻿### Göring's Germany ###
+## Speer's Students ##
+
+division_template = {
+	name = "Bürgerwehr"
+	division_names_group = SGR_militia
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+		light_infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "31. Hamburg Studentverband-Division"
+		location = 9347
+		division_template = "Bürgerwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Hamburg Studentdivision"
+		location = 9347
+		division_template = "Bürgerwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "German Students for Peace"
+		location = 9347
+		division_template = "Bürgerwehr"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "German Students for Freedom"
+		location = 9347
+		division_template = "Bürgerwehr"
+		start_experience_factor = 0.2
+	}
+}

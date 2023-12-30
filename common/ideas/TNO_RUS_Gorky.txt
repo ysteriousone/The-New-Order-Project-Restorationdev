@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		GOR_state_of_perpetual_warfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GOR_state_of_perpetual_warfare"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = communist
+			}
+			removal_cost = -1
+			picture = GOR_Mad_Marxists
+			modifier = {
+				army_armor_attack_factor = 0.3
+				army_armor_speed_factor = 0.15
+				army_defence_factor = 0.15
+				out_of_supply_factor = -0.5
+				industrial_capacity_factory = 0.15
+			}
+		}
+		GOR_growing_malaise = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GOR_growing_malaise"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				has_government = communist
+			}
+			removal_cost = -1
+			picture = Broken_Supply_Lines
+			modifier = {
+				civilian_expenditures_factor = -0.25
+				production_speed_buildings_factor = -0.40
+				local_resources_factor = -0.35
+				stability_factor = -0.10
+			}
+		}
+		
+		GOR_Sabotage = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GOR_Sabotage"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DRL_exhausted_band
+			modifier = {
+				army_armor_defence_factor = -0.05
+				army_armor_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_attack_factor = -0.05
+			}
+		}
+
+		GOR_work_at_night_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GOR_work_at_night_idea"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GOR_Work_at_night
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+	}
+}

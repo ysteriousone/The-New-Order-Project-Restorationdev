@@ -1,0 +1,302 @@
+ideas = {
+	country = {
+		## NEW AND GOOD ##
+		MEX_mexican_dictatorship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_mexican_dictatorship"}
+			allowed = {
+				always = yes
+			}
+			picture = MEX_The_Imperfect_Dictatorship
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				# +25% PRI Loyalty Base
+				stability_factor = -0.05
+			}
+		}
+
+		MEX_mexican_miracle_dummy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_mexican_miracle_dummy"}
+			allowed = {
+				always = yes
+			}
+			picture = MEX_mexican_miracle
+			removal_cost = -1
+			modifier = {
+				# dynamic modifier that stacks buffs from the business opinion multiplied by the influence of the respective superpower
+				# no negative effects, these will be accounted for differently
+				#misc_income_modifier = 0.05
+				trade_opinion_factor = 0.1
+				monthly_population = 0.05
+				gdp_growth_modifier = 2.5
+			}
+		}
+		
+		MEX_mexican_miracle_startscreen = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_mexican_miracle"}
+			allowed = {
+				always = yes
+			}
+			picture = MEX_mexican_miracle
+			removal_cost = -1
+			modifier = {
+				# The natspirit to display in the startscreen, as the "effects" are placed in the loc and will inadvertantly show broken stuff in the bookmark
+			}
+		}
+
+		MEX_rural_depression = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_rural_depression"}
+			allowed = {
+				always = yes
+			}
+			#picture = MEX_rural_depression
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				poverty_monthly_rate = -0.05
+				taxable_population_factor = -0.10
+				# Peasantry Loyalty Base -20%
+			}
+		}
+
+		MEX_the_leviathan_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_the_leviathan_4"}
+			allowed = {
+				always = yes
+			}
+			picture = MEX_the_leviathan_4
+			removal_cost = -1
+			modifier = {
+				civilian_expenditures_factor = 0.15
+				#admin_efficiency_monthly_rate = -0.1
+				free_production_units_modifier = -5
+				research_speed_factor = -0.10
+			}
+		}
+
+		MEX_increased_oil_exports = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_increased_oil_exports"}
+			allowed = {
+				always = yes
+			}
+			#picture =
+			removal_cost = -1
+			modifier = {
+				misc_income_modifier = 0.05
+			}
+		}
+		
+		MEX_Economic_Battlefield = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_zaibatsus"}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = USA_gld_68_tariff_oofing
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				trade_opinion_factor = 0.1
+				# min_export = 0.1
+			}
+		}
+
+		MEX_Fraying_Ideals = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_zaibatsus"}
+
+			allowed = {
+				always = yes
+			}
+
+			picture = a_crusade_against_corruption
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = -0.15
+				stability_factor = -0.2
+
+			}
+		}
+
+		#############################################################################################
+		############################### OLD AND BAD!!!!!!!!!!!!!!!!!! ###############################
+		#############################################################################################
+
+		#MEX_Economic_Battlefield_OFN = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Economic_Battlefield_OFN"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Economic_Battlefield_OFN
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		consumer_goods_factor = 0.1
+		#		trade_opinion_factor = 0.1
+		#		min_export = 0.1
+		#	}
+		#}
+		#MEX_Economic_Battlefield_Sphere = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Economic_Battlefield_Sphere"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Economic_Battlefield_Sphere
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		consumer_goods_factor = 0.1
+		#		trade_opinion_factor = 0.1
+		#		min_export = 0.1
+		#	}
+		#}
+		#MEX_Economic_Battlefield_Shared = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Economic_Battlefield_Shared"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Economic_Battlefield_shared
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		consumer_goods_factor = 0.1
+		#		trade_opinion_factor = 0.1
+		#		min_export = 0.1
+		#	}
+		#}
+		#MEX_Economic_Battlefield_National = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Economic_Battlefield_National"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Economic_Battlefield_Mexico
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		consumer_goods_factor = 0.1
+		#		trade_opinion_factor = 0.1
+		#		min_export = 0.1
+		#	}
+		#}
+#
+		#MEX_Perfect_Dictatorship = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_zaibatsus"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Perfect_Dictatorship
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		political_power_cost = -0.15
+		#		stability_factor = -0.2
+#
+		#	}
+		#}
+		#MEX_Good_Enough_Dictatorship = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_zaibatsus"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Good_Enough_Dictatorship
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		political_power_cost = -0.15
+		#		stability_factor = -0.2
+#
+		#	}
+		#}
+		#MEX_Imperfect_Dictatorship = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_zaibatsus"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Imperfect_Dictatorship
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		political_power_cost = -0.15
+		#		stability_factor = -0.2
+#
+		#	}
+		#}
+		#MEX_Broken_Dictatorship = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_zaibatsus"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Broken_Dictatorship
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		political_power_cost = -0.15
+		#		stability_factor = -0.2
+#
+		#	}
+		#}
+#
+		#MEX_Whispers_from_Shadows = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_Whispers_from_Shadows"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = MEX_Whisper_from_Shadows
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#	}
+		#}
+#
+		#MEX_General_Strike_Lopez = {
+		#	on_add = {log = "[GetDateText]: [Root.GetName]: add idea MEX_General_Strike_Lopez"}
+#
+		#	allowed = {
+		#		always = yes
+		#	}
+#
+		#	picture = a_crusade_against_corruption
+#
+		#	removal_cost = -1
+#
+		#	modifier = {
+		#		stability_factor = -0.4
+		#		production_speed_buildings_factor = -0.25
+		#		industrial_capacity_factory = -0.30
+		#		consumer_goods_factor = 0.15
+		#		local_resources_factor = -0.5
+		#	}
+		#}
+	}
+}

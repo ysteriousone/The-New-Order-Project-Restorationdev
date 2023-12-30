@@ -1,0 +1,24 @@
+﻿division_template = {
+	name = "Lagunari"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Reggimento Lagunari Serenissima"
+		location = 10904
+		division_template = "Lagunari"
+		start_experience_factor = 0.2
+	}
+}

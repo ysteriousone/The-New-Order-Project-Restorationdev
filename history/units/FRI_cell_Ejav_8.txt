@@ -1,0 +1,23 @@
+﻿units = {
+	division = {
+		name = "East Java Militia"
+		location = "4306"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "East Java Militia"
+		location = "12293"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.65
+	}
+	division = {
+		name = "East Java Militia"
+		location = "10491"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.65
+	}
+}

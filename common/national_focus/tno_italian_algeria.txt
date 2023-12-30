@@ -1,0 +1,12 @@
+focus_tree = {
+	id = ilg_opening
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ILG
+		}
+	}
+	default = no
+	shared_focus = ILG_state_of_algeria
+}

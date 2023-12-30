@@ -1,0 +1,1031 @@
+ideas = {
+
+	country = {
+		SWE_odin_program = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_odin_program"}
+
+			picture = KRK_Inexperienced_Army
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			cancel = {
+				OR = {
+					SWE = {
+						exists = no
+						is_puppet_of = GER
+					}
+				}
+			}
+
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+			}
+		}
+		SWE_odin_program2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_odin_program2"}
+
+			picture = KRK_Inexperienced_Army
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			cancel = {
+				OR = {
+					SWE = {
+						exists = no
+						is_puppet_of = GER
+					}
+				}
+			}
+
+			modifier = {
+				army_org_factor = -0.05
+			}
+		}
+
+		SWE_folkhem_start = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_start"}
+
+			picture = GFX_idea_SWE_folkhem_start
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+				political_power_gain = 0.2
+				poverty_monthly_rate = 0.02
+			}
+		}
+
+		SWE_folkhem_1a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_1a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.05
+				poverty_monthly_rate = -0.02
+				stability_factor = -0.075
+			}
+		}
+
+		SWE_folkhem_1b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_1b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				poverty_monthly_rate = -0.05
+				stability_factor = -0.1
+			}
+		}
+
+		SWE_folkhem_2a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_2a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+
+		SWE_folkhem_2b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_2b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+				political_power_gain = 0.1
+				poverty_monthly_rate = 0.02
+			}
+		}
+
+		SWE_folkhem_2c = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_2c"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				political_power_gain = 0.3
+				social_program_cost_factor = 0.05
+				poverty_monthly_rate = 0.05
+			}
+		}
+
+		SWE_folkhem_3a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_3a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				income_tax_rate_modifier_factor = -0.02
+			}
+		}
+
+		SWE_folkhem_3b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_3b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				business_tax_rate_modifier = 0.02
+			}
+		}
+
+		SWE_folkhem_3c = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_3c"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+				business_tax_rate_modifier = 0.05
+				trade_laws_policy_monthly_rate = 0.02
+			}
+		}
+
+		SWE_folkhem_4a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_4a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+			}
+		}
+
+		SWE_folkhem_4b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_4b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				industrial_equipment_monthly_rate = 0.02
+				industrial_expertise_monthly_rate = 0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SWE_folkhem_4c = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_4c"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_equipment_monthly_rate = 0.02
+				industrial_expertise_monthly_rate = 0.02
+				poverty_monthly_rate = 0.01
+			}
+		}
+
+		SWE_folkhem_4d = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_4d"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.35
+				monthly_population = -0.1
+			}
+		}
+
+		SWE_folkhem_5a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_5a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.075
+				business_tax_rate_modifier = -0.05
+			}
+		}
+
+		SWE_folkhem_5b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_5b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.075
+				agriculture_monthly_rate = 0.01
+				military_expenditures_factor = -0.1
+			}
+		}
+
+		SWE_folkhem_5c = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_5c"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				industrial_equipment_monthly_rate = 0.01
+				industrial_expertise_monthly_rate = 0.01
+				agriculture_monthly_rate = 0.01
+				military_expenditures_factor = -0.1
+			}
+		}
+
+		SWE_folkhem_5d = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_5d"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				agriculture_monthly_rate = 0.03
+				military_expenditures_factor = -0.2
+				industrial_equipment_monthly_rate = -0.03
+				industrial_expertise_monthly_rate = -0.03
+				poverty_monthly_rate = -0.02
+			}
+		}
+
+		SWE_folkhem_6a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_6a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				weekly_manpower = -300
+				monthly_population = -0.1
+				gdp_growth_modifier = -0.5
+			}
+		}
+
+		SWE_folkhem_6b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_6b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly_factor = 0.1
+				drift_defence_factor = 1
+				military_expenditures_factor = -0.1
+			}
+		}
+
+		SWE_folkhem_6c = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_6c"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly_factor = 0.2
+				drift_defence_factor = 1
+				military_expenditures_factor = -0.15
+			}
+		}
+
+		SWE_folkhem_7a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_7a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				experience_gain_army = 0.01
+			}
+		}
+
+		SWE_folkhem_7b = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_7b"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				experience_gain_army = 0.02
+				army_professionalism_monthly_rate = 0.01
+				military_expenditures_factor = -0.1
+			}
+		}
+
+		SWE_folkhem_7c = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_7c"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.5
+				military_expenditures_factor = -0.1
+				army_professionalism_monthly_rate = 0.01
+			}
+		}
+
+		SWE_folkhem_7d = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_folkhem_7d"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				experience_gain_army = 0.03
+				army_professionalism_monthly_rate = 0.03
+				training_policy_monthly_rate = 0.01
+				military_expenditures_factor = -0.15
+			}
+		}
+
+		SWE_schwedenisierung_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_schwedenisierung_1"}
+
+			picture = GFX_idea_SWE_schwedenisierung_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.1
+				gdp_growth_modifier = -0.5
+			}
+		}
+
+		SWE_schwedenisierung_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_schwedenisierung_2"}
+
+			picture = GFX_idea_SWE_schwedenisierung_2
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				gdp_growth_modifier = 0.2
+			}
+		}
+
+		SWE_schwedenisierung_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_schwedenisierung_3"}
+
+			picture = GFX_idea_SWE_schwedenisierung_3
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				experience_gain_army_factor = 0.05
+				experience_gain_navy_factor = 0.05
+				experience_gain_air_factor = 0.05
+				gdp_growth_modifier = 0.1
+			}
+		}
+
+		SWE_schwedenisierung_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_schwedenisierung_4"}
+
+			picture = GFX_idea_SWE_schwedenisierung_4
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.025
+				monthly_population = -0.02
+				misc_income_modifier = 0.15
+			}
+		}
+
+		SWE_exports_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_exports_1"}
+
+			picture = GFX_idea_SWE_exports_1_2
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.1
+				trade_opinion_factor = -0.1
+				gdp_growth_modifier = -1
+			}
+		}
+
+		SWE_exports_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_exports_2"}
+
+			picture = GFX_idea_SWE_exports_1_2
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = -0.1
+				production_units_to_GDP_ratio_modifier = -0.05
+			}
+		}
+
+		SWE_exports_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_exports_3"}
+
+			picture = GFX_idea_SWE_exports_3
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				trade_opinion_factor = 0.1
+				production_units_to_GDP_ratio_modifier = 0.05
+			}
+		}
+
+		SWE_exports_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_exports_4"}
+
+			picture = GFX_idea_SWE_exports_4
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.15
+				trade_opinion_factor = 0.1
+				production_units_to_GDP_ratio_modifier = 0.075
+			}
+		}
+
+		SWE_exports_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_exports_5"}
+
+			picture = GFX_idea_SWE_exports_5
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.2
+				trade_opinion_factor = 0.1
+				production_units_to_GDP_ratio_modifier = 0.1
+			}
+		}
+
+		SWE_statare_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_1"}
+
+			picture = GFX_idea_SWE_statare_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+
+		SWE_statare_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_2"}
+
+			picture = GFX_idea_SWE_statare_2
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				misc_income_modifier = 0.05
+			}
+		}
+
+		SWE_statare_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_3"}
+
+			picture = GFX_idea_SWE_statare_3
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.15
+				war_support_factor = -0.05
+				misc_income_modifier = 0.2
+			}
+		}
+
+		SWE_statare_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_4"}
+
+			picture = GFX_idea_SWE_statare_4
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.075
+				stability_factor = -0.05
+				misc_income_modifier = 0.1
+			}
+		}
+
+		SWE_statare_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_5"}
+
+			picture = GFX_idea_SWE_statare_5
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.15
+				stability_factor = -0.025
+				monthly_population = -0.01
+				misc_income_modifier = 0.075
+			}
+		}
+
+		SWE_statare_6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_statare_6"}
+
+			picture = GFX_idea_SWE_statare_6
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.025
+				monthly_population = -0.02
+				misc_income_modifier = 0.15
+			}
+		}
+
+		SWE_media_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_media_1"}
+
+			picture = GFX_idea_SWE_media_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.01
+				stability_factor = 0.05
+			}
+		}
+
+		SWE_media_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_media_2"}
+
+			picture = GFX_idea_SWE_media_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.05
+			}
+		}
+
+		SWE_media_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_media_3"}
+
+			picture = GFX_idea_SWE_media_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				drift_defence_factor = 0.02
+				stability_factor = 0.025
+			}
+		}
+
+		SWE_eugenics_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_eugenics_1"}
+
+			picture = GFX_idea_SWE_eugenics_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.01
+			}
+		}
+
+		SWE_eugenics_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_eugenics_2"}
+
+			picture = GFX_idea_SWE_eugenics_2
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.025
+				social_program_cost_factor = -0.02
+			}
+		}
+
+		SWE_eugenics_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_eugenics_3"}
+
+			picture = GFX_idea_SWE_eugenics_3
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.05
+				social_program_cost_factor = -0.05
+			}
+		}
+
+		SWE_eugenics_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_eugenics_4"}
+
+			picture = GFX_idea_SWE_eugenics_4
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.1
+				social_program_cost_factor = -0.05
+			}
+		}
+
+		SWE_eugenics_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_eugenics_5"}
+
+			picture = GFX_idea_SWE_eugenics_5
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.2
+				social_program_cost_factor = -0.05
+			}
+		}
+
+		SWE_OB_0a = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_OB_0a"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				promote_cost_factor = 50
+				experience_gain_army = -0.3
+				experience_gain_air = -0.3
+				experience_gain_navy = -0.3
+				army_org_regain = -0.2
+			}
+		}
+
+		SWE_OB_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_OB_1"}
+
+			picture = GFX_idea_SWE_OB_1
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				promote_cost_factor = 50
+				experience_gain_army = 0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		SWE_OB_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_OB_2"}
+
+			picture = GFX_idea_SWE_OB_2
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				promote_cost_factor = 50
+				experience_gain_air = 0.2
+				air_cas_efficiency = 0.1
+				air_superiority_efficiency = 0.1
+			}
+		}
+
+		SWE_OB_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_OB_3"}
+
+			picture = GFX_idea_SWE_OB_3
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				promote_cost_factor = 50
+				experience_gain_navy = 0.2
+				supply_consumption_factor = -0.1
+				naval_morale_factor = 0.1
+			}
+		}
+
+		SWE_OB_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_OB_4"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				promote_cost_factor = 50
+				conscription_factor = 0.1
+				army_cost_modifier = -0.1
+			}
+		}
+
+		SWE_OB_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_OB_4"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				promote_cost_factor = 50
+				experience_gain_army = 0.1
+			}
+		}
+
+		SWE_purges_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_purges_1"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.02
+				weekly_manpower = -1000
+				communist_drift = -0.0025
+				socialist_drift = -0.0025
+				progressivism_drift = -0.001
+				liberalism_drift = -0.001
+			}
+		}
+
+		SWE_purges_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_purges_2"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.02
+				weekly_manpower = -1000
+				despotism_drift = -0.0025
+				fascism_drift = -0.0025
+				national_socialism_drift = -0.0025
+				ultranationalism_drift = -0.0025
+				liberalism_drift = -0.001
+				liberal_conservatism_drift = -0.001
+				conservatism_drift = -0.001
+				paternalism_drift = -0.001
+			}
+		}
+
+		SWE_purges_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWE_purges_3"}
+
+			picture = x
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.01
+				weekly_manpower = -200
+				experience_gain_army = -1
+				experience_gain_navy = -1
+				experience_gain_air = -1
+			}
+		}
+	}
+}

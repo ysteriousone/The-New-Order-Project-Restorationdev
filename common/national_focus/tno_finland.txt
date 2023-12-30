@@ -1,0 +1,1279 @@
+###########################
+# FIN.Focus Tree
+###########################
+focus_tree = {
+	id = FIN_intro
+	country = {
+		factor = 0
+		#modifier = {
+		#	add = 10
+		#	tag = FIN
+		#}
+	}
+	default = no
+
+	focus = {
+		id = FIN_intro_start_election
+		icon = GFX_generic_elections_rigged
+		x = 8
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_start_election"
+			custom_effect_tooltip = FIN_intro_start_election_tt
+			hidden_effect = {
+				country_event = { id = FIN.38 days = 1 }
+			}
+			add_popularity = {
+				ideology = paternalism
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_intro_the_economic_threads
+		icon = GFX_GER_Let_The_Money_Flow
+		x = 3
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start_election
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_the_economic_threads"
+			country_event = { id = FIN.4 days = 3 }
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = FIN_intro_the_koivisto_plan
+		icon = GFX_generic_change_law_trade
+		x = 3
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_the_economic_threads
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_the_koivisto_plan"
+			country_event = { id = FIN.14 days = 3 }
+			add_political_power = -25
+			add_timed_idea = { idea = FIN_intro_the_koivisto_plan_misc_income days = 90 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_a_new_economic_bridge
+		icon = GFX_Generic_Ship_Trade
+		x = 3
+		y = 3
+		cost = 7
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_the_koivisto_plan
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_a_new_economic_bridge"
+			country_event = { id = FIN.18 days = 3 }
+			custom_effect_tooltip = FIN_intro_a_new_economic_bridge_tt
+		}
+	}
+
+	focus = {
+		id = FIN_intro_a_proposal_to_germany
+		icon = GFX_IND_india_diplomatic_ger
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_a_new_economic_bridge
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_a_proposal_to_germany"
+			GER = {
+				country_event = { id = FIN.19 days = 3 }
+			}
+			GER = {
+				set_country_flag = FIN_intro_pakt_expanded_trade
+			}
+			custom_effect_tooltip = FIN_intro_a_proposal_to_germany_tt
+		}
+	}
+
+	focus = {
+		id = FIN_intro_a_proposal_to_the_usa
+		icon = GFX_IND_india_diplomatic_usa
+		x = 2
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_a_new_economic_bridge
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_a_proposal_to_the_usa"
+			USA = {
+				country_event = { id = FIN.20 days = 3 }
+			}
+			USA = {
+				set_country_flag = FIN_intro_ofn_expanded_trade
+			}
+			custom_effect_tooltip = FIN_intro_a_proposal_to_the_usa_tt
+		}
+	}
+
+
+	focus = {
+		id = FIN_intro_investments_for_resources
+		icon = GFX_GER_invest_in_the_future
+		x = 3
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_a_proposal_to_the_usa
+			focus = FIN_intro_a_proposal_to_germany
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_investments_for_resources"
+			custom_effect_tooltip = FIN_intro_investments_for_resources_tt
+			hidden_effect = {
+				USA = {
+					country_event = { id = FIN.39 days = 3 }
+				}
+				GER = {
+					country_event = { id = FIN.40 days = 3 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_intro_and_german_goods_too
+		icon = GFX_WAL_german_investors
+		x = 1
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_a_proposal_to_germany
+		}
+		prerequisite = {
+			focus = FIN_intro_a_proposal_to_the_usa
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_and_german_goods_too"
+			custom_effect_tooltip = FIN_intro_and_german_goods_too_tt
+			USA = {
+				country_event = { id = FIN.22 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_intro_deals_with_ofn
+		icon = GFX_goal_TNO_generic_OFN_light
+		x = 1
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_and_german_goods_too
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_deals_with_ofn"
+			custom_effect_tooltip = FIN_intro_deals_with_ofn_tt
+		}
+	}
+
+	focus = {
+		id = FIN_intro_and_american_luxuries
+		icon = GFX_American_Funding
+		x = 5
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_a_proposal_to_germany
+		}
+		prerequisite = {
+			focus = FIN_intro_a_proposal_to_the_usa
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_and_american_luxuries"
+			custom_effect_tooltip = FIN_intro_and_american_luxuries_tt
+			GER = {
+				country_event = { id = FIN.23 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_intro_deals_with_pakt
+		icon = GFX_GER_reintegration_efforts
+		x = 5
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		bypass = {
+			has_global_flag = GERMAN_CIVIL_WAR
+		}
+		prerequisite = {
+			focus = FIN_intro_and_american_luxuries
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_deals_with_pakt"
+			custom_effect_tooltip = FIN_intro_deals_with_pakt_tt
+		}
+	}
+
+	focus = {
+		id = FIN_intro_the_blood_on_the_streets
+		icon = GFX_generic_revolutionary_movement
+		x = 8
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start_election
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_the_blood_on_the_streets"
+			country_event = { id = FIN.5 days = 3 }
+			custom_effect_tooltip = FIN_intro_the_blood_on_the_streets_tt
+			add_to_variable = { FINRadicalization = 5 }
+			add_to_variable = { FINApprovalRating = -5 }
+			add_to_variable = { FINRussiaTensions = 13 }
+			add_stability = -0.10
+		}
+	}
+
+	focus = {
+		id = FIN_intro_expand_police_presence
+		icon = GFX_TNO_generic_riot_police
+		x = 7
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_the_blood_on_the_streets
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_expand_police_presence"
+			country_event = { id = FIN.6 days = 3 }
+			custom_effect_tooltip = FIN_intro_expand_police_presence_tt
+			add_stability = 0.035
+			add_popularity = {
+				ideology = paternalism
+				popularity = 0.10
+			}
+			add_to_variable = { FINRadicalization = -5 }
+			add_to_variable = { FINApprovalRating = -10 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_clandestine_meetings
+		icon = GFX_Generic_Shady_Deal
+		x = 9
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_the_blood_on_the_streets
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_clandestine_meetings"
+			country_event = { id = FIN.7 days = 3 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_promise_free_elections
+		icon = GFX_Democacy_Saved
+		x = 8
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_expand_police_presence
+		}
+		prerequisite = {
+			focus = FIN_intro_clandestine_meetings
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_promise_free_elections"
+			country_event = { id = FIN.9 days = 3 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_appeals_to_the_people
+		icon = GFX_SAM_To_The_People
+		x = 8
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_promise_free_elections
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_appeals_to_the_people"
+			country_event = { id = FIN.11 days = 3 }
+			custom_effect_tooltip = FIN_intro_appeals_to_the_people_tt
+			add_political_power = 100
+			add_stability = 0.10
+			add_to_variable = { FINRadicalization = -5 }
+			add_to_variable = {FINApprovalRating = 10 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_a_defensive_appeal
+		icon = GFX_goal_ENG_Defend_The_Countryside
+		x = 9
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_appeals_to_the_people
+		}
+		mutually_exclusive = {
+			focus = FIN_intro_an_economic_appeal
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_a_defensive_appeal"
+			country_event = { id = FIN.12 days = 3 }
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = FIN_intro_civil_defense_infrastructure
+		icon = GFX_IBR_open_road
+		x = 9
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_a_defensive_appeal
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_civil_defense_infrastructure"
+			146 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 9206
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 3050
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 6153
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_intro_an_economic_appeal
+		icon = GFX_generic_change_law_welfare
+		x = 7
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_appeals_to_the_people
+		}
+		mutually_exclusive = {
+			focus = FIN_intro_a_defensive_appeal
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_an_economic_appeal"
+			country_event = { id = FIN.16 days = 3 }
+			tno_unemployment_improve = yes
+			tno_pensions_improve = yes
+		}
+	}
+
+	focus = {
+		id = FIN_intro_ensure_common_welfare
+		icon = GFX_generic_socdem
+		x = 7
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_an_economic_appeal
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_ensure_common_welfare"
+			country_event = { id = FIN.17 days = 3 }
+			custom_effect_tooltip = FIN_intro_ensure_common_welfare_tt
+			hidden_effect = {
+				tno_unemployment_improve = yes
+				tno_pensions_improve = yes
+				tno_health_care_improve = yes
+			}
+
+		}
+	}
+
+	focus = {
+		id = FIN_intro_a_possible_recovery
+		icon = GFX_GER_The_Ghetto_Compromise
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_completed_focus = FIN_intro_dispatch_an_attache
+			has_completed_focus = FIN_intro_deals_with_ofn
+			has_completed_focus = FIN_intro_deals_with_pakt
+		}
+		prerequisite = {
+			focus = FIN_intro_civil_defense_infrastructure
+			focus = FIN_intro_ensure_common_welfare
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_a_possible_recovery"
+			country_event = { id = FIN.25 days = 3 }
+			custom_effect_tooltip = FIN_intro_a_possible_recovery_tt
+			set_temp_variable = { temp_econ_GDP_boost_flat = 0.173 }
+			econ_GDP_boost_once_flat = yes
+			hidden_effect = {
+				country_event = { id = FIN.1 days = 21 }
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_intro_the_karelian_question
+		icon = GFX_FIN_karelian_question
+		x = 13
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_start_election
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_the_karelian_question"
+			country_event = { id = FIN.8 days = 3 }
+			custom_effect_tooltip = FIN_intro_the_karelian_question_tt
+			add_to_variable = { FINRadicalization = 5 }
+			add_to_variable = { FINRussiaTensions = 15 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_step_up_the_resettlement
+		icon = GFX_SAM_The_Russian_People_Deliver_Us
+		x = 12
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_the_karelian_question
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_step_up_the_resettlement"
+			country_event = { id = FIN.10 days = 3 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_russian_auxiliary_police
+		icon = GFX_goal_ARC_The_Proud_Russian_Army
+		x = 12
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_step_up_the_resettlement
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_deals_with_pakt"
+			custom_effect_tooltip = FIN_intro_russian_auxiliary_police_tt
+			add_to_variable = { FINRadicalization = 5 }
+			add_to_variable = { FINRussiaTensions = -10 }
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = FIN_intro_put_down_the_riots
+		icon = GFX_MCW_Compensation_For_Russians
+		x = 12
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_russian_auxiliary_police
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_deals_with_pakt"
+			add_war_support = 0.1
+			add_political_power = -50
+			custom_effect_tooltip = FIN_intro_put_down_the_riots_tt
+			add_to_variable = { FINRadicalization = -5 }
+			add_to_variable = { FINApprovalRating = -15 }
+			add_to_variable = { FINRussiaTensions = -10 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_expand_the_mannerheim_line
+		icon = GFX_MGN_fortification_production_charter
+		x = 14
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_the_karelian_question
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_expand_the_mannerheim_line"
+			country_event = { id = FIN.13 days = 3 }
+			146 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9206
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11162
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3050
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9176
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6153
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11156
+				}
+			}
+			add_timed_idea = { idea = FIN_intro_expand_the_mannerheim_line_misc_costs days = 90 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_collaborate_with_onega
+		icon = GFX_generic_onega
+		x = 14
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_expand_the_mannerheim_line
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_collaborate_with_onega"
+			country_event = { id = FIN.15 days = 3 }
+			custom_effect_tooltip = FIN_intro_collaborate_with_onega_tt
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 250
+				target = ONG
+			}
+			add_to_variable = { FINOnegaRelations = 10 }
+			add_to_variable = { FINApprovalRating = -5 }
+			add_to_variable = { FINRussiaTensions = -7 }
+		}
+	}
+
+	focus = {
+		id = FIN_intro_dispatch_an_attache
+		icon = GFX_FIN_dispatch_attache
+		x = 14
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_intro_collaborate_with_onega
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_intro_deals_with_pakt"
+			every_unit_leader = {
+				limit = {
+					has_id = 6003
+				}
+				set_nationality = ONG
+			}
+			ONG = {
+				country_event = { id = FIN.43 days = 3 }
+			}
+		}
+	}
+}
+
+focus_tree = {
+	id = FIN_onegawar
+	country = {
+		factor = 0
+		#modifier = {
+		#	add = 10
+		#	tag = FIN
+		#}
+	}
+	default = no
+
+	focus = {
+		id = FIN_onegawar_the_winter_war
+		icon = GFX_ARC_russian_flag_and_soldier
+		x = 7
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_the_winter_war"
+			add_war_support = 0.15
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_immediate_reserve_mobilization
+		icon = GFX_CZE_Soldier_Saluting_Rubble
+		x = 7
+		y = 1
+		cost = 0.4
+		ai_will_do = {
+			factor = 200
+		}
+		prerequisite = {
+			focus = FIN_onegawar_the_winter_war
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_immediate_reserve_mobilization"
+			add_manpower = 15500
+			load_oob = FIN_reserves
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+				producer = FIN
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_backup_arms_caches
+		icon = GFX_MAG_The_Best_Guns_Money_Can_Buy
+		x = 6
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_immediate_reserve_mobilization
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_backup_arms_caches"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = FIN
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 250
+				producer = FIN
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 250
+				producer = FIN
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_reactivate_the_armored_corps
+		icon = GFX_POR_armored_cavalry
+		x = 8
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 120
+		}
+		prerequisite = {
+			focus = FIN_onegawar_immediate_reserve_mobilization
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_reactivate_the_armored_corps"
+			load_oob = FIN_tanks
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_accelerated_training_programs
+		icon = GFX_URL_experimental_training_methods
+		x = 7
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_backup_arms_caches
+		}
+		prerequisite = {
+			focus = FIN_onegawar_reactivate_the_armored_corps
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_accelerated_training_programs"
+			army_experience = 10
+			add_timed_idea = { idea = FIN_Accelerated_Training days = 365 }
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_women_on_the_field_question
+		icon = GFX_Generic_Question_of_Womens_Rights
+		x = 7
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_accelerated_training_programs
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_women_on_the_field_question"
+			country_event = {
+				id = FIN.100
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_call_to_our_friends
+		icon = GFX_GER_SGR_comrades_from_europe
+		x = 11
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_the_winter_war
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_call_to_our_friends"
+			SWE = {
+				country_event = {
+					id = FIN.105
+					days = 1
+				}
+			}
+			if = {
+				limit = {
+					NOR = {
+						NOT = {
+							has_government = national_socialism
+						}
+					}
+				}
+				NOR = {
+					country_event = {
+						id = FIN.105
+						days = 1
+					}
+				}
+			}
+			DEN = {
+				country_event = {
+					id = FIN.105
+					days = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_swedish_volunteer_brigades
+		icon = GFX_GER_Towards_Sweden
+		x = 14
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_call_to_our_friends
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_swedish_volunteer_brigades"
+			SWE = {
+				country_event = {
+					id = FIN.100
+					days = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_soldiers_without_borders
+		icon = GFX_MAG_Soldiers_Without_Borders
+		x = 13
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_call_to_our_friends
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_soldiers_without_borders"
+			load_oob = FIN_mercs
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_plea_to_the_pakt
+		icon = GFX_WAL_german_friends
+		x = 10
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_call_to_our_friends
+		}
+		available = {
+			NOT = {
+				has_country_flag = FIN_pulled_GER_assets
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_plea_to_the_pakt"
+			GER = {
+				country_event = {
+					id = FIN.106
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_ask_the_usa
+		icon = GFX_CAN_praise_the_ofn
+		x = 12
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_call_to_our_friends
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_ask_the_usa"
+			USA = {
+				country_event = {
+					id = FIN.109
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_promise_our_gratitude
+		icon = GFX_GER_Ease_the_Embargoes
+		x = 11
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_plea_to_the_pakt
+			focus = FIN_onegawar_ask_the_usa
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_promise_our_gratitude"
+			country_event = {
+				id = FIN.114
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_assistance_to_onega
+		icon = GFX_finnish_benefactors
+		x = 3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_the_winter_war
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_assistance_to_onega"
+			ONG = {
+				add_war_support = 0.15
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_offer_medical_assistance
+		icon = GFX_USA_The_Workplace_Healthcare_Act
+		x = 1
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_assistance_to_onega
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_offer_medical_assistance"
+			ONG = {
+				add_tech_bonus = {
+					name = hospital_tech
+					bonus = 3
+					uses = 1
+					category = hospital_tech
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_arms_shipments
+		icon = GFX_TNO_generic_arms_shipments
+		x = 1
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_offer_medical_assistance
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_arms_shipments"
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = ONG
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_open_the_floodgates
+		icon = GFX_Finalize_AA_Procurement
+		x = 1
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_arms_shipments
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_open_the_floodgates"
+			send_equipment = {
+				equipment = anti_tank_equipment
+				amount = 100
+				target = ONG
+			}
+			send_equipment = {
+				equipment = artillery_equipment
+				amount = 250
+				target = ONG
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_finnish_field_commanders
+		icon = GFX_ONG_FIN_advisors
+		x = 4
+		y = 2
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_assistance_to_onega
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_finnish_field_commanders"
+			ONG = {
+				army_experience = 15
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_forward_airbases
+		icon = GFX_ANG_keeptheminourhands
+		x = 3
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_finnish_field_commanders
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_forward_airbases"
+			ONG = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_dispatch_engineer_companies
+		icon = GFX_COG_Fortify_The_Border
+		x = 5
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_finnish_field_commanders
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_dispatch_engineer_companies"
+			ONG = {
+				add_tech_bonus = {
+					name = engineers_tech
+					bonus = 3
+					uses = 1
+					category = engineers_tech
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = FIN_onegawar_building_an_ally
+		icon = GFX_generic_onega
+		x = 4
+		y = 4
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_dispatch_engineer_companies
+		}
+		prerequisite = {
+			focus = FIN_onegawar_forward_airbases
+		}
+		available = {
+			ONG = {
+				exists = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_building_an_ally"
+			ONG = {
+			}
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_victory_is_the_only_way
+		icon = GFX_generic_bombs
+		x = 4
+		y = 5
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_open_the_floodgates
+			focus = FIN_onegawar_building_an_ally
+			focus = FIN_onegawar_women_on_the_field_question
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_victory_is_the_only_way"
+			# add_timed_idea = { idea = FIN_Only_Way days = 180 }
+			add_war_support = 0.15
+		}
+	}
+
+	focus = {
+		id = FIN_onegawar_njet_venaja
+		icon = GFX_AKT_Russian_Flag_Tatters
+		x = 4
+		y = 6
+		cost = 2
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = {
+			focus = FIN_onegawar_victory_is_the_only_way
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus FIN_onegawar_njet_venaja"
+			add_timed_idea = { idea = FIN_Nyet_Vinjaya days = 90 }
+		}
+	}
+}

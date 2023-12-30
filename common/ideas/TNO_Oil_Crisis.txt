@@ -1,0 +1,53 @@
+ideas = {
+
+	country = {
+		## sending friends
+
+		OIL_prouar_volunteers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OIL_uar_volunteers"}
+			picture = MGN_army_good
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 5
+				send_volunteers_tension = -1.00
+			}
+		}
+
+		OIL_prosaud_volunteers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OIL_prosaud_volunteers"}
+			picture = SAU_Qatif_Uprising
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 5
+				send_volunteers_tension = -1.00
+			}
+		}
+	}
+
+	hidden_ideas = {
+		OIL_surrender_modifier_weak = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OIL_hidden_surrender_modifier_weak"}
+			modifier = {
+				surrender_limit = 0.2
+			}
+		}
+
+		OIL_surrender_modifier_strong = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OIL_hidden_surrender_modifier_strong"}
+			modifier = {
+				surrender_limit = 0.5
+			}
+		}
+
+	}
+}

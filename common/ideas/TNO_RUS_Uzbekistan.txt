@@ -1,0 +1,216 @@
+ideas = {
+	country = {
+		UZB_Turkic_United_Front = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Turkic_United_Front"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TUR_Weakening_Grip
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = 0.0625
+				army_org_factor = 0.1
+			}
+		}
+		UZB_Aktau_Cooperation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Turkic_United_Front"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GFX_OST_The_Model_Colony
+			modifier = {
+				political_power_gain = 0.0625
+				army_attack_factor = 0.05
+				industrial_capacity_factory = 0.025
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		UZB_Joint_Army_Assistance_Program = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Joint_Army_Assistance_Program"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_Constructive_Science
+			modifier = {
+				experience_gain_army = 0.1
+				land_equipment_upgrade_xp_cost = -0.05
+			}
+		}
+		UZB_Broken_Nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Broken_Nation"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IND_homepoverty
+			modifier = {
+				army_org_factor = -0.8
+				army_core_defence_factor = -0.8
+			}
+		}
+		UZB_Jami_Urush = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Jami_Urush"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_fort
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+				army_org = 3.5
+			}
+		}
+		UZB_Armiya_Millatdir = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Armiya_Millatdir"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_fort
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.1
+				conscription_factor = 0.10
+			}
+		}
+		UZB_The_Kyrgyz_Campaign = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_The_Kyrgyz_Campaign"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_Magnitogorsk_Collapse
+			modifier = {
+				army_org_factor = 0.25
+				army_org = 6
+			}
+		}
+		UZB_The_Oligarchy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Cynism_Crisis"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_Magnitogorsk_Collapse
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}	
+		}
+		UZB_The_Second_Wind = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Cynism_Crisis"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_Magnitogorsk_Collapse
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.15
+			}
+		}
+		UZB_Jadid = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Jadid"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = UZB_Jadid
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.15
+			}	
+		}
+		UZB_Rise_of_Discontent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UZB_Rise_of_Discontent"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = UZB_Rise_of_Discontent
+			modifier = {
+				stability_factor = -0.10
+			}	
+		}
+		UTL_Black_Dogs = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTL_Black_Dogs"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = UTL_Black_Dogs
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+				army_org = 3.5
+			}
+		}
+		UTL_Veli_Rides_Again = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea UTL_Veli_Rides_Again"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = UTL_Veli_Rides_Again
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+	}
+}

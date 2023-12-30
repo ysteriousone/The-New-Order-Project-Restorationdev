@@ -1,0 +1,410 @@
+spriteTypes = {
+
+	###RIFLE IMPROVEMENT ICONS###
+
+	SpriteType = {
+		name = "GFX_KOM_infantry_weapons_improvements_mine_1_medium"
+		texturefile = "gfx/interface/technologies/KOM_mine1.dds"
+	}
+	
+	###WRS NON-MTG DESTROYERS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_destroyer_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_modern_destroyer_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_destroyer_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_destroyer_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ww2_destroyer_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_45.dds"
+	}
+
+	###WRS NON-MTG CRUISERS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_modern_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ww2_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Cruiser_45.dds"
+	}
+
+	###WRS NON-MTG SUBMARINES###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_modern_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ww2_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Submarine_45.dds"
+	}
+
+	###WRS NON-MTG CARRIERS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_modern_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Carrier_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ww2_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_45.dds"
+	}
+
+	###WRS NON-MTG BATTLESHIPS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_battleship_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_modern_battleship_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ww2_battleship_medium"
+		texturefile = "gfx/interface/technologies/RUS_Battleship_45.dds"
+	}
+
+	###WRS NON-MTG FRIGATES###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_frigate_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_modern_frigate_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_frigate_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_frigate_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_frigate_medium"
+		texturefile = "gfx/interface/technologies/RUS_Frigate_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ww2_frigate_medium"
+		texturefile = "gfx/interface/technologies/RUS_Frigate_45.dds"
+	}
+	
+	###WRS MTG CORVETTES###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_very_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Corvette_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_very_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Corvette_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_very_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Corvette_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_very_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Corvette_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_very_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Corvette_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_very_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Corvette_45.dds"
+	}
+
+	###WRS MTG DESTROYERS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Destroyer_45.dds"
+	}
+
+	###WRS MTG CRUISERS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_cruiser_medium"
+		texturefile = "gfx/interface/technologies/RUS_Cruiser_45.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_6_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Cruiser_45.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_6_capital_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_5_capital_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_4_capital_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_3_capital_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_2_capital_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Cruiser_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ship_hull_cruiser_1_capital_medium"
+		texturefile = "gfx/interface/technologies/RUS_Cruiser_45.dds"
+	}
+
+	###WRS MTG SUBMARINES###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Submarine_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_submarine_medium"
+		texturefile = "gfx/interface/technologies/RUS_Submarine_45.dds"
+	}
+
+	###WRS MTG CARRIERS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Carrier_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_carrier_medium"
+		texturefile = "gfx/interface/technologies/RUS_Carrier_45.dds"
+	}
+
+	###WRS MTG BATTLESHIPS###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Battleship_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/RUS_Battleship_45.dds"
+	}
+
+	###WRS MTG FRIGATES###
+
+	SpriteType = {
+		name = "GFX_KOM_modern_ship_hull_more_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_90.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_semi_modern_ship_hull_more_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_80.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_advanced_ship_hull_more_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_improved_ship_hull_more_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Democratic_Frigate_60.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_basic_ship_hull_more_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Frigate_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_early_ship_hull_more_light_medium"
+		texturefile = "gfx/interface/technologies/RUS_Frigate_45.dds"
+	}
+}

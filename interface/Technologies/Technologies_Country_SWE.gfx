@@ -1,0 +1,54 @@
+spriteTypes = {
+	### NSB FIXES ###
+	## APC ##
+	SpriteType = {
+		name = "GFX_SWE_APC_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/SWE_APC_60.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWE_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SWE_MBT_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_MBT_1950_medium"
+		texturefile = "gfx/interface/technologies/SWE_MBT_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_MBT_1960_medium"
+		texturefile = "gfx/interface/technologies/SWE_MBT_60.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWE_NSB_MBT_1945_medium"
+		texturefile = "gfx/interface/technologies/SWE_MBT_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_NSB_MBT_1950_medium"
+		texturefile = "gfx/interface/technologies/SWE_MBT_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_NSB_MBT_1960_medium"
+		texturefile = "gfx/interface/technologies/SWE_MBT_60.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SWE_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SWE_IFV_45.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SWE_NSB_IFV_1945_medium"
+		texturefile = "gfx/interface/technologies/SWE_IFV_45.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SWE_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/SWE_APC_60.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SWE_NSB_APC_1960_medium"
+		texturefile = "gfx/interface/technologies/SWE_APC_60.dds"
+	}
+}

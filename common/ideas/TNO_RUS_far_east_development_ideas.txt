@@ -1,0 +1,74 @@
+ideas = {
+	hidden_ideas = {
+		OMO_holy_icons_misc_income = {
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { misc_income_modifier = 0.05 }
+		}
+		OMO_magadans_old_tricks_misc_income = {
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { misc_income_modifier = 0.05 }
+		}
+		OMO_christian_tourism_misc_income = {
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { misc_income_modifier = 0.1 }
+		}
+		OMO_FST_free_pus = {
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { free_production_units_modifier = 2 }
+		}
+	}
+	country = {
+		OMO_shelter_of_the_faithful = {
+			picture = OMO_shelter_of_the_faithful
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { monthly_population = 0.25 }
+		}
+		OMO_expanding_the_fraternal_militias = {
+			picture = GAY_Warrior_Order
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { weekly_manpower = 500 }
+		}
+	}
+}

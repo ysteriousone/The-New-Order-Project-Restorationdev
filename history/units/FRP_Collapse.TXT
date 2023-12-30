@@ -1,0 +1,39 @@
+division_template = {
+	name = "Antifashistskiye Partizany"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		signal = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1ya Antifashistskiye Partizany"
+		location = 3580
+		division_template = "Antifashistskiye Partizany"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2ya Antifashistskiye Partizany"
+		location = 6398
+		division_template = "Antifashistskiye Partizany"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3ya Antifashistskiye Partizany"
+		location = 6262
+		division_template = "Antifashistskiye Partizany"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+}

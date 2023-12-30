@@ -1,0 +1,170 @@
+spriteTypes = {
+	### Heydrich Outros ###
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_0"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_0.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_1"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_2"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_3"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_4"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_4.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_5"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_5.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_6"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_6.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_7"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_7.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_8"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_8.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_outro_9"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_outro_9.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_desk"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_desk.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_sad"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_sad.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_chat_1"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_chat_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_chat_2"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_chat_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_heydrich_salute"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_heydrich_salute.dds"
+	}
+	
+	### General ###
+	spriteType = {
+		name = "GFX_report_event_HGR_wegener"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_wegener.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_1"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_2"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_3"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_4"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_4.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_5"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_5.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_6"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_6.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_7"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_7.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_8"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_8.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_9"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_9.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_10"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_10.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_HGR_generic_ss_11"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_generic_ss_11.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_dietrich"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_dietrich.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_donitz"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_donitz.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_eicke"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_eicke.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_gehlen"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_gehlen.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_gille"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_gille.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_hausser"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_hausser.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_henlein"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_henlein.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_kaltenbrunner"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_kaltenbrunner.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_klingenberg"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_klingenberg.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_mohnke"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_mohnke.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_peiper"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_peiper.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_skorzeny"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_skorzeny.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_stadler"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_stadler.dds"
+	}
+	SpriteType = {
+		name = "GFX_report_event_HGR_steiner"
+		texturefile = "gfx/event_pictures/Reich/Germany/Heydrich/report_event_HGR_steiner.dds"
+	}
+	
+}

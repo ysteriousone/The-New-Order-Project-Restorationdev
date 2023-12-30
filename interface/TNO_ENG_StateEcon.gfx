@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_3333_box"
+		texturefile = "gfx/interface/england_gui/StateEcon/3333_box.dds"
+	}
+}

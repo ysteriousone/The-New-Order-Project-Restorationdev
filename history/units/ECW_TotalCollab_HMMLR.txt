@@ -1,0 +1,92 @@
+﻿units = {
+	#North region
+	division = {
+		location = 351
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9332
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11297
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9269
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11270
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#Central regions
+	division = {
+		location = 7239
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6270
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Bill's Own"
+		location = 11345
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Women's Anti-fascist Division"
+		location = 3205
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Manchester United Front"
+		location = 6318
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Liverpool Revolutionary Association"
+		location = 6384
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11279
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9268
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#South region
+	division = {
+		location = 3369
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#London region
+	division = {
+		name = "London Veterans Association"
+		location = 271
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Oxford Student's Revolutionary Society"
+		location = 322
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

@@ -1,0 +1,20 @@
+﻿division_template = {
+	name = "Syrian Infiltrators"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Syrian Infiltrators"
+		location = 4550
+		division_template = "Syrian Infiltrators"
+		start_experience_factor = 0.05
+	}
+}

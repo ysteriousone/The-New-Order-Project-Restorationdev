@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_TOM_infantry_kit_5_medium"
+		texturefile = "gfx/interface/technologies/TOM_64_Kit.dds"
+	}
+}

@@ -1,0 +1,16 @@
+﻿units = {
+	division = {
+		name = "Kalimantan Militia"
+		location = "10237"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.40
+	}
+	division = {
+		name = "Kalimantan Militia"
+		location = "1404"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.40
+	}
+}

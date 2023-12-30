@@ -1,0 +1,13 @@
+OMO_humanitarian_aid = {
+	icon = GFX_idea_BRT_refugee_aid_two
+	enable = { always = yes }
+	misc_income_modifier = OMO_misc_income_modifier
+	monthly_population = OMO_aid_monthly_population_modifier
+}
+
+OMO_shelter_of_the_faithful = {
+	icon = GFX_idea_BRT_refugee_aid_two
+	enable = { always = yes }
+	misc_income_modifier = OMO_misc_income_modifier
+	monthly_population = OMO_shelter_monthly_population_modifier
+}

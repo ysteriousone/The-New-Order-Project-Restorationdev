@@ -1,0 +1,34 @@
+﻿division_template = {
+	name = "OFN Landing Troops"
+	is_locked = yes
+	priority = 2
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "OFN Landing Troops"
+		location = 2207
+		division_template = "OFN Landing Troops"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "OFN Landing Troops"
+		location = 2229
+		division_template = "OFN Landing Troops"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+}

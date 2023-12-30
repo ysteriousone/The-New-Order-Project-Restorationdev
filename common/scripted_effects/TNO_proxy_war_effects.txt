@@ -1,0 +1,253 @@
+
+
+proxy_war_increase_policing = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = policing_level_1
+				has_idea = policing_level_2
+				has_idea = policing_level_3
+				has_idea = policing_level_4
+				has_idea = policing_level_5
+				has_idea = policing_level_6
+				has_idea = policing_level_7
+				has_idea = policing_level_8
+			}
+		}
+		add_ideas = { policing_level_1 }
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_1
+		}
+		swap_ideas = {
+			remove_idea = policing_level_1
+			add_idea = policing_level_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_2
+		}
+		swap_ideas = {
+			remove_idea = policing_level_2
+			add_idea = policing_level_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_3
+		}
+		swap_ideas = {
+			remove_idea = policing_level_3
+			add_idea = policing_level_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_4
+		}
+		swap_ideas = {
+			remove_idea = policing_level_4
+			add_idea = policing_level_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_5
+		}
+		swap_ideas = {
+			remove_idea = policing_level_5
+			add_idea = policing_level_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_6
+		}
+		swap_ideas = {
+			remove_idea = policing_level_6
+			add_idea = policing_level_7
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_7
+		}
+		swap_ideas = {
+			remove_idea = policing_level_7
+			add_idea = policing_level_8
+		}
+	}
+}
+
+proxy_war_decrease_policing = {
+	if = {
+		limit = {
+			has_idea = policing_level_1
+		}
+		remove_ideas = policing_level_1
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_2
+		}
+		swap_ideas = {
+			remove_idea = policing_level_2
+			add_idea = policing_level_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_3
+		}
+		swap_ideas = {
+			remove_idea = policing_level_3
+			add_idea = policing_level_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_4
+		}
+		swap_ideas = {
+			remove_idea = policing_level_4
+			add_idea = policing_level_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_5
+		}
+		swap_ideas = {
+			remove_idea = policing_level_5
+			add_idea = policing_level_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_6
+		}
+		swap_ideas = {
+			remove_idea = policing_level_6
+			add_idea = policing_level_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_7
+		}
+		swap_ideas = {
+			remove_idea = policing_level_7
+			add_idea = policing_level_6
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = policing_level_8
+		}
+		swap_ideas = {
+			remove_idea = policing_level_7
+			add_idea = policing_level_7
+		}
+	}
+}
+
+proxy_war_set_up_dynamic_bombing_values = {
+	set_variable = { plane_bombing_planing_speed = -0.15 }
+	set_variable = { plane_bombing_defence_factor = -0.5 }
+	set_variable = { plane_bombing_speed_factor = -0.5 }
+}
+
+proxy_war_set_up_dynamic_bombing = {
+	set_variable = { plane_bombing_planing_speed = -0.15 }
+	set_variable = { plane_bombing_defence_factor = -0.5 }
+	set_variable = { plane_bombing_speed_factor = -0.5 }
+	add_dynamic_modifier = { modifier = TNO_plane_bombing }
+}
+
+proxy_war_clear_dynamic_bombing = {
+	clear_variable = plane_bombing_planing_speed
+	clear_variable = plane_bombing_defence_factor
+	clear_variable = plane_bombing_speed_factor
+	clear_variable = plane_bombing_breakthrough_factor
+	if = {
+		limit = { has_dynamic_modifier = { modifier = TNO_plane_bombing } }
+		remove_dynamic_modifier = { modifier = TNO_plane_bombing }
+	}
+}
+
+proxy_war_increase_bombing_effectiveness = {
+	add_to_variable = { plane_bombing_planing_speed = -0.03 }
+	add_to_variable = { plane_bombing_defence_factor = -0.1 }
+	add_to_variable = { plane_bombing_speed_factor = -0.1 }
+
+	clamp_variable = { var = plane_bombing_planing_speed min = -0.21 max = 0 }
+	clamp_variable = { var = plane_bombing_defence_factor min = -0.7 max = 0 }
+	clamp_variable = { var = plane_bombing_defence_factor min = -0.7 max = 0 }
+	force_update_dynamic_modifier = yes
+	
+	custom_effect_tooltip = proxy_war_increase_bombing_effectiveness_tt
+}
+
+proxy_war_reduce_bombing_effectiveness = {
+	subtract_from_variable = { plane_bombing_planing_speed = -0.03 }
+	subtract_from_variable = { plane_bombing_defence_factor = -0.1 }
+	subtract_from_variable = { plane_bombing_speed_factor = -0.1 }
+
+	clamp_variable = { var = plane_bombing_planing_speed min = -0.21 max = 0 }
+	clamp_variable = { var = plane_bombing_defence_factor min = -0.7 max = 0 }
+	clamp_variable = { var = plane_bombing_defence_factor min = -0.7 max = 0 }
+	force_update_dynamic_modifier = yes
+	
+	if = {
+		limit = {
+			check_variable = { plane_bombing_planing_speed = 0 }
+			has_dynamic_modifier = { modifier = TNO_plane_bombing }
+		}
+		remove_dynamic_modifier = { modifier = TNO_plane_bombing }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_dynamic_modifier = { modifier = TNO_plane_bombing }
+				has_global_flag = PPI_proxy_war_preparation
+			}
+		}
+		custom_effect_tooltip = proxy_war_reduce_bombing_effectiveness_tt
+	}
+	else = {
+		# Blank
+	}
+}
+
+proxy_war_reduce_bombing_effectiveness_large = {
+	subtract_from_variable = { plane_bombing_planing_speed = -0.06 }
+	subtract_from_variable = { plane_bombing_defence_factor = -0.2 }
+	subtract_from_variable = { plane_bombing_speed_factor = -0.2 }
+
+	clamp_variable = { var = plane_bombing_planing_speed min = -0.21 max = 0 }
+	clamp_variable = { var = plane_bombing_defence_factor min = -0.7 max = 0 }
+	clamp_variable = { var = plane_bombing_defence_factor min = -0.7 max = 0 }
+	force_update_dynamic_modifier = yes
+	
+	if = {
+		limit = {
+			check_variable = { plane_bombing_planing_speed = 0 }
+			has_dynamic_modifier = { modifier = TNO_plane_bombing }
+		}
+		remove_dynamic_modifier = { modifier = TNO_plane_bombing }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_dynamic_modifier = { modifier = TNO_plane_bombing }
+				has_global_flag = PPI_proxy_war_preparation
+			}
+		}
+		custom_effect_tooltip = proxy_war_reduce_bombing_effectiveness_large_tt
+	}
+	else = {
+		# Blank
+	}
+}

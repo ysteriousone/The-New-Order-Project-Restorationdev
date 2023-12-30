@@ -1,0 +1,712 @@
+ideas = {
+	country = {
+		CRO_german_funded_partisans = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CRO_german_funded_partisans"}
+
+			picture = generic_Anti_Partisan_Tactics
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_org = -0.2
+				army_speed_factor = -0.25
+				army_defence_factor = -0.2
+			}
+		}
+		CRO_the_partisan_problem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_the_partisan_problem"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_the_partisan_problem
+
+			modifier = {
+				army_speed_factor = -0.10
+				attrition = 0.10
+				army_org = -0.15
+				conscription = -0.01
+			}
+		}
+		CRO_bosnian_autonomy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_bosnian_autonomy"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = CRO_Bosnian_Autonomy
+
+			modifier = {
+				conscription = -0.05
+				consumer_goods_use_modifier = 0.03
+			}
+		}
+		CRO_the_sham_kingdom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_the_sham_kingdom"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = The_Sham_Kingdom
+
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.20
+			}
+		}
+		CRO_legacy_of_the_ustase = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_legacy_of_the_ustase"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				national_socialism_drift = 0.03
+				stability_factor = -0.20
+			}
+		}
+
+		##yugo
+
+		CRO_economic_rework_ms = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_economic_rework_ms"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		CRO_economic_rework_ml = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_economic_rework_ml"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		CRO_birthplace_of_market_socialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_birthplace_of_market_socialism"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		CRO_birthplace_of_market_socialism0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_birthplace_of_market_socialism0"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+
+		CRO_birthplace_of_market_socialism1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_birthplace_of_market_socialism1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.02
+			}
+		}
+
+		CRO_birthplace_of_market_socialism2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_birthplace_of_market_socialism2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		CRO_birthplace_of_market_socialism3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_birthplace_of_market_socialism3"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				consumer_goods_use_modifier = -0.03
+			}
+		}
+
+		CRO_mass_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_mass_industry"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		CRO_cult_of_tito = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_cult_of_tito"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+			}
+		}
+
+		CRO_hands_in_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_hands_in_army"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				experience_gain_army = 0.05
+			}
+		}
+
+		CRO_hands_in_infra = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_hands_in_infra"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		CRO_hands_in_diplomacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_hands_in_infrastructure"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+
+		CRO_friendly_face_of_socialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_friendly_face_of_socialism"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.01
+			}
+		}
+
+		CRO_industryburden = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_industryburden"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.01
+			}
+		}
+
+		CRO_tension_aid = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_tension_aid"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+
+		CRO_responsible_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_responsible_government"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.10
+			}
+		}
+
+		CRO_political_machine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_political_machine"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+
+		CRO_political_machine1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_political_machine1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		CRO_political_machine2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_political_machine2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				communist_drift = 0.10
+			}
+		}
+
+		CRO_house_of_cards = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_political_machine2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = -0.03
+			}
+		}
+
+		CRO_fortnite = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_fortnite"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+
+		CRO_morale = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_morale"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+
+		CRO_the_knife = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_the_knife"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+
+		CRO_recovery = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_recovery"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+
+		CRO_state_for_croatians = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_state_for_croatians"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				defence = 0.1
+			}
+		}
+
+		CRO_selective_immigrations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_selective_immigrations"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -1.15
+				stability_factor = -0.15
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -1.00
+				stability_factor = -0.15
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -0.75
+				stability_factor = -0.10
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY3"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -0.50
+				stability_factor = -0.10
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY4"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.05
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY5"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.05
+			}
+		}
+
+		CRO_PARTISAN_ACTIVITY6 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY6"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+		}
+
+		CRO_border_boys = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY5"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
+		}
+
+		CRO_border_boosts = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_PARTISAN_ACTIVITY5"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				defence = 0.1
+			}
+		}
+
+		## Ita Croatia
+
+		CRO_italian_resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_italian_resistance"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				stability_weekly = -0.2
+				drift_defence_factor = -0.25
+				political_power_gain = -0.5
+			}
+		}
+		CRO_italian_resistance1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_italian_resistance1"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				stability_weekly = -0.15
+				drift_defence_factor = -0.15
+				political_power_gain = -0.3
+			}
+		}
+		CRO_italian_resistance2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_italian_resistance2"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				stability_weekly = -0.1
+				drift_defence_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+		CRO_italian_resistance3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_italian_resistance3"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				stability_weekly = -0.05
+				political_power_gain = -0.1
+			}
+		}
+
+		CRO_bailed_banks = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_bailed_banks"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+				line_change_production_efficiency_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+
+		CRO_phasing_out_italians = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_phasing_out_italians"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+
+		CRO_progetto_primavera_woah = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_progetto_primavera_woah"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_weekly = 0.01
+			}
+		}
+
+		CRO_government_questioned = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CRO_government_questioned"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = cro_legacy_of_the_ustase
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_weekly = -0.1
+			}
+		}
+	}
+}

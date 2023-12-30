@@ -1,0 +1,190 @@
+ideas = {
+	#############
+	## SPIRITS ##
+	#############
+	country = {
+
+		ARG_reign_of_the_cavalry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_reign_of_the_cavalry" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Reign_of_the_Cavalry
+
+			removal_cost = -1
+
+			modifier = {
+				#army_org_factor = -0.2
+				#army_professionalism_monthly_rate = -0.3
+				#max_command_power_mult = -0.5
+
+				army_armor_attack_factor = 0.1
+				army_armor_speed_factor = 0.1
+				army_artillery_attack_factor = 0.1
+
+				army_infantry_attack_factor = -0.15
+				army_infantry_defence_factor = -0.15
+
+				naval_coordination = -0.2
+			}
+		}
+		ARG_anarchy_in_the_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_anarchy_in_the_army" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Anarchy_in_the_Army
+
+			removal_cost = -1
+
+			modifier = {
+				#army_org_factor = -0.2
+				#army_professionalism_monthly_rate = -0.3
+				#max_command_power_mult = -0.5
+			}
+		}
+		ARG_navy_controlled_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_navy_controlled_army" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Navy_Controlled_Army
+
+			removal_cost = -1
+
+			modifier = {
+				#army_org_factor = -0.2
+				#army_professionalism_monthly_rate = -0.3
+				#max_command_power_mult = -0.5
+			}
+		}
+		ARG_the_death_of_discipline = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_the_death_of_discipline" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Armed_Forces_The_Death_of_Discipline
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.2
+				army_professionalism_monthly_rate = -0.3
+				max_command_power_mult = -0.5
+			}
+		}
+		ARG_structural_unhingement = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_structural_unhingement" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Structural_Unhingment
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.50
+			}
+		}
+		ARG_greekback_lira_blues = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_greekback_lira_blues" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Greenback_Lira_Blues
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_credit_rating_progress = -2.5
+				#custom_modifier_tooltip = ARG_greekback_lira_blues_tt
+			}
+		}
+		ARG_juan_domingo_el_ausente = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_juan_domingo_el_ausente" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = ARG_Juan_Domingo_el_Ausente
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				paternalism_drift = -0.02
+				#custom_modifier_tooltip = ARG_juan_domingo_el_ausente_tt
+			}
+		}
+		ARG_peronist_resistance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_peronist_resistance" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = GFX_idea_ARG_peronist_resistance
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.15
+				political_power_gain = -0.5
+				industrial_capacity_factory	= -0.15
+			}
+		}
+		ARG_azules_and_colorados = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_azules_and_colorados" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = GFX_idea_ARG_azules_and_colorados
+
+			removal_cost = -1
+
+			modifier = {
+				army_infantry_attack_factor = -0.10
+				army_infantry_defence_factor = -0.10
+			}
+		}
+		ARG_anti_americanism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_anti_americanism" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = GFX_idea_ARG_anti_americanism
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		ARG_economic_woes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ARG_economic_woes" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = GFX_idea_ARG_economic_woes
+
+			removal_cost = -1
+
+			modifier = {
+				gdp_growth_modifier = -0.015
+				civilian_annual_cost = -0.2
+				taxable_population_modifier = -0.1
+				poverty_monthly_rate = -1
+			}
+		}
+	}
+}

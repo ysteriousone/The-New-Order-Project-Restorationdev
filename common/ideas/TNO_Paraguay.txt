@@ -1,0 +1,254 @@
+ideas = {
+	#############
+	## SPIRITS ##
+	#############
+	country = {
+
+		PAR_bastion_of_latin_american_fascism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_bastion_of_latin_american_fascism" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = PAR_bastion_of_latin_american_fascism
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.1
+				drift_defence_factor = 0.33
+				army_cost_modifier = -0.33
+				custom_modifier_tooltip = PAR_bastion_of_latin_american_fascism_tt
+			}
+		}
+		PAR_avanee = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_avanee" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			picture = PAR_Avane
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_core_defence_factor = 0.33
+				surrender_limit = 0.15
+			}
+		}
+		PAR_the_chokehold = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_the_chokehold" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			picture = PAR_The_Chokehold
+			removal_cost = -1
+			modifier = {
+				free_production_units_modifier = 2
+			}
+			targeted_modifier = {
+				tag = ARG
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+		PAR_political_tarot = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_political_tarot" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			picture = PAR_political_tarot
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		PAR_bush_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_bush_war" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			picture = PAR_bush_war
+			removal_cost = -1
+			modifier = {
+				weekly_manpower = -100
+				stability_factor = -0.2
+				fascism_drift = -0.05
+			}
+		}
+
+		####################################
+		PAR_disciplina_jerarquia_y_orden = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_disciplina_jerarquia_y_orden" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_coloradan_dissidence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_coloradan_dissidence" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_coloradans_shattered = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_coloradan_dissidence" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			picture = PAR_coloradan_dissidence
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_fulna_insurgency = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_fulna_insurgency" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_new_state_chavez = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_new_state_chavez" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_new_state_stroessner = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_new_state_stroessner" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_new_state_franco = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_new_state_franco" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_coloradans_ascendant = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_coloradans_ascendant" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_coloradans_secured = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_coloradans_secured" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
+		PAR_fulna_ascendant = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAR_fulna_ascendant" }
+
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+
+			#picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+	}
+
+	hidden_ideas = {
+		PAR_twelve_day_war_buff_hidden = {
+			targeted_modifier = {
+				tag = BOL
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+			modifier = {
+				attrition = -0.5
+				out_of_supply_factor = -0.8
+				supply_factor = 0.4
+				supply_consumption_factor = -0.5
+				org_loss_when_moving = -0.5
+				army_speed_factor = 0.4
+				army_org_factor = 0.33
+				army_org_regain = 0.5
+			}
+		}
+		PAR_twelve_day_war_debuff_hidden = {
+			modifier = {
+				org_loss_when_moving = 0.5
+				army_speed_factor = -0.4
+				army_org_factor = -0.35
+				army_org_regain = -0.4
+				army_defence_factor = -0.33
+				army_attack_factor = -0.33
+			}
+		}
+	}
+}

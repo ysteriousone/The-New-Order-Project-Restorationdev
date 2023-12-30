@@ -1,0 +1,58 @@
+division_template = {
+	name = "Chernaya Brigada"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Motorizovannaya Diviziya"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1ya Chernaya Brigada"
+		location = 499
+		division_template = "Chernaya Brigada"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2ya Chernaya Brigada"
+		location = 499
+		division_template = "Chernaya Brigada"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3ya Chernaya Brigada"
+		location = 11523
+		division_template = "Chernaya Brigada"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1ya Motorizovannaya Diviziya"
+		location = 11523
+		division_template = "Motorizovannaya Diviziya"
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.6
+	}
+}

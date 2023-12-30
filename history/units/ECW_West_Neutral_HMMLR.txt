@@ -1,0 +1,38 @@
+units = {
+	division = {
+		name = "2nd 'Anti-Fascist' Division"
+		location = 6318
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		#name = "2nd 'Anti-Fascist' Division"
+		location = 11345
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Bill's Own"
+		location = 6335
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		#name = "Bill's Own"
+		location = 6335
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Liverpool Revolutionary Association"
+		location = 3205
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		#name = "Liverpool Revolutionary Association"
+		location = 11345
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

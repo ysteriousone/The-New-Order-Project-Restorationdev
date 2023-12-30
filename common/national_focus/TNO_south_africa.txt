@@ -1,0 +1,39 @@
+focus_tree = {
+	id = SAF_prewar_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAF
+		}
+	}
+	default = no
+
+	shared_focus = SAF_south_africas_situation
+}
+
+focus_tree = {
+	id = SAF_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAF
+		}
+	}
+	default = no
+
+	shared_focus = SAF_our_nation_in_flames
+}
+
+focus_tree = {
+	id = SAF_second_civil_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAF
+		}
+	}
+	default = no
+}

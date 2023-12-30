@@ -1,0 +1,40 @@
+
+state={
+	id=1302
+	name="STATE_1302"
+	resources={
+		aluminium=7.000
+	}
+
+	history={
+		owner = GAN
+		victory_points = {
+			1630 20 
+		}
+		victory_points = {
+			12776 5 
+		}
+		set_state_flag = state_renamings
+		buildings = {
+			infrastructure = 3
+			schools = 1
+			offices = 1
+			hospitals = 1
+			prisons = 2
+			barracks = 2
+			thermoelectric_plant = 1
+
+		}
+		add_core_of = GAN
+		add_extra_state_shared_building_slots = 4
+
+	}
+
+	provinces={
+		1630 2022 3742 5057 6638 12327 12776 15646 
+	}
+	manpower=2305124
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

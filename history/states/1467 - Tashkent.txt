@@ -1,0 +1,26 @@
+
+state={
+	id=1467
+	name="STATE_1467" # Tashkent
+	manpower = 972312
+	
+	state_category = large_town
+	
+	resources={
+		tungsten=3
+	}
+	history={
+		owner = UZB
+		victory_points = { 14742 5 }
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+		}
+		add_core_of = UZB
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		14742
+	}
+}

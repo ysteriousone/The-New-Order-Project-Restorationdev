@@ -1,0 +1,53 @@
+characters = {
+	### Adygea
+	ADY_Lyubov_Lysenko = {
+		name = ADY_Lyubov_Lysenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADY/Portrait_Adygea_Lyubov_Lysenko.dds"
+			}
+		}
+		gender = female
+		country_leader = {
+			desc = "POLITICS_LYUBOV_LYSENKO_DESC"
+			ideology = progressivism_left_wing_populism_subtype
+			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+	}
+	ADY_Boris_Galushkin = {
+		name = ADY_Boris_Galushkin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADY/Portrait_Adygea_Boris_Galushkin.tga"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_leader commando }
+			skill = 3
+			legacy_id = 850
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	ADY_Pyotr_Stepanenko = {
+		name = ADY_Pyotr_Stepanenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ADY/Portrait_Adygea_Pyotr_Stepanenko.tga"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader war_hero }
+			skill = 2
+			legacy_id = 851
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

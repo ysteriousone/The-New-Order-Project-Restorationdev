@@ -1,0 +1,18 @@
+﻿division_template = {
+	name = "Force 17"
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+		elite_infantry = { x = 1 y = 0 }
+		elite_infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Force 17"
+		location = 7151
+		division_template = "Force 17"
+		start_experience_factor = 0.5
+	}
+}

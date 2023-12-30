@@ -1,0 +1,72 @@
+﻿division_template = {
+	name = "Deutsch-Polnische Infanterie-Division"
+	regiments = {
+
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Panzer-Division"
+	division_names_group = GER_panzer
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		military_police = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Krakowian Guard"
+		location = 15816
+		division_template = "Deutsch-Polnische Infanterie-Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Warsawian Guard"
+		location = 3544
+		division_template = "Deutsch-Polnische Infanterie-Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Lublinischt Guard"
+		location = 11399
+		division_template = "Deutsch-Polnische Infanterie-Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Snatislauwian Guard"
+		location = 11411
+		division_template = "Deutsch-Polnische Infanterie-Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Tarnauwian Guard"
+		location = 442
+		division_template = "Deutsch-Polnische Infanterie-Division"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Panzer-Division 'Polska'"
+		location = 442
+		division_template = "Panzer-Division"
+		start_experience_factor = 0.5
+	}
+}

@@ -1,0 +1,268 @@
+
+#VOTING SYSTEM
+defined_text = {
+	name = GetOFNActTT
+	text = {
+		localization_key = Generic_Bribe_OFN_TT
+	}
+}
+defined_text = {
+	name = GetOFNName
+	text = {
+		trigger = {
+			check_variable = { OFN_vote_id = 0 }
+		}
+		localization_key = USA_NA_Vote
+	}
+	text = {
+		trigger = {
+			check_variable = { OFN_vote_id = 1 }
+		}
+		localization_key = USA_Fix_Interest_Rate_OFN_Vote_title
+	}
+
+}
+defined_text = {
+	name = GetOFNDesc
+	text = {
+		trigger = {
+			check_variable = { OFN_vote_id = 1 }
+		}
+		localization_key = USA_Fix_Interest_Rate_OFN_Vote_desc
+	}
+}
+
+defined_text = {
+	name = GetOFNActTTUSA
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = OFN_Are_Yes
+	}
+
+	text = {
+		trigger = {
+			NOT = { tag = USA }
+		}
+		localization_key = OFN_Not_USA
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatus
+	text = {
+		trigger = {
+			check_variable = { OFNVoting = 1 }
+		}
+		localization_key = OFN_voting_yes
+	}
+	text = {
+		trigger = {
+			check_variable = { OFNVoting = 0 }
+		}
+		localization_key = OFN_voting_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { OFNVoting = -1 }
+		}
+		localization_key = OFN_voting_no
+	}
+}
+
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_CAN
+	text = {
+		trigger = {
+			check_variable = { CAN.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { CAN.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { CAN.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_ITA
+	text = {
+		trigger = {
+			check_variable = { ITA.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { ITA.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { ITA.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_BRT
+	text = {
+		trigger = {
+			check_variable = { BRT.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { BRT.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { BRT.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_ENG
+	text = {
+		trigger = {
+			check_variable = { ENG.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { ENG.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { ENG.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_SAF
+	text = {
+		trigger = {
+			check_variable = { SAF.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { SAF.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { SAF.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_AST
+	text = {
+		trigger = {
+			check_variable = { AST.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { AST.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { AST.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_USA
+	text = {
+		trigger = {
+			check_variable = { USA.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { USA.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { USA.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetOFNVoteStatusGFX_NZL
+	text = {
+		trigger = {
+			check_variable = { NZL.OFNVoting = 1 }
+		}
+		localization_key = GFX_yes_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { NZL.OFNVoting = 0 }
+		}
+		localization_key = GFX_neutral_vote
+	}
+	text = {
+		trigger = {
+			check_variable = { NZL.OFNVoting = -1 }
+		}
+		localization_key = GFX_no_vote
+	}
+}
+
+defined_text = {
+	name = GetCanBribeOFN
+	text = {
+		trigger = {
+			has_political_power > 99
+			check_variable = { OFN_vote_id > 0 }
+		}
+		localization_key = OFN_Can_Bribe
+	}
+	text = {
+		trigger = {
+			has_political_power < 100
+			check_variable = { OFN_vote_id > 0 }
+		}
+		localization_key = OFN_Cant_Bribe
+	}
+}
+#SPHERE SYSTEM

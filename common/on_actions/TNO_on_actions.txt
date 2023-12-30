@@ -1,0 +1,364 @@
+on_actions = {
+	######################################################
+	### on_startup goes to TNO_on_startup_actions.txt ###
+	######################################################
+
+	on_declare_war = { #I am genuinely terrified of this code, and resent the fact that mechanically I need to do this shit at all. I hope it actually works. - Pacifica, Came here to fix what wasn't working - Wendell
+		effect = {
+			if = {
+				limit = {
+					ROOT = { has_border_war = yes }
+				}
+				ROOT = {
+					TNO_cancel_border_war_country_scope = yes
+				}
+			}
+			if = {
+				limit = {
+					FROM = { has_border_war = yes }
+				}
+				FROM = {
+					TNO_cancel_border_war_country_scope = yes
+				}
+			}
+		}
+	}
+
+	on_war_relation_added = {
+		effect = {
+			log = "on_war_relation_added trade"
+			ROOT = { 
+				reload_trade_influence_on_war = yes 
+				every_enemy_country = {
+					every_enemy_country = {
+						limit = { is_ai = yes }
+						update_ai_slider_logic = yes
+					}
+				}
+				every_enemy_country = {
+					limit = { is_ai = yes }
+					update_ai_slider_logic = yes
+				}
+			}
+		}
+	}
+
+	on_peace = {
+		effect = {
+			# Trade
+			recalculate_trade_influence = yes
+
+			#War Taxes auto disable stuff
+			if = {
+				limit = {
+					has_country_flag = war_taxes_enabled
+					has_war = no
+				}
+				clr_country_flag = war_taxes_enabled
+				set_variable = { wt_status_frame = 1 }
+				add_to_variable = { TNO_economy_GUI_dirty = 1 }
+				war_taxes_check = yes
+			}
+		}
+	}
+
+	on_monthly_ZZZ = {
+		effect = {
+			# Update embargoes between the superpowers
+			update_superpower_embargoes = yes
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			if = { # hurts state value based on occupier
+				limit = {
+					NOT = {
+						has_global_flag = NUCLEAR_WAR
+					}
+					ROOT = {
+						has_war_with = FROM
+					}
+				}
+				FROM.FROM = {
+					log = "[?state_value] was state value before applying effects of changing on war"
+					set_temp_variable = { state_value_kept = ROOT:modifier@state_GDP_kept_on_occupation_modifier }
+					clamp_temp_variable = {
+						var = state_value_kept
+						max = 1 
+					}
+					multiply_variable = { state_value = state_value_kept }
+					log = "[?state_value] was state value after applying effects of changing on war"
+				}
+			}
+
+			# else_if = { # this bit hurts state_value a bit due to exchange that's not explicitly peaceful DISABLED FOR NOW
+
+			# 	limit = {
+			# 		NOT = {
+			# 			has_global_flag = NUCLEAR_WAR
+			# 		}
+			# 		NOT = {
+			# 			OR = {
+			# 				ROOT = {
+			# 					has_variable = peaceful_land_transfer
+			# 				}
+			# 				FROM = {
+			# 					has_variable = peaceful_land_transfer
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	log = "[?state_value] was state value before applying effects of changing on non-peaceful transfer"
+			# 	FROM.FROM = {
+			# 		multiply_variable = { state_value = 0.95 }
+			# 	}
+			# 	log = "[?state_value] was state value after applying effects of changing on non-peaceful transfer"
+			# }
+			if = { # To prevent Old England Error spam at start (can be removed if no state changes on game start)
+				limit = { ROOT = { has_country_flag = TNO_has_started_up } }
+				ROOT = {
+					recalculate_GDP_and_PUs_on_demand = yes
+				}
+			}
+			if = {
+				limit = { FROM = { has_country_flag = TNO_has_started_up } }
+				FROM = {
+					recalculate_GDP_and_PUs_on_demand = yes
+				}
+			}
+		}	
+	}
+
+	# Anarchy tag daily pulse
+	on_daily_ZZZ = {
+		effect = {
+			WAC_check_offset = yes
+		}
+	}
+
+	# Anarchy tag weekly pulse
+	on_weekly_ZZZ = {
+		effect = {
+			first_every_week_script = yes
+			force_update_map_mode = {
+				mapmode = tno_culture_map_mode
+			}
+		}
+	}
+
+	# Anarchy tag monthly pulse
+	on_monthly_ZZZ = {
+		effect = {
+			first_every_month_script = yes
+			add_to_variable = { pulse_month = 1 }
+			if = {
+				limit = { check_variable = { pulse_month = 12 } }
+				set_variable = { pulse_month = 0 }
+				BRA_run_year_on_action = yes
+			}
+			Cold_War_GUI_Fully_Calculate_Scores = yes # Recalc scores
+		}
+	}
+
+	# Monthly Espionage Budget Pulse
+	on_monthly_GER = { effect = { Espionage_Budget_Update = yes } }
+	on_monthly_USA = { effect = { Espionage_Budget_Update = yes } }
+
+	# Monthly pulse for everyone - NO LAMOUNIER BAD
+
+	on_uncapitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						is_west_african_nation = yes
+					}
+					FROM = {
+						is_west_african_nation = yes
+					}
+				}
+				if = {
+					limit = { #Mano
+						has_global_flag = mano_campaign_ongoing
+					}
+					if = { #WAA
+						limit = {
+							ROOT = {
+								OR = {
+									original_tag = LIB
+									original_tag = MDI
+								}
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_mano = 1}
+							}
+							LIB = {
+								create_faction = Mano_Pact
+								add_to_faction = MDI
+							}
+						}
+						add_to_variable = {ZZZ.cap_var_mano = -1}
+					}
+				}
+				if = {
+					limit = { #Scenario 1
+						has_global_flag = west_african_war_ongoing
+						has_global_flag = WAC_scenario_1
+					}
+					if = { #WAA
+						limit = {
+							ROOT = {
+								is_in_array = { global.WAC_WAA_faction = THIS }
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_waa_scen_1 = 6}
+							}
+							WOL = {
+								create_faction = West_African_Alliance
+								add_to_faction = MLI
+								add_to_faction = FFR
+								add_to_faction = GBE
+								add_to_faction = JOL
+								add_to_faction = YOR
+								add_to_faction = FTF
+							}
+						}
+						add_to_variable = {ZZZ.cap_var_waa_scen_1 = -1}
+					}
+					if = { #PALF
+						limit = {
+							ROOT = {
+								is_in_array = { global.WAC_PALF_faction = THIS }
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_palf_scen_1 = 3}
+							}
+							CAO = {
+								create_faction = Cameroon_Alliance
+								add_to_faction = EWE
+								add_to_faction = SUS
+								add_to_faction = SWB
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									original_tag = CAO
+								}
+							}
+							puppet = SWB
+						}
+						add_to_variable = {ZZZ.cap_var_palf_scen_1 = -1}
+					}
+				}
+				else_if = {
+					limit = { #Scenario 2
+						has_global_flag = west_african_war_ongoing
+						has_global_flag = WAC_scenario_2
+					}
+					if = { #WAA
+						limit = {
+							ROOT = {
+								is_in_array = { global.WAC_WAA_faction = THIS }
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_waa_scen_2 = 6}
+							}
+							WOL = {
+								create_faction = West_African_Alliance
+								add_to_faction = MLI
+								add_to_faction = SUS
+								add_to_faction = YOR
+								add_to_faction = JOL
+								add_to_faction = FTF
+								add_to_faction = EWE
+							}
+						}
+						add_to_variable = {ZZZ.cap_var_waa_scen_2 = -1}
+					}
+					if = { #FMA
+						limit = {
+							ROOT = {
+								is_in_array = { global.WAC_FMA_faction = THIS }
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_fma_scen_2 = 2}
+							}
+							FFR = {
+								create_faction = Free_French_Alliance
+								add_to_faction = GBE
+								add_to_faction = KAY
+							}
+						}
+						add_to_variable = {ZZZ.cap_var_fma_scen_2 = -1}
+					}
+				}
+				else_if = {
+					limit = { #Scenario 3
+						has_global_flag = west_african_war_ongoing
+						has_global_flag = WAC_scenario_3
+					}
+					if = { #FMA
+						limit = {
+							ROOT = {
+								is_in_array = { global.WAC_FMA_faction = THIS }
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_fma_scen_3 = 5}
+							}
+							FFR = {
+								create_faction = Free_French_Alliance
+								add_to_faction = EWE
+								add_to_faction = FTF
+								add_to_faction = SUS
+								add_to_faction = JOL
+								add_to_faction = WOL
+							}
+						}
+						add_to_variable = {ZZZ.cap_var_fma_scen_3 = -1}
+					}
+					if = { #PALF
+						limit = {
+							ROOT = {
+								is_in_array = { global.WAC_PALF_faction = THIS }
+							}
+						}
+						if = {
+							limit = {
+								check_variable = {ZZZ.cap_var_palf_scen_1 = 3}
+							}
+							CAO = {
+								create_faction = Cameroon_Alliance
+								add_to_faction = GBE
+								add_to_faction = CPP
+								add_to_faction = MLI
+							}
+						}
+						if = {
+							limit = {
+								ROOT = {
+									original_tag = CAO
+								}
+							}
+							puppet = GBE
+						}
+						add_to_variable = {ZZZ.cap_var_palf_scen_1 = -1}
+					}
+				}
+			}
+		}
+	}
+}

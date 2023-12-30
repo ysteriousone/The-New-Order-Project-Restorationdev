@@ -1,0 +1,32 @@
+﻿l_english:
+ ## Country Names ##
+ ANL_socialist:0 "PLUAA"
+ ANL_socialist_DEF:0 "the Partido da Luta Unida Africana por Angola"
+ ANL_socialist_ADJ:0 "Angolan"
+
+ AFR_USSR:0 "Union of African Socialist States"
+ AFR_USSR_DEF:0 "the Union of African Socialist States"
+ AFR_USSR_ADJ:0 "African"
+ 
+ ####Party Names#####
+
+ ANL_socialist_party:0 "PLUAA"
+ ANL_socialist_party_long:0 "Partido da Luta Unida Africana por Angola"
+ ANL_communist_party:0 "PCA"
+ ANL_communist_party_long:0 "Partido Comunista Angolano"
+ ANL_progressivism_party:0 "MSA"
+ ANL_progressivism_party_long:0 "Movimento Socialista Angolano"
+
+ ## Ministers ##
+ 
+ ## Ideas ##
+ 
+ ## Decisions ##
+ 
+ ## Tooltips ##
+ 
+ ## Focus Tree ##
+ 
+ ## Events ##
+
+ 

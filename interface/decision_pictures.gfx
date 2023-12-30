@@ -1,0 +1,923 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_decision_NOV_category_USA_vs_Japan"
+		texturefile = "gfx/interface/decisions/decision_images/NOV_category_USA_vs_Japan.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_KOM_category_clockworks"
+		texturefile = "gfx/interface/decisions/decision_images/KOM_category_clockworks.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_KOM_category_ordosocialist_party"
+		texturefile = "gfx/interface/decisions/decision_images/KOM_category_ordosocialist_party.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_fiscal_crisis"
+		texturefile = "gfx/interface/decisions/decision_images/decision_category_fiscal_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_west_alaska_mercenary_contracts"
+		texturefile = "gfx/interface/decisions/decision_images/decision_category_west_alaska_mercenary_contracts.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_decision_draft"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_draft.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_reaction_tree_generic"
+		texturefile = "gfx/interface/decisions/decision_images/USA_reaction_tree_generic.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_CIA"
+		texturefile = "gfx/interface/decisions/decision_images/USA_CIA.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_wales_recreating_fleet"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_wales_recreating_fleet.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_USA_RFK_Party_Above_All"
+		texturefile = "gfx/interface/decisions/decision_images/USA_RFK_Party_Above_All.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_WFB"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_WFB.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_WFB_CRA"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_WFB_CRA.dds"
+	}
+	spriteType = {
+		name = "GFX_BRG_decision_Adler"
+		texturefile = "gfx/interface/decisions/decision_images/BRG_decision_Adler.dds"
+	}
+	spriteType = {
+		name = "GFX_BRG_decision_domestic_situation"
+		texturefile = "gfx/interface/decisions/decision_images/BRG_decision_domestic_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_GLD"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_GLD.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GLD_Promises"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_GLD_Promises.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_icw_usa"
+		texturefile = "gfx/interface/decisions/decision_images/decision_cat_icw_usa.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_RUS_reunification"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_reunification.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_decision_political_situation_long"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_political_situation_long.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_WORLD_decision_state"
+		texturefile = "gfx/interface/decisions/decision_images/WORLD_decision_state.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SLO_liberalistation"
+		texturefile = "gfx/interface/decisions/decision_images/SLO_liberalistation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_TUR_decision_itatur"
+		texturefile = "gfx/interface/decisions/decision_images/TUR_decision_itatur.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_BRG_decision_puma"
+		texturefile = "gfx/interface/decisions/decision_images/decision_BRG_decision_puma.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_FEN_mayne_cat"
+		texturefile = "gfx/interface/decisions/decision_images/decision_category_mayne_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GER_decision_economy_test"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_economy_test.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_LBJ_great_society_decision"
+		texturefile = "gfx/interface/decisions/decision_images/USA_LBJ_great_society_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_LBJ_massive_burdens"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_USA_LBJ_massive_burdens.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_Harrington_poverty_decision"
+		texturefile = "gfx/interface/decisions/decision_images/USA_Harrington_poverty_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_Harrington_popularity_decision"
+		texturefile = "gfx/interface/decisions/decision_images/USA_Harrington_popularity_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_MCS_revolt_generals"
+		texturefile = "gfx/interface/decisions/decision_images/USA_MCS_revolt_generals.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_MCS_party_unification"
+		texturefile = "gfx/interface/decisions/decision_images/USA_MCS_party_unification.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_MCS_space_program"
+		texturefile = "gfx/interface/decisions/decision_images/USA_MCS_space_program.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_USA_SAFWAR_African_Nightmare"
+		texturefile = "gfx/interface/decisions/decision_images/USA_SAFWAR_African_Nightmare.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ENG_decision_rebellion"
+		texturefile = "gfx/interface/decisions/decision_images/ENG_decision_rebellion.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ENG_decision_gun_smuggling"
+		texturefile = "gfx/interface/decisions/decision_images/ENG_category_gun_smuggling.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ENG_category_thatcher_ships"
+		texturefile = "gfx/interface/decisions/decision_images/ENG_category_thatcher_ships.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SCO_decision_north_sea"
+		texturefile = "gfx/interface/decisions/decision_images/SCO_decision_category_north_sea_oil.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SCO_decision_paranoia"
+		texturefile = "gfx/interface/decisions/decision_images/SCO_decision_category_paranoia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SCO_decision_hmmlr"
+		texturefile = "gfx/interface/decisions/decision_images/SCO_decision_category_hmmlr.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SCO_decision_intervention"
+		texturefile ="gfx/interface/decisions/decision_images/SCO_decision_category_intervention.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_FEN_decision_interior_parliament"
+		texturefile = "gfx/interface/decisions/decision_images/FEN_interior_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_JAP_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_JAP_western_insurrection"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_western_insurrection.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GER_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CRO_decision_greater_croatia"
+		texturefile = "gfx/interface/decisions/decision_images/CRO_decision_greater_croatia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_initial_counter_terror"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_initial_counter_terror.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_CRO_decision_yugoslavia"
+		texturefile = "gfx/interface/decisions/decision_images/CRO_decision_yugoslavia.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_battle_for_italy_JAP"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_battle_for_italy_JAP.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_battle_for_italy_USA"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_battle_for_italy_USA.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_decision_Palazzo_Chigi"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_decision_Palazzo_Chigi.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_best_of_enemeiss"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_best_of_enemeiss.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_progetta_alfa"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_progetta_alfa.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_decision_decolonization"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_decision_decolonization.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_decision_recolonization"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_decision_recolonization.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IBR_decision_caudillo"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_decision_caudillo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IBR_decision_terrorism"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_decision_terrorism.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IBR_decision_franco"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_decision_franco.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IBR_decision_salazar"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_decision_salazar.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IND_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/IND_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_RUS_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_AZH_decision_holy_crap_peter_griffin_from_family_guy_in_tno_ok_this_is_epic"
+		texturefile = "gfx/interface/decisions/decision_images/AZH_decision_holy_crap_peter_griffin_from_family_guy_in_tno_ok_this_is_epic.dds"
+	}
+	spriteType = {
+		name = "GFX_TRK_decision_turkmen_unity"
+		texturefile = "gfx/interface/decisions/decision_images/TRK_decision_turkmen_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_VIN_Vietcong"
+		texturefile = "gfx/interface/decisions/decision_images/VIN_Vietcong.dds"
+	}
+	spriteType = {
+		name = "GFX_GAY_decision_order"
+		texturefile = "gfx/interface/decisions/decision_images/GAY_decision_order.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_decision_nevsky_cathedral"
+		texturefile = "gfx/interface/decisions/decision_images/VYT_decision_nevsky_cathedral.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_decision_imperial_court"
+		texturefile = "gfx/interface/decisions/decision_images/VYT_decision_imperial_court.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IME_decision_operation_masada"
+		texturefile = "gfx/interface/decisions/decision_images/IME_decision_operation_masada.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ULS_troubles"
+		texturefile = "gfx/interface/decisions/decision_images/ULS_troubles.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_IRE_countryside_road"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_decision_countryside_road.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ULS_belfast_port"
+		texturefile = "gfx/interface/decisions/decision_images/ULS_decisions/decision_images_belfast_port.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_PAK_Pakistani_Insurgency"
+		texturefile = "gfx/interface/decisions/decision_images/PAK_Pakistani_Insurgency.dds"
+	}
+	spriteType = {
+		name = "GFX_URL_decision_initiates"
+		texturefile = "gfx/interface/decisions/decision_images/URL_decision_initiates.dds"
+	}
+	spriteType = {
+		name = "GFX_URL_decision_Ural_Guard"
+		texturefile = "gfx/interface/decisions/decision_images/URL_decision_Ural_Guard.dds"
+	}
+	spriteType = {
+		name = "GFX_FAV_decision_deployment"
+		texturefile = "gfx/interface/decisions/decision_images/FAV_decision_deployment.dds"
+	}
+	spriteType = {
+		name = "GFX_FAV_decision_diplomacy"
+		texturefile = "gfx/interface/decisions/decision_images/FAV_decision_diplomacy.dds"
+	}
+	spriteType = {
+		name = "GFX_KOM_category_ultravis_picture"
+		texturefile = "gfx/interface/decisions/decision_images/KOM_category_ultravis_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_FAV_decision_production"
+		texturefile = "gfx/interface/decisions/decision_images/FAV_decision_production.dds"
+	}
+	spriteType = {
+		name = "GFX_FAV_decision_training"
+		texturefile = "gfx/interface/decisions/decision_images/FAV_decision_training.dds"
+	}
+	spriteType = {
+		name = "GFX_MAG_decision_radio"
+		texturefile = "gfx/interface/decisions/decision_images/MAG_decision_radio.dds"
+	}
+	spriteType = {
+		name = "GFX_MAG_category_west_alaska"
+		texturefile = "gfx/interface/decisions/decision_images/MAG_category_west_alaska.dds"
+	}
+	spriteType = {
+		name = "GFX_MAG_WA_mercenary_contracts_category"
+		texturefile = "gfx/interface/decisions/decision_images/MAG_WA_mercenary_contracts_category.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_placeholder"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_warlord_development"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_warlord_development.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_decision_raiding"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_decision_raiding.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_decision_refugees"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_decision_refugees.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_imperial_politics"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_imperial_politics.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_age_of_construction"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_age_of_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_ONG_secure_the_front"
+		texturefile = "gfx/interface/decisions/decision_images/ONG_secure_the_front.dds"
+	}
+	spriteType = {
+		name = "GFX_ONG_political_fighting"
+		texturefile = "gfx/interface/decisions/decision_images/ONG_political_fighting.dds"
+	}
+	spriteType = {
+		name = "GFX_ONG_fishing"
+		texturefile = "gfx/interface/decisions/decision_images/ONG_fishing.dds"
+	}
+	spriteType = {
+		name = "GFX_SIB_decision_legacy_of_the_siberian_plan"
+		texturefile = "gfx/interface/decisions/decision_images/SIB_decision_legacy_of_the_siberian_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_OMS_decision_flag"
+		texturefile = "gfx/interface/decisions/decision_images/OMS_decision_flag.dds"
+	}
+	spriteType = {
+		name = "GFX_OMS_decision_bunkers"
+		texturefile = "gfx/interface/decisions/decision_images/OMS_decision_bunkers.dds"
+	}
+	spriteType = {
+		name = "GFX_KEM_decision_kingdom"
+		texturefile = "gfx/interface/decisions/decision_images/KEM_decision_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_NOR_fortress_norway"
+		texturefile = "gfx/interface/decisions/decision_images/NOR_fortress_norway.dds"
+	}
+	spriteType = {
+		name = "GFX_CRO_decision_yugoslav_factionalism"
+		texturefile = "gfx/interface/decisions/decision_images/CRO_decision_yugoslav_factionalism.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_congress"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_congress.dds"
+	}
+	spriteType = {
+		name = "GFX_IRQ_decision_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/IRQ_decision_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_map"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_map.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_elimination"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_elimination.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_expansion"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_foreign_purchase"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_foreign_purchase.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_info"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_info.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_item_purchase"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_item_purchase.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_network"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_network.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_order_received"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_order_received.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_black_market_shut_down"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_black_market_shut_down.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_dark_market_expansion"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_dark_market_expansion.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_humanitarian_efforts"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_humanitarian_efforts.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_dark_market_elimination"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_dark_market_elimination.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_humanitarian_efforts_callback"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_humanitarian_efforts_callback.dds"
+	}
+	spriteType = {
+		name = "GFX_BRT_decision_bnc"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_BRT_decision_bnc.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_north_sea_oil"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_north_sea_oil.dds"
+	}
+	spriteType = {
+		name = "GFX_ITA_decisions/decision_images_ENI"
+		texturefile = "gfx/interface/decisions/decision_images/ITA_decisions/decision_images_ENI.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_insurgency"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_insurgency.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_boat"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_boat.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_mines"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_mines.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_cominform_decision"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_cominform_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_comecon_decision"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_comecon_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_regional_development"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_regional_development.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_category_developing_far_east"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_developing_far_east.dds"
+	}
+	spriteType = {
+		name = "GFX_BRG_decision_education"
+		texturefile = "gfx/interface/decisions/decision_images/BRG_decision_education.dds"
+	}
+	spriteType = {
+		name = "GFX_SGR_decision_usa_ger_trade"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_SGR_decision_usa_ger_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA_category_colonial_tension"
+		texturefile = "gfx/interface/decisions/decision_images/SPA_category_colonial_tension.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA_category_colonial_economy"
+		texturefile = "gfx/interface/decisions/decision_images/SPA_category_colonial_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_IBR_category_iberian_wars"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_category_iberian_wars.dds"
+	}
+	spriteType = {
+		name = "GFX_IBR_category_divorce"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_category_divorce.dds"
+	}
+	spriteType = {
+		name = "GFX_IBR_category_gibraltar_dam"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_category_gibraltar_dam.dds"
+	}
+	spriteType = {
+		name = "GFX_IBR_category_mediterranean_diplo"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_category_mediterranean_diplo.dds"
+	}
+	spriteType = {
+		name = "GFX_IBR_category_congress"
+		texturefile = "gfx/interface/decisions/decision_images/IBR_category_congress.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA_category_public_works"
+		texturefile = "gfx/interface/decisions/decision_images/SPA_category_public_works.dds"
+	}
+	spriteType = {
+		name = "GFX_SPA_category_factions"
+		texturefile = "gfx/interface/decisions/decision_images/SPA_category_factions.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_category_zollverein"
+		texturefile = "gfx/interface/decisions/decision_images/GER_Zollverein_Banner.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_category_grossraum"
+		texturefile = "gfx/interface/decisions/decision_images/GER_Grossraum_Banner.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_category_spring"
+		texturefile = "gfx/interface/decisions/decision_images/GER_Spring_Banner.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_category_terror"
+		texturefile = "gfx/interface/decisions/decision_images/GER_Terror_Banner.dds"
+	}
+	spriteType = {
+		name = "GFX_SAF_decision_category_war"
+		texturefile = "gfx/interface/decisions/decision_images/SAF_decision_category_war.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_category_slave_revolt"
+		texturefile = "gfx/interface/decisions/decision_images/GER_category_slave_revolt.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_category_sondergericht"
+		texturefile = "gfx/interface/decisions/decision_images/GER_category_sondergericht.dds"
+	}
+	spriteType = {
+		name = "GFX_ORE_category_projects"
+		texturefile = "gfx/interface/decisions/decision_images/ORE_category_projects.dds"
+	}
+	spriteType = {
+		name = "GFX_ORE_category_political_situation"
+		name = "GFX_ORE_category_political_situation"
+		texturefile = "gfx/interface/decisions/decision_images/ORE_category_political_situation.dds"
+	}
+	spriteType = {
+		name = "GFX_ORE_category_centralization_battle"
+		texturefile = "gfx/interface/decisions/decision_images/ORE_decisions_centralization_battle.dds"
+	}
+	spriteType = {
+		name = "GFX_MGN_category_lysenko_sanity"
+		texturefile = "gfx/interface/decisions/decision_images/MGN_category_lysenko_sanity.dds"
+	}
+	spriteType = {
+		name = "GFX_MGN_category_KNVD_recruitment"
+		texturefile = "gfx/interface/decisions/decision_images/MGN_category_KNVD_recruitment.dds"
+	}
+	spriteType = {
+		name = "GFX_DRL_category_defense_of_the_brigade"
+		texturefile = "gfx/interface/decisions/decision_images/DRL_category_defense_of_the_brigade.dds"
+	}
+	spriteType = {
+		name = "GFX_DRL_category_the_black_brigade"
+		texturefile = "gfx/interface/decisions/decision_images/DRL_category_the_black_brigade.dds"
+	}
+	spriteType = {
+		name = "GFX_DRL_category_rading"
+		texturefile = "gfx/interface/decisions/decision_images/DRL_category_rading.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_empire_management"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_ITA_empire_management.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_infrastructure_italy_south"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_ITA_infrastructure_italy_south.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_piano_solo"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_ITA_piano_solo.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ITA_fascisms_favors"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_ITA_fascisms_favors.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_decision_category_AdWil"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_AdWil_Banner.dds"
+	}
+	spriteType = {
+		name = "GFX_PRC_decision_category_relationships"
+		texturefile = "gfx/interface/decisions/decision_images/PRC_decision_category_relationships.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_decision_german_funding"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_decision_german_funding.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_category_war_in_the_north"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_category_war_in_the_north.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_dai_li_conspiracy"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_dai_li_conspiracy.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_middle_east_intervention"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_middle_east_intervention.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_decision_cornwall_garrison"
+		texturefile = "gfx/interface/decisions/decision_images/ENG_decision_cornwall_garrison.dds"
+	}
+	spriteType = {
+		name = "GFX_ANG_airport_of_africa_decision"
+		texturefile = "gfx/interface/decisions/decision_images/ANG_airport_of_africa.dds"
+	}
+	spriteType = {
+		name = "GFX_ANG_decision_me_262"
+		texturefile = "gfx/interface/decisions/decision_images/ANG_decision_me_262.dds"
+	}
+	spriteType = {
+		name = "GFX_GRO_decision_war"
+		texturefile = "gfx/interface/decisions/decision_images/GRO_decision_war.dds"
+	}
+	spriteType = {
+		name = "GFX_COG_muller_spear_shield"
+		texturefile = "gfx/interface/decisions/decision_images/COG_muller_spear_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_COG_business_world"
+		texturefile = "gfx/interface/decisions/decision_images/COG_business_world_decision.dds"
+	}
+	spriteType = {
+		name = "GFX_SAF_deccat_mines"
+		texturefile = "gfx/interface/decisions/decision_images/SAF_deccat_mines.dds"
+	} 
+	spriteType = {
+		name = "GFX_decision_SCO_english_minority"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_SCO_english_minority.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SCO_category_armed_forces"
+		texturefile = "gfx/interface/decisions/decision_images/SCO_category_armed_forces.dds" 
+	}
+	spriteType = {
+		name = "GFX_USA_decision_george_wallace"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_george_wallace.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_george_wallace2"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_george_wallace2.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_honolulu_accords"
+		texturefile = "gfx/interface/decisions/decision_images/decision_category_honolulu_accords.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_RFK_No_Die"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_RFK_No_Die.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_India_Nixon"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_India_Nixon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_diamonds"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_category_diamonds.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_decision_paramilitias"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_decision_paramilitias.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_decision_nic"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_decision_nic.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_england_influence_ENG"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_england_influence_ENG.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_england_influence_USA"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_england_influence_USA.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_england_influence_GER"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_england_influence_GER.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GRO_REICHSSTAAT_stabilisierung_des_reichsstaates"
+		texturefile = "gfx/interface/decisions/decision_images/GRO_REICHSSTAAT_stabilisierung_des_reichsstaates.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GRO_REICHSSTAAT_die_ostafrikanishen_ss_einsatzgruppen"
+		texturefile = "gfx/interface/decisions/decision_images/GRO_REICHSSTAAT_die_ostafrikanishen_ss_einsatzgruppen.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GRO_REICHSSTAAT_die_organisation_werwolf"
+		texturefile = "gfx/interface/decisions/decision_images/GRO_REICHSSTAAT_die_organisation_werwolf.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_GRO_REICHSSTAAT_african_cabal"
+		texturefile = "gfx/interface/decisions/decision_images/GRO_REICHSSTAAT_african_cabal.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_ANG"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_ANG.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_ANG_unita_pluaa_rivalry"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_ANG_unita_pluaa_rivalry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_COG"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_COG.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_MZB"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_MZB.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_CAR"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_CAR.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_COG_welcome_in_the_heart_of_afrika"
+		texturefile = "gfx/interface/decisions/decision_images/COG_category_welcome_in_the_heart_of_afrika.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_diet_chamber"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_diet_chamber.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_decision_debug"
+		texturefile = "gfx/interface/decisions/decision_images/GNG_decision_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_MAN_category_puyi_debug"
+		texturefile = "gfx/interface/decisions/MAN_category_puyi_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_riot"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_decision_riot.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_decision_diet_turmoil"
+		texturefile = "gfx/interface/decisions/decision_images/JAP_diet_turmoil.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_ss_bunkers"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_ss_bunkers.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_decision_ss_nukes"
+		texturefile = "gfx/interface/decisions/decision_images/GER_decision_ss_nukes.dds"
+	}
+	spriteType = {
+		name = "GFX_CA_decision_debug"
+		texturefile = "gfx/interface/decisions/decision_images/CA_decision_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_invest_in_our_allies"
+		texturefile = "gfx/interface/decisions/decision_images/investing_in_allies.dds"
+	}
+	spriteType = {
+		name = "GFX_IRK_decision_five_year_plan"
+		texturefile = "gfx/interface/decisions/decision_images/IRK_decision_five_year_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_CHT_decision_railway"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_big_placeholder_decision_category"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_big_placeholder_decision_category.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_decision_holy"
+		texturefile = "gfx/interface/decisions/decision_images/RUS_category_holy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_MCW_category_watch_on_the_east"
+		texturefile = "gfx/interface/decisions/MCW_category_watch_on_the_east.dds"
+	}
+	spriteType = {
+		name = "GFX_OST_decision_category_civil_war"
+		texturefile = "gfx/interface/decisions/decision_images/OST_decision_category_civil_war.dds"
+	}
+	
+	#Ukraine
+	spriteType = {
+		name = "GFX_UKR_decision_category_top_image"
+		texturefile = "gfx/interface/decisions/decision_images/UKR_UCW_category_top.dds"
+	}
+	spriteType = {
+		name = "GFX_COG_business_world"
+		texturefile = "gfx/interface/decisions/decision_images/COG_business_world_decision.dds"
+	} 
+	spriteType = {
+		name = "GFX_SAF_deccat_mines"
+		texturefile = "gfx/interface/decisions/decision_images/SAF_deccat_mines.dds"
+	} 
+	spriteType = {
+		name = "GFX_decision_SCO_english_minority"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_SCO_english_minority.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_SCO_category_armed_forces"
+		texturefile = "gfx/interface/decisions/decision_images/SCO_category_armed_forces.dds" 
+	}
+	spriteType = {
+		name = "GFX_USA_decision_george_wallace"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_george_wallace.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_george_wallace2"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_george_wallace2.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_honolulu_accords"
+		texturefile = "gfx/interface/decisions/decision_images/decision_category_honolulu_accords.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_RFK_No_Die"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_RFK_No_Die.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_decision_India_Nixon"
+		texturefile = "gfx/interface/decisions/decision_images/USA_decision_India_Nixon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_diamonds"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decision_category_diamonds.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_decision_paramilitias"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_decision_paramilitias.dds"
+	}
+	spriteType = {
+		name = "GFX_IRE_decision_nic"
+		texturefile = "gfx/interface/decisions/decision_images/IRE_decision_nic.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_england_influence_ENG"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_england_influence_ENG.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_england_influence_USA"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_england_influence_USA.dds"
+	}
+	spriteType = {
+		name = "GFX_decisions_england_influence_GER"
+		texturefile = "gfx/interface/decisions/decision_images/GFX_decisions_england_influence_GER.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_MAD_cat_die_schwarze_pest"
+		texturefile = "gfx/interface/decisions/decision_images/MAD_category_die_schwarze_pest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_MZB_REICHSSTAAT_stabilisierung_des_reichsstaates"
+		texturefile = "gfx/interface/decisions/decision_images/MZB_REICHSSTAAT_stabilisierung_des_reichsstaates.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_MZB_REICHSSTAAT_die_ostafrikanishen_ss_einsatzgruppen"
+		texturefile = "gfx/interface/decisions/decision_images/MZB_REICHSSTAAT_die_ostafrikanishen_ss_einsatzgruppen.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_MZB_REICHSSTAAT_die_organisation_werwolf"
+		texturefile = "gfx/interface/decisions/decision_images/MZB_REICHSSTAAT_die_organisation_werwolf.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_MZB_REICHSSTAAT_african_cabal"
+		texturefile = "gfx/interface/decisions/decision_images/MZB_REICHSSTAAT_african_cabal.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_ANG"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_ANG.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_ANG_unita_mpla_rivalry"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_ANG_unita_mpla_rivalry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_OFN_mandate_category_COG"
+		texturefile = "gfx/interface/decisions/decision_images/OFN_mandate_category_COG.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_UKR_crimea_reconquest_category"
+		texturefile = "gfx/interface/decisions/decision_images/UKR_decision_category_crimea.dds"
+	}
+}

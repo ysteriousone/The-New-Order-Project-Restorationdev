@@ -1,0 +1,30 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_VYT_the_imperial_rail_system"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_the_imperial_rail_system.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_give_more_for_the_emperor"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_give_more_for_the_emperor.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_the_emperors_neutrality"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_the_emperors_neutrality.dds"
+	}
+	spriteType = {
+		name = "GFX_the_empire_strikes_back"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_the_empire_strikes_back.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_define_the_enemy"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_define_the_enemy.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_Bind_Them_Through_Memory"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_Bind_Them_Through_Memory.dds"
+	}
+	spriteType = {
+		name = "GFX_VYT_Let_The_Past_Fade"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_Let_The_Past_Fade.dds"
+	}
+}

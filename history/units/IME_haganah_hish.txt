@@ -1,0 +1,18 @@
+﻿division_template = {
+	name = "Heil HaSadeh"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Heil HaSadeh"
+		location = 1201
+		division_template = "Heil HaSadeh"
+		start_experience_factor = 3.0
+	}
+}

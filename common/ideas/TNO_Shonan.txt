@@ -1,0 +1,368 @@
+ideas = {
+	country = {
+		SHO_Zaibatsu = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_Zaibatsu" }
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Bounty_Of_The_Rising_Sun
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				political_power_gain = -0.2
+			}
+		}
+
+		SHO_Dai-nijyugo = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_Dai-nijyugo" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_global_flag = MLY_WAR_HAPPENING
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_The_25th_Army
+			modifier = {
+				army_speed_factor = -0.2
+				army_org_factor = -0.1
+				army_attack_factor = -0.2
+				surrender_limit = 1
+			}
+		}
+
+		SHO_Dai-nijyugo_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_Dai-nijyugo" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_global_flag = MLY_WAR_HAPPENING
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_The_25th_Army
+			modifier = {
+				army_speed_factor = -0.1
+				army_attack_factor = -0.1
+				surrender_limit = 1
+			}
+		}
+
+		SHO_minority = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_global_flag = MLY_WAR_HAPPENING
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Divided_Collaborator_Network
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.15
+
+			}
+		}
+
+		SHO_Marai_Giyugun_Auxiliaries = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_global_flag = MLY_WAR_HAPPENING
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+				supply_consumption_factor = -0.1
+				conscription_factor = 0.01
+				non_core_manpower = 0.03
+				army_org_regain = -0.03
+
+			}
+		}
+
+		SHO_Marai_Giyugun_Auxiliaries_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_global_flag = MLY_WAR_HAPPENING
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+				supply_consumption_factor = -0.1
+				conscription_factor = 0.03
+				non_core_manpower = 0.06
+				army_org_regain = -0.01
+
+			}
+		}
+
+		SHO_Lingering_Resistance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_country_leader = {
+						character = SHO_Yamamoto_Moichiro
+						ruling_only = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Lingering_Resistance
+			modifier = {
+				conscription_factor = -0.05
+				non_core_manpower = -0.05
+				army_org_regain = -0.03
+				stability_factor = -0.1
+
+			}
+		}
+
+		SHO_Counting_Days = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_country_leader = {
+						character = SHO_Yamamoto_Moichiro
+						ruling_only = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Counting_Days
+			modifier = {
+				drift_defence_factor = -0.2
+				stability_factor = -0.1
+			}
+		}
+
+		SHO_A_Broken_Party = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_country_leader = {
+						character = SHO_Dato_Onn_Jaafar
+						ruling_only = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+			}
+		}
+
+		SHO_An_Ailing_Leader = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_country_leader = {
+						character = SHO_Dato_Onn_Jaafar
+						ruling_only = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+			}
+		}
+
+		SHO_The_Defenders_of_Malaya = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			cancel = {
+				NOT = {
+					has_country_leader = {
+						character = SHO_Dato_Onn_Jaafar
+						ruling_only = yes
+					}
+				}
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+			}
+		}
+
+		SHO_Reeling_the_party_in = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+			}
+		}
+
+		SHO_Firebrand_Agenda = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			modifier = {
+			}
+		}
+		
+		SHO_Greater_Ambitions = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SHO_minority" }
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Malai_Giyu_Gun_Auxillaries
+			targeted_modifier = { tag = THA trade_opinion_factor = -1.0 }
+		}
+
+		SHO_Heightened_Ethnic_Tension = {
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MLY_Operation_Nassau
+			modifier = {
+			}
+		}
+
+		SHO_Reforging_Indonesian_Ties = {
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MLY_Operation_Nassau
+			modifier = {
+			}
+		}
+
+		SHO_The_Heartland = {
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MLY_Operation_Nassau
+			targeted_modifier = {
+				tag = THA
+				trade_cost_for_target_factor = -1
+			}
+		}
+
+		SHO_Naval_Fortress = {
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Naval_Fortress
+			modifier = {
+				army_core_defence_factor = 0.15
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		SHO_Southern_Thorn = {
+			allowed = {
+				tag = SHO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = SHO_Southern_Thorn
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = MLY
+				stability_factor = -0.075
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

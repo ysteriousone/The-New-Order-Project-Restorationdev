@@ -1,0 +1,222 @@
+ideas = {
+	country = {
+		TRK_Fragmented_Tribes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Fragmented_Tribes"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TRK_Fragmented_Tribes
+			modifier = {
+				conscription_factor = -0.50
+				training_time_army_factor = 0.15
+				mobilization_speed = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		TRK_Fragmented_Tribes_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Fragmented_Tribes_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TRK_Fragmented_Tribes
+			modifier = {
+				conscription_factor = -0.25
+				training_time_army_factor = 0.075
+				mobilization_speed = -0.075
+				war_support_factor = -0.075
+			}
+		}
+		TRK_Fragmented_Tribes_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Fragmented_Tribes_3"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TRK_Fragmented_Tribes
+			modifier = {
+				conscription_factor = -0.125
+				training_time_army_factor = 0.035
+				mobilization_speed = -0.035
+				war_support_factor = -0.035
+			}
+		}
+		TRK_Tribes_United = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Tribes_United"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TUR_Weakening_Grip
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.055
+				war_support_factor = 0.075
+			}
+		}
+		TRK_Question_Of_Identity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Question_Of_Identity"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TRK_The_Question_of_Identity
+			modifier = {
+				political_power_gain = -1.00
+				stability_factor = -0.15
+			}
+		}
+		TRK_Question_Of_Identity_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Question_Of_Identity_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TRK_The_Question_of_Identity
+			modifier = {
+				political_power_gain = -0.125
+				stability_factor = -0.075
+			}
+		}
+		TRK_Question_Of_Identity_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Question_Of_Identity_3"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TRK_The_Question_of_Identity
+			modifier = {
+				political_power_gain = -0.0625
+				stability_factor = -0.035
+			}
+		}
+		TRK_Turkmen_Nation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Turkmen_Nation"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TUR_Weakening_Grip
+			modifier = {
+				political_power_gain = 0.075
+				stability_factor = 0.05
+			}
+		}
+		TRK_A_Modern_Silk_Road = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_A_Modern_Silk_Road"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ffr_precious_metals
+			modifier = {
+				political_power_gain = 0.1
+				trade_opinion_factor = 0.2
+				consumer_goods_use_modifier = -0.1
+			}
+		}
+		TRK_Advisors_Uzbek = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Advisors_Uzbek"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IND_Indira_Officer_Proposal
+			modifier = {
+				planning_speed = 0.15
+				army_org_factor = 0.15
+			}
+		}
+		TRK_Defense_Improvements = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Defense_Improvements"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_fort
+			modifier = {
+				max_dig_in = 1
+				dig_in_speed = 0.2
+				army_defence_factor = 0.15
+			}
+		}
+		TRK_Ministry_of_Security = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Ministry_of_Security"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TUR_Weakening_Grip
+			modifier = {
+				decryption_factor = 0.15
+				encryption_factor = 0.15
+			}
+		}
+		TRK_Turkic_United_Front = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRK_Turkic_United_Front"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TUR_Weakening_Grip
+			modifier = {
+				stability_weekly = 0.005
+				political_power_gain = 0.0625
+				army_org_factor = 0.1
+			}
+		}
+	}
+}

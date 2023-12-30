@@ -1,0 +1,1105 @@
+spriteTypes = {
+
+	#### Fix for Graphical Culture Bug (or the "I hate Paradox" zone)
+	#### I pray for the day this file can be deleted in full, assuming Paradox fixes their shit - Rune
+
+	### TMA - WRS ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMA_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WRS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMA_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMA_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMA_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMA_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMA_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMA_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMA_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMA_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMB - WSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMB_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WSB_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMB_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMB_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMB_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMB_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMB_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMB_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMB_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMB_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMC - FST ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMC_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMC_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMC_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMC_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMC_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMC_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMC_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMC_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMC_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMD -WSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMD_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WSB_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMD_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMD_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMD_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMD_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMD_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMD_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMD_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMD_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TME - CSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TME_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TME_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/CSB_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TME_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TME_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TME_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TME_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TME_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TME_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TME_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMF - WSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMF_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WSB_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMF_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMF_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMF_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMF_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMF_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMF_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMF_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMF_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMG - FST ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMG_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMG_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMG_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMG_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMG_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMG_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMG_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMG_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMG_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMH - CSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMH_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMH_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/CSB_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMH_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMH_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMH_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMH_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMH_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMH_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMH_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMI - URL ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMI_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/URL_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMI_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMI_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMI_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMI_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMI_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMI_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMI_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMI_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMJ - CSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMJ_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMJ_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/CSB_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMJ_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMJ_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMJ_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMJ_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMJ_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMJ_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMJ_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMK - KAZ ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMK_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMK_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMK_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMK_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMK_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMK_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMK_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMK_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMK_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TML - KAZ ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TML_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TML_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TML_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TML_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TML_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TML_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TML_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TML_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TML_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMM - FST ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMM_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMM_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMM_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMM_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMM_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMM_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMM_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMM_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMM_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMN - URL ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMN_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/URL_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMN_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMN_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMN_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMN_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMN_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMN_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMN_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMN_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMO - WSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMO_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WSB_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMO_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMO_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMO_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMO_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMO_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMO_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMO_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMO_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMP - KAZ ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMP_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMP_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMP_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMP_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMP_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMP_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMP_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMP_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMP_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMQ - WRS ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMQ_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WRS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMQ_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMQ_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMQ_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMQ_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMQ_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMQ_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMQ_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMQ_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMR - FST ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMR_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMR_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMR_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMR_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMR_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMR_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMR_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMR_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMR_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMS - WRS ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMS_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WRS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMS_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMS_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMS_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMT - WSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMT_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WSB_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMT_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMT_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMT_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMT_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMT_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMT_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMT_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMT_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMU - WRS ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMU_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WRS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMU_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMU_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMU_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMU_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMU_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMU_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMU_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMU_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMV - WRS ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMV_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/WRS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMV_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMV_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMV_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/WRS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMV_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMV_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMV_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMV_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMV_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMW - CSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMW_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMW_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/CSB_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMW_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMW_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMW_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMW_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMW_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMW_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMW_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMX - CSB ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMX_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMX_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/CSB_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMX_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMX_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMX_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMX_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMX_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMX_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMX_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+
+	### TMY - FST ###
+
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_TMY_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_Motorized_50.dds"
+	}
+
+	## Artillery ##
+	SpriteType = {
+		name = "GFX_TMY_artillery_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMY_artillery_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMY_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/FST_Artillery_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMY_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/RUS_Artillery_90.dds"
+	}
+
+	## Anti-Air ##
+	SpriteType = {
+		name = "GFX_TMY_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_45.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMY_anti_air_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/FST_AntiAir_50.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMY_anti_air_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_70.dds"
+	}
+	SpriteType = {
+		name = "GFX_TMY_anti_air_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/RUS_AntiAir_90.dds"
+	}
+}

@@ -1,0 +1,109 @@
+ideas = {
+	country = {
+		ISR_dream_realised = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_dream_realised"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = the_dream_realised
+
+			modifier = {
+			}
+		}
+		ISR_ethnic_demon = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_ethnic_demon"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = the_ethnic_demon
+
+			modifier = {
+			}
+		}
+		ISR_brittle_brittle_alliance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_brittle_brittle_alliance"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = Brittle_Brittle_Alliance
+
+			modifier = {
+			}
+		}
+		ISR_Demands_For_Democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_Demands_For_Democracy"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = ISR_Demands_For_Democracy
+
+			modifier = {
+			}
+		}
+		ISR_Jewish_Unrest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_Jewish_Unrest"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = Jewish_Unrest
+
+			modifier = {
+			}
+		}
+		ISR_18_Principles = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_18_Principles"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = 18_Principles
+
+			modifier = {
+			}
+		}
+		ISR_Mapai_Dominance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ISR_Mapai_Dominance"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+#			picture = 
+
+			modifier = {
+			}
+		}
+	}
+}

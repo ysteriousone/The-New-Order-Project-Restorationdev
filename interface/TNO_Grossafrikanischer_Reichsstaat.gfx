@@ -1,0 +1,450 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_GRO_Arthur_Liebehenschel_dep"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Arthur_Liebehenschel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Gerd_von_Blottnitz"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Gerd_von_Blottnitz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Hans_Ulrich_Rudel_for"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Hans_Ulrich_Rudel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Wilhelm_Dommes_eco"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Wilhelm_Dommes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Karl_Friedrich_Hocker_mil"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Karl_Friedrich_Hocker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_GRO_Otto_Forschner_dep"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Otto_Forschner.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Josef_Mengele_for"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Josef_Mengele.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Karl_Chmielewski_eco"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Karl_Chmielewski.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Richard_Baer_mil"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Richard_Baer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Franz_Hossler_dep"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Franz_Hossler.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_GRO_Kai_Uwe_von_Hassel_dep"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Kai_Uwe_von_Hassel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Hendrik_Cornelis_for"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Hendrik_Cornelis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Friedrich_von_Mellenthin_eco"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Friedrich_von_Mellenthin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GRO_Leon_Petillon_mil"
+		texturefile = "gfx/interface/ideas/ministers/GRO/GRO_minister_Leon_Petillon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_GRO_Empty_the_Cities"
+		texturefile = "gfx/interface/goals/GRO_Empty_the_Cities.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Empty_the_Continent"
+		texturefile = "gfx/interface/goals/GRO_Empty_the_Continent.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Empty_the_Countryside"
+		texturefile = "gfx/interface/goals/GRO_Empty_the_Countryside.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_A_More_Burgundian_System"
+		texturefile = "gfx/interface/goals/GRO_A_More_Burgundian_System.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Evacuate_State_Armaments"
+		texturefile = "gfx/interface/goals/GRO_Evacuate_State_Armaments.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Evacuate_State_Industries"
+		texturefile = "gfx/interface/goals/GRO_Evacuate_State_Industries.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Evacuate_State_Personnel"
+		texturefile = "gfx/interface/goals/GRO_Evacuate_State_Personnel.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Find_the_Members"
+		texturefile = "gfx/interface/goals/GRO_Find_the_Members.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Find_their_Leaders"
+		texturefile = "gfx/interface/goals/GRO_Find_their_Leaders.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_Find_their_Supporters"
+		texturefile = "gfx/interface/goals/GRO_Find_their_Supporters.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_GRO_The_Boers_must_Pay"
+		texturefile = "gfx/interface/goals/GRO_The_Boers_must_Pay.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_goal_GRO_Empty_the_Cities_shine"
+		texturefile = "gfx/interface/goals/GRO_Empty_the_Cities.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Empty_the_Cities.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Empty_the_Cities.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Empty_the_Continent_shine"
+		texturefile = "gfx/interface/goals/GRO_Empty_the_Continent.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Empty_the_Continent.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Empty_the_Continent.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Empty_the_Countryside_shine"
+		texturefile = "gfx/interface/goals/GRO_Empty_the_Countryside.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Empty_the_Countryside.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Empty_the_Countryside.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_A_More_Burgundian_System_shine"
+		texturefile = "gfx/interface/goals/GRO_A_More_Burgundian_System.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_A_More_Burgundian_System.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_A_More_Burgundian_System.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Evacuate_State_Armaments_shine"
+		texturefile = "gfx/interface/goals/GRO_Evacuate_State_Armaments.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Evacuate_State_Armaments.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Evacuate_State_Armaments.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Evacuate_State_Industries_shine"
+		texturefile = "gfx/interface/goals/GRO_Evacuate_State_Industries.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Evacuate_State_Industries.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Evacuate_State_Industries.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Evacuate_State_Personnel_shine"
+		texturefile = "gfx/interface/goals/GRO_Evacuate_State_Personnel.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Evacuate_State_Personnel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Evacuate_State_Personnel.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Find_the_Members_shine"
+		texturefile = "gfx/interface/goals/GRO_Find_the_Members.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Find_the_Members.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Find_the_Members.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Find_their_Leaders_shine"
+		texturefile = "gfx/interface/goals/GRO_Find_their_Leaders.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Find_their_Leaders.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Find_their_Leaders.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_Find_their_Supporters_shine"
+		texturefile = "gfx/interface/goals/GRO_Find_their_Supporters.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Find_their_Supporters.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_Find_their_Supporters.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_GRO_The_Boers_must_Pay_shine"
+		texturefile = "gfx/interface/goals/GRO_The_Boers_must_Pay.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_The_Boers_must_Pay.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GRO_The_Boers_must_Pay.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

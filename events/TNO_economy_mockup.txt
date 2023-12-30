@@ -1,0 +1,197 @@
+﻿add_namespace = econ
+add_namespace = econ_debug
+add_namespace = consumer_goods
+
+country_event = {
+	id = econ.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.1"}
+	title = econ.1.t
+	desc = econ.1.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		calculate_total_budget = yes
+		calculate_civilian_expenditures = yes
+		#calculate_construction_expenditures = yes
+		calculate_military_expenditures = yes
+		calculate_total_expenditures = yes
+		calculate_total_expenditures_factor = yes
+		# calculate_deficit = yes
+		# calculate_GDP_growth = yes
+		calculate_display_variables = yes
+	}
+
+	option = {
+		name = econ.1.a
+		USA = {
+			print_variables = {
+				file = log_file
+				text = header_text
+				append = yes
+				print_global = yes
+				var_list = { GDP total_budget total_expenditures total_expenditures_factor civilian_expenditures military_expenditures construction_expenditures money_reserves national_debt deficit } #optional
+			}
+		}
+	}
+}
+country_event = {
+	id = econ.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.2"}
+	title = econ.2.t
+	desc = econ.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.2.a
+		SWI = {
+			##Variable Initiation
+			set_variable = { GDP = 42.156 } #in billions
+			set_variable = { GDP_growth = 0.035 }
+			#set_variable = { income_rate = 0.30 }
+			set_variable = { total_budget = 0 }
+			set_variable = { total_expenditures = 0 }
+			set_variable = { total_expenditures_factor = 0 }
+			set_variable = { civilian_expenditures = 0 }
+			set_variable = { military_expenditures = 0 }
+			set_variable = { construction_expenditures = 0 }
+			set_variable = { civilian_expenditures_factor = 0.40 }
+			set_variable = { military_expenditures_factor = 0 }
+			set_variable = { construction_expenditures_factor = 0.30 }
+			set_variable = { money_reserves = 9.413 } #in billions
+			set_variable = { national_debt = 1.304 } #in billions
+			set_variable = { debt_ratio = 0 }
+			set_variable = { interest_rates = 0.05 }
+			set_variable = { deficit = 0 }
+			# set_variable = { deficit_ratio = 0 }
+		}
+	}
+}
+
+country_event = {
+	id = econ.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.3"}
+	title = econ.3.t
+	desc = econ.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.3.a
+		clr_country_flag = econ_tab_actions_emergency_actions_mil_aust_flag
+		remove_ideas = military_budget_cuts
+	}
+}
+
+country_event = {
+	id = econ.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.4"}
+	title = econ.4.t
+	desc = econ.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.4.a
+		clr_country_flag = econ_tab_actions_emergency_actions_debase_currency_flag
+	}
+}
+
+country_event = {
+	id = econ.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.5"}
+	title = econ.5.t
+	desc = econ.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.5.a
+		clr_country_flag = econ_tab_actions_emergency_actions_civ_aust_flag
+		remove_ideas = civilian_budget_cuts
+	}
+}
+
+country_event = {
+	id = econ.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.6"}
+	title = econ.6.t
+	desc = econ.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.6.a
+		clr_country_flag = econ_tab_actions_emergency_actions_tax_increase_flag
+		subtract_from_variable = { income_tax_rate = 0.015 }
+		subtract_from_variable = { business_tax_rate = 0.015 }
+	}
+}
+
+#ok so this bankrupcy thing is getting a little bit better
+country_event = {
+	id = econ.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.7"}
+	title = econ.7.t
+	desc = econ.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.7.a
+		remove_ideas = {
+			bankrupt_military
+			bankrupt_civilian
+		}
+		add_ideas = military_budget_cuts_heavy
+		add_ideas = civilian_budget_cuts_heavy
+		multiply_variable = { interest_rates = 0.5 }
+		hidden_effect = {
+			clr_country_flag = bankrupt_nation
+			country_event = { id = econ.8 days = 365 }
+			country_event = { id = econ.9 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = econ.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.8"}
+	title = econ.8.t
+	desc = econ.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.8.a
+		remove_ideas = military_budget_cuts_heavy
+	}
+}
+
+country_event = {
+	id = econ.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ.9"}
+	title = econ.9.t
+	desc = econ.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ.9.a
+		remove_ideas = civilian_budget_cuts_heavy
+	}
+}
+country_event = {
+	id = econ_debug.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event econ_debug.1"}
+	title = econ_debug.1.t
+	desc = "[?PREV.total_schools]"
+
+	is_triggered_only = yes
+
+	option = {
+		name = econ_debug.1.a
+		calculate_building_variables = yes
+	}
+}

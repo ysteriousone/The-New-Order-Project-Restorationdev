@@ -1,0 +1,14 @@
+units = {
+	division = {
+		name = "English Student Rebels"
+		location = 3501
+		division_template = "English Rebels"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Free English Soldiers"
+		location = 3501
+		division_template = "English Rebels"
+		start_experience_factor = 0.1
+	}
+}

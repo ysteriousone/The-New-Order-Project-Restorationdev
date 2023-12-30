@@ -1,0 +1,559 @@
+#why are you here, wait for penelope's web!
+###BLANK FOCUS###
+shared_focus = {
+	id = TUR_blankfocus
+	icon = GFX_cau_occultic_adventures
+	bypass = {
+	}
+	offset = {
+		x = 1
+		y = 1
+		trigger = {
+			tag = TUR
+		}
+	}
+	allow_branch = {
+		has_country_flag = TUR_no_flag
+	}
+	cost = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_blankfocus"
+	}
+}
+
+###INTRO TREE###
+shared_focus = {
+	id = TUR_twenty_years
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_twenty_years"
+		add_stability = 0.05
+		add_political_power = 100
+		hidden_effect = {
+			country_event = {
+				id = turkey.3
+				hours = 1
+			}
+		}
+	}
+	x = 5
+	y = 0
+}
+
+shared_focus = {
+	id = TUR_the_parades_begin
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_the_parades_begin"
+		add_war_support = 0.1
+		hidden_effect = {
+			country_event = {
+				id = turkey.4
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_twenty_years
+	}
+	x = 5
+	y = 1
+}
+
+shared_focus = {
+	id = TUR_address
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_address"
+		add_political_power = 25
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.02
+		}
+		hidden_effect = {
+			country_event = {
+				id = turkey.5
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_the_parades_begin
+	}
+	x = 5
+	y = 2
+}
+
+shared_focus = {
+	id = TUR_domestic_threats
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_domestic_threats"
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.01
+		}
+		add_political_power = 10
+		hidden_effect = {
+			country_event = {
+				id = turkey.6
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_address
+	}
+	x = 3
+	y = 3
+}
+
+shared_focus = {
+	id = TUR_international_disputes
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_international_disputes"
+		add_stability = 0.02
+		hidden_effect = {
+			country_event = {
+				id = turkey.7
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_address
+	}
+	x = 7
+	y = 3
+}
+
+shared_focus = {
+	id = TUR_triumvirate
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_triumvirate"
+		add_stability = 0.01
+		hidden_effect = {
+			country_event = {
+				id = turkey.8
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_international_disputes
+	}
+	x = 7
+	y = 4
+}
+
+shared_focus = {
+	id = TUR_damn_germans
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_damn_germans"
+		add_war_support = 0.05
+		add_stability = 0.01
+		hidden_effect = {
+			country_event = {
+				id = turkey.9
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_international_disputes
+	}
+	x = 6
+	y = 5
+}
+
+shared_focus = {
+	id = TUR_italian_friends
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_italian_friends"
+		add_war_support = 0.02
+		add_stability = 0.01
+		hidden_effect = {
+			country_event = {
+				id = turkey.10
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_triumvirate
+	}
+	x = 7
+	y = 6
+}
+
+shared_focus = {
+	id = TUR_scheming_minorities
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_scheming_minorities"
+		add_war_support = 0.02
+		add_stability = -0.02
+		hidden_effect = {
+			country_event = {
+				id = turkey.11
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_domestic_threats
+	}
+	x = 3
+	y = 4
+}
+
+shared_focus = {
+	id = TUR_egalitarian_ramble
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_egalitarian_ramble"
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.01
+		}
+		add_stability = -0.01
+		hidden_effect = {
+			country_event = {
+				id = turkey.12
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_scheming_minorities
+	}
+	x = 3
+	y = 5
+}
+
+shared_focus = {
+	id = TUR_traitorous_dissidents
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_traitorous_dissidents"
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.02
+		}
+		hidden_effect = {
+			country_event = {
+				id = turkey.13
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_egalitarian_ramble
+	}
+	x = 3
+	y = 6
+}
+
+shared_focus = {
+	id = TUR_asian_brothers
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_asian_brothers"
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.01
+		}
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = {
+			country_event = {
+				id = turkey.14
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_international_disputes
+	}
+	x = 8
+	y = 5
+}
+
+shared_focus = {
+	id = TUR_back_to_work
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_back_to_work"
+		add_political_power = 25
+		add_stability = 0.01
+		hidden_effect = {
+			country_event = {
+				id = turkey.15
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_traitorous_dissidents
+	}
+	prerequisite = {
+		focus = TUR_italian_friends
+	}
+	prerequisite = {
+		focus = TUR_damn_germans
+	}
+	prerequisite = {
+		focus = TUR_asian_brothers
+	}
+	x = 5
+	y = 7
+}
+
+shared_focus = {
+	id = TUR_meet_w_ppl
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_meet_w_ppl"
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.01
+		}
+		add_stability = 0.02
+		hidden_effect = {
+			country_event = {
+				id = turkey.16
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_back_to_work
+	}
+	x = 2
+	y = 8
+}
+
+shared_focus = {
+	id = TUR_meet_w_party
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_meet_w_party"
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = {
+			country_event = {
+				id = turkey.17
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_back_to_work
+	}
+	x = 4
+	y = 8
+}
+
+shared_focus = {
+	id = TUR_meet_w_army
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_meet_w_army"
+		add_command_power = 100
+		hidden_effect = {
+			country_event = {
+				id = turkey.18
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_back_to_work
+	}
+	x = 6
+	y = 8
+}
+
+shared_focus = {
+	id = TUR_meet_with_corporate
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_meet_with_corporate"
+		add_political_power = 50
+		add_stability = 0.02
+		hidden_effect = {
+			country_event = {
+				id = turkey.19
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_back_to_work
+	}
+	x = 8
+	y = 8
+}
+
+shared_focus = {
+	id = TUR_promise_liberty
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_promise_liberty"
+		add_political_power = 50
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = turkey.20
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_meet_with_corporate
+	}
+	x = 8
+	y = 9
+}
+
+shared_focus = {
+	id = TUR_promise_war
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_promise_war"
+		add_war_support = 0.10
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = turkey.21
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_meet_w_army
+	}
+	x = 6
+	y = 9
+}
+
+shared_focus = {
+	id = TUR_promise_control
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_promise_control"
+		add_political_power = 50
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = turkey.22
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_meet_w_party
+	}
+	x = 4
+	y = 9
+}
+
+shared_focus = {
+	id = TUR_promise_peace
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_promise_peace"
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.03
+		}
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = turkey.23
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_meet_w_ppl
+	}
+	x = 2
+	y = 9
+}
+
+shared_focus = {
+	id = TUR_promise_the_moon
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_promise_the_moon"
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = turkey.24
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_promise_peace
+	}
+	prerequisite = {
+		focus = TUR_promise_control
+	}
+	prerequisite = {
+		focus = TUR_promise_war
+	}
+	prerequisite = {
+		focus = TUR_promise_liberty
+	}
+	x = 5
+	y = 10
+}
+
+shared_focus = {
+	id = TUR_to_malta
+	icon = GFX_unknown
+	cost = 1.00
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_to_malta"
+		hidden_effect = {
+			country_event = {
+				id = turkey.25
+				hours = 1
+			}
+		}
+	}
+	prerequisite = {
+		focus = TUR_promise_the_moon
+	}
+	x = 5
+	y = 11
+}
+

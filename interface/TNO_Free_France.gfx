@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_WOL_terror_bombing"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_luftwaffe_bombings.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FFR_military_administration"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ffr_military_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FFR_military_administration_2"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ffr_military_administration_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FFR_military_administration_3"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ffr_military_administration_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FFR_precious_metal"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ffr_precious_metals.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FFR_spirit_french"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ffr_spirit_french.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FFR_case_belgian_citizenship"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ffr_case_belgian_citizenship.dds"
+	}
+}

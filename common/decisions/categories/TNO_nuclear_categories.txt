@@ -1,0 +1,11 @@
+nuclear_war_category = {
+
+	icon = GFX_decision_category_tank_generic
+
+	picture = GFX_decision_USA_MCS_space_program
+
+	visible = {
+		has_nuclear_arsenal = yes
+		NOT = { has_country_flag = TNO_nuke_disabled }
+	}
+}

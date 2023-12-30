@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_siberia"
+		texturefile = "gfx/interface/goals/Russia/GFX_RUS_siberia.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_WRS_invincible_and_legendary"
+		texturefile = "gfx/interface/goals/Russia/GFX_WRS_invincible_and_legendary.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_WRS_unshackle_SMERSH"
+		texturefile = "gfx/interface/goals/Russia/GFX_WRS_unshackle_SMERSH.dds"
+	}
+}

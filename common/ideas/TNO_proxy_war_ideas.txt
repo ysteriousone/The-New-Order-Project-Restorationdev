@@ -1,0 +1,201 @@
+ideas = {
+	country = {
+		TNO_foreign_advisors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TNO_foreign_advisors"}
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			picture = generic_attache
+		}
+
+		policing_level_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_1"}
+			picture = advisor_level_1
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 1
+			}
+
+		}
+
+		policing_level_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_2"}
+			picture = advisor_level_2
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 3
+			}
+
+		}
+
+		policing_level_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_3"}
+			picture = advisor_level_3
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 7
+			}
+
+		}
+
+		policing_level_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_4"}
+			picture = advisor_level_4
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 12
+			}
+
+		}
+
+		policing_level_5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_5"}
+			picture = advisor_level_5
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 16
+			}
+
+		}
+
+		policing_level_6 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_6"}
+			picture = advisor_generic
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 20
+			}
+
+		}
+
+		policing_level_7 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_7"}
+			picture = advisor_generic
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 25
+			}
+
+		}
+
+		policing_level_8 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea policing_level_8"}
+			picture = advisor_generic
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 33
+			}
+
+		}
+
+		Start_withdrawal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea Start_withdrawal"}
+			picture = USA_anti_war_sign_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = -38
+
+			}
+
+		}
+	}
+	hidden_ideas = {
+		TNO_division_limit_exemption = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea TNO_division_limit_exemption"}
+			#picture =
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteer_divisions_required = -1
+			}
+		}
+	}
+}

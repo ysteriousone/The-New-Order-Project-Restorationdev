@@ -1,0 +1,129 @@
+ideas = {
+
+	country = {
+		POL_underground_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_underground_state"}
+			allowed = {
+				always = no
+			}
+
+			picture = POL_the_underground_state
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.30
+				industrial_capacity_factory = -0.15
+				army_org_factor = -0.2
+			}
+		}
+
+
+		POL_partisan_scare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_partisan_scare"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				army_org_factor = -0.2
+				army_morale_factor = -0.1
+			}
+		}
+
+		POL_government_in_crisis = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_government_in_crisis"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_Government_in_Crisis
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				industrial_capacity_factory = -0.2
+				consumer_goods_use_modifier = 0.1
+			}
+		}
+
+		POL_weak_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_weak_government"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_Weakened_Government
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				industrial_capacity_factory = -0.15
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+
+		POL_useless_armor = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_useless_armor"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_Sabotaged_Armor
+
+			modifier = {
+				army_armor_speed_factor = -0.40
+				army_armor_attack_factor = -0.40
+				army_armor_defence_factor = -0.40
+			}
+		}
+
+		POL_home_Defense = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea POL_home_Defense"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = POL_Polish_Home_Defense
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.2
+			}
+		}
+
+		POL_Hardened_Defense = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_Hardened_Defense" }
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SRT_Partisan_Alliance
+
+			modifier = {
+				army_core_defence_factor = 0.35
+				dig_in_speed_factor = 0.15
+				max_dig_in = 10
+			}
+		}
+
+	}
+}

@@ -1,0 +1,23 @@
+﻿division_template = {
+	name = "Turanist Volunteer Brigade"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Turan"
+		location = 10530
+		division_template = "Turanist Volunteer Brigade"
+		start_experience_factor = 0.3
+	}
+}

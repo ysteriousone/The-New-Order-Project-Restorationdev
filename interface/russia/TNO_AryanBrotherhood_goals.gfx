@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_PRM_the_brotherhoods_reign"
+		texturefile = "gfx/interface/goals/AryanBrotherhood/GFX_PRM_the_brotherhoods_reign.dds"
+	}
+}

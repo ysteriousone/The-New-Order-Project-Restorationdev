@@ -1,0 +1,62 @@
+﻿l_english:
+################################################
+##################Econ GUI######################
+################################################
+MEX_Econ_Budget: "Remaining Budget: §y$[?MEX_Econ_remaining_budget]M§!"
+MEX_Econ_Numbers_things: "Yearly Maintainance Cost: §x$[?MEX_Econ_yearly_maintainance]M§!\nTotal Services Bonus: §O[?MEX_Econ_total_service_bonus]%§!\nTotal Industry Bonus: §y[?MEX_Econ_total_industry_bonus]%§!\nTotal Agrarian Bonus: §y[?MEX_Econ_total_agrarian_bonus]%§!"
+
+ # Scripted GUI
+  MEX_econ_tab_title: "[GetMEXEconTabName]"
+
+  MEX_econ_desc: "[GetMEXEconTabDesc]"
+  MEX_econ_info_box_tt: "sexico"
+
+ # Scripted Localisation
+  MEX_econ_tab_name_1: "Stimulation"
+  MEX_econ_tab_name_2: "Agronomics"
+  MEX_econ_tab_name_3: "Population"
+  MEX_econ_tab_name_4: "Quality of Life"
+
+  MEX_econ_tab_desc_1: "Glasses are really versatile. First, you can have glasses-wearing girls take them off and suddenly become beautiful, or have girls wearing glasses flashing those cute grins, or have girls stealing the protagonist's glasses and putting them on like, "Haha, got your glasses!" That's just way too cute! Also, boys with glasses! I really like when their glasses have that suspicious looking gleam, and it's amazing how it can look really cool or just be a joke. I really like how it can fulfill all those abstract needs. Being able to switch up the styles and colors of glasses based on your mood is a lot of fun too! It's actually so much fun! You have those half rim glasses, or the thick frame glasses, everything! It's like you're enjoying all these kinds of glasses at a buffet. I really want Luna to try some on or Marine to try some on to replace her eyepatch. We really need glasses to become a thing in hololive and start selling them for HoloComi. Don't. You. Think. We. Really. Need. To. Officially. Give. Everyone. Glasses?"
+  MEX_econ_tab_desc_2: "Morbius (2022) Morbius 2: MoreBius (2024) Morbius 3 (2024) Morbius vs Blade (2025) Morbius vs the Marvel Cinematic Universe (2027) (morbius wins) Morbius vs the DC Extended Universe (2028) (morbius wins) Morbius 7: Morbius kills god (2029) Morbius 8: The Reckoning (2029) Morbius 9 (2030) Morbius X (2032) Morbius: The Series (2032-2189) Morbius XI: Morbin Time (2034) Morbius 12: Resurrection (2034) Morbius the Thirteenth (2036) Morbiverse of Madness (2037) Morbius 15: Morbius (2037) Morbius vs Jared Leto (2038) Morbius vs Kong (2038) Morbius vs Morbius (2039) Morbius 19 (2040) Morbius: 20th (Century) Morbius (2040) 21 Morbiuses (2041) Morbius: Across the Morbverse Part 1 (2041) Morbius: Across the Morbverse Part 2 (2042)Morbius: Across the Morbverse Part 3 (2043) Morbius 25: Morbidly Morbius (2043) Morbius vs Blade II (2044) Morbinity War (2045) Morbgame (2046) Morbius 29 (2047) Morbius vs Jared Leto II (2047) Son of Morbius (2048) Morbius 2049 (2049) The Morbengers (2050) Morb Man and the Morbius (2050) Captain Morbius (2050) Morbius 36 (2051) Morbius 37: The Morbtacular Morbius (2052) Morbius and Venom (2053) Morbius vs Venom (2053) Morbius Kills Venom (2053) Morbception (2054) Morbius 43: Morbius Gaming (2054) Morbius 44: Morbiuses Eleven (2055) Morbius: A New Morb (2056) Morbius: The Morbpire Strikes Back (2056) Morbius: Return of the Morbi (2057) Morbius 48 (2058) Morbius: Morbius (2058) Morbius 50 (2059) Morbius: The Phantom Morbius (2060) Morbius: Attack of the Morbs (2061) Morbius: Revenge of the Morb (2061) Morbius 54: Morbzilla (2062) Morbius: Little House on the Morbrie (2063) Morbius: The Morb Awakens (2064) Morbius: The Last Morb (2064) Morbius: The Rise of Morbius (2065) Morbius: Beyond (2066) Morbius: Into Morbness (2067) Morbius 62 (2068) Morbius and the Unbearable Weight of Massive Talent (2069) Fantastic Morbius (2070) The Morbman (2070) The Morbius (2071) Breaking Morbius (2071) Better Call Morbius (2071)"
+  MEX_econ_tab_desc_3: "Joe Biden's America\n\nLIBRAL SCHOOL BE LIKE:\n\n9:0: GAY LESON!!\n\n9:45: how to be be GAYY!!\n\n10:30: TRANS LERNINNG!!\n\n11:15: GAY RECESS!!\n\n11:45: CROSDRESING HOUR!!\n\n12:45: GAY LESON!!!\n\n1:30: TRANGENER LUNCH!!\n\n2:15: BLM PERIOD!!!\n\n3:0: COMUNIS T HISTORY!!\n\n3:30: TAKE NON BINAR BUS HOME!!\n\nTHIS IS WHAT THE LEFT WANT!""
+  MEX_econ_tab_desc_4: "I ran out of bad jokes\n\nShidding tides"
+
+  MEX_econ_region_name_1: "Baja California"
+  MEX_econ_region_name_2: "CDMX, México, and Morelos"
+  MEX_econ_region_name_3: "Central North"
+  MEX_econ_region_name_4: "Gulf"
+  MEX_econ_region_name_5: "North East"
+  MEX_econ_region_name_6: "North West"
+  MEX_econ_region_name_7: "South East"
+  MEX_econ_region_name_8: "South West"
+  MEX_econ_region_name_9: "West"
+  MEX_econ_region_name_10: "Yucatán"
+
+ # Tooltips
+  # Scripted Effects
+   MEX_econ_region_base_stimulation_percent_change_tt: "§YBase Stimulation§! in §Y[GetMEXEconRegionNameContext2]§! changes by [?temp_value|+=2%] ([?temp_before|Y2%] > [?temp_after|Y2%])."
+   MEX_econ_region_stimulation_decay_change_tt: "§YStimulation Decay§! in §Y[GetMEXEconRegionNameContext2]§! changes by [?temp_value|+=2%] ([?temp_before|Y2%] > [?temp_after|Y2%])."
+   MEX_econ_region_agronomics_productivity_percent_change_tt: "§YProductivity§! in §Y[GetMEXEconRegionNameContext2]§! changes by [?temp_value|+=2%] ([?temp_before|Y2%] > [?temp_after|Y2%])."
+   MEX_econ_region_agronomics_staple_crop_percent_change_tt: "§YStaple Crops§! in §Y[GetMEXEconRegionNameContext2]§! increases by [?temp_value|+=2%] ([?temp_before_1|Y2%] > [?temp_after_1|Y2%]).\n"§YCash Crops§! in §Y[GetMEXEconRegionNameContext2]§! decreases by [?temp_value|-=2%] ([?temp_before_2|Y2%] > [?temp_after_2|Y2%]).\n"
+   MEX_econ_region_agronomics_cash_crop_percent_change_tt: "§YCash Crops§! in §Y[GetMEXEconRegionNameContext2]§! increases by [?temp_value|+=2%] ([?temp_before_1|Y2%] > [?temp_after_1|Y2%]).\n"§YStaple Crop§! in §Y[GetMEXEconRegionNameContext2]§! decreases by [?temp_value|-=2%] ([?temp_before_2|Y2%] > [?temp_after_2|Y2%]).\n"
+   MEX_econ_region_population_base_migration_percent_change_tt: "§YBase Migration§! in §Y[GetMEXEconRegionNameContext2]§! changes by [?temp_value|+=2%] ([?temp_before|Y2%] > [?temp_after|Y2%])."
+   MEX_econ_region_urban_population_percent_change_tt: "§YUrban Population§! in §Y[GetMEXEconRegionNameContext2]§! increases by [?temp_value|+=2%] ([?temp_before_1|Y2%] > [?temp_after_1|Y2%]).\n"§YRural Population§! in §Y[GetMEXEconRegionNameContext2]§! decreases by [?temp_value|-=2%] ([?temp_before_2|Y2%] > [?temp_after_2|Y2%]).\n"
+   MEX_econ_region_rural_population_percent_change_tt: "§YRural Population§! in §Y[GetMEXEconRegionNameContext2]§! increases by [?temp_value|+=2%] ([?temp_before_1|Y2%] > [?temp_after_1|Y2%]).\n"§YUrban Population§! in §Y[GetMEXEconRegionNameContext2]§! decreases by [?temp_value|-=2%] ([?temp_before_2|Y2%] > [?temp_after_2|Y2%]).\n"
+   MEX_econ_region_urban_quality_of_life_percent_change_tt: "§YUrban Quality of Life§! in §Y[GetMEXEconRegionNameContext2]§! changes by [?temp_value|+=2%] ([?temp_before|Y2%] > [?temp_after|Y2%])."
+   MEX_econ_region_rural_quality_of_life_percent_change_tt: "§YRural Quality of Life§! in §Y[GetMEXEconRegionNameContext2]§! changes by [?temp_value|+=2%] ([?temp_before|Y2%] > [?temp_after|Y2%])."
+
+## VargCBT Business Opinion Loc ##
+MEX_increase_usa_business_opinion_low_tt: "Will slightly §Graise§! the opinion of §MAmerican businesses§!."
+MEX_increase_usa_business_opinion_med_tt: "Will somewhat §Graise§! the opinion of §MAmerican businesses§!."
+MEX_increase_usa_business_opinion_high_tt: "Will significantly §Graise§! the opinion of §MAmerican businesses§!."
+MEX_decrease_usa_business_opinion_low_tt: "Will slightly §Rlower§! the opinion of §MAmerican businesses§!."
+MEX_decrease_usa_business_opinion_med_tt: "Will somewhat §Rlower§! the opinion of §MAmerican businesses§!."
+MEX_decrease_usa_business_opinion_high_tt: "Will significantly §Rlower§! the opinion of §MAmerican businesses§!."
+
+MEX_increase_jap_business_opinion_low_tt: "Will slightly §Graise§! the opinion of §xSphere businesses§!."
+MEX_increase_jap_business_opinion_med_tt: "Will somewhat §Graise§! the opinion of §xSphere businesses§!."
+MEX_increase_jap_business_opinion_high_tt: "Will significantly §Graise§! the opinion of §xSphere businesses§!."
+MEX_decrease_jap_business_opinion_low_tt: "Will slightly §Rlower§! the opinion of §xSphere businesses§!."
+MEX_decrease_jap_business_opinion_med_tt: "Will somewhat §Rlower§! the opinion of §xSphere businesses§!."
+MEX_decrease_jap_business_opinion_high_tt: "Will significantly §Rlower§! the opinion of §xSphere businesses§!."

@@ -1,0 +1,14 @@
+units = {
+	division = {
+		name = "Free English Fighters"
+		location = 9458
+		division_template = "English Rebels"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Liberators of Portsmouth"
+		location = 9458
+		division_template = "English Rebels"
+		start_experience_factor = 0.1
+	}
+}

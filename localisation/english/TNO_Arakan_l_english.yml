@@ -1,0 +1,20 @@
+﻿l_english:
+ 
+ ###########
+ ##Parties##
+ ###########
+ ARA_communist_party:0 "CPA"
+ ARA_communist_party_long:0 "Communist Party of Arakan"
+ ARA_progressivism_party:0 "KNU"
+ ARA_progressivism_party_long:0 "Karen National Union"
+ ARA_liberalism_party:0 "ALA"
+ ARA_liberalism_party_long:0 "Arakan Liberation Army"
+ ARA_fascism_party:0 "DSA"
+ ARA_fascism_party_long:0 "Dobama-Sinyetha Asiayone"
+ ARA_national_socialism_party:0 "Rohingya Mujahideen"
+ 
+ ################
+ ##Leader Descs##
+ ################
+ ARA_Khaing_Moe_Lunn: "Khaing Moe Lunn"
+ POLITICS_KHAING_MOE_LUNN_DESC:0 "Unsurprisingly, fighting in the jungles of Burma for the independence of Arakan changes a man. Strengthens him. Hardens him. These changes have presented themselves in Khaing Moe Lunn, leader of the Arakan Liberation Army. But what brought him to fight for the freedom of himself and thousands of others?\n\nBorn to an Arakanese family on a hot Saturday in 1944, Moe Lunn displayed the traits of a leader from an early age. He was respectable, honest, and loyal. Many expected him to lead a free Burma. But Moe Lunn decided to take a different path. Founding the Arakan Liberation Party at first, he quickly realised that the way to freedom was not paved with peace, as Gandhi had said, but built in blood, as Bose believed.\n\nNow, Khaing Moe Lunn does not fight for Arakanese freedom on the ballot, but on the battlefield. While those Bamar fight for their right to oppress, Moe Lunn knows he has the moral high ground. Oppression shall not continue for long, even if he is to fall. The people of Arakan shall live on."

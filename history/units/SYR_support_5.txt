@@ -1,0 +1,31 @@
+﻿division_template = {
+	name = "Divisione Volontaria"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		IFV = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Divisione Volontaria"
+		location = 10087
+		division_template = "Divisione Volontaria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "2nd Divisione Volontaria"
+		location = 10087
+		division_template = "Divisione Volontaria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+}

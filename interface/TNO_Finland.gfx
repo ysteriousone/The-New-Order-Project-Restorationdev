@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "FIN_parliament_seat_icon"
+		texturefile = "gfx/interface/finland/FIN_parliament_seat_icon.dds"
+		noOfFrames = 11
+	}
+ 
+	spriteType = { 
+		name = "FIN_parliament_seat_icon_outline"   
+		textureFile = "gfx/interface/finland/FIN_parliament_seat_icon_outline.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "FIN_parliament_logo"
+		texturefile = "gfx/interface/finland/fin_parliament_logo.dds"
+	}
+}

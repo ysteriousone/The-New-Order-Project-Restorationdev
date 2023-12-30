@@ -1,0 +1,9 @@
+PRM_aryanism_category = {
+	icon = GFX_decision_category_generic_political_actions
+	visible_when_empty = yes
+	picture = GFX_decision_GER_decision_economy_test
+
+	allowed = {
+		original_tag = PRM
+	}
+}

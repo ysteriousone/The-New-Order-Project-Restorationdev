@@ -1,0 +1,37 @@
+﻿l_english:
+# Parties
+VEN_communist_party: "PCV"
+VEN_communist_party_long: "Partido Communista de Venezuela"
+VEN_socialist_party: "AD"
+VEN_socialist_party_long: "Acción Democrática"
+VEN_progressivism_party: "AD"
+VEN_progressivism_party_long: "Acción Democrática"
+VEN_liberalism_party: "URD-L"
+VEN_liberalism_party_long: "Unión Republicana Democrática - Liberales"
+VEN_liberal_conservatism_party: "COPEI"
+VEN_liberal_conservatism_party_long: "Comité de Organización Política Electoral Independiente"
+VEN_conservatism_party: "URD-N"
+VEN_conservatism_party_long: "Unión Republicana Democrática - Nacionalistas"
+VEN_paternalism_party: "FDP"
+VEN_paternalism_party_long: "Fuerza Democrática Popular"
+VEN_fascism_party: "Jiménez Loyalists"
+VEN_fascism_party_long: "Jiménez Loyalists"
+
+# Characters
+VEN_Romulo_Betancourt: "Rómulo Betancourt"
+VEN_Carlos_Perez: "Carlos Andrés Pérez"
+VEN_Andres_German_Otero: "Andrés Germán Otero"
+VEN_Marcos_Falcon: "Marcos Falcón Briceño"
+VEN_Antonio_Briceno_Linares: "Antonio Briceño Linares"
+
+POLITICS_VEN_BETANCOURT: "Not for nothing is Rómulo Ernesto Betancourt Bello, born in Guatire in 1908 and a militant for democracy practically ever since, referred to as the Father of Venezuelan Democracy. Few if any Venezuelan politicians have given as much as the man who was twice President and three times exiled, all in the name of his support for democracy.\n\nBetancourt's first Presidency ended at the point of a gun. A military junta, defying the will of the people that had duly elected him, dared to usurp control—but it did them no good, since the junta rapidly dissolved and the United States intervened on his behalf. But the President never forgot what had led to his fall.\n\nReturning to power, he directed the Venezuelan oil fields to ensure that fascistic states all across the world—the Dominicans closer to home the same as the Hitlerites far away—did not receive even a drop of Venezuelan oil. Obviously, this made him a major target for fascistic scoundrels and their assorted hangers-on; this became most obvious when Trujillo tried to assassinate him with a car bomb.\n\nBut it did not work. The President lived, and yet lives. So long as a heart beats within Betancourt's living body, he will fight even unto death to preserve a free, democratic Venezuela."
+
+# Natspirits
+VEN_Puntofijo_Pact: "The Puntofijo Pact"
+VEN_Puntofijo_Pact_desc: "Ever since the collapse of the Jiménez government in a coup and its replacement by a democratic polity, various measures were taken in order to ensure that Venezuelan democracy would never again fall apart in the face of tyranny. The Puntofijo Pact was the crystallisation of these plans; it was a written guarantee that the signatory parties would respect election results, prevent single-party hegemony, and work together to fight dictatorship.\n\nHowever, all good things must come to an end, and that end seems to be coming rather quickly for the Puntofijo Pact. The once ironclad agreement is beginning to show cracks, and whether that will lead to its renewal or to its ruination no one can tell with certainty."
+
+VEN_Essequibo_Dispute: "Essequibo is Ours!"
+VEN_Essequibo_Dispute_desc: "Guayana Essequibo is to Venezuela what the east is to Bolivia and the Falklands are to Argentina. As is the case with all such disputed territories in Latin America, it is a land forever claimed by its neighbour and a perennial problem for the people of the region.\n\nAny and all Venezuelan politicians elected to any office above that of environmental health officer (that is, rat-catcher) breathes fire when asked about the region; they all aim to reclaim it, and that desire has brought even socialists and conservative hardliners together even if only for a few moments.\n\nObviously, if this is not controlled or solved in a rational manner, the Organisation of Free Nations—to which both Venezuela and Guyana currently belong—is at risk of being split over this."
+
+VEN_King_of_Oil: "The King of Oil" # (Pandas)
+VEN_King_of_Oil_desc: "Verily, Venezuela is the King of Oil, and we are doing remarkably well with this position. The economy is doing marvellously, and since previous governments successfully nationalised it all we have total control over it. Yes, you heard it correctly: it's ours, all ours.\n\nOur control over this large oil reserve enables us to punch well above our theoretical diplomatic weight. We can make friends and enemies as we please and suffer less than, say, the Colombians might if they copied our actions—all thanks to our oil."

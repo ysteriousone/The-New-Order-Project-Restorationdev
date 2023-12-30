@@ -1,0 +1,9 @@
+IRK_reforms_category = {
+	picture = decision_category_generic_political_actions
+	allowed = {
+		tag = IRK
+	}
+	visible = {
+		NOT = { has_global_flag = AFTER_MIDNIGHT_COMMENCED }
+	}
+}

@@ -1,0 +1,507 @@
+ideas = {
+
+	#industrial_concern = {}
+	#theorist = {}
+	#army_chief = {}
+	#navy_chief = {}
+	#air_chief = {}
+	#high_command = {}
+#
+	#popularity = {
+	#	very_low_popularity = {
+	#		available = { always = no }
+	#		removal_cost = -1
+	#		modifier = {political_power_gain = 0.1}
+	#		removal_cost = -1
+	#		
+	#	}
+	#	
+	#	low_popularity = {
+	#		available = { always = no }
+	#		removal_cost = -1
+	#		modifier = {political_power_gain = 0.3}
+	#		removal_cost = -1
+	#	}
+	#	
+	#	normal_popularity = {
+	#		available = { always = no }
+	#		default = yes
+	#		removal_cost = -1
+	#		modifier = {political_power_gain = 0.5}
+	#		removal_cost = -1
+	#	}
+	#	
+	#	high_popularity = {
+	#		available = { always = no }
+	#		removal_cost = -1
+	#		modifier = {political_power_gain = 0.75}
+	#		removal_cost = -1
+	#	}
+	#	
+	#	very_high_popularity = {
+	#		available = { always = no }
+	#		removal_cost = -1
+	#		modifier = {political_power_gain = 1}
+	#		removal_cost = -1
+	#	}
+	#
+	#}
+
+	hidden_ideas = {
+
+		idea_continuous_naval_production = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea_continuous_naval_production"}
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				carrier = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				capital_ship = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				screen_ship = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				submarine = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+
+
+		idea_continuous_air_production = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea idea_continuous_air_production"}
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				#jet_fighter_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				#cv_jet_fighter_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				mca_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				cv_mca_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				light_stealth_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				#jet_interceptor_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				#helicopter_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				transport_helicopter_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				asw_helicopter_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				attack_helicopter_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				scout_helicopter_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				#jet_tac_bomber_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				#tac_stealth_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				#jet_strat_bomber_equipment = {
+				#	instant = yes
+				#	build_cost_ic = -0.15
+				#}
+				strat_stealth_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+	}
+
+	country = {
+
+		socialist_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea socialist_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = socialist
+			}
+
+			removal_cost = -1
+
+			picture = generic_communist_drift_bonus
+
+			modifier = {
+				socialist_drift = 0.1
+				socialist_acceptance = 85
+			}
+		}
+
+		communist_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea communist_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communist
+			}
+
+			removal_cost = -1
+
+			picture = generic_communist_drift_bonus
+
+			modifier = {
+				communist_drift = 0.1
+				communist_acceptance = 85
+			}
+		}
+
+		progressivism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea progressivism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = progressivism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				progressivism_drift = 0.1
+				progressivism_acceptance = 85
+			}
+		}
+
+		liberalism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea liberalism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = liberalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				liberalism_drift = 0.1
+				liberalism_acceptance = 85
+			}
+		}
+
+		conservatism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea conservatism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = conservatism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				conservatism_drift = 0.1
+				conservatism_acceptance = 85
+			}
+		}
+
+		paternalism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea paternalism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = paternalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				paternalism_drift = 0.1
+				paternalism_acceptance = 85
+			}
+		}
+
+		despotism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea despotism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = despotism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascist_drift_bonus
+
+			modifier = {
+				despotism_drift = 0.1
+				despotism_acceptance = 85
+			}
+		}
+
+		fascism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea fascism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascist_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.1
+				fascism_acceptance = 85
+			}
+		}
+
+		national_socialism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea national_socialism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = national_socialism
+			}
+
+			removal_cost = -1
+
+			picture = generic_national_socialist_drift_bonus
+
+			modifier = {
+				national_socialism_drift = 0.1
+				national_socialism_acceptance = 85
+			}
+		}
+
+		ultramilitarism_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ultramilitarism_influence"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = ultranationalism
+			}
+
+			removal_cost = -1
+
+			picture = generic_ultranational_socialist_drift_bonus
+
+			modifier = {
+				ultranationalism_drift = 0.1
+				ultranationalism_acceptance = 85
+			}
+		}
+
+		### Generic Focus Tree Ideas ###
+
+		generic_liberty_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea generic_liberty_idea"}
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+
+				political_power_gain = 0.3
+
+			}
+
+		}
+
+		generic_militarism_focus = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea generic_militarism_focus"}
+
+
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+
+				#enemy_#partisan_effect = -0.1
+
+			}
+		}
+
+		generic_military_youth_focus = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea generic_military_youth_focus"}
+
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+
+				conscription = 0.05
+
+			}
+
+		}
+
+		generic_ideological_fanaticism_focus = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea generic_ideological_fanaticism_focus"}
+
+			picture = generic_pp_unity_bonus
+
+
+
+			modifier = {
+
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+
+			}
+
+		}
+
+		generic_liberty_research_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea generic_liberty_research_idea"}
+
+			picture = generic_research_bonus
+
+			modifier = {
+
+				research_speed_factor = 0.05
+
+			}
+
+		}
+
+		generic_welfare_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea generic_welfare_idea"}
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+
+				consumer_goods_use_modifier = -0.05
+
+			}
+
+		}
+	}
+}

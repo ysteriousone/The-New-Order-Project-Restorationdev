@@ -1,0 +1,12 @@
+GAW_CHI_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	#picture = 
+
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		has_global_flag = GAW_in_progress
+	}
+}

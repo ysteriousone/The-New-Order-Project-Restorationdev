@@ -1,0 +1,37 @@
+division_template = {
+	name = "Emergency Reserves"
+	division_names_group = ENG_InfantryDivision
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		location = 219
+		division_template = "Emergency Reserves"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11299
+		division_template = "Emergency Reserves"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11332
+		division_template = "Emergency Reserves"
+		start_experience_factor = 0.1
+	}
+}

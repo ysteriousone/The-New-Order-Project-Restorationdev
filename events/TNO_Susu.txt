@@ -1,0 +1,46 @@
+﻿############################
+## Susu Events
+############################
+
+add_namespace = SUS
+
+country_event = { #annexing land yeet
+	id = SUS.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SUS.20"}
+	title = SUS.20.t
+	desc = SUS.20.desc
+	picture = GFX_report_event_GER_ostsonne
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = SUS.20.a
+		SUS = {
+			838 = {
+				set_demilitarized_zone = no
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			556 = {
+				set_demilitarized_zone = no
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1224 = {
+				set_demilitarized_zone = no
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

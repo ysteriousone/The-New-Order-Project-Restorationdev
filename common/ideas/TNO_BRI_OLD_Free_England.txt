@@ -1,0 +1,224 @@
+ideas = {
+	country = {
+		FEN_English_Civil_War = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_English_Civil_War" }
+			allowed = { always = no }
+			cancel = {
+				NOT = {
+					has_war_with = ENG
+				}
+			}
+			removal_cost = -1
+			picture = FEN_English_Civil_War
+			modifier = {
+				stability_weekly = -0.025
+				war_support_weekly = -0.025
+				surrender_limit = 0.7
+			}
+		}
+		FEN_Reconstruction_Of_England = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EN_Reconstruction_Of_England"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = NZL_Urbanization_Crisis
+			modifier = {
+				gdp_growth_modifier = 3.0
+				inflation_rate_modifier = 2.5
+				taxable_population_modifier = -0.03
+				#income_tax_rate_factor = -0.03
+				poverty_monthly_rate = -0.04
+				stability_weekly = 0.005
+				production_speed_buildings_factor = -0.3
+				industry_repair_factor = 0.15
+				industry_free_repair_factor = 0.15
+				misc_costs_modifier = 1.000
+			}
+		}
+
+		FEN_Soldiers_Reconstruction = {
+			picture = Token_Soldiers
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EN_Soldiers_Reconstruction"}
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industry_repair_factor = 0.10
+				industry_free_repair_factor = 0.10
+				misc_costs_modifier = 0.100
+				army_speed_factor = -0.05
+				planning_speed = -0.1
+			}
+		}
+
+		FEN_Food_Insecurity = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Food_Insecurity"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				gdp_growth_modifier = -0.03
+				taxable_population_modifier = -0.03
+				#income_tax_rate_factor = -0.03
+				stability_weekly = -0.005
+				monthly_population = -0.30
+				stability_factor = -0.1
+				army_org = -2
+				poverty_monthly_rate = -0.04
+			}
+		}
+
+		FEN_Food_Insecurity_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Food_Insecurity_2"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				gdp_growth_modifier = -0.02
+				taxable_population_modifier = -0.02
+				#income_tax_rate_factor = -0.02
+				stability_weekly = -0.002
+				monthly_population = -0.15
+				stability_factor = -0.05
+				army_org = -1
+				poverty_monthly_rate = -0.03
+			}
+		}
+
+		FEN_Food_Insecurity_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Food_Insecurity_3"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = federal_food_banks
+			modifier = {
+				gdp_growth_modifier = -0.01
+				poverty_monthly_rate = -0.02
+				monthly_population = -0.2
+				production_speed_buildings_factor = -0.2
+
+			}
+		}
+
+		FEN_Food_Insecurity_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Food_Insecurity_4"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = federal_food_banks
+			modifier = {
+				poverty_monthly_rate = -0.01
+				monthly_population = -0.1
+				production_speed_buildings_factor = -0.15
+
+			}
+		}
+
+
+		FEN_Food_Insecurity_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Food_Insecurity_5"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = federal_food_banks
+			modifier = {
+				monthly_population = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		FEN_Urban_Crime = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Urban_Crime"}
+			allowed = { always = no }
+			cancel = { has_war_with = FEN }
+			removal_cost = -1
+			picture = NZL_Urbanization_Crisis
+			modifier = {
+				gdp_growth_modifier = -0.05
+				taxable_population_modifier = -0.05
+				#income_tax_rate_factor = -0.05
+				poverty_monthly_rate = -0.04
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.25
+				industrial_capacity_factory = -0.25
+				local_resources_factor = -0.15
+				supply_consumption_factor = -0.05
+				line_change_production_efficiency_factor = -0.2
+			}
+		}
+
+		FEN_Urban_Crime_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Urban_Crime_2"}
+			allowed = { always = no }
+			cancel = { has_war_with = FEN }
+			removal_cost = -1
+			picture = NZL_Urbanization_Crisis
+			modifier = {
+				gdp_growth_modifier = -0.04
+				taxable_population_modifier = -0.04
+				#income_tax_rate_factor = -0.04
+				poverty_monthly_rate = -0.03
+				stability_factor = -0.15
+				production_factory_max_efficiency_factor = -0.20
+				industrial_capacity_factory = -0.20
+				local_resources_factor = -0.20
+				supply_consumption_factor = -0.15
+				line_change_production_efficiency_factor = -0.15
+			}
+		}
+
+		FEN_Urban_Crime_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Urban_Crime_3"}
+			allowed = { always = no }
+			cancel = { has_war_with = FEN }
+			removal_cost = -1
+			picture = NZL_Urbanization_Crisis
+			modifier = {
+				gdp_growth_modifier = -0.03
+				taxable_population_modifier = -0.03
+				#income_tax_rate_factor = -0.03
+				poverty_monthly_rate = -0.02
+				stability_factor = -0.15
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_factory = -0.1
+				local_resources_factor = -0.1
+				supply_consumption_factor = -0.02
+				line_change_production_efficiency_factor = -0.1
+			}
+		}
+
+		FEN_Urban_Crime_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Urban_Crime_4"}
+			allowed = { always = no }
+			cancel = { has_war_with = FEN }
+			removal_cost = -1
+			picture = NZL_Urbanization_Crisis
+			modifier = {
+				gdp_growth_modifier = -0.02
+				taxable_population_modifier = -0.02
+				#income_tax_rate_factor = -0.02
+				poverty_monthly_rate = -0.01
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.05
+				supply_consumption_factor = -0.05
+				line_change_production_efficiency_factor = -0.05
+			}
+		}
+
+		FEN_Urban_Crime_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FEN_Urban_Crime_5"}
+			allowed = { always = no }
+			cancel = { has_war_with = FEN }
+			removal_cost = -1
+			picture = NZL_Urbanization_Crisis
+			modifier = {
+				gdp_growth_modifier = -0.01
+				taxable_population_modifier = -0.01
+				#income_tax_rate_factor = -0.01
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.02
+				industrial_capacity_factory = -0.02
+				local_resources_factor = -0.02
+				supply_consumption_factor = -0.02
+				line_change_production_efficiency_factor = -0.02
+			}
+		}
+	}
+}

@@ -1,0 +1,153 @@
+
+defined_text = {
+	name = GetIME_negotiation_bias
+	text = {
+		trigger = {
+			check_variable = { IME_negotiation_bias > 0 }
+		}
+		localization_key = IME_haganah_bias
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_negotiation_bias < 0 }
+		}
+		localization_key = IME_fatah_bias
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_negotiation_bias = 0 }
+		}
+		localization_key = IME_no_bias
+	}
+}
+
+
+defined_text = {
+	name = GetIME_irgun_strength
+	text = {
+		trigger = {
+			check_variable = { IME_irgun_strength > 39 }
+		}
+		localization_key = IME_irgun_omnipotent
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_irgun_strength > 25 }
+		}
+		localization_key = IME_irgun_powerful
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_irgun_strength > 9 }
+		}
+		localization_key = IME_irgun_influential
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_irgun_strength > -1 }
+		}
+		localization_key = IME_irgun_pitiful
+	}
+}
+
+
+
+defined_text = {
+	name = GetIME_anm_strength
+	text = {
+		trigger = {
+			check_variable = { IME_anm_strength > 39 }
+		}
+		localization_key = IME_anm_omnipotent
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_anm_strength > 25 }
+		}
+		localization_key = IME_anm_powerful
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_anm_strength > 9 }
+		}
+		localization_key = IME_anm_influential
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_anm_strength > -1 }
+		}
+		localization_key = IME_anm_pitiful
+	}
+}
+
+defined_text = {
+	name = GetIME_lehi_strength
+	text = {
+		trigger = {
+			check_variable = { IME_lehi_strength > 39 }
+		}
+		localization_key = IME_lehi_omnipotent
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_lehi_strength > 25 }
+		}
+		localization_key = IME_lehi_powerful
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_lehi_strength > 9 }
+		}
+		localization_key = IME_lehi_influential
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_lehi_strength > -1 }
+		}
+		localization_key = IME_lehi_pitiful
+	}
+}
+
+
+defined_text = {
+	name = GetIME_plfgc_strength
+	text = {
+		trigger = {
+			check_variable = { IME_plfgc_strength > 39 }
+		}
+		localization_key = IME_plfgc_omnipotent
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_plfgc_strength > 25 }
+		}
+		localization_key = IME_plfgc_powerful
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_plfgc_strength > 9 }
+		}
+		localization_key = IME_plfgc_influential
+	}
+
+	text = {
+		trigger = {
+			check_variable = { IME_plfgc_strength > -1 }
+		}
+		localization_key = IME_plfgc_pitiful
+	}
+}
+

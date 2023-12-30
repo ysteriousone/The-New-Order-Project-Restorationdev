@@ -1,0 +1,85 @@
+characters = {
+	VEN_Romulo_Betancourt = {
+		name = VEN_Romulo_Betancourt
+		portraits = { civilian = { large = "gfx/leaders/VEN/Portrait_Venezuela_Romulo_Betancourt.dds" } }
+		country_leader = {
+			desc = "POLITICS_VEN_BETANCOURT"
+			expire = "1994.4.20"
+			ideology = progressivism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	VEN_Carlos_Perez = {
+		name = VEN_Carlos_Perez
+		portraits = {
+			civilian = {
+				small = GFX_idea_VEN_Carlos_Perez
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = VEN_Carlos_Perez_dep
+			traits = {
+				head_of_government
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+	VEN_Andres_German_Otero = {
+		name = VEN_Andres_German_Otero
+		portraits = {
+			civilian = {
+				#small = GFX_idea_VEN_Andres_German_Otero
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = VEN_Andres_German_Otero_eco
+			traits = {
+				economy_minister
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+	VEN_Marcos_Falcon = {
+		name = VEN_Marcos_Falcon
+		portraits = {
+			civilian = {
+				#small = GFX_idea_VEN_Marcos_Falcon
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = VEN_Marcos_Falcon_pol
+			traits = {
+				foreign_minister
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+	VEN_Antonio_Briceno_Linares = {
+		name = VEN_Antonio_Briceno_Linares
+		portraits = {
+			civilian = {
+				#small = GFX_idea_VEN_Antonio_Briceno_Linares
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = VEN_Antonio_Briceno_Linares_mil
+			traits = {
+				security_minister
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+}

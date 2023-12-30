@@ -1,0 +1,169 @@
+scripted_gui = {
+	TNO_Indonesia_Decisions_GUI = {
+		context_type = decision_category
+		window_name = "TNO_Indonesia_Decisions_GUI"
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			Indonesia_GUI_Key_1_visible = {
+				always = yes
+			}
+			Indonesia_GUI_Key_2_visible = {
+				always = yes
+			}
+			Indonesia_GUI_Key_3_visible = {
+				always = yes
+			}
+			Indonesia_GUI_Key_1_Button_1_click_enabled = {
+				NOT = {
+					has_country_flag = INS_Disable_Military_Buttons_flag
+					has_idea = INS_Military_GUI_Buttons_timeout
+				}
+			}
+			Indonesia_GUI_Key_1_Button_2_click_enabled = {
+				NOT = {
+					has_country_flag = INS_Disable_Military_Buttons_flag
+					has_idea = INS_Military_GUI_Buttons_timeout
+				}
+			}
+			Indonesia_GUI_Key_2_Button_1_click_enabled = {
+				NOT = {
+					has_country_flag = INS_Disable_SKN_Buttons_flag
+					has_idea = INS_SKN_GUI_Buttons_timeout
+				}
+			}
+			Indonesia_GUI_Key_2_Button_2_click_enabled = {
+				NOT = {
+					has_country_flag = INS_Disable_SKN_Buttons_flag
+					has_idea = INS_SKN_GUI_Buttons_timeout
+				}
+			}
+			Indonesia_GUI_Key_3_Button_1_click_enabled = {
+				NOT = {
+					has_country_flag = INS_Disable_Political_Buttons_flag
+					has_idea = INS_Political_GUI_Buttons_timeout
+				}
+			}
+			Indonesia_GUI_Key_3_Button_2_click_enabled = {
+				NOT = {
+					has_country_flag = INS_Disable_Political_Buttons_flag
+					has_idea = INS_Political_GUI_Buttons_timeout
+				}
+			}
+		}
+
+		effects = {
+			Indonesia_GUI_Key_1_Button_1_click = {
+				add_to_variable = {
+					var = INS_Military_Status
+					value = -1
+				}
+				clamp_variable = {
+					var = INS_Military_Status
+					min = 1
+					max = 8
+				}
+				INS_Military_Status_GUI = yes
+				add_timed_idea = {
+					idea = INS_Military_GUI_Buttons_timeout
+					days = 60
+				}
+			}
+			Indonesia_GUI_Key_1_Button_2_click = {
+				add_to_variable = {
+					var = INS_Military_Status
+					value = 1
+				}
+				clamp_variable = {
+					var = INS_Military_Status
+					min = 1
+					max = 8
+				}
+				INS_Military_Status_GUI = yes
+				add_timed_idea = {
+					idea = INS_Military_GUI_Buttons_timeout
+					days = 60
+				}
+			}
+			Indonesia_GUI_Key_2_Button_1_click = {
+				add_to_variable = {
+					var = INS_SKN_Status
+					value = -1
+				}
+				clamp_variable = {
+					var = INS_SKN_Status
+					min = 1
+					max = 8
+				}
+				INS_SKN_Status_GUI = yes
+				add_timed_idea = {
+					idea = INS_SKN_GUI_Buttons_timeout
+					days = 60
+				}
+			}
+			Indonesia_GUI_Key_2_Button_2_click = {
+				add_to_variable = {
+					var = INS_SKN_Status
+					value = 1
+				}
+				clamp_variable = {
+					var = INS_SKN_Status
+					min = 1
+					max = 8
+				}
+				INS_SKN_Status_GUI = yes
+				add_timed_idea = {
+					idea = INS_SKN_GUI_Buttons_timeout
+					days = 60
+				}
+			}
+			Indonesia_GUI_Key_3_Button_1_click = {
+				add_to_variable = {
+					var = INS_Political_Status
+					value = -1
+				}
+				clamp_variable = {
+					var = INS_Political_Status
+					min = 1
+					max = 8
+				}
+				INS_Political_Status_GUI = yes
+				add_timed_idea = {
+					idea = INS_Political_GUI_Buttons_timeout
+					days = 60
+				}
+			}
+			Indonesia_GUI_Key_3_Button_2_click = {
+				add_to_variable = {
+					var = INS_Political_Status
+					value = 1
+				}
+				clamp_variable = {
+					var = INS_Political_Status
+					min = 1
+					max = 8
+				}
+				INS_Political_Status_GUI = yes
+				add_timed_idea = {
+					idea = INS_Political_GUI_Buttons_timeout
+					days = 60
+				}
+			}
+		}
+
+		properties = {
+			Indonesia_GUI_Lock_1 = {
+				image = "[GetLock1]"
+			}
+			Indonesia_GUI_Lock_2 = {
+				image = "[GetLock2]"
+			}
+			Indonesia_GUI_Lock_3 = {
+				image = "[GetLock3]"
+			}
+		}
+	}
+}

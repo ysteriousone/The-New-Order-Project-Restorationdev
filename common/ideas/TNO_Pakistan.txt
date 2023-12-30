@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+		PAK_Jihad_for_Freedom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAK_Jihad_for_Freedom"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+		PAK_Go_It_Alone = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAK_Go_It_Alone"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

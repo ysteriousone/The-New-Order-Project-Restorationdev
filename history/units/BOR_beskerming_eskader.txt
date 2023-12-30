@@ -1,0 +1,38 @@
+﻿division_template = {
+	name = "Beskerming Eskader"
+	division_names_group = BOR_Infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3}
+	}
+}
+
+units = {
+	division = {
+		name = "1ste Beskerming Eskader"
+		location = 2171
+		division_template = "Beskerming Eskader"
+		start_experience_factor = 0.5
+
+	}
+	division = {
+		name = "2de Beskerming Eskader"
+		location = 2171
+		division_template = "Beskerming Eskader"
+		start_experience_factor = 0.5
+
+	}
+}

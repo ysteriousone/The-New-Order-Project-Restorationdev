@@ -1,0 +1,3032 @@
+#Lithobraker was here- DRILL BABY DRILL
+
+
+#domestic tree
+
+shared_focus = {
+	id = USA_running_on_fumes
+	icon = GFX_focus_usa_america_is_on_fire
+	cost = 3.00
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	offset = {
+		x = -4
+		y = 0
+		trigger = { has_country_flag = USA_64_R_RDC }
+	}
+	offset = {
+		x = 18
+		y = 0
+		trigger = { has_country_flag = USA_64_D_RDC }
+	}
+	offset = {
+		x = -3
+		y = 7
+		trigger = { has_country_flag = USA_64_FR_NPP }
+	}
+	offset = {
+		x = 0
+		y = -1
+		trigger = { has_country_flag = USA_68_D_RDC }
+	}
+	offset = {
+		x = 16
+		y = -4
+		trigger = { has_country_flag = USA_68_R_RDC }
+	}
+	offset = {
+		x = 2
+		y = 1
+		trigger = { has_country_flag = USA_68_FR_NPP }
+	}
+	offset = {
+		x = -1
+		y = 0
+		trigger = { has_country_flag = USA_THURMOND_FR_NPP }
+	}
+	allow_branch = { has_country_flag = USA_oil_crisis }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_running_on_fumes"
+		country_event = { id = USA.oilcrisis.1 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = USA_set_the_prices
+	icon = GFX_IRQ_Oil_Deals
+	prerequisite = { focus = USA_running_on_fumes }
+	cost = 3.00
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_running_on_fumes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_set_the_prices"
+		add_timed_idea = {
+			idea = USA_OilCrisis_Setting_Prices
+			days = 365
+		}
+		hidden_effect = {
+			country_event = { id = USA.oilcrisis.2 days = 3 }
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_the_Federal_Energy_Office
+	icon = GFX_USA_No_Child_Left_Behind
+	cost = 3.00
+	prerequisite = { focus = USA_running_on_fumes }
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_running_on_fumes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_Federal_Energy_Office"
+		add_ideas = USA_OilCrisis_Federal_Energy_Management
+	}
+}
+
+shared_focus = {
+	id = USA_Bigger_in_Texas
+	icon = GFX_AMK_everythings_bigger_in_texas
+	cost = 3.00
+	prerequisite = { focus = USA_running_on_fumes }
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_running_on_fumes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Bigger_in_Texas"
+		hidden_effect = {
+		add_timed_idea = { idea = USA_Bigger_in_Texas_misc_costs days = 90 }
+		}
+		TNO_Oil_Crisis_reduce_effects_USA = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.2 }
+		econ_spend_money_once_effect_raw_money = yes
+		375 = {
+			add_state_modifier = {
+				modifier = {
+					state_GDP_growth_factor_modifier = 0.05
+				}
+			}
+			set_temp_variable = { state_value_multiplier_temp = 1.05 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
+		add_resource = {
+			type = oil
+			amount = 14
+			state = 375
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Odd_Even_Rationing
+	icon = GFX_JAP_oil_concessions
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_set_the_prices
+	}
+	prerequisite = {
+		focus = USA_the_Federal_Energy_Office
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_set_the_prices
+	completion_reward = {
+		TNO_Oil_Crisis_reduce_effects_USA = yes
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Odd_Even_Rationing"
+		swap_ideas = {
+			remove_idea = USA_OilCrisis_Federal_Energy_Management
+			add_idea = USA_OilCrisis_Federal_Energy_Management_2
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Synthetic_Alternatives
+	icon = GFX_CHI_Synthetic_Refineries
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_the_Federal_Energy_Office
+
+	}
+	prerequisite = {
+		focus = USA_Bigger_in_Texas
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_the_Federal_Energy_Office
+	completion_reward = {
+		TNO_Oil_Crisis_reduce_effects_USA = yes
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Synthetic_Alternatives"
+		add_tech_bonus = {
+			name = synth_resources
+			bonus = 0.45
+			uses = 2
+			category = synth_resources
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Disaster_Averted
+	icon = GFX_IND_India_Diplo_Italy_Oil
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Odd_Even_Rationing
+
+	}
+	prerequisite = {
+		focus = USA_Synthetic_Alternatives
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Odd_Even_Rationing
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Disaster_Averted"
+		add_stability = 0.03
+		add_political_power = 75
+		country_event = { id = USA.oilcrisis.3 days = 2 }
+		subtract_from_variable = { USA_crisis_counter = 1 }
+		clamp_variable = { var = USA_crisis_counter min = 0 }
+		hidden_effect = {
+			if = {
+				limit = { is_in_faction_with = ITA }
+				country_event = { id = USA.oilcrisis.101 }
+			}
+			else = { country_event = { id = USA.oilcrisis.102 } }
+		}
+	}
+}
+
+
+#tex was here
+#Support OFN Italy
+shared_focus = {
+	id = USA_Il_Duce_Disaster
+	icon = GFX_TNO_generic_italy
+	cost = 3.00
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	allow_branch = { has_country_flag = USA_back_italy }
+	offset = { # Thurmond
+		x = -5
+		y = 0
+		trigger = { has_country_flag = USA_THURMOND_FR_NPP }
+	}
+	offset = { # Bennett
+		x = 22
+		y = -1
+		trigger = { has_country_flag = USA_64_R_RDC }
+	}
+	offset = { # LBJ
+		x = 25
+		y = -1
+		trigger = { has_country_flag = USA_64_D_RDC }
+	}
+	offset = { # Wallace
+		x = -3
+		y = 7
+		trigger = { has_country_flag = USA_64_FR_NPP }
+	}
+	offset = { # RFK
+		x = -4
+		y = -1
+		trigger = { has_country_flag = USA_64_C_NPP }
+	}
+	offset = {
+		x = -8
+		y = -1
+		trigger = { has_country_flag = USA_68_D_RDC }
+	}
+	offset = {
+		x = 0
+		y = -1
+		trigger = { has_country_flag = USA_68_R_RDC }
+	}
+	offset = {
+		x = -2
+		y = 1
+		trigger = { has_country_flag = USA_68_FR_NPP }
+	}
+	offset = {
+		x = -5
+		y = 0
+		trigger = { has_country_flag = USA_68_C_NPP }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Il_Duce_Disaster"
+		country_event = { id = OIL.500 }
+	}
+}
+#interventionist
+shared_focus = {
+	id = USA_A_Company_Man
+	icon = GFX_ITA_Veterans_of_the_World_War
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Il_Duce_Disaster
+	}
+	available = {
+		has_country_flag = OIL_USA_prointerventionist
+	}
+	mutually_exclusive = {
+		focus = USA_Naples_Conference
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Il_Duce_Disaster
+	completion_reward = {
+		custom_effect_tooltip = USA_add_OFN_unity
+		log = "[GetDateText]: [Root.GetName]: Focus USA_A_Company_Man"
+		if = {
+			limit = {
+				SAU = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			SAU = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = { SYR = { exists = yes } }
+			SYR = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = { EGB = { exists = yes } }
+			EGB = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = { NYM = { exists = yes } }
+			NYM = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = {
+				PAL = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			PAL = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = { OMB = { exists = yes } }
+			OMB = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = {
+				GUL = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			GUL = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = { UAR = { exists = yes } }
+			UAR = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+		if = {
+			limit = { LEB = { exists = yes } }
+			LEB = {
+				add_ideas = USA_OilCrisis_Covert_Actions
+			}
+		}
+	}
+}
+shared_focus = {
+	id = USA_Starting_a_Fire
+	icon = GFX_Ita_Fire_and_Flames
+	cost = 3.00
+	prerequisite = {
+		focus = USA_A_Company_Man
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_A_Company_Man
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Starting_a_Fire"
+		if = {
+			limit = {
+				SAU = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			SAU = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = { SYR = { exists = yes } }
+			SYR = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = { EGB = { exists = yes } }
+			EGB = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = { NYM = { exists = yes } }
+			NYM = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = {
+				PAL = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			PAL = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = { OMB = { exists = yes } }
+			OMB = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = {
+				GUL = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			GUL = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = { UAR = { exists = yes } }
+			UAR = {
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = { LEB = { exists = yes } }
+			LEB = {
+				add_stability = -0.1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Blockade_the_Gulf
+	icon = GFX_IME_review_arab_legion
+	cost = 3.00
+	prerequisite = {
+		focus = USA_A_Company_Man
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	bypass = { 
+		SAU = {
+			is_in_faction_with = USA 
+		}
+	}
+	relative_position_id = USA_A_Company_Man
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Blockade_the_Gulf"
+		SAU = {
+			add_ideas = SAU_USA_strangling 
+			add_war_support = -0.10
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Subvert_the_Pan_Arabists
+	icon = GFX_IME_arab_higher_committee
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Starting_a_Fire
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Starting_a_Fire
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Subvert_the_Pan_Arabists"
+		if = {
+			limit = { SYR = { exists = yes } }
+			SYR = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = { EGB = { exists = yes } }
+			EGB = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = { NYM = { exists = yes } }
+			NYM = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				PAL = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			PAL = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = { OMB = { exists = yes } }
+			OMB = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				GUL = {
+					exists = yes
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			GUL = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = { UAR = { exists = yes } }
+			UAR = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+		if = {
+			limit = { LEB = { exists = yes } }
+			LEB = {
+				swap_ideas = {
+					remove_idea = USA_OilCrisis_Covert_Actions
+					add_idea = USA_OilCrisis_Covert_Actions_2
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Feeding_The_Flames
+	icon = GFX_ENG_More_Fuel_To_The_Fires
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Starting_a_Fire
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Starting_a_Fire
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Feeding_The_Flames"
+		custom_effect_tooltip = USA_decisions_ITA_oil
+	}
+}
+
+shared_focus = {
+	id = USA_Sun_Never_Rises
+	icon = GFX_JAP_Baptism_by_Fire
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Blockade_the_Gulf
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Blockade_the_Gulf
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Sun_Never_Rises"
+		country_event = {
+			id = OIL.503
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Preparing_The_Coup
+	icon = GFX_Generic_Army_Officers
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Subvert_the_Pan_Arabists
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Subvert_the_Pan_Arabists
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Preparing_The_Coup"
+		custom_effect_tooltip = OIL_USA_party_support
+		add_war_support = 0.05
+		ITA = {
+			add_war_support = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Operation_Checkmate
+	icon = GFX_GER_The_Peoples_coup
+	cost = 3.00
+	bypass = {
+		SAU = {
+			OR = {
+				has_government = paternalism
+				exists = no 
+			}	
+		}
+	}
+	prerequisite = {
+		focus = USA_Feeding_The_Flames
+		focus = USA_Sun_Never_Rises
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Feeding_The_Flames
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Operation_Checkmate"
+		country_event = {
+			id = OIL.505
+			days = 1
+		}	
+	}
+}
+
+shared_focus = {
+	id = USA_The_Fire_Rises
+	icon = GFX_generic_artillery_warfare
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Preparing_The_Coup
+		focus = USA_Operation_Checkmate
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Preparing_The_Coup
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_The_Fire_Rises"
+		add_ideas = OIL_proitaly_volunteers
+	}
+}
+
+#non-interventionist
+
+shared_focus = {
+	id = USA_Naples_Conference
+	icon = GFX_goal_TNO_generic_OFN_light
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Il_Duce_Disaster
+	}
+	available = {
+		has_country_flag = OIL_USA_antiinterventionist
+	}
+	mutually_exclusive = {
+		focus = USA_A_Company_Man
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Il_Duce_Disaster
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Naples_Conference"
+		add_political_power = 100
+		ITA = {
+			add_political_power = 100
+		}
+		custom_effect_tooltip = USA_subtract_OFN_unity
+		subtract_from_variable = { OFN_unity = 1 }
+	}
+}
+
+shared_focus = {
+	id = USA_subsidize_the_Italians
+	icon = GFX_generic_money_handout
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Naples_Conference
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Naples_Conference
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_subsidize_the_Italians"
+		custom_effect_tooltip = OIL_USA_send_money_to_italy
+		set_temp_variable = { temp_econ_spending_amount = 1.0 }
+		econ_spend_money_once_effect_raw_money = yes
+		ITA = {
+			set_temp_variable = { money_reserves_temp = 1.0 }
+			econ_money_reserves_change_raw_money = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Seen_And_Not_Heard
+	icon = GFX_Generic_Army_Focus_Red
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Naples_Conference
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_Naples_Conference
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Seen_And_Not_Heard"
+		custom_effect_tooltip = USA_decisions_ITA_oil
+	}
+}
+
+shared_focus = {
+	id = USA_Bail_Out_ENI
+	icon = GFX_Generic_Liberty_Handshake
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_subsidize_the_Italians
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_subsidize_the_Italians
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Bail_Out_ENI"
+		custom_effect_tooltip =	OIL_USA_send_money_to_italy
+		set_temp_variable = { temp_econ_spending_amount = 1.0 }
+		econ_spend_money_once_effect_raw_money = yes
+		ITA = {
+			set_temp_variable = { money_reserves_temp = 1.0 }
+			econ_money_reserves_change_raw_money = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Schwarzkopfs_Plan
+	icon = GFX_USA_Redrawn_Maps
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Seen_And_Not_Heard
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Seen_And_Not_Heard
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Schwarzkopfs_Plan"
+		ITA = {
+			add_ideas = USA_OilCrisis_ITA_S_PLAN
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_The_Italian_Desk
+	icon = GFX_ITA_Unity_Is_Strength
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Seen_And_Not_Heard
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 2
+	y = 1
+	relative_position_id = USA_Seen_And_Not_Heard
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_The_Italian_Desk"
+		ITA = {
+			add_stability = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Taking_Back_Their_Empire
+	icon = GFX_Focus_Middle_East_Orthographic
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Bail_Out_ENI
+		focus = USA_Schwarzkopfs_Plan
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Schwarzkopfs_Plan
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Taking_Back_Their_Empire"
+		custom_effect_tooltip = USA_decisions_ITA_oil_2
+	}
+}
+
+shared_focus = {
+	id = USA_Cool_The_Lead
+	icon = GFX_TNO_generic_global_anti_fascism
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_The_Italian_Desk
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_The_Italian_Desk
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Cool_The_Lead"
+		add_political_power = -100
+		ITA = {
+			add_political_power = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Peace_In_Our_Time
+	icon = GFX_Generic_Peace
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Taking_Back_Their_Empire
+		focus = USA_Cool_The_Lead
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_Cool_The_Lead
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Peace_In_Our_Time"
+		country_event = { id = OIL.504 }
+	}
+}
+
+#Support Pan-Arabists
+shared_focus = {
+	id = USA_a_new_republic
+	icon = GFX_Generic_Minority_Protections
+	cost = 3.00
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	allow_branch = { has_country_flag = USA_back_uar }
+	offset = {
+		x = -10
+		y = 0
+		trigger = { has_country_flag = USA_64_R_RDC }
+	}
+	offset = {
+		x = 26
+		y = 0
+		trigger = { has_country_flag = USA_64_D_RDC }
+	}
+	offset = {
+		x = -4
+		y = 7
+		trigger = { has_country_flag = USA_64_FR_NPP }
+	}
+	offset = {
+		x = -2
+		y = 0
+		trigger = { has_country_flag = USA_THURMOND_FR_NPP }
+	}
+	offset = {
+		x = -4
+		y = -1
+		trigger = { has_country_flag = USA_64_C_NPP }
+	}
+	offset = {
+		x = -8
+		y = -1
+		trigger = { has_country_flag = USA_68_D_RDC }
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = { has_country_flag = USA_68_R_RDC }
+	}
+	offset = {
+		x = -2
+		y = 1
+		trigger = { has_country_flag = USA_68_FR_NPP }
+	}
+	offset = {
+		x = -5
+		y = 0
+		trigger = { has_country_flag = USA_68_C_NPP }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_new_republic"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_political_power = 50
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_political_power = 50
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_political_power = 50
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_political_power = 50
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_political_power = 50
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_political_power = 50
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_political_power = 50
+			}
+		}
+	}
+}
+
+
+#Interventionist path
+shared_focus = {
+	id = USA_There_Will_Be_Blood
+	icon = GFX_generic_provoke_border_clashes
+	cost = 3.00
+	prerequisite = {
+		focus = USA_a_new_republic
+	}
+	mutually_exclusive = {
+		focus = USA_Smother_the_Flames
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = -3
+	y = 1
+	relative_position_id = USA_a_new_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_There_Will_Be_Blood"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}		
+			}
+			GUL = {
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_war_support = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_war_support = 0.10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Make_Ready_For_War
+	icon = GFX_TNO_generic_arms_shipments
+	cost = 3.00
+	prerequisite = {
+		focus = USA_There_Will_Be_Blood
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_There_Will_Be_Blood
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Make_Ready_For_War"
+		custom_effect_tooltip = USA_UAR_Light_Guns_Decisions
+		USA = {
+			set_country_flag = US_Light_Guns
+		}
+
+	}
+}
+
+shared_focus = {
+	id = USA_A_New_Lafayette
+	icon = GFX_generic_military_sphere
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Make_Ready_For_War
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	bypass = {
+		AND = {
+			EGB = { exists = no }
+			SYR = { exists = no }
+		}
+	}
+	x = -2
+	y = 1
+	relative_position_id = USA_Make_Ready_For_War
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_A_New_Lafayette"
+		country_event = { id = USA.oilcrisis.21 }
+	}
+}
+
+shared_focus = {
+	id = USA_Spread_The_Cash
+	icon = GFX_VIN_Optional_Wages
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Make_Ready_For_War
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Make_Ready_For_War
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Spread_The_Cash"
+		custom_effect_tooltip = USA_UAR_Mercenaries_Decisions
+	}
+}
+
+shared_focus = {
+	id = USA_Assess_Their_Politics
+	icon = GFX_IND_establish_secret_service
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Make_Ready_For_War
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Make_Ready_For_War
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Assess_Their_Politics"
+		if = {
+			limit = {
+				OR = {
+					has_government = liberalism
+					has_government = progressivism
+				}
+			}
+			if = {
+				limit = {
+					country_exists = EGB
+				}
+				EGB = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SYR
+				}
+				SYR = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = NYM
+				}
+				NYM = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = OMB
+				}
+				OMB = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = GUL
+					GUL = {
+						OR = {
+							has_government = progressivism
+							has_government = paternalism
+						}	
+					}
+				}
+				GUL = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SDS
+				}
+				SDS = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = PAL
+				}
+				PAL = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_R_CNPP days = 182 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_government = conservatism
+					has_government = paternalism
+				}
+			}
+			if = {
+				limit = {
+					country_exists = EGB
+				}
+				EGB = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SYR
+				}
+				SYR = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = NYM
+				}
+				NYM = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = OMB
+				}
+				OMB = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = GUL
+					GUL = {
+						OR = {
+							has_government = progressivism
+							has_government = paternalism
+						}	
+					}
+				}
+				GUL = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SDS
+				}
+				SDS = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+			if = {
+				limit = {
+					country_exists = PAL
+				}
+				PAL = {
+					add_timed_idea = { idea = USA_Assess_Their_Politics_D_FRNPP days = 182 }
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Just_Like_Nambia
+	icon = GFX_SAF_icon_south_african_war_2
+	cost = 3.00
+	prerequisite = {
+		focus = USA_A_New_Lafayette
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_A_New_Lafayette
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Just_Like_Nambia"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_ideas = {
+					USA_Green_Berets_UAR
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Merchants_of_Death
+	icon = GFX_generic_money_handout
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Spread_The_Cash
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Spread_The_Cash
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Merchants_of_Death"
+		custom_effect_tooltip = USA_UAR_Merchants_Decisions
+	}
+}
+
+#No idea what to do for this focus, commented out for now
+#shared_focus = {
+#	id = USA_Were_In_Charge_Here
+#	icon = GFX_USA_Bite_Off_The_Big_Cigar
+#	cost = 3.00
+#	prerequisite = {
+#		focus = USA_Assess_Their_Politics
+#	}
+#	x = 0
+#	y = 1
+#	relative_position_id = USA_Assess_Their_Politics
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus USA_Were_In_Charge_Here"
+#	}
+#}
+
+shared_focus = {
+	id = USA_Across_The_Burning_Sands
+	icon = GFX_Generic_Army_Focus_Red
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Just_Like_Nambia
+		focus = USA_Merchants_of_Death
+		#focus = USA_Were_In_Charge_Here
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Merchants_of_Death
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Across_The_Burning_Sands"
+		if = {
+			limit = { is_ai = no }
+			add_ideas = OIL_prouar_volunteers
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				country_exists = EGB
+				country_exists = SYR
+			}
+			EGB = { load_oob = "USA_EGB_Volunteers" }
+			SYR = { load_oob = "USA_SYR_Volunteers" }
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				NOT = { country_exists = EGB }
+				country_exists = SYR
+			}
+			SYR = { load_oob = "USA_SYR_Volunteers" }
+			SYR = { load_oob = "USA_SYR_Volunteers" }
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				NOT = { country_exists = SYR }
+				country_exists = EGB
+			}
+			EGB = { load_oob = "USA_EGB_Volunteers" }
+			EGB = { load_oob = "USA_EGB_Volunteers" }
+		}
+	}
+}
+
+#non-Interventionist path
+shared_focus = {
+	id = USA_Smother_the_Flames
+	icon = GFX_generic_diplomacy_peace
+	cost = 3.00
+	prerequisite = {
+		focus = USA_a_new_republic
+	}
+	mutually_exclusive = {
+		focus = USA_There_Will_Be_Blood
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 3
+	y = 1
+	relative_position_id = USA_a_new_republic
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Smother_the_Flames"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_stability = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_stability = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_stability = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_stability = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_stability = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_stability = 0.10
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_stability = 0.10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Stabilize_the_Situation
+	icon = GFX_Generic_Authoritarian_Democracy
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Smother_the_Flames
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Smother_the_Flames
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Stabilize_the_Situation"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_ideas = {
+					USA_UAR_Humanitarian_Aid
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Operation_Desert_Shield
+	icon = GFX_IND_The_Airforce
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Stabilize_the_Situation
+	}
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Stabilize_the_Situation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Operation_Desert_Shield"
+
+		if = {
+			limit = {
+				country_exists = ITA
+			}
+			ITA = {
+				add_ideas = {
+					USA_No_Fly_Zone_1
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = JAP
+			}
+			JAP = {
+				add_ideas = {
+					USA_No_Fly_Zone_1
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SAU
+			}
+			SAU = {
+				add_ideas = {
+					USA_No_Fly_Zone_1
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = EGY
+			}
+			EGY = {
+				add_ideas = {
+					USA_No_Fly_Zone_1
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = { OR = {
+						has_government = despotism
+						has_government = national_socialism
+						has_government = ultranationalism
+						has_government = national_socialism
+						} }
+			}
+			GUL = {
+				add_ideas = {
+					USA_No_Fly_Zone_1
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_ideas = {
+					USA_No_Fly_Zone_2
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Help_The_Refugees
+	icon = GFX_Generic_Refugees
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Stabilize_the_Situation
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Stabilize_the_Situation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Help_The_Refugees"
+		custom_effect_tooltip = USA_UAR_Humanitarian_Decisions
+		set_country_flag = USA_Humanitarian_Action_UAR
+	}
+}
+
+shared_focus = {
+	id = USA_Guns_For_Democracy
+	icon = GFX_end_arms_ban
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Stabilize_the_Situation
+	}
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Stabilize_the_Situation
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Guns_For_Democracy"
+		custom_effect_tooltip = USA_UAR_Deniable_Guns_Decisions
+		set_country_flag = US_Guns_Democracy
+	}
+}
+
+shared_focus = {
+	id = USA_The_Desert_Scouts
+	icon = GFX_QIN_Quiet_on_the_Plateau
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Operation_Desert_Shield
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Operation_Desert_Shield
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_The_Desert_Scouts"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_ideas = { USA_Desert_Scouts }
+				add_equipment_to_stockpile = {
+					type = scout_helicopter_equipment_1
+					amount = 50
+					producer = USA
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_The_Hand_of_Kindness
+	icon = GFX_generic_national_unity
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Help_The_Refugees
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Help_The_Refugees
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_The_Hand_of_Kindness"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_ideas = {
+					USA_OC_Econ_Specialists
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Sending_Them_Experts
+	icon = GFX_CHI_Adapt_Computer_Designs
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Guns_For_Democracy
+	}
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Guns_For_Democracy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Sending_Them_Experts"
+		if = {
+			limit = {
+				country_exists = EGB
+			}
+			EGB = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SYR
+			}
+			SYR = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = NYM
+			}
+			NYM = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OMB
+			}
+			OMB = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = GUL
+				GUL = {
+					OR = {
+						has_government = progressivism
+						has_government = paternalism
+					}	
+				}
+			}
+			GUL = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = SDS
+			}
+			SDS = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = PAL
+			}
+			PAL = {
+				add_ideas = {
+					USA_Research_Experts_UAR
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_A_More_Direct_Approach
+	icon = GFX_Generic_Soldiers_Red
+	cost = 3.00
+	prerequisite = {
+		focus = USA_The_Desert_Scouts
+		focus = USA_The_Hand_of_Kindness
+		focus = USA_Sending_Them_Experts
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 0
+	y = 1
+	relative_position_id = USA_The_Hand_of_Kindness
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_A_More_Direct_Approach"
+		if = {
+			limit = { is_ai = no }
+			add_ideas = OIL_prouar_volunteers
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				country_exists = EGB
+				country_exists = SYR
+			}
+			EGB = { load_oob = "USA_EGB_Volunteers" }
+			SYR = { load_oob = "USA_SYR_Volunteers" }
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				NOT = { country_exists = EGB }
+				country_exists = SYR
+			}
+			SYR = { load_oob = "USA_SYR_Volunteers" }
+			SYR = { load_oob = "USA_SYR_Volunteers" }
+		}
+		else_if = {
+			limit = {
+				is_ai = yes
+				NOT = { country_exists = SYR }
+				country_exists = EGB
+			}
+			EGB = { load_oob = "USA_EGB_Volunteers" }
+			EGB = { load_oob = "USA_EGB_Volunteers" }
+		}
+	}
+}
+
+
+
+
+#Support Saudis
+shared_focus = {
+	id = USA_reach_out_to_Riyadh
+	icon = GFX_Focus_Middle_East_Orthographic
+	cost = 3.00
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	offset = { # Bennett
+		x = 22
+		y = -1
+		trigger = { has_country_flag = USA_64_R_RDC }
+	}
+	offset = { # LBJ
+		x = 25
+		y = -1
+		trigger = { has_country_flag = USA_64_D_RDC }
+	}
+	offset = { # Wallace
+		x = -3
+		y = 7
+		trigger = { has_country_flag = USA_64_FR_NPP }
+	}
+	offset = { # RFK
+		x = -4
+		y = -1
+		trigger = { has_country_flag = USA_64_C_NPP }
+	}
+	offset = {
+		x = -8
+		y = -1
+		trigger = { has_country_flag = USA_68_D_RDC }
+	}
+	offset = {
+		x = 0
+		y = 0
+		trigger = { has_country_flag = USA_68_R_RDC }
+	}
+	offset = {
+		x = -2
+		y = 1
+		trigger = { has_country_flag = USA_68_FR_NPP }
+	}
+	offset = {
+		x = -5
+		y = 0
+		trigger = { has_country_flag = USA_68_C_NPP }
+	}
+	allow_branch = { has_country_flag = USA_back_saudi }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reach_out_to_Riyadh"
+		country_event = { id = USA.oilcrisis.4 days = 3 }
+		SAU = { country_event = { id = USA.oilcrisis.4 days = 3} }
+	}
+}
+
+#interventionist
+shared_focus = {
+	id = USA_Securing_Our_Interests
+	icon = GFX_JAP_oil_concessions
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_reach_out_to_Riyadh
+	}
+	mutually_exclusive = {
+		focus = USA_An_Unsavory_Bargain
+	}
+	x = -3
+	y = 1
+	relative_position_id = USA_reach_out_to_Riyadh
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Securing_Our_Interests"
+		custom_effect_tooltip = USA_Oilcrisis_Saudi_Set_up_CIA
+		add_war_support = 0.03
+		add_timed_idea = { idea = USA_Securing_Our_Interests_misc_costs days = 90 }
+		country_event = { id = USA.oilcrisis.5 days = 2 }
+	}
+}
+
+shared_focus = {
+	id = USA_Gifts_For_The_King
+	icon = GFX_IND_rifles_guns_cannons
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Securing_Our_Interests
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_Securing_Our_Interests
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Gifts_For_The_King"
+		custom_effect_tooltip = USA_Oilcrisis_Saudi_Payment
+		add_timed_idea = { idea = USA_Gifts_For_The_King_misc_income days = 90 }
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 850
+			target = SAU
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_King_Faisal_Im_CIA
+	icon = GFX_GER_friends_arabia
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Securing_Our_Interests
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Securing_Our_Interests
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_King_Faisal_Im_CIA"
+		SAU = { add_ideas = USA_OilCrisis_Operation_Mongoose }
+		country_event = { id = USA.oilcrisis.6 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = USA_Operation_Sandstorm
+	icon = GFX_Generic_Desert_Patrols
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Gifts_For_The_King
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_Gifts_For_The_King
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Operation_Sandstorm"
+
+		set_temp_variable = { target = SAU }
+		TNO_increase_volunteer_cap_1 = yes
+		custom_effect_tooltip = "TNO_increase_volunteers_SAU_1"
+		add_to_array = { global.OIL_supported_by_USA = SAU }
+
+		add_war_support = 0.02
+		hidden_effect = { country_event = { id = USA.oilcrisis.7 days = 3 } }
+	}
+}
+
+shared_focus = {
+	id = USA_Step_Up_Our_Shipments
+	icon = GFX_USA_open_up_trade
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Securing_Our_Interests
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 0
+	y = 2
+	relative_position_id = USA_Securing_Our_Interests
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Step_Up_Our_Shipments"
+		custom_effect_tooltip = USA_Oilcrisis_Saudi_Payment
+		add_timed_idea = { idea = USA_Step_Up_Our_Shipments_misc_income days = 90 }
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1250
+			target = SAU
+		}
+
+		send_equipment = {
+			equipment = support_equipment
+			amount = 200
+			target = SAU
+		}
+
+		send_equipment = {
+			equipment = artillery_equipment
+			amount = 110
+			target = SAU
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Finding_Their_Leaders
+	icon = GFX_USA_Wiretap_the_NPP
+	cost = 3.00
+	prerequisite = {
+		focus = USA_King_Faisal_Im_CIA
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_King_Faisal_Im_CIA
+	completion_reward = {
+		custom_effect_tooltip = USA_OilCrisis_Find_The_bastards
+
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_Finding_Their_Leaders"
+			EGB = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+			NYM = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+			SDS = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+			GUL = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+			PAL = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+			SYR = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+			OMB = { add_ideas = USA_OilCrisis_UAR_Leaders_Targeted_1 }
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Black_Gold_Rush
+	icon = GFX_IRQ_Oil_Deals
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Operation_Sandstorm
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Operation_Sandstorm
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Black_Gold_Rush"
+
+		custom_effect_tooltip = USA_OilCrisis_Saudi_Give_Me_Money_Bitch
+
+		add_timed_idea = { idea = USA_Black_Gold_Rush_misc_costs days = 90 }
+
+		create_import = {
+			resource = oil
+			amount = 16
+			exporter = SAU
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Pick_Your_Targets
+	icon = GFX_TNO_generic_spying_assassination
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Finding_Their_Leaders
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_Finding_Their_Leaders
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Pick_Your_Targets"
+
+		custom_effect_tooltip = USA_OilCrisis_We_Got_Them_In_Our_Sights
+
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_Finding_Their_Leaders"
+			EGB = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+			NYM = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+			SDS = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+			GUL = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+			PAL = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+			SYR = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+			OMB = { swap_ideas = { remove_idea = USA_OilCrisis_UAR_Leaders_Targeted_1 add_idea = USA_OilCrisis_UAR_Leaders_Targeted_2 } }
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_In_For_The_Kill
+	icon = GFX_MAG_The_Best_Guns_Money_Can_Buy
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Black_Gold_Rush
+		focus = USA_Step_Up_Our_Shipments
+		focus = USA_Pick_Your_Targets
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 0
+	y = 2
+	relative_position_id = USA_Step_Up_Our_Shipments
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_In_For_The_Kill"
+		add_timed_idea = {
+			idea = USA_OilCrisis_Saudi_Ooooh_Ra
+			days = 365
+		}
+		add_stability = 0.01
+		add_war_support = 0.01
+	}
+}
+
+
+#non-interventionist
+shared_focus = {
+	id = USA_An_Unsavory_Bargain
+	icon = GFX_IND_india_diplomatic_usa
+	cost = 3.00
+	prerequisite = {
+		focus = USA_reach_out_to_Riyadh
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	mutually_exclusive = {
+		focus = USA_Securing_Our_Interests
+	}
+	x = 3
+	y = 1
+	relative_position_id = USA_reach_out_to_Riyadh
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_An_Unsavory_Bargain"
+		custom_effect_tooltip = USA_OilCrisis_Saudi_Turn_Them_Over
+		add_stability = -0.01
+		country_event = { id = USA.oilcrisis.9 days = 3 }
+
+	}
+}
+
+shared_focus = {
+	id = USA_Operation_Eagle_Eye
+	icon = GFX_generic_jet_fighter_2
+	cost = 3.00
+	prerequisite = {
+		focus = USA_An_Unsavory_Bargain
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_An_Unsavory_Bargain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Operation_Eagle_Eye"
+		SAU = { add_ideas = USA_OilCrisis_Saudi_Operation_Eagle_Eye_1 }
+	}
+}
+
+shared_focus = {
+	id = USA_Our_Support_is_Conditional
+	icon = GFX_USA_Our_Duty_to_the_People
+	cost = 3.00
+	prerequisite = {
+		focus = USA_An_Unsavory_Bargain
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_An_Unsavory_Bargain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Our_Support_is_Conditional"
+		custom_effect_tooltip = USA_OilCrisis_Liberal_Saudis
+		hidden_effect = {
+			SAU = { country_event = { id = USA.oilcrisis.12 days = 3 } }
+			country_event = { id = USA.oilcrisis.11 days = 3 }
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Expand_the_No_Fly_Zone
+	icon = GFX_generic_jet_fighter_1
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Operation_Eagle_Eye
+	}
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Operation_Eagle_Eye
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Expand_the_No_Fly_Zone"
+		hidden_effect = { country_event = { id = USA.oilcrisis.8 days = 3 }}
+
+		SAU = {
+			swap_ideas = { remove_idea = USA_OilCrisis_Saudi_Operation_Eagle_Eye_1 add_idea = USA_OilCrisis_Saudi_Operation_Eagle_Eye_2 }
+		}
+	}
+}
+
+shared_focus = {
+	id = USA_Victims_of_war
+	icon = GFX_Generic_Refugees
+	cost = 3.00
+	prerequisite = {
+		focus = USA_An_Unsavory_Bargain
+	}
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_An_Unsavory_Bargain
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Victims_of_war"
+		SAU = {
+			country_event = { id = USA.oilcrisis.10 days = 3 }
+			add_ideas = USA_OilCrisis_Saudi_Refugee_Army
+		}
+		country_event = { id = USA.oilcrisis.10 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = USA_Call_Up_The_Palace
+	icon = GFX_Call_In_The_Whiz_Kids
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Our_Support_is_Conditional
+	}
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	relative_position_id = USA_Our_Support_is_Conditional
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Call_Up_The_Palace"
+		country_event = { id = USA.oilcrisis.15 days = 3 }
+	}
+}
+
+shared_focus = {
+	id = USA_Enlist_Our_Allies
+	icon = GFX_AST_maintain_ofn
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Expand_the_No_Fly_Zone
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = USA_Expand_the_No_Fly_Zone
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Enlist_Our_Allies"
+		custom_effect_tooltip = USA_Oilcrisis_Saudi_Payment
+		custom_effect_tooltip = USA_add_OFN_unity
+		add_to_variable = { OFN_unity = 1 }
+		CAN = {
+			add_timed_idea = { idea = USA_Enlist_Our_Allies_misc_income days = 90 }
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1500
+				target = SAU
+			}
+		}
+
+		AST = {
+			add_timed_idea = { idea = USA_Enlist_Our_Allies_misc_income days = 90 }
+			send_equipment = {
+				equipment = support_equipment
+				amount = 450
+				target = SAU
+			}
+		}
+
+		NZL = {
+			add_timed_idea = { idea = USA_Enlist_Our_Allies_misc_income days = 90 }
+			send_equipment = {
+				equipment = artillery_equipment
+				amount = 300
+				target = SAU
+			}
+		}
+
+	}
+}
+
+shared_focus = {
+	id = USA_Send_In_the_Spooks
+	icon = GFX_MAG_American_Advisors
+	cost = 3.00
+	prerequisite = {
+		focus = USA_Call_Up_The_Palace
+	}
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	x = -1
+	y = 1
+	relative_position_id = USA_Call_Up_The_Palace
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Send_In_the_Spooks"
+		custom_effect_tooltip = USA_OilCrisis_Saudi_Confidential
+		hidden_effect = { country_event = { id = USA.oilcrisis.13 days = 3 } }
+	}
+}
+
+shared_focus = {
+	id = USA_Prepare_The_Blockade
+	icon = GFX_USA_Patrol_the_Waters
+	cost = 3.00
+	ai_will_do = {
+		factor = 1000
+		modifier = {
+			factor = 1
+			#trigger
+		}
+	}
+	prerequisite = {
+		focus = USA_Enlist_Our_Allies
+		focus = USA_Victims_of_war
+		focus = USA_Send_In_the_Spooks
+	}
+	x = 0
+	y = 2
+	relative_position_id = USA_Victims_of_war
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_Prepare_The_Blockade"
+		country_event = { id = USA.oilcrisis.14 days = 3 }
+	}
+}

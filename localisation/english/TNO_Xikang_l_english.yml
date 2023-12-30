@@ -1,0 +1,24 @@
+﻿l_english:
+
+### Leader Desc ###
+ POLITICS_LIU_WENHUI_DESC:0 "Born in 1895, Liu Wenhui is a military man through and through, graduating from Baoding Military Academy in 1916. Returning to Sichuan from Baoding, Liu Wenhui originally joined Liu Cunroi's Sichuan clique, but later joined the Kuomintang in 1926. Quickly rising the ranks of the National Revolutionary Army, Liu was promoted to Commander of the NRA's 24th Army, and appointed governor of the entirety of Sichuan Province in 1929. Facing fierce competition from more than 5 other warlords, Sichuan Province was exceedingly unstable and a hotbed for conflict. Coalitions, counter coalitions, skirmishes and plotting defined his governorship of Sichuan as he struggled to maintain power. Eventually in 1934 he lost power to his nephew, Liu Xiang, and was kicked out of Sichuan and declared Governor of Xikang province instead. Liu's relationship with Chiang Kai-shek, much like the province of Sichuan itself, was unstable. Far away from the central government, Liu was able to repeatedly deny orders from Chiang.\n\nDuring the Second Sino-Japanese War, Liu Wenhui was cautious and made sure his troops saw as little action as possible. When the Japanese arrived in Sichuan during their Go-Go offensive, Liu Wenhui, as the strongest remaining contender in Sichuan, rallied his men and retreated far into Xikang, setting up camp in the small city of Xichang. Liu refused to surrender to Japanese, and the Japanese, seeing no importance in the small mountain province, decided not to follow him.\n\nNow more than a decade after Japan's offensive into Sichuan, Liu Wenhui sits isolated as one of the only remaining free warlords in China. His native homeland of Sichuan lies across the border, and while it may be under the direct control of the central government, Sichuan has once again been plunged into instability with many factions and partisans battling it out for control. While Liu himself would like to see a free China, he faces resistance from many of his subordinates who claim facing Japan would be suicide. It would truly take a miracle for Liu Wenhui to take up arms once more..."
+
+### Country Names ###
+ XIK:0 "NRA 24th Army"
+ XIK_DEF:0 "the NRA 24th Army"
+ XIK_ADJ:0 "Sichuanese"
+
+ XIK_despotism_party:0 "Chuanxi Junfa"
+ XIK_despotism_party_long:0 "Chuanxi Junfa"
+ XIK_paternalism_party:0 "Guomindang Officers"
+ XIK_paternalism_party_long:0 "Guomindang Officers"
+ XIK_conservatism_party:0 "Guomindang Civilian Administrators"
+ XIK_conservatism_party_long:0 "Guomindang Civilian Administrators"
+ XIK_liberalism_party:0 "Guomindang Intelligentsia"
+ XIK_liberalism_party_long:0 "Guomindang Intelligentsia"
+
+ XIK_RGOC:0 "Xikang Province"
+ XIK_RGOC_DEF:0 "the Xikang Province"
+ XIK_RGOC_ADJ:0 "Sichuanese"
+ 
+ XIK_liu_wenhui:0 "Liu Wenhui"

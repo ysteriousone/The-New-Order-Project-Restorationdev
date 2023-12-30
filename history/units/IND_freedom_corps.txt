@@ -1,0 +1,39 @@
+﻿
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7106
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12708
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12868
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12844
+		division_template = "Infantry Division"
+		start_experience_factor = 0.0
+	}
+}

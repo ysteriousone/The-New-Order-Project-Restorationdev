@@ -1,0 +1,27 @@
+fortress_norway_category = {
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_NOR_fortress_norway
+
+	allowed = {
+		tag = NOR
+	}
+
+	visible = {
+		has_completed_focus = NOR_protect_homes
+	}
+}
+
+NOR_militia_category = {
+	icon = GFX_decision_category_generic_formable_nations
+	picture = GFX_decision_COG_category_the_mercs
+	# picture = GFX_ONG_secure_the_front
+
+	allowed = {
+		tag = NOR
+	}
+
+	visible = {
+		has_completed_focus = NOR_national_militia
+		# has_war = yes
+	}
+}

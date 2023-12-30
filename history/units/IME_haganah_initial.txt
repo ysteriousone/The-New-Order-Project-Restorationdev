@@ -1,0 +1,18 @@
+﻿division_template = {
+	name = "Haganah Brigade"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Haganah Brigade"
+		location = 1201
+		division_template = "Haganah Brigade"
+		start_experience_factor = 3.0
+	}
+}

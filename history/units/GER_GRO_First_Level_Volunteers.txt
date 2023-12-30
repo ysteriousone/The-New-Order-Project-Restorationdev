@@ -1,0 +1,29 @@
+﻿division_template = {
+	name = "German Volunteers"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		field_hospital = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "German Infantry Volunteers"
+		location = 2196
+		division_template = "German Volunteers"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+}

@@ -1,0 +1,38 @@
+﻿############################
+## Gbeland Events
+############################
+
+add_namespace = GBE
+
+country_event = { #annexing land yeet
+	id = GBE.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event GBE.20"}
+	title = GBE.20.t
+	desc = GBE.20.desc
+	picture = GFX_report_event_GER_ostsonne
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GBE.20.a
+		GBE = {
+			882 = {
+				set_demilitarized_zone = no
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			941 = {
+				set_demilitarized_zone = no
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

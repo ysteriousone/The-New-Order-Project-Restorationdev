@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_CHT_the_vestigal_empire"
+		texturefile = "gfx/interface/goals/Chita/GFX_CHT_the_vestigal_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_CHT_a_perfectly_legitimate_claimant"
+		texturefile = "gfx/interface/goals/Chita/GFX_CHT_a_perfectly_legitimate_claimant.dds"
+	}
+	spriteType = {
+		name = "GFX_CHT_the_most_interesting_man_in_the_world"
+		texturefile = "gfx/interface/goals/Chita/GFX_CHT_the_most_interesting_man_in_the_world.dds"
+	}
+}

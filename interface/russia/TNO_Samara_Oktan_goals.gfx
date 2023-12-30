@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SAM_a_kingdom_in_the_making"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_in_the_making.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_cant_say_no_to_all_the_lights"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_cant_say_no_to_all_the_lights.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_i_remember_our_pact_kaminski"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_i_remember_our_pact_kaminski.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_sir_you_are_not_allowed_to_enter"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_sir_you_are_not_allowed_to_enter.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_the_king_himself"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_the_king_himself.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_for_your_stab_in_the_back_you_will_die"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_for_your_stab_in_the_back_you_will_die.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_protesting_is_just_not_beneficial"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_protesting_is_just_not_beneficial.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_a_kingdom_almost_made"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_almost_made.dds"
+	}
+	spriteType = {
+		name = "GFX_SAM_it_is_my_army"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_it_is_my_army.dds"
+	}
+}

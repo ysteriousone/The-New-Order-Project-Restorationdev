@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		SFG_huttig_division = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SFG_huttig_division"}
+
+			picture = AUS_SS_kommandotruppe_rapier
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.15
+			}
+		}
+
+		SFG_restoring_order_in_sudafrika = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SFG_restoring_order_in_sudafrika"}
+
+			picture = AGS_The_Glory_of_Warfare
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				offence = 0.05
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+	}
+}

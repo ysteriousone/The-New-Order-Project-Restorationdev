@@ -1,0 +1,84 @@
+scripted_gui = {
+
+	TNO_Finland_Parliament_Open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_FIN_parliament_window_open"
+
+		visible = {
+			tag = FIN
+			always = yes
+		}
+
+		ai_enabled = {
+			tag = FIN
+		}
+
+		ai_test_interval = 24
+
+		ai_check = {
+			always = yes
+		}
+
+		effects = {
+			FIN_parliament_menu_open_click = {
+				if = {
+					limit = { NOT = { has_country_flag = FIN_parliament_open_Flag } }
+					set_country_flag = FIN_parliament_open_Flag
+				}
+				else_if = {
+					limit = { has_country_flag = FIN_parliament_open_Flag }
+					clr_country_flag = FIN_parliament_open_Flag
+				}
+				FIN_assemble_parliament_display_array = yes
+				clr_country_flag = gui_alert_visible
+			}
+		}
+
+		triggers = {
+			gui_alert_visible = {
+				has_country_flag = gui_alert_visible
+			}
+		}
+	}
+	TNO_Finland_Parliament_window_main_open = {
+		context_type = player_context
+		parent_window_token = "TNO_Finland_Parliament_Open"
+		window_name = "TNO_FIN_parliament_window_main"
+
+		visible = {
+			has_country_flag = FIN_parliament_open_Flag
+		}
+
+		triggers = {
+		
+		}
+
+		effects = {
+
+		}
+
+		dynamic_lists = {
+			FIN_parliament_diagram = {
+				array = FIN_parliament_x
+				change_scope = no
+				entry_container = FIN_parliament_seat
+				index = seat_idx
+			}
+		}
+
+		properties = {
+			parliament_dot_icon = {
+				x = FIN_parliament_x^seat_idx
+				y = FIN_parliament_y^seat_idx
+				frame = FIN_parliament_display_array^seat_idx
+			}
+
+			parliament_dot_icon_outline = {
+				x = FIN_parliament_x^seat_idx
+				y = FIN_parliament_y^seat_idx
+				frame = FIN_parliament_coalition_display_array^seat_idx
+			}
+		}
+	}
+}

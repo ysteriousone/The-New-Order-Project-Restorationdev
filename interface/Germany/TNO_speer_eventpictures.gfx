@@ -1,0 +1,35 @@
+spriteTypes = {
+	### Speer ###
+	spriteType = {
+		name = "GFX_report_event_SGR_speer_accords"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_speer_accords.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_speer_war_room"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_speer_war_room.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_generic_speer"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_generic_speer.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_sad_speer"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_sad_speer.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_sad_speer_2"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_sad_speer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_speer_speech"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_speer_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_RND_1"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_RND_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_SGR_RND_2"
+		texturefile = "gfx/event_pictures/Reich/Germany/Speer/report_event_SGR_RND_2.dds"
+	}
+}

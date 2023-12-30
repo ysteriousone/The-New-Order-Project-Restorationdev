@@ -1,0 +1,31 @@
+defined_text = {
+	name = GetIRE_DECCAT_ScaMec_title
+	text = {
+		trigger = {
+			check_variable = { ARR_ScaMec_scandals^0 = 1 }
+		}
+		localization_key = IRE_DECCAT_ScaMec_title1
+	}
+	text = {
+		trigger = {
+			check_variable = { ARR_ScaMec_scandals^1 = 1 }
+		}
+		localization_key = IRE_DECCAT_ScaMec_title2
+	}
+}
+
+defined_text = {
+	name = GetIRE_DECCAT_ScaMec_desc
+	text = {
+		trigger = {
+			check_variable = { ARR_ScaMec_scandals^0 = 1 }
+		}
+		localization_key = IRE_DECCAT_ScaMec_desc1
+	}
+	text = {
+		trigger = {
+			check_variable = { ARR_ScaMec_scandals^1 = 1 }
+		}
+		localization_key = IRE_DECCAT_ScaMec_desc2
+	}
+}

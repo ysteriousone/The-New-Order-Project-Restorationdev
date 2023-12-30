@@ -1,0 +1,19 @@
+state={
+	id=927
+	name="STATE_927"
+	provinces={
+		12884 7316 16008 8005 16007 7273 2041 
+	}
+	history={
+		owner = IND
+		add_claim_by = AZH
+		add_core_of = IND
+		victory_points = { 8005 1 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=69735
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

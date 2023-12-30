@@ -1,0 +1,134 @@
+﻿HEE_infantry = {
+	name = "Söldner der Ukraine"
+
+	for_countries = { HEE }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Söldner der Ukraine"
+
+	ordered = {
+		1 = { "7. Söldner der Ukraine" }
+		2 = { "3. Volksgrenadier-Abteilung" }
+		3 = { "15. Söldner der Ukraine" }
+		4 = { "9. Grenadier-Abteilung" }
+		5 = { "%d. Söldner der Ukraine" }
+		6 = { "%d. Söldner der Ukraine" }
+		7 = { "%d. Söldner der Ukraine" }
+		8 = { "%d. Söldner der Ukraine" }
+		9 = { "%d. Söldner der Ukraine" }
+		10 = { "%d. Söldner der Ukraine" }
+		11 = { "%d. Söldner der Ukraine" }
+		12 = { "%d. Söldner der Ukraine" }
+		13 = { "%d. Söldner der Ukraine" }
+		14 = { "%d. Söldner der Ukraine" }
+		15 = { "%d. Söldner der Ukraine" }
+		16 = { "%d. Söldner der Ukraine" }
+		17 = { "%d. Söldner der Ukraine" }
+		18 = { "%d. Söldner der Ukraine" }
+		19 = { "%d. Söldner der Ukraine" }
+		20 = { "%d. Söldner der Ukraine" }
+		21 = { "%d. Söldner der Ukraine" }
+		22 = { "%d. Söldner der Ukraine" }
+		23 = { "%d. Söldner der Ukraine" }
+		24 = { "%d. Söldner der Ukraine" }
+		25 = { "%d. Söldner der Ukraine" }
+		26 = { "%d. Söldner der Ukraine" }
+		27 = { "%d. Söldner der Ukraine" }
+		28 = { "%d. Söldner der Ukraine" }
+		29 = { "%d. Söldner der Ukraine" }
+		30 = { "%d. Söldner der Ukraine" }
+	}
+}
+
+HEE_light_infantry = {
+	name = "Freikorps Heerema"
+
+	for_countries = { HEE }
+
+	can_use = { always = yes }
+
+	division_types = { "light_infantry" }
+
+	fallback_name = "%d. Freikorps Heerema"
+
+	ordered = {
+		1 = { "3. Leichte-Abteilung" }
+		2 = { "7. Leichte-Abteilung" }
+		3 = { "4. Leichte-Abteilung" }
+		4 = { "%d. Freikorps Heerema" }
+		5 = { "%d. Freikorps Heerema" }
+		6 = { "%d. Freikorps Heerema" }
+		7 = { "%d. Freikorps Heerema" }
+		8 = { "%d. Freikorps Heerema" }
+		9 = { "%d. Freikorps Heerema" }
+		10 = { "%d. Freikorps Heerema" }
+		11 = { "%d. Freikorps Heerema" }
+		12 = { "%d. Freikorps Heerema" }
+		13 = { "%d. Freikorps Heerema" }
+		14 = { "%d. Freikorps Heerema" }
+		15 = { "%d. Freikorps Heerema" }
+		16 = { "%d. Freikorps Heerema" }
+		17 = { "%d. Freikorps Heerema" }
+		18 = { "%d. Freikorps Heerema" }
+		19 = { "%d. Freikorps Heerema" }
+		20 = { "%d. Freikorps Heerema" }
+		21 = { "%d. Freikorps Heerema" }
+		22 = { "%d. Freikorps Heerema" }
+		23 = { "%d. Freikorps Heerema" }
+		24 = { "%d. Freikorps Heerema" }
+		25 = { "%d. Freikorps Heerema" }
+		26 = { "%d. Freikorps Heerema" }
+		27 = { "%d. Freikorps Heerema" }
+		28 = { "%d. Freikorps Heerema" }
+		29 = { "%d. Freikorps Heerema" }
+		30 = { "%d. Freikorps Heerema" }
+	}
+}
+
+HEE_motorized = {
+	name = "Die Niederländische Legion"
+
+	for_countries = { HEE }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Die Niederländische Legion"
+
+	ordered = {
+		1 = { "7. Waffen-Grenadier-Division der SS 'Tschernihiw'" }
+		2 = { "18. Waffen-Grenadier-Division der SS 'Poltawa'" }
+		3 = { "22. Waffen-Grenadier-Division der SS 'Charkiw'" }
+		4 = { "%d. Die Niederländische Legion" }
+		5 = { "%d. Die Niederländische Legion" }
+		6 = { "%d. Die Niederländische Legion" }
+		7 = { "%d. Die Niederländische Legion" }
+		8 = { "%d. Die Niederländische Legion" }
+		9 = { "%d. Die Niederländische Legion" }
+		10 = { "%d. Die Niederländische Legion" }
+		11 = { "%d. Die Niederländische Legion" }
+		12 = { "%d. Die Niederländische Legion" }
+		13 = { "%d. Die Niederländische Legion" }
+		14 = { "%d. Die Niederländische Legion" }
+		15 = { "%d. Die Niederländische Legion" }
+		16 = { "%d. Die Niederländische Legion" }
+		17 = { "%d. Die Niederländische Legion" }
+		18 = { "%d. Die Niederländische Legion" }
+		19 = { "%d. Die Niederländische Legion" }
+		20 = { "%d. Die Niederländische Legion" }
+		21 = { "%d. Die Niederländische Legion" }
+		22 = { "%d. Die Niederländische Legion" }
+		23 = { "%d. Die Niederländische Legion" }
+		24 = { "%d. Die Niederländische Legion" }
+		25 = { "%d. Die Niederländische Legion" }
+		26 = { "%d. Die Niederländische Legion" }
+		27 = { "%d. Die Niederländische Legion" }
+		28 = { "%d. Die Niederländische Legion" }
+		29 = { "%d. Die Niederländische Legion" }
+		30 = { "%d. Die Niederländische Legion" }
+	}
+}

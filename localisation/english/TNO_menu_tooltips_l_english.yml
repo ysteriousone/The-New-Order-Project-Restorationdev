@@ -1,0 +1,16 @@
+﻿l_english:
+
+# Icon tooltip
+TNO_ugly_american_icon_tt: "§RTHE RUIN§!"
+TNO_ugly_american_icon_tt_delayed: "§F"And the unfinished buildings are overgrown. Nothing but grass. The sad words of our songs, my brothers, are covered with rust." - §MBohdan§! §YStel'makh§!\n\n§RThe Ruin§! is a historical term coined by Cossack chronicle writer §YSamiilo Velychko§! which describes the political situation in §MUkr§!§Yaine§! during the second half of the 17th century. It was a time of chaos, strife and anarchy within the nation, when civil war was constant, and foreign intervention was the norm.\n\nThis chaotic period of life was generally agreed to have started following the death of the Hetman, Bohdan Khmelnytsky, a man who was able to create an independent state after years of Polish and Lithuanian rule.\n\nOnce he died, Ukraine became a battleground where war was waged no single leader could follow a consistent standard of rule. Conflict between the classes was ripe and plentiful, and alliances changed as often as shifts in the wind's direction. The anarchy that subsumed Ukraine was only able to be quelled after the ascension of Ivan Samoylovych to the role of Hetman for the Ukrainian Cossacks. Afterwards, Ukraine regained some semblance of peace, for a little while.\n\nBut this period will soon return to §MUkr§!§Yaine§!, and will come to §JGreat Britain§! for the first time, as both nations teeter along, so close to the abyss of war..."
+####=== The tooltips that are shown when hovering over the menu pictures ===####
+###- TNO v1.5.0 - The Ruin, September 29th 2023
+
+## SINGLE PLAYER
+TNO_menupic_tooltip_1: "§FThe house of §Rdelusions§! is §Gcheap§! to build but §Bdrafty§! to live in.§!"
+
+## MULTIPLAYER
+TNO_menupic_tooltip_2: "§FI, a §Rstranger and afraid§!, in a §Bworld§! I never made.§!"
+
+## QUIT
+TNO_menupic_tooltip_3: "§FShoulder the §Bsky§!, my lad, and drink your §Yale§!.§!"

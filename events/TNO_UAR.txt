@@ -1,0 +1,2086 @@
+﻿
+#Made by Ba'ath Gang#
+
+add_namespace = UAR
+
+country_event = { #Debug - load tree
+	id = UAR.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event UAR.1"}
+	title = UAR.1.t
+	desc = UAR.1.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = UAR.1.a
+		add_political_power = 1
+		#load_focus_tree = UAR_intro
+	}
+}
+
+country_event = { #Debug - load tree
+	id = UAR.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event UAR.1"}
+	title = UAR.1.t
+	desc = UAR.1.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = UAR.1.a
+		add_political_power = 1
+		#load_focus_tree = UAR_war
+	}
+}
+
+#UAR Divisions
+country_event = { #The shit one
+	id = UAR.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event UAR.100"}
+	title = UAR.100.t
+	desc = UAR.100.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = UAR.100.a
+		KUR = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 421
+					}
+				}
+				transfer_state = 421
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 976
+					}
+				}
+				transfer_state = 976
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 417
+					}
+				}
+				transfer_state = 417
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 974
+					}
+				}
+				transfer_state = 974
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 973
+					}
+				}
+				transfer_state = 973
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 781
+					}
+				}
+				transfer_state = 781
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1243
+					}
+				}
+				transfer_state = 1243
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 352
+					}
+				}
+				transfer_state = 352
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 676
+					}
+				}
+				transfer_state = 676
+			}
+			set_cosmetic_tag = KUR_POSTUAR
+		}
+		LEB = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1240
+					}
+				}
+				transfer_state = 1240
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 553
+					}
+				}
+				transfer_state = 553
+			}
+			set_cosmetic_tag = LEB_POSTUAR
+		}
+		SYR = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1242
+					}
+				}
+				transfer_state = 1242
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 677
+					}
+				}
+				transfer_state = 677
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 680
+					}
+				}
+				transfer_state = 680
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 554
+					}
+				}
+				transfer_state = 554
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 782
+					}
+				}
+				transfer_state = 782
+			}
+			set_cosmetic_tag = SYR_POSTUAR
+		}
+		JOR = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1245
+					}
+				}
+				transfer_state = 1245
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1244
+					}
+				}
+				transfer_state = 1244
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 455
+					}
+				}
+				transfer_state = 455
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1246
+					}
+				}
+				transfer_state = 1246
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 922
+					}
+				}
+				transfer_state = 922
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1244
+					}
+				}
+				transfer_state = 1244
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 921
+					}
+				}
+				transfer_state = 921
+			}
+			set_cosmetic_tag = JOR_POSTUAR
+		}
+		EGY = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 453
+					}
+				}
+				transfer_state = 453
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 447
+					}
+				}
+				transfer_state = 447
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 452
+					}
+				}
+				transfer_state = 452
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1115
+					}
+				}
+				transfer_state = 1115
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 446
+					}
+				}
+				transfer_state = 446
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 457
+					}
+				}
+				transfer_state = 457
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1116
+					}
+				}
+				transfer_state = 1116
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 552
+					}
+				}
+				transfer_state = 552
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1119
+					}
+				}
+				transfer_state = 1119
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 456
+					}
+				}
+				transfer_state = 456
+			}
+			set_cosmetic_tag = EGY_POSTUAR
+		}
+		PAL = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1247
+					}
+				}
+				transfer_state = 1247
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 454
+					}
+				}
+				transfer_state = 454
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1248
+					}
+				}
+				transfer_state = 1248
+			}
+			set_cosmetic_tag = PAL_POSTUAR
+		}
+		RPS = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1120
+					}
+				}
+				transfer_state = 1120
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1121
+					}
+				}
+				transfer_state = 1121
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1122
+					}
+				}
+				transfer_state = 1122
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1135
+					}
+				}
+				transfer_state = 1135
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1133
+					}
+				}
+				transfer_state = 1133
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1134
+					}
+				}
+				transfer_state = 1134
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1132
+					}
+				}
+				transfer_state = 1132
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1179
+					}
+				}
+				transfer_state = 1179
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1131
+					}
+				}
+				transfer_state = 1131
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1131
+					}
+				}
+				transfer_state = 1131
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1128
+					}
+				}
+				transfer_state = 1128
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1129
+					}
+				}
+				transfer_state = 1129
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1130
+					}
+				}
+				transfer_state = 1130
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 551
+					}
+				}
+				transfer_state = 551
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1123
+					}
+				}
+				transfer_state = 1123
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1124
+					}
+				}
+				transfer_state = 1124
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1125
+					}
+				}
+				transfer_state = 1125
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 549
+					}
+				}
+				transfer_state = 549
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1136
+					}
+				}
+				transfer_state = 1136
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1126
+					}
+				}
+				transfer_state = 1126
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1127
+					}
+				}
+				transfer_state = 1127
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 1119
+					}
+				}
+				transfer_state = 1119
+			}
+			set_cosmetic_tag = RPS_POSTUAR
+		}
+		IRQ = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 291
+					}
+				}
+				transfer_state = 291
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 916
+					}
+				}
+				transfer_state = 916
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 675
+					}
+				}
+				transfer_state = 675
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 923
+					}
+				}
+				transfer_state = 923
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 676
+					}
+				}
+				transfer_state = 676
+			}
+			set_cosmetic_tag = IRQ_POSTUAR
+		}
+		YEM = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 909
+					}
+				}
+				transfer_state = 909
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 908
+					}
+				}
+				transfer_state = 908
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 659
+					}
+				}
+				transfer_state = 659
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 293
+					}
+				}
+				transfer_state = 293
+			}
+			set_cosmetic_tag = YEM_POSTUAR
+		}
+		NYM = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 910
+					}
+				}
+				transfer_state = 910
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 911
+					}
+				}
+				transfer_state = 911
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 912
+					}
+				}
+				transfer_state = 912
+			}
+			set_cosmetic_tag = NYM_POSTUAR
+		}
+		OMA = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 913
+					}
+				}
+				transfer_state = 913
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 914
+					}
+				}
+				transfer_state = 914
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 915
+					}
+				}
+				transfer_state = 915
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 294
+					}
+				}
+				transfer_state = 294
+			}
+			set_cosmetic_tag = OMA_POSTUAR
+		}
+		SAU = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 918
+					}
+				}
+				transfer_state = 918
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 678
+					}
+				}
+				transfer_state = 678
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 919
+					}
+				}
+				transfer_state = 919
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 917
+					}
+				}
+				transfer_state = 917
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 292
+					}
+				}
+				transfer_state = 292
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 920
+					}
+				}
+				transfer_state = 920
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 679
+					}
+				}
+				transfer_state = 679
+			}
+			set_cosmetic_tag = SAU_POSTUAR
+		}
+#		HJZ = {
+#			if = {
+#				limit = {
+#					UAR = {
+#						owns_state = 920
+#					}
+#				}
+#				transfer_state = 920
+#			}
+#			if = {
+#				limit = {
+#					UAR = {
+#						owns_state = 679
+#					}
+#				}
+#				transfer_state = 679
+#			}
+#			set_cosmetic_tag = HJZ_POSTUAR
+#		}
+		UAE = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 658
+					}
+				}
+				transfer_state = 658
+			}
+			set_cosmetic_tag = UAE_POSTUAR
+		}
+		KUW = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 656
+					}
+				}
+				transfer_state = 656
+			}
+		}
+		SNI = {
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 675
+					}
+				}
+				transfer_state = 675
+			}
+			if = {
+				limit = {
+					UAR = {
+						owns_state = 923
+					}
+				}
+				transfer_state = 923
+			}
+			set_cosmetic_tag = SNI_POSTUAR
+		}
+	}
+}
+
+country_event = { #The recolonizing one
+	id = UAR.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event UAR.101"}
+	title = UAR.101.t
+	desc = UAR.101.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = UAR.101.a
+		LEB = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1240
+					}
+				}
+				transfer_state = 1240
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 553
+					}
+				}
+				transfer_state = 553
+			}
+		}
+		SYR = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1242
+					}
+				}
+				transfer_state = 1242
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1241
+					}
+				}
+				transfer_state = 1241
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1243
+					}
+				}
+				transfer_state = 1243
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 677
+					}
+				}
+				transfer_state = 677
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 680
+					}
+				}
+				transfer_state = 680
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 554
+					}
+				}
+				transfer_state = 554
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 782
+					}
+				}
+				transfer_state = 782
+			}
+			set_cosmetic_tag = SYR_POSTITA
+		}
+		EGY = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 453
+					}
+				}
+				transfer_state = 453
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 447
+					}
+				}
+				transfer_state = 447
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 452
+					}
+				}
+				transfer_state = 452
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1115
+					}
+				}
+				transfer_state = 1115
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 446
+					}
+				}
+				transfer_state = 446
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 457
+					}
+				}
+				transfer_state = 457
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1116
+					}
+				}
+				transfer_state = 1116
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 552
+					}
+				}
+				transfer_state = 552
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1119
+					}
+				}
+				transfer_state = 1119
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 456
+					}
+				}
+				transfer_state = 456
+			}
+		}
+		IME = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1247
+					}
+				}
+				transfer_state = 1247
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 454
+					}
+				}
+				transfer_state = 454
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1248
+					}
+				}
+				transfer_state = 1248
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1245
+					}
+				}
+				transfer_state = 1245
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1244
+					}
+				}
+				transfer_state = 1244
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 455
+					}
+				}
+				transfer_state = 455
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1246
+					}
+				}
+				transfer_state = 1246
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1244
+					}
+				}
+				transfer_state = 1244
+			}
+			set_cosmetic_tag = PAL_POSTITA
+		}
+		RPS = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1120
+					}
+				}
+				transfer_state = 1120
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1121
+					}
+				}
+				transfer_state = 1121
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1122
+					}
+				}
+				transfer_state = 1122
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1135
+					}
+				}
+				transfer_state = 1135
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1133
+					}
+				}
+				transfer_state = 1133
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1134
+					}
+				}
+				transfer_state = 1134
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1132
+					}
+				}
+				transfer_state = 1132
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1179
+					}
+				}
+				transfer_state = 1179
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1131
+					}
+				}
+				transfer_state = 1131
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1131
+					}
+				}
+				transfer_state = 1131
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1128
+					}
+				}
+				transfer_state = 1128
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1129
+					}
+				}
+				transfer_state = 1129
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1130
+					}
+				}
+				transfer_state = 1130
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 551
+					}
+				}
+				transfer_state = 551
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1123
+					}
+				}
+				transfer_state = 1123
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1124
+					}
+				}
+				transfer_state = 1124
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1125
+					}
+				}
+				transfer_state = 1125
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 549
+					}
+				}
+				transfer_state = 549
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1136
+					}
+				}
+				transfer_state = 1136
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1126
+					}
+				}
+				transfer_state = 1126
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1127
+					}
+				}
+				transfer_state = 1127
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1119
+					}
+				}
+				transfer_state = 1119
+			}
+			set_cosmetic_tag = RPS_POSTITA
+		}
+		IRQ = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 291
+					}
+				}
+				transfer_state = 291
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 675
+					}
+				}
+				transfer_state = 675
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 781
+					}
+				}
+				transfer_state = 781
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 676
+					}
+				}
+				transfer_state = 676
+			}
+		}
+		YEM = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 909
+					}
+				}
+				transfer_state = 909
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 908
+					}
+				}
+				transfer_state = 908
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 659
+					}
+				}
+				transfer_state = 659
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 293
+					}
+				}
+				transfer_state = 293
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 910
+					}
+				}
+				transfer_state = 910
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 911
+					}
+				}
+				transfer_state = 911
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 912
+					}
+				}
+				transfer_state = 912
+			}
+		}
+		OMA = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 913
+					}
+				}
+				transfer_state = 913
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 914
+					}
+				}
+				transfer_state = 914
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 915
+					}
+				}
+				transfer_state = 915
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 294
+					}
+				}
+				transfer_state = 294
+			}
+		}
+		SAU = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 918
+					}
+				}
+				transfer_state = 918
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 923
+					}
+				}
+				transfer_state = 923
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 922
+					}
+				}
+				transfer_state = 922
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 921
+					}
+				}
+				transfer_state = 921
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 678
+					}
+				}
+				transfer_state = 678
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 919
+					}
+				}
+				transfer_state = 919
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 917
+					}
+				}
+				transfer_state = 917
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 292
+					}
+				}
+				transfer_state = 292
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 920
+					}
+				}
+				transfer_state = 920
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 679
+					}
+				}
+				transfer_state = 679
+			}
+		}
+	}
+}
+
+country_event = { #The insanely fucking dumb one
+	id = UAR.102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event UAR.101"}
+	title = UAR.102.t
+	desc = UAR.102.desc
+	picture = GFX_report_event_lithuania_army
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = UAR.102.a
+		SYR = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1240
+					}
+				}
+				transfer_state = 1240
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 553
+					}
+				}
+				transfer_state = 553
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1242
+					}
+				}
+				transfer_state = 1242
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1241
+					}
+				}
+				transfer_state = 1241
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1243
+					}
+				}
+				transfer_state = 1243
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 677
+					}
+				}
+				transfer_state = 677
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 680
+					}
+				}
+				transfer_state = 680
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 554
+					}
+				}
+				transfer_state = 554
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 782
+					}
+				}
+				transfer_state = 782
+			}
+			set_cosmetic_tag = SYR_POSTITA
+		}
+		EGY = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 447
+					}
+				}
+				transfer_state = 447
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 452
+					}
+				}
+				transfer_state = 452
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1115
+					}
+				}
+				transfer_state = 1115
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 446
+					}
+				}
+				transfer_state = 446
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 457
+					}
+				}
+				transfer_state = 457
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1116
+					}
+				}
+				transfer_state = 1116
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 552
+					}
+				}
+				transfer_state = 552
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1119
+					}
+				}
+				transfer_state = 1119
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 456
+					}
+				}
+				transfer_state = 456
+			}
+		}
+		IME = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 453
+					}
+				}
+				transfer_state = 453
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1247
+					}
+				}
+				transfer_state = 1247
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 454
+					}
+				}
+				transfer_state = 454
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1248
+					}
+				}
+				transfer_state = 1248
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1245
+					}
+				}
+				transfer_state = 1245
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1244
+					}
+				}
+				transfer_state = 1244
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 455
+					}
+				}
+				transfer_state = 455
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1246
+					}
+				}
+				transfer_state = 1246
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1244
+					}
+				}
+				transfer_state = 1244
+			}
+		}
+		RPS = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1120
+					}
+				}
+				transfer_state = 1120
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1121
+					}
+				}
+				transfer_state = 1121
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1122
+					}
+				}
+				transfer_state = 1122
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1135
+					}
+				}
+				transfer_state = 1135
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1133
+					}
+				}
+				transfer_state = 1133
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1134
+					}
+				}
+				transfer_state = 1134
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1132
+					}
+				}
+				transfer_state = 1132
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1179
+					}
+				}
+				transfer_state = 1179
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1131
+					}
+				}
+				transfer_state = 1131
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1131
+					}
+				}
+				transfer_state = 1131
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1128
+					}
+				}
+				transfer_state = 1128
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1129
+					}
+				}
+				transfer_state = 1129
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1130
+					}
+				}
+				transfer_state = 1130
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 551
+					}
+				}
+				transfer_state = 551
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1123
+					}
+				}
+				transfer_state = 1123
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1124
+					}
+				}
+				transfer_state = 1124
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1125
+					}
+				}
+				transfer_state = 1125
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 549
+					}
+				}
+				transfer_state = 549
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1136
+					}
+				}
+				transfer_state = 1136
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1126
+					}
+				}
+				transfer_state = 1126
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1127
+					}
+				}
+				transfer_state = 1127
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 1119
+					}
+				}
+				transfer_state = 1119
+			}
+		}
+		OMA = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 909
+					}
+				}
+				transfer_state = 909
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 908
+					}
+				}
+				transfer_state = 908
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 659
+					}
+				}
+				transfer_state = 659
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 293
+					}
+				}
+				transfer_state = 293
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 910
+					}
+				}
+				transfer_state = 910
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 911
+					}
+				}
+				transfer_state = 911
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 912
+					}
+				}
+				transfer_state = 912
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 913
+					}
+				}
+				transfer_state = 913
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 914
+					}
+				}
+				transfer_state = 914
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 915
+					}
+				}
+				transfer_state = 915
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 294
+					}
+				}
+				transfer_state = 294
+			}
+		}
+		SAU = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 675
+					}
+				}
+				transfer_state = 675
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 923
+					}
+				}
+				transfer_state = 923
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 922
+					}
+				}
+				transfer_state = 922
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 919
+					}
+				}
+				transfer_state = 919
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 917
+					}
+				}
+				transfer_state = 917
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 292
+					}
+				}
+				transfer_state = 292
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 918
+					}
+				}
+				transfer_state = 918
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 678
+					}
+				}
+				transfer_state = 678
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 920
+					}
+				}
+				transfer_state = 920
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 679
+					}
+				}
+				transfer_state = 679
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 921
+					}
+				}
+				transfer_state = 921
+			}
+		}
+#		HJZ = {
+#			if = {
+#				limit = {
+#					ITA = {
+#						owns_state = 920
+#					}
+#				}
+#				transfer_state = 920
+#			}
+#			if = {
+#				limit = {
+#					ITA = {
+#						owns_state = 679
+#					}
+#				}
+#				transfer_state = 679
+#			}
+#			if = {
+#				limit = {
+#					ITA = {
+#						owns_state = 921
+#					}
+#				}
+#				transfer_state = 921
+#			}
+#		}
+		IRQ = {
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 291
+					}
+				}
+				transfer_state = 291
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 916
+					}
+				}
+				transfer_state = 916
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 781
+					}
+				}
+				transfer_state = 781
+			}
+			if = {
+				limit = {
+					ITA = {
+						owns_state = 676
+					}
+				}
+				transfer_state = 676
+			}
+		}
+	}
+}

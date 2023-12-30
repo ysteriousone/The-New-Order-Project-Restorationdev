@@ -1,0 +1,446 @@
+characters={
+	## Leaders ##
+	MEX_disorganized_leadership = {
+		name = MEX_disorganized_leadership
+		portraits={
+			civilian={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Adolfo_Lopez_Mateos.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = ultranationalism_subtype
+			expire = "1990.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = national_socialism_subtype
+			expire = "1990.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = progressivism_subtype
+			expire = "1990.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = socialist_subtype
+			expire = "1990.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = communist_subtype
+			expire = "1990.1.1.1"
+			id = -1
+		}
+	}
+
+	MEX_his_excellency = {
+		name = MEX_his_excellency
+		portraits={
+			civilian={
+				large = "gfx/leaders/MEX/Portrait_Sexico_Excellency.dds"
+			}
+		}
+	}
+
+	MEX_adolfo_mateos = {
+		name = MEX_Adolfo_Mateos
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Adolfo_Lopez_Mateos.dds"
+				small = GFX_idea_MEX_Aldofo_Mateo
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = despotism_institutional_despotism_subtype
+			expire = "1999.1.1"
+			id = -1
+		}
+	}
+
+	MEX_gustavo_ordaz = {
+		name = MEX_Gustavo_Ordaz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Mandril.dds"
+				small = GFX_idea_MEX_Mandril
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_GUSTAVO_ORDAZ_DESC"
+			ideology = despotism_institutional_despotism_subtype
+			traits = { for_americanophile }
+			expire = "1990.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = MEX_Gustavo_Ordaz_hog
+			traits = {
+				head_of_government
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+
+	MEX_Manuel_Baurraud = {
+		name = MEX_Manuel_Baurraud
+		portraits = {
+			civilian = {
+				small = GFX_idea_MEX_Manuel_Barraud
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = MEX_Manuel_Baurraud_pol
+			traits = {
+				foreign_minister
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+
+	MEX_raul_lozano = {
+		name = MEX_Raul_Lozano
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Lozano.dds"
+				small = GFX_idea_MEX_Raul_Lozano
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_RAUL_LOZANO_DESC"
+			ideology = despotism_institutional_despotism_subtype
+			traits = { for_japanophile }
+			expire = "1990.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = MEX_Raul_Lozano_eco
+			traits = {
+				economy_minister
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+
+	MEX_Agustin_Olachea = {
+		name = MEX_Agustin_Olachea
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Agustin_Olachea.dds" 
+			}
+			civilian = {
+				small = GFX_idea_MEX_Jose_Olachea
+			}
+		}
+		field_marshal = {
+			traits = { retired revolution_veteran defensive_doctrine }
+			desc = "GENERAL_AGUSTIN_OLACHEA_DESC"
+			skill = 4
+			legacy_id = 12251
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = MEX_Agustin_Olachea_sec
+			traits = {
+				security_minister
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+
+	MEX_carlos_madrazo = {
+		name = MEX_carlos_madrazo
+		portraits = {
+			civilian = {
+				large ="gfx/leaders/MEX/Portrait_Mexico_Carlos_Madrazo.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_CARLOS_MADRAZO_DESC"
+			ideology = despotism_institutional_despotism_subtype
+			traits = { }
+			expire = "1990.1.1.1"
+			id=-1
+		}
+	}
+
+	MEX_Luis_Echeverria = {
+		name = MEX_Luis_Echeverria
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Luis_Echeverria.dds"
+				small = GFX_idea_MEX_Luis_Echeverria
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = MEX_Luis_Echeverria_pol
+			traits = {
+				foreign_minister
+				for_fierce_negotiator
+			}
+			cost = -1
+			can_be_fired = no
+			ledger = civilian
+		}
+	}
+
+	MEX_Salvador_Abascal = {
+		name = MEX_Salvador_Abascal
+		portraits = {
+			civilian ={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Gonzalez_Gollaz.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = fascism_subtype
+			expire = "2000.1.1.1"
+			id = -1
+		}
+	}
+
+	MEX_lucio_cabanas = {
+		name = MEX_lucio_cabanas
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Lucio_Cabanas.dds"
+			}
+		}
+	}
+
+	MEX_Gonzalez_Gollaz = {
+		name = MEX_Gonzalez_Gollaz
+		portraits = {
+			civilian ={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Gonzalez_Gollaz.dds"
+			}
+		}
+	}
+
+	MEX_Luis_Alvarez = {
+		name = MEX_Luis_Alvarez
+		portraits = {
+			civilian ={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Luis_H_Alvarez.dds"
+			}
+		}
+	}
+
+	MEX_Adolfo_Christlieb = {
+		name = MEX_Adolfo_Christlieb
+		portraits = {
+			civilian ={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Luis_H_Alvarez.dds"
+			}
+		}
+		country_leader = {
+			#desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = liberal_conservatism_christian_democracy_subtype
+			expire = "1969.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = liberalism_christian_liberalism_subtype
+			expire = "1969.1.1.1"
+			id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_ADOLFO_LOPEZ_MATEOS_DESC"
+			ideology = conservatism_christian_conservatism_subtype
+			expire = "1969.1.1.1"
+			id = -1
+		}
+	}
+
+	MEX_Jose_Angel_Conchello = {
+		name = MEX_Jose_Angel_Conchello
+		portraits = {
+			civilian ={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Luis_H_Alvarez.dds"
+			}
+		}
+	}
+
+	MEX_Efrain_Gonzalez_Morfin = {
+		name = MEX_Efrain_Gonzalez_Morfin
+		portraits = {
+			civilian ={
+				large = "gfx/leaders/MEX/Portrait_Mexico_Gonzalez_Morfin.dds"
+			}
+		}
+	}
+
+	## Unit Leaders ##
+	MEX_Marcelino_Barragan = {
+		name = MEX_Marcelino_Barragan
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Marcelino_Barragan.dds" 
+			}
+		}
+		field_marshal = {
+			traits = { revolution_veteran fast_planner }
+			desc = "GENERAL_GARCIA_BARRAGAN_DESC"
+			skill = 3
+			legacy_id = 12252
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	MEX_Jose_Gomez_Huerta = {
+		name = MEX_Jose_Gomez_Huerta
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Gomez_Huerta.dds" 
+			} 
+		}
+		corps_commander = {
+			traits = { revolution_veteran infantry_expert }
+			skill = 2
+			legacy_id = 12253
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+
+	MEX_Hermenegildo_Cuenca_Diaz = {
+		name = MEX_Hermenegildo_Cuenca_Diaz
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Cuenca_Diaz.dds" 
+			} 
+		}
+		corps_commander = {
+			traits = { revolution_veteran panzer_leader }
+			skill = 2
+			legacy_id = 12254
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	MEX_Luis_Gutierrez_Oropeza = {
+		name = MEX_Luis_Gutierrez_Oropeza
+		portraits = {
+			army = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Gutierrez_Oropeza.dds" 
+			} 
+		}
+		corps_commander = {
+			traits = { revolution_veteran trickster commando }
+			skill = 2
+			legacy_id = 12255
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	## Admirals ##
+	MEX_Abelardo_Munoz = {
+		name = MEX_Abelardo_Munoz
+		portraits = {
+			navy = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Jose_Cerdan.dds"
+			} 
+		}
+		navy_leader = {
+			traits = { old_guard_navy cuts_corners green_water_expert }
+			#desc = "ADMIRAL_DAVID_MCDONALD_DESC"
+			skill = 2
+			legacy_id = 12257
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+
+	MEX_Rigoberto_Briseno = {
+		name = MEX_Rigoberto_Briseno
+		portraits = {
+			navy = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Rigoberto_Otal.dds"
+			} 
+		}
+		navy_leader = {
+			traits = { superior_tactician green_water_expert }
+			#desc = "ADMIRAL_DAVID_MCDONALD_DESC"
+			skill = 2
+			legacy_id = 12258
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+
+	MEX_Manuel_Araico = {
+		name = MEX_Manuel_Araico
+		portraits = {
+			navy = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Manuel_Araico.dds"
+			} 
+		}
+		navy_leader = {
+			traits = { navy_career_officer bold }
+			#desc = "ADMIRAL_DAVID_MCDONALD_DESC"
+			skill = 1
+			legacy_id = 12259
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+
+	MEX_Miguel_Gomez_Ortega = {
+		name = MEX_Miguel_Gomez_Ortega
+		portraits = {
+			navy = {
+				large = "gfx/leaders/MEX/Portrait_Mexico_Miguel_Gomez_Ortega.dds"
+			} 
+		}
+		navy_leader = {
+			traits = { navy_career_officer spotter }
+			#desc = "ADMIRAL_DAVID_MCDONALD_DESC"
+			skill = 1
+			legacy_id = 12260
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+}

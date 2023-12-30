@@ -1,0 +1,4731 @@
+#██╗   ██╗██╗  ██╗██████╗  █████╗ ██╗███╗   ██╗███████╗#
+#██║   ██║██║ ██╔╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝#
+#██║   ██║█████╔╝ ██████╔╝███████║██║██╔██╗ ██║█████╗  #
+#██║   ██║██╔═██╗ ██╔══██╗██╔══██║██║██║╚██╗██║██╔══╝  #
+#╚██████╔╝██║  ██╗██║  ██║██║  ██║██║██║ ╚████║███████╗#
+# ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝#
+#Shared Focuses
+
+#Index; Search for these names using ctrl+f and you'll find the section they entitle.
+#	DEMONSTRATION PURPOSES; If you're new to Ukraine dev check the below tree(s)
+#	Ukraine Example Tree(s)
+#
+#	PRE-COLLAPSE
+#	Ukraine Intro Trees
+#		Ukraine Starter Tree(s)
+#	Ukraine Native Trees
+#		Ukraine PG Tree(s)
+#		Ukraine U-SSR Tree(s)
+#		Ukraine UPA Tree(s)
+#	Ukraine German Trees
+#		Ukraine Council Tree(s)
+#	RK Civil War Tree
+#   RK Post War Trees
+#		RK Power Struggle
+
+######## Domestic Trees #########
+#    Ukraine Example Tree(s)    #
+#################################
+
+shared_focus = {
+	id = UKR_domestic_phase1
+	icon = GFX_Unknown
+	cost = 5
+	allow_branch = {
+		always = no
+	}
+	x = 13
+	y = 0
+}
+
+#Example of how focuses should look
+shared_focus = {
+	id = UKR_example
+	icon = GFX_Unknown
+	cost = 5
+	prerequisite = {
+		focus = UKR_domestic_phase1
+	}
+	allow_branch = {
+		always = no
+	}
+	available = {
+		always = no
+	}
+	x = 0
+	y = 1
+	relative_position_id = UKR_domestic_phase1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_example"
+		custom_effect_tooltip = UKR_example_tt
+	}
+}
+
+#####   #####   ######           ####    ####   ##      ##       ####   #####    ####   ######
+##  ##  ##  ##  ##              ##  ##  ##  ##  ##      ##      ##  ##  ##  ##  ##      ##
+#####   #####   ####    ######  ##      ##  ##  ##      ##      ######  #####    ####   ####
+##      ##  ##  ##              ##  ##  ##  ##  ##      ##      ##  ##  ##          ##  ##
+##      ##  ##  ######           ####    ####   ######  ######  ##  ##  ##       ####   ######
+
+###########################
+#+=======================+#
+#+= Ukraine Intro Trees =+#
+#+=======================+#
+###########################
+
+########## Intro Trees ##########
+#    Ukraine Starter Tree(s)    #
+#################################
+
+shared_focus = {
+	id = UKR_the_herzogs_rage
+	icon = GFX_UKR_koch
+	cost = 1
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_herzogs_rage"
+		country_event = {
+			id = UKR_intro_chain.1
+		}
+		custom_effect_tooltip = UKR_destiny_begin_tt
+		hidden_effect = {
+			UKR_Destiny_start = yes
+			UKR_fire_intro_events = yes
+			country_event = {
+				id = UKR_BohdanIntro.4
+				days = 150
+			}
+			country_event = {
+				id = UKR_koch_bombing.1
+				days = 154
+			}
+			country_event = {
+				id = UKR_koch_bombing.2
+				days = 157
+			}
+			country_event = {
+				id = UKR_koch_bombing.3
+				days = 160
+			}
+			country_event = {
+				id = UKR_koch_bombing.4
+				days = 162
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_fuel_the_breadbasket
+	icon = GFX_GER_slaves_agriculture
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_fuel_the_breadbasket"
+		set_temp_variable = { gdp_growth_temp = 0.33 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.15 }
+		econ_spend_money_once_effect_raw_money = yes
+		country_event = { # "More"
+			id = UKR_intro_chain.18
+		}
+		set_temp_variable = { temp_action = token:UKR_BB_D_Action_RK_PreUCW_4 }
+		UKR_bb_actions_add_dev_action = yes
+		set_temp_variable = { temp_action = token:UKR_BB_D_Action_RK_PreUCW_5 }
+		UKR_bb_actions_add_dev_action = yes
+	}
+	relative_position_id = UKR_the_herzogs_rage
+	prerequisite = { focus = UKR_the_herzogs_rage }
+}
+
+shared_focus = {
+	id = UKR_mechanization_in_dnieper_ukraine
+	icon = GFX_CHI_New_Agricultural_Equipment
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_mechanization_in_dnieper_ukraine"
+		TNO_improve_agriculture_med = yes
+		set_temp_variable = { temp_state = Mykolaiv_region }
+		set_temp_variable = { temp_dev = 15 }
+		set_temp_variable = { temp_grain_output = 1 }
+		UKR_bb_D_change_development_values = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.05 }
+		econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { v = 7 }
+		UKR_add_uncategorised_law = yes
+	}
+	relative_position_id = UKR_fuel_the_breadbasket
+	prerequisite = { focus = UKR_fuel_the_breadbasket }
+	mutually_exclusive = { focus = UKR_finish_off_communal_farms }
+}
+
+shared_focus = {
+	id = UKR_finish_off_communal_farms
+	icon = GFX_Generic_Agricultural_Control
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_finish_off_communal_farms"
+		TNO_improve_agriculture_low = yes
+		set_temp_variable = { econ_centralization_temp = -2 }
+		econ_centralization_change = yes
+		add_stability = 0.03
+		set_temp_variable = { v = 8 }
+		UKR_add_uncategorised_law = yes
+	}
+	relative_position_id = UKR_fuel_the_breadbasket
+	prerequisite = { focus = UKR_fuel_the_breadbasket }
+	mutually_exclusive = { focus = UKR_mechanization_in_dnieper_ukraine }
+}
+
+shared_focus = {
+	id = UKR_skip_noc_holdings
+	icon = GFX_MCW_Business_with_the_Dutch_Eastern_Company
+	cost = 1
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_skip_noc_holdings"
+		custom_effect_tooltip = UKR_skip_noc_holdings_tt
+		country_event = {
+			id = UKR_intro_chain.26
+		}
+		set_temp_variable = { gdp_growth_temp = -0.05 }
+		econ_gdp_growth_change = yes
+		custom_effect_tooltip = UKR_bb_national_dynmod_change_tt
+		set_temp_variable = { U = -0.025 }
+		UKR_bb_national_dynmod_civ_spend = yes
+		set_temp_variable = { money_reserves_temp = 0.025 }
+		econ_money_reserves_change_raw_money = yes
+	}
+	relative_position_id = UKR_mechanization_in_dnieper_ukraine
+	prerequisite = { focus = UKR_mechanization_in_dnieper_ukraine }
+}
+
+shared_focus = {
+	id = UKR_blood_from_a_stone
+	icon = GFX_INS_Taxation_Liberty
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_blood_from_a_stone"
+		add_timed_idea = {
+			idea = UKR_development_tax
+			days = 90
+		}
+		set_temp_variable = { temp_all_exp = 2.5 }
+		UKR_bb_D_change_development_values_all = yes
+	}
+	relative_position_id = UKR_mechanization_in_dnieper_ukraine
+	prerequisite = {
+		focus = UKR_mechanization_in_dnieper_ukraine
+		focus = UKR_finish_off_communal_farms
+	}
+}
+
+shared_focus = {
+	id = UKR_thatll_keep_the_deputy_busy
+	icon = GFX_UKR_the_sneering_deputy
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_thatll_keep_the_deputy_busy"
+		custom_effect_tooltip = UKR_thatll_keep_the_deputy_busy_tt
+		country_event = {
+			id = UKR_intro_chain.23
+		}
+		add_political_power = -25
+		add_stability = 0.025
+	}
+	relative_position_id = UKR_finish_off_communal_farms
+	prerequisite = { focus = UKR_finish_off_communal_farms }
+}
+
+shared_focus = {
+	id = UKR_reap_the_harvest
+	icon = GFX_GER_economy_generic
+	cost = 1
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_reap_the_harvest"
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_dev = 10 }
+		set_temp_variable = { temp_exp = 5 }
+		UKR_bb_D_change_development_values = yes
+		set_temp_variable = { temp_econ_GDP_boost_percentage = 0.003 }
+		econ_GDP_boost_once_percentage = yes
+	}
+	relative_position_id = UKR_skip_noc_holdings
+	prerequisite = {
+		focus = UKR_skip_noc_holdings
+		focus = UKR_thatll_keep_the_deputy_busy
+	}
+	prerequisite = { focus = UKR_blood_from_a_stone }
+}
+
+shared_focus = {
+	id = UKR_reinforce_the_strongholds
+	icon = GFX_UKR_strengthening_our_grip
+	cost = 1
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_reinforce_the_strongholds"
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		random_owned_controlled_state = {
+			limit = {
+				state = 1428
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 525
+			}
+			add_building_construction = {
+				type = prisons
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			limit = {
+				state = 203
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 488
+			}
+			add_building_construction = {
+				type = prisons
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			limit = {
+				state = 226
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = 11437
+			}
+			add_building_construction = {
+				type = prisons
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.005 }
+		econ_spend_money_once_effect_raw_money = yes
+		add_command_power = 25
+	}
+	relative_position_id = UKR_the_herzogs_rage
+	prerequisite = { focus = UKR_the_herzogs_rage }
+}
+
+shared_focus = {
+	id = UKR_support_the_gendarmerie
+	icon = GFX_GER_der_volkskampf
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_support_the_gendarmerie"
+		TNO_improve_security_policy_effectiveness_med = yes
+		TNO_improve_military_supervision_policy_effectiveness_low = yes
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Mykolaiv_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = UKR
+		}
+		add_stability = 0.05
+	}
+	relative_position_id = UKR_reinforce_the_strongholds
+	prerequisite = { focus = UKR_reinforce_the_strongholds }
+}
+
+shared_focus = {
+	id = UKR_finish_up_the_third_phase_of_gpo
+	icon = GFX_MCW_German_Land_Grants
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_finish_up_the_third_phase_of_gpo"
+		random_owned_controlled_state = {
+			limit = {
+				state = 1428
+			}
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+			limit = {
+				state = 1966
+			}
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+			limit = {
+				state = 200
+			}
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+			limit = {
+				state = 1430
+			}
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_dev = 5 }
+		UKR_bb_D_change_development_values = yes
+		set_temp_variable = { temp_state = Mykolaiv_region }
+		set_temp_variable = { temp_dev = 5 }
+		UKR_bb_D_change_development_values = yes
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_dev = 5 }
+		UKR_bb_D_change_development_values = yes
+		set_variable = { UKR_GPO_law_var = 1 }
+		custom_effect_tooltip = UKR_finish_up_the_third_phase_of_gpo_tt
+		set_temp_variable = { temp_econ_spending_amount = 0.065 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+	relative_position_id = UKR_reinforce_the_strongholds
+	prerequisite = { focus = UKR_reinforce_the_strongholds }
+}
+
+shared_focus = {
+	id = UKR_remind_diplomats_of_hitlers_decree
+	icon = GFX_GER_when_in_germania
+	cost = 1
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_remind_diplomats_of_hitlers_decree"
+		custom_effect_tooltip = UKR_remind_diplomats_of_hitlers_decree_tt
+		country_event = {
+			id = UKR_intro_chain.24
+		}
+		add_political_power = 50
+	}
+	relative_position_id = UKR_reinforce_the_strongholds
+	prerequisite = { focus = UKR_reinforce_the_strongholds }
+}
+
+shared_focus = {
+	id = UKR_but_humble_the_selfrighteous_prussian
+	icon = GFX_UKR_the_self_righteous_prussian
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_but_humble_the_selfrighteous_prussian"
+		custom_effect_tooltip = UKR_but_humble_the_selfrighteous_prussian_tt
+		custom_effect_tooltip = UKR_bb_national_dynmod_change_tt
+		set_temp_variable = { U = 0.05 }
+		UKR_bb_national_dynmod_cp = yes
+		country_event = {
+			id = UKR_intro_chain.25
+		}
+	}
+	relative_position_id = UKR_support_the_gendarmerie
+	prerequisite = { focus = UKR_support_the_gendarmerie }
+	prerequisite = { focus = UKR_finish_up_the_third_phase_of_gpo }
+}
+
+shared_focus = {
+	id = UKR_crack_down_on_the_termites
+	icon = GFX_GER_smoke_generic
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_crack_down_on_the_termites"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_des = 4 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_des = 4 }
+		UKR_bb_R_change_desolation = yes
+	}
+	relative_position_id = UKR_support_the_gendarmerie
+	prerequisite = { focus = UKR_support_the_gendarmerie }
+	prerequisite = { focus = UKR_remind_diplomats_of_hitlers_decree }
+}
+
+shared_focus = {
+	id = UKR_the_committee_in_our_grasp
+	icon = GFX_UKR_A_Meeting_With_The_Workforce
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_committee_in_our_grasp"
+		custom_effect_tooltip = UKR_the_committee_in_our_grasp_tt
+		set_variable = { UKR_UNC_law_var = 1 }
+		custom_effect_tooltip = UKR_the_committee_in_our_grasp_2_tt
+		country_event = {
+			id = UKR_intro_chain.15
+		}
+	}
+	relative_position_id = UKR_but_humble_the_selfrighteous_prussian
+	prerequisite = { focus = UKR_but_humble_the_selfrighteous_prussian }
+	prerequisite = { focus = UKR_crack_down_on_the_termites }
+}
+
+shared_focus = {
+	id = UKR_this_is_not_enough
+	icon = GFX_UKR_trouble_in_a_troubled_land
+	cost = 1
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_this_is_not_enough"
+		add_stability = -0.02
+		add_war_support = -0.03
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = -4.5 }
+		UKR_bb_R_change_control = yes
+	}
+	relative_position_id = UKR_reap_the_harvest
+	prerequisite = { focus = UKR_reap_the_harvest }
+	prerequisite = { focus = UKR_the_committee_in_our_grasp }
+}
+
+shared_focus = {
+	id = UKR_a_visit_for_old_times_sake
+	icon = GFX_UKR_a_visit_for_old_times_sake
+	cost = 3
+	x = 0
+	y = 1
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = UKR_destiny_done_tt
+			OR = {
+				has_country_flag = UKR_play_RK
+				has_country_flag = UKR_play_UKS
+				has_country_flag = UKR_play_FUK
+				has_country_flag = UKR_play_BOV
+			}
+		}
+	}
+	cancelable = no
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_visit_for_old_times_sake"
+		custom_effect_tooltip = UKR_intro_a_visit_for_old_times_sake_tt
+		add_stability = 0.1
+		add_political_power = 100
+	}
+	relative_position_id = UKR_this_is_not_enough
+	prerequisite = { focus = UKR_this_is_not_enough }
+}
+
+
+############################
+#+========================+#
+#+= Ukraine Native Trees =+#
+#+========================+#
+############################
+@native_tree_x = 8
+
+######### Native Trees ##########
+#     Ukraine PG Tree(s)    #
+#################################
+
+shared_focus = {
+	id = UKR_the_new_hruchevsky
+	icon = GFX_UKR_A_New_Hruschevsky
+	cost = 3
+	x = @native_tree_x
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_new_hruchevsky"
+		UKR_initialize_FUK_power_struggle_gui = yes
+		FUK = {
+			add_war_support = 0.03
+		}
+		country_event = {
+			id = UKR_pre_UCW_Republic.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.4
+				days = 10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_the_old_guard_of_the_republic
+	icon = GFX_TNO_generic_military_contacts
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_old_guard_of_the_republic"
+		FUK = {
+			add_stability = 0.04
+			add_manpower = 1500
+			TNO_improve_political_parties_policy_effectiveness_low = yes
+		}
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_the_culturalists_might
+						has_completed_focus = UKR_our_men_on_the_inside
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.5
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.5
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.5
+					days = 35
+				}
+			}
+		}
+	}
+	relative_position_id = UKR_the_new_hruchevsky
+	prerequisite = { focus = UKR_the_new_hruchevsky }
+}
+
+shared_focus = {
+	id = UKR_borovets_commissars
+	icon = GFX_UKR_Borovets_Commissars
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_borovets_commissars"
+		FUK = {
+			TNO_improve_military_supervision_policy_effectiveness_med = yes
+			add_war_support = 0.05
+		}
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = -10 }
+		FUK_collaborator_support_change = yes
+		country_event = {
+			id = UKR_pre_UCW_Republic.3
+		}
+	}
+	relative_position_id = UKR_the_old_guard_of_the_republic
+	prerequisite = { focus = UKR_the_old_guard_of_the_republic }
+}
+
+shared_focus = {
+	id = UKR_heirs_of_the_exiles
+	icon = GFX_Generic_Liberty_Handshake
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_heirs_of_the_exiles"
+		FUK = {
+			TNO_improve_training_policy_effectiveness_med = yes
+			add_popularity = { ideology = progressivism popularity = 0.01 }
+		}
+		add_command_power = 40
+	}
+	relative_position_id = UKR_the_old_guard_of_the_republic
+	prerequisite = { focus = UKR_the_old_guard_of_the_republic }
+}
+
+shared_focus = {
+	id = UKR_the_culturalists_might
+	icon = GFX_UKR_The_Culturalists_Might
+	cost = 3
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_culturalists_might"
+		FUK = {
+			add_popularity = { ideology = socialist popularity = 0.02 }
+			add_stability = 0.02
+		}
+		set_temp_variable = { var_populist_support_temp = 10 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = -5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = -5 }
+		FUK_collaborator_support_change = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_the_old_guard_of_the_republic
+						has_completed_focus = UKR_our_men_on_the_inside
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.5
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.5
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.5
+					days = 35
+				}
+			}
+		}
+	}
+	relative_position_id = UKR_the_new_hruchevsky
+	prerequisite = { focus = UKR_the_new_hruchevsky }
+}
+
+shared_focus = {
+	id = UKR_the_slave_book_clubs
+	icon = GFX_CHI_Educating_The_Poor
+	cost = 3
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_slave_book_clubs"
+		FUK = {
+			TNO_improve_academic_base_low = yes
+			TNO_improve_poverty_low = yes
+			TNO_improve_education_policy_effectiveness_monthly_low = yes
+		}
+		set_temp_variable = { var_populist_support_temp = 5 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		country_event = {
+			id = UKR_pre_UCW_Republic.2
+		}
+	}
+	relative_position_id = UKR_the_culturalists_might
+	prerequisite = { focus = UKR_the_culturalists_might }
+}
+
+shared_focus = {
+	id = UKR_galician_roots_of_the_ukrainian_tree
+	icon = GFX_UKR_Galician_Roots_Of_The_Ukrainian_Tree
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_galician_roots_of_the_ukrainian_tree"
+		FUK = {
+			add_war_support = 0.075
+		}
+		custom_effect_tooltip = UKR_galicia_roots_tt
+		add_to_variable = { FUK_extra_infantry = 1 }
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_eternal_monuments_to_unity
+						has_completed_focus = UKR_a_bureaucratic_reshuffle
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.6
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.6
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.6
+					days = 35
+				}
+			}
+		}
+
+	}
+	relative_position_id = UKR_the_slave_book_clubs
+	prerequisite = { focus = UKR_the_slave_book_clubs }
+	prerequisite = { focus = UKR_promote_popular_participation }
+}
+
+shared_focus = {
+	id = UKR_eternal_monuments_to_unity
+	icon = GFX_UKR_Eternal_Monuments_to_Unity
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_eternal_monuments_to_unity"
+		FUK = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		set_temp_variable = { var_populist_support_temp = 7.5 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 2.5 }
+		FUK_collaborator_support_change = yes
+
+		add_to_variable = { FUK_pillar_decay = 1 }
+
+		country_event = {
+			id = UKR_pre_UCW_Republic.7
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_galician_roots_of_the_ukrainian_tree
+						has_completed_focus = UKR_a_bureaucratic_reshuffle
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.6
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.6
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.6
+					days = 35
+				}
+			}
+		}
+
+	}
+	relative_position_id = UKR_borovets_commissars
+	prerequisite = { focus = UKR_borovets_commissars }
+	prerequisite = { focus = UKR_heirs_of_the_exiles }
+}
+
+shared_focus = {
+	id = UKR_our_men_on_the_inside
+	icon = GFX_Generic_Spy
+	cost = 3
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_our_men_on_the_inside"
+		FUK = {
+			add_manpower = 2500
+		}
+		UKR = {
+			add_stability = -0.02
+			TNO_worsen_admin_efficiency_low = yes
+		}
+
+		set_temp_variable = { var_partisan_support_temp = -5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 10 }
+		FUK_collaborator_support_change = yes
+
+		add_command_power = 15
+
+		country_event = {
+			id = UKR_pre_UCW_Republic.4
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_the_old_guard_of_the_republic
+						has_completed_focus = UKR_the_culturalists_might
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.5
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.5
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.5
+					days = 35
+				}
+			}
+		}
+	}
+	relative_position_id = UKR_the_new_hruchevsky
+	prerequisite = { focus = UKR_the_new_hruchevsky }
+}
+
+shared_focus = {
+	id = UKR_ohloblyns_place_in_brest
+	icon = GFX_UKR_Ohloblyns_Place_In_Brest
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_ohloblyns_place_in_brest"
+		FUK = {
+			add_manpower = 3000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 25
+				producer = GER
+			}
+		}
+		set_temp_variable = { var_collaborator_support_temp = 5 }
+		FUK_collaborator_support_change = yes
+	}
+	relative_position_id = UKR_our_men_on_the_inside
+	prerequisite = { focus = UKR_our_men_on_the_inside }
+}
+
+shared_focus = {
+	id = UKR_a_bureaucratic_reshuffle
+	icon = GFX_IBR_paperwork_new
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_bureaucratic_reshuffle"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 2 }
+		set_temp_variable = { temp_value = 3 }
+		set_temp_variable = { temp_target = 0 }
+		UKR_bb_R_change_control_specific_1 = yes
+		UKR = {
+			TNO_worsen_admin_efficiency_low = yes
+		}
+		country_event = {
+			id = UKR_pre_UCW_Republic.8
+		}
+		FUK = {
+			add_manpower = 200
+			add_political_power = 20
+			add_stability = 0.02
+			TNO_improve_admin_efficiency_low = yes
+		}
+
+		set_temp_variable = { var_collaborator_support_temp = 5 }
+		FUK_collaborator_support_change = yes
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_eternal_monuments_to_unity
+						has_completed_focus = UKR_a_bureaucratic_reshuffle
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.6
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.6
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.6
+					days = 35
+				}
+			}
+		}
+
+	}
+	relative_position_id = UKR_ohloblyns_place_in_brest
+	prerequisite = { focus = UKR_ohloblyns_place_in_brest }
+	prerequisite = { focus = UKR_prying_open_the_pipeline }
+}
+
+shared_focus = {
+	id = UKR_promote_popular_participation
+	icon = GFX_OST_Unite_the_People
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_promote_popular_participation"
+		FUK = {
+			add_popularity = { ideology = socialist popularity = 0.04 }
+			add_popularity = { ideology = conservatism popularity = 0.01 }
+			add_popularity = { ideology = progressivism popularity = 0.05 }
+			add_stability = 0.03
+			add_political_power = 25
+		}
+		set_temp_variable = { var_populist_support_temp = 15 }
+		FUK_populist_support_change = yes
+		country_event = {
+			id = UKR_pre_UCW_Republic.6
+		}
+	}
+	relative_position_id = UKR_the_culturalists_might
+	prerequisite = { focus = UKR_the_culturalists_might }
+}
+
+shared_focus = {
+	id = UKR_prying_open_the_pipeline
+	icon = GFX_MAG_The_Best_Guns_Money_Can_Buy
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_prying_open_the_pipeline"
+		FUK = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 75
+				producer = GER
+			}
+		}
+
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 5 }
+		FUK_collaborator_support_change = yes
+	}
+	relative_position_id = UKR_our_men_on_the_inside
+	prerequisite = { focus = UKR_our_men_on_the_inside }
+}
+
+shared_focus = {
+	id = UKR_recontest_galicia
+	icon = GFX_POL_destroy_the_UPA
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_recontest_galicia"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 2 }
+		set_temp_variable = { temp_value = 9 }
+		set_temp_variable = { temp_target = 3 }
+		UKR_bb_R_change_control_specific_1 = yes
+		set_temp_variable = { temp_des = 2 }
+		UKR_bb_R_change_desolation = yes
+		BOV = {
+			add_manpower = -9000
+			add_war_support = -0.045
+		}
+
+		set_temp_variable = { var_partisan_support_temp = 10 }
+		FUK_partisan_support_change = yes
+
+		country_event = {
+			id = UKR_pre_UCW_Republic.9
+		}
+	}
+	relative_position_id = UKR_galician_roots_of_the_ukrainian_tree
+	prerequisite = { focus = UKR_galician_roots_of_the_ukrainian_tree }
+	mutually_exclusive = { focus = UKR_saturday_night_mass }
+}
+
+shared_focus = {
+	id = UKR_saturday_night_mass
+	icon = GFX_UKR_grave_cross_church
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_saturday_night_mass"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 2 }
+		set_temp_variable = { temp_value = 4.5 }
+		set_temp_variable = { temp_target = 0 }
+		UKR_bb_R_change_control_specific_1 = yes
+		country_event = {
+			id = UKR_pre_UCW_Republic.10
+		}
+		FUK = {
+			add_manpower = 2500
+			add_popularity = { ideology = conservatism popularity = 0.02 }
+		}
+		set_temp_variable = { var_populist_support_temp = 10 }
+		FUK_populist_support_change = yes
+	}
+	relative_position_id = UKR_galician_roots_of_the_ukrainian_tree
+	prerequisite = { focus = UKR_galician_roots_of_the_ukrainian_tree }
+	mutually_exclusive = { focus = UKR_recontest_galicia }
+}
+
+shared_focus = {
+	id = UKR_the_banderite_files
+	icon = GFX_Generic_Question_Secret_Services
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_banderite_files"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 2 }
+		set_temp_variable = { temp_value = 4.5 }
+		set_temp_variable = { temp_target = 3 }
+		UKR_bb_R_change_control_specific_1 = yes
+		country_event = {
+			id = UKR_pre_UCW_Republic.11
+		}
+		BOV = {
+			add_popularity = { ideology = ultranationalism popularity = -0.02 }
+			add_popularity = { ideology = national_socialism popularity = -0.02 }
+			add_popularity = { ideology = fascism popularity = -0.02 }
+			add_manpower = -5000
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+	relative_position_id = UKR_eternal_monuments_to_unity
+	prerequisite = { focus = UKR_eternal_monuments_to_unity }
+}
+
+shared_focus = {
+	id = UKR_rally_the_turncoat_coppers
+	icon = GFX_Generic_Police
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_rally_the_turncoat_coppers"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 2 }
+		set_temp_variable = { temp_value = 9 }
+		set_temp_variable = { temp_target = 0 }
+		UKR_bb_R_change_control_specific_1 = yes
+		UKR = {
+			TNO_worsen_security_policy_effectiveness_med = yes
+			add_manpower = -5000
+		}
+		FUK = {
+			add_manpower = 5000
+		}
+
+		set_temp_variable = { var_partisan_support_temp = -10 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 15 }
+		FUK_collaborator_support_change = yes
+	}
+	relative_position_id = UKR_a_bureaucratic_reshuffle
+	prerequisite = { focus = UKR_a_bureaucratic_reshuffle }
+	mutually_exclusive = { focus = UKR_pull_some_strings }
+}
+
+shared_focus = {
+	id = UKR_pull_some_strings
+	icon = GFX_GER_SGR_the_last_stockpiles
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_pull_some_strings"
+		FUK = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 150
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 150
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 50
+				producer = GER
+			}
+		}
+		UKR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -750
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -150
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -150
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -50
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -50
+				producer = GER
+			}
+		}
+
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 5 }
+		FUK_collaborator_support_change = yes
+	}
+	relative_position_id = UKR_a_bureaucratic_reshuffle
+	prerequisite = { focus = UKR_a_bureaucratic_reshuffle }
+	mutually_exclusive = { focus = UKR_rally_the_turncoat_coppers }
+}
+
+shared_focus = {
+	id = UKR_build_up_the_polissian_sich
+	icon = GFX_UKR_the_isolated_soldiers
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_build_up_the_polissian_sich"
+		FUK = {
+			TNO_improve_training_policy_effectiveness_med = yes
+			TNO_improve_army_professionalism_med = yes
+		}
+		add_to_variable = { FUK_extra_infantry = 1 }
+		custom_effect_tooltip = UKR_one_division_infantry_tt
+
+		add_command_power = 30
+
+		set_temp_variable = { var_partisan_support_temp = 15 }
+		FUK_partisan_support_change = yes
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_call_the_collaborators
+						has_completed_focus = UKR_organize_the_mobs
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.7
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.7
+					days = 80
+				}
+				country_event = {
+					id = UKR_BohdanIntro.7
+					days = 35
+				}
+			}
+		}
+
+	}
+	relative_position_id = UKR_the_banderite_files
+	prerequisite = { focus = UKR_the_banderite_files }
+}
+
+shared_focus = {
+	id = UKR_organize_the_mobs
+	icon = GFX_GER_Millions_Anger
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_organize_the_mobs"
+		FUK = {
+			add_manpower = 5000
+			add_war_support = 0.075
+		}
+		add_to_variable = { FUK_extra_militia = 1 }
+		custom_effect_tooltip = UKR_one_division_militia_tt
+
+		set_temp_variable = { var_populist_support_temp = 10 }
+		FUK_populist_support_change = yes
+
+		country_event = {
+			id = UKR_pre_UCW_Republic.13
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_build_up_the_polissian_sich
+						has_completed_focus = UKR_call_the_collaborators
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.7
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.7
+					days = 80
+				}
+				country_event = {
+					id = UKR_BohdanIntro.7
+					days = 35
+				}
+			}
+		}
+	}
+	relative_position_id = UKR_recontest_galicia
+	prerequisite = {
+		focus = UKR_recontest_galicia
+		focus = UKR_saturday_night_mass
+	}
+}
+
+shared_focus = {
+	id = UKR_call_the_collaborators
+	icon = GFX_generic_commstech
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_call_the_collaborators"
+		FUK = {
+			add_popularity = { ideology = fascism popularity = 0.005 }
+			add_war_support = 0.05
+			add_manpower = 1000
+		}
+		UKR = {
+			add_war_support = -0.025
+			add_manpower = -1000
+		}
+
+		add_command_power = 20
+
+		set_temp_variable = { var_collaborator_support_temp = 15 }
+		FUK_collaborator_support_change = yes
+
+		country_event = {
+			id = UKR_pre_UCW_Republic.12
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_build_up_the_polissian_sich
+						has_completed_focus = UKR_organize_the_mobs
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.7
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.7
+					days = 80
+				}
+				country_event = {
+					id = UKR_BohdanIntro.7
+					days = 35
+				}
+			}
+		}
+	}
+	relative_position_id = UKR_rally_the_turncoat_coppers
+	prerequisite = {
+		focus = UKR_rally_the_turncoat_coppers
+		focus = UKR_pull_some_strings
+	}
+}
+
+shared_focus = {
+	id = UKR_a_deal_with_the_reds
+	icon = GFX_UKR_a_deal_with_the_reds
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_deal_with_the_reds"
+		country_event = {
+			id = UKR_pre_UCW_Republic.15
+		}
+		FUK = {
+			add_popularity = { ideology = communist popularity = 0.02 }
+			add_war_support = 0.03
+			add_manpower = 3000
+		}
+		UKS = {
+			add_popularity = { ideology = paternalism popularity = 0.02 }
+			add_war_support = 0.03
+			add_manpower = 3000
+		}
+
+		set_temp_variable = { var_partisan_support_temp = -10 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_populist_support_temp = 30 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = -15 }
+		FUK_collaborator_support_change = yes
+	}
+	relative_position_id = UKR_build_up_the_polissian_sich
+	prerequisite = { focus = UKR_build_up_the_polissian_sich }
+	prerequisite = { focus = UKR_organize_the_mobs }
+	mutually_exclusive = { focus = UKR_chase_the_communists_out }
+}
+
+shared_focus = {
+	id = UKR_chase_the_communists_out
+	icon = GFX_UKR_Embers_Of_A_Broken_Dream
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_chase_the_communists_out"
+		country_event = {
+			id = UKR_pre_UCW_Republic.16
+		}
+		UKS = {
+			add_war_support = -0.05
+			add_manpower = -2500
+		}
+
+		set_temp_variable = { var_partisan_support_temp = 10 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_populist_support_temp = -15 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 10 }
+		FUK_collaborator_support_change = yes
+	}
+	relative_position_id = UKR_build_up_the_polissian_sich
+	prerequisite = { focus = UKR_build_up_the_polissian_sich }
+	prerequisite = { focus = UKR_call_the_collaborators }
+	mutually_exclusive = { focus = UKR_a_deal_with_the_reds }
+}
+
+shared_focus = {
+	id = UKR_prepare_a_provisional_government
+	icon = GFX_Generic_Friends_in_the_Council
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_prepare_a_provisional_government"
+		country_event = {
+			id = UKR_pre_UCW_Republic.20
+		}
+		FUK = {
+			add_stability = 0.1
+			TNO_improve_admin_efficiency_med = yes
+		}
+
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_populist_support_temp = 5 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_collaborator_support_temp = 5 }
+		FUK_collaborator_support_change = yes
+
+		add_to_variable = { FUK_pillar_decay = 2 }
+	}
+	relative_position_id = UKR_organize_the_mobs
+	prerequisite = { focus = UKR_organize_the_mobs }
+}
+
+shared_focus = {
+	id = UKR_what_of_the_occupiers
+	icon = GFX_UPO_Death_to_All_Nazis
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_what_of_the_occupiers"
+		country_event = {
+			id = UKR_pre_UCW_Republic.17
+		}
+	}
+	relative_position_id = UKR_call_the_collaborators
+	prerequisite = { focus = UKR_call_the_collaborators }
+}
+
+shared_focus = {
+	id = UKR_a_promise
+	icon = GFX_TNO_generic_inviting_people
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_promise"
+		country_event = {
+			id = UKR_pre_UCW_Republic.21
+		}
+		hidden_effect = {
+			country_event = {
+				id = UKR_BohdanIntro.8
+				days = 35
+			}
+		}
+	}
+	relative_position_id = UKR_a_deal_with_the_reds
+	prerequisite = {
+		focus = UKR_a_deal_with_the_reds
+		focus = UKR_chase_the_communists_out
+	}
+	prerequisite = { focus = UKR_prepare_a_provisional_government }
+	prerequisite = { focus = UKR_what_of_the_occupiers }
+}
+
+shared_focus = {
+	id = UKR_the_anthem_of_the_liberated
+	icon = GFX_UKR_Anthem_Of_The_Liberated
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_anthem_of_the_liberated"
+		FUK = {
+			add_manpower = 5000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 750
+				producer = GER
+			}
+		}
+		country_event = {
+			id = UKR_pre_UCW_Republic.22
+		}
+		hidden_effect = {
+			country_event = {
+				id = UKR_BohdanIntro.9
+				days = 35
+			}
+		}
+	}
+	relative_position_id = UKR_a_promise
+	prerequisite = { focus = UKR_a_promise }
+}
+
+######### Native Trees ##########
+############ U-SSR Tree #########
+#################################
+
+shared_focus = { # The Red Harvest Awaits
+	id = UKR_red_harvest_awaits
+	icon = GFX_UKR_The_Red_Harvest_Awaits
+	cost = 1
+
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_red_harvest_awaits"
+		set_variable = { UKS_extra_militia = 0 }
+		country_event = {
+			id = UKR_pre_UCW.76
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # The Freedom Of Adherence
+	id = UKR_freedom_of_adherence
+	icon = GFX_UKR_The_Freedom_Of_Adherence
+	cost = 3
+	prerequisite = {
+		focus = UKR_red_harvest_awaits
+	}
+
+	relative_position_id = UKR_red_harvest_awaits
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_freedom_of_adherence"
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_des = 3 }
+		UKR_bb_R_change_desolation = yes
+		#-2 grain production in Luhansk (when that part of the mech is finished)
+		country_event = {
+			id = UKR_pre_UCW.77
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # Embers Of A Broken Dream
+	id = UKR_embers_a_broken_dream
+	icon = GFX_UKR_Embers_Of_A_Broken_Dream
+	cost = 3
+	prerequisite = {
+		focus = UKR_red_harvest_awaits
+	}
+
+	relative_position_id = UKR_red_harvest_awaits
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_embers_a_broken_dream"
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 9 }
+		UKR_bb_R_change_control = yes
+		country_event = {
+			id = UKR_pre_UCW.78
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # Arm The Frontline Militias
+	id = UKR_arm_frontline_militias
+	icon = GFX_WAL_Talk_with_socialist_militias
+	cost = 3
+	prerequisite = {
+		focus = UKR_freedom_of_adherence
+	}
+
+	relative_position_id = UKR_freedom_of_adherence
+
+	x = -2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_arm_frontline_militias"
+		UKR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = UKR
+			}
+		}
+		UKS = {
+			add_to_variable = { tno_training_effectiveness = 15 }
+		}
+	}
+}
+
+shared_focus = { # Lessons Of The Long March
+	id = UKR_lessons_long_march
+	icon = GFX_UKR_lessons_of_the_long_march
+	cost = 3
+	prerequisite = {
+		focus = UKR_freedom_of_adherence
+	}
+	mutually_exclusive = { focus = UKR_free_soviet_thought }
+	relative_position_id = UKR_freedom_of_adherence
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_lessons_long_march"
+		UKS = {
+			army_experience = 30
+			TNO_improve_army_professionalism_med = yes
+			country_event = {
+				id = UKR_pre_UCW.79
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = { # The Dissemination of Free, Soviet Thought
+	id = UKR_free_soviet_thought
+	icon = GFX_generic_socialist_progressive_values
+	cost = 3
+	prerequisite = {
+		focus = UKR_embers_a_broken_dream
+	}
+	mutually_exclusive = { focus = UKR_lessons_long_march }
+	relative_position_id = UKR_embers_a_broken_dream
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_free_soviet_thought"
+		UKS = {
+			add_war_support = 0.09
+			add_manpower = 12500
+		}
+		UKR = {
+			add_war_support = -0.04
+			add_manpower = -2000
+		}
+		country_event = {
+			id = UKR_pre_UCW.80
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # Tap The Pipeline
+	id = UKR_tap_pipeline
+	icon = GFX_GRO_building_a_stockpile
+	cost = 3
+	prerequisite = {
+		focus = UKR_embers_a_broken_dream
+	}
+
+	relative_position_id = UKR_embers_a_broken_dream
+
+	x = 2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_tap_pipeline"
+		UKS = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 2000
+				producer = UKR
+			}
+		}
+		UKR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -900
+				producer = UKR
+			}
+		}
+		GER = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -600
+				producer = UKR
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -200
+				producer = UKR
+			}
+		}
+		MCW = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = UKR
+			}
+		}
+	}
+}
+
+shared_focus = { # Small Red Fish, Big Nazi Pond
+	id = UKR_small_fish_nazi_pond
+	icon = GFX_TYM_Live_Among_Wolves
+	cost = 3
+	prerequisite = {
+		focus = UKR_arm_frontline_militias
+	}
+
+	relative_position_id = UKR_arm_frontline_militias
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_small_fish_nazi_pond"
+		227 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+		}
+		228 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+		}
+		218 = {
+			damage_building = {
+				type = infrastructure
+				damage = 2
+			}
+		}
+		221 = {
+			damage_building = {
+				type = railway
+				damage = 2
+				province = 11461
+			}
+			damage_building = {
+				type = railway
+				damage = 2
+				province = 3531
+			}
+			damage_building = {
+				type = railway
+				damage = 2
+				province = 418
+			}
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_des = 12 }
+		UKR_bb_R_change_desolation = yes
+	}
+}
+
+shared_focus = { # The Red Star Shines Above All Ukraine
+	id = UKR_red_star_above_ukraine
+	icon = GFX_WRS_The_Spectre_That_Haunts_The_World
+	cost = 3
+	prerequisite = {
+		focus = UKR_lessons_long_march
+		focus = UKR_free_soviet_thought
+	}
+
+	relative_position_id = UKR_red_harvest_awaits
+
+	x = 0
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_red_star_above_ukraine"
+		UKR = {
+			add_stability = -0.09
+			add_war_support = -0.07
+		}
+		UKS = {
+			add_political_power = 20
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 9 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Chernihiv_region }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Mykolaiv_region }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kiev_region }
+		UKR_bb_R_change_control = yes
+		country_event = {
+			id = UKR_pre_UCW.81
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # A Glorious Revolution, Tomorrow
+	id = UKR_glorious_revolution
+	icon = GFX_UKR_A_Glorious_Revolution_Tomorrow
+	cost = 3
+	prerequisite = {
+		focus = UKR_tap_pipeline
+	}
+
+	relative_position_id = UKR_tap_pipeline
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_glorious_revolution"
+		228 = {
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				instant_build = yes
+				province = 9461
+			}
+		}
+		UKS = {
+			add_war_support = 0.1
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 9 }
+		UKR_bb_R_change_control = yes
+		country_event = {
+			id = UKR_pre_UCW.82
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # A Unitarian, Centralist State
+	id = UKR_centralist_state
+	icon = GFX_UKR_A_Unitarian_Centralist_State
+	cost = 3
+	prerequisite = {
+		focus = UKR_small_fish_nazi_pond
+	}
+	prerequisite = {
+		focus = UKR_red_star_above_ukraine
+	}
+	prerequisite = {
+		focus = UKR_glorious_revolution
+	}
+
+	relative_position_id = UKR_small_fish_nazi_pond
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_centralist_state"
+		UKR = {
+			tno_worsen_agriculture_med = yes
+			TNO_worsen_slavery_policy_effectiveness_high = yes
+		}
+		UKS = {
+			tno_improve_agriculture_med = yes
+		}
+		#-2 grain production in Luhansk (when that part of the mech is finished)
+		country_event = {
+			id = UKR_u_ssr.8
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # Keeping It Together
+	id = UKR_keeping_together
+	icon = GFX_UKR_the_eastern_stronghold
+	cost = 3
+	prerequisite = {
+		focus = UKR_small_fish_nazi_pond
+	}
+	prerequisite = {
+		focus = UKR_red_star_above_ukraine
+	}
+	prerequisite = {
+		focus = UKR_glorious_revolution
+	}
+
+	relative_position_id = UKR_red_star_above_ukraine
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_keeping_together"
+		227 = {
+			set_temp_variable = { state_value_multiplier_temp = 0.99 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
+		228 = {
+			set_temp_variable = { state_value_multiplier_temp = 0.99 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
+		218 = {
+			set_temp_variable = { state_value_multiplier_temp = 0.99 }
+			econ_state_value_change_multiply_specified_state = yes
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+		UKS = {
+			set_temp_variable = { pus_temp = 1 }
+			econ_pus_change = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 500
+				producer = UKR
+			}
+		}
+	}
+}
+
+shared_focus = { # The Longest War
+	id = UKR_the_longest_war
+	icon = GFX_UKR_The_Longest_War
+	cost = 3
+	prerequisite = {
+		focus = UKR_small_fish_nazi_pond
+	}
+	prerequisite = {
+		focus = UKR_red_star_above_ukraine
+	}
+	prerequisite = {
+		focus = UKR_glorious_revolution
+	}
+
+	relative_position_id = UKR_red_star_above_ukraine
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_longest_war"
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 15 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { temp_state = Luhansk_region }
+		UKR_bb_R_change_desolation = yes
+	}
+}
+
+shared_focus = { # Pride In National Communism
+	id = UKR_pride_national_communism
+	icon = GFX_UKR_Pride_In_National_Communism
+	cost = 3
+	prerequisite = {
+		focus = UKR_small_fish_nazi_pond
+	}
+	prerequisite = {
+		focus = UKR_red_star_above_ukraine
+	}
+	prerequisite = {
+		focus = UKR_glorious_revolution
+	}
+
+	relative_position_id = UKR_glorious_revolution
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_pride_national_communism"
+		add_to_variable = { UKS_extra_militia = 1 }
+		UKR = {
+			add_war_support = -0.05
+		}
+		UKS = {
+			add_war_support = 0.1
+			#1 additional militia division whenever we settle on a mechanic for this
+		}
+	}
+}
+
+shared_focus = { # Eyes Trained On The Finer Points
+	id = UKR_eyes_finer_points
+	icon = GFX_UPO_cut_the_lines
+	cost = 3
+	prerequisite = {
+		focus = UKR_centralist_state
+	}
+	prerequisite = {
+		focus = UKR_keeping_together
+	}
+
+	relative_position_id = UKR_centralist_state
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_eyes_finer_points"
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 15 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		UKR = {
+			add_manpower = -7000
+			subtract_from_variable = { TNO_slavery_effectiveness = 15 }
+			custom_effect_tooltip = TNO_worsen_slavery_policy_effectiveness_drastic_tt
+		}
+		country_event = {
+			id = UKR_u_ssr.9
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # Bleed The Beast
+	id = UKR_bleed_the_beast
+	icon = GFX_UKR_Bleed_The_Beast
+	cost = 3
+	prerequisite = {
+		focus = UKR_the_longest_war
+	}
+	prerequisite = {
+		focus = UKR_pride_national_communism
+	}
+
+	relative_position_id = UKR_the_longest_war
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_bleed_the_beast"
+		221 = {
+			damage_building = {
+				type = supply_node
+				damage = 1
+				province = 418
+			}
+		}
+		set_temp_variable = { temp_state = Kharkiv_region }
+		set_temp_variable = { temp_des = 20 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { temp_dev = -10 }
+		set_temp_variable = { temp_exp = -15 }
+		UKR_bb_D_change_development_values = yes
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_des = 10 }
+		UKR_bb_R_change_desolation = yes
+		UKS = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 200
+				producer = UKR
+			}
+		}
+	}
+}
+
+shared_focus = { # Strike Fast, Strike Hard
+	id = UKR_strike_fast_hard
+	icon = GFX_CHI_Strike_when_the_Iron_is_hot
+	cost = 3
+	prerequisite = {
+		focus = UKR_eyes_finer_points
+	}
+	mutually_exclusive = { focus = UKR_stock_within }
+	relative_position_id = UKR_eyes_finer_points
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_strike_fast_hard"
+		UKS = {
+			TNO_improve_training_policy_effectiveness_monthly_high = yes
+			TNO_improve_training_policy_effectiveness_med = yes
+			add_manpower = 30000
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+	}
+}
+
+shared_focus = { # Stock The Soldiers Within
+	id = UKR_stock_within
+	icon = GFX_UKR_the_isolated_soldiers
+	cost = 3
+	prerequisite = {
+		focus = UKR_eyes_finer_points
+	}
+	mutually_exclusive = { focus = UKR_strike_fast_hard }
+	relative_position_id = UKR_eyes_finer_points
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_stock_within"
+		UKS = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+				producer = UKS
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_0
+				amount = 300
+				producer = UKS
+			}
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+	}
+}
+
+shared_focus = { # The National Defense Manual
+	id = UKR_national_defense_manual
+	icon = GFX_UKR_The_National_Defence_Manual
+	cost = 3
+	prerequisite = {
+		focus = UKR_bleed_the_beast
+	}
+	mutually_exclusive = { focus = UKR_arise_comrades_lenin_bukharin }
+	relative_position_id = UKR_bleed_the_beast
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_national_defense_manual"
+		UKS = {
+			add_war_support = 0.05
+			TNO_improve_training_policy_effectiveness_high = yes
+		}
+		country_event = {
+			id = UKR_u_ssr.10
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # Arise, Comrades Of Lenin and Bukharin!
+	id = UKR_arise_comrades_lenin_bukharin
+	icon = GFX_UKR_comrades_lenin_bukharin
+	cost = 3
+	prerequisite = {
+		focus = UKR_bleed_the_beast
+	}
+	mutually_exclusive = { focus = UKR_national_defense_manual }
+	relative_position_id = UKR_bleed_the_beast
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_arise_comrades_lenin_bukharin"
+		UKS = {
+			add_war_support = 0.05
+			add_manpower = 15000
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 15 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		set_temp_variable = { temp_value = 9 }
+		UKR_bb_R_change_control = yes
+		country_event = {
+			id = UKR_u_ssr.11
+			days = 1
+		}
+	}
+}
+
+shared_focus = { # The Soviet Streetfighters
+	id = UKR_soviet_streetfighters
+	icon = GFX_UKR_Soviet_Streetfighters
+	cost = 3
+	prerequisite = {
+		focus = UKR_strike_fast_hard
+		focus = UKR_stock_within
+	}
+
+	relative_position_id = UKR_eyes_finer_points
+
+	x = 0
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_soviet_streetfighters"
+		UKR = {
+			add_stability = -0.08
+		}
+		UKS = {
+			TNO_improve_training_policy_effectiveness_monthly_med = yes
+		}
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_dev = -10 }
+		UKR_bb_D_change_development_values = yes
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		set_temp_variable = { temp_dev = -2 }
+		UKR_bb_D_change_development_values = yes
+	}
+}
+
+shared_focus = { # Assemble The Uprisings
+	id = UKR_assemble_uprisings
+	icon = GFX_BRY_A_Revolutionary_Indoctrination
+	cost = 3
+	prerequisite = {
+		focus = UKR_national_defense_manual
+		focus = UKR_arise_comrades_lenin_bukharin
+	}
+
+	relative_position_id = UKR_bleed_the_beast
+
+	x = 0
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_assemble_uprisings"
+		add_to_variable = { UKS_extra_militia = 2 }
+		UKS = {
+			add_political_power = 20
+			#2 additional militia divisions whenever we settle on a mechanic for this
+		}
+	}
+}
+
+shared_focus = { # The Red Storm Gathers...
+	id = UKR_red_storm_gathers
+	icon = GFX_UKR_the_red_storm_gathers
+	cost = 3
+	prerequisite = {
+		focus = UKR_soviet_streetfighters
+	}
+	prerequisite = {
+		focus = UKR_assemble_uprisings
+	}
+
+	relative_position_id = UKR_red_star_above_ukraine
+
+	x = 0
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_red_storm_gathers"
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 1 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		country_event = {
+			id = UKR_u_ssr.12
+			days = 1
+		}
+	}
+}
+
+######### Native Trees ##########
+#      Ukraine UPA Tree(s)      #
+#################################
+
+shared_focus = {
+	id = UKR_vozhd_commands
+	icon = GFX_UKR_The_Vozhd_Commands
+	cost = 3
+	x = @native_tree_x
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_vozhd_commands"
+		country_event = {
+			id = UKR_pre_UCW_UPA.1
+			days = 1
+		}
+		BOV = {
+			add_popularity = { ideology = ultranationalism popularity = 0.05 }
+		}
+		add_political_power = 25
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.4
+				days = 10
+			}
+			country_event = {
+				id = UKR_NosenkoIntro.4
+				days = 20
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_dissent_dark
+	icon = GFX_YUN_The_Stab_In_The_Back
+	cost = 3
+	prerequisite = { focus = UKR_vozhd_commands }
+	x = -1
+	y = 1
+	relative_position_id = UKR_vozhd_commands
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_dissent_dark"
+		BOV = {
+			add_popularity = { ideology = national_socialism popularity = 0.05 }
+		}
+		add_political_power = 50
+		add_stability = -0.1
+	}
+}
+
+shared_focus = {
+	id = UKR_rage_ranks
+	icon = GFX_GER_Millions_Anger
+	cost = 3
+	prerequisite = { focus = UKR_vozhd_commands }
+	x = 1
+	y = 1
+	relative_position_id = UKR_vozhd_commands
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_rage_ranks"
+		BOV = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+		}
+		add_war_support = -0.1
+		add_command_power = 40
+	}
+}
+
+shared_focus = {
+	id = UKR_bloody_fray
+	icon = GFX_UKR_Into_The_Bloody_Fray
+	cost = 3
+	prerequisite = { focus = UKR_dissent_dark }
+	prerequisite = { focus = UKR_rage_ranks }
+	x = 1
+	y = 1
+	relative_position_id = UKR_dissent_dark
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_bloody_fray"
+		BOV_initialize_three_heads_of_the_dragon = yes
+		custom_effect_tooltip = UKR_BOV_three_heads_of_the_dragon_tt
+		country_event = {
+			id = UKR_pre_UCW_UPA.4
+			days = 1
+		}
+		BOV = {
+			add_war_support = 0.075
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.5
+				days = 10
+			}
+			country_event = {
+				id = UKR_NosenkoIntro.5
+				days = 20
+			}
+			country_event = {
+				id = UKR_BohdanIntro.5
+				days = 35
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_connections_faithless
+	icon = GFX_UKR_connections_of_the_faithless
+	cost = 3
+	prerequisite = { focus = UKR_bloody_fray }
+	#allow_branch = {
+	#	has_completed_focus = UKR_bloody_fray
+	#}
+	x = -5
+	y = 1
+	relative_position_id = UKR_bloody_fray
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_connections_faithless"
+		add_political_power = 50
+		set_temp_variable = { BOV_stetsko_power_temp = 10 }
+		BOV_add_stetsko_power = yes
+		BOV = {
+			add_popularity = { ideology = national_socialism popularity = 0.05 }
+			add_stability = 0.03
+			add_war_support = -0.03
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_charisma_treacherous
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.6
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.6
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.6
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_patriots_poland
+	icon = GFX_UKR_Patriots_In_Poland
+	cost = 3
+	prerequisite = { focus = UKR_connections_faithless }
+	x = -1
+	y = 1
+	relative_position_id = UKR_connections_faithless
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_patriots_poland"
+		country_event = {
+			id = UKR_pre_UCW_UPA.5
+			days = 1
+		}
+		BOV = {
+			add_manpower = 2500
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = GGN
+			}
+		}
+		GGN = {
+			add_stability = -0.03
+		}
+		POL = {
+			add_stability = -0.005
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_marshal_craftsmen
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.7
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.7
+					days = 80
+				}
+				country_event = {
+					id = UKR_BohdanIntro.7
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_unleash_sluzhba_bezpeky
+	icon = GFX_Generic_Question_Reactionaries
+	cost = 3
+	prerequisite = { focus = UKR_connections_faithless }
+	x = 1
+	y = 1
+	relative_position_id = UKR_connections_faithless
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_unleash_sluzhba_bezpeky"
+		country_event = {
+			id = UKR_pre_UCW_UPA.6
+			days = 1
+		}
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 3 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+		BOV = {
+			add_manpower = -2000
+			TNO_improve_security_policy_effectiveness_low = yes
+			add_popularity = { ideology = ultranationalism popularity = 0.03 }
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_carpathian_connection
+	icon = GFX_UKR_The_Carpathian_Connection
+	cost = 3
+	prerequisite = { focus = UKR_patriots_poland }
+	x = 0
+	y = 1
+	relative_position_id = UKR_patriots_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_carpathian_connection"
+		country_event = {
+			id = UKR_pre_UCW_UPA.7
+			days = 1
+		}
+		add_to_variable = { BOV_extra_infantry = 1 }
+		custom_effect_tooltip = UKR_one_division_infantry_tt
+		BOV = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = recon_tech
+			}
+			add_manpower = 2500
+			add_war_support = 0.025
+		}
+		HUN = {
+			add_manpower = -2500
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_steadfast_watchers
+	icon = GFX_INS_purge_bureaucracy
+	cost = 3
+	prerequisite = { focus = UKR_unleash_sluzhba_bezpeky }
+	x = 0
+	y = 1
+	relative_position_id = UKR_unleash_sluzhba_bezpeky
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_steadfast_watchers"
+		country_event = {
+			id = UKR_pre_UCW_UPA.8
+			days = 1
+		}
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+		BOV = {
+			add_popularity = { ideology = ultranationalism popularity = 0.1 }
+			add_stability = -0.1
+			add_war_support = 0.1
+			TNO_improve_military_supervision_policy_effectiveness_med = yes
+			TNO_improve_security_policy_effectiveness_low = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_odessa_operatives
+	icon = GFX_UKR_Operatives_in_Odesa
+	cost = 3
+	prerequisite = { focus = UKR_carpathian_connection }
+	x = 0
+	y = 1
+	relative_position_id = UKR_carpathian_connection
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_odessa_operatives"
+		country_event = {
+			id = UKR_pre_UCW_UPA.9
+			days = 1
+		}
+		TNS = {
+			add_popularity = { ideology = fascism popularity = 0.03 }
+			add_manpower = -5000
+		}
+		BOV = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+				producer = ROM
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_thunder_mountains
+					}
+				}
+				country_event = {
+					id = UKR_BohdanIntro.8
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_gun_down_guard
+	icon = GFX_UKR_Gun_Down_the_Guard
+	cost = 3
+	prerequisite = { focus = UKR_steadfast_watchers }
+	x = 0
+	y = 1
+	mutually_exclusive = { focus = UKR_traitors_due }
+	relative_position_id = UKR_steadfast_watchers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_gun_down_guard"
+		country_event = {
+			id = UKR_pre_UCW_UPA.10
+			days = 1
+		}
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 3 }
+		set_temp_variable = { temp_value = 9 }
+		set_temp_variable = { temp_target = 2 }
+		UKR_bb_R_change_control_specific_1 = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		set_temp_variable = { temp_group = 3 }
+		set_temp_variable = { temp_value = 4.5 }
+		set_temp_variable = { temp_target = 2 }
+		UKR_bb_R_change_control_specific_1 = yes
+		FUK = {
+			add_stability = -0.03
+			add_war_support = -0.075
+			add_manpower = -5000
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_carnage_righteous
+	icon = GFX_UKR_Carnage_of_the_Righteous
+	cost = 3
+	prerequisite = { focus = UKR_bloody_fray }
+	#allow_branch = {
+	#	has_completed_focus = UKR_bloody_fray
+	#}
+	x = 0
+	y = 1
+	relative_position_id = UKR_bloody_fray
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_carnage_righteous"
+		add_command_power = 30
+		add_political_power = 30
+		set_temp_variable = { BOV_klyachkivsky_power_temp = 5 }
+		BOV_add_klyachkivsky_power = yes
+		BOV = {
+			add_popularity = { ideology = ultranationalism popularity = 0.05 }
+			add_stability = -0.03
+			add_war_support = 0.06
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_galicia_forays
+	icon = GFX_POL_A_trip_to_lwow
+	cost = 3
+	prerequisite = { focus = UKR_carnage_righteous }
+	x = -1
+	y = 1
+	relative_position_id = UKR_carnage_righteous
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_galicia_forays"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 3 }
+		set_temp_variable = { temp_value = 4.5 }
+		UKR_bb_R_change_control = yes
+	}
+}
+
+shared_focus = {
+	id = UKR_instill_commandments
+	icon = GFX_YUN_What_Did_You_Do_In_The_War
+	cost = 3
+	prerequisite = { focus = UKR_carnage_righteous }
+	x = 1
+	y = 1
+	relative_position_id = UKR_carnage_righteous
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_instill_commandments"
+		country_event = {
+			id = UKR_pre_UCW_UPA.11
+			days = 1
+		}
+		#add_timed_idea = {
+		#	idea = UKR_BOV_instill_the_commandments
+		#	days = 60
+		#}
+		BOV = {
+			TNO_improve_admin_efficiency_low = yes
+			TNO_improve_academic_base_low = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_blood_soil
+	icon = GFX_UKR_Blood_And_Soil
+	cost = 3
+	prerequisite = { focus = UKR_galicia_forays }
+	prerequisite = { focus = UKR_instill_commandments }
+	x = 0
+	y = 2
+	relative_position_id = UKR_carnage_righteous
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_blood_soil"
+		country_event = {
+			id = UKR_pre_UCW_UPA.12
+			days = 1
+		}
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 3 }
+		set_temp_variable = { temp_value = 9 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+	}
+}
+
+shared_focus = {
+	id = UKR_traitors_due
+	icon = GFX_UKR_All_Traitors_Receive_Their_Due
+	cost = 3
+	prerequisite = { focus = UKR_blood_soil }
+	x = -1
+	y = 1
+	mutually_exclusive = { focus = UKR_gun_down_guard }
+	relative_position_id = UKR_blood_soil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_traitors_due"
+		country_event = {
+			id = UKR_pre_UCW_UPA.13
+			days = 1
+		}
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_group = 3 }
+		set_temp_variable = { temp_value = 15 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_des = 10 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { BOV_stetsko_power_temp = 5 }
+		BOV_add_stetsko_power = yes
+	}
+}
+
+shared_focus = {
+	id = UKR_nationalist_commissariat
+	icon = GFX_ENG_Generic_Blackshirt
+	cost = 3
+	prerequisite = { focus = UKR_blood_soil }
+	x = 1
+	y = 1
+	mutually_exclusive = { focus = UKR_return_roots }
+	relative_position_id = UKR_blood_soil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_nationalist_commissariat"
+		set_temp_variable = { BOV_klyachkivsky_power_temp = 5 }
+		BOV_add_klyachkivsky_power = yes
+		BOV = {
+			add_manpower = 1000
+			TNO_improve_military_supervision_policy_effectiveness_med = yes
+			TNO_improve_security_policy_effectiveness_high = yes
+			add_popularity = { ideology = ultranationalism popularity = 0.02 }
+			TNO_improve_admin_efficiency_low = yes
+		}
+		add_to_variable = { BOV_extra_infantry = 1 }
+		custom_effect_tooltip = UKR_one_division_infantry_tt
+	}
+}
+
+shared_focus = {
+	id = UKR_charisma_treacherous
+	icon = GFX_UKR_Charisma_of_the_Treacherous
+	cost = 3
+	prerequisite = { focus = UKR_bloody_fray }
+	#allow_branch = {
+	#	has_completed_focus = UKR_bloody_fray
+	#}
+	x = 5
+	y = 1
+	relative_position_id = UKR_bloody_fray
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_charisma_treacherous"
+		set_temp_variable = { BOV_shukhevych_power_temp = 10 }
+		BOV_add_shukhevych_power = yes
+		add_command_power = 25
+		BOV = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			add_stability = 0.06
+			add_war_support = 0.03
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_connections_faithless
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.6
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.6
+					days = 20
+				}
+				country_event = {
+					id = UKR_BohdanIntro.6
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_insurgency_years
+	icon = GFX_YUN_Hit_And_Run
+	cost = 3
+	prerequisite = { focus = UKR_charisma_treacherous }
+	x = -1
+	y = 1
+	relative_position_id = UKR_charisma_treacherous
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_insurgency_years"
+		BOV = {
+			TNO_improve_training_policy_effectiveness_high = yes
+			TNO_improve_training_policy_effectiveness_monthly_low = yes
+			TNO_improve_army_professionalism_med = yes
+			army_experience = 25
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_marshal_craftsmen
+	icon = GFX_YUN_Everything_For_The_War
+	cost = 3
+	prerequisite = { focus = UKR_charisma_treacherous }
+	x = 1
+	y = 1
+	relative_position_id = UKR_charisma_treacherous
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_marshal_craftsmen"
+		BOV = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = UKR
+			}
+			TNO_improve_industrial_expertise_low = yes
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_patriots_poland
+					}
+				}
+				country_event = {
+					id = UKR_VanNordenIntro.7
+					days = 10
+				}
+				country_event = {
+					id = UKR_NosenkoIntro.7
+					days = 80
+				}
+				country_event = {
+					id = UKR_BohdanIntro.7
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_wraiths_night
+	icon = GFX_UKR_Wraiths_In_The_Night
+	cost = 3
+	prerequisite = { focus = UKR_insurgency_years }
+	x = 0
+	y = 1
+	relative_position_id = UKR_insurgency_years
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_wraiths_night"
+		country_event = {
+			id = UKR_pre_UCW_UPA.14
+			days = 1
+		}
+		BOV = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		UKR = {
+			add_manpower = -5000
+			add_stability = -0.05
+			TNO_worsen_security_policy_effectiveness_monthly_high = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_farmer_chemist
+	icon = GFX_UKR_Every_Farmer_a_Chemist
+	cost = 3
+	prerequisite = { focus = UKR_marshal_craftsmen }
+	x = 0
+	y = 1
+	relative_position_id = UKR_marshal_craftsmen
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_farmer_chemist"
+		country_event = {
+			id = UKR_pre_UCW_UPA.15
+			days = 1
+		}
+		BOV = {
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 1000
+				producer = UKR
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_return_roots
+	icon = GFX_INS_deploy_the_militia
+	cost = 3
+	prerequisite = { focus = UKR_wraiths_night }
+	x = 0
+	y = 1
+	mutually_exclusive = { focus = UKR_nationalist_commissariat }
+	relative_position_id = UKR_wraiths_night
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_wraiths_night"
+		BOV = { add_manpower = 5000 }
+		set_temp_variable = { BOV_shukhevych_power_temp = 5 }
+		BOV_add_shukhevych_power = yes
+		add_to_variable = { BOV_extra_militia = 2 }
+		custom_effect_tooltip = UKR_two_division_militia_tt
+	}
+}
+
+shared_focus = {
+	id = UKR_thunder_mountains
+	icon = GFX_UKR_Thunder_from_the_Mountains
+	cost = 3
+	prerequisite = { focus = UKR_farmer_chemist }
+	x = 0
+	y = 1
+	relative_position_id = UKR_farmer_chemist
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_thunder_mountains"
+		country_event = {
+			id = UKR_pre_UCW_UPA.16
+			days = 1
+		}
+		BOV = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+				producer = GER
+			}
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = UKR_odessa_operatives
+					}
+				}
+				country_event = {
+					id = UKR_BohdanIntro.8
+					days = 35
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_born_great_hour
+	icon = GFX_UKR_we_were_born_in_a_great_hour
+	cost = 3
+	prerequisite = { focus = UKR_odessa_operatives }
+	prerequisite = {
+		focus = UKR_gun_down_guard
+		focus = UKR_traitors_due
+	}
+	prerequisite = {
+		focus = UKR_nationalist_commissariat
+		focus = UKR_return_roots
+	}
+	prerequisite = { focus = UKR_thunder_mountains }
+	x = 0
+	y = 2
+	relative_position_id = UKR_blood_soil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus UKR_born_great_hour"
+		country_event = {
+			id = UKR_pre_UCW_UPA.17
+			days = 1
+		}
+		BOV = {
+			add_war_support = 0.15
+			add_stability = 0.1
+			add_manpower = 10000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = UKR
+			}
+			add_popularity = { ideology = ultranationalism popularity = 0.05 }
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = UKR_BohdanIntro.9
+				days = 35
+			}
+		}
+	}
+}
+
+############################
+#+========================+#
+#+= Ukraine German Trees =+#
+#+========================+#
+############################
+
+
+######### German Trees ##########
+#    Ukraine Heerema Tree(s)    #
+#################################
+#Cliff was here
+#Also Heerema says you should read worm
+#Corn was here
+#this tree is dead
+#Corn back here
+#this tree will be revived
+#the tree has roared back to life
+#Corn here one more time to say
+#rip bozo this tree is gone
+#but I'll leave this bit as history
+
+######### German Trees ##########
+#    Ukraine Council Tree(s)    #
+#################################
+
+shared_focus = {
+	id = UKR_the_melt_of_rot
+	icon = GFX_UKR_the_melt_of_rot
+	cost = 3
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_melt_of_rot"
+		add_stability = -0.05
+		country_event = {
+			id = UKR_pre_UCW_RK.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.4
+				days = 10
+			}
+			country_event = {
+				id = UKR_NosenkoIntro.4
+				days = 20
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_politics_cant_be_silenced
+	icon = GFX_UKR_The_Politics_Cannot_Be_Silenced
+	cost = 3
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_politics_cant_be_silenced"
+		country_event = {
+			id = UKR_pre_UCW_RK.2
+		}
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_BUR_temp = 5 }
+		UKR_PS_Bureaucrat_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_BUR_temp = 5 }
+		UKR_PS_Bureaucrat_update = yes
+		add_political_power = 25
+
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.5
+				days = 31
+			}
+			country_event = {
+				id = UKR_NosenkoIntro.5
+				days = 41
+			}
+			country_event = {
+				id = UKR_BohdanIntro.5
+				days = 35
+			}
+		}
+
+	}
+	relative_position_id = UKR_the_melt_of_rot
+	prerequisite = { focus = UKR_the_melt_of_rot }
+}
+
+shared_focus = {
+	id = UKR_degenerates_amok
+	icon = GFX_YUN_Hit_And_Run
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_degenerates_amok"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_des = 3 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_des = 3 }
+		UKR_bb_R_change_desolation = yes
+		add_command_power = 25
+		country_event = {
+			id = UKR_pre_UCW_RK.3
+		}
+	}
+	relative_position_id = UKR_the_melt_of_rot
+	prerequisite = { focus = UKR_the_melt_of_rot }
+}
+
+shared_focus = {
+	id = UKR_crumbling_throne
+	icon = GFX_UKR_the_crumbling_throne
+	cost = 3
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_crumbling_throne"
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_BUR_temp = 5 }
+		UKR_PS_Bureaucrat_update = yes
+		TNO_improve_political_parties_policy_effectiveness_high = yes
+		country_event = {
+			id = UKR_pre_UCW_RK.22
+		}
+	}
+	relative_position_id = UKR_politics_cant_be_silenced
+	prerequisite = { focus = UKR_politics_cant_be_silenced }
+}
+
+shared_focus = {
+	id = UKR_spears_below
+	icon = GFX_UKR_The_Spears_From_Below
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_spears_below"
+		custom_effect_tooltip = UKR_spears_below_tt
+		custom_effect_tooltip = UKR_spears_below_2_tt
+		set_variable = { UKR_SC_law_var = 1 }
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_MIL_temp = 7.5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_COL_temp = 7.5 }
+		UKR_PS_Collaborator_update = yes
+		country_event = {
+			id = UKR_pre_UCW_RK.4
+		}
+		add_stability = 0.02
+	}
+	relative_position_id = UKR_politics_cant_be_silenced
+	prerequisite = { focus = UKR_politics_cant_be_silenced }
+}
+
+shared_focus = {
+	id = UKR_nats_west
+	icon = GFX_UKR_the_nationalists_westwards
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_nats_west"
+		set_temp_variable = { temp_state = Volyn_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		set_temp_variable = { temp_state = Kharkiv_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 3 }
+		UKR_bb_R_change_control = yes
+		FUK = {
+			add_stability = -0.01
+		}
+		BOV = {
+			add_stability = -0.01
+		}
+	}
+	relative_position_id = UKR_degenerates_amok
+	prerequisite = { focus = UKR_degenerates_amok }
+}
+
+shared_focus = {
+	id = UKR_bol_east
+	icon = GFX_UKR_the_bolsheviks_eastwards
+	cost = 3
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_bol_east"
+		set_temp_variable = { temp_state = Luhansk_region }
+		set_temp_variable = { temp_group = 0 }
+		set_temp_variable = { temp_value = 6 }
+		UKR_bb_R_change_control = yes
+		UKS = {
+			add_stability = -0.02
+		}
+	}
+	relative_position_id = UKR_degenerates_amok
+	prerequisite = { focus = UKR_degenerates_amok }
+}
+
+shared_focus = {
+	id = UKR_expand_kampfgrupe_ohlendorf
+	icon = GFX_HGR_waffen_ss
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_expand_kampfgrupe_ohlendorf"
+		TNO_improve_military_supervision_policy_effectiveness_med = yes
+		TNO_improve_security_policy_effectiveness_high = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_MIL_temp = 5 }
+		UKR_PS_Militarist_update = yes
+		custom_effect_tooltip = UKR_bb_national_dynmod_change_tt
+		set_temp_variable = { U = 0.05 }
+		UKR_bb_national_dynmod_cp = yes
+		country_event = {
+			id = UKR_pre_UCW_RK.6
+		}
+		set_temp_variable = { temp_action = token:UKR_BB_R_Action_RK_PreUCW_6 }
+		UKR_bb_actions_add_res_action = yes
+	}
+	relative_position_id = UKR_spears_below
+	prerequisite = { focus = UKR_crumbling_throne }
+	prerequisite = { focus = UKR_spears_below }
+}
+
+shared_focus = {
+	id = UKR_revive_civil_authority
+	icon = GFX_ORE_call_the_council_to_order
+	cost = 3
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_revive_civ_authority"
+		TNO_improve_security_policy_effectiveness_monthly_med = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.075 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_admin_efficiency_low = yes
+		add_stability = 0.075
+
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.6
+				days = 10
+			}
+			country_event = {
+				id = UKR_NosenkoIntro.6
+				days = 20
+			}
+			country_event = {
+				id = UKR_BohdanIntro.6
+				days = 35
+			}
+		}
+	}
+	relative_position_id = UKR_the_melt_of_rot
+	prerequisite = { focus = UKR_spears_below }
+	prerequisite = { focus = UKR_nats_west }
+}
+
+shared_focus = {
+	id = UKR_sipo_infiltration
+	icon = GFX_GER_opportune_time_to_clean_house
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_sipo_infiltration"
+		FUK = {
+			add_manpower = -2500
+		}
+		BOV = {
+			add_manpower = -2500
+		}
+		UKS = {
+			add_manpower = -2500
+		}
+		country_event = {
+			id = UKR_pre_UCW_RK.5
+		}
+		set_temp_variable = { temp_action = token:UKR_BB_R_Action_RK_PreUCW_4 }
+		UKR_bb_actions_add_res_action = yes
+	}
+	relative_position_id = UKR_nats_west
+	prerequisite = { focus = UKR_nats_west }
+	prerequisite = { focus = UKR_bol_east }
+}
+
+shared_focus = {
+	id = UKR_consider_industrialists
+	icon = GFX_GER_Industrial_Revitalization
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_consider_industrialists"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = UKR
+		}
+		country_event = {
+			id = UKR_pre_UCW_RK.7
+		}
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_IND_temp = 5 }
+		UKR_PS_Industrialist_update = yes
+		set_temp_variable = { gdp_growth_temp = 0.33 }
+		econ_gdp_growth_change = yes
+	}
+	relative_position_id = UKR_expand_kampfgrupe_ohlendorf
+	prerequisite = { focus = UKR_expand_kampfgrupe_ohlendorf }
+}
+
+shared_focus = {
+	id = UKR_our_most_important_tool
+	icon = GFX_UKR_the_reich_depends_on_us
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_our_most_important_tool"
+		set_variable = { UKR_UNC_law_var = 2 }
+		custom_effect_tooltip = UKR_our_most_important_tool_tt
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_COL_temp = 10 }
+		UKR_PS_Collaborator_update = yes
+		custom_effect_tooltip = UKR_bb_national_dynmod_change_tt
+		set_temp_variable = { U = 0.1 }
+		UKR_bb_national_dynmod_cp = yes
+		add_stability = 0.03
+		set_temp_variable = { temp_action = token:UKR_BB_R_Action_RK_PreUCW_7 }
+		UKR_bb_actions_add_res_action = yes
+		country_event = {
+			id = UKR_pre_UCW_RK.9
+		}
+		hidden_effect = {
+			FUK = {
+				add_manpower = -3000
+				add_war_support = -0.03
+			}
+			BOV = {
+				add_manpower = -3000
+				add_war_support = -0.03
+			}
+		}
+	}
+	relative_position_id = UKR_revive_civil_authority
+	prerequisite = { focus = UKR_revive_civil_authority }
+}
+
+shared_focus = {
+	id = UKR_break_hierarchy
+	icon = GFX_GER_the_steel_fist
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_break_hierarchy"
+		FUK = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			TNO_worsen_training_policy_effectiveness_high = yes
+		}
+		BOV = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			TNO_worsen_training_policy_effectiveness_high = yes
+		}
+		UKS = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			TNO_worsen_training_policy_effectiveness_high = yes
+		}
+	}
+	relative_position_id = UKR_sipo_infiltration
+	prerequisite = { focus = UKR_sipo_infiltration }
+}
+
+shared_focus = {
+	id = UKR_a_corrupted_system
+	icon = GFX_CAU_by_right_of_aryan_blood
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_corrupted_system"
+		country_event = {
+			id = UKR_pre_UCW_RK.10
+		}
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_BUR_temp = 7.5 }
+		UKR_PS_Bureaucrat_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_MIL_temp = 7.5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_COL_temp = 7.5 }
+		UKR_PS_Collaborator_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_IND_temp = 7.5 }
+		UKR_PS_Industrialist_update = yes
+	}
+	relative_position_id = UKR_consider_industrialists
+	prerequisite = { focus = UKR_consider_industrialists }
+	prerequisite = { focus = UKR_our_most_important_tool }
+	prerequisite = { focus = UKR_break_hierarchy }
+}
+
+shared_focus = {
+	id = UKR_but_whos_to_blame
+	icon = GFX_GER_Saving_Face
+	cost = 3
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_but_whos_to_blame"
+		country_event = {
+			id = UKR_pre_UCW_RK.11
+		}
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_BUR_temp = 5 }
+		UKR_PS_Bureaucrat_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_MIL_temp = 5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_COL_temp = 5 }
+		UKR_PS_Collaborator_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_IND_temp = 5 }
+		UKR_PS_Industrialist_update = yes
+
+		hidden_effect = {
+			country_event = {
+				id = UKR_VanNordenIntro.7
+				days = 10
+			}
+			country_event = {
+				id = UKR_NosenkoIntro.7
+				days = 80
+			}
+			country_event = {
+				id = UKR_BohdanIntro.7
+				days = 35
+			}
+		}
+	}
+	relative_position_id = UKR_break_hierarchy
+	prerequisite = { focus = UKR_consider_industrialists }
+	prerequisite = { focus = UKR_our_most_important_tool }
+	prerequisite = { focus = UKR_break_hierarchy }
+}
+
+shared_focus = {
+	id = UKR_rot_within
+	icon = GFX_UKR_The_Rot_Grows_Within
+	cost = 3
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_rot_within"
+		TNO_improve_admin_efficiency_low = yes
+		TNO_improve_penal_system_policy_effectiveness_high = yes
+		TNO_improve_security_policy_effectiveness_high = yes
+		add_war_support = 0.075
+		add_political_power = -50
+		add_manpower = -500
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_BUR_temp = -5 }
+		UKR_PS_Bureaucrat_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_MIL_temp = -5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_COL_temp = -5 }
+		UKR_PS_Collaborator_update = yes
+	}
+	relative_position_id = UKR_a_corrupted_system
+	prerequisite = { focus = UKR_a_corrupted_system }
+	prerequisite = { focus = UKR_but_whos_to_blame }
+	mutually_exclusive = {
+		focus = UKR_walk_eggshells
+		focus = UKR_orthodoxy_kills
+	}
+}
+
+shared_focus = {
+	id = UKR_walk_eggshells
+	icon = GFX_UKR_walk_the_eggshells
+	cost = 3
+	x = 0
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_walk_eggshells"
+		add_stability = 0.1
+		add_political_power = 30
+		TNO_worsen_political_parties_policy_effectiveness_med = yes
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_BUR_temp = 5 }
+		UKR_PS_Bureaucrat_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_MIL_temp = 5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_COL_temp = 5 }
+		UKR_PS_Collaborator_update = yes
+	}
+	relative_position_id = UKR_the_melt_of_rot
+	prerequisite = { focus = UKR_a_corrupted_system }
+	prerequisite = { focus = UKR_but_whos_to_blame }
+	mutually_exclusive = {
+		focus = UKR_rot_within
+		focus = UKR_orthodoxy_kills
+	}
+}
+
+shared_focus = {
+	id = UKR_orthodoxy_kills
+	icon = GFX_UKR_Orthodoxy_Kills
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_orthodoxy_kills"
+		set_temp_variable = { temp_all_exp = -6 }
+		UKR_bb_D_change_development_values_all = yes
+		set_temp_variable = { temp_all_des = -3 }
+		UKR_bb_R_change_desolation_all = yes
+		set_temp_variable = { temp_all_group = 0 }
+		set_temp_variable = { temp_all_value = 1.5 }
+		UKR_bb_R_change_control_all = yes
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_MIL_temp = 2.5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_COL_temp = 2.5 }
+		UKR_PS_Collaborator_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_MIL_temp = 2.5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_COL_temp = 2.5 }
+		UKR_PS_Collaborator_update = yes
+	}
+	relative_position_id = UKR_but_whos_to_blame
+	prerequisite = { focus = UKR_a_corrupted_system }
+	prerequisite = { focus = UKR_but_whos_to_blame }
+	mutually_exclusive = {
+		focus = UKR_rot_within
+		focus = UKR_walk_eggshells
+	}
+}
+
+shared_focus = {
+	id = UKR_the_unavoidable
+	icon = GFX_GER_Everyone_Calm_Down
+	cost = 3
+	x = 0
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_unavoidable"
+		add_stability = 0.075
+		country_event = {
+			id = UKR_pre_UCW_RK.13
+		}
+		set_temp_variable = { temp_action = token:UKR_BB_R_Action_RK_PreUCW_5 }
+		UKR_bb_actions_add_res_action = yes
+		hidden_effect = {
+			country_event = {
+				id = UKR_BohdanIntro.8
+				days = 35
+			}
+		}
+	}
+	relative_position_id = UKR_the_melt_of_rot
+	prerequisite = {
+		focus = UKR_rot_within
+		focus = UKR_walk_eggshells
+		focus = UKR_orthodoxy_kills
+	}
+}
+
+shared_focus = {
+	id = UKR_dial_other_brautigam
+	icon = GFX_UKR_Dial_Up_The_Other_Brautigam
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_dial_other_brautigam"
+		country_event = {
+			id = UKR_pre_UCW_RK.14
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 250
+			producer = GER
+		}
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_BUR_temp = 10 }
+		UKR_PS_Bureaucrat_update = yes
+		custom_effect_tooltip = UKR_one_division_infantry_tt
+		add_to_variable = { UKR_extra_infantry = 1 }
+	}
+	relative_position_id = UKR_the_unavoidable
+	prerequisite = { focus = UKR_the_unavoidable }
+}
+
+shared_focus = {
+	id = UKR_take_more_no_cost
+	icon = GFX_Generic_Agricultural_Control
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_take_more_no_cost"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 250
+			producer = GER
+		}
+		set_temp_variable = { money_reserves_temp = 0.075 }
+		econ_money_reserves_change_raw_money = yes
+	}
+	relative_position_id = UKR_the_unavoidable
+	prerequisite = { focus = UKR_the_unavoidable }
+}
+
+shared_focus = {
+	id = UKR_last_calls
+	icon = GFX_UKR_last_calls
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_last_calls"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 750
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 150
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 150
+			producer = GER
+		}
+	}
+	relative_position_id = UKR_dial_other_brautigam
+	prerequisite = { focus = UKR_dial_other_brautigam }
+}
+
+shared_focus = {
+	id = UKR_more_everything_all_time
+	icon = GFX_UKR_More_Of_Everything_All_The_Time
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_more_everything_all_time"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = GER
+		}
+		country_event = {
+			id = UKR_pre_UCW_RK.15
+		}
+		set_temp_variable = { money_reserves_temp = 0.15 }
+		econ_money_reserves_change_raw_money = yes
+		set_temp_variable = { temp_state = Kiev_region }
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { temp_state = Mykolaiv_region }
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+		set_temp_variable = { temp_state = Chernihiv_region }
+		set_temp_variable = { temp_des = 5 }
+		UKR_bb_R_change_desolation = yes
+	}
+	relative_position_id = UKR_take_more_no_cost
+	prerequisite = { focus = UKR_take_more_no_cost }
+}
+
+shared_focus = {
+	id = UKR_high_time_steel
+	icon = GFX_UKR_high_time_to_steel_oneself
+	cost = 3
+	x = 0
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_high_time_steel"
+		country_event = {
+			id = UKR_pre_UCW_RK.16
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 750
+			producer = GER
+		}
+		add_manpower = 1500
+		add_war_support = 0.05
+		hidden_effect = {
+			country_event = {
+				id = UKR_BohdanIntro.9
+				days = 35
+			}
+		}
+	}
+	relative_position_id = UKR_the_melt_of_rot
+	prerequisite = { focus = UKR_last_calls }
+	prerequisite = { focus = UKR_more_everything_all_time }
+}
+
+#  ####    ####   ##      ##       ####   #####    ####   ######
+# ##  ##  ##  ##  ##      ##      ##  ##  ##  ##  ##      ##
+# ##      ##  ##  ##      ##      ######  #####    ####   ####
+# ##  ##  ##  ##  ##      ##      ##  ##  ##          ##  ##
+#  ####    ####   ######  ######  ##  ##  ##       ####   ######
+
+##############################
+#+==========================+#
+#+=       RK UCW Tree      =+#
+#+==========================+#
+##############################
+
+shared_focus = {
+	id = UKR_the_depth_of_decay
+	icon = GFX_UKR_The_Depth_of_Decay
+	cost = 2
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_depth_of_decay"
+		custom_effect_tooltip = UKR_the_depth_of_decay_tt
+		add_stability = 0.05
+		country_event = {
+			id = UKR_UCW_RK.1
+		}
+	}
+}
+
+shared_focus = {
+	id = UKR_regroup_our_forces
+	icon = GFX_PRM_Begin_the_Trials
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_regroup_our_forces"
+		add_manpower = 15000
+		add_war_support = 0.075
+		remove_ideas = UKR_disjointed_forces
+		country_event = {
+			id = UKR_UCW_RK.22
+		}
+	}
+	relative_position_id = UKR_the_depth_of_decay
+	prerequisite = { focus = UKR_the_depth_of_decay }
+}
+
+shared_focus = {
+	id = UKR_our_lifeline_cut
+	icon = GFX_UPO_cut_the_lines
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_our_lifeline_cut"
+		add_political_power = -30
+		country_event = {
+			id = UKR_UCW_RK.2
+		}
+		set_temp_variable = { P = 0.01 }
+		UKR_RK_all_alone_change_stab_P = yes
+	}
+	relative_position_id = UKR_the_depth_of_decay
+	prerequisite = { focus = UKR_the_depth_of_decay }
+}
+
+shared_focus = {
+	id = UKR_shelter_the_settlers
+	icon = GFX_GER_To_Banish_Fear
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_shelter_the_settlers"
+		add_stability = 0.02
+		add_war_support = 0.05
+		add_manpower = 7500
+		country_event = {
+			id = UKR_UCW_RK.3
+		}
+	}
+	relative_position_id = UKR_regroup_our_forces
+	prerequisite = { focus = UKR_regroup_our_forces }
+	prerequisite = { focus = UKR_our_lifeline_cut }
+}
+
+shared_focus = {
+	id = UKR_restore_order_to_the_countryside
+	icon = GFX_PRM_An_Army_of_Nightmares
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_restore_order_to_the_countryside"
+		add_stability = 0.075
+		custom_effect_tooltip =	UKR_RK_war_within_header_tt
+		set_temp_variable = { U = -0.1 }
+		UKR_RK_war_within_change_resistance_activity_U = yes
+		set_temp_variable = { U = 0.015 }
+		UKR_RK_war_within_change_stab_U = yes
+	}
+	relative_position_id = UKR_regroup_our_forces
+	prerequisite = { focus = UKR_regroup_our_forces }
+}
+
+shared_focus = {
+	id = UKR_rebuild_the_government
+	icon = GFX_GER_Urban_Reconstruction
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_rebuild_the_government"
+		add_political_power = 50
+		add_stability = 0.05
+		country_event = {
+			id = UKR_UCW_RK.23
+		}
+	}
+	relative_position_id = UKR_our_lifeline_cut
+	prerequisite = { focus = UKR_our_lifeline_cut }
+}
+
+shared_focus = {
+	id = UKR_to_the_strongest
+	icon = GFX_GER_A_Strong_People
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_to_the_strongest"
+		add_political_power = 25
+		swap_ideas = {
+			remove_idea = UKR_indecisive_council
+			add_idea = UKR_to_the_strongest_idea
+		}
+		if = {
+			limit = {
+				has_country_flag = UKR_play_leibbrandt
+			}
+			country_event = {
+				id = UKR_UCW_RK.12
+			}
+			set_temp_variable = { UKR_PS_contender_id = 1 }
+			set_temp_variable = { PS_BUR_temp = 15 }
+			UKR_PS_Bureaucrat_update = yes
+		}
+		else_if = {
+			limit = {
+				has_country_flag = UKR_play_ohlendorf
+			}
+			country_event = {
+				id = UKR_UCW_RK.13
+			}
+			set_temp_variable = { UKR_PS_contender_id = 0 }
+			set_temp_variable = { PS_BUR_temp = 15 }
+			UKR_PS_Bureaucrat_update = yes
+		}
+		else_if = {
+			limit = {
+				has_country_flag = UKR_play_brautigam
+			}
+			country_event = {
+				id = UKR_UCW_RK.14
+			}
+			set_temp_variable = { UKR_PS_contender_id = 2 }
+			set_temp_variable = { PS_BUR_temp = 15 }
+			UKR_PS_Bureaucrat_update = yes
+		}
+	}
+	relative_position_id = UKR_rebuild_the_government
+	prerequisite = { focus = UKR_rebuild_the_government }
+	mutually_exclusive = { focus = UKR_were_all_in_this_together }
+}
+
+shared_focus = {
+	id = UKR_were_all_in_this_together
+	icon = GFX_GER_united_as_one
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_were_all_in_this_together"
+		add_political_power = -25
+		swap_ideas = {
+			remove_idea = UKR_indecisive_council
+			add_idea = UKR_in_this_together
+		}
+		country_event = {
+			id = UKR_UCW_RK.15
+		}
+	}
+	relative_position_id = UKR_rebuild_the_government
+	prerequisite = { focus = UKR_rebuild_the_government }
+	mutually_exclusive = { focus = UKR_to_the_strongest }
+}
+
+shared_focus = {
+	id = UKR_utilize_spare_divisions
+	icon = GFX_HGR_Fight_For_Survival
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_utilize_spare_divisions"
+		country_event = {
+			id = UKR_UCW_RK.11
+		}
+		add_stability = 0.05
+		custom_effect_tooltip =	UKR_RK_war_within_header_tt
+		set_temp_variable = { U = -0.35 }
+		UKR_RK_war_within_change_garrison_factor_U = yes
+		set_temp_variable = { U = -0.15 }
+		UKR_RK_war_within_change_resistance_activity_U= yes
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_MIL_temp = 5 }
+		UKR_PS_Militarist_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_MIL_temp = 5 }
+		UKR_PS_Militarist_update = yes
+	}
+	relative_position_id = UKR_restore_order_to_the_countryside
+	prerequisite = { focus = UKR_restore_order_to_the_countryside }
+	mutually_exclusive = { focus = UKR_mobilize_the_kampfgruppe }
+}
+
+shared_focus = {
+	id = UKR_mobilize_the_kampfgruppe
+	icon = GFX_HGR_keep_our_ss_strong
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_mobilize_the_kampfgruppe"
+		country_event = {
+			id = UKR_UCW_RK.4
+		}
+		add_stability = 0.05
+		custom_effect_tooltip =	UKR_RK_war_within_header_tt
+		set_temp_variable = { U = -0.13 }
+		UKR_RK_war_within_change_resistance_growth_U = yes
+		set_temp_variable = { U = -0.15 }
+		UKR_RK_war_within_change_resistance_activity_U = yes
+		set_temp_variable = { U = -0.2 }
+		UKR_RK_war_within_change_garrison_factor_U = yes
+		set_temp_variable = { U = -0.15 }
+		UKR_RK_war_within_change_pop_U = yes
+		set_temp_variable = { UKR_PS_contender_id = 0 }
+		set_temp_variable = { PS_MIL_temp = 10 }
+		UKR_PS_Militarist_update = yes
+	}
+	relative_position_id = UKR_restore_order_to_the_countryside
+	prerequisite = { focus = UKR_restore_order_to_the_countryside }
+	mutually_exclusive = { focus = UKR_utilize_spare_divisions }
+}
+
+shared_focus = {
+	id = UKR_you_dont_get_to_choose
+	icon = GFX_UKR_All_the_Gold_That_Is_or_Ever_Was
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_you_dont_get_to_choose"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 2500
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 500
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 500
+			producer = GER
+		}
+		add_stability = 0.075
+		set_temp_variable = { UCW_supply_temp = 50 }
+		UCW_supply_left_change = yes
+	}
+	relative_position_id = UKR_shelter_the_settlers
+	prerequisite = { focus = UKR_shelter_the_settlers }
+	prerequisite = {
+		focus = UKR_to_the_strongest
+		focus = UKR_were_all_in_this_together
+	}
+}
+
+shared_focus = {
+	id = UKR_expand_the_una
+	icon = GFX_UKR_Expand_the_UNA
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_expand_the_una"
+		add_manpower = 5000
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"Schutzmannschaft-Brigade\" start_experience_factor = 0.2 start_equipment_factor = 1"
+				owner = UKR
+				count = 1
+			}
+		}
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_COL_temp = 10 }
+		UKR_PS_Collaborator_update = yes
+		set_temp_variable = { P = 0.1 }
+		UKR_RK_all_alone_change_recruitable_pop_P = yes
+	}
+	relative_position_id = UKR_shelter_the_settlers
+	prerequisite = { focus = UKR_shelter_the_settlers }
+	prerequisite = {
+		focus = UKR_utilize_spare_divisions
+		focus = UKR_mobilize_the_kampfgruppe
+	}
+}
+
+shared_focus = {
+	id = UKR_panacea
+	icon = GFX_PRM_Welcome_The_Worthy
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_panacea"
+		custom_effect_tooltip = UKR_panacea_tt
+		hidden_effect = {
+			country_event = {
+				id = UKR_UCW_RK.16
+			}
+			set_temp_variable = { P = 0.01 }
+			UKR_RK_all_alone_change_stab_P = yes
+		}
+	}
+	relative_position_id = UKR_you_dont_get_to_choose
+	prerequisite = { focus = UKR_you_dont_get_to_choose }
+	prerequisite = { focus = UKR_expand_the_una }
+}
+
+shared_focus = {
+	id = UKR_hungerpolitik
+	icon = GFX_UKR_hungerpolitik
+	cost = 2
+	x = -3
+	y = 1
+	allow_branch = {
+		has_completed_focus = UKR_panacea
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_hungerpolitik"
+		set_temp_variable = { UCW_supply_temp = 150 }
+		UCW_supply_left_change = yes
+		add_stability = -0.05
+	}
+	relative_position_id = UKR_panacea
+	prerequisite = { focus = UKR_panacea }
+}
+
+shared_focus = {
+	id = UKR_useless_mouths
+	icon = GFX_PRM_take_from_the_unworthy
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_useless_mouths"
+		set_temp_variable = { UCW_supply_temp = 75 }
+		UCW_supply_left_change = yes
+		custom_effect_tooltip = UKR_RK_panacea_header_tt
+		set_temp_variable = { C = -0.5 }
+		UKR_RK_panacea_change_monthly_pop_C = yes
+		set_temp_variable = { C = -0.05 }
+		UKR_RK_panacea_stability_weekly_C = yes
+		set_temp_variable = { C = -10 }
+		UKR_RK_panacea_change_supply_consumption_C = yes
+	}
+	relative_position_id = UKR_hungerpolitik
+	prerequisite = { focus = UKR_hungerpolitik }
+	mutually_exclusive = { focus = UKR_the_good_ukrainians }
+}
+
+shared_focus = {
+	id = UKR_the_good_ukrainians
+	icon = GFX_UKR_the_reich_depends_on_us
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_the_good_ukrainians"
+		add_stability = 0.05
+		custom_effect_tooltip = UKR_RK_panacea_header_tt
+		set_temp_variable = { C = 0.15 }
+		UKR_RK_panacea_change_monthly_pop_C = yes
+		set_temp_variable = { C = 0.003 }
+		UKR_RK_panacea_stability_weekly_C = yes
+	}
+	relative_position_id = UKR_hungerpolitik
+	prerequisite = { focus = UKR_hungerpolitik }
+	mutually_exclusive = { focus = UKR_useless_mouths }
+}
+
+shared_focus = {
+	id = UKR_starvation
+	icon = GFX_BRG_A_Second_Try
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_starvation"
+		country_event = {
+			id = UKR_UCW_RK.17
+		}
+		custom_effect_tooltip = UKR_RK_panacea_header_tt
+		set_temp_variable = { C = -0.3 }
+		UKR_RK_panacea_change_monthly_pop_C = yes
+		set_temp_variable = { C = 2.5 }
+		UKR_RK_panacea_change_supply_consumption_C = yes
+	}
+	relative_position_id = UKR_useless_mouths
+	prerequisite = {
+		focus = UKR_useless_mouths
+		focus = UKR_the_good_ukrainians
+	}
+}
+
+shared_focus = {
+	id = UKR_bandenbekmpfung
+	icon = GFX_UKR_A_Countryside_of_Pain_and_Anguish
+	cost = 2
+	x = 3
+	y = 1
+	allow_branch = {
+		has_completed_focus = UKR_panacea
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_bandenbekmpfung"
+		custom_effect_tooltip =	UKR_RK_war_within_header_tt
+		set_temp_variable = { U = -0.10 }
+		UKR_RK_war_within_change_resistance_growth_U = yes
+		set_temp_variable = { U = -0.10 }
+		UKR_RK_war_within_change_pop_U = yes
+		set_temp_variable = { U = -0.10 }
+		UKR_RK_war_within_change_garrison_factor_U = yes
+		set_temp_variable = { U = 0.01 }
+		UKR_RK_war_within_change_stab_U = yes
+	}
+	relative_position_id = UKR_panacea
+	prerequisite = { focus = UKR_panacea }
+}
+
+shared_focus = {
+	id = UKR_directive_no_46
+	icon = GFX_UKR_corpse_body_pile
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_directive_no_46"
+		custom_effect_tooltip =	UKR_RK_war_within_header_tt
+		set_temp_variable = { U = -0.05 }
+		UKR_RK_war_within_change_resistance_growth_U = yes
+		set_temp_variable = { U = -0.20 }
+		UKR_RK_war_within_change_resistance_activity_U = yes
+		set_temp_variable = { U = -0.15 }
+		UKR_RK_war_within_change_pop_U = yes
+		set_temp_variable = { U = 0.015 }
+		UKR_RK_war_within_change_stab_U = yes
+		add_stability = 0.075
+		random_owned_controlled_state = {
+			set_temp_variable = { state_value_multiplier_temp = 0.97 }
+			econ_state_value_change_multiply = yes
+		}
+		random_owned_controlled_state = {
+			set_temp_variable = { state_value_multiplier_temp = 0.97 }
+			econ_state_value_change_multiply = yes
+		}
+	}
+	relative_position_id = UKR_bandenbekmpfung
+	prerequisite = { focus = UKR_bandenbekmpfung }
+	mutually_exclusive = { focus = UKR_a_second_operation_hannover }
+}
+
+shared_focus = {
+	id = UKR_a_second_operation_hannover
+	icon = GFX_GER_smoke_generic
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_second_operation_hannover"
+		BOV = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_manpower = -15000
+		}
+		FUK = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_manpower = -15000
+		}
+		UKS = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_manpower = -15000
+		}
+		add_war_support = 0.05
+		random_owned_state = {
+			create_unit = {
+				division = "division_template = \"Schutzmannschaft-Brigade\" start_experience_factor = 0.2 start_equipment_factor = 1"
+				owner = UKR
+				count = 1
+			}
+		}
+	}
+	relative_position_id = UKR_bandenbekmpfung
+	prerequisite = { focus = UKR_bandenbekmpfung }
+	mutually_exclusive = { focus = UKR_directive_no_46 }
+}
+
+shared_focus = {
+	id = UKR_destruction
+	icon = GFX_UKR_grave_cross_church
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_destruction"
+		country_event = {
+			id = UKR_UCW_RK.20
+		}
+		set_temp_variable = { temp_econ_GDP_boost_percentage = -0.05 }
+		econ_GDP_boost_once_percentage = yes
+		custom_effect_tooltip =	UKR_RK_war_within_header_tt
+		set_temp_variable = { U = -0.10 }
+		UKR_RK_war_within_change_resistance_growth_U = yes
+		set_temp_variable = { U = -0.10 }
+		UKR_RK_war_within_change_resistance_activity_U = yes
+		set_temp_variable = { U = -0.05 }
+		UKR_RK_war_within_change_pop_U = yes
+		set_temp_variable = { U = -0.015 }
+		UKR_RK_war_within_change_stab_U = yes
+	}
+	relative_position_id = UKR_directive_no_46
+	prerequisite = {
+		focus = UKR_directive_no_46
+		focus = UKR_a_second_operation_hannover
+	}
+}
+
+shared_focus = {
+	id = UKR_silence_the_sentimentalists
+	icon = GFX_GER_Everyone_Calm_Down
+	cost = 2
+	x = 0
+	y = 1
+	allow_branch = {
+		has_completed_focus = UKR_panacea
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_silence_the_sentimentalists"
+		set_temp_variable = { UKR_PS_contender_id = 1 }
+		set_temp_variable = { PS_BUR_temp = -5 }
+		UKR_PS_Bureaucrat_update = yes
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_BUR_temp = -10 }
+		UKR_PS_Bureaucrat_update = yes
+		country_event = {
+			id = UKR_UCW_RK.18
+		}
+	}
+	relative_position_id = UKR_panacea
+	prerequisite = { focus = UKR_panacea }
+}
+
+shared_focus = {
+	id = UKR_corruption
+	icon = GFX_goal_GRO_Evil_and_Betrayal
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_corruption"
+		add_stability = 0.05
+		set_temp_variable = { UKR_PS_contender_id = 2 }
+		set_temp_variable = { PS_BUR_temp = 15 }
+		UKR_PS_Bureaucrat_update = yes
+		country_event = {
+			id = UKR_UCW_RK.19
+		}
+	}
+	relative_position_id = UKR_silence_the_sentimentalists
+	prerequisite = { focus = UKR_silence_the_sentimentalists }
+}
+
+shared_focus = {
+	id = UKR_peace_in_a_million_pieces
+	icon = GFX_UKR_Peace_in_a_Million_Pieces
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_peace_in_a_million_pieces"
+		country_event = {
+			id = UKR_UCW_RK.21
+		}
+		set_temp_variable = { UCW_supply_temp = 100 }
+		UCW_supply_left_change = yes
+		add_stability = -0.1
+		add_war_support = -0.1
+		set_temp_variable = { gdp_growth_temp = -2 }
+		econ_gdp_growth_change = yes
+	}
+	relative_position_id = UKR_starvation
+	prerequisite = { focus = UKR_starvation }
+	prerequisite = { focus = UKR_destruction }
+	prerequisite = { focus = UKR_corruption }
+}
+
+# RK POST WAR TREES
+# ill make it fancy later
+
+shared_focus = {
+	id = UKR_a_flag_above_ashes
+	icon = GFX_UKR_A_flag_above_ashes
+	cost = 1
+	x = 3
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_flag_above_ashes"
+		custom_effect_tooltip = UKR_flag_above_ashes_tt
+	}
+}
+
+shared_focus = {
+	id = UKR_begin_hunting_the_partisans
+	icon = GFX_CAU_stomp_on_partisans
+	cost = 1
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_begin_hunting_the_partisans"
+		add_stability = 0.05
+		TNO_improve_security_policy_effectiveness_med = yes
+		#set_temp_variable = { temp_group = 0 }
+		#set_temp_variable = { temp_all_value = 4.5 }
+		#UKR_bb_R_change_control_all = yes
+		#country_event = UKR_pwr_struggle.9
+	}
+	relative_position_id = UKR_a_flag_above_ashes
+	prerequisite = { focus = UKR_a_flag_above_ashes }
+}
+
+shared_focus = {
+	id = UKR_bring_back_the_breadbasket
+	icon = GFX_Generic_Farming
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_bring_back_the_breadbasket"
+		set_temp_variable = { temp_econ_GDP_boost_percentage = 0.015 }
+		econ_GDP_boost_once_percentage = yes
+		set_temp_variable = { gdp_growth_temp = 0.66 }
+		econ_gdp_growth_change = yes
+		#set_temp_variable = { temp_all_dev = 5 }
+		#UKR_bb_D_change_development_values_all = yes
+		#set_temp_variable = { temp_state = Mykolaiv_region }
+		#set_temp_variable = { temp_grain_output = 1 }
+		#UKR_bb_D_change_development_values = yes
+		#country_event = UKR_pwr_struggle.10
+	}
+	relative_position_id = UKR_a_flag_above_ashes
+	prerequisite = { focus = UKR_a_flag_above_ashes }
+}
+
+shared_focus = {
+	id = UKR_problems_in_the_field
+	icon = GFX_CAU_by_right_of_aryan_blood
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_problems_in_the_field"
+		#set_temp_variable = { temp_all_des = -3 }
+		#UKR_bb_R_change_desolation_all = yes
+		add_manpower = -10000
+		set_temp_variable = { temp_econ_GDP_boost_percentage = -0.005 }
+		econ_GDP_boost_once_percentage = yes
+	}
+	relative_position_id = UKR_begin_hunting_the_partisans
+	prerequisite = { focus = UKR_begin_hunting_the_partisans }
+}
+
+shared_focus = {
+	id = UKR_matters_of_priorities
+	icon = GFX_generic_change_law_slavery
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_matters_of_priorities"
+		add_political_power = -30
+	}
+	relative_position_id = UKR_bring_back_the_breadbasket
+	prerequisite = { focus = UKR_bring_back_the_breadbasket }
+}
+
+shared_focus = {
+	id = UKR_something_is_broken
+	icon = GFX_UKR_Something_is_broken
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_something_is_broken"
+		add_stability = -0.05
+		add_political_power = 25
+		custom_effect_tooltip = UKR_something_is_broken_tt
+		set_variable = { UKR_SC_law_var = 3 }
+	}
+	relative_position_id = UKR_problems_in_the_field
+	prerequisite = { focus = UKR_problems_in_the_field }
+	prerequisite = { focus = UKR_matters_of_priorities }
+}
+
+shared_focus = {
+	id = UKR_a_corpse_on_the_throne
+	icon = GFX_UKR_A_corpse_on_the_throne
+	cost = 1
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_corpse_on_the_throne"
+		add_political_power = -20
+		custom_effect_tooltip = UKR_corpse_throne_tt
+		set_variable = { UKR_UNC_law_var = 3 }
+		country_event = UKR_pwr_struggle.14
+	}
+	relative_position_id = UKR_something_is_broken
+	prerequisite = { focus = UKR_something_is_broken }
+}
+
+shared_focus = {
+	id = UKR_a_task_left_unfinished
+	icon = GFX_ENG_those_who_burn_factories
+	cost = 1
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_task_left_unfinished"
+		add_manpower = -5000
+		add_stability = -0.03
+		#set_temp_variable = { temp_group = 0 }
+		#set_temp_variable = { temp_all_value = -3 }
+		#UKR_bb_R_change_control_all = yes
+		country_event = UKR_pwr_struggle.13
+	}
+	relative_position_id = UKR_something_is_broken
+	prerequisite = { focus = UKR_something_is_broken }
+}
+
+shared_focus = {
+	id = UKR_a_pile_of_directives
+	icon = GFX_IBR_paperwork_new
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_pile_of_directives"
+		add_stability = -0.05
+		country_event = UKR_pwr_struggle.15
+	}
+	relative_position_id = UKR_something_is_broken
+	prerequisite = { focus = UKR_something_is_broken }
+}
+
+shared_focus = {
+	id = UKR_a_land_left_scarred
+	icon = GFX_UKR_a_land_left_scarred
+	cost = 1
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_land_left_scarred"
+		set_temp_variable = { gdp_growth_temp = -0.15 }
+		econ_gdp_growth_change = yes
+		country_event = UKR_pwr_struggle.16
+	}
+	relative_position_id = UKR_something_is_broken
+	prerequisite = { focus = UKR_something_is_broken }
+}
+
+shared_focus = {
+	id = UKR_a_nation_without_kings
+	icon = GFX_UKR_A_nation_without_kings
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_a_nation_without_kings"
+		country_event = UKR_pwr_struggle.17
+	}
+	relative_position_id = UKR_a_corpse_on_the_throne
+	prerequisite = { focus = UKR_a_corpse_on_the_throne }
+	prerequisite = { focus = UKR_a_task_left_unfinished }
+	prerequisite = { focus = UKR_a_pile_of_directives }
+	prerequisite = { focus = UKR_a_land_left_scarred }
+}
+
+shared_focus = {
+	id = UKR_grinding_to_a_halt
+	icon = GFX_UKR_grinding_to_a_halt
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UKR_grinding_to_a_halt"
+		hidden_effect = { country_event = UKR_pwr_struggle.1 }
+		custom_effect_tooltip = UKR_to_the_strongest_power_struggle_tt
+	}
+	relative_position_id = UKR_a_nation_without_kings
+	prerequisite = { focus = UKR_a_nation_without_kings }
+}
+
+

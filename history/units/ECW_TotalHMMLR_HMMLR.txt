@@ -1,0 +1,108 @@
+﻿units = {
+	#North region
+	division = {
+		location = 9332
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9322
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6268
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11382
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 364
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9269
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6237
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#West region
+	division = {
+		name = "2nd 'Anti-Fascist' Division"
+		location = 6378
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Liverpool Revolutionary Association"
+		location = 6384
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Liberty or Death Battalion"
+		location = 9297
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Bill's Own"
+		location = 6335
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#London region
+	division = {
+		name = "1st 'Revolution' Division"
+		location = 11253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "London Veterans Association"
+		location = 11221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Oxford Student's Revolutionary Society"
+		location = 9239
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#South region
+	division = {
+		location = 3369
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9458
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11446
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6489
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+}

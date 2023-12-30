@@ -1,0 +1,36 @@
+﻿division_template = {
+	name = "Divisione Ausiliaria del Levante"
+	division_names_group = IME_INF_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1a Divisione Ausiliaria"
+		location = 1086
+		division_template = "Divisione Ausiliaria del Levante"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "2a Divisione Ausiliaria"
+		location = 1086
+		division_template = "Divisione Ausiliaria del Levante"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "3a Divisione Ausiliaria"
+		location = 1086
+		division_template = "Divisione Ausiliaria del Levante"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+	}
+}

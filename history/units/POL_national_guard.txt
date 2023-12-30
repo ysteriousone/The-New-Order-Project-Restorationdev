@@ -1,0 +1,77 @@
+﻿division_template = {
+	name = "Polish Riflemen"
+	regiments = {
+
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Polish Riflemen Division"
+		location = 11430
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "2nd Polish Riflemen Division"
+		location = 3586
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "3rd Polish Riflemen Division"
+		location = 442
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "4th Polish Riflemen Division"
+		location = 3544
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "5th Polish Riflemen Division"
+		location = 6580
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "6th Polish Riflemen Division"
+		location = 9494
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "7th Polish Riflemen Division"
+		location = 9521
+		division_template = ""Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "8th Polish Riflemen Division"
+		location = 11399
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "9th Polish Riflemen Division"
+		location = 526
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "10th Polish Riflemen Division"
+		location = 3497
+		division_template = "Polish Riflemen"
+		start_experience_factor = 0.6
+	}
+}

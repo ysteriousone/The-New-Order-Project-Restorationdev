@@ -1,0 +1,128 @@
+add_namespace = Mexico_Dummy
+add_namespace = Mexico_news
+
+
+country_event = { # Madrazo
+	id = Mexico_Dummy.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.3"}
+	title = USA.3.t
+	desc = USA.3.desc
+	picture = GFX_report_event_USA_washington_obelisk
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = USA.3.a
+		every_country = {
+			limit = { is_ai = no }
+			news_event = { id = WORLD.18002 }
+		}
+		hidden_effect = {
+			MEX = {
+				retire_character = MEX_adolfo_mateos
+				promote_character = MEX_carlos_madrazo
+				fill_empty_minister = yes
+			}
+		}
+	}
+}
+
+country_event = { # Lozano
+	id = Mexico_Dummy.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.3"}
+	title = USA.3.t
+	desc = USA.3.desc
+	picture = GFX_report_event_USA_washington_obelisk
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = USA.3.a
+		every_country = {
+			limit = { is_ai = no }
+			news_event = { id = WORLD.18001 }
+		}
+		hidden_effect = {
+			retire_character = MEX_adolfo_mateos
+			promote_character = MEX_Raul_Lozano
+			fill_empty_minister = yes
+		}
+	}
+}
+
+country_event = { # Ordaz
+	id = Mexico_Dummy.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.3"}
+	title = USA.3.t
+	desc = USA.3.desc
+	picture = GFX_report_event_USA_washington_obelisk
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = USA.3.a
+		every_country = {
+			limit = { is_ai = no }
+			news_event = { id = WORLD.18000 }
+		}
+		hidden_effect = {
+			MEX = {
+				retire_character = MEX_adolfo_mateos
+				promote_character = MEX_gustavo_ordaz
+				fill_empty_minister = yes
+			}
+		}
+	}
+}
+
+country_event = { # Veracruz Pact
+	id = Mexico_Dummy.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event USA.4"}
+	title = USA.4.t
+	desc = USA.4.desc
+	picture = GFX_report_event_USA_washington_obelisk
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_global_flag = PPI_Trujillo_Victory
+			USA = { has_country_flag = USA_PP_ceasefire_balaguer }
+		}
+		NOT = {
+			CUB = { is_in_faction_with = USA }
+		}
+	}
+
+	option = {
+		name = Mexico_Dummy.4.a
+		MEX = { give_guarantee = CUB }
+		MEX = { give_military_access = CUB }
+		diplomatic_relation = {
+			country = CUB
+			relation = non_aggression_pact
+			active = yes
+		}
+		#every_country = {
+		#	limit = { is_ai = no }
+		#	news_event = { id = Mexico_news.1 }
+		#}
+	}
+}
+
+news_event = { # Veracruz Pact
+	id = Mexico_news.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Mexico_news.1"}
+	title = Mexico_news.1.t
+	desc = Mexico_news.1.desc
+	picture = GFX_news_event_MEX_veracruz
+
+	is_triggered_only = yes
+	option = {
+		name = Mexico_news.1.a
+	}
+}

@@ -1,0 +1,75 @@
+##############
+# Correntia
+##############
+
+ideas = {
+	country = {
+		COR_more_no_matter_the_cost = {
+			picture = economic_control_icon
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = -0.10
+			}
+		}
+		COR_civilian_precautions_1 = {
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = 0.05
+			}
+		}
+		COR_civilian_precautions_2 = {
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = 0.10
+			}
+		}
+		COR_victory_is_approaching = {
+			picture = MGN_army_medium
+			modifier = {
+				army_morale_factor = 0.10
+				army_attack_factor = 0.05
+			}
+		}
+		COR_building_a_bureaucracy = {
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.10
+			}
+		}
+		COR_a_penny_pinching_nation = {
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+		COR_for_our_greater_good = {
+			modifier = {
+				stability_factor = -0.05
+				army_attack_factor = 0.10
+				attrition = 0.10
+			}
+		}
+		COR_utilize_the_black_market_1 = {
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+		}
+		COR_utilize_the_black_market_2 = {
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+		COR_utilize_the_black_market_3 = {
+			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+		COR_leopolds_guide_to_success = {
+			modifier = {
+				monthly_population = -0.05
+				political_power_gain = -0.5
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}

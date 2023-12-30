@@ -1,0 +1,396 @@
+﻿add_namespace = DST
+
+country_event = { # Wehrmacht coup launched
+	id = DST.4
+	title = DST.4.t
+	desc = DST.4.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.4"}
+
+	option = {
+		name = DST.4.a
+	}
+}
+
+country_event = { # Demand part of Moskowien
+	id = DST.5
+	title = DST.5.t
+	desc = DST.5.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.5"}
+
+	option = {
+		name = DST.5.a
+		GER = {
+			country_event = { id = goering.1018 days = 3}
+		}
+	}
+}
+
+country_event = { # Göring accepts demands
+	id = DST.6
+	title = DST.6.t
+	desc = DST.6.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.6"}
+
+	option = {
+		name = DST.6.a
+		transfer_state = 209
+		transfer_state = 210
+		hidden_effect = {
+			country_event = { id = DST.11 days = 90 }
+		}
+	}
+}
+
+country_event = { # Göring denies us, and schorner shows up
+	id = DST.7
+	title = DST.7.t
+	desc = DST.7.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.7"}
+
+	option = {
+		name = DST.7.a
+		hidden_effect = {
+			GER = {
+				country_event = { id = goering.1019 days = 3}
+			}
+		}
+	}
+}
+
+country_event = { # Göring wants to renegotiate
+	id = DST.8
+	title = DST.8.t
+	desc = DST.8.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.8"}
+
+	option = { #send him new demands
+		name = DST.8.a
+		GER = {
+			country_event = { id = goering.1020 days = 3}
+		}
+	}
+}
+
+country_event = { # goering accepts new demands
+	id = DST.9
+	title = DST.9.t
+	desc = DST.9.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.9"}
+
+	option = { #wooh
+		name = DST.9.a
+		transfer_state = 209
+		transfer_state = 210
+		hidden_effect = {
+			country_event = { id = DST.11 days = 90 }
+		}
+	}
+}
+
+country_event = { #Göring threatens us
+	id = DST.10
+	title = DST.10.t
+	desc = DST.10.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.10"}
+
+	option = { #he can try
+		name = DST.10.a
+	}
+	option = { #maybe this isnt very smart
+		name = DST.10.b
+	}
+}
+
+country_event = { # Partisans increase activity
+	id = DST.11
+	title = DST.11.t
+	desc = DST.11.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event DST.11"
+		add_ideas = DST_russian_partisans
+	}
+
+	option = { # crack down
+		name = DST.11.a
+		add_manpower = -2500
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2500
+		}
+		hidden_effect = {
+			country_event = { id = DST.12 days = 14 }
+		}
+	}
+	option = { # they will just burn themselves out, wait
+		name = DST.11.b
+		hidden_effect = {
+			country_event = { id = DST.13 days = 21}
+		}
+	}
+}
+
+country_event = { # Crack down had the opposite effect
+	id = DST.12
+	title = DST.12.t
+	desc = DST.12.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.12"}
+
+	option = { #beg goering for help
+		name = DST.12.a
+		GER = {
+			country_event = { id = goering.1021 days = 3}
+		}
+	}
+}
+
+country_event = { # Full blown rebellion breaks out
+	id = DST.13
+	title = DST.13.t
+	desc = DST.13.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.13"}
+
+	option = { #beg goering for help
+		name = DST.13.a
+		add_stability = -0.20
+		GER = {
+			country_event = { id = goering.1021 days = 3}
+		}
+	}
+}
+
+country_event = { #goering sends aid
+	id = DST.14
+	title = DST.14.t
+	desc = DST.14.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event "}
+
+	option = { #enough to break the rebellion
+		name = DST.14.a
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_2
+			amount = 5000
+			producer = GER
+		}
+		hidden_effect = {
+			country_event = { id = DST.15 days = 21}
+		}
+	}
+}
+
+country_event = { #The rebellion is broken
+	id = DST.15
+	title = DST.15.t
+	desc = DST.15.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.15"}
+
+	option = { #hurrah
+		name = DST.15.a
+		remove_ideas = DST_russian_partisans
+		add_stability = 0.10
+	}
+}
+
+country_event = { # Göring denies us a second time
+	id = DST.16
+	title = DST.16.t
+	desc = DST.16.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.16"}
+
+	option = {
+		name = DST.16.a
+	}
+}
+
+country_event = { # Göring accepts our increased demands
+	id = DST.17
+	title = DST.17.t
+	desc = DST.17.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.17"}
+
+	option = {
+		name = DST.17.a
+		transfer_state = 209
+		transfer_state = 210
+		transfer_state = 195
+		hidden_effect = {
+			country_event = { id = DST.11 days = 90 }
+		}
+		set_temp_variable = { money_reserves_temp = 0.04 }
+		econ_money_reserves_change_raw_money = yes
+	}
+}
+
+country_event = { # Schörner breaks the rebellion
+	id = DST.18
+	title = DST.18.t
+	desc = DST.18.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.18"}
+
+	option = {
+		name = DST.18.a
+		remove_ideas = DST_russian_partisans
+		hidden_effect = {
+			GER = {
+				country_event = { id = goering.1054 days = 4 }
+			}
+		}
+	}
+}
+
+country_event = { # A bunch of army modernisations are forced upon once by Göring
+	id = DST.19
+	title = DST.19.t
+	desc = DST.19.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.19"}
+
+	option = { # Complain and not carry them out
+		name = DST.19.a
+		GER = {
+			country_event = { id = goering.1117 days = 5 }
+		}
+	}
+}
+
+country_event = { # The question of the waffen. They betrayed us.
+	id = DST.20
+	title = DST.20.t
+	desc = DST.20.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.20"}
+
+	option = { # Keep them around. For now.
+		name = DST.20.a
+	}
+	option = { # Take their equipment and execute them
+		name = DST.20.b
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 250
+			producer = GER
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 100
+			producer = GER
+		}
+		207 = {
+			add_manpower = -10000
+		}
+		add_political_power = -30
+		add_war_support = -0.05
+	}
+}
+
+country_event = { # The waffen SS is ready to serve us!
+	id = DST.21
+	title = DST.21.t
+	desc = DST.21.d
+	picture = GFX_report_event_MAD_palace
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DST.21"}
+
+	option = {
+		name = DST.21.a
+		create_unit = {
+			division = " division_template = \"Volksgrenadiers\" start_experience_factor = 0.6 start_equipment_factor = 0.9"
+			owner = ROOT
+		}
+		create_unit = {
+			division = " division_template = \"Volksgrenadiers\" start_experience_factor = 0.6 start_equipment_factor = 0.9"
+			owner = ROOT
+		}
+	}
+}

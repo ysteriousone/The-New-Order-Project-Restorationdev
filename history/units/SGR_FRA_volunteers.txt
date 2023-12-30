@@ -1,0 +1,47 @@
+﻿division_template = {
+	name = "Deutsch-Französisches Freikorps"
+	division_names_group = SGR_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Freikorps 'Le Croix-de-Fer'"
+		location = 11565
+		division_template = "Deutsch-Französisches Freikorps"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Freikorps 'Les Teutons'"
+		location = 11565
+		division_template = "Deutsch-Französisches Freikorps"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Freikorps 'Les Saxons'"
+		location = 11565
+		division_template = "Deutsch-Französisches Freikorps"
+		start_experience_factor = 0.8
+	}
+	division = {
+		name = "Freikorps 'Les Gammés'"
+		location = 11565
+		division_template = "Deutsch-Französisches Freikorps"
+		start_experience_factor = 0.8
+	}
+}

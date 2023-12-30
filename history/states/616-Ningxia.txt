@@ -1,0 +1,25 @@
+
+state={
+	id=616
+	name="STATE_616"
+
+	history= {
+		owner = GAN
+		add_core_of = GAN
+		
+		buildings = {
+			infrastructure = 2
+			barracks = 2
+			thermoelectric_plant = 1
+		}
+		victory_points = { 8127 10 }
+		set_state_flag = state_renamings
+	}
+
+	provinces={
+		4783 5031 7511 7727 8102 8127 10724 10770 10899 12750 13249 15739 8055 7803 13250
+	}
+	manpower=3157600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

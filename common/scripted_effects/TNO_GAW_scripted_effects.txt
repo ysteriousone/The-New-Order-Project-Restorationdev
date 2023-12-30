@@ -1,0 +1,252 @@
+################################
+###   GAW Scripted Effects   ###
+################################
+
+#Scripted Effects relating to the Great Asian War, or the time Asia gets doused in gasoline
+
+GAW_JAP_send_warlord_ultimatum = {#Japanese ultimatum to the warlords to surrender or die
+	for_each_scope_loop = {
+		array = global.chinese_warlords
+
+		if = {
+			limit = {
+				exists = yes
+				has_country_flag = GAW_chi_ally
+			}
+			country_event = {id = chinesewarlord.1004 hours = 12 random = 12}
+		}
+
+		if = {
+			limit = {
+				exists = yes
+				has_country_flag = GAW_neutral
+				NOT = {
+					original_tag = TIB
+					original_tag = ETR
+					original_tag = XIK
+					original_tag = QIN
+					original_tag = XIN
+				}
+			}
+			country_event = {id = chinesewarlord.1005 hours = 12 random = 12}
+		}
+	}
+
+	hidden_effect = {
+		JAP = {
+			country_event = {id = gaw.102 hours = 48 random = 24}
+		}
+	}
+}
+
+GAW_CHI_send_warlord_ultimatum = {#Chinese ultimatum to the warlords to surrender or die
+	for_each_scope_loop = {
+		array = global.chinese_warlords
+
+		if = {
+			limit = {
+				exists = yes
+				has_country_flag = GAW_jap_ally
+			}
+			country_event = {id = chinesewarlord.1006 hours = 12 random = 12}
+		}
+
+		if = {
+			limit = {
+				exists = yes
+				has_country_flag = GAW_neutral
+				NOT = {
+					original_tag = TIB
+					original_tag = ETR
+					original_tag = XIK
+					original_tag = QIN
+					original_tag = XIN
+				}
+			}
+			country_event = {id = chinesewarlord.1007 hours = 12 random = 12}
+		}
+	}
+	hidden_effect = {
+		CHI = {
+			country_event = {id = gaw.204 hours = 48 random = 24}
+		}
+	}
+}
+
+GAW_clear_warlord_flags = {#Clears all GAW warlord allegiance flags
+	for_each_scope_loop = {
+		array = global.chinese_warlords
+
+		if = {
+			limit = {
+				has_country_flag = GAW_chi_ally
+			}
+			clr_country_flag = GAW_chi_ally
+		}
+		else_if = {
+			limit = {
+				has_country_flag = GAW_jap_ally
+			}
+			clr_country_flag = GAW_jap_ally
+		}
+		else_if = {
+			limit = {
+				has_country_flag = GAW_neutral
+			}
+			clr_country_flag = GAW_neutral
+		}
+	}
+}
+
+GAW_add_Chinese_claims = {#Adds claims for China so the event file stops looking like AIDS
+	CHI = {
+		add_state_claim = 408
+		add_state_claim = 409
+		add_state_claim = 524
+		add_state_claim = 657
+		add_state_claim = 1850
+		add_state_claim = 1851
+		add_state_claim = 1852
+		add_state_claim = 1852
+		add_state_claim = 1853
+		add_state_claim = 1854
+		add_state_claim = 1855
+		add_state_claim = 1856
+		add_state_core = 591
+		add_state_core = 813
+		add_state_core = 812
+		add_state_core = 811
+		add_state_core = 810
+		add_state_claim = 809
+		add_state_core = 1022
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = GNG
+				is_core_of = GUX
+				is_core_of = YUN
+				is_core_of = SHX
+				is_core_of = SIC
+				is_core_of = GUZ
+				is_core_of = XIK
+				AND = {
+					is_core_of = MAN
+					NOT = {
+						state = 408
+						state = 409
+						state = 657
+					}
+				}
+				AND = {
+					is_core_of = MEN
+					NOT = {
+						state = 815
+						state = 330
+						state = 814
+						state = 329
+					}
+				}
+			}
+		}
+		add_core_of = CHI
+	}
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = ETR
+				is_core_of = XIN
+				is_core_of = QIN
+				is_core_of = TIB
+				state = 809
+				state = 408
+				state = 409
+				state = 657
+				state = 815
+				state = 330
+				state = 814
+				state = 329
+			}
+		}
+		add_claim_by = CHI
+	}
+}
+
+YUN_NPA_add_Yunnan_claims = {#Adds claims for China so the event file stops looking like AIDS
+	every_state = {
+		limit = {
+			OR = {
+				is_core_of = XIN
+				is_core_of = QIN
+				is_core_of = TIB
+				is_core_of = GNG
+				is_core_of = GUX
+				is_core_of = SHX
+				is_core_of = XIK
+				is_core_of = MAN
+				is_core_of = MEN
+				is_core_of = CHI
+				state = 329
+				state = 434
+				state = 524
+				state = 537
+				state = 591
+				state = 809
+				state = 810
+				state = 811
+				state = 812
+				state = 814
+				state = 1364
+			}
+		}
+		add_claim_by = YUN
+	}
+}
+
+GAW_remove_Chinese_claims = {#Removes Chinese Claims if it is defeated
+	every_state = {
+		limit = {
+			NOT = {
+				is_owned_by = CHI
+			}
+			OR = {
+				is_core_of = CHI
+				is_claimed_by = CHI
+			}
+		}
+		if = {
+			limit = {
+				is_core_of = CHI
+			}
+			remove_core_of = CHI
+		}
+		else_if = {
+			limit = {
+				is_claimed_by = CHI
+			}
+			remove_claim_by = CHI
+		}
+	}
+}
+
+GAW_JAP_surrender_chinese_states = {#Transfers all Japanese owned states back to China
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = JAP
+				is_controlled_by = JAP
+			}
+			OR = {
+				is_core_of = CHI
+				is_claimed_by = CHI
+			}
+			NOT = {
+				state = 524
+			}
+		}
+
+		CHI = {
+			transfer_state = PREV
+		}
+	}
+}

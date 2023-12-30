@@ -1,0 +1,64 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "FIN_parliament_seat"
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "parliament_dot_icon"
+			quadTextureSprite = "FIN_parliament_seat_icon"
+		}
+
+		iconType = {
+			name = "parliament_dot_icon_outline"
+			quadTextureSprite = "FIN_parliament_seat_icon_outline"
+		}
+	}
+
+	containerWindowType = {
+		name = "TNO_FIN_parliament_window_open"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 }
+
+		buttonType ={
+			name = "FIN_parliament_menu_open"
+			spriteType = "FIN_parliament_logo"
+			position = { x = 228 y = 30 }
+			pdx_tooltip = "scripted_gui_open_tt_FIN_par"
+			scale = 0.85
+		}
+
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x=185 y=-16 }
+		}
+	}
+
+	containerWindowType = {
+		name = "TNO_FIN_parliament_window_main"
+		size = { width = 500 height = 300 }
+		position = { x = 538 y = 77 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		gridboxtype = {
+			name = "FIN_parliament_diagram"
+			position = { x = 25 y = 50 }
+			size = { width = 100%% height = 100%% }
+			slotsize = { width = 100%% height = 0 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+
+		instantTextboxType = {
+			name = "FIN_parliament_counter"
+			position = { x = 200 y = 240 }
+			font = "aldrich_32_outline"
+			text = FIN_Parliament_Text
+		}
+	}
+}

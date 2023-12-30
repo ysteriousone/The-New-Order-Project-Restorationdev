@@ -1,0 +1,20 @@
+CA_debug_decisions_category = {
+	picture = GFX_CA_decision_debug
+	allowed = {
+		OR = {
+			tag = TRK
+			tag = TAJ
+			tag = KYR
+			tag = KZK
+			tag = UZB
+			tag = UTL
+			tag = KRK
+		}
+	}
+	visible = {
+		is_debug = yes
+	}
+	priority = {
+		base = 199
+	}
+}

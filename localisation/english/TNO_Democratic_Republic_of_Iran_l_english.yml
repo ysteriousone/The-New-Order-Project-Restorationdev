@@ -1,0 +1,72 @@
+﻿l_english:
+
+ ## Country Names ##
+ IRL_liberalism:0 "Democratic Republic of Iran"
+ IRL_liberalism_DEF:0 "the Democratic Republic of Iran"
+ IRL_liberalism_ADJ:0 "Iranian"
+ 
+ ## Party Names ##
+ IRL_liberalism_party:0 "JMI"
+ IRL_liberalism_party_long:0 "Jebhe-ye Melli-ye Irān"
+ IRL_progressivism_party:0 "JMI"
+ IRL_progressivism_party_long:0 "Jebhe-ye Melli-ye Irān"
+ IRL_conservatism_party:0 "JMI"
+ IRL_conservatism_party_long:0 "Jebhe-ye Melli-ye Irān"
+ 
+ ## Ministers ##
+ IRL_Mehdi_Bazargan_hog:0 "Mehdi Bazargan"
+ IRL_Hassan_Pakravan_for:0 "Hassan Pakravan"
+ IRL_Anvar_Khamei_eco:0 "Anvar Khamei"
+ IRL_Teymur_Bakhtiar_sec:0 "Teymur Bakhtiar"
+ 
+ ## Ideas ##
+
+ ## Decisions ##
+ 
+ ## Tooltips ##
+ IRL_filling_the_line_tooltip:0 "§YTwo Militia Divisions will appear in or around Shiraz§!\n"
+ IRL_instigate_defections_tooltip:0 "§YAn Infantry Division will appear in or around Shiraz§!\n"
+ ## Leader Bios ##
+ IRL_karim_sanjabi:0 "Karim Sanjabi"
+ IRL_teymur_bakhtiar:0 "Teymur Bakhtiar"
+ IRL_mohammad_salimi:0 "Mohammad Salimi"
+ IRL_ali_shahbazi:0 "Ali Shahbazi"
+ IRL_taghi_riahi:0 "Taghi Riahi"
+ IRL_mohammad_vali_gharani:0 "Mohammad-Vali Gharani"
+ IRL_mehdi_bazargan:0 "Mehdi Bazargan"
+ IRL_hassan_pakravan:0 "Hassan Pakravan"
+ IRL_anvar_khamei:0 "Anvar Khamei"
+
+ POLITICS_KARIM_SANJABI_DESC:0 "Karim Sanjabi is not a man to give up quickly. An old guard of the democratic nationalists in Iran, his National Front party maintained a brave opposition to the Shah and suffered for it, with the reviled SAVAK taking increasingly harsh measures to crush the opposition. Sanjabi himself never gave up fighting for his dream of a strong, free Iran. It was his courage and determination which would make him de-facto leader of the pro-democratic underground in the country, turning into the burgeoning Democratic Republic of Iran at the outbreak of the Iranian Revolution.\n\nThe upheaval unleashed by the revolution brought opportunity, and the backing of a new friend on the other side of the world. Mobilising all of their contacts, Sanjabi's faction has called for assistance from the United States of America, making whatever promises were necessary to secure Washington's support. The fight will be difficult. But perhaps this association can turn the tide, and if so the sun may rise over a democratic Iran, one where its people are prosperous and free."
+ 
+ ## Focus Tree ##
+ IRL_the_iranian_civil_war:0 "The Iranian Civil War"
+ IRL_the_iranian_civil_war_desc:0 ""
+ IRL_arm_the_people:0 "Arm The People"
+ IRL_arm_the_people_desc:0 ""
+ IRL_filling_the_line:0 "Filling The Line"
+ IRL_filling_the_line_desc:0 ""
+ IRL_instigate_defections:0 "Instigate Defections"
+ IRL_instigate_defections_desc:0 ""
+ IRL_learn_on_the_job:0 "Learn On The Job"
+ IRL_learn_on_the_job_desc:0 ""
+ IRL_raid_the_airfields:0 "Raid The Airfields"
+ IRL_raid_the_airfields_desc:0 ""
+ IRL_defending_shiraz:0 "Defending Shiraz"
+ IRL_defending_shiraz_desc:0 ""
+ IRL_defending_the_skies:0 "Defending The Skies"
+ IRL_defending_the_skies_desc:0 ""
+ IRL_defending_our_secrets:0 "Defending Our Secrets"
+ IRL_defending_our_secrets_desc:0 ""
+ IRL_a_war_industry:0 "A War Industry"
+ IRL_a_war_industry_desc:0 ""
+ IRL_improvised_factories:0 "Improvised Factories"
+ IRL_improvised_factories_desc:0 ""
+ IRL_bargain_with_investors:0 "Bargain With Investors"
+ IRL_bargain_with_investors_desc:0 ""
+ IRL_an_iranian_bullet:0 "An Iranian Bullet"
+ IRL_an_iranian_bullet_desc:0 ""
+ IRL_in_an_american_gun:0 "In An American Gun"
+ IRL_in_an_american_gun_desc:0 ""
+ 
+ ## Events ##

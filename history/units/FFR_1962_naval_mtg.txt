@@ -1,0 +1,50 @@
+units = {
+	fleet = { # WORK IN PROGRESS LMAO
+		name = "Armada de Chile"
+		naval_base = 14833
+		task_force = {
+			name = "Flota Chilena"
+			location = 14833
+
+			### DREADNAUGHT ###
+			ship = { name = "Almirante Latorre" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = CHL version_name = "Clase Almirante Latorre" } } }
+
+			#### CRUISERS ####
+			# Crucero Ligero Class
+			ship = { name = "CL-02 O'Higgins" definition = cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHL version_name = "Clase Crucero Ligero" } } }
+			ship = { name = "CL-03 Capitán Prat" definition = cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHL version_name = "Clase Crucero Ligero" } } }
+			ship = { name = "CL-04 Ministro Portales" definition = cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHL version_name = "Clase Crucero Ligero" } } }
+			ship = { name = "CL-05 Ministro Sotomayor" definition = cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CHL version_name = "Clase Crucero Ligero" } } }
+
+			### DESTROYERS ###
+			# Almirante Class
+			ship = { name = "DDG-18 Almirante Riveros" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Clase Almirante" } } }
+			ship = { name = "DDG-19 Almirante Williams" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Clase Almirante" } } }
+			ship = { name = "DDG-20 Almirante Lynch" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Clase Almirante" } } }
+			ship = { name = "DDG-21 Almirante Condell" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CHL version_name = "Clase Almirante" } } }
+
+			# Blanco Encalada Class
+			ship = { name = "DD-14 Blanco Encalada" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHL version_name = "Clase Blanco Encalada" } } }
+			ship = { name = "DD-15 Cochrane" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHL version_name = "Clase Blanco Encalada" } } }
+
+			### FRIGATES ###
+			# Iquique Class
+			ship = { name = "Iquique" definition = frigate equipment = { ship_hull_more_light_1 = { amount = 1 owner = CHL version_name = "Clase Iquique" } } }
+			ship = { name = "Esmeralda" definition = frigate equipment = { ship_hull_more_light_1 = { amount = 1 owner = CHL version_name = "Clase Iquique" } } }
+			ship = { name = "Covadonga" definition = frigate equipment = { ship_hull_more_light_1 = { amount = 1 owner = CHL version_name = "Clase Iquique" } } }
+			ship = { name = "Angamos" definition = frigate equipment = { ship_hull_more_light_1 = { amount = 1 owner = CHL version_name = "Clase Iquique" } } }
+
+			### CORVETTES ###
+			# Papudo Class
+			ship = { name = "Papudo" definition = corvette equipment = { ship_hull_very_light_1 = { amount = 1 owner = CHL version_name = "Clase Papudo" } } }
+			ship = { name = "Chipana" definition = corvette equipment = { ship_hull_very_light_1 = { amount = 1 owner = CHL version_name = "Clase Papudo" } } }
+			ship = { name = "Casma" definition = corvette equipment = { ship_hull_very_light_1 = { amount = 1 owner = CHL version_name = "Clase Papudo" } } }
+			ship = { name = "Ancud" definition = corvette equipment = { ship_hull_very_light_1 = { amount = 1 owner = CHL version_name = "Clase Papudo" } } }
+
+			### SUBMARINES ###
+			# Simpson Class
+			ship = { name = "SS-21 Simpson" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "Clase Simpson" } } }
+			ship = { name = "SS-22 Thomson" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = CHL version_name = "Clase Simpson" } } }
+		}
+	}
+}

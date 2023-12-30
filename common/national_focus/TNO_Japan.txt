@@ -1,0 +1,101 @@
+
+#why were all japan trees not like theyre supposed to be
+focus_tree = {
+	id = JAP_tree_main
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	shared_focus = JAP_never_been_better
+	shared_focus = JAP_middle_eastern_policy_debates
+	shared_focus = JAP_observe_and_report
+	shared_focus = JAP_the_crescent_and_the_sun
+	shared_focus = JAP_our_moment
+	shared_focus = JAP_an_icon_dismantled
+	shared_focus = JAP_china_ablaze
+}
+
+#Kaya
+focus_tree = {
+	id = japan_kaya_tree_one
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+	shared_focus = JAP_prime_minister_kaya
+	shared_focus = JAP_kaya_we_survived
+	shared_focus = JAP_middle_eastern_policy_debates
+	shared_focus = JAP_observe_and_report
+	shared_focus = JAP_the_crescent_and_the_sun
+	shared_focus = JAP_our_moment
+	shared_focus = JAP_an_icon_dismantled
+	shared_focus = JAP_china_ablaze
+}
+
+#Ikeda
+focus_tree = {
+	id = Japan_ikeda_main
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+	shared_focus = JAP_prime_minister_ikeda
+	shared_focus = JAP_ikeda_reconstruction_correcting_past_mistakes
+	shared_focus = JAP_middle_eastern_policy_debates
+	shared_focus = JAP_observe_and_report
+	shared_focus = JAP_the_crescent_and_the_sun
+	shared_focus = JAP_our_moment
+	shared_focus = JAP_an_icon_dismantled
+	shared_focus = JAP_china_ablaze
+}
+
+#Takagi
+focus_tree = {
+	id = japan_takagi_one
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+
+	default = no
+
+	shared_focus = JAP_takagi_prime_minister_takagi
+	shared_focus = JAP_TakagiRecon_Fruits_Of_the_Reforms
+	shared_focus = JAP_middle_eastern_policy_debates
+	shared_focus = JAP_observe_and_report
+	shared_focus = JAP_the_crescent_and_the_sun
+	shared_focus = JAP_our_moment
+	shared_focus = JAP_an_icon_dismantled
+	shared_focus = JAP_china_ablaze
+}
+
+
+#WW3
+focus_tree = {
+	id = japan_WW3
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+
+	default = no
+
+	shared_focus = JAP_our_moment
+}

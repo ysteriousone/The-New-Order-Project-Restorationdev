@@ -1,0 +1,196 @@
+﻿division_template = {
+	name = "Republican Miltia"		# Infantry Division
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+	}
+}
+division_template = {
+	name = "Republican Infantry"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Republican Guards"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		artillery = { x = 3 y = 1 }
+		artillery = { x = 3 y = 2 }
+	}
+}
+
+
+units = {
+	##### Republican Iran Army #####
+	division = {
+		name = "Republican Militia"
+		location = 829
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13610
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 1922
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 12756
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13611
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13614
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 5067
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13612
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13608
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 4966
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 10881
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 10759
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13600
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13604
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 13706
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 11249
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 12809
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Militia"
+		location = 12895
+		division_template = "Republican Miltia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Infantry"
+		location = 10913
+		division_template = "Republican Infantry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Infantry"
+		location = 7982
+		division_template = "Republican Infantry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Infantry"
+		location = 8117
+		division_template = "Republican Infantry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Infantry"
+		location = 2026
+		division_template = "Republican Infantry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Infantry"
+		location = 7953
+		division_template = "Republican Infantry"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Republican Guards"
+		location = 8117
+		division_template = "Republican Guards"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Republican Guards"
+		location = 2026
+		division_template = "Republican Guards"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Republican Guards"
+		location = 7953
+		division_template = "Republican Guards"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,9 @@
+air_wings = {
+	454 = {
+		jet_fighter_equipment_1 = {
+			owner = "ITA"
+			amount = "31"
+		}
+		name = "1a Gruppo di Caccia 'Il Più Fine'"
+	}
+}

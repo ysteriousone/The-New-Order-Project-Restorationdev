@@ -1,0 +1,35 @@
+units = {
+	division = {
+		name = "2nd 'Anti-Fascist' Division"
+		location = 3205
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6318
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Bill's Own"
+		location = 6335
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6335
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Manchester United Front"
+		location = 6318
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3205
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

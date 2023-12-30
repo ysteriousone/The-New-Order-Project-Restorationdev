@@ -1,0 +1,1336 @@
+#  .--.   .--.      ,-----.    ,---.  ,---.,---.   .--.    .-''-.  .-------.   _ _    .-'''-.   #
+#  |  | _/  /     .'  .-,  '.  |   /  |   ||    \  |  |  .'_ _   \ |  _ _   \ ( ' )  / _     \  #
+#  | (`' ) /     / ,-.|  \ _ \ |  |   |  .'|  ,  \ |  | / ( ` )   '| ( ' )  |(_{;}_)(`' )/`--'  #
+#  |(_ ()_)     ;  \  '_ /  | :|  | _ |  | |  |\_ \|  |. (_ o _)  ||(_ o _) / (_,_)(_ o _).     #
+#  | (_,_)   __ |  _`,/ \ _/  ||  _( )_  | |  _( )_\  ||  (_,_)___|| (_,_).' __     (_,_). '.   #
+#  |  |\ \  |  |: (  '\_/ \   ;\ (_ o._) / | (_ o _)  |'  \   .---.|  |\ \  |  |   .---.  \  :  #
+#  |  | \ `'   / \ `"/  \  ) /  \ (_,_) /  |  (_,_)\  | \  `-'    /|  | \ `'   /   \    `-'  |  #
+#  |  |  \    /   '. \_/``".'    \     /   |  |    |  |  \       / |  |  \    /     \       /   #
+#  `--'   `'-'      '-----'       `---`    '--'    '--'   `'-..-'  ''-'   `'-'       `-...-'    #
+#                            ________ .-------.     ,-----.                                     #
+#                           |        |\  _(`)_ \  .'  .-,  '.                                   #
+#                           |   .----'| (_ o._)| / ,-.|  \ _ \                                  #
+#                           |  _|____ |  (_,_) /;  \  '_ /  | :                                 #
+#                           |_( )_   ||   '-.-' |  _`,/ \ _/  |                                 #
+#                           (_ o._)__||   |     : (  '\_/ \   ;                                 #
+#                           |(_,_)    |   |      \ `"/  \  ) /                                  #
+#                           |   |     /   )       '. \_/``".'                                   #
+#                           '---'     `---'         '-----'                                     #
+#                                                                                               #
+#                         6 million flowers for all of our friends :^)                          #
+#<=============================================================================================>#
+#>====================================|  Shared Focuses  |=====================================<#
+#<=============================================================================================>#
+
+#################################
+##======| tno_kovner_ocw |=====##
+##=====| From the Shadows |====##
+#################################
+#Left to Right; Top to Bottom
+
+shared_focus = {
+	id = UPO_from_the_shadows
+	icon = GFX_UPO_From_the_Shadows
+	cost = 1
+	x = 2
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_from_the_shadows"
+		#custom_effect_tooltip = UPO_from_the_shadows_tt
+		#Completed on becoming available
+		add_manpower = 5000
+	}
+}
+
+##Dybbukim
+shared_focus = {
+	id = UPO_dybbukim
+	icon = GFX_UPO_Dybbukim
+	cost = 3
+	prerequisite = { focus = UPO_from_the_shadows }
+	relative_position_id = UPO_from_the_shadows
+	x = -2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_dybbukim"
+		#custom_effect_tooltip = UPO_dybbukim_tt
+		add_political_power = 50
+		#adds idea "Dybbukim" granting war support, and reorg rate
+		add_ideas = KOV_dybbukim1
+	}
+}
+
+#Gather Support
+shared_focus = {
+	id = UPO_gather_support
+	icon = GFX_goal_workers_fist
+	cost = 3
+	prerequisite = { focus = UPO_dybbukim }
+	relative_position_id = UPO_dybbukim
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_gather_support"
+		#custom_effect_tooltip = UPO_gather_support_tt
+		add_manpower = 5000
+		#hidden_effect = { country_event = KOV.50 } #Flavor
+	}
+}
+
+shared_focus = {
+	id = UPO_armories_unguarded
+	icon = GFX_generic_advanced_weapons
+	cost = 4
+	prerequisite = { focus = UPO_gather_support }
+	relative_position_id = UPO_gather_support
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_armories_unguarded"
+		#custom_effect_tooltip = UPO_armories_unguarded_tt
+		OST = { send_equipment = { equipment = infantry_equipment amount = 500 target = UPO } }
+		DST = { send_equipment = { equipment = infantry_equipment amount = 500 target = UPO } }
+		MST = { send_equipment = { equipment = infantry_equipment amount = 500 target = UPO } }
+		JST = { send_equipment = { equipment = infantry_equipment amount = 500 target = UPO } }
+		if = {
+			limit = { has_war_with = BLR }
+			BLR = { send_equipment = { equipment = infantry_equipment amount = 500 target = UPO } }
+		}
+		#hidden_effect = { country_event = KOV.51 } #Flavor
+	}
+}
+
+#Rework
+shared_focus = {
+	id = UPO_cut_every_wire
+	icon = GFX_OST_the_degeneracy_of_Kovner
+	cost = 3
+	prerequisite = { focus = UPO_armories_unguarded }
+	relative_position_id = UPO_armories_unguarded
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_cut_every_wire"
+		#custom_effect_tooltip = UPO_cut_every_wire_tt
+		OST = {
+			add_timed_idea = {
+				idea = OCW_cords_cut
+				days = 90
+			}
+		}
+		DST = {
+			add_timed_idea = {
+				idea = OCW_cords_cut
+				days = 90
+			}
+		}
+		JST = {
+			add_timed_idea = {
+				idea = OCW_cords_cut
+				days = 90
+			}
+		}
+		MST = {
+			add_timed_idea = {
+				idea = OCW_cords_cut
+				days = 90
+			}
+		}
+		BLR = {
+			add_timed_idea = {
+				idea = OCW_cords_cut
+				days = 90
+			}
+		}
+	}
+}
+
+#An Open Door
+shared_focus = {
+	id = UPO_an_open_door
+	icon = GFX_UPO_An_Open_Door
+	cost = 3
+	prerequisite = { focus = UPO_dybbukim }
+	relative_position_id = UPO_dybbukim
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_an_open_door"
+		#custom_effect_tooltip = UPO_an_open_door_tt
+		#Gives Spirit "An Open Door", defense bonus
+		add_ideas = KOV_an_open_door1
+	}
+}
+
+shared_focus = {
+	id = UPO_an_empty_field
+	icon = GFX_UPO_An_Empty_Field
+	cost = 3
+	prerequisite = { focus = UPO_an_open_door }
+	relative_position_id = UPO_an_open_door
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_an_empty_field"
+		#custom_effect_tooltip = UPO_an_empty_field_tt
+		#Gives Spirit, improves recon
+		swap_ideas = {
+			remove_idea = KOV_an_open_door1
+			add_idea = KOV_an_open_door2
+		}
+		#hidden_effect = { country_event = {id = KOV.52 days = 3} }
+	}
+}
+
+shared_focus = {
+	id = UPO_nothing_but_trees
+	icon = GFX_UPO_Nothing_but_Trees
+	cost = 3
+	prerequisite = { focus = UPO_an_empty_field }
+	relative_position_id = UPO_an_empty_field
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_nothing_but_trees"
+		#custom_effect_tooltip = UPO_nothing_but_trees_tt
+		#Gives other contenders Spirit, malices recon
+		OST = { add_timed_idea = { idea = KOV_nothing_but_trees days = 270 } }
+		DST = { add_timed_idea = { idea = KOV_nothing_but_trees days = 270 } }
+		MST = { add_timed_idea = { idea = KOV_nothing_but_trees days = 270 } }
+		JST = { add_timed_idea = { idea = KOV_nothing_but_trees days = 270 } }
+		if = {
+			limit = { has_war_with = BLR }
+			BLR = { add_timed_idea = { idea = KOV_nothing_but_trees days = 270 } }
+		}
+	}
+}
+
+#Closing
+shared_focus = {
+	id = UPO_felt_but_not_seen
+	icon = GFX_BRG_focus_death_from_a_mile_away
+	cost = 4
+	prerequisite = { focus = UPO_cut_every_wire }
+	prerequisite = { focus = UPO_nothing_but_trees }
+	relative_position_id = UPO_cut_every_wire
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_felt_but_not_seen"
+		#custom_effect_tooltip = UPO_felt_but_not_seen_tt
+		#Gives attack bonuses against Germany, the GCW contenders and then the german OCW contenders
+		swap_ideas = {
+			remove_idea = KOV_dybbukim1
+			add_idea = KOV_dybbukim2
+		}
+	}
+}
+
+##The Other Partisans
+shared_focus = {
+	id = UPO_the_other_partisans
+	icon = GFX_OST_the_subversion_of_Vituska
+	cost = 3
+	prerequisite = { focus = UPO_from_the_shadows }
+	relative_position_id = UPO_from_the_shadows
+	x = 2
+	y = 1
+
+	ai_will_do = {
+		base = 1
+		modifier = {
+			factor = 0
+			has_war_with = OST
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_the_other_partisans"
+		#custom_effect_tooltip = UPO_the_other_partisans_tt
+		add_political_power = 100
+	}
+}
+
+#A Temporary Pact
+#shared_focus = {
+	#id = UPO_a_temporary_pact
+	#icon = GFX_UPO_a_temporary_pact
+	#cost = 4
+	#prerequisite = { focus = UPO_the_other_partisans }
+	#mutually_exclusive = { focus = UPO_sooner_than_later }
+	#relative_position_id = UPO_the_other_partisans
+	#x = -1
+	#y = 1
+
+	#completion_reward = {
+		#log = "[GetDateText]: [Root.GetName]: Focus UPO_a_temporary_pact"
+		#custom_effect_tooltip = UPO_a_temporary_pact_tt
+
+		#Event about the pact
+		# country_event = KOV.???
+	#}
+#}#
+
+#Sooner than Later...
+shared_focus = {
+	id = UPO_sooner_than_later
+	icon = GFX_UPO_sooner_than_later
+	cost = 2
+	prerequisite = { focus = UPO_the_other_partisans }
+	#mutually_exclusive = { focus = UPO_a_temporary_pact }
+	relative_position_id = UPO_the_other_partisans
+	x = 0
+	y = 1
+	will_lead_to_war_with = BLR
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_sooner_than_later"
+		#custom_effect_tooltip = UPO_sooner_than_later_tt
+
+		#The Betrayal (Kovner Betrays Vituska)
+		# country_event = KOV.???
+		# BLR = { country_event = KOV.??? }
+		declare_war_on = {
+			target = BLR
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = {
+	id = UPO_a_tree_falls
+	icon = GFX_UPO_A_Tree_Falls
+	cost = 3
+	prerequisite = { focus = UPO_sooner_than_later }
+	relative_position_id = UPO_sooner_than_later
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_a_tree_falls"
+		#custom_effect_tooltip = UPO_a_tree_falls_tt
+		#Adds "Death to Collaborators", granting attack & defence boons against Vituska
+		add_ideas = KOV_death_to_collaborators1
+	}
+}
+
+shared_focus = {
+	id = UPO_and_noone_hears_it
+	icon = GFX_UPO_And_There_Was_Noone_to_Hear_It
+	cost = 3
+	prerequisite = { focus = UPO_a_tree_falls }
+	relative_position_id = UPO_a_tree_falls
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_and_noone_hears_it"
+		#custom_effect_tooltip = UPO_and_noone_hears_it_tt
+		#Upgrades "Death to Collaborators", granting 
+		swap_ideas = {
+			remove_idea = KOV_death_to_collaborators1
+			add_idea = KOV_death_to_collaborators2
+		}
+		hidden_effect = { country_event = { id = KOV.54 days = 3 } } #A Silent Death
+	}
+}
+
+##################################
+##=====| tno_kovner_nakam |=====##
+##===========| Nakam |==========##
+##################################
+
+shared_focus = {
+	id = UPO_death_to_all_nazis
+	icon = GFX_UPO_Death_to_All_Nazis
+	cost = 5.00
+	x = 3
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_death_to_all_nazis"
+		custom_effect_tooltip = UPO_death_to_all_nazis_tt
+		add_stability = -0.15
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = UPO_prepare_the_evacuation
+	icon = GFX_UPO_Prepare_the_Evacuations
+	cost = 5.00
+	x = 5
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_prepare_the_evacuation"
+		custom_effect_tooltip = UPO_prepare_the_evacuation_tt
+
+		add_political_power = 50
+		hidden_effect = {
+			#Set-up for Evacuation mechanic
+			set_country_flag = KOV_evacuation_phase0
+			set_variable = { KOV_evacuation_progress = 0 }
+			set_variable = { KOV_evacuation_progress_percent = 0 } #Used for display
+			#country_event = { id = KOV.200 days = 7 }
+		}
+	}
+}
+
+##Strike High
+shared_focus = {
+	id = UPO_strike_high
+	icon = GFX_UPO_Strike_High
+	cost = 5.00
+	prerequisite = { focus = UPO_death_to_all_nazis }
+	prerequisite = { focus = UPO_prepare_the_evacuation }
+	relative_position_id = UPO_death_to_all_nazis
+	x = -4
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_strike_high"
+		custom_effect_tooltip = UPO_strike_high_tt
+		12 = { add_manpower = -15000 }
+		190 = { add_manpower = -10000 }
+		11 = { add_manpower = -12500 }
+		94 = { add_manpower = -12500 }
+		96 = { add_manpower = -10000 }
+
+		#Refugees to Germany
+		if = {
+			limit = { has_global_flag = german_anarchy }
+
+		}
+		else_if = {
+			limit = { has_global_flag = german_civil_war }
+			GGR = { country_event = KOV.100 }
+			BGR = { country_event = KOV.100 }
+			HGR = { country_event = KOV.100 }
+			SGR = { country_event = KOV.100 }
+			GER = { country_event = KOV.100 }
+		}
+		else = {
+			GER = { country_event = KOV.100 }
+		}
+		#Refugees to Muscowien
+		MCW = { country_event = KOV.101 }
+		PAU = { country_event = KOV.101 }
+		OKB = { country_event = KOV.101 }
+		#Refugees to Finland
+		FIN = { country_event = KOV.102 }
+		#Refugees to Ukraine
+		UKR = { country_event = KOV.103 }
+	}
+}
+
+shared_focus = {
+	id = UPO_open_the_shelters
+	icon = GFX_Our_Own_Shelters
+	cost = 5.00
+	prerequisite = { focus = UPO_strike_high }
+	relative_position_id = UPO_strike_high
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_open_the_shelters"
+		custom_effect_tooltip = UPO_open_the_shelters_tt
+		12 = { add_manpower = -7500 }
+		190 = { add_manpower = -5000 }
+		11 = { add_manpower = -5000 }
+		94 = { add_manpower = -5000 }
+		96 = { add_manpower = -2500 }
+	}
+}
+
+shared_focus = {
+	id = UPO_pigs_to_slaughter
+	icon = GFX_UPO_pigs_to_slaughter
+	cost = 5.00
+	prerequisite = { focus = UPO_open_the_shelters }
+	relative_position_id = UPO_open_the_shelters
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_pigs_to_slaughter"
+		custom_effect_tooltip = UPO_pigs_to_slaughter_tt
+		12 = { add_manpower = -7500 }
+		190 = { add_manpower = -5000 }
+		11 = { add_manpower = -5000 }
+		94 = { add_manpower = -5000 }
+		96 = { add_manpower = -2500 }
+	}
+}
+
+#Spade the Sows
+shared_focus = {
+	id = UPO_spade_the_sows
+	icon = GFX_UPO_spade_the_sows
+	cost = 5.00
+	prerequisite = { focus = UPO_pigs_to_slaughter }
+	relative_position_id = UPO_pigs_to_slaughter
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_spade_the_sows"
+		custom_effect_tooltip = UPO_spade_the_sows_tt
+		#Destroy farms in Ostland
+	}
+}
+
+shared_focus = {
+	id = UPO_burn_their_barns
+	icon = GFX_UPO_burn_their_barns
+	cost = 5.00
+	prerequisite = { focus = UPO_spade_the_sows }
+	relative_position_id = UPO_spade_the_sows
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_burn_their_barns"
+		custom_effect_tooltip = UPO_burn_their_barns_tt
+		#Destroy farms in Ostland some more
+	}
+}
+
+#Cook the Fat
+shared_focus = {
+	id = UPO_cook_the_fat
+	icon = GFX_UPO_Cook_the_Fat
+
+	cost = 5.00
+	prerequisite = { focus = UPO_pigs_to_slaughter }
+	relative_position_id = UPO_pigs_to_slaughter
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_cook_the_fat"
+		custom_effect_tooltip = UPO_cook_the_fat_tt
+
+	}
+}
+
+shared_focus = {
+	id = UPO_eat_the_bacon
+	icon = GFX_UPO_Eat_the_Bacon
+	cost = 5.00
+	prerequisite = { focus = UPO_cook_the_fat }
+	relative_position_id = UPO_cook_the_fat
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_eat_the_bacon"
+		custom_effect_tooltip = UPO_eat_the_bacon_tt
+
+	}
+}
+
+#A Public Feast
+shared_focus = {
+	id = UPO_a_public_feast
+	icon = GFX_UPO_a_public_feast
+	cost = 5.00
+	prerequisite = { focus = UPO_burn_their_barns }
+	prerequisite = { focus = UPO_eat_the_bacon }
+	relative_position_id = UPO_burn_their_barns
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_a_public_feast"
+		custom_effect_tooltip = UPO_a_public_feast_tt
+		add_stability = 0.05
+		add_manpower = 15000
+		country_event = KOV.55
+	}
+}
+
+shared_focus = {
+	id = UPO_the_final_attraction
+	icon = GFX_generic_execute
+	cost = 5.00
+	prerequisite = { focus = UPO_a_public_feast }
+	relative_position_id = UPO_a_public_feast
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_the_final_attraction"
+		custom_effect_tooltip = UPO_the_final_attraction_tt
+		add_political_power = 50
+		country_event = KOV.56
+	}
+}
+
+shared_focus = {
+	id = UPO_a_gift_to_germany
+	icon = GFX_UPO_A_Gift_to_Germany
+	cost = 5.00
+	prerequisite = { focus = UPO_the_final_attraction }
+	relative_position_id = UPO_the_final_attraction
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_a_gift_to_germany"
+		custom_effect_tooltip = UPO_a_gift_to_germany_tt
+		GER = { country_event = KOV.110 }
+	}
+}
+
+##Nakam- Revenge!
+shared_focus = {
+	id = UPO_nakam_revenge
+	icon = GFX_UPO_Nakam_Revenge
+	cost = 5.00
+	prerequisite = { focus = UPO_death_to_all_nazis }
+	prerequisite = { focus = UPO_prepare_the_evacuation }
+	relative_position_id = UPO_death_to_all_nazis
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_nakam_revenge"
+		custom_effect_tooltip = UPO_nakam_revenge_tt
+	}
+}
+
+#Into the Reichskommissariats & Infiltrate Germany
+shared_focus = {
+	id = UPO_into_the_rks
+	icon = GFX_UPO_Into_the_Reichskommissariats
+	cost = 5.00
+	prerequisite = { focus = UPO_nakam_revenge }
+	relative_position_id = UPO_nakam_revenge
+	x = -3
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_into_the_rks"
+		custom_effect_tooltip = UPO_into_the_rks_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_infiltrate_germany
+	icon = GFX_BRG_focus_a_spy_in_every_command
+	cost = 5.00
+	prerequisite = { focus = UPO_nakam_revenge }
+	relative_position_id = UPO_nakam_revenge
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_infiltrate_germany"
+		custom_effect_tooltip = UPO_infiltrate_germany_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_ready_the_partisans
+	icon = GFX_OST_the_degeneracy_of_Kovner
+	cost = 5.00
+	prerequisite = { focus = UPO_infiltrate_germany }
+	prerequisite = { focus = UPO_into_the_rks }
+	relative_position_id = UPO_infiltrate_germany
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_ready_the_partisans"
+		custom_effect_tooltip = UPO_ready_the_partisans_tt
+	}
+}
+
+#Friends in Russia & The Breton Connection
+shared_focus = {
+	id = UPO_friends_in_russia
+	icon = GFX_UPO_Friends_in_Russia
+	cost = 5.00
+	prerequisite = { focus = UPO_nakam_revenge }
+	relative_position_id = UPO_nakam_revenge
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_friends_in_russia"
+		custom_effect_tooltip = UPO_friends_in_russia_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_the_breton_connection
+	icon = GFX_BRT_The_Breton_Standard
+	cost = 5.00
+	prerequisite = { focus = UPO_nakam_revenge }
+	relative_position_id = UPO_nakam_revenge
+	x = 3
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_the_breton_connection"
+		custom_effect_tooltip = UPO_the_breton_connection_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_secure_the_bombs
+	icon = GFX_UPO_Secure_the_Bombs
+	cost = 5.00
+	prerequisite = { focus = UPO_friends_in_russia }
+	prerequisite = { focus = UPO_the_breton_connection }
+	relative_position_id = UPO_friends_in_russia
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_secure_the_bombs"
+		custom_effect_tooltip = UPO_secure_the_bombs_tt
+	}
+}
+
+#The Eight Day Bombings
+shared_focus = {
+	id = UPO_the_eight_day_bombings
+	icon = GFX_UPO_the_eight_day_bombings
+	cost = 5.00
+	prerequisite = { focus = UPO_ready_the_partisans }
+	prerequisite = { focus = UPO_secure_the_bombs }
+	relative_position_id = UPO_ready_the_partisans
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_the_eight_day_bombings"
+		country_event = KOV.300
+		custom_effect_tooltip = UPO_the_eight_day_bombings_tt
+	}
+}
+
+#Strike at Ukraine
+shared_focus = {
+	id = UPO_strike_at_ukraine
+	icon = GFX_GER_Ukraine_Aflame
+	cost = 5.00
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = UPO_purge_ostland_tt
+			has_completed_focus = UPO_a_gift_to_germany
+			has_completed_focus = UPO_never_again
+		}
+		has_completed_focus = UPO_a_gift_to_germany
+		has_completed_focus = UPO_never_again
+	}
+	prerequisite = { focus = UPO_the_eight_day_bombings }
+	relative_position_id = UPO_the_eight_day_bombings
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_strike_at_ukraine"
+		create_wargoal = {
+			type = annex_everything
+			target = UKR
+		}
+		UKR = { country_event = KOV.301 }
+		custom_effect_tooltip = UPO_strike_at_ukraine_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_chaos_in_crimea
+	icon = GFX_seize_crimea
+	cost = 5.00
+	prerequisite = { focus = UPO_strike_at_ukraine }
+	relative_position_id = UPO_strike_at_ukraine
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_chaos_in_crimea"
+		137 = {
+			owner = {
+				country_event = KOV.302
+				UPO = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = UPO_chaos_in_crimea_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_cut_the_lines
+	icon = GFX_UPO_cut_the_lines
+	cost = 5.00
+	prerequisite = { focus = UPO_chaos_in_crimea }
+	relative_position_id = UPO_chaos_in_crimea
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_cut_the_lines"
+		189 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		11 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		96 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		95 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		94 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		93 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		199 = {
+			remove_building = {
+				type = infrastructure
+				level = 3
+			}
+		}
+		custom_effect_tooltip = UPO_cut_the_lines_tt
+		#No Entrance; destroy routes into Ostland, Russia and Ukraine
+	}
+}
+
+shared_focus = {
+	id = UPO_secure_the_breadbasket
+	icon = GFX_UPO_secure_the_breadbasket
+	cost = 5.00
+	prerequisite = { focus = UPO_cut_the_lines }
+	relative_position_id = UPO_cut_the_lines
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_secure_the_breadbasket"
+		202 = {
+			add_manpower = -2041
+		}
+		203 = {
+			add_manpower = -1193
+		}
+		193 = {
+			add_manpower = -1738
+		}
+		259 = {
+			add_manpower = -976
+		}
+		country_event = KOV.307
+		add_political_power = 25
+		add_stability = 0.05
+		custom_effect_tooltip = UPO_secure_the_breadbasket_tt
+	}
+}
+
+#Pillage Moskowien
+shared_focus = {
+	id = UPO_pillage_moskowien
+	icon = GFX_return_to_moscow
+	cost = 5.00
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = UPO_purge_ostland_tt
+			has_completed_focus = UPO_a_gift_to_germany
+			has_completed_focus = UPO_never_again
+		}
+		has_completed_focus = UPO_a_gift_to_germany
+		has_completed_focus = UPO_never_again
+	}
+	prerequisite = { focus = UPO_the_eight_day_bombings }
+	relative_position_id = UPO_the_eight_day_bombings
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_pillage_moskowien"
+		if = {
+			limit = { country_exists = MCW }
+			create_wargoal = {
+				type = annex_everything
+				target = MCW
+			}
+			country_event = KOV.303
+		}
+		if = {
+			limit = { country_exists = PAU }
+			create_wargoal = {
+				type = annex_everything
+				target = PAU
+			}
+			country_event = KOV.304
+		}
+		if = {
+			limit = { country_exists = OKB }
+			create_wargoal = {
+				type = annex_everything
+				target = OKB
+			}
+			country_event = KOV.305
+		}
+		if = {
+			limit = { country_exists = MOS }
+			create_wargoal = {
+				type = annex_everything
+				target = MOS
+			}
+			country_event = KOV.306
+		}
+		custom_effect_tooltip = UPO_pillage_moskowien_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_rally_the_russians
+	icon = GFX_UPO_rally_the_russians
+	cost = 5.00
+	prerequisite = { focus = UPO_pillage_moskowien }
+	relative_position_id = UPO_pillage_moskowien
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_rally_the_russians"
+		country_event = KOV.308
+		custom_effect_tooltip = UPO_rally_the_russians_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_terrorize_the_nazis
+	icon = GFX_DRL_Prepare_for_the_Clash
+	cost = 5.00
+	prerequisite = { focus = UPO_rally_the_russians }
+	relative_position_id = UPO_rally_the_russians
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_terrorize_the_nazis"
+		GER = { country_event = KOV.309 }
+		custom_effect_tooltip = UPO_terrorize_the_nazis_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_gather_the_manpower
+	icon = GFX_Generic_Soldiers_Red
+	cost = 5.00
+	prerequisite = { focus = UPO_terrorize_the_nazis }
+	relative_position_id = UPO_terrorize_the_nazis
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_gather_the_manpower"
+		country_event = KOV.310
+		custom_effect_tooltip = UPO_gather_the_manpower_tt
+	}
+}
+
+##Strike Low
+shared_focus = {
+	id = UPO_strike_low
+	icon = GFX_UPO_Strike_Low
+	cost = 5.00
+	prerequisite = { focus = UPO_death_to_all_nazis }
+	prerequisite = { focus = UPO_prepare_the_evacuation }
+	relative_position_id = UPO_prepare_the_evacuation
+	x = 4
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_strike_low"
+		custom_effect_tooltip = UPO_strike_low_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_all_are_complicit
+	icon = GFX_UPO_all_are_complicit
+	cost = 5.00
+	prerequisite = { focus = UPO_strike_low }
+	relative_position_id = UPO_strike_low
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_all_are_complicit"
+		custom_effect_tooltip = UPO_all_are_complicit_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_none_are_free
+	icon = GFX_UPO_none_are_free
+	cost = 5.00
+	prerequisite = { focus = UPO_all_are_complicit }
+	relative_position_id = UPO_all_are_complicit
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_none_are_free"
+		custom_effect_tooltip = UPO_none_are_free_tt
+	}
+}
+
+#Proud Veterans
+shared_focus = {
+	id = UPO_proud_veterans
+	icon = GFX_UPO_proud_veterans
+	cost = 5.00
+	prerequisite = { focus = UPO_none_are_free }
+	relative_position_id = UPO_none_are_free
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_proud_veterans"
+		custom_effect_tooltip = UPO_proud_veterans_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_gunshot_trials
+	icon = GFX_BRG_focus_execution_quotas
+	cost = 5.00
+	prerequisite = { focus = UPO_proud_veterans }
+	relative_position_id = UPO_proud_veterans
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_gunshot_trials"
+		custom_effect_tooltip = UPO_gunshot_trials_tt
+	}
+}
+
+#Proud Mothers, Fathers and Daughters
+shared_focus = {
+	id = UPO_mothers_fathers_and_daughters
+	icon = GFX_UPO_proud_mothers_fathers_and_daughters
+	cost = 5.00
+	prerequisite = { focus = UPO_none_are_free }
+	relative_position_id = UPO_none_are_free
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_mothers_fathers_and_daughters"
+		custom_effect_tooltip = UPO_mothers_fathers_and_daughters_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_terror_in_return
+	icon = GFX_SPS_Gallows
+	cost = 5.00
+	prerequisite = { focus = UPO_mothers_fathers_and_daughters }
+	relative_position_id = UPO_mothers_fathers_and_daughters
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_terror_in_return"
+		custom_effect_tooltip = UPO_terror_in_return_tt
+	}
+}
+
+#A Public Feast
+shared_focus = {
+	id = UPO_family_graves
+	icon = GFX_AKT_Gravestone
+	cost = 5.00
+	prerequisite = { focus = UPO_gunshot_trials }
+	prerequisite = { focus = UPO_terror_in_return }
+	relative_position_id = UPO_gunshot_trials
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_family_graves"
+		custom_effect_tooltip = UPO_family_graves_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_burn_it_all
+	icon = GFX_UPO_Burn_It_All
+	cost = 5.00
+	prerequisite = { focus = UPO_family_graves }
+	relative_position_id = UPO_family_graves
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_burn_it_all"
+		custom_effect_tooltip = UPO_burn_it_all_tt
+	}
+}
+
+shared_focus = {
+	id = UPO_never_again
+	icon = GFX_UPO_Never_Again
+	cost = 5.00
+	prerequisite = { focus = UPO_burn_it_all }
+	relative_position_id = UPO_burn_it_all
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_never_again"
+		custom_effect_tooltip = UPO_never_again_tt
+	}
+}
+
+#Completion
+shared_focus = {
+	id = UPO_six_million_germans
+	icon = GFX_UPO_six_million_germans
+	cost = 5.00
+	prerequisite = { focus = UPO_secure_the_breadbasket }
+	prerequisite = { focus = UPO_gather_the_manpower }
+	relative_position_id = UPO_secure_the_breadbasket
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_six_million_germans"
+		create_wargoal = {
+			type = annex_everything
+			target = GER
+		}
+		GER = { country_event = KOV.311 }
+		custom_effect_tooltip = UPO_six_million_germans_tt
+	}
+}
+
+##################################
+##===| German Invasion Tree |===##
+##=====| David and Goliath |====##
+##################################
+#Left to Right; Top to Bottom
+
+shared_focus = {
+	id = UPO_david_and_goliath
+	icon = GFX_UPO_David_and_Goliath
+	cost = 5.00
+	allow_branch = { OR = { has_country_flag = UPO_germans_invading has_country_flag = dbg_kov_invasion } }
+	x = 14
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus OST_the_model_colony"
+		custom_effect_tooltip = UPO_david_and_goliath_tt
+		#Completed upon availability
+	}
+}
+
+#The New Plague
+shared_focus = {
+	id = UPO_the_new_plague
+	icon = GFX_UPO_The_New_Plague
+	cost = 5.00
+	prerequisite = { focus = UPO_david_and_goliath }
+	relative_position_id = UPO_david_and_goliath
+	x = -2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_the_new_plague"
+		custom_effect_tooltip = UPO_the_new_plague_tt
+		#Puts in place province modifier worsening attrition & slowing movement for opponents in Ostland in the border regions
+	}
+}
+
+shared_focus = {
+	id = UPO_poisoned_wells
+	icon = GFX_UPO_Poisoned_Wells
+	cost = 5.00
+	prerequisite = { focus = UPO_the_new_plague }
+	relative_position_id = UPO_the_new_plague
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_poisoned_wells"
+		custom_effect_tooltip = UPO_poisoned_wells_tt
+		#Spreads aforementioned province modifiers further into Ostland
+	}
+}
+
+shared_focus = {
+	id = UPO_great_famine
+	icon = GFX_UPO_great_famine
+	cost = 5.00
+	prerequisite = { focus = UPO_poisoned_wells }
+	relative_position_id = UPO_poisoned_wells
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_great_famine"
+		custom_effect_tooltip = UPO_great_famine_tt
+		#Spreads aforementioned province modifier further into Ostland
+	}
+}
+
+#Back to Basics
+shared_focus = {
+	id = UPO_back_to_basics
+	icon = GFX_IND_rifles_guns_cannons
+	cost = 5.00
+	prerequisite = { focus = UPO_david_and_goliath }
+	relative_position_id = UPO_david_and_goliath
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_back_to_basics"
+		custom_effect_tooltip = UPO_back_to_basics_tt
+		#Debuff for Germany
+	}
+}
+
+shared_focus = {
+	id = UPO_spike_traps
+	icon = GFX_UPO_spike_traps
+	cost = 5.00
+	prerequisite = { focus = UPO_back_to_basics }
+	relative_position_id = UPO_back_to_basics
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_spike_traps"
+		custom_effect_tooltip = UPO_spike_traps_tt
+		#Removes some infrastructure & a debuff for Germany
+	}
+}
+
+shared_focus = {
+	id = UPO_improvised_devices
+	icon = GFX_UPO_Improvised_Devices
+	cost = 5.00
+	prerequisite = { focus = UPO_spike_traps }
+	relative_position_id = UPO_spike_traps
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_improvised_devices"
+		custom_effect_tooltip = UPO_improvised_devices_tt
+		#Debuff for Germany
+	}
+}
+
+#We Die for ...
+shared_focus = {
+	id = UPO_we_die_for_freedom
+	icon = GFX_UPO_We_Die_for_Freedom
+	cost = 5.00
+	prerequisite = { focus = UPO_david_and_goliath }
+	relative_position_id = UPO_david_and_goliath
+	x = 2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_we_die_for_freedom"
+		custom_effect_tooltip = UPO_we_die_for_freedom_tt
+		#Adds "For Freedom", conferring some bonuses to defence
+	}
+}
+
+shared_focus = {
+	id = UPO_we_die_for_justice
+	icon = GFX_UPO_We_Die_for_Justice
+	cost = 5.00
+	prerequisite = { focus = UPO_we_die_for_freedom }
+	relative_position_id = UPO_we_die_for_freedom
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_we_die_for_justice"
+		custom_effect_tooltip = UPO_we_die_for_justice_tt
+		#Replaces "For Freedom" with "For Freedom and Justice", conferring some bonuses to attack
+	}
+}
+
+shared_focus = {
+	id = UPO_we_die_for_god
+	icon = GFX_UPO_We_Die_for_God
+	cost = 5.00
+	prerequisite = { focus = UPO_we_die_for_justice }
+	relative_position_id = UPO_we_die_for_justice
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_we_die_for_god"
+		custom_effect_tooltip = UPO_we_die_for_god_tt
+		#Replaces "For Freedom and Justice" with "For Freedom, Justice, and God", conferring some bonuses to reorg
+	}
+}
+
+#Kiddush HaShem
+shared_focus = {
+	id = UPO_kiddush_hashem
+	icon = GFX_UPO_Kiddush_HaShem
+	cost = 5.00
+	prerequisite = { focus = UPO_great_famine }
+	prerequisite = { focus = UPO_improvised_devices }
+	prerequisite = { focus = UPO_we_die_for_god }
+	relative_position_id = UPO_improvised_devices
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus UPO_kiddush_hashem"
+		custom_effect_tooltip = UPO_kiddush_hashem_tt
+		#Replaces "We Die for..." with Kiddush HaShem, offering significant bonuses to defense and reorg in core territory but worsening hp
+	}
+}

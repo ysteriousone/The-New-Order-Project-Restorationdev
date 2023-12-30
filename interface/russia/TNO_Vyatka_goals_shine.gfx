@@ -1,0 +1,58 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_VYT_the_imperial_rail_system_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_the_imperial_rail_system.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_the_imperial_rail_system.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_the_imperial_rail_system.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_VYT_give_more_for_the_emperor_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_give_more_for_the_emperor.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_give_more_for_the_emperor.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_give_more_for_the_emperor.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_VYT_the_emperors_neutrality_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_the_emperors_neutrality.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_the_emperors_neutrality.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_the_emperors_neutrality.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_the_empire_strikes_back_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_the_empire_strikes_back.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_the_empire_strikes_back.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_the_empire_strikes_back.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_VYT_define_the_enemy_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_define_the_enemy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_define_the_enemy.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_define_the_enemy.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_VYT_Bind_Them_Through_Memory_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_Bind_Them_Through_Memory.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_Bind_Them_Through_Memory.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_Bind_Them_Through_Memory.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_VYT_Let_The_Past_Fade_shine"
+		texturefile = "gfx/interface/goals/Vyatka/GFX_VYT_Let_The_Past_Fade.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_Let_The_Past_Fade.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Vyatka/GFX_VYT_Let_The_Past_Fade.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+}

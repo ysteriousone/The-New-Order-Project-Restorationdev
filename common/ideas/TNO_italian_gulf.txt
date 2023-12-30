@@ -1,0 +1,164 @@
+ideas = {
+	country = {
+		GUL_electrification_plans = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_electrification_plans"}
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			picture = economic_control_icon
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+		GUL_CASL = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_CASL"}
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			picture = economic_control_icon
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		ita_oil_cult_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ita_oil_cult_2"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = 0.3
+				fuel_gain_factor_from_states = 0.2
+			}
+		}
+
+		ita_oil_cult_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ita_oil_cult_3"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = 0.4
+				fuel_gain_factor_from_states = 0.3
+			}
+		}
+
+		GUL_welfare_immigrants = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_welfare_immigrants"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+
+		GUL_IRI_method = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_IRI_method"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		GUL_abu_dhabi_blitz = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_abu_dhabi_blitz"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		GUL_deal_with_italy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_deal_with_italy"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				extra_trade_to_target_factor = 0.5
+			}
+		}
+
+		GUL_increased_naval_funds = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_increased_naval_funds"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				production_speed_dockyard_factor = 0.2
+				production_speed_naval_base_factor = 0.1
+			}
+		}
+
+		GUL_inspired_workers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GUL_inspired_workers"}
+			picture = OIL_stage_2
+			allowed = {
+				original_tag = "GUL"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+	}
+}

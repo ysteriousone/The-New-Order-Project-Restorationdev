@@ -1,0 +1,43 @@
+﻿add_namespace = OFN.voting
+
+
+country_event = {
+	id = OFN.voting.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OFN.voting.1"}
+	title = OFN.voting.1.t
+	desc = OFN.voting.1.desc
+	picture = GFX_report_event_generic_peaceful_annexation
+
+	immediate = {
+		hidden_effect = {
+			OFN_check_if_vote_passed = yes
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = OFN.voting.1.a
+		trigger = { has_country_flag = OFN_vote_failed }
+
+		OFN_end_vote = yes
+	}
+
+	option = {
+		name = OFN.voting.1.b
+		trigger = { NOT = { has_country_flag = OFN_vote_failed } }
+		custom_effect_tooltip = WFB_OFN_Business_raise
+		custom_effect_tooltip = WFB_Dixiecrats_Relationship_lower
+		add_to_variable = { WFB_OFN_Business = 10 }
+		add_to_variable = { WFB_Republican_Relationship = -15 }
+		add_to_variable = { OFN_Unity = 1 }
+		add_to_variable = { interest_rates = -0.00005 }
+		for_each_scope_loop = {
+			array = global.OFN_members
+			add_to_variable = { interest_rates = -0.00005 }
+		}
+		custom_effect_tooltip = USA_add_OFN_unity
+		custom_effect_tooltip = USA_WFB_fix_exchange_rates_tooltip
+		OFN_end_vote = yes
+	}
+}

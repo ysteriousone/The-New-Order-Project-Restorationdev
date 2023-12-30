@@ -1,0 +1,353 @@
+characters = {
+	## LEADERS
+	BRT_Olier_Mordrel = {
+		name = BRT_Olier_Mordrel
+		portraits = { civilian = { large = "gfx/leaders/BRT/Portrait_Brittany_Olier_Mordrel.dds" } }
+		country_leader = {
+			desc = "POLITICS_OLIER_MORDREL_DESC"
+			ideology = fascism_corporatism_subtype
+			traits = { dictator the_merchant_of_death }
+			expire = "1986.10.12.1"
+			id = -1
+		}
+	}
+	BRT_Raymond_Delaporte = {
+		name = BRT_Raymond_Delaporte
+		portraits = { civilian = { large = "gfx/leaders/BRT/Portrait_Brittany_Raymond_Delaporte.dds" } }
+		country_leader = {
+			desc = "POLITICS_RAYMOND_DELAPORTE_DESC"
+			ideology = paternalism_controlled_democracy_subtype
+			traits = { democratic_reformer ideological_crusader }
+			expire = "1986.10.12"
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_RAYMOND_DELAPORTE_DESC"
+			ideology = conservatism_paternalistic_conservatism_subtype
+			traits = { democratic_reformer ideological_crusader }
+			expire = "1986.10.12"
+			id = -1
+
+		}
+	}
+	BRT_Celestin_Laine = {
+		name = BRT_Celestin_Laine
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRT/Portrait_Brittany_Celestin_Laine.dds"
+				small = "GFX_idea_BRT_Celestin_Laine"
+			}
+			army = {
+				large = "gfx/leaders/BRT/Portrait_Brittany_Celestin_Laine.dds"
+				small = "GFX_idea_BRT_Celestin_Laine"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected war_hero hidden_sympathies ranger }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = 730
+		}
+		country_leader = {
+			desc = "POLITICS_CELESTIN_LAINE_DESC"
+			ideology = national_socialism_subtype
+			traits = { dictator }
+			expire = "1986.10.12.1"
+			id = -1
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = BRT_Celestin_Laine_hog
+			allowed = { original_tag = BRT }
+			traits = {
+				head_of_government
+				hog_flamboyant_tough_guy
+				hog_utterly_corrupt
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = BRT_Celestin_Laine_sec
+			allowed = { original_tag = BRT }
+			traits = {
+				security_minister
+				sec_crooked_kleptocrat
+				sec_political_appointment
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Yann_Goulet = {
+		name = BRT_Yann_Goulet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRT/Portrait_Brittany_Yann_Goulet.dds"
+				small = "GFX_idea_BRT_Yann_Goulet"
+			}
+			army = {
+				large = "gfx/leaders/BRT/Portrait_Brittany_Yann_Goulet.dds"
+				small = "GFX_idea_BRT_Yann_Goulet"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero hidden_sympathies }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 731
+		}
+		country_leader = {
+			ideology = ultranationalism_subtype
+			expire = "1986.10.12.1"
+			id = -1
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = BRT_Yann_Goulet_sec
+			allowed = { original_tag = BRT }
+			traits = {
+				security_minister
+				sec_prince_of_terror
+				sec_disliked_by_the_military
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_No_Leadership = {
+		name = BRT_No_Leadership
+		portraits = { civilian = { large = "gfx/leaders/Generics/leader_unknown.dds" } }
+	}
+	## MINISTERS
+	BRT_Francois_Debeauvais = {
+		name = BRT_Francois_Debeauvais
+		portraits = { civilian = { small = "GFX_idea_BRT_Francois_Debeauvais" } }
+		advisor = {
+			slot = head_of_government
+			idea_token = BRT_Francois_Debeauvais_hog
+			allowed = { original_tag = BRT }
+			traits = {
+				head_of_government
+				hog_corporate_suit
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Yann_Fouere = {
+		name = BRT_Yann_Fouere
+		portraits = { civilian = { small = "GFX_idea_BRT_Yann_Fouere" } }
+		advisor = {
+			slot = head_of_government
+			idea_token = BRT_Yann_Fouere_hog
+			allowed = { original_tag = BRT }
+			traits = {
+				head_of_government
+				hog_silent_workhorse
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = BRT_Yann_Fouere_for
+			allowed = { original_tag = BRT }
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				for_seasoned_ambassador
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Job_Jaffre = {
+		name = BRT_Job_Jaffre
+		portraits = { civilian = { small = "GFX_idea_BRT_Job_Jaffre" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = BRT_Job_Jaffre_for
+			allowed = { original_tag = BRT }
+			traits = {
+				foreign_minister
+				for_apologetic_clerk
+				for_political_appointment
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Alain_Guel = {
+		name = BRT_Alain_Guel
+		portraits = { civilian = { small = "GFX_idea_BRT_Alain_Guel" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = BRT_Alain_Guel_for
+			allowed = { original_tag = BRT }
+			traits = {
+				foreign_minister
+				for_biased_intellectual
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Edouard_Queau = {
+		name = BRT_Edouard_Queau
+		portraits = { civilian = { small = "GFX_idea_BRT_Edouard_Queau" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = BRT_Edouard_Queau_for
+			allowed = { original_tag = BRT }
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Yann_Bricler = {
+		name = BRT_Yann_Bricler
+		portraits = { civilian = { small = "GFX_idea_BRT_Yann_Bricler" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = BRT_Yann_Bricler_eco
+			allowed = { original_tag = BRT }
+			traits = {
+				economy_minister
+				eco_corrupt_kleptocrat
+				eco_laissez_faire_capitalist
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Herve_Le_Boterf = {
+		name = BRT_Herve_Le_Boterf
+		portraits = { civilian = { small = "GFX_idea_BRT_Herve_Le_Boterf" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = BRT_Herve_Le_Boterf_eco
+			allowed = { original_tag = BRT }
+			traits = {
+				economy_minister
+				eco_construction_magnate
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Loeiz_Andouard = {
+		name = BRT_Loeiz_Andouard
+		portraits = { civilian = { small = "GFX_idea_BRT_Loeiz_Andouard" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = BRT_Loeiz_Andouard_eco
+			allowed = { original_tag = BRT }
+			traits = {
+				economy_minister
+				eco_union_man
+				eco_balanced_budget_economy
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	BRT_Goulven_Pennaod = {
+		name = BRT_Goulven_Pennaod
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRT/Portrait_Brittany_Goulven_Pennaod.dds"
+				small = "GFX_idea_BRT_Goulven_Pennaod"
+			}
+			army = {
+				large = "gfx/leaders/BRT/Portrait_Brittany_Goulven_Pennaod.dds"
+				small = "GFX_idea_BRT_Goulven_Pennaod"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer war_hero }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 734
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = BRT_Goulven_Pennaod_sec
+			allowed = { original_tag = BRT }
+			traits = {
+				security_minister
+				sec_man_of_the_people
+				sec_steadfast_defender
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	## GENERALS
+	BRT_Louis_Feutren = {
+		name = BRT_Louis_Feutren
+		portraits = { army = { large = "gfx/leaders/BRT/Portrait_Brittany_Louis_Feutren.dds" } }
+		corps_commander = {
+			traits = { trait_cautious urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 732
+		}
+	}
+	BRT_Alan_Heusaff = {
+		name = BRT_Alan_Heusaff
+		portraits = { army = { large = "gfx/leaders/BRT/Portrait_Brittany_Alan_Heusaff.dds" } }
+		corps_commander = {
+			traits = { media_personality hidden_sympathies }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 733
+		}
+	}
+}

@@ -1,0 +1,1310 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_KOM_queen_of_wands"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_queen_of_wands.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_page_of_pentacles"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_page_of_pentacles.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_ace_of_pentacles"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_ace_of_pentacles.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_king_of_swords"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_king_of_swords.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_king_of_cups"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_king_of_cups.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_queen_of_swords"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_queen_of_swords.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_king_of_swords"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_king_of_swords.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_king_of_wands"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_king_of_wands.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_ace_of_swords"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_ace_of_swords.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_page_of_cups"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_page_of_cups.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_knight_of_pentacles"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_knight_of_pentacles.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Voznesensky"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Voznesensky.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Kosygin"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Kosygin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Stalina"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Stalina.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_bukharina"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_bukharina.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_zhdanov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_zhdanov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Shafarevich"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Shafarevich.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Serov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Serov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_rightist_flag"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_rightist_flag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_communist_flag"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_communist_flag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_democratic_flag"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_democratic_flag.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_zhdanov_distance"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_zhdanov_distance.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_government_check"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_government_check.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_THA_It_Was_The_Airforce"
+		texturefile = "gfx/interface/goals/Komi/THA_It_Was_The_Airforce_All_Along.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_subliminal_encoding"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_subliminal_encoding.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_subliminal_triggers"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_subliminal_triggers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_observe_leftist_paramilitaries"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_observe_leftist_paramilitaries.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_let_them_burn_themselves_out"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_let_them_burn_themselves_out.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_eyes_to_the_right"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_eyes_to_the_right.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_eyes_to_the_left"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_eyes_to_the_left.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_eyes_straight_ahead"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_eyes_straight_ahead.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_distance_from_zhdanov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_distance_from_zhdanov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_believe_in_svetlana"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_believe_in_svetlana.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_new_face"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_a_new_face.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_strike_from_the_right"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_strike_from_the_right.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_strike_from_the_left"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_strike_from_the_left.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_spreading_red_influence"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_spreading_red_influence.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_municipal_pacification_act"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_municipal_pacification_act.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_minutes_of_the_congress"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_minutes_of_the_congress.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_minority_representation_act"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_minority_representation_act.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_interlude"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_interlude.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_last_year_of_the_voznesenstsi"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_last_year_of_the_voznesenstsi.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_infrastructure_repair_act"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_infrastructure_repair_act.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_government_in_check"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_government_in_check.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_face_of_the_movement"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_face_of_the_movement.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_extent_of_the_shadow"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_extent_of_the_shadow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_equal_zoning_act"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_equal_zoning_act.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_defense_of_the_republic_act"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_defense_of_the_republic_act.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_affairs_legislature"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_affairs_legislature.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_1962_budget"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_1962_budget.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_speak_with_stalina"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_speak_with_stalina.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_reinforce_the_center"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_reinforce_the_center.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_our_paramilitaries_reports"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_our_paramilitaries_reports.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_telepathy"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_telepathy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_human_interface"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_human_interface.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_collective_conciousness"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_collective_conciousness.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Graven_in_Stone"
+		texturefile = "gfx/interface/goals/Komi/KOM_Graven_in_Stone.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_A_Legion_of_Scribes"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_Legion_of_Scribes.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Circles_Within_Circles"
+		texturefile = "gfx/interface/goals/Komi/KOM_Circles_Within_Circles.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Clarify_Ideological_Precepts"
+		texturefile = "gfx/interface/goals/Komi/KOM_Clarify_Ideological_Precepts.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Cleanse_Unwanted_Axioms"
+		texturefile = "gfx/interface/goals/Komi/KOM_Cleanse_Unwanted_Axioms.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Delineate_the_Western_Boundary"
+		texturefile = "gfx/interface/goals/Komi/KOM_Delineate_the_Western_Boundary.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Dismantle_Slavophilia"
+		texturefile = "gfx/interface/goals/Komi/KOM_Dismantle_Slavophilia.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Ethnopluralist_Agenda"
+		texturefile = "gfx/interface/goals/Komi/KOM_Ethnopluralist_Agenda.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Framework_of_the_Grand_Design"
+		texturefile = "gfx/interface/goals/Komi/KOM_Framework_of_the_Grand_Design.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Happy_Symbiosis"
+		texturefile = "gfx/interface/goals/Komi/KOM_Happy_Symbiosis.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Ideocratic_Elite"
+		texturefile = "gfx/interface/goals/Komi/KOM_Ideocratic_Elite.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Interlocking_Fields"
+		texturefile = "gfx/interface/goals/Komi/KOM_Interlocking_Fields.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Parasite_Chimera"
+		texturefile = "gfx/interface/goals/Komi/KOM_Parasite_Chimera.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_Puppets_on_Silken_Strings"
+		texturefile = "gfx/interface/goals/Komi/KOM_Puppets_on_Silken_Strings.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_The_Elder_Sibling"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Elder_Sibling.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_the_spiders_web"
+		texturefile = "gfx/interface/goals/Komi/KOM_the_spiders_web.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_The_Stern_Tutor"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Stern_Tutor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_heritage_for_the_future"
+		texturefile = "gfx/interface/goals/Komi/KOM_heritage_for_the_future.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_An_Absolute_Truth"
+		texturefile = "gfx/interface/goals/Komi/KOM_An_Absolute_Truth.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_A_Glorious_New_Day"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_Glorious_New_Day.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_A_paramount_leader_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_paramount_leader_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_A_scientific_system_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_scientific_system_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Strength_in_Body"
+		texturefile = "gfx/interface/goals/Komi/KOM_Strength_in_Body.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_experimental_weapons"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_experimental_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_socialist_society"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_socialist_society.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_abolish_purges"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_abolish_purges.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_bureau_of_ideological_analysis"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_bureau_of_ideological_analysis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_communist_party"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_communist_party.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_expel_revisionists"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_expel_revisionists.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_protect_the_party"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_protect_the_party.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_purge_suslov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_purge_suslov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_reconcile_factions"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_reconcile_factions.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_refined_at_last"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_refined_at_last.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_secure_the_party"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_secure_the_party.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_voices_of_the_people"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_voices_of_the_people.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_people"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_people.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_industry"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_army"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_world"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_world.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_psychological_revolution"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_psychological_revolution.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_cutting_edge_rifle"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_a_cutting_edge_rifle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_SMR_campaign"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_SMR_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_PSD_campaign"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_PSD_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_DSNP_campaign"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_DSNP_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_KKP_campaign"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_KKP_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_RNP_campaign"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_RNP_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_army_for_the_motherland"
+		texturefile = "gfx/interface/goals/Komi/KOM_army_for_the_motherland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_army_for_the_world"
+		texturefile = "gfx/interface/goals/Komi/KOM_army_for_the_world.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_doctrinal_refinement"
+		texturefile = "gfx/interface/goals/Komi/KOM_doctrinal_refinement.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_kazan_military_academy"
+		texturefile = "gfx/interface/goals/Komi/KOM_kazan_military_academy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_komi_infantry"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_komi_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_lessons_of_unification_wars"
+		texturefile = "gfx/interface/goals/Komi/KOM_lessons_of_unification_wars.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_lessons_of_west_russian_war"
+		texturefile = "gfx/interface/goals/Komi/KOM_lessons_of_west_russian_war.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_lessons_of_unification_wars_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/KOM_lessons_of_unification_wars_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_lessons_of_west_russian_war_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/KOM_lessons_of_west_russian_war_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_trans_polar_diplomacy_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_trans_polar_diplomacy_ultravisionary.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_redirect_popular_associationism_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_redirect_popular_associationism_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_diversion_for_the_people_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_diversion_for_the_people_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_global_armed_forces_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_global_armed_forces_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_political_reliability_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_political_reliability_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_seeds_of_superculture_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_seeds_of_superculture_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_renovate_military_standards_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_renovate_military_standards_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_visionary_warfare_doctrines_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_visionary_warfare_doctrines_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_new_northern_fleet"
+		texturefile = "gfx/interface/goals/Komi/KOM_new_northern_fleet.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_next_generation"
+		texturefile = "gfx/interface/goals/Komi/KOM_next_generation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_revise_air_force"
+		texturefile = "gfx/interface/goals/Komi/KOM_revise_air_force.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_revise_war_ministry"
+		texturefile = "gfx/interface/goals/Komi/KOM_revise_war_ministry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_unions_finest"
+		texturefile = "gfx/interface/goals/Komi/KOM_unions_finest.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_national_sovereignty_act"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_national_sovereignty_act.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_return_to_kollontai"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_return_to_kollontai.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_past_wrongs"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_past_wrongs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_anti_discrimination_laws"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_anti_discrimination_laws.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_sovereign_future"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_a_sovereign_future.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_shining_precedent_stalina"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_a_shining_precedent_stalina.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_soviet_humanism"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_soviet_humanism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_culture_of_questioning"
+		texturefile = "gfx/interface/goals/Komi/KOM_culture_of_questioning.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_english_embassy"
+		texturefile = "gfx/interface/goals/Komi/KOM_english_embassy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_for_your_own_good"
+		texturefile = "gfx/interface/goals/Komi/KOM_for_your_own_good.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_innovative_union"
+		texturefile = "gfx/interface/goals/Komi/KOM_innovative_union.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_loyal_police_force"
+		texturefile = "gfx/interface/goals/Komi/KOM_loyal_police_force.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_march_to_utopia"
+		texturefile = "gfx/interface/goals/Komi/KOM_march_to_utopia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_peace_at_last"
+		texturefile = "gfx/interface/goals/Komi/KOM_peace_at_last.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_restore_international_trade"
+		texturefile = "gfx/interface/goals/Komi/KOM_restore_international_trade.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_shackle_dogmatists"
+		texturefile = "gfx/interface/goals/Komi/KOM_shackle_dogmatists.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_socialist_science"
+		texturefile = "gfx/interface/goals/Komi/KOM_socialist_science.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_soviet_education_system"
+		texturefile = "gfx/interface/goals/Komi/KOM_soviet_education_system.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_open_the_government"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_open_the_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_A_Harsh_Glare"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_Harsh_Glare.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Honor_in_a_Humble_Life"
+		texturefile = "gfx/interface/goals/Komi/KOM_Honor_in_a_Humble_Life.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Venerate_The_Soldier"
+		texturefile = "gfx/interface/goals/Komi/KOM_Venerate_The_Soldier.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Imperial_Corporations"
+		texturefile = "gfx/interface/goals/Komi/KOM_Imperial_Corporations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Imperial_Opulence"
+		texturefile = "gfx/interface/goals/Komi/KOM_Imperial_Opulence.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_No_Law_But_the_Regents"
+		texturefile = "gfx/interface/goals/Komi/KOM_No_Law_But_the_Regents.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Purity_in_Soul"
+		texturefile = "gfx/interface/goals/Komi/KOM_Purity_in_Soul.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_The_Grand_Regency"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Grand_Regency.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_The_Heralds_of_the_Empire"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Heralds_of_the_Empire.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_The_Wealth_of_Russia"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Wealth_of_Russia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Poyekhali"
+		texturefile = "gfx/interface/goals/Komi/KOM_Poyekhali.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_embassy_of_proletariat"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_embassy_of_proletariat_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_The_New_Marx"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_New_Marx.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_Establish_the_Masterocracy"
+		texturefile = "gfx/interface/goals/Komi/KOM_Establish_the_Masterocracy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_the_social_sphere_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_social_sphere_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_state_sphere_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_state_sphere_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_uranium_extraction_methods_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_uranium_extraction_methods_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_absorb_sverdlovsk_bureau_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_absorb_sverdlovsk_bureau_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_people_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_people_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_closed_cities_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_closed_cities_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_way_for_humanity_is_open_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_way_for_humanity_is_open_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_glory_to_the_ones_who_look_forward_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_glory_to_the_ones_who_look_forward_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_observe_cultural_shifts_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_observe_cultural_shifts_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_assess_reclaimed_territories_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_assess_reclaimed_territories_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_army_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_army_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_necessary_material_conditions_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_necessary_material_conditions_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_diversified_applications_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_diversified_applications_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_absorb_compatible_elements_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_absorb_compatible_elements_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_agri_industrial_syncretism_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_agri_industrial_syncretism_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_anti_liberalism_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_anti_liberalism_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_anti_suslovism_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_anti_suslovism_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_revolutionary_course_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_a_revolutionary_course_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_building_the_future_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_building_the_future_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_censorship_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_censorship_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_centralized_manufactories_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_centralized_manufactories_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_cybernetic_agriculture_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_cybernetic_agriculture_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_five_year_plan_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_five_year_plan_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_optimized_resource_exploitation_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_optimized_resource_exploitation_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_PCoS_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_PCoS_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_rehabilitate_the_personnel_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_rehabilitate_the_personnel_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_revolutionary_decrees_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_revolutionary_decrees_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_silence_bukharina_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_silence_bukharina_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_socialist_superculture_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_socialist_superculture_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_social_sphere_permeation_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_social_sphere_permeation_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_society_redefined_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_society_redefined_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_atomic_age_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_atomic_age_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_rocket_equation_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_rocket_equation_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_ultimate_weapon_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_ultimate_weapon_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_ultravisionary_zhdanov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_ultravisionary_zhdanov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_universal_infrastructure_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_universal_infrastructure_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_urban_resettlement_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_urban_resettlement_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_visionaries_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_visionaries_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_industry_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_industry_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_ultravisionary_socialism"
+		texturefile = "gfx/interface/goals/Komi/KOM_ultravisionary_socialism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_army_for_the_motherland_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_army_for_the_motherland_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_blind_ultravisionaries"
+		texturefile = "gfx/interface/goals/Komi/KOM_blind_ultravisionaries.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_revise_the_air_force_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_revise_the_air_force_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_revise_war_ministry_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_revise_war_ministry_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_unity_in_vision_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_unity_in_vision_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_unity_in_ideology_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_unity_in_ideology_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_march_of_revolutionary_progress_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_march_of_revolutionary_progress_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_new_northern_fleet_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_new_northern_fleet_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_next_generation_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_next_generation_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_unions_finest_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_unions_finest_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Condemn_Reactionary_Imperialism_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Condemn_Reactionary_Imperialism_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Congratulate_Free_Norway_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_Congratulate_Free_Norway_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_connections_in_england_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_connections_in_england_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_doctrinal_synergistics_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_doctrinal_synergistics_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_lines_to_sweden_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_lines_to_sweden_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_nuuk_expedition_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_nuuk_expedition_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_scandinavian_sphere_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_the_scandinavian_sphere_ultravisionary.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_vision_for_the_world_ultravisionary"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_vision_for_the_world_ultravisionary.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_affairs_of_national_assembly"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_affairs_of_national_assembly.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_strike_down_mephistopheles"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_strike_down_mephistopheles.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_attack_komi"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_attack_komi.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_komi_communist"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_komi_communist.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_komi_fascist"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_komi_fascist.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_komi_democratic"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_komi_democratic.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_taboritsky"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_taboritsky.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_gumilyov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_gumilyov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_ponomaryov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_ponomaryov.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_suslov"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_suslov.dds"
+	}
+
+	
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_green"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_green.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_red"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_red.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_blue"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_blue.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_black"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_black.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_white"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_white.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_grey"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_grey.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_silver"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_silver.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_violet"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_violet.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_brown"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_brown.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_pink"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_pink.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_execute_plan_white"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_execute_plan_white.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_execute_plan_red"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_execute_plan_red.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_execute_plan_blue"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_execute_plan_blue.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_execute_plan_black"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_execute_plan_black.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_prepare_plan_yellow"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_prepare_plan_yellow.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_declare_free_republic"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_declare_free_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_armed_activities"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_armed_activities.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_arrest_officers"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_arrest_officers.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_ban_paramils"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_ban_paramils.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_constitutional_convention"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_constitutional_convention.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_democratic_foundation"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_democratic_foundation.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_gun_control"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_gun_control.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_lady_justice"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_lady_justice.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_peace"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_peace.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_to_arms"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_to_arms.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_to_order"
+		texturefile = "gfx/interface/goals/Komi/GFX_KOM_to_order.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_A_Singular_Will"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_Singular_Will.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_Ethnic_Vanguardism"
+		texturefile = "gfx/interface/goals/Komi/KOM_Ethnic_Vanguardism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_ray_of_light"
+		texturefile = "gfx/interface/goals/Komi/KOM_a_ray_of_light.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_a_trustworthy_court"
+		texturefile = "gfx/interface/goals/Komi/KOM_a_trustworthy_court.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_bounties_on_parasites"
+		texturefile = "gfx/interface/goals/Komi/KOM_bounties_on_parasites.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_eyes_in_every_house"
+		texturefile = "gfx/interface/goals/Komi/KOM_eyes_in_every_house.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_honor_the_blessed_regent"
+		texturefile = "gfx/interface/goals/Komi/KOM_honor_the_blessed_regent.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_imperial_artwork"
+		texturefile = "gfx/interface/goals/Komi/KOM_imperial_artwork.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_improve_on_our_knowledge"
+		texturefile = "gfx/interface/goals/Komi/KOM_improve_on_our_knowledge.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_reform_the_okhrana"
+		texturefile = "gfx/interface/goals/Komi/KOM_reform_the_okhrana.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_repurpose_the_gulags"
+		texturefile = "gfx/interface/goals/Komi/KOM_repurpose_the_gulags.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_cult_of_the_tsarevich"
+		texturefile = "gfx/interface/goals/Komi/KOM_the_cult_of_the_tsarevich.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_the_fall_of_the_favorite"
+		texturefile = "gfx/interface/goals/Komi/KOM_the_fall_of_the_favorite.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_towards_absolute_purity"
+		texturefile = "gfx/interface/goals/Komi/KOM_towards_absolute_purity.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_The_Ordosocialist_Revolution"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Ordosocialist_Revolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOM_A_New_Sun_In_The_East"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_New_Sun_In_The_East.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KOM_The_Russian_Union"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Russian_Union.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_The_Ideocracy"
+		texturefile = "gfx/interface/goals/Komi/KOM_The_Ideocracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KOM_A_Confiscation_Economy"
+		texturefile = "gfx/interface/goals/Komi/KOM_A_Confiscation_Economy.dds"
+	} 
+}

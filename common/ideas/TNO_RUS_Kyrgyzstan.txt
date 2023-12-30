@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+		KYR_Stabilization_Regime = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KYR_Stabilization_Regime"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KYR_Stabilization_Regime
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = 0.15
+			}
+		}
+		KYR_Recruitment_Surge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KYR_Recruitment_Surge"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_army_2
+			modifier = {
+				conscription = 0.02
+				conscription_factor = 0.10
+			}
+		}
+		KYR_Ready_the_Men = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KYR_Ready_the_Men "}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_military_academy
+			modifier = {
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+		KYR_Tajiki_Industrial_Techniques = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KYR_Tajiki_Industrial_Technique"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_planned_economy
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.20
+			}
+		}
+		KYR_Party_Zealots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KYR_Party_Zealots"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = HUN_High_Unrest
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+	}
+}

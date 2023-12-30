@@ -1,0 +1,20 @@
+﻿division_template = {
+	name = "Arab Legion"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Arab Legion"
+		location = 7151
+		division_template = "Arab Legion"
+		start_experience_factor = 0.1
+	}
+}

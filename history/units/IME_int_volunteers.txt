@@ -1,0 +1,9 @@
+﻿units = {
+	division = {
+		name = "Legione di Italiani Internazionali"
+		location = 4206
+		division_template = "Divisione di Fanteria Coloniale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+}

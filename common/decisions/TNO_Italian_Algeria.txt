@@ -1,0 +1,132 @@
+ILG_Banditry_Decisions = {
+	ILG_Destroy_Djanet_Bandits = { #514
+		visible = {
+			has_country_flag = ILG_Banditry_Decisions
+		}
+		highlight_states = {
+			state = 514
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ILG_Destroy_Djanet_Bandits"
+			custom_effect_tooltip = ILG_bandit_status_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ILG_bandit_status
+					value = -1
+				}
+			}
+		}
+		days_remove = 25
+		remove_effect = {
+			hidden_effect = {
+				ILG_bandit_status_effect = yes
+			}
+		}
+	}
+	ILG_Destroy_Tamanrasset_Bandits = { #1144
+		visible = {
+			has_country_flag = ILG_Banditry_Decisions
+		}
+		highlight_states = {
+			state = 1144
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ILG_Destroy_Tamanrasset_Bandits"
+			custom_effect_tooltip = ILG_bandit_status_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ILG_bandit_status
+					value = -1
+				}
+			}
+		}
+		days_remove = 25
+		remove_effect = {
+			hidden_effect = {
+				ILG_bandit_status_effect = yes
+			}
+		}
+	}
+	ILG_Destroy_Reggane_Bandits = { #1145
+		visible = {
+			has_country_flag = ILG_Banditry_Decisions
+		}
+		highlight_states = {
+			state = 1145
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ILG_Destroy_Reggane_Bandits"
+			custom_effect_tooltip = ILG_bandit_status_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ILG_bandit_status
+					value = -1
+				}
+			}
+		}
+		days_remove = 25
+		remove_effect = {
+			hidden_effect = {
+				ILG_bandit_status_effect = yes
+			}
+		}
+	}
+	ILG_Destroy_Chenachane_Bandits = { #1146
+		visible = {
+			has_country_flag = ILG_Banditry_Decisions
+		}
+		highlight_states = {
+			state = 1146
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ILG_Destroy_Chenachane_Bandits"
+			custom_effect_tooltip = ILG_bandit_status_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ILG_bandit_status
+					value = -1
+				}
+			}
+		}
+		days_remove = 25
+		remove_effect = {
+			hidden_effect = {
+				ILG_bandit_status_effect = yes
+			}
+		}
+	}
+	ILG_Destroy_Adrar_Bandits = { #1148
+		visible = {
+			has_country_flag = ILG_Banditry_Decisions
+		}
+		highlight_states = {
+			state = 1148
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision ILG_Destroy_Adrar_Bandits"
+			custom_effect_tooltip = ILG_bandit_status_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = ILG_bandit_status
+					value = -1
+				}
+			}
+		}
+		days_remove = 25
+		remove_effect = {
+			hidden_effect = {
+				ILG_bandit_status_effect = yes
+			}
+		}
+	}
+}

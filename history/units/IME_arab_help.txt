@@ -1,0 +1,24 @@
+﻿division_template = {
+	name = "Arab Assistance Brigade"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1a Brigata Volontaria Palestinese"
+		location = 11979
+		division_template = "Arab Assistance Brigade"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "2a Brigata Volontaria Palestinese"
+		location = 11919
+		division_template = "Arab Assistance Brigade"
+		start_experience_factor = 0.05
+	}
+}

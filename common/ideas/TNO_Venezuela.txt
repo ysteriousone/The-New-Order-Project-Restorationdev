@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		VEN_Puntofijo_Pact = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea VEN_Puntofijo_Pact" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				stability_weekly_factor = 0.10
+				political_power_gain = 0.20
+			}
+		}
+		VEN_Essequibo_Dispute = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea VEN_Essequibo_Dispute" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
+		VEN_King_of_Oil = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea VEN_King_of_Oil" }
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				local_resources_factor = 0.20
+			}
+		}
+	}
+}

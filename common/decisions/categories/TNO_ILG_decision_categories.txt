@@ -1,0 +1,12 @@
+ILG_Banditry_Decisions = {
+	icon = GFX_decision_generic_prospect_for_resources
+
+	picture = GFX_decision_USA_decision_political_situation
+	allowed = {
+		tag = ILG
+	}
+	visible = {
+
+		has_country_flag = ILG_Banditry_Decisions
+	}
+}

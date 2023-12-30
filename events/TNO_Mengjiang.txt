@@ -1,0 +1,39 @@
+add_namespace = men
+
+country_event = { #Death of Li Shouxin
+	id = men.1975
+	title = men.1975.t
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.1975"}
+	desc = men.1975.d
+	picture = GFX_report_event_CHI_soldiers_jungle
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { name = men.1975.a
+		CHI = {
+			country_event = { id = chi.5017 days = 2 }
+		}
+	}
+}
+
+country_event = { #dummy
+	id = men.500
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.500"}
+	title = men.500.t
+	desc = men.500.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.500.a
+		retire_character = MEN_demchugdongrub
+		promote_character = MEN_Dugursulong
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = WORLD.16509
+			}
+		}
+	}
+}

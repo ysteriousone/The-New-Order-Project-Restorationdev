@@ -1,0 +1,180 @@
+ideas = {
+	country = {
+		PAL_Disorganized_Fedayeen = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Disorganized_Fedayeen"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Disorganized_Fedayeen
+
+			modifier = {
+
+			}
+		}
+		PAL_Fatah_Triumphant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Fatah_Triumphant"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Fatah_Triumphant
+
+			modifier = {
+
+			}
+		}
+		PAL_Hawatmehs_Faction = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Hawatmehs_Faction"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Hawatmehs_Faction
+
+			modifier = {
+
+			}
+		}
+		PAL_Red_Flags_Over_The_Holy_Land = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Red_Flags_Over_The_Holy_Land"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Red_Flags_Over_The_Holy_Land
+
+			modifier = {
+
+			}
+		}
+		PAL_Religious_Resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Religious_Resistance"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Religious_Resistance
+
+			modifier = {
+
+			}
+		}
+		PAL_The_King_And_His_Legion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_The_King_And_His_Legion"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_The_King_And_His_Legion
+
+			modifier = {
+
+			}
+		}
+		PAL_The_Land_Liberated = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_The_Land_Liberated"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_The_Land_Liberated
+
+			modifier = {
+
+			}
+		}
+		PAL_The_Spectre_Of_Corruption = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_The_Spectre_Of_Corruption"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_The_Spectre_Of_Corruption
+
+			modifier = {
+
+			}
+		}
+		PAL_With_Blood_We_Nourished_Our_Lands = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_With_Blood_We_Nourished_Our_Lands"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_With_Blood_We_Nourished_Our_Lands
+
+			modifier = {
+
+			}
+		}
+		PAL_Young_Jihad = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Young_Jihad"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Young_Jihad
+
+			modifier = {
+
+			}
+		}
+		PAL_Heirs_Of_Muhammad = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAL_Heirs_Of_Muhammad"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = PAL_Heirs_Of_Muhammad
+
+			modifier = {
+
+			}
+		}
+	}
+}

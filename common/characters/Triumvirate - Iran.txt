@@ -1,0 +1,886 @@
+characters = {
+	#Default
+	PER_mohammad_reza_pahlavi = {
+		name = PER_mohammad_reza_pahlavi
+		portraits = {
+			civilian = { large = "gfx/leaders/PER/Portrait_Persia_Pahlavi_Shah.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_semi_constitutional_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	PER_asadollah_alam = {
+		name = PER_asadollah_alam
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Asadollah_Alam_hog" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = PER_Asadollah_Alam_hog
+			allowed = { original_tag = PER }
+			traits = {
+				head_of_government
+				hog_backroom_backstabber
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_abbas_aram = {
+		name = PER_abbas_aram
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Abbas_Aram_for" }
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = PER_Abbas_Aram_for
+			allowed = { original_tag = PER }
+			traits = {
+				foreign_minister
+				for_great_compromiser
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_jahangir_amuzegar = {
+		name = PER_jahangir_amuzegar
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Jahangir_Amuzegar_eco" }
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = PER_Jahangir_Amuzegar_eco
+			allowed = { original_tag = PER }
+			traits = {
+				economy_minister
+				eco_bank_president
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_teymur_bakhtiar = {
+		name = PER_teymur_bakhtiar
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Teymur_Bakhtiar_sec" }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = PER_Teymur_Bakhtiar_sec
+			allowed = { original_tag = PER }
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_farah_pahlavi = {
+		name = PER_farah_pahlavi
+		portraits = {
+			civilian = { large = "gfx/leaders/PER/Portrait_Iran_Farah_Pahlavi.dds" }
+		}
+		gender = female
+		country_leader = {
+			desc = "POLITICS_FARAH_PAHLAVI_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_absolute_monarchy_subtype
+			traits = { regent }
+			id = -1
+		}
+	}
+	PER_davud_monshizadeh = {
+		name = PER_davud_monshizadeh
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			#desc = "POLITICS_DAVUD_MONSHIZADEH_DESC"
+			expire = "1999.1.1"
+			ideology = national_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	PER_mohsen_pezeshkpour = {
+		name = PER_mohsen_pezeshkpour
+		portraits = {
+			civilian = {
+				large = "GFX_leader_unknown"
+				small = "GFX_idea_PER_Mohsen_Pezeshkpour_for"
+			}
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHSEN_PEZESHKPOUR_DESC"
+			expire = "1999.1.1"
+			ideology = fascism_subtype
+			traits = {}
+			id = -1
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = PER_Mohsen_Pezeshkpour_for
+			allowed = { original_tag = PER }
+			traits = {
+				foreign_minister
+				for_political_appointment
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_shapour_bakhtiar = {
+		name = PER_shapour_bakhtiar
+		portraits = {
+			civilian = { large = "gfx/leaders/PER/Portrait_Iran_Shapour_Bakhtiar.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_SHAPOUR_BAKHTIAR_DESC"
+			expire = "1999.1.1"
+			ideology = conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	#Generals
+	PER_abbas_gharabaghi = {
+		name = PER_abbas_gharabaghi
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Abbas_Gharabaghi.dds" }
+		}
+		corps_commander = {
+			traits = { skilled_staffer infantry_leader }
+			legacy_id = 50011
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	PER_abdolali_badrei = {
+		name = PER_abdolali_badrei
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Abdolali_Badrei.dds" }
+		}
+		corps_commander = {
+			traits = { commando cavalry_leader }
+			legacy_id = 50012
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	PER_ali_neshat = {
+		name = PER_ali_neshat
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Ali_Neshat.dds" }
+		}
+		corps_commander = {
+			traits = { inflexible_strategist trickster }
+			legacy_id = 50013
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	PER_bahram_aryana = {
+		name = PER_bahram_aryana
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Bahram_Aryana.dds" }
+		}
+		corps_commander = {
+			traits = { war_hero media_personality infantry_leader }
+			legacy_id = 50014
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	PER_gholam_alia_oveissi = {
+		name = PER_gholam_alia_oveissi
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Gholam_Ali_Oveissi.dds" }
+		}
+		corps_commander = {
+			traits = { brilliant_strategist infantry_leader }
+			legacy_id = 50015
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	PER_gholam_reza_azhari = {
+		name = PER_gholam_reza_azhari
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Gholam_Reza_Azhari.dds" }
+		}
+		corps_commander = {
+			traits = { trait_cautious }
+			legacy_id = 50016
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	PER_hossein_fardoust = {
+		name = PER_hossein_fardoust
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Hossein_Fardoust.dds" }
+		}
+		corps_commander = {
+			traits = { politically_connected urban_assault_specialist }
+			legacy_id = 50017
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	PER_jafar_shafaghat = {
+		name = PER_jafar_shafaghat
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Jafar_Shafaghat.dds" }
+		}
+		corps_commander = {
+			traits = { trait_mountaineer }
+			legacy_id = 50018
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	PER_nematollah_nassiri = {
+		name = PER_nematollah_nassiri
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PER/Portrait_Iran_Nematollah_Nassiri.dds"
+				small = "GFX_idea_PER_Nematollah_Nassiri_sec" 
+			}
+			army = {
+				large = "gfx/leaders/PER/Portrait_Iran_Nematollah_Nassiri.dds"
+				small = "GFX_idea_PER_Nematollah_Nassiri_sec"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected trickster }
+			legacy_id = 50019
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = PER_Nematollah_Nassiri_sec
+			allowed = { original_tag = PER }
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_farajollah_rasaei = {
+		name = PER_farajollah_rasaei
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Farajollah_Rasaei.dds" }
+		}
+		corps_commander = {
+			traits = { }
+			legacy_id = 50020
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	PER_kamal_habibollahi = {
+		name = PER_kamal_habibollahi
+		portraits = {
+			army = { large = "gfx/leaders/PER/Portrait_Iran_Kamal_Habibollahi.dds" }
+		}
+		navy_leader = {
+			traits = { }
+			legacy_id = 50021
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	PER_iran_national_assembly = {
+		name = PER_iran_national_assembly
+		portraits = {
+			civilian = { large = "gfx/leaders/PER/Portrait_Iran_National_Assembly.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_IRAN_NATIONAL_ASSEMBLY_DESC"
+			expire = "1999.1.23"
+			ideology = despotism_interim_government_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	### Iran - Monarchists ###
+
+	PER_amir_abbas_hoveyda = {
+		name = PER_amir_abbas_hoveyda
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Amir_Abbas_Hoveyda_hog" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = PER_Amir_Abbas_Hoveyda_hog
+			allowed = { original_tag = PER }
+			traits = {
+				head_of_government
+				hog_naive_optimist
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	PER_jamshid_amouzegar = {
+		name = PER_jamshid_amouzegar
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Jamshid_Amouzegar_eco" }
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = PER_Jamshid_Amouzegar_eco
+			allowed = { original_tag = PER }
+			traits = {
+				economy_minister
+				eco_resource_industrialist
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	### Iran - Constitutionalists ###
+	IRC_shapour_bakhtiar = {
+		name = IRC_shapour_bakhtiar
+		portraits = {
+			civilian = { large = "gfx/leaders/IRC/Portrait_Iran_Shapour_Bakhtiar.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_SHAPOUR_BAKHTIAR_DESC"
+			expire = "1999.1.23"
+			ideology = liberal_conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	IRC_fereydoun_djam = {
+		name = IRC_fereydoun_djam
+		portraits = {
+			army = { large = "gfx/leaders/IRC/Portrait_Iran_Fereydoun_Djam.dds" }
+		}
+		corps_commander = {
+			traits = { career_officer infantry_leader }
+			legacy_id = 5018
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	IRC_mousa_namjoo = {
+		name = IRC_mousa_namjoo
+		portraits = {
+			army = { large = "gfx/leaders/IRC/Portrait_Iran_Mousa_Namjoo.dds" }
+		}
+		corps_commander = {
+			traits = { organizer skilled_staffer }
+			legacy_id = 5019
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	IRC_adib_boroumand = {
+		name = IRC_adib_boroumand
+		portraits = {
+			civilian = { small = "GFX_idea_IRC_Adib_Boroumand_hog" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = IRC_Adib_Boroumand_hog
+			allowed = { original_tag = IRC }
+			traits = {
+				head_of_government
+				hog_national_figurehead
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRC_karim_sanjabi = {
+		name = IRC_karim_sanjabi
+		portraits = {
+			#civilian = { small = "GFX_idea_IRC_Karim_Sanjabi_for" }
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = IRC_Karim_Sanjabi_for
+			allowed = { original_tag = IRC }
+			traits = {
+				foreign_minister
+				for_great_compromiser
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRC_mohammad_yeganeh = {
+		name = IRC_mohammad_yeganeh
+		portraits = {
+			civilian = { small = "GFX_idea_IRC_Mohammad_Yeganeh_eco" }
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = IRC_Mohammad_Yeganeh_eco
+			allowed = { original_tag = IRC }
+			traits = {
+				economy_minister
+				eco_bank_president
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRC_gholam_ali_oveissi = {
+		name = IRC_gholam_ali_oveissi
+		portraits = {
+			#civilian = { small = "GFX_idea_IRC_Gholam_Ali_Oveissi_sec" }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = IRC_Gholam_Ali_Oveissi_sec
+			allowed = { original_tag = IRC }
+			traits = {
+				security_minister
+				hog_generalissimo
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	### Iran - Islamists ###
+	IRI_ruhollah_khomeini = {
+		name = IRI_ruhollah_khomeini
+		portraits = {
+			civilian = { large = "gfx/leaders/IRI/Portrait_Persia_Ruhollah_Khomeini.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_RUHOLLAH_KHOMEINI_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_theocracy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	IRI_mostafa_chamran = {
+		name = IRI_mostafa_chamran
+		portraits = {
+			army = { large = "gfx/leaders/IRI/Portrait_Iran_Mostafa_Chamran.dds" }
+		}
+		corps_commander = {
+			traits = { trait_reckless trickster guerrilla_fighter }
+			legacy_id = 5013
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	IRI_mohsen_rafighdoost = {
+		name = IRI_mohsen_rafighdoost
+		portraits = {
+			army = { large = "gfx/leaders/IRI/Portrait_Iran_Mohsen_Rafighdoost.dds" }
+		}
+		corps_commander = {
+			traits = { commando trait_engineer }
+			legacy_id = 5014
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	IRI_qasem_ali_zahirnejad = {
+		name = IRI_qasem_ali_zahirnejad
+		portraits = {
+			army = { large = "gfx/leaders/IRI/Portrait_Iran_Qasem_Ali_Zahirnejad.dds" }
+		}
+		corps_commander = {
+			traits = { inflexible_strategist infantry_leader }
+			legacy_id = 5015
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	IRI_hossein_hassani_sadi = {
+		name = IRI_hossein_hassani_sadi
+		portraits = {
+			army = { large = "gfx/leaders/IRI/Portrait_Iran_Hossein_Hassani_Sadi.dds" }
+		}
+		corps_commander = {
+			traits = { brilliant_strategist panzer_leader }
+			legacy_id = 5016
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	IRI_valiollah_fallahi = {
+		name = IRI_valiollah_fallahi
+		portraits = {
+			army = { large = "gfx/leaders/IRI/Portrait_Iran_Valiollah_Fallahi.dds" }
+		}
+		corps_commander = {
+			traits = { infantry_leader hill_fighter }
+			legacy_id = 5017
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	IRI_mohammad_beheshti = {
+		name = IRI_mohammad_beheshti
+		portraits = {
+			civilian = { small = "GFX_idea_IRI_Mohammad_Beheshti_hog" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = IRI_Mohammad_Beheshti_hog
+			allowed = { original_tag = IRI }
+			traits = {
+				head_of_government
+				hog_devoted_follower
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRI_abolhassan_banisadr = {
+		name = IRI_abolhassan_banisadr
+		portraits = {
+			civilian = { small = "GFX_idea_IRI_Abolhassan_Banisadr_for" }
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = IRI_Abolhassan_Banisadr_for
+			allowed = { original_tag = IRI }
+			traits = {
+				foreign_minister
+				for_well_connected
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRI_akbar_hashemi_rafsanjani = {
+		name = IRI_akbar_hashemi_rafsanjani
+		portraits = {
+			civilian = { small = "GFX_idea_IRI_Akbar_Hashemi_Rafsanjani_eco" }
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = IRI_Akbar_Hashemi_Rafsanjani_eco
+			allowed = { original_tag = IRI }
+			traits = {
+				economy_minister
+				eco_laissez_faire_capitalist
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRI_hossein_fardoust = {
+		name = IRI_hossein_fardoust
+		portraits = {
+			civilian = { small = "GFX_idea_IRI_Hossein_Fardoust_sec" }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = IRI_Hossein_Fardoust_sec
+			allowed = { original_tag = IRI }
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	### Iran - Liberals ###
+	IRL_karim_sanjabi = {
+		name = IRL_karim_sanjabi
+		portraits = {
+			civilian = { large = "gfx/leaders/IRL/Portrait_Iran_Karim_Sanjabi.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_KARIM_SANJABI_DESC"
+			expire = "1999.1.1"
+			ideology = liberalism_classical_liberalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	IRL_teymur_bakhtiar = {
+		name = IRL_teymur_bakhtiar
+		portraits = {
+			civilian = { small = "GFX_idea_PER_Teymur_Bakhtiar_sec" }
+			army = {
+				large = "gfx/leaders/IRL/Portrait_Iran_Teymur_Bakhtiar.dds"
+				small = "GFX_idea_PER_Teymur_Bakhtiar_sec"
+			}
+		}
+		field_marshal = {
+			traits = { career_officer trickster organizer }
+			legacy_id = 5024
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = IRL_Teymur_Bakhtiar_sec
+			allowed = { original_tag = IRL }
+			traits = {
+				security_minister
+				sec_crime_fighter
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRL_mohammad_salimi = {
+		name = IRL_mohammad_salimi
+		portraits = {
+			army = { large = "gfx/leaders/IRL/Portrait_Iran_Mohammad_Salimi.dds" }
+		}
+		field_marshal = {
+			traits = { trait_cautious trait_engineer }
+			legacy_id = 5020
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	IRL_ali_shahbazi = {
+		name = IRL_ali_shahbazi
+		portraits = {
+			army = { large = "gfx/leaders/IRL/Portrait_Iran_Ali_Shahbazi.dds" }
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+			legacy_id = 5021
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	IRL_taghi_riahi = {
+		name = IRL_taghi_riahi
+		portraits = {
+			army = { large = "gfx/leaders/IRL/Portrait_Iran_Taghi_Riahi.dds" }
+		}
+		corps_commander = {
+			traits = { media_personality old_guard trickster }
+			legacy_id = 5022
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	IRL_mohammad_vali_gharani = {
+		name = IRL_mohammad_vali_gharani
+		portraits = {
+			army = { large = "gfx/leaders/IRL/Portrait_Iran_Mohammad_Vali_Gharani.dds" }
+		}
+		corps_commander = {
+			traits = { commando hill_fighter }
+			legacy_id = 5023
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	IRL_mehdi_bazargan = {
+		name = IRL_mehdi_bazargan
+		portraits = {
+			civilian = { small = "GFX_idea_IRL_Mehdi_Bazargan_hog" }
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = IRL_Mehdi_Bazargan_hog
+			allowed = { original_tag = IRL }
+			traits = {
+				head_of_government
+				hog_intelligentsia
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRL_hassan_pakravan = {
+		name = IRL_hassan_pakravan
+		portraits = {
+			civilian = { small = "GFX_idea_IRL_Hassan_Pakravan_for" }
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = IRL_Hassan_Pakravan_for
+			allowed = { original_tag = IRL }
+			traits = {
+				foreign_minister
+				for_seasoned_ambassador
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	IRL_anvar_khamei = {
+		name = IRL_anvar_khamei
+		portraits = {
+			civilian = { small = "GFX_idea_IRL_Anvar_Khamei_eco" }
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = IRL_Anvar_Khamei_eco
+			allowed = { original_tag = IRL }
+			traits = {
+				economy_minister
+				eco_planned_economy_proponent
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	IRA_iraj_eskandari = {
+		name = IRA_iraj_eskandari
+		portraits = {
+			civilian = { large = "gfx/leaders/IRA/Portrait_Persia_Iraj_Eskandari.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_IRAJ_ESKANDARI_DESC"
+			expire = "1999.1.23"
+			ideology = communist_bolshevism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	IRB_sher_mohammed_marri = {
+		name = IRB_sher_mohammed_marri
+		portraits = {
+			civilian = { large = "gfx/leaders/IRB/Portrait_Iran_Sher_Mohammed_Marri.dds" }
+			army = { large = "gfx/leaders/IRB/Portrait_Iran_Sher_Mohammed_Marri.dds" }
+		}
+		corps_commander = {
+			traits = { trickster guerrilla_fighter }
+			legacy_id = 5025
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = {
+			desc = "POLITICS_SHER_MOHAMMED_MARRI_DESC"
+			expire = "1999.1.23"
+			ideology = conservatism_islamic_conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,11 @@
+IME_war_for_the_levant_category = {
+	allowed = {
+		original_tag = IME
+
+	}
+	picture = GFX_decision_IME_decision_operation_masada
+	visible = {
+		original_tag = IME
+		has_country_flag = IME_operation_masada_activated
+	}
+}

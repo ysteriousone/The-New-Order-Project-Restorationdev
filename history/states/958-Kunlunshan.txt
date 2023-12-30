@@ -1,0 +1,26 @@
+state={
+	id=958
+	name="STATE_958"
+
+	history={
+		owner = XIN
+		add_core_of = XIN
+		add_core_of = ETR
+
+		buildings = {
+			infrastructure = 1
+			prisons = 1
+		}
+		victory_points = { 8042 1 }
+		victory_points = { 1943 3 }
+		victory_points = { 5736 3 }
+		set_state_flag = state_renamings
+	}
+
+	provinces={
+		1698 1943 2074 4947 4973 5736 8042 8086 10315 10885 10911 12864 13236
+	}
+	manpower=804000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

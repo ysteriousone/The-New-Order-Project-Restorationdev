@@ -1,0 +1,33 @@
+﻿division_template = {
+	name = "Strafeinheit"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		location = 11516
+		division_template = "Strafeinheit"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		location = 11516
+		division_template = "Strafeinheit"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		location = 11516
+		division_template = "Strafeinheit"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		location = 11516
+		division_template = "Strafeinheit"
+		start_experience_factor = 0.1
+	}
+}

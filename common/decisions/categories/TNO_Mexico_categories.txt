@@ -1,0 +1,70 @@
+MEX_debug_category = {
+	#icon =
+	#picture =
+	priority = 5000
+	allowed = {
+		original_tag = MEX
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+}
+MEX_Dirty_War_category = {
+	icon = GFX_decision_category_border_conflicts
+	scripted_gui = TNO_MEX_Dirty_War_Decision_GUI
+	priority = 6000 #300
+
+	allowed = {
+		original_tag = MEX
+	}
+	visible_when_empty = yes
+
+	visible = {
+		has_country_flag = MEX_Dirty_War_flag
+	}
+}
+MEX_Succession_category = {
+	icon = GFX_MEX_decision_category_dedazo
+	scripted_gui = TNO_MEX_Succession_GUI
+
+	priority = 500
+	allowed = {
+		original_tag = MEX
+	}
+	visible_when_empty = yes
+
+	visible = {
+		has_country_flag = MEX_Succession_flag
+	}
+}
+MEX_Economy_category = {
+	icon = GFX_decision_category_power_struggle
+	scripted_gui = TNO_MEX_Econ_Mech_GUI
+
+	priority = 1000
+	allowed = {
+		original_tag = MEX
+	}
+	visible_when_empty = yes
+
+	visible = {
+		always = yes
+	}
+}
+
+MEX_JO_prep_category = {
+	icon = GFX_decision_category_power_struggle
+	scripted_gui = TNO_MEX_decisions_JOPrep
+
+	priority = 1500
+	allowed = {
+		original_tag = MEX
+		has_country_flag = MEX_prep_JO
+	}
+	visible_when_empty = yes
+
+	visible = {
+		always = yes
+	}
+}

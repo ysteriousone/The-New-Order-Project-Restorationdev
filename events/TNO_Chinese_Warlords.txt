@@ -1,0 +1,469 @@
+﻿##################################
+###   Chinese Warlord Events   ###
+##################################
+
+#Warlord shit, by Roniius and Sino
+
+add_namespace = chinesewarlord
+
+
+#GAW call to Arms - ids from 1000 on to be reserved for GAW
+
+country_event = {#GAW - Chinese Influence
+	id = chinesewarlord.1000
+	title = chinesewarlord.1000.t
+	desc = chinesewarlord.1000.d
+	picture = GFX_report_event_CHI_nanjing_summit_start
+
+	is_triggered_only = yes
+
+	fire_only_once = no
+
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chinesewarlord.1000"}
+
+	option = {#Join China
+		ai_chance = {
+			factor = 33
+
+			modifier = {
+				factor = 0
+				has_country_flag = GAW_jap_total_influenced
+				NOT = {original_tag = YUN}
+			}
+			modifier = {
+				factor = 1
+				has_country_flag = GAW_jap_influenced
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = GAW_no_clear_influence
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = GAW_chi_influenced
+			}
+			modifier = {
+				factor = 20
+				has_country_flag = GAW_chi_total_influenced
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					original_tag = ETR
+					original_tag = TIB
+				}
+			}
+			modifier = {
+				factor = 40
+				original_tag = MEN
+			}
+			modifier = {
+				factor = 55
+				OR = {
+					original_tag = SHX
+					original_tag = SIC
+					original_tag = GUZ
+					original_tag = XIK
+					original_tag = QIN
+					original_tag = XIN
+				}
+			}
+			modifier = {
+				factor = 30
+				original_tag = GUX
+			}
+			modifier = {
+				factor = 100
+				original_tag = YUN
+			}
+		}
+		trigger = {
+			NOT = {
+				original_tag = GNG
+				original_tag = GAN
+			}
+		}
+		name = chinesewarlord.1000.a
+		custom_effect_tooltip = chinesewarlord.1000.a.tt
+		hidden_effect = {
+			if = {
+				limit = {is_puppet_of = JAP}
+				end_puppet = JAP
+			}
+			if = {
+				limit = {is_in_faction_with = JAP}
+				leave_faction = yes
+			}
+			CHI = {
+				add_to_faction = ROOT
+			}
+			add_to_war = {
+				targeted_alliance = CHI
+				enemy = JAP
+			}
+			CHI_GAW_clear_influence_flags = yes
+			set_country_flag = GAW_chi_ally
+		}
+	}
+	option = {#Join Japan
+		ai_chance = {
+			factor = 33
+
+			modifier = {
+				factor = 20
+				has_country_flag = GAW_jap_total_influenced
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = GAW_jap_influenced
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = GAW_no_clear_influence
+			}
+			modifier = {
+				factor = 3
+				has_country_flag = GAW_chi_influenced
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = GAW_chi_total_influenced
+			}
+
+			modifier = {
+				factor = 0
+				OR = {
+					original_tag = ETR
+					original_tag = TIB
+					original_tag = YUN
+				}
+			}
+			modifier = {
+				factor = 60
+				original_tag = MEN
+			}
+			modifier = {
+				factor = 40
+				OR = {
+					original_tag = SHX
+					original_tag = SIC
+					original_tag = GUZ
+					original_tag = XIK
+					original_tag = QIN
+					original_tag = XIN
+				}
+			}
+			modifier = {
+				factor = 65
+
+				original_tag = GUX
+			}
+		}
+		name = chinesewarlord.1000.b
+		custom_effect_tooltip = chinesewarlord.1000.b.tt
+		hidden_effect = {
+			if = {
+				limit = {NOT = {is_in_faction_with = JAP}}
+				JAP = {
+					add_to_faction = ROOT
+				}
+			}
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+			CHI_GAW_clear_influence_flags = yes
+			set_country_flag = GAW_jap_ally
+		}
+	}
+	option = {#Stay Neutral
+		ai_chance = {
+			factor = 33
+
+			modifier = {
+				factor = 0
+				has_country_flag = GAW_jap_total_influenced
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = GAW_jap_influenced
+			}
+			modifier = {
+				factor = 10
+				has_country_flag = GAW_no_clear_influence
+			}
+			modifier = {
+				factor = 5
+				has_country_flag = GAW_chi_influenced
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = GAW_chi_total_influenced
+			}
+
+			modifier = {
+				factor = 100
+				OR = {
+					original_tag = ETR
+					original_tag = TIB
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					original_tag = SHX
+					original_tag = SIC
+					original_tag = GUZ
+					original_tag = XIK
+					original_tag = QIN
+					original_tag = XIN
+					original_tag = GUX
+				}
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = YUN
+				original_tag = MEN
+			}
+		}
+		name = chinesewarlord.1000.c
+		custom_effect_tooltip = chinesewarlord.1000.c.tt
+		hidden_effect = {
+			if = {
+				limit = {is_in_faction_with = JAP}
+				leave_faction = yes
+			}
+			if = {
+				limit = {is_subject_of = JAP}
+				CHI_GAW_release_warlord = yes
+			}
+			CHI_GAW_clear_influence_flags = yes
+			set_country_flag = GAW_neutral
+		}
+	}
+}
+
+country_event = {# Special Call to Arms for GNG and GAN
+	id = chinesewarlord.1003
+	title = chinesewarlord.1003.t
+	desc = chinesewarlord.1003.d
+
+	picture = GFX_report_event_CHI_nanjing_summit_start
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_chinesewarlord.1003"
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = chinesewarlord.1003.a
+		custom_effect_tooltip = chinesewarlord.1003.a.tt
+		hidden_effect = {
+			if = {
+				limit = {NOT = {is_in_faction_with = JAP}}
+				JAP = {
+					add_to_faction = ROOT
+				}
+			}
+			add_to_war = {
+				targeted_alliance = JAP
+				enemy = CHI
+			}
+			if = {
+				limit = {has_country_flag = GAW_no_clear_influence}
+				clr_country_flag = GAW_no_clear_influence
+			}
+			else_if = {
+				limit = {has_country_flag = GAW_chi_influenced}
+				clr_country_flag = GAW_chi_influenced
+			}
+			else_if = {
+				limit = {has_country_flag = GAW_jap_influenced}
+				clr_country_flag = GAW_jap_influenced
+			}
+			set_country_flag = GAW_jap_ally
+		}
+	}
+}
+
+country_event = {#Japan demands surrender after China proper has been capitulated
+	id = chinesewarlord.1004
+	title = chinesewarlord.1004.t
+	desc = chinesewarlord.1004.d
+	picture = GFX_report_event_CHI_nanjing_summit_start
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_chinesewarlord.1004"
+	}
+
+	option = {#Surrender
+		name = chinesewarlord.1004.a
+		custom_effect_tooltip = chinesewarlord.1004.a.tt
+		hidden_effect = {
+			JAP = {
+				puppet = ROOT
+				add_to_faction = ROOT
+			}
+		}
+		ai_chance = {
+			factor = 50
+
+			modifier = {
+				factor = 0
+
+				is_faction_leader = yes
+			}
+		}
+	}
+	option = {#Fight on
+		name = chinesewarlord.1004.b
+		custom_effect_tooltip = chinesewarlord.1004.b.tt
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {#Japan demands neutral warlords to submit
+	id = chinesewarlord.1005
+	title = chinesewarlord.1005.t
+	desc = chinesewarlord.1005.d
+	picture = GFX_report_event_CHI_nanjing_summit_start
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_chinesewarlord.1005"
+	}
+
+	option = {#Submit
+		ai_chance = {factor = 20}
+		name = chinesewarlord.1005.a
+		custom_effect_tooltip = chinesewarlord.1005.a.tt
+		JAP = {
+			puppet = ROOT
+			add_to_faction = ROOT
+		}
+	}
+
+	option = {#lmao no
+		ai_chance = {factor = 20}
+		name = chinesewarlord.1005.b
+		custom_effect_tooltip = chinesewarlord.1005.b.tt
+		hidden_effect = {
+			if = {
+				limit = {
+					any_of_scopes = {
+						array = global.chinese_warlords
+						is_in_faction = yes
+						has_war_with = JAP
+					}
+				}
+
+				for_each_scope_loop = {
+					array = global.chinese_warlords
+					if = {
+						limit = {
+							is_faction_leader = yes
+						}
+						add_to_faction = ROOT
+						ROOT = {
+							add_to_war = {
+								targeted_alliance = PREV
+								enemy = JAP
+							}
+						}
+					}
+				}
+			}
+			else = {
+				create_faction = CHI_THE_NATIONAL_LIBERATION_FRONT
+				declare_war_on = {
+					target = MAN
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {#China demands surrender after China proper has been capitulated
+	id = chinesewarlord.1006
+	title = chinesewarlord.1006.t
+	desc = chinesewarlord.1006.d
+	picture = GFX_report_event_CHI_nanjing_summit_start
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_chinesewarlord.1006"
+	}
+
+	option = {#Surrender
+		name = chinesewarlord.1006.a
+		custom_effect_tooltip = chinesewarlord.1006.a.tt
+		hidden_effect = {
+			white_peace = CHI
+			CHI = {
+				add_to_faction = ROOT
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	option = {#Fight on
+		name = chinesewarlord.1006.b
+		custom_effect_tooltip = chinesewarlord.1006.b.tt
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {#China demands neutral warlords to submit
+	id = chinesewarlord.1007
+	title = chinesewarlord.1007.t
+	desc = chinesewarlord.1007.d
+	picture = GFX_report_event_CHI_nanjing_summit_start
+
+	is_triggered_only = yes
+	fire_only_once = no
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_chinesewarlord.1007"
+	}
+
+	option = {#Submit
+		ai_chance = {factor = 20}
+		name = chinesewarlord.1007.a
+		custom_effect_tooltip = chinesewarlord.1007.a.tt
+		CHI = {
+			add_to_faction = ROOT
+		}
+	}
+
+	option = {#lmao no
+		ai_chance = {factor = 20}
+		name = chinesewarlord.1007.b
+		custom_effect_tooltip = chinesewarlord.1007.b.tt
+		hidden_effect = {
+			CHI = {
+				declare_war_on = {
+					target = ROOT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+

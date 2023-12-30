@@ -1,0 +1,123 @@
+ideas = {
+
+	country = {
+
+		YEM_italian_overlordship = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea YEM_italian_overlordship"}
+			picture = YEM_italian_overlords
+			allowed = {
+				original_tag = "YEM"
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = 0.10
+			}
+		}
+
+		YEM_civil_war = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea YEM_civil_war"}
+			allowed = {
+				original_tag = "YEM"
+				always = no
+				NOT = { has_global_flag = OC_Yemen_CW_over }
+			}
+
+			removal_cost = -1
+			picture = DER_islamic_brigades
+
+			targeted_modifier = {
+				tag = NYM
+				attack_bonus_against = -0.5
+				defense_bonus_against = -0.25
+			}
+		}
+
+		NYM_civil_war = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NYM_civil_war"}
+			allowed = {
+				original_tag = "NYM"
+				always = no
+				country_exists = YEM
+			}
+
+			removal_cost = -1
+			picture = DER_islamic_brigades
+
+			targeted_modifier = {
+				tag = YEM
+				attack_bonus_against = -0.5
+				defense_bonus_against = -0.25
+			}
+		}
+
+
+		YEM_the_Aden_arsenal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea YEM_the_Aden_arsenal"}
+			picture = YEM_The_Aden_Arsenal
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+
+		YEM_saudi_influence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea YEM_saudi_influence"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = DER_islamic_brigades
+
+			targeted_modifier = {
+				tag = SAU
+				political_power_gain = 0.1
+			}
+			modifier = {
+				political_power_gain = -0.1
+			}
+		}
+		YEM_saudi_influence1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea YEM_saudi_influence1"}
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = DER_islamic_brigades
+
+			targeted_modifier = {
+				tag = SAU
+				political_power_gain = 0.15
+			}
+			modifier = {
+				political_power_gain = -0.15
+			}
+		}
+
+		YEM_tribes_and_Sects = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea YEM_tribes_and_Sects"}
+			picture = YEM_Tribes_and_Sects
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.10
+			}
+		}
+	}
+}

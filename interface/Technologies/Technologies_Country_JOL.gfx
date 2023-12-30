@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	### NSB FIXES ###
+	SpriteType = {
+		name = "GFX_JOL_APC_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/SAF_APC_45.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JOL_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SCO_IFV_45.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JOL_NSB_IFV_1945_medium"
+		texturefile = "gfx/interface/technologies/SCO_IFV_45.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JOL_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SAF_APC_45.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JOL_NSB_APC_1945_medium"
+		texturefile = "gfx/interface/technologies/SAF_APC_45.dds"
+	}
+}

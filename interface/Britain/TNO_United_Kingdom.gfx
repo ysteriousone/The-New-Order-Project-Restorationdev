@@ -1,0 +1,195 @@
+spriteTypes = {
+	### National Spirits ###
+	### England Starting Nat Spirits
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Terrible_Twins"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Terrible_Twins.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_British_Free_Corps"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_British_Free_Corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_German_Corporate_Dominance"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_German_Corp_Dominance.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_An_Altered_Line"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_An_Altered_Line.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_A_Retrenched_Conviction"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_A_Retrenched_Conviction.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Channel"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Channel.png"
+	}
+
+	### Collab civil war nat spirits
+	SpriteType = {
+		name = "GFX_idea_ENG_Oil_Reserves"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Oil_Reserves.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_A_Mere_Puppet"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_A_Mere_Puppet.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_British_Free_Corp_Influence_Low"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_British_Free_Corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_British_Free_Corp_Influence_Medium"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_British_Free_Corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_British_Free_Corp_Influence_High"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_British_Free_Corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Garrison_Support"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Garrison_Support.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Chaos_in_Production"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Chaos_in_Production.dds"
+	}
+
+	### Resistance civil war nat spirits
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Peoples_spirit"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Peoples_spirit.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_A_Militia_Force"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_A_Militia_Force.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_For_Queen_and_Country"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_For_Queen_and_Country.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Union_Supply_Line_Blockaded"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Union_Supply_Line_Blockaded.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Union_Supply_Line_Open"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Union_Supply_Line_Open.dds"
+	}
+
+	### Collab Post CW
+	SpriteType = {
+		name = "GFX_idea_ENG_Britains_Economic_Ruin"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Britains_Economic_Ruin.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Fractured_Food_Supply"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Fractured_food_supply.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_A_Knot_of_Roots"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_A_Knot_of_Roots.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Oak_And_Ash"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Oak_And_Ash.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Imperial_State"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Imperial_State.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Yesterdays_Man"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Yesterday's_Man.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Three_Musketeers"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Three_Musketeers.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Thuggish_Hegemony"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Thuggish_Hegemony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_British_Workers_Alliance"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_British_Workers_Alliance.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Divided_Helmsman"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Divided_Helmsman.dds"
+	}
+
+	### HMMLR Post CW
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Old_Young_Democracy"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Old_Young_Democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_HMMLR_Econ_0"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_HMMLR_eco_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Ambitions_Of_Equity"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Ambitions_of_Equity.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Revolution_of_the_Right"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Revolution_of_the_Right.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_A_Socialist_Romance"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Socialist_Romance.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_20_Years_in_the_Making"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_25_years_in_the_making.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_The_Gentlemans_Government"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_Gentlemans_Government.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_An_Electric_Manifesto"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Electric_Manifesto.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Socialist_Nationalisation"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Under_New_Management.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_A_Motley_Government"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_a_motley_government.dds"
+	}
+
+	### Post-Sealion National Republic
+	SpriteType = {
+		name = "GFX_idea_ENG_The_British_Catastrophe"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_The_British_Catastrophe.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ENG_Those_Who_Would_Fight_Time"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ENG_Those_Who_Would_Fight_Time.dds"
+	}
+
+	### Decisions ###
+	SpriteType = {
+		name = "GFX_decision_party_of_contrasts"
+		texturefile = "gfx/interface/decisions/decision_party_of_contrasts.png"
+	}
+	SpriteType = {
+		name = "GFX_decision_man_shall_stand"
+		texturefile = "gfx/interface/decisions/decision_defence_of_man.dds"
+	}
+	FrameAnimatedSpriteType = {
+		name = "GFX_decision_category_ENG_debug"
+		textureFile = "gfx/interface/decisions/decision_images/ENG_debug_category.dds"
+		noOfFrames = 119
+		loadType = "INGAME"
+		allwaystransparent = no
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+}

@@ -1,0 +1,288 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_BG"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_Decisions_GUI_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Research"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_Decisions_GUI_Research.dds"
+	}
+	progressbartype = {
+		name = "GFX_GNG_Product_Research_Progressbar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_research_bar_Full.dds"
+		textureFile2 = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_research_bar_Empty.dds"
+		size = { x = 431 y = 20 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_GNG_Product_Performance_Progressbar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_performance_bar_Full.dds"
+		textureFile2 = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_performance_bar_Empty.dds"
+		size = { x = 470 y = 15 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GNG_Product_Decisions_GUI_Product_Cycle_Effect_bar"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_product_cycle_effects_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decision_GUI_research_bar"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_Decision_GUI_research_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decision_GUI_placeholder"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_Decision_GUI_placeholder.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decision_GUI_RnD_Frame"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_Decision_GUI_RnD_Frame.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Product_History"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_Decisions_GUI_Product_History.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_History_BG"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_Product_History_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_product_history_letterhead"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_product_history_letterhead.dds"
+		noOfFrames = 4
+	}
+	spriteType = {
+		name = "GFX_GNG_product_history_symbols"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/GFX_GNG_product_history_symbols.dds"
+		noOfFrames = 4
+	}
+	###Products
+	spriteType = {
+		name = "GFX_GNG_Product_Decision_GUI_NO_PRODUCT"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/NO_PRODUCT.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_TV5-303_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_63_TV5-303.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_FACOM-222_Mainframe_Computer_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/FACOM-222_Mainframe_Computer.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_HITAC-201_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/HITAC-201.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_W-31_Air_Conditioner_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/W-31_Air_Conditioner.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_KH-920L_Portable_Radio_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/KH-920L_Portable_Radio_V3.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_NE-700_Home_Microwave_Oven_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/NE-700_Home_Microwave_Oven_V2.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_RA-189_Air_Con_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/RA-189_Air_Con_V1.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_ST-3500_Television_Set_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/ST-3500_Television_Set_V2.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_H-7830_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/H-7830_Alternate.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_HITAC_10_Minicomputer_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/HITAC_10_Minicomputer_V2.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_MQ-303_Tape_Recorder_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/MQ-303_Tape_Recorder_V4.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_T-100_transistorized_radio_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/T-100_transistorized_radio.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_TC-96G_SAGA_Home_Color_TV_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/TC-96G_SAGA_Home_Color_TV.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_SD-1802a_Electric_Rice_Cooker_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/SD-1802a_Electric_Rice_Cooker.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_CPM-12M_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/CPM-12M.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Type_600_Telephone_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Type_600_Telephone.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_TH-30PU_Transistored_Colour_Television_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/TH-30PU_Transistored_Colour_Television.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_62_TC-962_A_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_62_TC-962_A.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_64_TA-1120_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_64_TA-1120.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_65_TFM-110_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_65_TFM-110.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_66_CV-2000_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_66_CV-2000.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_67_DR_4-A_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_67_DR_4-A.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_68_Trinitron_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_68_Trinitron.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_69_ICC-500_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_69_ICC-500.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_70_TC-1010_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_70_TC-1010.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_71_CF-2500_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_71_CF-2500.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_72_VO-1700_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_72_VO-1700.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_73_TC-2850SD_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Sony_73_TC-2850SD.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Sony_74_ICF-7500 Radio"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/ICF-7500_Radio.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_FACOM_603F_Magnetic_Storage_Unit_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/FACOM_603F_Magnetic_Storage_Unit.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_FACOM_R_Microcomputer_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/FACOM_R_Microcomputer.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_HM-110_HOME_BATH_V1_product"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/HM-110_HOME_BATH_V1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_SP-10_Direct_Drive_Turntable"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/SP-10_Direct_Drive_Turntable.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_PCM-24_Transmission_Equipment"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/PCM-24_Transmission_Equipment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_NR-450SS_Large_Home_Refrigerator"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/NR-450SS_Large_Home_Refrigerator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_NE-7000_Home_Automated_Washing_Machine"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/NE-7000_Home_Automated_Washing_Machine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_HM-1201A"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/HM-1201A.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_GX-201_Color_Copier"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/GX-201_Color_Copier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_FACOM_230-60"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/FACOM-230_60.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_FACOM_230-10"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/FACOM_230-10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Fujitsu_72_FACOM230_8_Series"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Fujitsu_72_FACOM230_8_Series.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_FACOM_V0"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/FACOM_V0.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Fujitsu_71_FACOM_U-200"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Fujitsu_71_FACOM_U-200.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Fujitsu_70_FACOM230-75"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Fujitsu_70_FACOM230-75.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_GNG_MATSUSHITA_1968"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/GNG_MATSUSHITA_1968.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_GNG_MATSUSHITA_1972"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/GNG_MATSUSHITA_1972.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Hitachi_66_HITAC_8100"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Hitachi_66_HITAC_8100.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_Mobile_Television_X-Ray_Station"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/Mobile_Television_X-Ray_Station.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_HITAC_8700"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/HITAC_8700.dds"
+	}
+	spriteType = {
+		name = "GFX_GNG_Product_Decisions_GUI_HM-1201A"
+		textureFile = "gfx/interface/guangdong_gui/product_gui/product_gui_products/HM-1201A.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_GNG_Product_Cycle_IJA_Animation"
+		texturefile = "gfx/interface/guangdong_gui/product_gui/GNG_Product_Cycle_IJA_Animation.dds"
+		noOfFrames = 6
+		animation_rate_fps = 3
+		looping = yes
+		play_on_show = yes
+	}
+}
+

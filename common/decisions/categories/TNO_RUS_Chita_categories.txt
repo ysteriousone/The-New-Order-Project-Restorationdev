@@ -1,0 +1,40 @@
+CHT_a_quiet_dinner_category = {
+	icon = GFX_decision_category_power_struggle
+	picture = GFX_ONG_political_fighting
+
+	allowed = {
+		original_tag = CHT
+	}
+	visible = {
+		has_country_flag = CHT_a_quiet_dinner_preparations
+		NOT = { has_global_flag = AFTER_MIDNIGHT_COMMENCED }
+	}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 15
+	}
+}
+
+CHT_initial_investments_category = {
+	icon = GFX_decision_category_generic_political_actions
+	picture = GFX_RUS_category_developing_far_east
+
+	allowed = {
+		original_tag = CHT
+	}
+	visible = {
+		has_country_flag = CHI_warlord_initial_investment
+		is_ai = no
+		NOT = {
+			has_global_flag = AFTER_MIDNIGHT_COMMENCED
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 30
+	}
+}

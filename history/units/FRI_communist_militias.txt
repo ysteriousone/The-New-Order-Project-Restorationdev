@@ -1,0 +1,83 @@
+division_template = {
+	name = "Communist Militia"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1. Communist Militia"
+		location = "12268"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2. Communist Militia"
+		location = "12181"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3. Communist Militia"
+		location = "7421"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4. Communist Militia"
+		location = "10279"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "5. Communist Militia"
+		location = "10479"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6. Communist Militia"
+		location = "1225"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "7. Communist Militia"
+		location = "12225"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "8. Communist Militia"
+		location = "10263"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "9. Communist Militia"
+		location = "10153"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "10. Communist Militia"
+		location = "12371"
+		division_template = "Communist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+}

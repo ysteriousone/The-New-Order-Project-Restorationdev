@@ -1,0 +1,249 @@
+# equipments = {
+#	strat_bomber_equipment = {
+
+#		can_be_produced = {
+#			NOT = {
+#				has_idea = ENG_Across_The_Channel
+#			}
+#		}
+
+#		year = 1933
+
+#		is_archetype = yes
+#		is_convertable = yes
+#		picture = archetype_strat_bomber_equipment
+#		is_buildable = no
+#		type = strategic_bomber
+#		group_by = archetype
+#		sprite = heavy_plane
+#		air_map_icon_frame = 11
+
+#		interface_category = interface_category_air
+
+#		# Strategic bomber
+#		interface_overview_category_index = 5
+
+#		upgrades = {
+#			plane_bomb_upgrade
+#			plane_range_upgrade
+#			plane_engine_upgrade
+#			plane_reliability_upgrade
+#		}
+
+#		air_superiority = 1
+#		reliability = 0.8
+
+#		# Air vs Navy - high damage / low hit chance / hard to hurt
+#		naval_strike_attack = 1.5
+#		naval_strike_targetting = 0.6
+
+#		#Space taken in convoy
+#		lend_lease_cost = 12
+
+#		build_cost_ic = 40
+#		resources = {
+#			#oil = 1
+#			aluminium = 5
+#			rubber = 2
+#		}
+
+#		manpower = 80
+#		fuel_consumption = 1.6
+#	}
+
+#	strat_stealth_equipment = {
+#		year = 1980
+
+#		is_archetype = yes
+#		is_convertable = yes
+#		picture = archetype_strat_bomber_equipment
+#		is_buildable = no
+#		type = strategic_bomber
+#		group_by = archetype
+#		sprite = heavy_plane
+#		air_map_icon_frame = 10
+
+#		interface_category = interface_category_air
+
+#		# Strategic bomber
+#		interface_overview_category_index = 5
+
+#		upgrades = {
+#			plane_bomb_upgrade
+#			plane_range_upgrade
+#			plane_engine_upgrade
+#			plane_reliability_upgrade
+#		}
+
+#		air_superiority = 1
+#		reliability = 0.8
+
+#		# Air vs Navy - high damage / low hit chance / hard to hurt
+#		naval_strike_attack = 1.5
+#		naval_strike_targetting = 0.6
+
+#		build_cost_ic = 195
+#		resources = {
+#			aluminium = 5
+#			rubber = 2
+#			chromium = 1
+#		}
+
+#		manpower = 100
+#		fuel_consumption = 1.6
+#	}
+
+#	# Basic strat_bomber
+#	strat_bomber_equipment_0 = {
+#		year = 1936
+
+#		archetype = strat_bomber_equipment
+#		priority = 90
+
+#		air_range = 3800
+#		maximum_speed = 450
+#		air_agility = 7
+#		air_attack = 28
+#		air_defence = 52
+#		air_bombing = 45
+
+#		build_cost_ic = 50
+#		fuel_consumption = 0.8
+#	}
+
+#	# Improved strat_bomber
+#	strat_bomber_equipment_1 = {
+#		year = 1945
+
+#		archetype = strat_bomber_equipment
+#		parent = strat_bomber_equipment_0
+#		priority = 100
+
+#		air_range = 4800
+#		maximum_speed = 500
+#		air_agility = 10
+#		air_attack = 42
+#		air_defence = 70
+#		air_bombing = 70
+
+#		build_cost_ic = 60
+#		fuel_consumption = 0.8
+#	}
+
+#	# Basic Jet strat_bomber
+#	jet_strat_bomber_equipment_1 = {
+#		year = 1950
+
+#		archetype = strat_bomber_equipment
+#		parent = strat_bomber_equipment_1
+#		priority = 110
+
+#		air_range = 5800
+#		maximum_speed = 920
+#		air_agility = 13
+#		air_attack = 52
+#		air_defence = 80
+#		air_bombing = 85
+
+#		build_cost_ic = 70
+#	}
+
+#	jet_strat_bomber_equipment_2 = {
+#		year = 1960
+
+#		archetype = strat_bomber_equipment
+#		parent = jet_strat_bomber_equipment_1
+#		priority = 120
+
+#		air_range = 6800
+#		maximum_speed = 1040
+#		air_agility = 16
+#		air_attack = 62
+#		air_defence = 90
+#		air_bombing = 100
+
+#		build_cost_ic = 80
+#	}
+
+#	jet_strat_bomber_equipment_3 = {
+#		year = 1970
+
+#		archetype = strat_bomber_equipment
+#		parent = jet_strat_bomber_equipment_2
+#		priority = 130
+
+#		air_range = 7800
+#		maximum_speed = 1160
+#		air_agility = 19
+#		air_attack = 72
+#		air_defence = 100
+#		air_bombing = 125
+
+#		build_cost_ic = 90
+#	}
+
+#	jet_strat_bomber_equipment_4 = {
+#		year = 1980
+
+#		archetype = strat_bomber_equipment
+#		parent = jet_strat_bomber_equipment_3
+#		priority = 140
+
+#		air_range = 8800
+#		maximum_speed = 1280
+#		air_agility = 22
+#		air_attack = 82
+#		air_defence = 110
+#		air_bombing = 140
+
+#		build_cost_ic = 100
+#	}
+
+#	jet_strat_bomber_equipment_5 = {
+#		year = 1990
+
+#		archetype = strat_bomber_equipment
+#		parent = jet_strat_bomber_equipment_4
+#		priority = 150
+
+#		air_range = 9800
+#		maximum_speed = 1400
+#		air_agility = 25
+#		air_attack = 92
+#		air_defence = 120
+#		air_bombing = 155
+
+#		build_cost_ic = 110
+#	}
+
+#	strat_stealth_equipment_1 = {
+#		year = 1980
+
+#		archetype = strat_stealth_equipment
+#		priority = 150
+
+#		air_range = 8800
+#		maximum_speed = 1280
+#		air_agility = 22
+#		air_attack = 82
+#		air_defence = 300
+#		air_bombing = 140
+#		build_cost_ic = 175
+#	}
+
+#	strat_stealth_equipment_2 = {
+#		year = 1990
+
+#		archetype = strat_stealth_equipment
+#		parent = strat_stealth_equipment_1
+#		priority = 160
+
+#		air_range = 9800
+#		maximum_speed = 1400
+#		air_agility = 25
+#		air_attack = 92
+#		air_defence = 327
+#		air_bombing = 155
+#		build_cost_ic = 195
+#	}
+# }

@@ -1,0 +1,22 @@
+units = {
+	fleet = {
+		name = "American Spare Submarines"
+		naval_base = 6384
+		task_force = {
+			name = "Submarine Squadron"
+			location = 6384
+
+## Submarines
+			ship = { name = "HMS Cod" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Bonefish" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Paddle" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Puffer" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Croaker" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Dolphin" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Trigger" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Scorpion" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Permit" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+			ship = { name = "HMS Lafayette" definition = submarine start_experience_factor = 0.1 equipment = { ship_hull_submarine_3 = { amount = 1 owner = ENG version_name = "Warspite Class" } } }
+		}
+	}
+}

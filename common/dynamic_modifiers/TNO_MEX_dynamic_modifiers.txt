@@ -1,0 +1,60 @@
+MEX_mexican_miracle = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			has_idea = MEX_mexican_miracle_dummy
+		}
+	}
+	# USA
+	local_resources_factor = MEX_USA_miracle_resources
+	consumer_goods_use_modifier = MEX_USA_miracle_consumer_goods_use
+
+	# JAP
+	annual_gdp_growth_factor = MEX_JAP_miracle_annual_gdp
+	production_speed_buildings_factor = MEX_JAP_miracle_construction_speed
+
+	# MEX
+	stability_factor = MEX_MEX_miracle_stability
+	political_power_gain = MEX_MEX_miracle_pp_gain
+	poverty_monthly_rate = MEX_MEX_miracle_monthly_poverty
+}
+
+MEX_econ_region_state_dynamic_modifier = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+
+	### Stimulation
+	state_GDP_growth_modifier = MEX_econ_region_state_GDP_growth_modifier
+
+	### Agronomics & Productivity
+
+	### Population
+
+	### Quality of Life
+}
+
+MEX_econ_region_national_dynamic_modifier = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+
+	### Stimulation
+
+	### Agronomics & Productivity
+	misc_income_modifier = MEX_econ_region_agronomics_misc_income_modifier
+	free_production_units_modifier = MEX_econ_region_agronomics_free_production_units_modifier
+
+	### Population
+	academic_base_monthly_rate = MEX_econ_region_total_academic_base_monthly_rate 
+	industrial_equipment_monthly_rate = MEX_econ_region_total_industrial_equipment_monthly_rate
+	industrial_expertise_monthly_rate = MEX_econ_region_total_industrial_expertise_monthly_rate
+	consumer_goods_use_modifier = MEX_econ_region_population_consumer_goods_use_modifier
+
+	### Quality of Life
+	# academic_base_monthly_rate = MEX_econ_region_quality_of_life_academic_base_monthly_rate 
+	admin_efficiency_monthly_rate = MEX_econ_region_quality_of_life_admin_efficiency_monthly_rate
+	research_facilities_monthly_rate = MEX_econ_region_quality_of_life_research_facilities_monthly_rate
+	agriculture_monthly_rate = MEX_econ_region_quality_of_life_agriculture_monthly_rate
+	healthcare_monthly_rate = MEX_econ_region_quality_of_life_healthcare_monthly_rate
+	# industrial_equipment_monthly_rate = MEX_econ_region_quality_of_life_industrial_equipment_monthly_rate
+	# industrial_expertise_monthly_rate = MEX_econ_region_quality_of_life_industrial_expertise_monthly_rate
+}

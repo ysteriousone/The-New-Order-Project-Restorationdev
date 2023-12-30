@@ -1,0 +1,54 @@
+characters = {
+	CYL_dudley_senanayake = {
+		name = CYL_dudley_senanayake
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_Dudley_Senanayake.dds"}
+		}
+		country_leader = {
+			desc = "POLITICS_DUDLEY_SENANAYAKE_DESC"
+			expire = "1999.1.1"
+			ideology = conservatism_paternalistic_conservatism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_swrd_bandaranaike = {
+		name = CYL_swrd_bandaranaike
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_S.W.R.D._Bandaranaike.dds"}
+		}
+		country_leader = {
+			#desc = "POLITICS_Bandaranaike_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_dr_nm_perera = {
+		name = CYL_dr_nm_perera
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_Dr._N._M._Perera.dds"}
+		}
+		country_leader = {
+			#desc = "POLITICS_Perera_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_bala_tampoe = {
+		name = CYL_bala_tampoe
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_Bala_Tampoe.dds"}
+		}
+		country_leader = {
+			#desc = "POLITICS_Bala_Tampoee_DESC"
+			expire = "1999.1.1"
+			ideology = communist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

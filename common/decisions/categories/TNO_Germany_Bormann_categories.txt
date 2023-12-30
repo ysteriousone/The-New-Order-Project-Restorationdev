@@ -1,0 +1,59 @@
+GER_Bormann_CW_category = {
+	icon = GFX_decision_generic_crisis
+	picture = GFX_decision_GER_decision_political_situation
+
+	allowed = { tag = BGR }
+}
+
+GER_Bormann_EconMech_category = {
+	icon = ger_reichskommissariats
+	picture = GFX_GER_decision_category_grossraum
+	scripted_gui = TNO_Bormann_EconMech_DecisionGui
+
+	allowed = { original_tag = GER }
+	visible = { has_country_flag = BOR_EconomyMechanic_Active }
+
+	visible_when_empty = yes
+	priority = 250
+}
+
+GER_Bormann_Foreign_Policy_category = {
+	icon = ger_reichskommissariats
+	picture = GFX_GER_decision_map
+
+	allowed = { original_tag = GER }
+	visible = {
+		has_global_flag = german_civil_war_bormannvic
+		has_country_flag = BOR_Kartenhaus_Active
+		NOT = { has_country_flag = BOR_SchornerCoup }
+	}
+
+	priority = 100
+}
+
+GER_Bormann_Fall_Rollo_category = {
+	icon = GFX_decision_generic_prepare_civil_war
+	picture = GFX_decision_SCO_decision_paranoia
+
+	allowed = { original_tag = GER }
+	visible = {
+		has_country_flag = BOR_fall_rollo_unlocked
+		NOT = { has_global_flag = FRA_post_breton_war_collapse }
+	}
+
+	priority = 170
+}
+
+GER_Bormann_Sphere_Trade_category = {
+	icon = GFX_decision_generic_foreign_policy
+	picture = GFX_decision_JAP_decision_political_situation
+
+	allowed = { original_tag = GER }
+	visible = {
+		has_idea = GER_BOR_sphere_trade
+		NOT = { has_war_with = JAP }
+	}
+
+	visible_when_empty = yes
+	priority = 210
+}

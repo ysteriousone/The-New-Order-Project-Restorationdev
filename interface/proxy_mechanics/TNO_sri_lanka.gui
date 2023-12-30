@@ -1,0 +1,75 @@
+guiTypes = {
+	## Sri Lanka Crisis
+	containerWindowType = {
+		name = "TNO_SriLanka_Crisis_GUI"
+		size = { width = 525 height = 450 }
+		position = { x = 0 y = 0 }
+		size = { width = 496 height = 506 }	
+
+		containerWindowType = {
+			name = "inner"
+			position = { x = 0 y = 0 }
+			
+			iconType = {
+				name = "sidebar"
+				position = { x = 8 y = 8 }
+				spriteType = "GFX_TT_Jamaica_Crisis_Sidebar"
+			}
+			iconType = {
+				name = "seal"
+				position = { x = 153 y = 25 }
+				spriteType = "GFX_fopo_dept_of_state_seal"
+			}
+			instantTextboxType = {
+				name = "desc"
+				position = { x = 118 y = 10 }
+				font = "aldrich_18_outline"
+				text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis id quam pharetra tristique non at urna. Integer semper nunc sit amet volutpat varius. Sed ornare commodo lacinia. Duis scelerisque felis dolor, eu egestas ante bibendum ac. Aenean tristique dui purus, sed volutpat arcu ultrices vel. Curabitur pretium tempus dolor a vehicula. Praesent ut ante ac nunc lacinia interdum. Cras vestibulum non diam vitae consectetur.
+
+				Ut eu massa non lacus dictum faucibus. Donec facilisis eu nibh vel scelerisque. Sed scelerisque, lacus eu venenatis vehicula, mi ligula dignissim diam, in tincidunt arcu tellus eu metus. Ut vel laoreet magna. Etiam ut eros id enim rhoncus fermentum ut non eros. Praesent at eros fermentum, lobortis lorem a, volutpat dolor. Fusce vel purus lobortis, fermentum mauris quis, auctor ante. Vestibulum sit amet lacus ac elit lobortis sollicitudin at sed nisl. In consequat, lectus gravida rutrum vulputate, orci urna eleifend elit, elementum venenatis neque arcu non felis. Duis eget nisl tellus. Ut nec quam in velit semper ultrices. Etiam ullamcorper ligula metus, ut rutrum erat tempus nec. Maecenas sit amet congue nisi, non imperdiet nisi."
+				maxWidth = 370
+				format = left
+			}
+			iconType = {
+				name = "sri_lanka_pos_1"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_1_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_2"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_2_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_3"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_3_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_4"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_4_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_5"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_5_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_6"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_6_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_7"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_7_Blank"
+			}
+			iconType = {
+				name = "sri_lanka_pos_8"
+				position = { x = 230 y = 175 }
+				spriteType = "GFX_TT_Sri_Lanka_8_Blank"
+			}
+		}
+	}
+}

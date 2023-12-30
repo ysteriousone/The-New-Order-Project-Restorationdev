@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_ENG_DECCAT_Acts"
+		texturefile = "gfx/interface/decisions/ENG_DECCAT_Acts.dds"
+	}
+}

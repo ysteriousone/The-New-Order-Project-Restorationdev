@@ -1,0 +1,132 @@
+##Italian Governorate##
+ideas = {
+	country = {
+		ILG_Wild_Frontier = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Wild_Frontier"}
+			picture = AKT_Kazakh_Horsemen
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.05
+				supply_consumption_factor = 0.10
+				attrition = 0.05
+			}
+		}
+		ILG_Provisional_Government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Wild_Frontier"}
+			picture = MOC_Italian_Oversight
+
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.1
+			}
+		}
+		ILG_Unofficial_Italian_Settlement = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Unofficial_Italian_Settlement"}
+			picture = ORE_refugee_crisis
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.05
+				conscription_factor = 0.02
+				monthly_population = 0.03
+			}
+		}
+		ILG_Saharan_Bandits = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Saharan_Bandits"}
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				attrition = -0.05
+				supply_consumption_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SLG
+				attack_bonus_against = 0.05
+			}
+		}
+		ILG_Saharan_Bandits_Weakened = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Saharan_Bandits_Weakened"}
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				stability_factor = 0.05
+				attrition = -0.025
+			}
+			targeted_modifier = {
+				tag = SLG
+				attack_bonus_against = -0.05
+			}
+		}
+		ILG_Saharan_Bandits_Problematic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Saharan_Bandits_Problematic"}
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				war_support_factor = -0.05
+				supply_consumption_factor = 0.025
+			}
+			targeted_modifier = {
+				tag = SLG
+				attack_bonus_against = -0.10
+			}
+		}
+		ILG_Saharan_Bandits_Prevalent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Saharan_Bandits_Prevalent"}
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				attrition = 0.025
+				supply_consumption_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SLG
+				attack_bonus_against = -0.15
+			}
+		}
+		ILG_Saharan_Bandits_Crisis = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Saharan_Bandits_Crisis"}
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.15
+				attrition = 0.05
+				supply_consumption_factor = 0.075
+			}
+			targeted_modifier = {
+				tag = SLG
+				attack_bonus_against = -0.20
+			}
+		}
+		ILG_Saharan_Bandits_Bad = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Saharan_Bandits_Bad"}
+			picture = POL_Terrified_Garrison
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.20
+				attrition = 0.10
+				supply_consumption_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = SLG
+				attack_bonus_against = -0.25
+			}
+		}
+		ILG_Military_Boost_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ILG_Military_Boost_1"}
+			picture = URL_refugee_crisis #NEED ICON
+
+			modifier = {
+				recon_factor = 0.1
+				#enemy_#partisan_effect = -0.05
+				acclimatization_hot_climate_gain_factor = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+	}
+}

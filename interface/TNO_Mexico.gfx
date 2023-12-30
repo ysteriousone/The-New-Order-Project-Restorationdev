@@ -1,0 +1,314 @@
+spriteTypes = {
+	## Traits ##
+    spriteType = {
+        name = "GFX_trait_revolution_veteran"
+        texturefile = gfx/interface/traits/trait_revolution_veteran.dds
+    }
+
+	## Decision GFX ##
+	SpriteType = {
+		name = "GFX_MEX_decision_category_dedazo"
+		texturefile = "gfx/interface/decisions/MEX_decision_category_dedazo.dds"
+	}
+
+	## Ideas ##
+	spriteType = {
+		name = "GFX_idea_MEX_the_Zaibatsus"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_Zaibatsus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Economic_Battlefield_OFN"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Economic_Battlefield_OFN.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Economic_Battlefield_Sphere"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Economic_Battlefield_Sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Economic_Battlefield_shared"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Economic_Battlefield_shared.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Economic_Battlefield_Mexico"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Economic_Battlefield_Mexico.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Perfect_Dictatorship"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Perfect_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Good_Enough_Dictatorship"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Good_Enough_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Imperfect_Dictatorship"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Imperfect_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Broken_Dictatorship"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Broken_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Whisper_from_Shadows"
+		texturefile = "gfx/interface/ideas/ideas/idea_MEX_Whisper_from_Shadows.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_MEX_The_Imperfect_Dictatorship"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_The_Imperfect_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_the_leviathan_4"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_leviathan_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_the_leviathan_3"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_leviathan_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_the_leviathan_2"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_leviathan_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_the_leviathan_1"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_the_leviathan_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_rural_depression"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_rural_depression.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_mexican_miracle"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_MEX_mexican_miracle.dds"
+	}	
+
+	## Ministers ##
+	spriteType = {
+		name = "GFX_idea_MEX_Gustavo_Ordaz"
+		texturefile = "gfx/interface/ideas/ministers/MEX/MEX_minister_Gustavo_Ordaz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Mandril"
+		texturefile = "gfx/interface/ideas/ministers/MEX/MEX_minister_Mandril.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Raul_Lozano"
+		texturefile = "gfx/interface/ideas/ministers/MEX/MEX_minister_Raul_Lozano.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Manuel_Barraud"
+		texturefile = "gfx/interface/ideas/ministers/MEX/MEX_minister_Manuel_Tello_Barraud.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Jose_Olachea"
+		texturefile = "gfx/interface/ideas/ministers/MEX/MEX_minister_Agustin_Olachea_Aviles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MEX_Luis_Echeverria"
+		texturefile = "gfx/interface/ideas/ministers/MEX/MEX_Luis_Echeverria.dds"
+	}
+
+	## Focus Icons ##
+	SpriteType = {
+		name = "GFX_MEX_Olympic_Dream"
+		texturefile = "gfx/interface/goals/MEX_Olympic_Dream.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Averting_the_Crisis"
+		texturefile = "gfx/interface/goals/MEX_Averting_the_Crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_big_iron_on_his_hip"
+		texturefile = "gfx/interface/goals/MEX_big_iron_on_his_hip.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_The_Triumphant_Return"
+		texturefile = "gfx/interface/goals/MEX_The_Triumphant_Return.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Across_the_Pacific"
+		texturefile = "gfx/interface/goals/MEX_Across_the_Pacific.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Across_the_Rio_Grande"
+		texturefile = "gfx/interface/goals/MEX_Across_the_Rio_Grande.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Contact_Johnson"
+		texturefile = "gfx/interface/goals/MEX_Contact_Johnson.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Japanese_Movies"
+		texturefile = "gfx/interface/goals/MEX_Japanese_Movies.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Putting_Mexico_On_The_Map"
+		texturefile = "gfx/interface/goals/MEX_Putting_Mexico_On_The_Map.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_A_Friendly_Visit"
+		texturefile = "gfx/interface/goals/MEX_A_Friendly_Visit.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_sugoi_my_asset_is_squeezed_like_how_i_want_japan_and_mexico_to_be_squeezed_together_to_improve_t"
+		texturefile = "gfx/interface/goals/MEX_sugoi_my_asset_is_squeezed_like_how_i_want_japan_and_mexico_to_be_squeezed_together_to_improve_t.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Going_To_Tokyo"
+		texturefile = "gfx/interface/goals/MEX_Going_To_Tokyo.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Meeting_the_Committee"
+		texturefile = "gfx/interface/goals/MEX_Meeting_the_Committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Keep_The_Oil_Flowing"
+		texturefile = "gfx/interface/goals/MEX_Keep_The_Oil_Flowing.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_More_Than_Texas"
+		texturefile = "gfx/interface/goals/MEX_More_Than_Texas.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Giant_South"
+		texturefile = "gfx/interface/goals/MEX_Giant_South.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Not_Neighbors"
+		texturefile = "gfx/interface/goals/MEX_Not_Neighbors.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Sister_Revolutions"
+		texturefile = "gfx/interface/goals/MEX_Sister_Revolutions.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Pan_American"
+		texturefile = "gfx/interface/goals/MEX_Pan_American.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_japanese_language_courses"
+		texturefile = "gfx/interface/goals/MEX_japanese_language_courses.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Heart"
+		texturefile = "gfx/interface/goals/MEX_Heart.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Hemispheric_Summit"
+		texturefile = "gfx/interface/goals/MEX_Hemispheric_Summit.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Mateos_Up"
+		texturefile = "gfx/interface/goals/MEX_Mateos_Up.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Sukarno_Friend"
+		texturefile = "gfx/interface/goals/MEX_Sukarno_Friend.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Trade_Across_the_Border"
+		texturefile = "gfx/interface/goals/MEX_Trade_Across_the_Border.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_Expand_The_Bracero_Program"
+		texturefile = "gfx/interface/goals/MEX_Expand_The_Bracero_Program.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_comrades_in_india"
+		texturefile = "gfx/interface/goals/MEX_comrades_in_india.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_conceding_fishing_rights"
+		texturefile = "gfx/interface/goals/MEX_conceding_fishing_rights.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_mexican_toyota"
+		texturefile = "gfx/interface/goals/MEX_mexican_toyota.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_pacific_industry_summit"
+		texturefile = "gfx/interface/goals/MEX_pacific_industry_summit.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_going_to_dc"
+		texturefile = "gfx/interface/goals/MEX_going_to_dc.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_the_chamizal"
+		texturefile = "gfx/interface/goals/MEX_the_chamizal.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_secondary_oil_deal"
+		texturefile = "gfx/interface/goals/MEX_secondary_oil_deal.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_industry_without_smokestacks"
+		texturefile = "gfx/interface/goals/MEX_industry_without_smokestacks.dds"
+	}
+	SpriteType = {
+		name = "GFX_MEX_attract_canadian_investment"
+		texturefile = "gfx/interface/goals/MEX_attract_canadian_investment.dds"
+	}
+
+	## Event Pics ##
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_1"
+		texturefile = "gfx/event_pictures/MEX_Olympics_68.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_pool"
+		texturefile = "gfx/event_pictures/MEX_olympics_pool.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_soldiers"
+		texturefile = "gfx/event_pictures/MEX_olympics_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_boycott"
+		texturefile = "gfx/event_pictures/MEX_olympics_boycott.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_russia"
+		texturefile = "gfx/event_pictures/MEX_olympics_russia.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_wyman"
+		texturefile = "gfx/event_pictures/MEX_olympics_wyman.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_caslavska"
+		texturefile = "gfx/event_pictures/MEX_olympics_caslavska.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_LBJ_ranch_big_l"
+		texturefile = "gfx/event_pictures/MEX_LBJ_ranch_big_l.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_olympics_proposal"
+		texturefile = "gfx/event_pictures/MEX_olympics_proposal.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_ordaz_mad"
+		texturefile = "gfx/event_pictures/MEX_ordaz_mad.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_madrazo_1"
+		texturefile = "gfx/event_pictures/MEX_madrazo_1.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_mateos_1"
+		texturefile = "gfx/event_pictures/MEX_mateos_1.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_cabinet"
+		texturefile = "gfx/event_pictures/MEX_cabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_lozano_1"
+		texturefile = "gfx/event_pictures/MEX_lozano_1.dds"
+	}
+	spriteType = {
+		name = "GFX_event_picture_MEX_GPG_cache"
+		texturefile = "gfx/event_pictures/MEX_GPG_cache.dds"
+	}
+}

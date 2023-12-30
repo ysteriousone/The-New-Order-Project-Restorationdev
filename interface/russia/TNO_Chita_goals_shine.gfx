@@ -1,0 +1,26 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_CHT_the_vestigal_empire_shine"
+		texturefile = "gfx/interface/goals/Chita/GFX_CHT_the_vestigal_empire.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Chita/GFX_CHT_the_vestigal_empire.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Chita/GFX_CHT_the_vestigal_empire.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_CHT_a_perfectly_legitimate_claimant_shine"
+		texturefile = "gfx/interface/goals/Chita/GFX_CHT_a_perfectly_legitimate_claimant.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Chita/GFX_CHT_a_perfectly_legitimate_claimant.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Chita/GFX_CHT_a_perfectly_legitimate_claimant.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_CHT_the_most_interesting_man_in_the_world_shine"
+		texturefile = "gfx/interface/goals/Chita/GFX_CHT_the_most_interesting_man_in_the_world.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Chita/GFX_CHT_the_most_interesting_man_in_the_world.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Chita/GFX_CHT_the_most_interesting_man_in_the_world.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+}

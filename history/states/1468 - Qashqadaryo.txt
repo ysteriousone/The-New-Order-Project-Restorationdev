@@ -1,0 +1,25 @@
+
+state={
+	id=1468
+	name="STATE_1468" # Qashqadaryo
+	manpower = 4637140
+	
+	state_category = rural
+	
+	resources={
+		tungsten=3
+	}
+	history={
+		owner = UTL
+		victory_points = { 1632 5 }
+		buildings = {
+			infrastructure = 2
+			air_base = 4
+		}
+		add_core_of = UTL
+	}
+
+	provinces={
+		1216 1573 1632 7639 9605 10671 12722 756 13245 12239
+	}
+}

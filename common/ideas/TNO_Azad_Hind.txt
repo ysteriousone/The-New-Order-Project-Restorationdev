@@ -1,0 +1,1774 @@
+ideas = {
+	###############
+	# Country ideas
+	###############
+	country = {
+		AZH_Hindustan_Land_Development_Authority = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea AZH_Hindustan_Land_Development_Authority"
+				admin_funding_minimal_increase_med = yes
+			}
+			on_remove = {
+				admin_funding_minimal_decrease_med = yes
+			}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = AZH_Hindustan_Land_Development_Authority
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				stability_factor = 0.15
+				custom_modifier_tooltip = admin_funding_minimal_increase_med_tt
+			}
+		}
+		AZH_The_Language_Problem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_The_Language_Problem"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = AZH_The_Language_Problem
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		AZH_What_Is_Subhasism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_What_Is_Subhasism"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = AZH_What_Is_Subhasism
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+		AZH_Persistent_Communal_Violence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Persistent_Communal_Violence"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = rural_resistance
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		AZH_fading_power = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_fading_power"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_fading_power
+			removal_cost = -1
+
+			modifier = {
+			#	political_power_gain = -0.3
+			}
+		}
+		AZH_Private_Military_Contractors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Private_Military_Contractors"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = SAM_German_Military_Training
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+				command_power_gain_mult = 0.15
+				max_command_power = 30
+				land_reinforce_rate = 0.1
+			}
+		}
+		AZH_bose_positions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_bose_positions"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_bose_positions
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		AZH_purged_ayer = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_bose_positions"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_purged_ayer
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+			}
+		}
+		AZH_east_asian_hub = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_bose_positions"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_east_asian_hub
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+		AZH_army_govt = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_bose_positions"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = AZH_army_govt
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_use_modifier = 0.25
+				ai_focus_aggressive_factor = 0.1
+				stability_factor = -0.15
+				local_resources_factor = -0.1
+			}
+		}
+		AZH_Martial_Law = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Martial_Law"}
+			allowed = {
+				always = no
+			}
+			picture = generic_army_2
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.12
+			}
+		}
+		AZH_New_Security_Protocols = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_New_Security_Protocols"}
+			allowed = {
+				always = no
+			}
+			picture = generic_exclamation_mark
+			removal_cost = -1
+
+			modifier = {
+				decryption_factor = 0.2
+				encryption_factor = 0.2
+			}
+		}
+		AZH_Black_Helicopters = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Black_Helicopters"}
+			allowed = {
+				always = no
+			}
+			picture = generic_exclamation_mark
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.03
+				#enemy_#partisan_effect = -0.2
+			}
+		}
+		AZH_Unidentified_Snipers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Unidentified_Snipers"}
+			allowed = {
+				always = no
+			}
+			picture = generic_exclamation_mark
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				monthly_population = -0.01
+			}
+		}
+		AZH_Widespread_Confusion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Widespread_Confusion"}
+			allowed = {
+				always = no
+			}
+			picture = generic_exclamation_mark
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		AZH_reperations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_bose_positions"}
+
+			allowed = { always = no }
+			picture = generic_exclamation_mark
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.2
+				consumer_goods_use_modifier = 0.1
+				stability_factor = -0.01
+			}
+		}
+		AZH_Bengali_Riots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bengali_Riots"}
+
+			allowed = { always = no }
+			picture = ORE_anarchic_commune
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.03
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.15
+			}
+		}
+		AZH_Bengali_Suppression = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bengali_Suppression"}
+
+			allowed = { always = no }
+			picture = ORE_anarchic_commune
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.08
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.08
+			}
+		}
+		AZH_religious_resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_religious_resistance"}
+
+			allowed = { always = no }
+			picture = IND_religious_tension
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.08
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.08
+			}
+		}
+		AZH_communal_resistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_communal_resistance"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.4
+			}
+		}
+		AZH_INA_Riots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_INA_Riots"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				max_planning = -0.1
+				army_core_defence_factor = -0.05
+				army_org_factor = -0.2
+			}
+		}
+		AZH_a_taste_of_freedom = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_a_taste_of_freedom"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_gain = -0.5
+				surrender_limit = -0.15
+			}
+		}
+		AZH_Singh_Promised_Garrison = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Promised_Garrison"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				#enemy_#partisan_effect = -0.1 
+			}
+		}
+		BHU_Garrison_Reinforced = { #wtf this isnt for beglan
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BHU_Garrison_Reinforced"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				#enemy_#partisan_effect = -0.1
+				command_power_gain = 2.0
+				political_power_gain = -0.5
+			}
+		}
+		AZH_Singh_Veterans_Affairs_Programs = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Veterans_Affairs_Programs"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = { #nothing atm mostly just for explaining why you are losing more money
+			}
+		}
+		AZH_Singh_Begin_Reforming_The_Government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Begin_Reforming_The_Government"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.10
+			}
+		}
+		AZH_Singh_Transitional_Government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Begin_Reforming_The_Government"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.50
+				stability_factor = -0.15
+			}
+		}
+		AZH_Singh_Japanese_Overseers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Begin_Reforming_The_Government"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				industry_free_repair_factor = 1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		AZH_Singh_Earth_Powering_India = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Begin_Reforming_The_Government"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.05
+				production_oil_factor = 0.1
+			}
+		}
+		AZH_Singh_No_Mercy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Begin_Reforming_The_Government"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -2.1
+			}
+		}
+		AZH_Singh_Operation_Nerada = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Begin_Reforming_The_Government"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		AZH_Uncertain_Training_Methods = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Uncertain_Training_Methods"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.02
+				army_attack_factor = -0.02
+				army_defence_factor = -0.02
+			}
+		}
+		AZH_Bengali_Autonomy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bengali_Autonomy"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.03
+				conscription_factor = -0.02
+			}
+		}
+		AZH_Singh_fwicky_wicky_upsy_wupsy_nepaw = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_fwicky_wicky_upsy_wupsy_nepaw"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.20
+				experience_gain_factor = -0.80
+			}
+		}
+		AZH_Singh_Elite_Troops_In_Nepal_wow_no_pOwOsting = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_fwicky_wicky_upsy_wupsy_nepaw"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = NEP
+				attack_bonus_against = 0.3
+			}
+		}
+		AZH_Pacifist_State = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Pacifist_State"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				conscription = -1
+			}
+		}
+		AZH_Singh_Pwess_Bwackoutsies = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Pwess_Bwackoutsies"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.65
+			}
+		}
+		AZH_Singh_Miwwitawy_Pwison_pwease_wet_me_out_OmO = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Pwess_Bwackoutsies"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				industry_free_repair_factor = 1.00
+				monthly_population = -0.05
+				research_speed_factor = -0.5
+			}
+		}
+		AZH_Singh_I_Unironically_Hate_Bengalis = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Pwess_Bwackoutsies"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				non_core_manpower = -2
+				#enemy_#partisan_effect = 0.25
+			}
+		}
+		AZH_Singh_Rocket_Singh_Master_Salesman = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Pwess_Bwackoutsies"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.10
+			}
+		}
+		AZH_Singh_Hashtag_Wock_Hew_Upsies_tee_hee_smiwey = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Hashtag_Wock_Hew_Upsies_tee_hee_smiwey"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_weekly = 0.01
+				#enemy_#partisan_effect = 0.25
+				conscription_factor = -0.75
+				political_power_gain = 0.03
+				stability_factor = -0.1
+			}
+		}
+		AZH_Empowered_Clique = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Empowered_Clique"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.03
+				stability_factor = -0.1
+			}
+		}
+		AZH_Traditionalism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Traditionalism"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.03
+			}
+		}
+		AZH_BJS2_Plan_For_Everything = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_BJS2_Plan_For_Everything"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.03
+				max_planning = 0.05
+			}
+		}
+		AZH_BJS2_Arm_the_People = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_BJS2_Arm_the_People"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.15
+			}
+		}
+		AZH_Singh_Awways_Weady_Weady = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Awways_Weady_Weady"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.4
+				army_core_attack_factor = 0.1
+			}
+		}
+		AZH_The_Revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_The_Revolution"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.5
+				socialist_drift = 0.001
+			}
+		}
+		AZH_Singh_Bengawis_Dont_Get_Pawties_Which_Is_Sad = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_Bengawis_Dont_Get_Pawties_Which_Is_Sad"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.01
+				drift_defence_factor = 0.1
+				non_core_manpower = -0.02
+				#enemy_#partisan_effect = 0.25
+			}
+		}
+		AZH_Singh_No_Schoowy_Woowy_Yay = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh_No_Schoowy_Woowy_Yay"}
+
+			allowed = { always = no }
+			picture = AZH_ticking_time_bomb
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.35
+				stability_factor = -0.10
+				political_power_gain = -0.15
+			}
+		}
+		AZH_indian_war_luftwaffe_support = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_indian_war_luftwaffe_support"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				air_air_superiority_attack_factor = 0.02
+				air_cas_present_factor = 0.1
+				air_ace_generation_chance_factor = 0.10
+				air_accidents_factor = -0.05
+				enemy_army_bonus_air_superiority_factor = 0.10
+			}
+		}
+		AZH_indian_war_power_in_quantity = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_indian_war_power_in_quantity"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = -0.05
+				army_attack_factor = 0.2
+			}
+		}
+
+		AZH_indian_war_power_in_quality = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_indian_war_power_in_quanlity"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		AZH_indian_war_in_one_hand_a_gun_in_the_other_a_hammer = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_indian_war_in_one_hand_a_gun_in_the_other_a_hammer"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				army_org_factor	= 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		AZH_Islamic_General_Strike_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Islamic_General_Strike_1"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				consumer_goods_use_modifier = 0.13
+			}
+		}
+		AZH_Islamic_General_Strike_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Islamic_General_Strike_2"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				consumer_goods_use_modifier = 0.25
+			}
+		}
+		AZH_Islamic_General_Strike_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Islamic_General_Strike_3"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				consumer_goods_use_modifier = 0.50
+			}
+		}
+		AZH_Islamic_General_Strike_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Islamic_General_Strike_4"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+
+			modifier = {
+				consumer_goods_use_modifier = 1
+			}
+		}
+		AZH_Singh1_Industrialization_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh1_Industrialization_1"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_industrial_concern_1
+
+			modifier = {
+				industrial_capacity_factory = 0.01
+				production_speed_buildings_factor = 0.01
+				production_speed_dockyard_factor = 0.01
+				production_speed_infrastructure_factor = 0.01
+			}
+		}
+		AZH_Singh1_Repurposing_Faith = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Singh1_Repurposing_Faith"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = generic_central_management
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+		AZH_Bodo_Guerrilla_Training_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bodo_Guerrilla_Training_1"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = AZH_Bodo_Guerrilla_Training_1
+
+			modifier = {
+				#partisan_effect = 0.05
+			}
+		}
+		AZH_Bodo_Guerrilla_Training_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bodo_Guerrilla_Training_2"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = AZH_Bodo_Guerrilla_Training_2
+
+			modifier = {
+				#partisan_effect = 0.05
+				recon_factor = 0.05
+			}
+		}
+		AZH_Bodo_Guerrilla_Training_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bodo_Guerrilla_Training_3"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = AZH_Bodo_Guerrilla_Training_3
+
+			modifier = {
+				#partisan_effect = 0.1
+				recon_factor = 0.1
+			}
+		}
+		AZH_Bodo_Guerrilla_Training_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Bodo_Guerrilla_Training_4"}
+
+			allowed = { always = yes }
+			removal_cost = -1
+			picture = AZH_Bodo_Guerrilla_Training_4
+
+			modifier = {
+				#partisan_effect = 0.1
+				recon_factor = 0.1
+				training_time_factor = -0.05
+			}
+		}
+		AZH_Strike = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Strike"}
+
+			allowed = { always = no }
+
+			picture = GFX_FRA_factory_strikes
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				stability_weekly = -0.01
+			}
+		}
+		AZH_Against_The_Pretenders = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Against_The_Pretenders"}
+
+			allowed = { always = no }
+
+			picture = AZH_Against_The_Pretenders
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = IND
+				defense_bonus_against = 0.10
+			}
+		}
+		AZH_Lower_Dependence = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Lower_Dependence"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = JAP
+				trade_opinion_factor = -0.15
+			}
+		}
+		AZH_Boses_Recommendations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Boses_Recommendations"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				political_power_factor = -0.05
+			}
+		}
+		AZH_Machinary_For_Factories = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Labor_For_Factories"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		AZH_Labor_For_Factories = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Labor_For_Factories"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				conscription_factor = -0.10
+			}
+		}
+		AZH_Naga_Campaign = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Naga_Campaign"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.01
+				conscription_factor = -0.10
+				war_support_factor = -0.05
+			}
+		}
+		AZH_Improved_Healthcare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Improved_Healthcare"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.05
+				consumer_goods_use_modifier = 0.025
+			}
+		}
+		AZH_Social_Welfare = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Social_Welfare"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.07
+				consumer_goods_use_modifier = 0.04
+				political_power_factor = 0.05
+			}
+		}
+		AZH_Higher_Pay = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Social_Welfare"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.025
+			}
+		}
+		AZH_Protectors_Of_Free_India = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Protectors_Of_Free_India"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				#partisan_effect = 0.10
+			}
+		}
+		AZH_Sahgal_Industrialization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Sahgal_Industrialization"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_use_modifier = 0.10
+			}
+		}
+		AZH_Sahgal_Socialist_Policies = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Sahgal_Socialist_Policies"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.10
+				consumer_goods_use_modifier = 0.03
+			}
+		}
+		AZH_Better_Deal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Better_Deal"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.25
+			}
+		}
+		AZH_Our_Sphere_In_The_Sphere = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Our_Sphere_In_The_Sphere"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = BUR
+				trade_opinion_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = LAO
+				trade_opinion_factor = 0.075
+			}
+			targeted_modifier = {
+				tag = CAM
+				trade_opinion_factor = 0.05
+			}
+		}
+		AZH_Fighting_Poverty = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Fighting_Poverty"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.10
+				industrial_capacity_factory = -0.10
+				production_speed_infrastructure_factor = 0.20
+			}
+		}
+		AZH_Autonomous_Region_of_East_Bengal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Autonomous_Region_of_East_Bengal"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+		AZH_Destroying_the_Awami_League = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Destroying_the_Awami_League"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				war_support_factor = 0.05
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+		AZH_Islamic_Autonomous_Region = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Islamic_Autonomous_Region"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		AZH_Anti_Thievery_Campaign = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Anti_Thievery_Campaign"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+				political_power_gain = 0.05
+			}
+		}
+		AZH_Standardisation_Programmes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Standardisation_Programmes"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		AZH_KSE_Under_Construction = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_KSE_Under_Construction"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+		AZH_Government_Cleaning = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Government_Cleaning"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = 0.05
+			}
+		}
+		AZH_Blue_Revolution = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Blue_Revolution"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		AZH_Northeast_War = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Northeast_War"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+				surrender_limit = 0.1
+				conscription_factor = 0.1
+				training_time_factor = -0.1
+			}
+		}
+		AZH_Thivys_Plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Thivys_Plan"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = 0.1
+			}
+		}
+		AZH_NorEastWar_Famine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_NorEastWar_Famine"}
+
+			allowed = { always = no }
+
+			picture = IND_faminethree
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.3
+				conscription = 0.03
+				army_org_factor = -0.15
+				monthly_population = -1.5
+				army_morale_factor = -0.1
+				out_of_supply_factor = 0.1
+				training_time_factor = -0.1
+			}
+		}
+		AZH_NorEastWar_Flushing_Out_Insurgents = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_NorEastWar_Flushing_Out_Insurgents"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
+		AZH_NorEastWar_Agent_Orange = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_NorEastWar_Agent_Orange"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+			}
+		}
+		AZH_Surma_Valley_Strikes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Surma_Valley_Strikes"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+			}
+		}
+		AZH_Doing_What_We_Can = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Doing_What_We_Can"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.15
+				weekly_manpower = -15
+			}
+		}
+		AZH_Red_Cross_Support = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Doing_What_We_Can"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		AZH_Singhs_Plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Doing_What_We_Can"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				weekly_manpower = -30
+			}
+		}
+		INS_Indian_Support_Staff = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Doing_What_We_Can"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		AZH_Raised_Standards = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Raised_Standards"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.075
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		AZH_Hard_Work_Paid_Off = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Hard_Work_Paid_Off"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		AZH_Rush_Bureaurcrats = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Rush_Bureaurcrats"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.15
+				max_planning = -0.20
+				political_power_gain = -0.10
+			}
+		}
+		AZH_Tried_Again = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Tried_Again"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+		AZH_Tried_Harder = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Harder"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				political_power_factor = -0.15
+			}
+		}
+		AZH_Modernising_the_Cities_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Modernising_the_Cities_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.2
+			}
+		}
+		AZH_Modernising_Kolkata_Sewers_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Modernising_Kolkata_Sewers_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+			}
+		}
+		AZH_Newspaper_Production_Encouraged_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Newspaper_Production_Encouraged_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.05
+			}
+		}
+		AZH_Vaccinations_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Vaccinations_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 10
+			}
+		}
+		AZH_Feeding_the_People_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Feeding_the_People_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+				weekly_manpower = 10
+			}
+		}
+		AZH_Economic_Collapse_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Economic_Collapse_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.5
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				political_power_gain = -0.25
+			}
+		}
+		AZH_More_Communes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_More_Communes_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				political_power_gain = -0.15
+			}
+		}
+		AZH_Encouraging_Tourism_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Encouraging_Tourism_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				stability_factor = -0.05
+			}
+		}
+		AZH_Pro_Communal_Strikes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Pro_Communal_Strikes_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				political_power_gain = 0.15
+			}
+		}
+		AZH_Anti_Government_Strikes_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Anti_Government_Strikes_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.1
+				political_power_gain = -0.15
+			}
+		}
+		AZH_Deindustrialisation_Troubles_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Deindustrialisation_Troubles_idea"}
+
+			allowed = { always = no }
+
+			picture = generic_infantry_equipment_manufacturer_2
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.15
+				stability_factor = -0.1
+			}
+		}
+		AZH_Building_Infrastructure = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Building_Infrastructure"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.10
+				industrial_capacity_factory = -0.05
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		AZH_Better_Supply = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Better_Supply"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.10
+			}
+		}
+		AZH_Increased_Funds_Infrastructure = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Increased_Funds_Infrastructure"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		AZH_Beauty_India = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_Beauty_India"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_use_modifier = 0.02
+			}
+		}
+		AZH_DraftEnforcement = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_DraftEnforcement"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = -0.10
+			}
+		}
+		AZH_CooperateMercs = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_CooperateMercs"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				training_time_factor = 0.10
+			}
+		}
+		AZH_FightingFreeIndia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_FightingFreeIndia"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.15
+			}
+		}
+		AZH_IndianScience = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_IndianScience"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.02
+				consumer_goods_use_modifier = 0.01
+			}
+		}
+		AZH_HiredScience = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_HiredScience"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+				consumer_goods_use_modifier = 0.02
+			}
+		}
+		AZH_TooLongTraining = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_TooLongTraining"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = 0.15
+				army_org_factor = -0.05
+				planning_speed = -0.10
+			}
+		}
+		AZH_ArmyPropaganda = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_ArmyPropaganda"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.10
+				political_power_gain = -0.05
+			}
+		}
+		AZH_StormReform = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_StormReform"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = -0.05
+			}
+		}
+		AZH_RaisedBudget = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_RaisedBudget"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		AZH_GreenCut = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenCut"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.20
+				political_power_gain = 0.05
+			}
+		}
+		AZH_GreenCarbon = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenCarbon"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				consumer_goods_use_modifier = 0.05
+				production_speed_buildings_factor = 0.05
+
+			}
+		}
+		AZH_GreenEfficient = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenEfficient"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		AZH_GreenFactories = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenFactories"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				political_power_gain = 0.05
+			}
+		}
+		AZH_GreenHappyArmy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenHappyArmy"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				army_speed_factor = -0.10
+				political_power_factor = 0.10
+			}
+		}
+		AZH_GreenBorderArmy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenBorderArmy"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.10
+				army_attack_factor = -0.15
+				army_speed_factor = -0.15
+			}
+		}
+		AZH_DeInd = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_DeInd"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.20
+				industrial_capacity_dockyard = -0.20
+				political_power_gain = 0.10
+			}
+		}
+		AZH_CompInd = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_CompInd"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				political_power_gain = -0.10
+			}
+		}
+		AZH_ReInd = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_ReInd"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				political_power_gain = -0.20
+			}
+		}
+		AZH_GreenAntifa = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenAntifa"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = IND
+				defense_bonus_against = 0.1
+			}
+		}
+		AZH_GreenSurrender = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AZH_GreenSurrender"}
+
+			allowed = { always = no }
+
+			picture = PHI_Mass_Banditry
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = 0.05
+				#partisan_effect = 0.25
+			}
+		}
+	}
+}

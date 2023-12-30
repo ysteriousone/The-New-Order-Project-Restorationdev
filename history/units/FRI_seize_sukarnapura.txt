@@ -1,0 +1,83 @@
+division_template = {
+	name = "Islamist Militia"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1. Islamist Militia"
+		location = "12371"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2. Islamist Militia"
+		location = "12371"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3. Islamist Militia"
+		location = "12371"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4. Islamist Militia"
+		location = "12371"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "5. Islamist Militia"
+		location = "12371"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6. Islamist Militia"
+		location = "10423"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "7. Islamist Militia"
+		location = "10423"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "8. Islamist Militia"
+		location = "7529"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "9. Islamist Militia"
+		location = "7539"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "10. Islamist Militia"
+		location = "10396"
+		division_template = "Islamist Militia"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+}

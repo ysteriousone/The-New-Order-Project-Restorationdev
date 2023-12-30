@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_reichsstaat_eat_bg"
+		texturefile = "gfx/interface/reichsstaat_gui/construction_gui_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_PU_Button"
+		texturefile = "gfx/interface/reichsstaat_gui/PU_button.dds"
+	}
+	
+}

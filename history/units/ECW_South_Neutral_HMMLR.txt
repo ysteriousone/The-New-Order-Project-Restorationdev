@@ -1,0 +1,32 @@
+units = {
+	division = {
+		location = 11471
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11471
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6351
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6351
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3369
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

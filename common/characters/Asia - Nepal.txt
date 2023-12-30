@@ -1,0 +1,131 @@
+characters = {
+	NEP_mahendra_bir_bikram_shah = {
+		name = NEP_mahendra_bir_bikram_shah
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Portrait_Nepal_Mahendra_Bir_Bikram_Shah.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_MAHENDRA_BIR_BIKRAM_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_aristocratic_conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	NEP_birendra_bir_bikram_shah = {
+		name = NEP_birendra_bir_bikram_shah
+		portraits = {
+			civilian = {
+				small = "GFX_idea_NEP_Birendra_Bir_Bikram_Shah_hog"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NEP_Birendra_Bir_Bikram_Shah_hog
+			allowed = { original_tag = NEP }
+			traits = {
+				head_of_government
+				hog_happy_amateur
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	NEP_surya_bahadur_thapa = {
+		name = NEP_surya_bahadur_thapa
+		portraits = {
+			civilian = {
+				small = "GFX_idea_NEP_Surya_Bahadur_Thapa_eco"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = NEP_Surya_Bahadur_Thapa_eco
+			allowed = { original_tag = NEP }
+			traits = {
+				economy_minister
+				eco_laissez_faire_capitalist
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	NEP_tulsi_giri = {
+		name = NEP_tulsi_giri
+		portraits = {
+			civilian = {
+				small = "GFX_idea_NEP_Tulsi_Giri_for"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = NEP_Tulsi_Giri_for
+			allowed = { original_tag = NEP }
+			traits = {
+				foreign_minister
+				for_biased_intellectual
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	NEP_kaiser_shumsher_jang_bahadur_rana = {
+		name = NEP_kaiser_shumsher_jang_bahadur_rana
+		portraits = {
+			civilian = {
+				small = "GFX_idea_NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec
+			allowed = { original_tag = NEP }
+			traits = {
+				security_minister
+				sec_silent_lawyer
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	NEP_bp_koirala = {
+		name = NEP_bp_koirala
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Portrait_Nepal_BP_Koirala.dds"
+			}
+		}
+		country_leader = {
+			#desc = "POLITICS_BP_KOIRALA_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	NEP_keshar_jung_rayamajhi = {
+		name = NEP_keshar_jung_rayamajhi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NEP/Portrait_Nepal_Keshar_Jung_Rayamajhi.dds"
+			}
+		}
+		country_leader = {
+			#desc = "POLITICS_KESHAR_RAYAMAJHI_DESC"
+			expire = "1999.1.1"
+			ideology = communist_subtype
+			traits = {}
+			id = -1
+		}
+	}
+}

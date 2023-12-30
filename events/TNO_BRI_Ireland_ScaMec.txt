@@ -1,0 +1,50 @@
+﻿####################################################################################################
+
+add_namespace = IRE_scamec_0
+add_namespace = IRE_scamec_1
+
+####################################################################################################
+
+country_event = { #Intro event
+	id = IRE_scamec_0.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IRE_scamec_0.1"}
+	title = IRE_scamec_0.1.t
+	desc = IRE_scamec_0.1.desc
+	#picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = IRE_scamec_0.1.a
+		set_variable = { ScaMec_scandal_index = 0 }
+		set_variable = { ScaMec_narrative_power_left = 0 }
+		set_variable = { ScaMec_narrative_power_right = 0 }
+		set_variable = { ScaMec_scandal_power = 0 }
+		set_variable = { ScaMec_scandal_progress = 0 }
+		set_variable = { ARR_ScaMec_scandals^ScaMec_scandal_index = 1 }
+	}
+}
+
+####################################################################################################
+
+country_event = { #Intro event
+	id = IRE_scamec_1.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IRE_scamec_1.1"}
+	title = IRE_scamec_1.1.t
+	desc = IRE_scamec_1.1.desc
+	#picture = GFX_report_event_RUS_letter
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = IRE_scamec_1.1.a
+		set_variable = { ScaMec_scandal_index = 1 }
+		set_variable = { ScaMec_narrative_power_left = 0 }
+		set_variable = { ScaMec_narrative_power_right = 0 }
+		set_variable = { ScaMec_scandal_power = 0 }
+		set_variable = { ScaMec_scandal_progress = 0 }
+		set_variable = { ARR_ScaMec_scandals^ScaMec_scandal_index = 1 }
+	}
+}

@@ -1,0 +1,46 @@
+units = {
+	division = {
+		name = "2nd 'Anti-Fascist' Division"
+		location = 9297
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4th 'Son's of Labour' Division"
+		location = 11345
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 7239
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 7239
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Liberty or Death Battalion"
+		location = 6378
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Women's Anti-fascist Division"
+		location = 3301
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6270
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6270
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

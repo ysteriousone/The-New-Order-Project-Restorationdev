@@ -1,0 +1,23 @@
+
+state={
+	id=1466
+	name="STATE_1466" # Ahangaran
+	manpower = 37123
+	
+	state_category = rural
+	
+	resources={
+		tungsten=3
+	}
+	history={
+		owner = KYR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KYR
+	}
+
+	provinces={
+		1459 10187 11687 13255
+	}
+}

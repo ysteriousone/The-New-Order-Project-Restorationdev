@@ -1,0 +1,59 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+	division_names_group = GER_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Infanterie-Division 'Resche'"
+		location = 11430
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "Infanterie-Division 'Premissel'"
+		location = 3586
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "Infanterie-Division 'Starachowice'"
+		location = 506
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "Infanterie-Division 'Biała Podlaska'"
+		location = 3544
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "Infanterie-Division 'Stalowa Wola'"
+		location = 6580
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "Infanterie-Division 'Częstochowa'"
+		location = 9494
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.6
+	}
+}

@@ -1,0 +1,35 @@
+﻿division_template = {
+	name = "African Mercanaries"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st divisione mercantile"
+		location = 11846
+		division_template = "African Mercanaries"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+
+	division = {
+		name = "2nd divisione mercantile"
+		location = 11846
+		division_template = "African Mercanaries"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+
+	division = {
+		name = "3rd divisione mercantile"
+		location = 11846
+		division_template = "African Mercanaries"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+}

@@ -1,0 +1,32 @@
+﻿division_template = {
+	name = "Emir Retinue"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Emir Retinue"
+		location = 10904
+		division_template = "Emir Retinue"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "2nd Emir Retinue"
+		location = 10904
+		division_template = "Emir Retinue"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "3rd Emir Retinue"
+		location = 10904
+		division_template = "Emir Retinue"
+		start_experience_factor = 0.05
+	}
+}

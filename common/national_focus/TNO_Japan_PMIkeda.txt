@@ -1,0 +1,41 @@
+#OLD TREE SYSTEM - DO NOT USE#
+#focus_tree = {
+	#id = Japan_ikeda_main
+	#country = {
+		#factor = 0
+		#modifier = {
+			#add = 10
+			#tag = JAP
+		#}
+	#}
+	#default = no
+	#shared_focus = JAP_prime_minister_ikeda
+#}
+
+#focus_tree = {
+	#id = japan_ikeda_kokutai_tree
+	#country = {
+		#factor = 0
+		#modifier = {
+			#add = 10
+			#tag = JAP
+		#}
+	#}
+	#default = no
+	#shared_focus = JAP_the_kokutai
+#}
+
+#focus_tree = {
+#id = japan_ikeda_reconstruction
+	#country = {
+		#factor = 0
+		#modifier = {
+			#add = 10
+			#tag = JAP
+		#}
+	#}
+
+	#default = no
+
+	#shared_focus = JAP_ikeda_reconstruction_correcting_past_mistakes
+#}

@@ -1,0 +1,54 @@
+
+#hi :) tex did this too
+OFN_vote_fix_exchange_rates = {
+	set_variable = { THIS.OFNVoting = 1 }
+	set_variable = { OFN_vote_id = 1 }
+	CAN = { set_variable = { CAN.OFNVoting = -1 } }
+	NZL = { set_variable = { OFNVoting = 1} }
+	AST = { set_variable = { OFNVoting = 1} }
+}
+
+OFN_check_if_vote_passed = {
+	every_country = {
+		limit = {
+			is_in_faction_with = USA
+			has_idea = OFN_Independent_Member
+			check_variable = { THIS.OFNVoting = 0 }
+		}
+		random_list = {
+			50 = {
+				set_variable = { THIS.OFNVoting = 1 }
+			}
+			50 = {
+				set_variable = { THIS.OFNVoting = -1 }
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				check_variable = { CAN.OFNVoting = -1 }
+				check_variable = { AST.OFNVoting = -1 }
+				check_variable = { NZL.OFNVoting = -1 }
+				check_variable = { USA.OFNVoting = -1 }
+				check_variable = { SAF.OFNVoting = -1 }
+				check_variable = { ITA.OFNVoting = -1 }
+			}
+		}
+		set_country_flag = OFN_vote_failed
+	}
+}
+
+OFN_end_vote = {
+	set_variable = { OFN_vote_id = 0 }
+	set_variable = { CAN.OFNVoting = 0 }
+	set_variable = { AST.OFNVoting = 0 }
+	set_variable = { NZL.OFNVoting = 0 }
+	set_variable = { USA.OFNVoting = 0 }
+	set_variable = { SAF.OFNVoting = 0 }
+	set_variable = { ITA.OFNVoting = 0 }
+	clr_country_flag = OFN_vote_failed
+}
+
+

@@ -1,0 +1,18 @@
+
+state={
+	id=1196
+	name="STATE_1196"
+
+	history={
+		owner = CAO
+		add_core_of = CAO
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		11194 14012 14024 14044
+	}
+	manpower=578000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

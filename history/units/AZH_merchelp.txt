@@ -1,0 +1,29 @@
+﻿units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10751
+		division_template = "Azad Guard Divison"
+		start_experience_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12307
+		division_template = "Azad Guard Divison"
+		start_experience_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10358
+		division_template = "Azad Guard Divison"
+		start_experience_factor = 1
+	}
+}

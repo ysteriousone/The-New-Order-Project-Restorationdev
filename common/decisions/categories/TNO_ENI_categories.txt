@@ -1,0 +1,11 @@
+ITA_ENI_exploitation = {
+	icon = eni
+	picture = GFX_ITA_decisions_ENI
+	allowed = {
+		tag = ITA
+	}
+	visible = {
+	}
+	visible_when_empty = yes
+	priority = 55
+}

@@ -1,0 +1,27 @@
+air_wings = {
+	99 = {
+		jet_tac_bomber_equipment_3 = {
+			owner = "GGR"
+			amount = 39
+		}
+		name = "2. Bombergeschwaders"
+
+		jet_fighter_equipment_3 = {
+			owner = "GGR"
+			amount = 98
+		}
+		name = "1. Kampfjets"
+
+		jet_CAS_equipment_2 = {
+			owner = "GGR"
+			amount = 56
+		}
+		name = "1. Luftunterstützung Schließen"
+
+		jet_interceptor_equipment_3 = {
+			owner = "GGR"
+			amount = 156
+		}
+		name = "1. Abfangjäger"
+	}
+}

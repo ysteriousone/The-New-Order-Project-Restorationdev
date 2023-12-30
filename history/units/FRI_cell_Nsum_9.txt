@@ -1,0 +1,30 @@
+﻿units = {
+	division = {
+		name = "North Sumatra Militia"
+		location = "1277"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.25
+	}
+	division = {
+		name = "North Sumatra Militia"
+		location = "12181"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.25
+	}
+	division = {
+		name = "North Sumatra Militia"
+		location = "12181"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.25
+	}
+	division = {
+		name = "North Sumatra Militia"
+		location = "12302"
+		division_template = "Free Indonesian Militia"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.25
+	}
+}

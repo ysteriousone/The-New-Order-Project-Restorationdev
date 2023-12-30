@@ -1,0 +1,73 @@
+#Bandit Status
+ILG_bandit_status_effect = {
+	if = { #Bandits Eliminated
+		limit = {
+			check_variable = {
+				var = ILG_bandit_status
+				value = 1
+				compare = equals
+			}
+		}
+		remove_ideas = ILG_Saharan_Bandits_Weakened
+		add_ideas = ILG_Saharan_Bandits
+	}
+	else_if = { #Bandits Weakened
+		limit = {
+			check_variable = {
+				var = ILG_bandit_status
+				value = 2
+				compare = equals
+			}
+		}
+		remove_ideas = ILG_Saharan_Bandits
+		remove_ideas = ILG_Saharan_Bandits_Problematic
+		add_ideas = ILG_Saharan_Bandits_Weakened
+	}
+	else_if = { #Bandits Problematic
+		limit = {
+			check_variable = {
+				var = ILG_bandit_status
+				value = 3
+				compare = equals
+			}
+		}
+		remove_ideas = ILG_Saharan_Bandits_Weakened
+		remove_ideas = ILG_Saharan_Bandits_Prevalent
+		add_ideas = ILG_Saharan_Bandits_Problematic
+	}
+	else_if = { #Bandits Prevalent
+		limit = {
+			check_variable = {
+				var = ILG_bandit_status
+				value = 4
+				compare = equals
+			}
+		}
+		remove_ideas = ILG_Saharan_Bandits_Problematic
+		remove_ideas = ILG_Saharan_Bandits_Crisis
+		add_ideas = ILG_Saharan_Bandits_Prevalent
+	}
+	else_if = { #Bandit Crisis
+		limit = {
+			check_variable = {
+				var = ILG_bandit_status
+				value = 5
+				compare = equals
+			}
+		}
+		remove_ideas = ILG_Saharan_Bandits_Prevalent
+		remove_ideas = ILG_Saharan_Bandits_Bad
+		add_ideas = ILG_Saharan_Bandits_Crisis
+	}
+	else_if = { #Bandit Mayhem
+		limit = {
+			check_variable = {
+				var = ILG_bandit_status
+				value = 6
+				compare = equals
+			}
+		}
+		remove_ideas = ILG_Saharan_Bandits_Crisis
+		add_ideas = ILG_Saharan_Bandits_Bad
+	}
+}

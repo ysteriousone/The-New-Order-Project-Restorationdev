@@ -1,0 +1,19 @@
+state={
+	id=1804
+	name="STATE_1804"
+
+	history={
+		owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 10619 3 }
+	}
+	provinces={
+		13197 13149 12529 4764 10550 7856 7795 10619 4845 15808
+	}
+	manpower=664786
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

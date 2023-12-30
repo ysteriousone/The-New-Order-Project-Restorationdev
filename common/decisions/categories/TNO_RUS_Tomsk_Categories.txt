@@ -1,0 +1,156 @@
+TOM_Regional_Campaign = {
+	icon = GFX_decision_category_generic_democracy
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		OR = {
+			has_country_flag = TOM_67_Elections
+			has_country_flag = TOM_71_Elections
+		}
+		NOT = {
+			has_global_flag = AFTER_MIDNIGHT_COMMENCED
+		}
+	}
+	priority = {
+		base = 22
+	}
+}
+
+TOM_Political_Situation = {
+	icon = GFX_decision_category_generic_democracy
+	scripted_gui = TNO_Tomsk_GUI_Political_Situation
+	visible_when_empty = yes
+
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		has_country_flag = RUS_regional_stage
+		NOT = {
+			has_global_flag = AFTER_MIDNIGHT_COMMENCED
+		}
+	}
+	priority = {
+		base = 20
+	}
+}
+
+TOM_Ruling_Tomsk = {
+	icon = GFX_decision_category_generic_democracy
+	visible_when_empty = yes
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		has_country_flag = RUS_regional_stage
+		NOT = {
+			has_global_flag = AFTER_MIDNIGHT_COMMENCED
+		}
+	}
+	priority = {
+		base = 19
+	}
+}
+
+#
+
+TOM_Bill_Category = {
+	icon = GFX_decision_category_generic_democracy
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		NOT = {
+			has_global_flag = AFTER_MIDNIGHT_COMMENCED
+		}
+	}
+	priority = {
+		base = 15
+	}
+}
+
+TOM_Military_Expansion = {
+	icon = GFX_decision_category_generic_political_actions
+	picture = GFX_decision_ENG_decision_rebellion
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		NOT = {
+			has_country_flag = RUS_regional_stage
+		}
+		OR = {
+			has_country_flag = TOM_Military_Expansion_flag
+			AND = {
+				date > 1962.6.1
+				is_ai = yes
+				NOT = {
+					has_global_flag = SBA_collapsed
+				}
+			}
+		}
+	}
+}
+
+TOM_Humanist_TomSiBar_Category = {
+	icon = GFX_decision_category_military_operation
+	picture = GFX_FAV_decision_diplomacy
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		AND = {
+			has_government = progressivism
+			has_country_flag = TOM_started_megaproject
+		}
+	}
+	visible_when_empty = yes
+}
+
+TOM_Modernist_SibPlan_Category = {
+	icon = GFX_decision_category_military_operation
+	picture = GFX_FAV_decision_diplomacy
+	allowed = {
+		tag = TOM
+	}
+	visible = {
+		AND = {
+			has_government = liberalism
+			has_country_flag = TOM_started_megaproject
+		}
+	}
+	visible_when_empty = yes
+}
+
+TOM_Decembrist_Great_Discord_Category = {
+	icon = GFX_decision_category_military_operation
+	picture = GFX_FAV_decision_diplomacy
+	allowed = {
+		tag = TOM
+
+	}
+	visible = {
+		AND = {
+			has_government = conservatism
+			has_country_flag = TOM_started_megaproject
+		}
+	}
+	visible_when_empty = yes
+}
+
+TOM_Bastillard_National_Redoubt_Category = {
+	icon = GFX_decision_category_military_operation
+	picture = GFX_FAV_decision_diplomacy
+	allowed = {
+		tag = TOM
+
+	}
+	visible = {
+		AND = {
+			has_government = paternalism
+			has_country_flag = TOM_started_megaproject
+		}
+	}
+	visible_when_empty = yes
+}

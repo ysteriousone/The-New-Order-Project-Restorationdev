@@ -1,0 +1,2353 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_MCW_eagles"
+		texturefile = "gfx/interface/goals/MCW_eagles.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_eagles_shine"
+		texturefile = "gfx/interface/goals/MCW_eagles.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_eagles.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_eagles.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_and_hyenas"
+		texturefile = "gfx/interface/goals/MCW_and_hyenas.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_and_hyenas_shine"
+		texturefile = "gfx/interface/goals/MCW_and_hyenas.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_and_hyenas.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_and_hyenas.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_he_will_survive_and_so_will_this_place"
+		texturefile = "gfx/interface/goals/MCW_he_will_survive_and_so_will_this_place.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_he_will_survive_and_so_will_this_place_shine"
+		texturefile = "gfx/interface/goals/MCW_he_will_survive_and_so_will_this_place.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_he_will_survive_and_so_will_this_place.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_he_will_survive_and_so_will_this_place.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_rusted_but_not_broken"
+		texturefile = "gfx/interface/goals/MCW_rusted_but_not_broken.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_rusted_but_not_broken_shine"
+		texturefile = "gfx/interface/goals/MCW_rusted_but_not_broken.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_rusted_but_not_broken.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_rusted_but_not_broken.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_brothers_in_arms_trade_in_arms"
+		texturefile = "gfx/interface/goals/MCW_brothers_in_arms_trade_in_arms.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_brothers_in_arms_trade_in_arms_shine"
+		texturefile = "gfx/interface/goals/MCW_brothers_in_arms_trade_in_arms.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_brothers_in_arms_trade_in_arms.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_brothers_in_arms_trade_in_arms.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_in_the_four_cylinder_belly_of_the_beast"
+		texturefile = "gfx/interface/goals/MCW_in_the_four_cylinder_belly_of_the_beast.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_in_the_four_cylinder_belly_of_the_beast_shine"
+		texturefile = "gfx/interface/goals/MCW_in_the_four_cylinder_belly_of_the_beast.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_in_the_four_cylinder_belly_of_the_beast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_in_the_four_cylinder_belly_of_the_beast.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_once_eagles_now_chickens"
+		texturefile = "gfx/interface/goals/MCW_once_eagles_now_chickens.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_once_eagles_now_chickens_shine"
+		texturefile = "gfx/interface/goals/MCW_once_eagles_now_chickens.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_once_eagles_now_chickens.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_once_eagles_now_chickens.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_under_the_direktors_watch"
+		texturefile = "gfx/interface/goals/MCW_under_the_direktors_watch.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_under_the_direktors_watch_shine"
+		texturefile = "gfx/interface/goals/MCW_under_the_direktors_watch.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_under_the_direktors_watch.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_under_the_direktors_watch.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_tapeworms"
+		texturefile = "gfx/interface/goals/MCW_tapeworms.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_tapeworms_shine"
+		texturefile = "gfx/interface/goals/MCW_tapeworms.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_tapeworms.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_tapeworms.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_i_could_see_it_from_a_mile_away"
+		texturefile = "gfx/interface/goals/MCW_i_could_see_it_from_a_mile_away.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_i_could_see_it_from_a_mile_away_shine"
+		texturefile = "gfx/interface/goals/MCW_i_could_see_it_from_a_mile_away.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_i_could_see_it_from_a_mile_away.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_i_could_see_it_from_a_mile_away.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_the_bastard_screaming_child"
+		texturefile = "gfx/interface/goals/MCW_the_bastard_screaming_child.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_the_bastard_screaming_child_shine"
+		texturefile = "gfx/interface/goals/MCW_the_bastard_screaming_child.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_bastard_screaming_child.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_bastard_screaming_child.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_a_tour_around_the_prison"
+		texturefile = "gfx/interface/goals/MCW_a_tour_around_the_prison.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_a_tour_around_the_prison_shine"
+		texturefile = "gfx/interface/goals/MCW_a_tour_around_the_prison.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_a_tour_around_the_prison.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_a_tour_around_the_prison.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_tear_out_the_eagles_wings"
+		texturefile = "gfx/interface/goals/MCW_tear_out_the_eagles_wings.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_tear_out_the_eagles_wings_shine"
+		texturefile = "gfx/interface/goals/MCW_tear_out_the_eagles_wings.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_tear_out_the_eagles_wings.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_tear_out_the_eagles_wings.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_rg_collaborator_autonomy"
+		texturefile = "gfx/interface/goals/MCW_rg_collaborator_autonomy.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_rg_collaborator_autonomy_shine"
+		texturefile = "gfx/interface/goals/MCW_rg_collaborator_autonomy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_rg_collaborator_autonomy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_rg_collaborator_autonomy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_and_i_whom_you_fear"
+		texturefile = "gfx/interface/goals/MCW_and_i_whom_you_fear.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_and_i_whom_you_fear_shine"
+		texturefile = "gfx/interface/goals/MCW_and_i_whom_you_fear.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_and_i_whom_you_fear.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_and_i_whom_you_fear.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_rg_fatherlands_pride"
+		texturefile = "gfx/interface/goals/MCW_rg_fatherlands_pride.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_rg_fatherlands_pride_shine"
+		texturefile = "gfx/interface/goals/MCW_rg_fatherlands_pride.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_rg_fatherlands_pride.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_rg_fatherlands_pride.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_do_you_hear_me_my_favourite"
+		texturefile = "gfx/interface/goals/MCW_do_you_hear_me_my_favourite.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_do_you_hear_me_my_favourite_shine"
+		texturefile = "gfx/interface/goals/MCW_do_you_hear_me_my_favourite.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_do_you_hear_me_my_favourite.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_do_you_hear_me_my_favourite.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_he_will_not_fix_this_unless_he_kills_me"
+		texturefile = "gfx/interface/goals/MCW_he_will_not_fix_this_unless_he_kills_me.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_he_will_not_fix_this_unless_he_kills_me_shine"
+		texturefile = "gfx/interface/goals/MCW_he_will_not_fix_this_unless_he_kills_me.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_he_will_not_fix_this_unless_he_kills_me.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_he_will_not_fix_this_unless_he_kills_me.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_i_do_not_like_the_indecisive"
+		texturefile = "gfx/interface/goals/MCW_i_do_not_like_the_indecisive.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_i_do_not_like_the_indecisive_shine"
+		texturefile = "gfx/interface/goals/MCW_i_do_not_like_the_indecisive.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_i_do_not_like_the_indecisive.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_i_do_not_like_the_indecisive.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_you_however_will_have_my_help"
+		texturefile = "gfx/interface/goals/MCW_you_however_will_have_my_help.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_you_however_will_have_my_help_shine"
+		texturefile = "gfx/interface/goals/MCW_you_however_will_have_my_help.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_you_however_will_have_my_help.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_you_however_will_have_my_help.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+			name = "GFX_MCW_the_eastern_frontier"
+			texturefile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_watch_on_the_volga"
+			texturefile = "gfx/interface/goals/MCW_watch_on_the_volga.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_and_the_life_in_it"
+			texturefile = "gfx/interface/goals/MCW_and_the_life_in_it.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_a_deal_like_no_other"
+			texturefile = "gfx/interface/goals/MCW_a_deal_like_no_other.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_Business_with_the_Dutch_Eastern_Company"
+			texturefile = "gfx/interface/goals/MCW_Business_with_the_Dutch_Eastern_Company.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_infiltrate_the_ordensstadt"
+			texturefile = "gfx/interface/goals/MCW_infiltrate_the_ordensstadt.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_pierce_the_puritans"
+			texturefile = "gfx/interface/goals/MCW_pierce_the_puritans.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_promote_hilfspolizei_enlistment"
+			texturefile = "gfx/interface/goals/MCW_promote_hilfspolizei_enlistment.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_shore_up_the_oberkommando"
+			texturefile = "gfx/interface/goals/MCW_shore_up_the_oberkommando.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_the_eastern_frontier"
+			texturefile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_to_hold_it_together"
+			texturefile = "gfx/interface/goals/MCW_to_hold_it_together.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_to_sustain"
+			texturefile = "gfx/interface/goals/MCW_to_sustain.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_die_grenzwacht_im_osten"
+			texturefile = "gfx/interface/goals/MCW_die_grenzwacht_im_osten.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_back_to_voronezh"
+			texturefile = "gfx/interface/goals/MCW_back_to_voronezh.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_bloody_the_baron"
+			texturefile = "gfx/interface/goals/MCW_bloody_the_baron.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_chase_the_charlatans"
+			texturefile = "gfx/interface/goals/MCW_chase_the_charlatans.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_kaminskis_special_talent"
+			texturefile = "gfx/interface/goals/MCW_kaminskis_special_talent.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_look_inside_his_archives"
+			texturefile = "gfx/interface/goals/MCW_look_inside_his_archives.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_meet_with_the_board"
+			texturefile = "gfx/interface/goals/MCW_meet_with_the_board.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_quell_the_bickering"
+			texturefile = "gfx/interface/goals/MCW_quell_the_bickering.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_rely_on_the_budget"
+			texturefile = "gfx/interface/goals/MCW_rely_on_the_budget.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_stamp_out_the_smugglers"
+			texturefile = "gfx/interface/goals/MCW_stamp_out_the_smugglers.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_trust_in_the_reichskommissar"
+			texturefile = "gfx/interface/goals/MCW_trust_in_the_reichskommissar.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_wrangling_the_ostvolk"
+			texturefile = "gfx/interface/goals/MCW_wrangling_the_ostvolk.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_Collaborate_With_Kaminski"
+			texturefile = "gfx/interface/goals/MCW_Collaborate_With_Kaminski.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_Gezet_Internal_Security"
+			texturefile = "gfx/interface/goals/MCW_Gezet_Internal_Security.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_Gezet_Military_Budget"
+			texturefile = "gfx/interface/goals/MCW_Gezet_Military_Budget.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_gezet_our_security"
+			texturefile = "gfx/interface/goals/MCW_gezet_our_security.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_Reason_With_Gorbachev"
+			texturefile = "gfx/interface/goals/MCW_Reason_With_Gorbachev.dds"
+		}
+		# OKB - Dissolution - War Tree
+		SpriteType = {
+			name = "GFX_OKB_Blunt_the_red_offensive"
+			texturefile = "gfx/interface/goals/OKB_Blunt_the_red_offensive.dds"
+		}
+		SpriteType = {
+			name = "GFX_OKB_Everyone_works_the_same"
+			texturefile = "gfx/interface/goals/OKB_Everyone_works_the_same.dds"
+		}
+		SpriteType = {
+			name = "GFX_OKB_Paint_the_black_spot_gray"
+			texturefile = "gfx/interface/goals/OKB_Paint_the_black_spot_gray.dds"
+		}
+		SpriteType = {
+			name = "GFX_OKB_the_stain_is_yet_to_go"
+			texturefile = "gfx/interface/goals/OKB_the_stain_is_yet_to_go.dds"
+		}
+		SpriteType = {
+			name = "GFX_OKB_wehrmacht_salute"
+			texturefile = "gfx/interface/goals/OKB_wehrmacht_salute.dds"
+		}
+		SpriteType = {
+			name = "GFX_MCW_keep_kaminski_on_the_leash"
+			texturefile = "gfx/interface/goals/MCW_keep_kaminski_on_the_leash.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_MCW_ruka"
+			texturefile = "gfx/interface/goals/MCW_ruka.dds"
+		}
+
+		frameAnimatedSpriteType = {
+			name = "GFX_MCW_misato"
+			texturefile = "gfx/interface/goals/misato.dds"
+			noOfFrames = 5
+			animation_rate_fps = 5
+			looping = yes
+			play_on_show = yes
+			pause_on_loop = 0.0
+		}
+		frameAnimatedSpriteType = {
+			name = "GFX_MCW_misato_shine"
+			texturefile = "gfx/interface/goals/misato.dds"
+			noOfFrames = 5
+			animation_rate_fps = 5
+			looping = yes
+			play_on_show = yes
+			pause_on_loop = 0.0
+		}
+	# 4.2 - Shines
+		SpriteType = {
+			name = "GFX_MCW_the_eastern_frontier_shine"
+			texturefile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_watch_on_the_volga_shine"
+			texturefile = "gfx/interface/goals/MCW_watch_on_the_volga.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_watch_on_the_volga.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_watch_on_the_volga.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_and_the_life_in_it_shine"
+			texturefile = "gfx/interface/goals/MCW_and_the_life_in_it.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_and_the_life_in_it.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_and_the_life_in_it.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_a_deal_like_no_other_shine"
+			texturefile = "gfx/interface/goals/MCW_a_deal_like_no_other.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_a_deal_like_no_other.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_a_deal_like_no_other.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_Business_with_the_Dutch_Eastern_Company_shine"
+			texturefile = "gfx/interface/goals/MCW_Business_with_the_Dutch_Eastern_Company.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Business_with_the_Dutch_Eastern_Company.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Business_with_the_Dutch_Eastern_Company.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_infiltrate_the_ordensstadt_shine"
+			texturefile = "gfx/interface/goals/MCW_infiltrate_the_ordensstadt.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_infiltrate_the_ordensstadt.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_infiltrate_the_ordensstadt.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_pierce_the_puritans_shine"
+			texturefile = "gfx/interface/goals/MCW_pierce_the_puritans.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_pierce_the_puritans.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_pierce_the_puritans.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_promote_hilfspolizei_enlistment_shine"
+			texturefile = "gfx/interface/goals/MCW_promote_hilfspolizei_enlistment.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_promote_hilfspolizei_enlistment.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_promote_hilfspolizei_enlistment.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_shore_up_the_oberkommando_shine"
+			texturefile = "gfx/interface/goals/MCW_shore_up_the_oberkommando.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_shore_up_the_oberkommando.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_shore_up_the_oberkommando.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_the_eastern_frontier_shine"
+			texturefile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_the_eastern_frontier.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_to_hold_it_together_shine"
+			texturefile = "gfx/interface/goals/MCW_to_hold_it_together.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_to_hold_it_together.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_to_hold_it_together.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_to_sustain_shine"
+			texturefile = "gfx/interface/goals/MCW_to_sustain.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_to_sustain.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_to_sustain.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_die_grenzwacht_im_osten_shine"
+			texturefile = "gfx/interface/goals/MCW_die_grenzwacht_im_osten.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_die_grenzwacht_im_osten.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_die_grenzwacht_im_osten.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_back_to_voronezh_shine"
+			texturefile = "gfx/interface/goals/MCW_back_to_voronezh.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_back_to_voronezh.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_back_to_voronezh.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_bloody_the_baron_shine"
+			texturefile = "gfx/interface/goals/MCW_bloody_the_baron.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_bloody_the_baron.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_bloody_the_baron.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_chase_the_charlatans_shine"
+			texturefile = "gfx/interface/goals/MCW_chase_the_charlatans.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_chase_the_charlatans.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_chase_the_charlatans.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_kaminskis_special_talent_shine"
+			texturefile = "gfx/interface/goals/MCW_kaminskis_special_talent.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_kaminskis_special_talent.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_kaminskis_special_talent.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_look_inside_his_archives_shine"
+			texturefile = "gfx/interface/goals/MCW_look_inside_his_archives.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_look_inside_his_archives.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_look_inside_his_archives.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_meet_with_the_board_shine"
+			texturefile = "gfx/interface/goals/MCW_meet_with_the_board.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_meet_with_the_board.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_meet_with_the_board.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_quell_the_bickering_shine"
+			texturefile = "gfx/interface/goals/MCW_quell_the_bickering.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_quell_the_bickering.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_quell_the_bickering.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_rely_on_the_budget_shine"
+			texturefile = "gfx/interface/goals/MCW_rely_on_the_budget.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_rely_on_the_budget.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_rely_on_the_budget.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_stamp_out_the_smugglers_shine"
+			texturefile = "gfx/interface/goals/MCW_stamp_out_the_smugglers.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_stamp_out_the_smugglers.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_stamp_out_the_smugglers.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_trust_in_the_reichskommissar_shine"
+			texturefile = "gfx/interface/goals/MCW_trust_in_the_reichskommissar.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_trust_in_the_reichskommissar.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_trust_in_the_reichskommissar.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_wrangling_the_ostvolk_shine"
+			texturefile = "gfx/interface/goals/MCW_wrangling_the_ostvolk.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_wrangling_the_ostvolk.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_wrangling_the_ostvolk.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_Collaborate_With_Kaminski_shine"
+			texturefile = "gfx/interface/goals/MCW_Collaborate_With_Kaminski.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Collaborate_With_Kaminski.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Collaborate_With_Kaminski.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_Gezet_Internal_Security_shine"
+			texturefile = "gfx/interface/goals/MCW_Gezet_Internal_Security.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Gezet_Internal_Security.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Gezet_Internal_Security.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_Gezet_Military_Budget_shine"
+			texturefile = "gfx/interface/goals/MCW_Gezet_Military_Budget.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Gezet_Military_Budget.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Gezet_Military_Budget.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_gezet_our_security_shine"
+			texturefile = "gfx/interface/goals/MCW_gezet_our_security.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_gezet_our_security.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_gezet_our_security.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_Reason_With_Gorbachev_shine"
+			texturefile = "gfx/interface/goals/MCW_Reason_With_Gorbachev.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Reason_With_Gorbachev.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_Reason_With_Gorbachev.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		# OKB - Dissolution - War Tree
+		SpriteType = {
+			name = "GFX_OKB_Blunt_the_red_offensive_shine"
+			texturefile = "gfx/interface/goals/OKB_Blunt_the_red_offensive.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_Blunt_the_red_offensive.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_Blunt_the_red_offensive.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_OKB_Everyone_works_the_same_shine"
+			texturefile = "gfx/interface/goals/OKB_Everyone_works_the_same.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_Everyone_works_the_same.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_Everyone_works_the_same.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_OKB_Paint_the_black_spot_gray_shine"
+			texturefile = "gfx/interface/goals/OKB_Paint_the_black_spot_gray.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_Paint_the_black_spot_gray.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_Paint_the_black_spot_gray.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_OKB_the_stain_is_yet_to_go_shine"
+			texturefile = "gfx/interface/goals/OKB_the_stain_is_yet_to_go.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_the_stain_is_yet_to_go.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_the_stain_is_yet_to_go.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_OKB_wehrmacht_salute_shine"
+			texturefile = "gfx/interface/goals/OKB_wehrmacht_salute.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_wehrmacht_salute.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OKB_wehrmacht_salute.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_MCW_keep_kaminski_on_the_leash_shine"
+			texturefile = "gfx/interface/goals/MCW_keep_kaminski_on_the_leash.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_keep_kaminski_on_the_leash.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_keep_kaminski_on_the_leash.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+	
+		SpriteType = {
+			name = "GFX_MCW_ruka_shine"
+			texturefile = "gfx/interface/goals/MCW_ruka.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_ruka.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = -90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			
+			animation = {
+				animationmaskfile = "gfx/interface/goals/MCW_ruka.dds"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+				animationrotation = 90.0
+				animationlooping = no
+				animationtime = 0.75
+				animationdelay = 0
+				animationblendmode = "add"
+				animationtype = "scrolling"
+				animationrotationoffset = { x = 0.0 y = 0.0 }
+				animationtexturescale = { x = 1.0 y = 1.0 }
+			}
+			legacy_lazy_load = no
+		}
+	
+	# Ruka
+	SpriteType = {
+		name = "GFX_MCW_ruka"
+		texturefile = "gfx/interface/goals/MCW_ruka.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_ruka_shine"
+		texturefile = "gfx/interface/goals/MCW_ruka.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_ruka.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_ruka.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	
+	##########################
+	## |====| Kasche |====| ##
+	##########################
+
+	# Lone Tower of Europe
+	SpriteType = {
+		name = "GFX_MCW_lone_tower_of_europe"
+		texturefile = "gfx/interface/goals/MCW_lone_tower_of_europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_lone_tower_of_europe_shine"
+		texturefile = "gfx/interface/goals/MCW_lone_tower_of_europe.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_lone_tower_of_europe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_lone_tower_of_europe.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Between Heaven and Hell
+	SpriteType = {
+		name = "GFX_MCW_between_heaven_and_hell"
+		texturefile = "gfx/interface/goals/MCW_between_heaven_and_hell.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_between_heaven_and_hell_shine"
+		texturefile = "gfx/interface/goals/MCW_between_heaven_and_hell.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_between_heaven_and_hell.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_between_heaven_and_hell.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Destined to Die?
+	SpriteType = {
+		name = "GFX_MCW_destined_to_die"
+		texturefile = "gfx/interface/goals/MCW_destined_to_die.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_destined_to_die_shine"
+		texturefile = "gfx/interface/goals/MCW_destined_to_die.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_destined_to_die.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_destined_to_die.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# It Was Never Enough
+	SpriteType = {
+		name = "GFX_MCW_it_was_never_enough"
+		texturefile = "gfx/interface/goals/MCW_it_was_never_enough.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_it_was_never_enough_shine"
+		texturefile = "gfx/interface/goals/MCW_it_was_never_enough.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_it_was_never_enough.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_it_was_never_enough.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# In Erinnerung
+	SpriteType = {
+		name = "GFX_MCW_in_erinnerung"
+		texturefile = "gfx/interface/goals/MCW_in_erinnerung.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_in_erinnerung_shine"
+		texturefile = "gfx/interface/goals/MCW_in_erinnerung.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_in_erinnerung.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_in_erinnerung.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# Over the AAM's Head
+	SpriteType = {
+		name = "GFX_MCW_over_the_aams_head"
+		texturefile = "gfx/interface/goals/MCW_over_the_aams_head.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_over_the_aams_head_shine"
+		texturefile = "gfx/interface/goals/MCW_over_the_aams_head.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_over_the_aams_head.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_over_the_aams_head.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	# I Will Do This Better Than You
+	SpriteType = {
+		name = "GFX_MCW_i_will_do_this_better_than_you"
+		texturefile = "gfx/interface/goals/MCW_i_will_do_this_better_than_you.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_i_will_do_this_better_than_you_shine"
+		texturefile = "gfx/interface/goals/MCW_i_will_do_this_better_than_you.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_i_will_do_this_better_than_you.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_i_will_do_this_better_than_you.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_the_home_you_live_in"
+		texturefile = "gfx/interface/goals/MCW_the_home_you_live_in.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_the_home_you_live_in_shine"
+		texturefile = "gfx/interface/goals/MCW_the_home_you_live_in.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_home_you_live_in.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_home_you_live_in.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_the_heroes_you_work_for"
+		texturefile = "gfx/interface/goals/MCW_the_heroes_you_work_for.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_the_heroes_you_work_for_shine"
+		texturefile = "gfx/interface/goals/MCW_the_heroes_you_work_for.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_heroes_you_work_for.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_heroes_you_work_for.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_MCW_the_brave_strong_men"
+		texturefile = "gfx/interface/goals/MCW_the_brave_strong_men.dds"
+	}
+	SpriteType = {
+		name = "GFX_MCW_the_brave_strong_men_shine"
+		texturefile = "gfx/interface/goals/MCW_the_brave_strong_men.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_brave_strong_men.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/MCW_the_brave_strong_men.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+}

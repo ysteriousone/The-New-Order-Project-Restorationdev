@@ -1,0 +1,94 @@
+ideas = {
+	country = {
+		SRI_OFN_sinhala_english_act = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SRI_OFN_sinhala_english_act"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		SRI_OFN_III_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SRI_OFN_III_1"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+		SRI_OFN_III_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SRI_OFN_III_2"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		SRI_OFN_III_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SRI_OFN_III_3"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.06
+			}
+		}
+		SRI_OFN_III_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SRI_OFN_III_4"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.08
+			}
+		}
+		SRI_OFN_III_5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SRI_OFN_III_5"}
+
+			allowed = {
+				always = no
+			}
+
+			#picture = 
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+	}
+}

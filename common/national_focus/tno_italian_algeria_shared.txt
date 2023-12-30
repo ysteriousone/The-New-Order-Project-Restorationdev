@@ -1,0 +1,503 @@
+#Opening Tree#
+shared_focus = {
+	id = ILG_state_of_algeria
+	icon = GFX_ITA_Avoid_the_Border_Issues
+	cost = 1.00
+
+	x = 11
+	y = 0
+
+	bypass = {
+		always = yes
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_state_of_algeria"
+		custom_effect_tooltip = ILG_state_of_algeria_tt
+	}
+}
+shared_focus = {
+	id = ILG_the_western_frontier
+	icon = GFX_GER_reinforce_frontier
+	cost = 2
+
+	x = 11
+	y = 1
+
+	prerequisite = {
+		focus = ILG_state_of_algeria
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_the_western_frontier"
+		country_event = {
+			id = ilgevents.1
+		}
+		#hidden_effect = {
+		#	country_event = {
+		#		id = ilgevents.2
+		#		days = 4
+		#		random = 48
+		#	}
+		#}
+		custom_effect_tooltip = ILG_the_western_frontier_tt
+	}
+}
+shared_focus = {
+	id = ILG_saharan_bandits
+	icon = GFX_Generic_Skull_Rifles
+	cost = 5
+
+	x = 8
+	y = 2
+
+	prerequisite = {
+		focus = ILG_the_western_frontier
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_saharan_bandits"
+		set_country_flag = ILG_Banditry_Decisions
+		custom_effect_tooltip = ILG_saharan_bandits_tt
+	}
+}
+shared_focus = {
+	id = ILG_pay_informants
+	icon = GFX_MGN_Reward_the_Bandits
+	cost = 5.00
+
+	x = 6
+	y = 3
+
+	prerequisite = {
+		focus = ILG_saharan_bandits
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_pay_informants"
+		custom_effect_tooltip = ILG_pay_informants_tt
+		country_event = {
+			id = ilgevents.7
+		}
+	}
+}
+shared_focus = {
+	id = ILG_eye_on_the_sands
+	icon = GFX_Generic_Work_In_Progress
+	cost = 5.00
+
+	x = 6
+	y = 4
+
+	prerequisite = {
+		focus = ILG_pay_informants
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_eye_on_the_sands"
+		add_ideas = ILG_Military_Boost_1
+		country_event = {
+			id = ilgevents.8
+		}
+		custom_effect_tooltip = ILG_eye_on_the_sands_tt
+	}
+}
+shared_focus = {
+	id = ILG_cavalry_patrols
+	icon = GFX_Desert_Patrols
+	cost = 5.00
+
+	x = 9
+	y = 3
+
+	prerequisite = {
+		focus = ILG_saharan_bandits
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_cavalry_patrols"
+		hidden_effect = {
+			load_oob = "ILG_Saharan_Cavalry"
+		}
+		country_event = {
+			id = ilgevents.9
+		}
+		custom_effect_tooltip = ILG_cavalry_patrols_tt
+	}
+}
+shared_focus = {
+	id = ILG_native_volunteers
+	icon = GFX_IND_India_Increase_Conscription
+	cost = 2.00
+
+	x = 8
+	y = 4
+
+	prerequisite = {
+		focus = ILG_cavalry_patrols
+	}
+
+	mutually_exclusive = {
+		focus = ILG_italian_reinforcements
+	}
+
+	available = {
+		hidden_trigger = {
+			has_country_flag = ILG_native_volunteers_cf
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_native_volunteers"
+		hidden_effect = {
+			load_oob = "ILG_Native_Volunteers"
+		}
+		country_event = {
+			id = ilgevents.10
+		}
+		custom_effect_tooltip = ILG_native_volunteers_tt
+	}
+}
+shared_focus = {
+	id = ILG_italian_reinforcements
+	icon = GFX_Generic_Army_Officers
+	cost = 2.00
+
+	x = 10
+	y = 4
+
+	prerequisite = {
+		focus = ILG_cavalry_patrols
+	}
+
+	mutually_exclusive = {
+		focus = ILG_native_volunteers
+	}
+
+	available = {
+		hidden_trigger = {
+			has_country_flag = ILG_italian_reinforcements_cf
+		}
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_italian_reinforcements"
+		hidden_effect = {
+			load_oob = "ILG_Italian_Reinforcements"
+		}
+		country_event = {
+			id = ilgevents.11
+		}
+		custom_effect_tooltip = ILG_italian_reinforcements_tt
+	}
+}
+shared_focus = {
+	id = ILG_hunt_them_down
+	icon = GFX_OST_Neutralize_the_Natives
+	cost = 5.00
+
+	x = 8
+	y = 5
+
+	prerequisite = {
+		focus = ILG_eye_on_the_sands
+	}
+	prerequisite = {
+		focus = ILG_italian_reinforcements
+		focus = ILG_native_volunteers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_hunt_them_down"
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = ILG_forming_a_government
+	icon = GFX_Generic_Parliament
+	cost = 4
+
+	x = 14
+	y = 2
+
+	prerequisite = {
+		focus = ILG_the_western_frontier
+	}
+
+	available = {
+		has_idea = ILG_Saharan_Bandits
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_forming_a_government"
+		add_political_power = 50
+		add_war_support = 0.1
+		add_stability = 0.1
+		country_event = {
+			id = ilgevents.12
+		}
+		custom_effect_tooltip = ILG_forming_a_government_tt
+	}
+}
+shared_focus = {
+	id = ILG_algerian_bureaucrats
+	icon = GFX_Generic_Work_In_Progress
+	cost = 4
+
+	x = 12
+	y = 3
+
+	prerequisite = {
+		focus = ILG_forming_a_government
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_algerian_bureaucrats"
+		add_political_power = 25
+		country_event = {
+			id = ilgevents.13
+		}
+		custom_effect_tooltip = ILG_algerian_bureaucrats_tt
+	}
+}
+shared_focus = {
+	id = ILG_tribal_self_rule
+	icon = GFX_Generic_Work_In_Progress
+	cost = 4
+
+	x = 12
+	y = 4
+
+	prerequisite = {
+		focus = ILG_algerian_bureaucrats
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_tribal_self_rule"
+		add_stability = 0.05
+		country_event = {
+			id = ilgevents.14
+		}
+		custom_effect_tooltip = ILG_tribal_self_rule_tt
+	}
+}
+shared_focus = {
+	id = ILG_italian_governors
+	icon = GFX_TNO_generic_italy
+	cost = 4
+
+	x = 14
+	y = 3
+
+	prerequisite = {
+		focus = ILG_forming_a_government
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_italian_governors"
+		add_political_power = 25
+		country_event = {
+			id = ilgevents.15
+		}
+		custom_effect_tooltip = ILG_italian_governors_tt
+	}
+}
+shared_focus = {
+	id = ILG_military_high_council
+	icon = GFX_ITA_Reel_In_Blackshirts
+	cost = 4
+
+	x = 14
+	y = 4
+
+	prerequisite = {
+		focus = ILG_italian_governors
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_military_high_council"
+		army_experience = 25
+		country_event = {
+			id = ilgevents.16
+		}
+		custom_effect_tooltip = ILG_military_high_council_tt
+	}
+}
+shared_focus = {
+	id = ILG_pied_noir_representation
+	icon = GFX_generic_elections
+	cost = 4
+
+	x = 16
+	y = 3
+
+	prerequisite = {
+		focus = ILG_forming_a_government
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_pied_noir_representation"
+		add_manpower = 5000
+		country_event = {
+			id = ilgevents.17
+		}
+		custom_effect_tooltip = ILG_pied_noir_representation_tt
+	}
+}
+shared_focus = {
+	id = ILG_settler_assemblies
+	icon = GFX_ORE_members_from_every_commune
+	cost = 4
+
+	x = 16
+	y = 4
+
+	prerequisite = {
+		focus = ILG_pied_noir_representation
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_settler_assemblies"
+		add_stability = 0.05
+		add_political_power = 25
+		country_event = {
+			id = ilgevents.18
+		}
+		custom_effect_tooltip = ILG_settler_assemblies_tt
+	}
+}
+shared_focus = {
+	id = ILG_concede_to_natives
+	icon = GFX_ORE_balancing_the_council
+	cost = 4
+
+	x = 13
+	y = 5
+
+	prerequisite = {
+		focus = ILG_tribal_self_rule
+	}
+
+	prerequisite = {
+		focus = ILG_military_high_council
+	}
+
+	mutually_exclusive = {
+		focus = ILG_concede_to_settlers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_concede_to_natives"
+		add_stability = -0.15
+		country_event = {
+			id = ilg_gov.1
+			days = 5
+		}
+		hidden_effect = {
+			set_country_flag = ILG_conceded_to_natives
+		}
+		country_event = {
+			id = ilgevents.19
+		}
+		custom_effect_tooltip = ILG_concede_to_natives_tt
+	}
+}
+shared_focus = {
+	id = ILG_concede_to_settlers
+	icon = GFX_Generic_Friends_in_the_Council
+	cost = 4
+
+	x = 15
+	y = 5
+
+	prerequisite = {
+		focus = ILG_settler_assemblies
+	}
+
+	prerequisite = {
+		focus = ILG_military_high_council
+	}
+
+	mutually_exclusive = {
+		focus = ILG_concede_to_natives
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_concede_to_settlers"
+		add_political_power = -100
+		add_war_support = -0.2
+		hidden_effect = {
+			set_country_flag = ILG_conceded_to_settlers
+		}
+		country_event = {
+			id = ilgevents.20
+		}
+		custom_effect_tooltip = ILG_concede_to_settlers_tt
+	}
+}
+shared_focus = { #add ministers and set_party_name#
+	id = ILG_algerian_provisional_government
+	icon = GFX_ORE_draft_the_workers_constitution
+	cost = 4
+
+	x = 14
+	y = 6
+
+	prerequisite = {
+		focus = ILG_concede_to_natives
+		focus = ILG_concede_to_settlers
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ILG_algerian_provisional_government"
+		add_political_power = 100
+		custom_effect_tooltip = ILG_algerian_provisional_government_tt
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = ILG_Wild_Frontier
+				add_idea = ILG_Provisional_Government
+			}
+
+			set_party_name = {
+				ideology = fascism
+				long_name = ILG_fascism_party_provgov_long
+				name = ILG_fascism_party_provgov
+			}
+			set_party_name = {
+				ideology = paternalism
+				long_name = ILG_paternalism_party_provgov_long
+				name = ILG_paternalism_party_provgov
+			}
+			country_event = {
+				id = ilgevents.21
+			}
+			set_cosmetic_tag = ILG_VICTORY_GOV
+			ITA = {
+				set_autonomy = {
+					target = ILG
+					autonomous_state = autonomy_italy_hefty_influence
+				}
+				set_variable = {
+					var = ILG_ITA_Influence
+					value = 4
+				}
+			}
+
+			set_popularities = {
+				communist = 0
+				socialist = 0
+				progressivism = 0
+				liberalism = 0
+				liberal_conservatism = 0
+				conservatism = 0
+				paternalism = 10
+				despotism = 60
+				fascism = 30
+				national_socialism = 0
+				ultranationalism = 0
+				
+			}
+		}
+	}
+}

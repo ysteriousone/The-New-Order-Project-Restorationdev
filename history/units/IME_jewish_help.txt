@@ -1,0 +1,24 @@
+﻿division_template = {
+	name = "Jewish Assistance Brigade"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1a Milizia Giudea"
+		location = 1015
+		division_template = "Jewish Assistance Brigade"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "2a Milizia Giudea"
+		location = 4206
+		division_template = "Jewish Assistance Brigade"
+		start_experience_factor = 0.05
+	}
+}

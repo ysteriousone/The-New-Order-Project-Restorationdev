@@ -1,0 +1,10 @@
+fiscal_crisis_category = {
+
+	icon = GFX_decision_generic_scorched_earth
+
+	picture = GFX_decision_cat_picture_chi_political_support
+
+	visible = {
+		has_country_flag = ECON_ONGOING_FISCAL_CRISIS
+	}
+}

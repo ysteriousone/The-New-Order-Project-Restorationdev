@@ -1,0 +1,33 @@
+﻿division_template = {
+	name = "Ukrainian Volunteers"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1}
+	}
+}
+
+units = {
+	division = {
+		name = "Ukrainian Volunteers"
+		location = 3299
+		division_template = "Ukrainian Volunteers"
+		start_experience_factor = 0
+	}
+	division = {
+		name = "Ukrainian Volunteers"
+		location = 3299
+		division_template = "Ukrainian Volunteers"
+		start_experience_factor = 0
+	}
+}

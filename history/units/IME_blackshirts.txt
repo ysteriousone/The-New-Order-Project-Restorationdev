@@ -1,0 +1,39 @@
+﻿
+division_template = {
+	name = "Blackshirts"
+	division_names_group = IME_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+
+
+units = {
+	division = {
+		name = "Blackshirts"
+		location = 4206
+		division_template = "Blackshirts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Blackshirts"
+		location = 4206
+		division_template = "Blackshirts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Blackshirts"
+		location = 4206
+		division_template = "Blackshirts"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+}

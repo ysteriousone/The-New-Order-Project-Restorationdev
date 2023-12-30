@@ -1,0 +1,1129 @@
+# THIS FILE IS GONNA BE DELETED AFTER THE MEXICO FILE REORGANIZATION IS DONE
+
+#country_event = { # Japanese Movie
+#	id = MEX.10
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.10"}
+#	title = MEX.10.t
+#	desc = MEX.10.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.10.a
+# 	}
+#}
+#
+#country_event = { # Mexican Toyota
+#	id = MEX.11
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.11"}
+#	title = MEX.11.t
+#	desc = MEX.11.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.11.a
+# 	}
+#}
+#
+#country_event = { # Visiting the East - The Brass
+#	id = MEX.12
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.12"}
+#	title = MEX.12.t
+#	desc = MEX.12.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.12.a
+# 	}
+#}
+#
+#country_event = { # Going to Tokyo - End of an Adventure
+#	id = MEX.13
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.13"}
+#	title = MEX.13.t
+#	desc = MEX.13.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.13.a
+# 	}
+#}
+#
+#country_event = { # Meeting on the Niagara
+#	id = MEX.14
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.14"}
+#	title = MEX.14.t
+#	desc = MEX.14.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.14.a
+# 	}
+#}
+#
+#country_event = { # Free Tourist Visas
+#	id = MEX.15
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.15"}
+#	title = MEX.15.t
+#	desc = MEX.15.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.15.a
+# 	}
+#}
+#
+#country_event = { # Bracero Program - Sorting Out
+#	id = MEX.16
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.16"}
+#	title = MEX.16.t
+#	desc = MEX.16.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.16.a
+# 	}
+#}
+#
+#country_event = { # Contacting Johnson - Means of Ascent
+#	id = MEX.17
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.17"}
+#	title = MEX.17.t
+#	desc = MEX.17.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.17.a
+# 	}
+#}
+#
+#country_event = { # The Chamizal - López Meets Kennedy In Chamizal Ceremony
+#	id = MEX.18
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.18"}
+#	title = MEX.18.t
+#	desc = MEX.18.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.18.a
+# 	}
+#}
+#
+#country_event = { # A Friendly Visit
+#	id = MEX.19
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.19"}
+#	title = MEX.19.t
+#	desc = MEX.19.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.19.a
+# 	}
+#}
+#
+#country_event = { # Meeting the Committee
+#	id = MEX.20
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.20"}
+#	title = MEX.20.t
+#	desc = MEX.20.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.20.a
+#		country_event = { id = MEX.64 days = 7 }
+# 	}
+#}
+#
+#country_event = { # Pastime - DFS Torture
+#	id = MEX.21
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.21"}
+#	title = MEX.21.t
+#	desc = MEX.21.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.21.a
+# 	}
+#}
+#
+#country_event = { # El Temporero
+#	id = MEX.22
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.22"}
+#	title = MEX.22.t
+#	desc = MEX.22.desc
+#	picture = GFX_report_event_temporero
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.22.a
+# 	}
+#}
+#
+#country_event = { # No Place Like Home
+#	id = MEX.23
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.23"}
+#	title = MEX.23.t
+#	desc = MEX.23.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.23.a
+# 	}
+#}
+#
+#country_event = { # Yet Why Do They Complain?
+#	id = MEX.24
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.24"}
+#	title = MEX.24.t
+#	desc = MEX.24.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.24.a
+# 	}
+#}
+#country_event = { # A Great Economy
+#	id = MEX.25
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.25"}
+#	title = MEX.25.t
+#	desc = MEX.25.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.25.a
+# 	}
+#}
+#country_event = { # The Olympic Victory
+#	id = MEX.26
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.26"}
+#	title = MEX.26.t
+#	desc = MEX.26.desc
+#	picture = Mexico_Olympics
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.26.a
+# 	}
+#}
+#country_event = { # Uninterrupted Stability
+#	id = MEX.27
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.27"}
+#	title = MEX.27.t
+#	desc = MEX.27.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#  fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.27.a
+# 	}
+#}
+#country_event = { # An Answer to Succession
+#	id = MEX.28
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.28"}
+#	title = MEX.28.t
+#	desc = MEX.28.desc
+#	picture = GFX_report_event_mexico_PRI
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.28.a
+# 	}
+#}
+#country_event = { # The Future of Mexico
+#	id = MEX.29
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.29"}
+#	title = MEX.29.t
+#	desc = MEX.29.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.29.a
+# 	}
+#}
+#country_event = { # Lozano Wins Succesion
+#	id = MEX.30
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.30"}
+#	title = MEX.30.t
+#	desc = MEX.30.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.30.a
+#		hidden_effect = { set_country_flag = MEX_lozano_successor_flag }
+# 	}
+#}
+#country_event = { # Madrazo Wins Succesion
+#	id = MEX.31
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.31"}
+#	title = MEX.31.t
+#	desc = MEX.31.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.31.a
+#		hidden_effect = { set_country_flag = MEX_madrazo_successor_flag }
+# 	}
+#}
+#country_event = { # Ordaz Wins Succesion
+#	id = MEX.32
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.32"}
+#	title = MEX.32.t
+#	desc = MEX.32.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.32.a
+#		hidden_effect = { set_country_flag = MEX_ordaz_successor_flag }
+#	}
+#}
+#country_event = { # Echeverría Introduction
+#	id = MEX.33
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.33"}
+#	title = MEX.33.t
+#	desc = MEX.33.desc
+#	picture = GFX_report_event_echeverria_introduction
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.33.a
+# 	}
+#}
+#country_event = { # Gutiérrez Barrios Introduction
+#	id = MEX.34
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.34"}
+#	title = MEX.34.t
+#	desc = MEX.34.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.34.a
+# 	}
+#}
+#country_event = { # The Ferrocarrileros
+#	id = MEX.35
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.35"}
+#	title = MEX.35.t
+#	desc = MEX.35.desc
+#	picture = GFX_report_event_ferrocarrileros
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.35.a
+#		activate_mission = MEX_ferrocarrileros_mission
+# 	}
+#}
+#country_event = { # Madrazo Intervenes
+#	id = MEX.36
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.36"}
+#	title = MEX.36.t
+#	desc = MEX.36.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.36.a
+#		MEX_SB_mid_raise_Madrazo = yes
+#		country_event = { id = MEX.38 days = 90 }
+# 	}
+#}
+#country_event = { # Army Rolls In
+#	id = MEX.37
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.37"}
+#	title = MEX.37.t
+#	desc = MEX.37.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.37.a
+#		MEX_SB_high_raise_Ordaz = yes
+#		country_event = { id = MEX.39 days = 90 }
+# 	}
+#}
+#country_event = { # Managing Expectations
+#	id = MEX.38
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.38"}
+#	title = MEX.38.t
+#	desc = MEX.38.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.38.a
+#		MEX_SB_mid_raise_Ordaz = yes
+# 	}
+#}
+#country_event = { # Nava Released from Prison
+#	id = MEX.39
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.39"}
+#	title = MEX.39.t
+#	desc = MEX.39.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.39.a
+#		MEX_SB_mid_decrease_Madrazo = yes
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 1
+#	id = MEX.47
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.47"}
+#	title = MEX.47.t
+#	desc = MEX.47.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.47.a
+#	}
+#	option = {
+#		name = MEX.47.b
+#	}
+#}
+#country_event = { # Tata Cardenas Ordaz - A Similar Scene
+#	id = MEX.48
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.48"}
+#	title = MEX.48.t
+#	desc = MEX.48.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.48.a
+# 	}
+#}
+#country_event = { # Tata Cardenas Madrazo - The Old and Young Revolutionaries
+#	id = MEX.49
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.49"}
+#	title = MEX.49.t
+#	desc = MEX.49.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.49.a
+# 	}
+#}
+#country_event = { # Tata Cardenas Lozano
+#	id = MEX.50
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.50"}
+#	title = MEX.50.t
+#	desc = MEX.50.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.50.a
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 2 - Italy
+#	id = MEX.51
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.51"}
+#	title = MEX.51.t
+#	desc = MEX.51.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.51.a
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 3 - Italy
+#	id = MEX.52
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.52"}
+#	title = MEX.52.t
+#	desc = MEX.52.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.52.a
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 4 - Italy
+#	id = MEX.53
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.53"}
+#	title = MEX.53.t
+#	desc = MEX.53.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.53.a
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 2 - America
+#	id = MEX.54
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.54"}
+#	title = MEX.54.t
+#	desc = MEX.54.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.54.a
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 3 - America
+#	id = MEX.55
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.55"}
+#	title = MEX.55.t
+#	desc = MEX.55.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.55.a
+# 	}
+#}
+#country_event = { # Gran Premio de México 1963 parte 4 - America
+#	id = MEX.56
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.56"}
+#	title = MEX.56.t
+#	desc = MEX.56.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.56.a
+# 	}
+#}
+#country_event = { # Meeting the Prince
+#	id = MEX.57
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.57"}
+#	title = MEX.57.t
+#	desc = MEX.57.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+# 		name = MEX.57.a
+# 	}
+#}
+#country_event = { # The Inauguration - Ordaz
+#	id = MEX.58
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.58"}
+#	title = MEX.58.t
+#	desc = MEX.58.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.58.a
+#		every_country = {
+#			news_event = { id = WORLD.18000 }
+#		}
+#		hidden_effect = {
+#		  MEX = {
+#				retire_country_leader = yes
+#		
+#				create_country_leader = {
+#					name = "Gustavo Díaz Ordaz"
+#					desc = POLITICS_GUSTAVO_ORDAZ_DESC
+#					picture = "Portrait_Mexico_Mandril.dds"
+#					expire = "1990.1.1"
+#					ideology = authoritarian_democracy_subtype
+#						traits = {
+#							master_ideologue
+#						}
+#				}
+#				create_country_leader = {
+#					name = "Gustavo Díaz Ordaz"
+#					desc = POLITICS_GUSTAVO_ORDAZ_DESC
+#					picture = "Portrait_Mexico_Mandril.dds"
+#					expire = "1990.1.1"
+#					ideology = social_democracy_subtype
+#						traits = {
+#							master_ideologue
+#						}
+#				}
+#		
+#				add_popularity = {
+#					ideology = paternalism
+#					popularity = 0.1
+#				}
+#			}
+#		}
+#	}
+#}
+#country_event = { # The Inauguration - Lozano
+#	id = MEX.59
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.59"}
+#	title = MEX.59.t
+#	desc = MEX.59.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.59.a
+#		every_country = {
+#			news_event = { id = WORLD.18001 }
+#		}
+#		hidden_effect = {
+#			MEX = {
+#				retire_country_leader = yes
+#	  
+#				create_country_leader = {
+#					name = "Raúl Salinas Lozano"
+#					desc = POLITICS_RAUL_LOZANO_DESC
+#					picture = "Portrait_Mexico_Lozano.dds"
+#					expire = "1990.1.1"
+#					ideology = authoritarian_democracy_subtype
+#					traits = {
+#						# something something economist
+#					}
+#				}
+#				create_country_leader = {
+#					name = "Raúl Salinas Lozano"
+#					desc = POLITICS_RAUL_LOZANO_DESC
+#					picture = "Portrait_Mexico_Lozano.dds"
+#					expire = "1990.1.1"
+#					ideology = social_democracy_subtype
+#					traits = {
+#						# something something economist
+#					}
+#				}
+#	  
+#				add_popularity = {
+#					ideology = liberalism
+#					popularity = 0.1
+#				}
+#			}
+#		}
+#	}
+#}
+#country_event = { # The Inauguration - Madrazo
+#	id = MEX.60
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.60"}
+#	title = MEX.60.t
+#	desc = MEX.60.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.60.a
+#		every_country = { news_event = { id = WORLD.18002 } }
+#		hidden_effect = {
+#			MEX = {
+#				retire_country_leader = yes
+#				
+#				create_country_leader = {
+#					name = "Carlos Madrazo"
+#					desc = POLITICS_CARLOS_MADRAZO_DESC
+#					picture = "Portrait_Mexico_Carlos_Madrazo.dds"
+#					expire = "1990.1.1"
+#					ideology = authoritarian_democracy_subtype
+#					traits = {
+#						grand_populist
+#					}
+#				}
+#				create_country_leader = {
+#					name = "Carlos Madrazo"
+#					desc = POLITICS_CARLOS_MADRAZO_DESC
+#					picture = "Portrait_Mexico_Carlos_Madrazo.dds"
+#					expire = "1990.1.1"
+#					ideology = social_democracy_subtype
+#					traits = {
+#						grand_populist
+#					}
+#				}
+#	
+#				add_popularity = {
+#					ideology = progressivism
+#					popularity = 0.1
+#				}
+#			}
+#		 }
+#	}
+#}
+#
+#country_event = { # 1964 Election
+#	id = MEX.62
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.62"}
+#	title = MEX.62.t
+#	desc = MEX.62.desc
+#	hidden = yes
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.62.a
+#		if = { # Ordaz Wins
+#			limit = { has_country_flag = MEX_ordaz_successor_flag }
+#			country_event = { id = MEX.58 days = 147 }
+#		}	
+#		if = { # Lozano Wins
+#			limit = { has_country_flag = MEX_lozano_successor_flag }
+#			country_event = { id = MEX.59 days = 147 }
+#		}
+#		if = { # Madrazo Wins
+#			limit = { has_country_flag = MEX_madrazo_successor_flag }
+#			country_event = { id = MEX.60 days = 147 }
+#		}
+#	}
+#}
+#country_event = { # Accident
+#	id = MEX.63
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.63"}
+#	title = MEX.63.t
+#	desc = MEX.63.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.63.a
+#	}
+#}
+#country_event = { # Return of López Mateos
+#	id = MEX.64
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.64"}
+#	title = MEX.64.t
+#	desc = MEX.64.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.64.a
+#		set_country_flag = mateos_final_tree_flag
+#		MEX_generic_tree_reload = yes
+#		set_country_flag = MEX_prep_JO
+#	}
+#}
+#country_event = { # López Mateos in the UNAM
+#	id = MEX.76
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.76"}
+#	title = MEX.76.t
+#	desc = MEX.76.desc
+#	hidden = yes
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.76.a
+#	}
+#	option = {
+#		name = MEX.76.b
+#	}
+#	option = {
+#		name = MEX.76.c
+#	}
+#}
+#
+#country_event = { # The gulf smugglers
+#	id = MEX.79
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.79"}
+#	title = MEX.79.t
+#	desc = MEX.79.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.79.a
+#	}
+#}
+#
+#### MADERA BUILDUP CHAIN ###
+#
+#country_event = { # Peasants get harrased  :))
+#	id = MEX.83
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.83"}
+#	title = MEX.83.t
+#	desc = MEX.83.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.83.a
+#	}
+#}
+#
+#country_event = { # Gámiz on a field trip
+#	id = MEX.84
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.84"}
+#	title = MEX.84.t
+#	desc = MEX.84.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.84.a
+#	}
+#}
+#
+#country_event = { # Gámiz talks with his brother and decides to arm
+#	id = MEX.85
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.85"}
+#	title = MEX.85.t
+#	desc = MEX.85.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.85.a
+#	}
+#}
+#
+#country_event = { # The GPG forms
+#	id = MEX.86
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.86"}
+#	title = MEX.86.t
+#	desc = MEX.86.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.86.a
+#	}
+#}
+#
+#country_event = { # GPG breaks into an armory
+#	id = MEX.87
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.87"}
+#	title = MEX.87.t
+#	desc = MEX.87.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.87.a
+#	}
+#}
+#
+#country_event = { # FDS report on growing GPG activity
+#	id = MEX.88
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.88"}
+#	title = MEX.88.t
+#	desc = MEX.88.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.88.a
+#	}
+#}
+#
+#country_event = { # Jacobo and Arturo argue before the raid
+#	id = MEX.89
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.89"}
+#	title = MEX.89.t
+#	desc = MEX.89.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.89.a
+#	}
+#}
+#
+#country_event = { # The raid
+#	id = MEX.90
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.90"}
+#	title = MEX.90.t
+#	desc = MEX.90.desc
+#	picture = Arturo_Garcia_Blood
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.90.a
+#	}
+#}
+#
+#news_event = { # Raid on the Madera barracks
+#	id = MEX.1000
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.1000"}
+#	title = MEX.1000.t
+#	desc = MEX.1000.desc
+#	picture = GFX_news_event_MEX_Madera
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = MEX.1000.a
+#	}
+#}
+#
+#country_event = { # Madera Barracks FDS after action report
+#	id = MEX.91
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.91"}
+#	title = MEX.91.t
+#	desc = MEX.91.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.91.a
+#	}
+#}
+#
+#######
+#
+#country_event = { 
+#	id = MEX.92
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.92"}
+#	title = MEX.92.t
+#	desc = MEX.92.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.92.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.93
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.93"}
+#	title = MEX.93.t
+#	desc = MEX.93.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.93.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.94
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.94"}
+#	title = MEX.94.t
+#	desc = MEX.94.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.94.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.95
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.95"}
+#	title = MEX.95.t
+#	desc = MEX.95.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.95.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.96
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.96"}
+#	title = MEX.96.t
+#	desc = MEX.96.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.96.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.97
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.97"}
+#	title = MEX.97.t
+#	desc = MEX.97.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.97.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.98
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.98"}
+#	title = MEX.98.t
+#	desc = MEX.98.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.98.a
+#	}
+#}
+#
+#country_event = { 
+#	id = MEX.99
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.99"}
+#	title = MEX.99.t
+#	desc = MEX.99.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.99.a
+#	}
+#}
+#
+#country_event = { #The Black Parade
+#	id = MEX.100
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event MEX.100"}
+#	title = MEX.100.t
+#	desc = MEX.100.desc
+#	#picture =
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+# 	option = {
+#		name = MEX.100.a
+#	}
+#}

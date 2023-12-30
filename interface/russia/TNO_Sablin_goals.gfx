@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BRY_a_new_lenin"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_a_new_lenin.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_battle_goes_on"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_battle_goes_on.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_reading_the_papers"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_reading_the_papers.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_restore_the_chekists"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_restore_the_chekists.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_by_root_and_stem"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_by_root_and_stem.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_let_the_skies_be_claimed"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_let_the_skies_be_claimed.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_refine_the_revolution"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_refine_the_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_BRY_representative_councils"
+		texturefile = "gfx/interface/goals/Sablin/GFX_BRY_representative_councils.dds"
+	}
+}

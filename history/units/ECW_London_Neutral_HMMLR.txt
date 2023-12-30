@@ -1,0 +1,38 @@
+units = {
+	division = {
+		name = "1st 'Revolution' Division"
+		location = 11253
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		#name = "1st 'Revolution' Division"
+		location = 11221
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "Oxford Student's Revolutionary Society"
+		location = 296
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		#name = "Oxford Student's Revolutionary Society"
+		location = 3287
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "London Veterans Association"
+		location = 221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		#name = "London Veterans Association"
+		location = 221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

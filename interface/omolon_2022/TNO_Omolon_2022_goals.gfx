@@ -1,0 +1,345 @@
+spriteTypes = {
+	# Generics
+	spriteType = {
+		name = "GFX_OMO_2022_generic_buckharin"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/generic_buckharin.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_generic_pony_army"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/generic_pony_army.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_generic_harmony"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/generic_harmony.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_generic_pony_crystals"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/generic_pony_crystals.dds"
+	}
+
+	# Non-Generics
+	spriteType = {
+		name = "GFX_OMO_2022_a_pink_wind_in_the_far_north"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/a_pink_wind_in_the_far_north.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_first_all_ponies_cuncil_of_the_harmonious_union"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_first_all_ponies_cuncil_of_the_harmonious_union.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_defining_harmony"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/defining_harmony.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_crystal_miners_trade_union"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_crystal_miners_trade_union.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_rifles_for_hooves"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/rifles_for_hooves.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_building_a_gateway"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/building_a_gateway.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_ready_to_greet_them"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/ready_to_greet_them.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_this_can_never_happen_again"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/this_can_never_happen_again.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_up_to_date_intelligence"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/up_to_date_intelligence.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_reaction_in_a_perfect_world"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/reaction_in_a_perfect_world.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_painting_the_red_fleet_pink"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/painting_the_red_fleet_pink.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_what_to_offer"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/what_to_offer.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_first_contact_protocols"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/first_contact_protocols.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_prepare_the_gifts"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/prepare_the_gifts.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_feeding_the_hungry"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/feeding_the_hungry.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_human_volunteers"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_human_volunteers.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_rifles_for_hands"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/rifles_for_hands.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_introducing_ourselves"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/introducing_ourselves.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_ponies_of_russia"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_ponies_of_russia.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_humans_that_remain"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_humans_that_remain.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_issue_of_parasprites"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_issue_of_parasprites.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_ponies_at_the_ready"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/ponies_at_the_ready.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_observing_the_other_world"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/observing_the_other_world.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_friendship"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/friendship.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_interspecies_cooperation"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/interspecies_cooperation.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_searching_for_friends"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/searching_for_friends.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_treaty_of_stalliongrad"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/treaty_of_stalliongrad.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_human_delegation"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_human_delegation.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_looking_outwards"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/looking_outwards.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_calls_for_action"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/calls_for_action.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_offer_ponification"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/offer_ponification.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_speak_to_the_ponies"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/speak_to_the_ponies.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_pony_superiority"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/pony_superiority.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_solidarity_in_struggle"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/solidarity_in_struggle.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_remind_them_of_their_origins"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/remind_them_of_their_origins.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_we_have_not_forgotten"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/we_have_not_forgotten.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_interdimensional_theories"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/interdimensional_theories.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_talking_things_out"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/talking_things_out.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_conflict_resolution_is_magic"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/conflict_resolution_is_magic.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_weve_gone_too_far"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/weve_gone_too_far.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_we_havent_gone_far_enough"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/we_havent_gone_far_enough.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_general_strike"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_general_strike.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_old_guard_stands_firm"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_old_guard_stands_firm.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_harmony_in_the_world_stage"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/harmony_in_the_world_stage.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_airplanes_in_the_night_sky"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/airplanes_in_the_night_sky.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_project_shooting_star"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/project_shooting_star.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_supremacy_of_the_ponies"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/supremacy_of_the_ponies.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_resilience_of_humanity"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/resilience_of_humanity.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_ponies_on_the_senate_floor"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/ponies_on_the_senate_floor.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_we_are_not_your_enemies"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/we_are_not_your_enemies.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_chaos_in_the_supreme_soviet"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/chaos_in_the_supreme_soviet.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_flight_of_the_pegasi"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/flight_of_the_pegasi.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_a_beacon_in_the_north"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/a_beacon_in_the_north.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_only_ponies_in_charge"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/only_ponies_in_charge.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_first_trial"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_first_trial.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_new_pink_army"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_new_pink_army.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_admit_the_holdouts"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/admit_the_holdouts.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_a_newer_economic_policy"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/a_newer_economic_policy.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_books_for_the_children_and_foals"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/books_for_the_children_and_foals.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_breaking_bread_with_the_americans"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/breaking_bread_with_the_americans.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_foundations_for_a_utopia"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_foundations_for_a_utopia.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_gears_of_a_harmonic_society"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/the_gears_of_a_harmonic_society.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_anatomy_of_a_pony"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/anatomy_of_a_pony.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_friendship_is_magic"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/friendship_is_magic.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_legacy_of_1924"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/legacy_of_1924.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_element_of_generosity"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/element_of_generosity.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_send_workers_to_the_mines"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/send_workers_to_the_mines.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_buckharins_academy_of_friendship"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/buckharins_academy_of_friendship.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_finding_them"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/finding_them.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_rally_the_old_guard"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/rally_the_old_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_convince_the_new"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/convince_the_new.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_siberia_made_pink"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/siberia_made_pink.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_speak_with_the_pan_asianists"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/speak_with_the_pan_asianists.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_in_the_palm_of_our_hooves"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/in_the_palm_of_our_hooves.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_alternative_uses"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/alternative_uses.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_experiments_with_onhooves_warfare"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/Experiment_with_Onhooves_Warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_grand_mil_academy_of_magadan"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/The_Grand_Military_Academy_of_Magadan.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_councils_inaugural_session_0"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/The_Council_s_Inaugural_Session_0.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_councils_inaugural_session_1"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/The_Council_s_Inaugural_Session_I.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_the_councils_inaugural_session_2"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/The_Council_s_Inaugural_Session_II.dds"
+	}
+	spriteType = {
+		name = "GFX_OMO_2022_search_for_new_sources"
+		texturefile = "gfx/interface/goals/OMO_2022_aprilfools/search_for_new_sources.dds"
+	}
+}

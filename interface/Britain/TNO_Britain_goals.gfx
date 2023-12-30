@@ -1,0 +1,862 @@
+spriteTypes = {
+	### Focus Tree Icons ###
+	SpriteType = {
+		name = "GFX_ENG_Security_Analysis"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Security_Analysis.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Ghosts_of_1956"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Ghosts_of_1956.dds"
+	}
+	spriteType = {
+		name = "GFX_The_Lords_Approval"
+		texturefile = "gfx/interface/goals/GFX_The_Lords_Approval.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Irish_Sea_Patrols"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Irish_Sea_Patrols.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_An_Innoble_Scotsman"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_An_Innoble_Scotsman.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_A_Union_Man"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Union_Man.dds"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_Who_is_the_Boss"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Who_is_the_Boss.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Freedom_Security_Act"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Freedom_Defence_Act.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_The_Greatest_Lie_Ever_Told"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Greatest_Lie_Ever_Told.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Defining_An_Enemy"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Defining_An_Enemy.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Macleans_Marauders"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Macleans_Marauders.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ENG_what_to_do_with_wilson"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_what_to_do_with_wilson.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Among_these_dark_satanic_mills"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Among_these_dark_satanic_mills.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_speakers"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_the_speakers.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Check_In_With_Germania"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Check_In_With_Germania.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_Backbenchers"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Backbenchers.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_army_issue"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_the_army_issue.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_1962_Fiscal_Report"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_1962_Fiscal_Report.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Their_Time_our_Funds"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Their_Time_our_Funds.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Their_Leader"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Their_Leader.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Their_God_Given_Rights"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Their_God_Given_Rights.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Tame_Rural_Britain"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Tame_Rural_Britain.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Stabilize_Their_Growth"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Stabilize_Their_Growth.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_speaking_with_the_unions"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_speaking_with_the_unions.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Redefine_the_Armed_Forces"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Redefine_the_Armed_Forces.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Police_the_Cities"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Police_the_Cities.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Pests_in_the_Countryside"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Pests_in_the_Countryside.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Parley_with_the_Peers"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Parley_with_the_Peers.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Our_Troubles"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Our_Troubles.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_no_longer_a_sidekick"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_no_longer_a_sidekick.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Krupp_Volkswagen_and_Co"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Krupp_Volkswagen_and_Co.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Greasing_Gears"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Greasing_Gears.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Give_Them_Free_Reign_in_the_Country"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Give_Them_Free_Reign_in_the_Country.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_expand_their_interests"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_expand_their_interests.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_deal_with_our_party"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_deal_with_our_party.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Concessions_to_the_Garrison"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Concessions_to_the_Garrison.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_beans_experiment"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_beans_experiment.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Support_Force_to_the_Garrison"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Support_Force_to_the_Garrison.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_seat_for_jordan"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_a_seat_for_jordan.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_all_tomorrows_parties"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_All_Tomorrows_Parties.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Responsible_Upper_House"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Responsible_Upper_House.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_New_Commander"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_New_Commander.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Firm_Grip"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Firm_Grip.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Fair_Hand"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Fair_Hand.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Another_Year_of_Routine"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Another_Year_of_Routine.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_And_Their_Interests"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_Their_Interests.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_1962_BPP_Conference"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_1962_BPP_Conference.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_approach_the_hydra"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_approach_the_hydra.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_And_the_Search_for_the_Terrible_Twins_Drags_On"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_the_Search_for_the_Terrible_Twins_Drags_On.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_But_Now_The_Party_is_Split"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_But_Now_The_Party_is_Split.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_wulfs_trust"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_wulfs_trust.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_committment_and_certainty"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Commitment_and_Certainty.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_absorbing_a_colossus"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Absorbing_a_Colussus.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Needs_A_Reliable_Head"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Needs_a_Reliable_Hand.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_clearing_the_air"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Clearing_the_Air.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Friends_in_High_Places"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Friends_in_High_Places.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_true_to_form"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_True_to_Form.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_an_end_to_the_farce"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_An_End_to_the_Farce.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_sailing_trawlers"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Sailing_Trawlers.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_work_isnt_done"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Work_Isnt_Done.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_hand_in_embracing"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Hand_in_Embracing.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_long_awaited_prime_minster"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Long_Awaited_Prime_Minister.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_it_shall_triumph"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_It_Shall_Triumph.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_rebuilding_roads"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Rebuild_the_Roads.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_future_for_patriots"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Future_for_Patriots.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_you_shall_rebuild"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_You_Shall_Rebuild.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_state_of_the_bpp"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_State_of_the_BPP.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_order_has_prevailed"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Order_Has_Prevailed.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_matters_of_agriculture"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Matters_of_Agriculture.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_buffer_space"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Buffer_Space.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_absorbed"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Their_Unions_Absorbed.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_reforging_the_BPP"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_reforging_the_BPP.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_tower_of_fire"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_a_tower_of_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_fire"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Shall_be_met_with_Fire.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_gloves"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Shall_be_met_with_gloves.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_upticks_in_activity"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Upticks_in_Activity.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_ours"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Cutting_through_the_fog1.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_ENG_germania_in_chaos"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_germania_in_chaos.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Declare_support_to_Hitlers_Successor"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Declare_support_to_Hitlers_Successor.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Emergency_Measures"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Emergency_Measures.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_meeting_with_vessen"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_meeting_with_vessen.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Closing_the_London_Exchange"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Closing_the_London_Exchange.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Discuss_the_Garrisons_Situation"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Discuss_the_Garrisons_Situation.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Knights_Sitrep"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Knights_Sitrep.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Mobilise_the_BFC"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Mobilise_the_BFC.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Combatting_Resistance_Movements"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Combatting_Resistance_Movements.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Expanding_Policing_in_Glasgow_and_Aberdeen"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Expanding_Policing_in_Glasgow_and_Aberdeen.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Pacifying_the_Streets"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Pacifying_the_Streets.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Keeping_a_Tidy_eye_on_Jordan"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Keeping_a_Tidy_eye_on_Jordan.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Keep_An_Eye"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Keep_An_Eye.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Invoke_the_Wartime_Act"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Invoke_the_Wartime_Act.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Interrogate_Their_Subordinates"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Interrogate_Their_Subordinates.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_arrests_on_their_leaders"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_arrests_on_their_leaders.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Invoke_State_Siege_measures"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Invoke_State_Siege_measures.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Weathering_the_Storm"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Weathering_the_Storm.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Fortress_britannia"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Fortress_britannia.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_And_Bullets_as_well"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_Bullets_as_well.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Loaded_and_Ready"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Loaded_and_Ready.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_at_last_a_location"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_at_last_a_location.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_terrible_two_captured"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Terrible_Two_Captured.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_produce_as_many_guns"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Produce_as_many_guns_as_we_can.png"
+	}
+
+	spriteType = {
+		name = "GFX_ENG_yorkshire_will_not_fall"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Yorkshire_will_not_fall.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_our_worst_nightmare"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Our_Worst_Nightmare.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_salvaging_mi5"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Salvaging_MI5.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_man_must_hold"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Man_must_Hold.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_lothian_must_survive_the_winter"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Lothian_must_survive_the_winter.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_emergency_police_militarisation"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Emergency_Police_Militarisation.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_And_What_Say_Us_Now"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_What_Say_Us_Now.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_At_Long_Last_Winter_Has_Passed"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_At_Long_Last_Winter_Has_Passed.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_on_track_this_winter"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_on_track_this_winter.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Our_placatable_rivals"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Our_placatable_rivals.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Redefining_combat"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Redefining_combat.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Save_all_we_can"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Save_all_we_can.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Scavenge_all_we_can"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Scavenge_all_we_can.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Scrap_planes_for_Aluminum2"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Scrap_planes_for_Aluminum2.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Simplification_Simplification_Simplification"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Simplification_Simplification_Simplification.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_crews_on_auxiliary"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_crews_on_auxiliary.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_fighters_as_well"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_fighters_as_well.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_Free_Corps_Question"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Free_Corps_Question.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_Oil_Depleting"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Oil_Depleting.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_Panzers_will_wait"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Panzers_will_wait.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Without_Pride_we_are_Nothing"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Without_Pride_we_are_Nothing.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Wulfs_Reports_are_Getting_Worse"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Wulfs_Reports_are_Getting_Worse.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Cornwall_secured"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Cornwall_secure.png"
+	}
+	spriteType = {
+		name = "GFX_Cornwall_secure"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Cornwall_secure.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_And_a_promise_of_reward"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_a_promise_of_reward.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_raise_in_rations"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_raise_in_rations.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Birmingham_at_all_costs"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Birmingham_at_all_costs.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_BSA_quality_checks"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_BSA_quality_checks.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Or_a_simpler_solution"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Or_a_simpler_solution.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_our_reviled_extremists"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Our_reviled_extremists.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Our_vital_soldiers"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Our_vital_soldiers.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Simplification_Simplification_Simplification"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Simplification_Simplification_Simplification.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_factories_unstaffed"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_factories_unstaffed.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_The_old_never_failed_them"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_old_never_failed_them.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_And_so_the_long_game_begins"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_so_the_long_game_begins.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Our_Men_wavering"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Our_Men_wavering.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_our_wives_in"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_our_wives_in.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Show_of_Force"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Show_of_Force.png"
+	}
+	
+	### Civil War 2
+	
+	spriteType = {
+		name = "GFX_ENG_over_the_wire_one_last_time"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Over_the_wire_one_last_time.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_drive_them_into_the_wash"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Drive_them_into_the_Wash.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_no_son_of_england_will_make_it"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_No_son_of_England.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_anglian_dagger"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Anglian_dagger.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_midlands_come_next"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Midlands_come_next.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_blood_in_the_land_of_song"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Blood_in_the_Land_of_Song.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_cardiffs_surrender"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Cardiffs_surrender.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_dragon_defiant"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Dragon_Defiant.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_north_pacified"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_north_pacified.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_humiliating_stalemate"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_humiliating_stalemate.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_to_leeds"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_To_Leeds.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_to_manchester"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_To_Manchester.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_edinburgh_endures_now_and_forever"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Edinburgh_endures_now_and_forever.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_liverpool_within_our_sights"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Liverpool_within_our_sights.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_returning_to_an_empty_country"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Returning_to_an_empty_country.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_string_up_every_last_communist"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_String_up_every_last_communist.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_onwards_to_scotland"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Onwards_to_scotland.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_chase_them_to_the_worlds_end"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Chase_them_to_the_worlds_end.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_final_victory_over_terror"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_final_victory_over_terror.png"
+	}
+	
+	### Jordan
+	
+	spriteType = {
+		name = "GFX_ENG_One_Last_Push"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_One_Last_Push.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Run_The_Streets"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Run_the_Streets.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_transform_the_party"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Transform_the_Party.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_Hold_up_the_vanguard"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Hold_up_the_vanguard.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Racial_Cleanse"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Racial_Cleanse.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_saviours_of_britannia"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_From_the_Shadows2.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_find_our_enemies"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Find_the_Traitors.dds"
+	}
+	
+	#Wallop
+	
+	spriteType = {
+		name = "GFX_ENG_things_it_appears_were_certain"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_ThingsItAppearsWereCertain.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_bpp"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_BPP.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_crushed_under_its_own_weight"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Crushed_under_its_own_weight.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_obliterated_utterly_with_prudency"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Obliterated_utterly_with_prudency.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_in_whitehalls_rooms_a_circle_meets"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_in_whitehalls_rooms_a_circle_meets.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_one_of_bright_minds"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_One_of_bright_minds.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_and_of_fresh_ideas"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_And_Fresh_ideas.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_while_englands_doom_repeats"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_WhileEnglandsDoomRepeats.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_i_picked_a_stone_and_aimed_it"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_i_picked_a_stone_and_aimed_it.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_A_Harmonious_Triumverate"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Harmonious_Triumverate.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Chesterton_In_The_Home_Office"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Chesterton_In_The_Home_Office.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_The_Empire_We_Ruled"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_Empire_We_Ruled.dds"
+	}
+
+	### Butler
+	
+	spriteType = {
+		name = "GFX_ENG_coronation_day"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_coronation_day.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_therell_always_be_an_england"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_TherellAlwaysBeAnEngland3.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_rectifying_lloyds_mistakes"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Rectifying_Lloyds_mistake.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_report_decades_in_the_making"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Report_decades_in_the_making.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_natural_divorce"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Natural_divorce.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_partnership_rekindled"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Partnership_rekindled.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_parliament_act_of_year"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Parliament_Act_of_Year.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_new_friends_for_a_new_age"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_New_Friends_for_a_New_Age.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_relying_on_old_connections"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Relying_on_Old_Friends.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_and_england_shall_be_free"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_and_england_shall_be_free.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_double_take"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_double_take.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_familiar_bones"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Familiar_Bones.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_fresh_blood"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Fresh_Blood.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_hurrah_for_the_blackshirts"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Hurrah_For_The_Blackshirts.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Dousing_England_In_Oil"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Dousing_England_In_Oil.dds"
+	}
+
+	### Fountaine
+	
+	spriteType = {
+		name = "GFX_ENG_a_man_with_vision"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Man_With_Vision.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_vision_of_fascism"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_the_vision_of_fascism.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_to_save_ourselves"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_To_Save_Ourselves.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_from_the_ashes"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_from_the_ashes.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_the_phoenix_rises"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_the_phoenix_rises.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_cult_of_the_nation"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Cult_of_the_Nation.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_cult_of_the_leader"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Cult_of_the_Leader.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_a_grand_cleansing"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_A_Grand_Cleansing.png"
+	}
+	spriteType = {
+		name = "GFX_ENG_tying_up_loose_ends"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_tying_up_loose_ends.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_damnatio_memoriae"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_damnatio_memoriae.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_we_are_britain"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_we_are_britain.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Mosleys_Truncheon"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Mosleys_Truncheon.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Time_For_You_And_Me"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Time_For_You_And_Me.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Arm_of_The_Party_Arm_of_The_State"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_Arm_of_The_Party_Arm_of_The_State.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_fanning_the_flames"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_fanning_the_flames.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_RevolutionFromBelow"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_RevolutionFromBelow.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_Steel_From_The_Forges"
+		texturefile = "gfx/interface/goals/ENG/ENG_Steel_From_The_Forges.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_The_True_Champion_of_the_Workers"
+		texturefile = "gfx/interface/goals/ENG/GFX_ENG_The_True_Champion_of_the_Workers.dds"
+	}
+}	

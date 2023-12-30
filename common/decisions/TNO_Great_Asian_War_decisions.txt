@@ -1,0 +1,106 @@
+GAW_CHI_category = {
+	GAW_CHI_peace_total_victory = {
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GAW_CHI_victory_con_tt_1
+				has_global_flag = GAW_in_progress
+				NOT = {
+					any_enemy_country = {
+						OR = {
+							controls_state = 1021 #China Proper
+							controls_state = 613
+							controls_state = 591
+							controls_state = 810
+							controls_state = 811
+							controls_state = 812
+							controls_state = 813
+							controls_state = 1022
+							controls_state = 595
+							controls_state = 596
+							controls_state = 597
+							controls_state = 598
+							controls_state = 600
+							controls_state = 602
+							controls_state = 606
+							controls_state = 607
+							controls_state = 608
+							controls_state = 614
+							controls_state = 615
+							controls_state = 620
+							controls_state = 959
+							controls_state = 961
+							controls_state = 1014
+							controls_state = 1015
+							controls_state = 1016
+							controls_state = 1019
+							controls_state = 1020
+							controls_state = 1023
+
+							controls_state = 593 #Guangdong
+							controls_state = 592
+							controls_state = 326
+							controls_state = 729
+							controls_state = 1017
+
+							controls_state = 594 #Guangxi
+							controls_state = 599
+
+							controls_state = 603 #Guizhou
+
+							controls_state = 325 #Yunnan
+							controls_state = 960
+
+							controls_state = 605 #Sichuan
+
+							controls_state = 956 #Shaanxi
+							controls_state = 622
+
+							controls_state = 905 #Xikang
+							controls_state = 964
+
+							controls_state = 955 #Inner Mongolia
+							controls_state = 621
+							controls_state = 612
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = GAW_CHI_victory_con_tt_2
+				any_enemy_country = {
+					NOT = {
+						AND = {
+							controls_state = 609
+							controls_state = 610
+							controls_state = 716
+							controls_state = 715
+							controls_state = 328
+							controls_state = 801
+							controls_state = 714
+							controls_state = 717
+						}
+					}
+				}
+				NOT = {country_exists = MAN}
+			}
+			custom_trigger_tooltip = {
+				tooltip = GAW_CHI_victory_con_tt_3
+				NOT = {country_exists = GAN}
+			}
+		}
+
+		days_re_enable = 30
+
+		complete_effect = {
+			custom_effect_tooltip = GAW_CHI_peace_total_victory_tt
+			hidden_effect = {
+				JAP = {
+					country_event = {id = gaw.106 hours = 3}
+				}
+			}
+		}
+	}
+}

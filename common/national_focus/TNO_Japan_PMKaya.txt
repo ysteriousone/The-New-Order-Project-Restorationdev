@@ -1,0 +1,40 @@
+#OLD TREE SYSTEM - DO NOT USE#
+#focus_tree = {
+	#id = japan_kaya_inital_tree
+	#country = {
+		#factor = 0
+		#modifier = {
+			#add = 10
+			#tag = JAP
+		#}
+	#}
+	#default = no
+	#shared_focus = JAP_kaya_time
+#}
+
+#focus_tree = {
+	#id = japan_kaya_second_tree
+	#country = {
+		#factor = 0
+		#modifier = {
+			#add = 10
+			#tag = JAP
+		#}
+	#}
+	#default = no
+	#shared_focus = JAP_kaya_we_survived
+#}
+
+
+#focus_tree = {
+	#id = JAP_kaya_reconstruction
+	#country = {
+		#factor = 0
+		#modifier = {
+			#add = 10
+			#tag = JAP
+		#}
+	#}
+	#default = no
+	#shared_focus = JAP_kaya_reconstruction_the_true_kokutai
+#}

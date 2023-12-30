@@ -1,0 +1,30 @@
+air_wings = {
+	5 = {
+		asw_helicopter_equipment_2 = {
+			owner = "RNW"
+			amount = 75
+		}
+		name = "1. Hubschrauber Angreifen"
+	}
+
+	86 = {
+		jet_tac_bomber_equipment_3 = {
+			owner = "RNW"
+			amount = 56
+		}
+		name = "1. Bombergeschwaders"
+
+		jet_fighter_equipment_2 = {
+			owner = "RNW"
+			amount = 150
+		}
+		name = "1. Kampfjets"
+
+		jet_interceptor_equipment_3 = {
+			owner = "RNW"
+			amount = 250
+		}
+		name = "1. Abfangjäger"
+
+	}
+}

@@ -1,0 +1,91 @@
+characters = {
+	TDF_Jose_Maria_Guzman = {
+		name = TDF_Jose_Maria_Guzman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TDF/Portrait_TDF_Maria_Guzman.dds"
+				small = "GFX_idea_Generic_Position_Vacant"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_JOSE_MARIA_GUZMAN_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_colonial_government_subtype
+			traits = { }
+			id = -1
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = TDF_Jose_Maria_Guzman_sec
+			allowed = { original_tag = TDF }
+			traits = {
+				security_minister
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	TDF_Ernesto_Manuel_Campos = {
+		name = TDF_Ernesto_Manuel_Campos
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TDF/Portrait_TDF_Ernesto_Manuel_Campos.dds"
+				small = "GFX_idea_TDF_Ernesto_Manuel_Campos_hog"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = TDF_Ernesto_Manuel_Campos_hog
+			allowed = { original_tag = TDF }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	TDF_Gregorio_Lloret = {
+		name = TDF_Gregorio_Lloret
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Generic_Position_Vacant"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = TDF_Gregorio_Lloret_for
+			allowed = { original_tag = TDF }
+			traits = {
+				foreign_minister
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	TDF_Tirso_Ranulfo_Brizuela = {
+		name = TDF_Tirso_Ranulfo_Brizuela
+		portraits = {
+			civilian = {
+				small = "GFX_idea_Generic_Position_Vacant"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = TDF_Tirso_Ranulfo_Brizuela_eco
+			allowed = { original_tag = TDF }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

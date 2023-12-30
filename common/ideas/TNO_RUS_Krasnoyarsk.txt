@@ -1,0 +1,71 @@
+ideas = {
+	country = {
+		KRS_wild_promises = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KRS_wild_promises"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KRS_Wild_Promises
+			modifier = {
+				stability_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				monthly_population = 0.1
+			}
+		}
+		KRS_military_guided_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KRS_military_guided_democracy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KRS_Military_Guided_Democracy
+			modifier = {
+				war_support_factor = 0.1
+				political_power_factor = -0.1
+				conscription_factor = 0.05
+			}
+		}
+		KRS_treasonous_traditions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KRS_treasonous_traditions"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KRS_Treasonous_Traditions
+			modifier = {
+				stability_factor = -0.1
+				army_org_factor = 0.10
+				planning_speed = -0.10
+			}
+		}
+		KRS_siberian_intelligentsia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KRS_siberian_intelligentsia"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				research_speed_factor = 0.05
+				command_power_gain_mult = -0.1
+			}
+		}
+	}
+}

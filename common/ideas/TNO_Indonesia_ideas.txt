@@ -1,0 +1,1300 @@
+### Indonesian ideas
+
+ideas = {
+	###############
+	# Country ideas
+	###############
+	country = {
+		INS_IKKC = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_IKKC"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_IKKC
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.1
+				political_power_gain = -0.1
+				conscription_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+
+		INS_Dwitungal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Dwitungal"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_Dwitungal
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				admin_program_cost_factor = 0.1
+			}
+		}
+
+		INS_Eight_Years_Development_Plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Eight_Years_Development_Plan"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_Eight_Years_Development_Plan
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				local_resources = 0.05
+				gdp_growth_modifier = 0.5
+				monthly_credit_rating_progress = 0.5
+
+			}
+		}
+		INS_The_Banteng_And_The_White_Crescent = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_The_Banteng_And_The_White_Crescent"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_The_Banteng_And_The_White_Crescent
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.01
+				consumer_goods_use_modifier = 0.10
+				monthly_population = 0.1
+				political_power_gain = 0.25
+				gdp_growth_modifier = 0.25
+			}
+		}
+		INS_A_Nation_Of_18000_Islands = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_A_Nation_Of_18000_Islands"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_A_Nation_Of_18000_Islands
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				taxable_population_modifier = -0.15
+			}
+		}
+		INS_Three_Militaries_One_Destiny = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Three_Militaries_One_Destiny"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_Three_Militaries_One_Destiny
+			removal_cost = -1
+
+			modifier = {
+				admin_efficiency_monthly_rate = -0.5
+				political_power_gain = -0.2
+				planning_speed = -0.15
+				max_planning_factor = -0.2
+				army_morale_factor = -0.1
+				land_doctrine_cost_factor = -0.2
+				air_doctrine_cost_factor = -0.2
+				free_production_units_modifier = 2
+			}
+		}
+
+		INS_The_Year_of_Living_Dangerously = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_The_Year_of_Living_Dangerously"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_The_Year_of_Living_Dangerously
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_weekly = -0.001
+				war_support_weekly = 0.001
+			}
+		}
+
+		INS_On_Land_Sea_and_Air = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_On_Land_Sea_and_Air"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_On_Land_Sea_and_Air
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				air_cas_efficiency = 0.05
+				experience_gain_army = 0.2
+				experience_gain_air = 0.3
+			}
+		}
+
+		INS_Tokyos_Lifeline = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Tokyos_Lifeline"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = INS_Tokyos_Lifeline
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.1
+				free_production_units_modifier = 2
+			}
+		}
+		
+
+		INS_idea_Honor_Above_All_Else = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_idea_Honor_Above_All_Else"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = IND_Indira_Officer_Proposal
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.10
+				experience_gain_army_factor = -0.05
+				planning_speed = -0.30
+				army_org_factor = -0.15
+				mobilization_speed = -0.05
+				max_command_power = -20
+				air_attack_factor = 0.20
+				air_defence_factor = 0.20
+			}
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+
+		INS_purge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_purge"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = VYT_Officer_Infighting
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.40
+				stability_weekly = 0.02
+			}
+		}
+
+		INS_purge1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_purge1"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = VYT_Officer_Infighting
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_weekly = 0.01
+			}
+		}
+
+		INS_Pertamina = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Pertamina"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = IRQ_oil_economy
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = 0.05
+				production_oil_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				local_resources_factor = 0.15
+			}
+		}
+
+		INS_heightened_japanese_suspicion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea INS_heightened_japanese_suspicion"}
+
+			picture = JAP_Army_Indocrination
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = 0.15
+				war_support_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+	}
+}
+
+###   Free Indonesia Ideas   ###
+ideas = {
+	###   Country Ideas   ###
+	country = {
+		FRI_spirit_of_1949 = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea FRI_spirit_of_1949"
+				TNO_improve_political_parties_policy_effectiveness_monthly_low = yes
+			}
+			on_remove = {
+				TNO_worsen_political_parties_policy_effectiveness_monthly_low = yes
+			}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = FRI_spirit_of_1949
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+				custom_modifier_tooltip = TNO_improve_political_parties_policy_effectiveness_monthly_low_tt
+				war_support_weekly = 0.02
+			}
+		}
+		FRI_growing_pains_rebel = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRI_growing_pains_rebel" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = FRI_growing_pains_rebel
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = -0.05
+				war_support_weekly = -0.01
+			}
+		}
+		FRI_government_of_administrators = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRI_government_of_administrators" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = FRI_government_of_administrators
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+				stability_weekly = 0.01
+			}
+		}
+		FRI_indian_ocean_connection = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRI_indian_ocean_connection" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = FRI_indian_ocean_connection
+			removal_cost = -1
+
+			modifier = {
+				gdp_growth_modifier = 0.12
+				production_speed_buildings_factor = 0.02
+				war_support_weekly = 0.007
+			}
+		}
+		FRI_the_romusha_issue = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_the_romusha_issue"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = x
+			removal_cost = -1
+
+			modifier = {
+				gdp_growth_modifier = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		FRI_the_romusha_issue1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_the_romusha_issue1"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = x
+			removal_cost = -1
+
+			modifier = {
+				gdp_growth_modifier = -0.10
+				stability_factor = -0.15
+				war_support_factor = -0.20
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		FRI_the_romusha_issue2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_the_romusha_issue2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = x
+			removal_cost = -1
+
+			modifier = {
+				gdp_growth_modifier = -0.075
+				stability_factor = -0.10
+				war_support_factor = -0.15
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		FRI_disorganized_forces = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_disorganized_forces"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MGN_army_bad
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				conscription_factor = -0.25
+			}
+		}
+
+		FRI_disorganized_forces1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_disorganized_forces1"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MGN_army_bad
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.10
+				conscription_factor = -0.25
+			}
+		}
+
+		FRI_disorganized_forces2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_disorganized_forces2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MGN_army_bad
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.10
+			}
+		}
+
+		FRI_the_free_indonesian_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_the_free_indonesian_army"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MGN_army_good
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.10
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		FRI_sutomos_plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_sutomos_plan"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_red
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.17
+			}
+		}
+
+		FRI_sutomos_plan1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_sutomos_plan1"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_red
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.17
+				army_speed_factor = 0.17
+			}
+		}
+
+		FRI_sutomos_plan2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_sutomos_plan2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_red
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.17
+				army_speed_factor = 0.17
+				recon_factor = 0.17
+			}
+		}
+
+		FRI_rijadis_strategy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_rijadis_strategy"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_blue
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.17
+			}
+		}
+
+		FRI_rijadis_strategy1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_rijadis_strategy1"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_blue
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.17
+				max_dig_in = 1
+			}
+		}
+
+		FRI_rijadis_strategy2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_rijadis_strategy2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_blue
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.17
+				max_dig_in = 1
+				army_morale_factor = 0.17
+			}
+		}
+
+		FRI_rijadis_strategy3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_rijadis_strategy3"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_blue
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.27
+				max_dig_in = 1
+				army_morale_factor = 0.27
+			}
+		}
+
+		FRI_rijadis_strategy4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_rijadis_strategy4"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_blue
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.30
+				max_dig_in = 1
+				army_morale_factor = 0.30
+			}
+		}
+
+		FRI_critical_supply_shortage = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_critial_supply_shortage"}
+
+			allowed = {
+				NOT = {
+					FRI = {
+						has_country_flag = FRI_have_supply_lines
+					}
+				}
+			}
+			allowed_civil_war = {always = yes}
+			picture = MAG_Supply_Depots
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = 0.20
+				out_of_supply_factor = 0.20
+				army_attack_factor = -0.05
+			}
+		}
+
+		FRI_Malayan_supply_lines = {
+			allowed = {
+				has_country_flag = FRI_have_supply_lines
+			}
+			allowed_civil_war = {always = yes}
+			picture = MAG_Supply_Depots
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.10
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				breakthrough_factor = 0.05
+				
+			}
+		}
+
+		FRI_smuggler_assistance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_smuggler_assistance"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_black_market_two
+			removal_cost = -1
+
+			modifier = {
+				attrition = -0.10
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.10
+			}
+		}
+
+		FRI_unified_supply_lines = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_unified_supply_lines"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MZB_USA_Lackluster_Infrastructures
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.20
+				out_of_supply_factor = -0.20
+			}
+		}
+
+		FRI_air_mail = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_air_mail"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = RUS_chita_airport
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.10
+				out_of_supply_factor = -0.10
+				no_supply_grace = 24
+			}
+		}
+
+		FRI_USA_backchannels = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_USA_backchannels"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = GER_american_advisors
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.10
+				command_power_gain = 0.20
+			}
+		}
+
+		FRI_USA_secure_supply_lines = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_USA_secure_supply_lines"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = SAW_USA_support
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.15
+			}
+		}
+
+		FRI_USA_saf_lessons = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_USA_saf_lessons"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = USA_GLD68_lessons_from_south_africa
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.10
+			}
+		}
+
+		FRI_100_day_campaign = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_100_day_campaign"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MGN_army_medium
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				army_infantry_attack_factor = 0.05
+				army_morale_factor = 0.30
+				land_reinforce_rate = 0.075
+			}
+		}
+
+		FRI_scaled_back_rations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_scaled_back_rations"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = ARL_spreading_famine
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.10
+				consumer_goods_use_modifier = -0.05
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		FRI_more_rations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_more_rations"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = federal_food_banks
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				war_support_weekly = 0.01
+				consumer_goods_use_modifier = 0.05
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		FRI_security_of_capture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_security_of_capture"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = DER_Preparing_The_Militias
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+
+		FRI_security_of_capture2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_security_of_capture2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = DER_Preparing_The_Militias
+			removal_cost = -1
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.3
+				amphibious_invasion = 0.10
+			}
+		}
+
+		FRI_landfall = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_landfall"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = CRN_Secured_Beachhead_Icon
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.02
+				army_infantry_attack_factor = 0.05
+			}
+		}
+
+		FRI_landfall2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_landfall2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = CRN_Established_Beachhead
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.02
+				army_infantry_attack_factor = 0.07
+				war_support_factor = 0.03
+			}
+		}
+
+		FRI_what_we_have = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_what_we_have"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MAD_benefits_of_the_lifted_blockade
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.03
+				local_resources_factor = 0.10
+				# min_export = -0.03
+			}
+		}
+
+		FRI_what_we_have2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_what_we_have2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = MAD_benefits_of_the_lifted_blockade
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				local_resources_factor = 0.10
+				# min_export = -0.05
+			}
+		}
+
+		FRI_preparations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_preparations"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_red
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = 10
+				mobilization_speed = 0.10
+			}
+		}
+
+		FRI_preparations2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_preparations2"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_red
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = 10
+				mobilization_speed = 0.1
+				surrender_limit = 0.15
+			}
+		}
+
+		FRI_preparations3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_preparations3"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KOM_plan_red
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = 10
+				mobilization_speed = 0.1
+				surrender_limit = 0.15
+				offence = 0.1
+				defence = 0.1
+			}
+		}
+
+		FRI_disruption = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_disruption"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_bezen_perrot_terror
+			removal_cost = -1
+
+			modifier = {
+				attrition = 0.05
+				army_org_factor = -0.05
+			}
+		}
+
+		FRI_disruption1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_disruption1"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_bezen_perrot_terror
+			removal_cost = -1
+
+			modifier = {
+				attrition = 0.10
+				army_org_factor = -0.10
+			}
+		}
+		FRI_The_German_hand = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_disruption1"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_bezen_perrot_terror
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.03
+				army_attack_factor = 0.03
+			}
+		}
+		
+		FRI_fuel_war_machine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FRI_fuel_war_machine"}
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_bezen_perrot_terror
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		#GUI IDEAS PLEASE DON'T SELF DELETE THIS TIME
+		INS_Military_Purge_I = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Purge_I"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = TUR_Army_Loyality_-1
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				training_time_factor = 0.05
+				conscription_factor = -0.01
+			}
+		}
+		INS_Military_Purge_II = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Purge_II"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = TUR_Army_Loyality_-1
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.50
+				stability_factor = 0.10
+				war_support_factor = -0.10
+				training_time_factor = 0.10
+				conscription_factor = -0.03
+			}
+		}
+		INS_Military_Purge_III = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Purge_III"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = TUR_Army_Loyality_-1
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.75
+				stability_factor = 0.15
+				war_support_factor = -0.15
+				training_time_factor = 0.15
+				conscription_factor = -0.06
+			}
+		}
+		INS_Military_Purge_IV = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Purge_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = TUR_Army_Loyality_-1
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 1
+				stability_factor = 0.20
+				war_support_factor = -0.20
+				training_time_factor = 0.20
+				conscription_factor = -0.10
+			}
+		}
+		INS_Military_Concession_I = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Concession_I"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KRS_Military_Guided_Democracy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				training_time_factor = -0.05
+			}
+		}
+		INS_Military_Concession_II = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Concession_II"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KRS_Military_Guided_Democracy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.50
+				training_time_factor = -0.10
+				conscription_factor = 0.03
+			}
+		}
+		INS_Military_Concession_III = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Concession_III"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KRS_Military_Guided_Democracy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.75
+				training_time_factor = -0.15
+				conscription_factor = 0.06
+			}
+		}
+		INS_Military_Concession_IV = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_Concession_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = KRS_Military_Guided_Democracy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -1
+				training_time_factor = -0.20
+				conscription_factor = 0.10
+				experience_gain_army_factor = 0.10
+			}
+		}
+		INS_Political_Purge_I = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Purge_I"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = IRK_bureaucracy_purged
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.50
+				stability_factor = -0.10
+				war_support_factor = 0.10
+			}
+		}
+		INS_Political_Purge_II = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Purge_II"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = IRK_bureaucracy_purged
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 1
+				stability_factor = -0.15
+				war_support_factor = 0.15
+			}
+		}
+		INS_Political_Purge_III = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Purge_III"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = IRK_bureaucracy_purged
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 1.5
+				stability_factor = -0.20
+				war_support_factor = 0.20
+			}
+		}
+		INS_Political_Purge_IV = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Purge_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = IRK_bureaucracy_purged
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 2
+				stability_factor = -0.25
+				war_support_factor = 0.25
+				industrial_capacity_factory = 0.10
+			}
+		}
+		INS_Political_Concession_I = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Concession_I"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = generic_scales
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		INS_Political_Concession_II = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Concession_II"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = generic_scales
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -1
+				stability_factor = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+		INS_Political_Concession_III = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Concession_III"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = generic_scales
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -1.5
+				stability_factor = 0.20
+				research_speed_factor = 0.20
+			}
+		}
+		INS_Political_Concession_IV = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_Concession_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = generic_scales
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -2
+				stability_factor = 0.25
+				research_speed_factor = 0.25
+				industrial_capacity_factory = -0.10
+			}
+		}
+		INS_SKN_Purge_I = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Purge_I"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = HUN_Suffocated_Economy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				consumer_goods_use_modifier = 0.02
+			}
+		}
+		INS_SKN_Purge_II = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Purge_II"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = HUN_Suffocated_Economy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.50
+				stability_factor = 0.10
+				production_speed_buildings_factor = -0.10
+				consumer_goods_use_modifier = 0.04
+			}
+		}
+		INS_SKN_Purge_III = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Purge_III"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = HUN_Suffocated_Economy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.75
+				stability_factor = 0.15
+				production_speed_buildings_factor = -0.15
+				consumer_goods_use_modifier = 0.06
+			}
+		}
+		INS_SKN_Purge_IV = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Purge_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = HUN_Suffocated_Economy
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 1
+				stability_factor = 0.20
+				production_speed_buildings_factor = -0.20
+				consumer_goods_use_modifier = 0.10
+				local_resources_factor = -0.10
+			}
+		}
+		INS_SKN_Concession_I = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Concession_I"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_black_market_payments
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				production_speed_buildings_factor = 0.05
+				consumer_goods_use_modifier = -0.02
+			}
+		}
+		INS_SKN_Concession_II = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Concession_II"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_black_market_payments
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.50
+				production_speed_buildings_factor = 0.10
+				consumer_goods_use_modifier = -0.04
+			}
+		}
+		INS_SKN_Concession_III = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Concession_III"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_black_market_payments
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.75
+				production_speed_buildings_factor = 0.15
+				consumer_goods_use_modifier = -0.06
+			}
+		}
+		INS_SKN_Concession_IV = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Concession_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = BRT_black_market_payments
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -1
+				production_speed_buildings_factor = 0.20
+				consumer_goods_use_modifier = -0.10
+				local_resources_factor = 0.10
+			}
+		}
+	}
+	hidden_ideas = {
+		INS_Military_GUI_Buttons_timeout = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Military_GUI_Buttons_timeout"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		INS_SKN_GUI_Buttons_timeout = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_GUI_Buttons_timeout"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		INS_Political_GUI_Buttons_timeout = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_Political_GUI_Buttons_timeout"}
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}
+
+###   Misc Ideas   ###
+ideas = {
+	###   Jogjakarta   ###
+	country = {
+		JJK_sultans_neutrality = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea INS_SKN_Concession_IV"}
+
+			allowed = {always = no}
+			allowed_civil_war = {always = yes}
+			picture = JJK_sultans_neutrality
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+	}
+}

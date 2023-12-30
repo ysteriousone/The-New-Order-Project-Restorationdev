@@ -1,0 +1,449 @@
+ideas = {
+	country = {
+
+		USA_SAF_WAR_NPP_General_Bonus = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_NPP_General_Bonus"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		USA_SAF_WAR_NPP_Stable_Front = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_NPP_Stable_Front"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				max_dig_in = 0.15
+				dig_in_speed_factor = 0.15
+				army_defence_factor = 0.1
+			}
+		}
+
+		USA_SAF_WAR_NPP_fluid_front = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_NPP_fluid_front"}
+			allowed = {
+				always = no
+			}
+			picture = GER_evacuating_loyalists
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_speed_factor = 0.1
+				attrition = -0.1
+			}
+		}
+
+		USA_SAF_WAR_Expanded_Role_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Expanded_Role_1"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+		USA_SAF_WAR_Expanded_Role_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Expanded_Role_2"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		USA_SAF_WAR_Expanded_Role_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Expanded_Role_3"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				industrial_capacity_factory = 0.1
+				air_strategic_bomber_agility_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.15
+			}
+		}
+
+		USA_SAF_WAR_RD_Firebombing_Idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_Firebombing_Idea"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				air_strategic_bomber_attack_factor = 0.1
+				air_strategic_bomber_defence_factor = 0.1
+				air_strategic_bomber_agility_factor = 0.1
+				air_strategic_bomber_bombing_factor = 0.15
+			}
+		}
+
+		USA_SAF_WAR_RD_Firebombing_Idea_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_Firebombing_Idea_2"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				air_strategic_bomber_attack_factor = 0.2
+				air_strategic_bomber_defence_factor = 0.2
+				air_strategic_bomber_agility_factor = 0.2
+				air_strategic_bomber_bombing_factor = 0.25
+			}
+		}
+
+		USA_SAF_WAR_RD_CORDS_Mission_One = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_CORDS_Mission_One"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = -0.05
+				stability_weekly = 0.01
+				weekly_manpower = 200
+			}
+		}
+
+		USA_SAF_WAR_RD_CORDS_Mission_Two = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_CORDS_Mission_Two"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = -0.2
+				war_support_weekly = 0.01
+				weekly_manpower = 50
+			}
+		}
+
+		USA_SAF_WAR_RD_CORDS_PHEANOIX_Idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_CORDS_PHEANOIX_Idea"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.1
+				supply_consumption_factor = -0.1
+			}
+		}
+
+		USA_SAF_WAR_RD_CORDS_PHEANOIX_Idea_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_CORDS_PHEANOIX_Idea_2"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.1
+				supply_consumption_factor = -0.1
+				surrender_limit = 0.1
+			}
+		}
+
+		USA_SAF_WAR_RD_CORDS_PHEANOIX_Idea_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_RD_CORDS_PHEANOIX_Idea_3"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				army_defence_factor = 0.1
+				supply_consumption_factor = -0.1
+				surrender_limit = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+
+
+		USA_SAF_WAR_Insurgency_Devil_Dogs = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Devil_Dogs"}
+			allowed = {
+				always = no
+			}
+			picture = USA_unrestrained_troops
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = -0.15
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+
+
+		USA_SAF_WAR_Insurgency_Napalm = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Napalm"}
+			allowed = {
+				always = no
+			}
+			picture = USA_napalm
+			removal_cost = -1
+
+			modifier = {
+				resistance_damage_to_garrison = -0.1
+				war_support_factor = 0.05
+				air_air_superiority_attack_factor = 0.15
+			}
+		}
+
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_1"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_1
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.01
+				war_support_factor = -0.01
+				political_power_gain = -0.025
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_2"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_2
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.02
+				war_support_factor = -0.02
+				political_power_gain = -0.05
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_3"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_3
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.04
+				war_support_factor = -0.04
+				political_power_gain = -0.1
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_4"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_4
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.06
+				war_support_factor = -0.06
+				political_power_gain = -0.15
+				conscription_factor = -0.005
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_5"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_5
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.09
+				war_support_factor = -0.09
+				political_power_gain = -0.2
+				conscription_factor = -0.01
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_6 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_6"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_6
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = -0.15
+				political_power_gain = -0.25
+				conscription_factor = -0.02
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_7 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_7"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_7
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.18
+				war_support_factor = -0.2
+				political_power_gain = -0.3
+				conscription_factor = -0.04
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_8 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_8"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_8
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.23
+				war_support_factor = -0.25
+				political_power_gain = -0.35
+				conscription_factor = -0.07
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_9 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_9"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_9
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.35
+				political_power_gain = -0.4
+				conscription_factor = -0.12
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.15
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_Domestic_Discontent_10 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Domestic_Discontent_10"}
+			allowed = {
+				always = no
+				has_country_flag = USA_SAF_WAR_Insurgency_Activated
+			}
+			picture = USA_domestic_discontent_10
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.5
+				political_power_gain = -0.5
+				conscription_factor = -0.2
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.25
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+			}
+		}
+
+
+		USA_SAF_WAR_Insurgency_Expand_Outreach = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_Expand_Outreach"}
+			allowed = {
+				always = no
+			}
+			picture = USA_african_outreach_programs
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.01
+			}
+		}
+
+		USA_SAF_WAR_Insurgency_The_Whole_Being_Dead_Thing_Beetlejuice_For_Life_Mother_Fuckers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_SAF_WAR_Insurgency_The_Whole_Being_Dead_Thing_Beetlejuice_For_Life_Mother_Fuckers"}
+			allowed = {
+				always = no
+			}
+		#picture =
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_weekly = 0.01
+				war_support_weekly = 0.005
+			}
+		}
+####################################################################################
+
+	}
+}

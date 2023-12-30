@@ -1,0 +1,91 @@
+spriteTypes = {
+	# Madagan
+		# WerBell
+			spriteType = {
+				name = "GFX_MAG_economic_development_werbell"
+				texturefile = "gfx/interface/decisions/decision_images/MAG_economic_development_werbell.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_base_development_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_base_development_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_base_development"
+				texturefile = "gfx/interface/decisions/decision_werbell_base_development.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_base_combat_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_base_combat_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_combat_unit"
+				texturefile = "gfx/interface/decisions/decision_werbell_combat_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_command_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_command_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_command_unit"
+				texturefile = "gfx/interface/decisions/decision_werbell_command_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_intel_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_intel_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_intel_unit"
+				texturefile = "gfx/interface/decisions/decision_werbell_intel_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_medical_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_medical_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_medical_unit"
+				texturefile = "gfx/interface/decisions/decision_werbell_medical_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_rd_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_rd_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_rd_unit"
+				texturefile = "gfx/interface/decisions/decision_werbell_rd_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_staff_recruitment"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_staff_recruitment.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_staff_recruitment"
+				texturefile = "gfx/interface/decisions/decision_werbell_staff_recruitment.dds"
+			}
+			spriteType = {
+				name = "GFX_idea_MAG_econ_werbell_support_unit"
+				texturefile = "gfx/interface/ideas/national_spirits/idea_MAG_econ_werbell_support_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_support_unit"
+				texturefile = "gfx/interface/decisions/decision_werbell_support_unit.dds"
+			}
+			spriteType = {
+				name = "GFX_MAG_decision_werbell_brig"
+				texturefile = "gfx/interface/decisions/decision_werbell_brig.dds"
+			}
+			
+	#Amur
+	spriteType = {
+		name = "GFX_decision_category_Amur_development"
+		texturefile = "gfx/interface/decisions/decision_images/AMR_decision_category_development.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AMR_Sphere_Training_ground"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AMR_sphere_training_ground.dds"
+	}		
+	spriteType = {
+		name = "GFX_idea_AMR_oil_for_food_picture"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AMR_oil_for_food.dds"
+	}		
+	
+}

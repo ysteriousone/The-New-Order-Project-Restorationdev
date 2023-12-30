@@ -1,0 +1,37 @@
+focus_tree = {
+	id = tno_orenburg_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ORE
+		}
+	}
+	default = no
+	shared_focus = ORE_the_fifty_seventh_congress
+}
+
+focus_tree = {
+	id = tno_orenburg_tree_blank
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ORE
+		}
+	}
+	default = no
+	focus = {
+		id = ORE_blank
+		icon = GFX_unknown
+		cost = 5
+		x = 1000
+		y = 1000
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus ORE_the_matter_of_trade_security"
+		}
+	}
+}

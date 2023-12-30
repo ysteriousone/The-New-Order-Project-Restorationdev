@@ -1,0 +1,54 @@
+﻿l_english:
+
+ ###########
+ ##Parties##
+ ###########
+ CYL_communist_party:0 "LTTE"
+ CYL_communist_party_long:0 "Liberation Tigers of Tamil Eelam"
+ CYL_socialist_party:0 "MEP"
+ CYL_socialist_party_long:0 "Mahajana Eksath Peramuna"
+ CYL_progressivism_party:0 "SLFP"
+ CYL_progressivism_party_long:0 "Sri Lanka Freedom Party"
+ CYL_liberalism_party:0 "Federal Party"
+ CYL_liberalism_party_long:0 "Federal Party"
+ CYL_liberal_conservatism_party_long:0 "United National Party"
+ CYL_liberal_conservatism_party:0 "UNP"
+ CYL_conservatism_party:0 "UNP"
+ CYL_conservatism_party_long:0 "United National Party"
+ CYL_paternalism_party:0 "ITAK"
+ CYL_paternalism_party_long:0 "Illankai Tamil Arasu Kachchi"
+ CYL_paternalism_party_OFN:0 "OFN Administration"
+ CYL_paternalism_party_OFN_long:0 "Organization of Free Nations Administration"
+ 
+ ################
+ ##Leader Descs##
+ ################
+
+ CYL_dudley_senanayake:0 "Dudley Senanayake"
+ CYL_swrd_bandaranaike:0 "S.W.R.D. Bandaranaike"
+ CYL_dr_nm_perera:0 "Dr. N. M. Perera"
+ CYL_bala_tampoe:0 "Bala Tampoe"
+
+ POLITICS_WILLIAM_GOPALLAWA_DESC:0 "If one term could be used to describe William Gopallawa, it would be a man of the people. Almost universally popular among the people of Sri Lanka, it is no surprise that he was appointed its first President unanimously. But Gopallawa, like many, has humble roots.\n\nBorn in 1896, his first foray into the political field was on the Urban Council in Mathale, where he served for 13 years until 1939, as the youngest Urban Commission Chairman in British Ceylon. However, after Mathale, Gopallawa received a promotion, when he was appointed the first Municipal Commissioner of the former capital city of Kandy. Suddenly, Gopallawa, who had been known very little outside of Mathale, became the talk of the town.\n\nGopallawa held to his career, even as the Second World War ravaged Asia and the INA marched into Calcutta. However, when the British regime fell, and they retreated from India, Gopallawa did as his ancestors did, and brought the island of Ceylon under the protection of the closest greater nation: the newly-founded Republic of India.\n\nIn the years since, Gopallawa has served as the Municipal Commissioner of Colombo throughout the 1950s, and, most recently, as Speaker of the Lankan Autonomous District Council. Now, though, Sri Lanka is free, and it is up to him to guide it."
+ POLITICS_DUDLEY_SENANAYAKE_DESC: "For Dudley Shelton Senanayake, political life was not his first choice, but thanks to his family, an opportunity appeared for an extended career. Born into the prestigious Senanayake family and the eldest son of Don Stephen Senanayake, Dudley's education saw him gradually turn to a path in Ceylon's judicial system.\n\nYet, his father's desire to have his son join politics saw him rise to the State Council in 1936 and oversee the development of Dedigama as State Councillor for over ten years. During the debate on sovereignty in the 1940s, Dudley supported his father's choice of preferring Dominion status for Ceylon, yet did not join his father in resignation and earned the position of Minister of Agriculture and Lands, formerly held by his father. He kept this position after his father won the 1947 elections and served in this function until his father died unexpectedly in 1952. To the surprise of many, Dudley was chosen as prime minister by the Governor-General over his cousin Sir John Kotelawala, while he successfully led the UNP in the elections of 1952, he stepped down as Prime Minister the following year.\n\nHowever, Dudley returned to politics in 1957 after the failures of the elections and returned the UNP to the majority in the 1960 elections. Despite his success, the issues facing Ceylon have not become less during his term, educational reforms and economic steadiness have been adequate, but the Sinhala matter and closer ties to India have caused minor unrest within the country. Ultimately, his career lies with the success of his policies, and whether he will bring victory or defeat in the next elections remains to be seen."
+ 
+ #########
+ ##Ideas##
+ #########
+ 
+ ##########
+ ##Events##
+ ##########
+
+ #Tooltips
+ SRI_OFN_begin_economic_development_tt:0 "We will begin economically developing Ceylon, while tying it economically to America."
+ SRI_OFN_trade:0 "Increased trade with the USA will cause an economic boom!"
+ SRI_OFN_corporate:0 "Inviting American corporations will prove a boon for our economy."
+ SRI_OFN_support_elites:0 "Financial support for Ceylonese elites, while somewhat expensive, will significantly improve the stability of our administration."
+ SRI_OFN_investments:0 "Our GDP will increase as a result of American investments."
+ SRI_OFN_joint_ventures:0 "Our GDP will increase as a result of cooperation between American and Ceylonese capitalists."
+ SRI_OFN_american_arms_makers:0 "Inviting American arms manufacturers to set up in Ceylon will help us send arms to the freedom fighters of Asia."
+ SRI_OFN_arm_azad_hind_rebels:0 "Will give America further options to arm rebels in Azad Hind-controlled territory."
+ SRI_OFN_arm_burmese_rebels:0 "Will give America further options to arm rebels in Burmese-controlled territory."
+ SRI_OFN_arm_asia_rebels:0 "Will give America further options to arm rebels across the Sphere."
+ 

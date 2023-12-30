@@ -1,0 +1,555 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_COG_OFN_Legacy_Zentralafrikaner_System"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_OFN_COG_legacy_of_the_zentralafrikaner_system.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_OFN_Unhappy_Investors"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_OFN_COG_unhappy_investors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_OFN_Manace_of_Cameroon"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_OFN_COG_manace_of_cameroon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_COG_hunting_season"
+		texturefile = "gfx/interface/decisions/decision_images/COG_category_hunting_season.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_COG_internal_relations"
+		texturefile = "gfx/interface/decisions/decision_images/COG_category_internal_relations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_COG_welcome_in_the_heart_of_afrika"
+		texturefile = "gfx/interface/decisions/decision_images/COG_category_welcome_in_the_heart_of_afrika.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_COG_the_mercs"
+		texturefile = "gfx/interface/decisions/decision_images/COG_category_the_mercs.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_COG_heart_of_afrika_0"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_heart_of_afrika_0.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_heart_of_afrika_1"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_heart_of_afrika_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_heart_of_afrika_2"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_heart_of_afrika_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_heart_of_afrika_3"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_heart_of_afrika_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_heart_of_afrika_4"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_heart_of_afrika_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_heart_of_afrika_5"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_heart_of_afrika_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_COG_cameroon_defense_plan"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_COG_cameroon_defense_plan.dds"
+	}
+	
+	#######################################
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Blacklist_the_African_SS"
+		texturefile = "gfx/interface/goals/OFN_COG_Blacklist_the_African_SS.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Our_Friends_At_Standard_Oil"
+		texturefile = "gfx/interface/goals/OFN_COG_Our_Friends_At_Standard_Oil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Promote_African_Ventures"
+		texturefile = "gfx/interface/goals/OFN_COG_Promote_African_Ventures.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_The_Central_African_Consortium"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Central_African_Consortium.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_The_Leopoldville_Committee"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Leopoldville_Committee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Figure_Out_the_Natives"
+		texturefile = "gfx/interface/goals/OFN_COG_Figure_Out_the_Natives.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Meet_Kasa_Vubu"
+		texturefile = "gfx/interface/goals/OFN_COG_Meet_Kasa_Vubu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Call_Mobutu"
+		texturefile = "gfx/interface/goals/OFN_COG_Call_Mobutu.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_The_Cameroonian_Issue"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Cameroonian_Issue.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_Meet_Mba"
+		texturefile = "gfx/interface/goals/OFN_COG_Meet_Mba.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_The_Central_African_Administration"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Central_African_Administration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_The_Abrams_Plan"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Abrams_Plan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_OFN_COG_The_New_Smiling_Man"
+		texturefile = "gfx/interface/goals/OFN_COG_The_New_Smiling_Man.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Blacklist_the_African_SS_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Blacklist_the_African_SS.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Blacklist_the_African_SS.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Blacklist_the_African_SS.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Our_Friends_At_Standard_Oil_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Our_Friends_At_Standard_Oil.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Our_Friends_At_Standard_Oil.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Our_Friends_At_Standard_Oil.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Promote_African_Ventures_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Promote_African_Ventures.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Promote_African_Ventures.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Promote_African_Ventures.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_The_Central_African_Consortium_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Central_African_Consortium.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Central_African_Consortium.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Central_African_Consortium.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_The_Leopoldville_Committee_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Leopoldville_Committee.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Leopoldville_Committee.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Leopoldville_Committee.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Figure_Out_the_Natives_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Figure_Out_the_Natives.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Figure_Out_the_Natives.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Figure_Out_the_Natives.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Meet_Kasa_Vubu_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Meet_Kasa_Vubu.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Meet_Kasa_Vubu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Meet_Kasa_Vubu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Call_Mobutu_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Call_Mobutu.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Call_Mobutu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Call_Mobutu.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_The_Cameroonian_Issue_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Cameroonian_Issue.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Cameroonian_Issue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Cameroonian_Issue.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_Meet_Mba_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_Meet_Mba.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Meet_Mba.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_Meet_Mba.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_The_Abrams_Plan_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Abrams_Plan.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Abrams_Plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Abrams_Plan.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_The_Central_African_Administration_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_The_Central_African_Administration.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Central_African_Administration.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_Central_African_Administration.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_goal_OFN_COG_The_New_Smiling_Man_shine"
+		texturefile = "gfx/interface/goals/OFN_COG_The_New_Smiling_Man.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_New_Smiling_Man.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/OFN_COG_The_New_Smiling_Man.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	##<- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,8 @@
+VIN_Vietcong = {
+	icon = GFX_decision_generic_civil_support
+	picture = GFX_decision_category_VIN_Vietcong_Pic
+	allowed = { tag = VIN }
+	visible = {
+		always = yes
+	}
+}

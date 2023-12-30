@@ -1,0 +1,136 @@
+﻿division_template = {
+	name = "Piyade Tumeni"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Dag Tugayi"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Topcu Tugayi"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Motorlu Tumen"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Zirhli Tugay"
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 0 y = 1 }
+		IFV = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 11747
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 11747
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 3951
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 6871
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 11829
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 7513
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 12473
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Dorduncu Piyade Tugayi"
+		location = 11853
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Onaltinci Motorlu Tumeni"
+		location = 4512
+		division_template = "Motorlu Tumen"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Yirminci Motorlu Tumeni"
+		location = 12473
+		division_template = "Motorlu Tumen"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Yetmisinci Piyade Tugayi"
+		location = 4111
+		division_template = "Piyade Tumeni"
+		start_experience_factor = 0.2
+	}
+}

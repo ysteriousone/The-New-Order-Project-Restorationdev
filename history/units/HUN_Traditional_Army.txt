@@ -1,0 +1,16 @@
+﻿units = {
+	division = {
+		name = "Gyalog Osztaly"
+		location = 6571
+		division_template = "Gyalog Osztaly"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Gyalog Osztaly"
+		location = 9660
+		division_template = "Gyalog Osztaly"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+}

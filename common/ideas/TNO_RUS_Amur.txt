@@ -1,0 +1,558 @@
+ideas = {
+	country = {
+		AMR_rusfascist_stronghold = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_rusfascist_stronghold"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_Russian_Fascist_Stronghold
+			modifier = {
+				defence = 0.05
+				army_morale_factor = 0.1
+				stability_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		AMR_paranoid_vozhd_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_paranoid_vozhd_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_The_Paranoid_Vozhd
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				conscription_factor = -0.025
+				conscription = -0.05
+				army_org_factor = -0.1
+				training_time_factor = 0.1
+				army_morale_factor = -0.1
+			}
+		}
+		AMR_paranoid_vozhd_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_paranoid_vozhd_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_The_Paranoid_Vozhd
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = -0.02
+				conscription = -0.035
+				army_org_factor = -0.05
+				training_time_factor = 0.1
+				army_morale_factor = -0.05
+			}
+		}
+		AMR_paranoid_vozhd_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_paranoid_vozhd_3"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_The_Paranoid_Vozhd
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				army_org_factor = -0.025
+				conscription_factor = -0.01
+				conscription = -0.025
+				training_time_factor = 0.035
+				army_morale_factor = -0.025
+			}
+		}
+		AMR_true_vozhd = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_true_vozhd"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_The_One_True_Vozhd
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				army_org_factor = 0.035
+				army_morale_factor = 0.025
+				political_power_gain = 0.15
+			}
+		}
+		AMR_supreme_council_purge = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_supreme_council_purge"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KRS_Treasonous_Traditions
+			modifier = {
+				army_morale_factor = -0.1
+				army_org_factor = -0.2
+				max_planning = -0.15
+				stability_factor = -0.15
+				political_power_gain = 0.5
+			}
+		}
+		AMR_secret_police = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_secret_police"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = shadow_economy
+			modifier = {
+				decryption_factor = 0.15
+				encryption_factor = 0.15
+				recon_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		AMR_corporate_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_corporate_state"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = heavy_industrial_zone
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industry_repair_factor = 0.5
+				production_speed_buildings_factor = 0.035
+			}
+		}
+		AMR_free_russian_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_free_russian_army"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_Russia_Free_Army
+			modifier = {
+				conscription_factor = 0.035
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_cost_modifier = -0.1
+			}
+		}
+		AMR_free_russian_army_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_free_russian_army_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_Russia_Free_Army
+			modifier = {
+				conscription_factor = 0.035
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		AMR_defensive_redoubts = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_defensive_redoubts"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_Defensive_Redoubts
+			modifier = {
+				army_defence_factor = 0.05
+				attrition = -0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		AMR_blackshirt_divisions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_blackshirt_divisions"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IRK_frontline_commissars_alt
+			modifier = {
+				resistance_damage_to_garrison = -0.1
+				recon_factor = 0.05
+				army_morale_factor = -0.1
+			}
+		}
+		AMR_nerchinsk_mines = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_nerchinsk_mines"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ffr_precious_metals
+			modifier = {
+				misc_income_modifier = 0.03
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		AMR_nerchinsk_mines_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_nerchinsk_mines"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ffr_precious_metals
+			modifier = {
+				misc_income_modifier = 0.05
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		AMR_advisors_japanese = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_advisors_japanese"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_Japanese_Advisors
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		AMR_commandos = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_commandos"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = YOR_benevolent_dictatorship
+			modifier = {
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				supply_consumption_factor = -0.15
+				no_supply_grace = 24
+			}
+		}
+		AMR_idea_lessons_from_the_ice_march = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_idea_lessons_from_the_ice_march"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = TNO_winter_soldier
+			modifier = {
+				attrition = -0.1
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.2
+			}
+		}
+		AMR_idea_against_the_union = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_idea_against_the_union"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_plan_red
+			modifier = {
+				#enemy_#partisan_effect = -0.1
+				army_morale_factor = 0.05
+			}
+			targeted_modifier = { tag = IRK attack_bonus_against = 0.075 }
+		}
+		AMR_idea_against_the_idealists = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_idea_against_the_idealists"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_plan_red
+			modifier = {
+				#enemy_#partisan_effect = -0.1
+				army_morale_factor = 0.05
+			}
+			targeted_modifier = { tag = BRY attack_bonus_against = 0.075 }
+		}
+		AMR_idea_against_the_heretic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_idea_against_the_heretic"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GAY_Armour_of_God
+			modifier = {
+				#enemy_#partisan_effect = -0.1
+				army_morale_factor = 0.05
+			}
+			targeted_modifier = { tag = OMO attack_bonus_against = 0.075 }
+		}
+		AMR_quality_in_quantity_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_quality_in_quantity_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MAD_german_garrisons_3
+			modifier = {
+				conscription = 0.005
+				army_morale_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		AMR_quality_in_quantity_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_quality_in_quantity_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MAD_german_garrisons_3
+			modifier = {
+				conscription = 0.01
+				army_morale_factor = 0.1
+				army_cost_modifier = -0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		AMR_a_modern_army_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_quality_in_quantity_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GOR_Armor_Expertise
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+			}
+			equipment_bonus = {
+				MBT_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				IFV_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		AMR_a_modern_army_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_quality_in_quantity_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GOR_Armor_Expertise
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+			}
+			equipment_bonus = {
+				MBT_chassis = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				IFV_chassis = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		AMR_brown_book = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_brown_book"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_brown_book
+			modifier = {
+				stability_factor = 0.075
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		AMR_resources_to_japan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_resources_to_japan"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = WAL_stop_resource_reliance
+			modifier = {
+				consumer_goods_use_modifier = 0.03
+				local_resources_factor = -0.10
+				trade_opinion_factor = 0.15
+			}
+		}
+		AMR_Sphere_training_ground = {
+			allowed = {
+				always = no
+			}
+			picture = AMR_Sphere_Training_ground
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = { weekly_manpower = 300 }
+		}
+		
+		AMR_the_german_model_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_the_german_model_idea"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_The_German_Model2
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				research_speed_factor = -0.05
+				stability_factor = -0.1
+				war_support_factor = -0.05
+			}
+		}
+		AMR_rusfascist_stronghold_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_rusfascist_stronghold"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AMR_Russian_Fascist_Stronghold
+			modifier = {
+				defence = 0.05
+				army_morale_factor = 0.1
+				stability_factor = 0.15
+				political_power_gain = 0.15
+			}
+		}
+	}
+
+	hidden_ideas = {
+		AMR_proud_russian_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AMR_proud_russian_industry"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				free_production_units_modifier = 1
+			}
+		}
+	}
+}

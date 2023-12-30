@@ -1,0 +1,2031 @@
+### provisional PG focus file org
+### change this to a proper one later
+
+### INDEX
+### 1.0 UCW Tree
+### 2.0 Post-War Tree
+### 2.1 SPIVAVTOR ELECTION TREE
+### 2.2 Culturalist Election Tree
+### 2.3 United Struggle Election Tree
+
+shared_focus = { # A Republic, from the Ashes
+	id = FUK_another_1917
+	icon = GFX_UKR_Another_1917
+	cost = 2
+
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_another_1917"
+		add_war_support = 0.05
+		add_command_power = 15
+		custom_effect_tooltip = FUK_Another_1917_tt
+		hidden_effect = {
+			country_event = FUK_civ_war.1
+		}
+	}
+}
+
+shared_focus = { # Scramble the militias
+	id = FUK_scramble_the_militias
+	icon = GFX_INS_deploy_the_militia
+	cost = 2
+
+	relative_position_id = FUK_another_1917
+
+	prerequisite = {
+		focus = FUK_another_1917
+	}
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_scramble_the_militias"
+		add_manpower = 10000
+		country_event = FUK_civ_war.2
+	}
+}
+
+shared_focus = { # The Scraps of the Pipeline
+	id = FUK_scraps_of_the_pipeline
+	icon = GFX_MGN_Reward_the_Bandits
+	cost = 2
+
+	relative_position_id = FUK_another_1917
+
+	prerequisite = {
+		focus = FUK_another_1917
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_scraps_of_the_pipeline"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 750
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 750
+		}
+		swap_ideas = {
+			remove_idea = FUK_foreign_supply_bases
+			add_idea = FUK_idea_scraps_of_the_pipeline
+		}
+	}
+}
+
+shared_focus = { # Borovet's 100, Alone No More
+	id = FUK_borovets_100_alone_no_more
+	icon = GFX_YUN_Every_Man_A_Soldier
+	cost = 2
+
+	relative_position_id = FUK_scramble_the_militias
+
+	prerequisite = {
+		focus = FUK_scramble_the_militias
+	}
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_borovets_100_alone_no_more"
+		add_ideas = FUK_legacy_of_the_one_hundred
+		set_temp_variable = { var_partisan_support_temp = 15 }
+		FUK_partisan_support_change = yes
+		TNO_improve_military_supervision_policy_effectiveness_monthly_low = yes
+		TNO_improve_training_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = { # The Populism of the Culturalists
+	id = FUK_masses_behind_us
+	icon = GFX_GER_Millions_Anger
+	cost = 2
+
+	relative_position_id = FUK_scramble_the_militias
+
+	prerequisite = {
+		focus = FUK_scramble_the_militias
+	}
+
+	prerequisite = {
+		focus = FUK_scraps_of_the_pipeline
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_masses_behind_us"
+		set_temp_variable = { var_populist_support_temp = 15 }
+		FUK_populist_support_change = yes
+		country_event = FUK_civ_war.3
+		add_manpower = 20000
+		add_stability = 0.1
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_low = yes
+		TNO_improve_draft_exemptions_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = { # A New Job for Ohloblyn's Men
+	id = FUK_a_new_job_for_ohloblyns_men
+	icon = GFX_MAG_A_Mercenary_Force
+	cost = 2
+
+	relative_position_id = FUK_scraps_of_the_pipeline
+
+	prerequisite = {
+		focus = FUK_scraps_of_the_pipeline
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_a_new_job_for_ohloblyns_men"
+		set_temp_variable = { var_collaborator_support_temp = 15 }
+		FUK_collaborator_support_change = yes
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Mekhanizovana Dyviziya\" division_template = \"Mekhanizovana Dyviziya\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		hidden_effect = {
+			country_event = { id = FUK_civ_war.4 days = 4 }
+		}
+	}
+}
+
+shared_focus = { # The Pollisian Guard, Mighty and Strong
+	id = FUK_UNRA_united_and_strong
+	icon = GFX_focus_MAD_freedom_must_be_found
+	cost = 2
+
+	relative_position_id = FUK_borovets_100_alone_no_more
+
+	prerequisite = {
+		focus = FUK_borovets_100_alone_no_more
+	}
+
+	prerequisite = {
+		focus = FUK_masses_behind_us
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_UNRA_united_and_strong"
+		swap_ideas = {
+			remove_idea = FUK_legacy_of_the_one_hundred
+			add_idea = FUK_reinvigorated_UNRA
+		}
+		hidden_effect = {
+			country_event = { id = FUK_civ_war.5 days = 4 }
+		}
+		TNO_improve_training_policy_effectiveness_low = yes
+		TNO_improve_military_supervision_policy_effectiveness_low = yes
+		army_funding_minimal_increase_low = yes
+		army_funding_maximal_increase_low = yes
+	}
+}
+
+shared_focus = { # Which Case for the Officers
+	id = FUK_create_an_officer_corps
+	icon = GFX_TNO_generic_military_contacts
+	cost = 2
+
+	relative_position_id = FUK_UNRA_united_and_strong
+
+	prerequisite = {
+		focus = FUK_UNRA_united_and_strong
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_create_an_officer_corps"
+		swap_ideas = {
+			remove_idea = FUK_reinvigorated_UNRA
+			add_idea = FUK_formalized_officer_corps
+		}
+		TNO_improve_army_professionalism_low = yes
+		TNO_improve_training_policy_effectiveness_med = yes
+		TNO_improve_military_supervision_policy_effectiveness_med = yes
+	}
+}
+
+shared_focus = { # Offer the Alternative
+	id = FUK_offer_the_alternative
+	icon = GFX_UKR_More_Of_Everything_All_The_Time
+	cost = 2
+
+	relative_position_id = FUK_UNRA_united_and_strong
+
+	prerequisite = {
+		focus = FUK_UNRA_united_and_strong
+	}
+
+	x = -2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_offer_the_alternative"
+		set_temp_variable = { var_collaborator_support_temp = 5 }
+		FUK_collaborator_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = 5 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_populist_support_temp = 5 }
+		FUK_populist_support_change = yes
+		add_stability = 0.1
+		add_manpower = 15000
+		TNO_improve_political_parties_policy_effectiveness_med = yes
+		TNO_improve_press_rights_policy_effectiveness_med = yes
+		every_other_country = {
+			limit = { has_war_with = FUK }
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 1000
+				target = FUK
+			}
+			add_manpower = -5000
+			add_stability = -0.05
+		}
+	}
+}
+
+shared_focus = { # Begin a Proper Draft
+	id = FUK_make_volunteers
+	icon = GFX_UKR_Anthem_Of_The_Liberated
+	cost = 2
+
+	relative_position_id = FUK_offer_the_alternative
+
+	prerequisite = {
+		focus = FUK_create_an_officer_corps
+	}
+
+	prerequisite = {
+		focus = FUK_offer_the_alternative
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_make_volunteers"
+		tno_conscription_improve = yes
+		TNO_improve_conscription_policy_effectiveness_monthly_low = yes
+		add_manpower = 30000
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Partyzans'ka Dyviziya\" division_template = \"Partyzans'ka Dyviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "name = \"Partyzans'ka Dyviziya\" division_template = \"Partyzans'ka Dyviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		set_temp_variable = { var_populist_support_temp = -10 }
+		FUK_populist_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = 15 }
+		FUK_partisan_support_change = yes
+
+	}
+}
+
+shared_focus = { # Drop the Hammer, Win the War
+	id = FUK_drop_the_hammer_win_the_war
+	icon = GFX_generic_ukraine_sword_fire
+	cost = 2
+
+	relative_position_id = FUK_make_volunteers
+
+	prerequisite = {
+		focus = FUK_make_volunteers
+	}
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_drop_the_hammer_win_the_war"
+		swap_ideas = {
+			remove_idea = FUK_formalized_officer_corps
+			add_idea = FUK_dropping_the_hammer
+		}
+		add_stability = -0.1
+		set_temp_variable = { UCW_supply_temp = -150 }
+		UCW_supply_left_change = yes
+		hidden_effect = {
+			country_event = { id = FUK_civ_war.6 days = 3 }
+		}
+		army_funding_minimal_increase_low = yes
+		army_funding_maximal_increase_low = yes
+	}
+}
+
+shared_focus = { # Scrounge together what's left
+	id = FUK_scrounge_together_whats_left
+	icon = GFX_russian_soldier_industry
+	cost = 2
+
+	relative_position_id = FUK_make_volunteers
+
+	prerequisite = {
+		focus = FUK_make_volunteers
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_scrounge_together_whats_left"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1000
+		}
+		add_stability = -0.05
+		add_war_support = -0.1
+		set_temp_variable = { var_collaborator_support_temp = -15 }
+		FUK_collaborator_support_change = yes
+	}
+}
+
+shared_focus = { # Establish the War Machine
+	id = FUK_establish_the_war_machine
+	icon = GFX_TNO_generic_gun_production
+	cost = 2
+
+	relative_position_id = FUK_masses_behind_us
+
+	prerequisite = {
+		focus = FUK_masses_behind_us
+	}
+
+	prerequisite = {
+		focus = FUK_a_new_job_for_ohloblyns_men
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_establish_the_war_machine"
+		swap_ideas = {
+			remove_idea = FUK_idea_scraps_of_the_pipeline
+			add_idea = FUK_ukrainian_war_machine
+		}
+		set_temp_variable = { gdp_growth_temp = 0.33 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { var_populist_support_temp = -10 }
+		FUK_populist_support_change = yes
+		TNO_improve_regulations_policy_effectiveness_low = yes
+		TNO_improve_max_workhours_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = { # Quiet the Grumbling Stomachs
+	id = FUK_quiet_grumbling_stomachs
+	icon = GFX_URL_Healthy_Rations
+	cost = 2
+
+	relative_position_id = FUK_establish_the_war_machine
+
+	prerequisite = {
+		focus = FUK_establish_the_war_machine
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_quiet_grumbling_stomachs"
+		TNO_improve_agriculture_med = yes
+		TNO_improve_poverty_low = yes
+		set_temp_variable = { UCW_supply_temp = 100 }
+		UCW_supply_left_change = yes
+	}
+}
+
+shared_focus = { # and the Grumbling Dissidents
+	id = FUK_deal_with_dissent
+	icon = GFX_UKR_Soviet_Streetfighters
+	cost = 2
+
+	relative_position_id = FUK_establish_the_war_machine
+
+	prerequisite = {
+		focus = FUK_establish_the_war_machine
+	}
+
+	x = 2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_deal_with_dissent"
+		country_event = { id = FUK_civ_war.7 hours = 12}
+		tno_public_meetings_worsen = yes
+		tno_press_rights_worsen = yes
+		tno_penal_system_worsen = yes
+		TNO_improve_security_policy_effectiveness_monthly_low = yes
+		TNO_improve_public_meetings_policy_effectiveness_monthly_low = yes
+		TNO_improve_press_rights_policy_effectiveness_monthly_low = yes
+		TNO_improve_penal_system_policy_effectiveness_monthly_low = yes
+		TNO_worsen_public_meetings_policy_effectiveness_high = yes
+		TNO_worsen_press_rights_policy_effectiveness_high = yes
+		TNO_worsen_penal_system_policy_effectiveness_high = yes
+		add_stability = 0.15
+		set_temp_variable = { var_populist_support_temp = -10 }
+		FUK_populist_support_change = yes
+	}
+}
+
+shared_focus = { # Ohloblyn's Industrial Connections
+	id = FUK_collaborator_connections
+	icon = GFX_Generic_Industry
+	cost = 2
+
+	relative_position_id = FUK_quiet_grumbling_stomachs
+
+	prerequisite = {
+		focus = FUK_quiet_grumbling_stomachs
+	}
+
+	prerequisite = {
+		focus = FUK_deal_with_dissent
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_collaborator_connections"
+		swap_ideas = {
+			remove_idea = FUK_ukrainian_war_machine
+			add_idea = FUK_collaborator_industrial_connections
+		}
+		TNO_improve_industrial_equipment_low = yes
+		TNO_improve_industrial_expertise_low = yes
+		set_temp_variable = { var_collaborator_support_temp = 20 }
+		FUK_collaborator_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = -15 }
+		FUK_partisan_support_change = yes
+	}
+}
+
+shared_focus = { # The Invaluable Railways of Brest
+	id = FUK_restore_our_logistics
+	icon = GFX_UKR_the_artery_of_the_state
+	cost = 2
+
+	relative_position_id = FUK_deal_with_dissent
+
+	prerequisite = {
+		focus = FUK_quiet_grumbling_stomachs
+	}
+
+	prerequisite = {
+		focus = FUK_deal_with_dissent
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_restore_our_logistics"
+		set_temp_variable = { UCW_supply_temp = -50 }
+		UCW_supply_left_change = yes
+		every_state = {
+			limit = { is_controlled_by = FUK }
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_stability = 0.05
+	}
+}
+
+shared_focus = { # But a war economy first
+	id = FUK_this_is_war_act_like_it
+	icon = GFX_CHI_Ramp_Up_Military_Production
+	cost = 2
+
+	relative_position_id = FUK_restore_our_logistics
+
+	prerequisite = {
+		focus = FUK_restore_our_logistics
+	}
+
+	prerequisite = {
+		focus = FUK_collaborator_connections
+	}
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_this_is_war_act_like_it"
+		swap_ideas = {
+			remove_idea = FUK_collaborator_industrial_connections
+			add_idea = FUK_everything_for_victory
+		}
+		set_temp_variable = { UCW_supply_temp = 200 }
+		UCW_supply_left_change = yes
+		TNO_worsen_agriculture_med = yes
+		TNO_worsen_industrial_equipment_med = yes
+		TNO_worsen_industrial_expertise_med = yes
+	}
+}
+
+shared_focus = { # And the factories of east galicia
+	id = FUK_the_cure_to_fascist_rot
+	icon = GFX_UKR_Gun_Down_the_Guard
+	cost = 2
+
+	relative_position_id = FUK_scrounge_together_whats_left
+
+	mutually_exclusive = {
+		focus = FUK_faustian_bargain
+	}
+
+	prerequisite = {
+		focus = FUK_scrounge_together_whats_left
+	}
+
+	prerequisite = {
+		focus = FUK_drop_the_hammer_win_the_war
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_cure_to_fascist_rot"
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		set_temp_variable = { var_collaborator_support_temp = -30 }
+		FUK_collaborator_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = 20 }
+		FUK_partisan_support_change = yes
+		add_manpower = -20000
+		add_war_support = 0.15
+		add_stability = -0.1
+		set_temp_variable = { UCW_supply_temp = 100 }
+		UCW_supply_left_change = yes
+		hidden_effect = {
+			country_event = { id = FUK_civ_war.8 days = 3 }
+		}
+	}
+}
+
+shared_focus = { # And use what's left from there
+	id = FUK_faustian_bargain
+	icon = GFX_BRY_Summon_the_Revolutionary_War_Command
+	cost = 2
+
+	relative_position_id = FUK_this_is_war_act_like_it
+
+	mutually_exclusive = {
+		focus = FUK_the_cure_to_fascist_rot
+	}
+
+	prerequisite = {
+		focus = FUK_this_is_war_act_like_it
+	}
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_faustian_bargain"
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		set_temp_variable = { var_collaborator_support_temp = 30 }
+		FUK_collaborator_support_change = yes
+		set_temp_variable = { var_partisan_support_temp = -20 }
+		FUK_partisan_support_change = yes
+		set_temp_variable = { var_populist_support_temp = -15 }
+		FUK_populist_support_change = yes
+		random_owned_controlled_state = {
+			create_unit = {
+				division = "name = \"Strilets'ka Dyviziya\" division_template = \"Strilets'ka Dyviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "name = \"Strilets'ka Dyviziya\" division_template = \"Strilets'ka Dyviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		add_war_support = -0.2
+		set_temp_variable = { UCW_supply_temp = 50 }
+		UCW_supply_left_change = yes
+		hidden_effect = {
+			country_event = { id = FUK_civ_war.9 days = 3 }
+		}
+	}
+}
+
+shared_focus = { # Last calls for victory
+	id = FUK_freedom_to_ukraine_or_death
+	icon = GFX_UKR_Borovets_Commissars
+	cost = 2
+
+	relative_position_id = FUK_the_cure_to_fascist_rot
+
+	prerequisite = {
+		focus = FUK_the_cure_to_fascist_rot
+		focus = FUK_faustian_bargain
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_freedom_to_ukraine_or_death"
+		swap_ideas = {
+			remove_idea = FUK_dropping_the_hammer
+			add_idea = FUK_freedom_to_ukraine_or_death_idea
+		}
+		set_temp_variable = { UCW_supply_temp = -200 }
+		UCW_supply_left_change = yes
+		country_event = FUK_civ_war.10
+	}
+}
+
+### 2.0 Post-War Tree
+shared_focus = {
+	id = FUK_liberation_focus
+	icon = GFX_UKR_Liberation
+	cost = 2
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_liberation_focus"
+		add_stability = 0.1
+		add_war_support = 0.1
+		#have to check the changed laws that get undone
+		country_event = {
+			id = FUK_election.1
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_deliberation
+	icon = GFX_GER_was_sein_muss
+	cost = 1
+	relative_position_id = FUK_liberation_focus
+	prerequisite = {
+		focus = FUK_liberation_focus
+	}
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_deliberation"
+		add_political_power = 75
+		#pillars effects will go here soon
+		country_event = {
+			id = FUK_election.2
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_disorganization
+	icon = GFX_Generic_Parliamentary_Crisis
+	cost = 1
+	relative_position_id = FUK_liberation_focus
+	prerequisite = {
+		focus = FUK_liberation_focus
+	}
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_disorganization"
+		add_stability = -0.05
+		country_event = {
+			id = FUK_election.3
+		}
+	}
+}
+
+
+shared_focus = {
+	id = FUK_spivavtor_salvation
+	icon = GFX_UKR_Spivavtor_Salvation
+	cost = 1
+	#available = { always = no }
+	relative_position_id = FUK_liberation_focus
+
+	prerequisite = {
+		focus = FUK_deliberation
+	}
+
+	prerequisite = {
+		focus = FUK_disorganization
+	}
+
+	mutually_exclusive = {
+		focus = FUK_the_glory_of_ukraine
+		focus = FUK_unity_in_struggle
+	}
+
+	x = -2
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_spivavtor_salvation"
+		custom_effect_tooltip = FUK_spivavtor_tree_tt
+		hidden_effect = { load_focus_tree = TNO_UKR_FUK_spivavtor_election }
+		custom_effect_tooltip = GER_new_options_focus_tree_linebreak
+		FUK_election_clear = yes
+		FUK_election_init = yes
+		set_variable = { FUK_election_protagonist = target_spivavtor }
+		hidden_effect = {
+			remove_mission = FUK_election_spivavtor_campaign
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_the_glory_of_ukraine
+	icon = GFX_UKR_the_glory_of_ukraine
+	cost = 1
+	#available = { always = no }
+	relative_position_id = FUK_liberation_focus
+
+	prerequisite = {
+		focus = FUK_deliberation
+	}
+	prerequisite = {
+		focus = FUK_disorganization
+	}
+
+	mutually_exclusive = {
+		focus = FUK_spivavtor_salvation
+		focus = FUK_unity_in_struggle
+	}
+
+	x = 0
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_glory_of_ukraine"
+		custom_effect_tooltip = FUK_culturalist_tree_tt
+		hidden_effect = { load_focus_tree = TNO_UKR_FUK_culturalist_election_tree }
+		custom_effect_tooltip = GER_new_options_focus_tree_linebreak
+		FUK_election_clear = yes
+		FUK_election_init = yes
+		set_variable = { FUK_election_protagonist = target_culturalist }
+		hidden_effect = {
+			remove_mission = FUK_election_culturalist_campaign
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_unity_in_struggle
+	icon = GFX_UKR_unity_in_struggle
+	cost = 1
+	#available = { always = no }
+	relative_position_id = FUK_liberation_focus
+
+	prerequisite = {
+		focus = FUK_deliberation
+	}
+	prerequisite = {
+		focus = FUK_disorganization
+	}
+
+	mutually_exclusive = {
+		focus = FUK_spivavtor_salvation
+		focus = FUK_the_glory_of_ukraine
+	}
+
+	x = 2
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_unity_in_struggle"
+		custom_effect_tooltip = FUK_united_struggle_tree_tt
+		hidden_effect = { load_focus_tree = TNO_UKR_FUK_us_election_tree }
+		custom_effect_tooltip = GER_new_options_focus_tree_linebreak
+		FUK_election_clear = yes
+		FUK_election_init = yes
+		set_variable = { FUK_election_protagonist = target_populist }
+		hidden_effect = {
+			remove_mission = FUK_election_populist_campaign
+		}
+	}
+}
+
+
+### 2.1 SPIVAVTOR ELECTION TREE # Grab Here
+
+shared_focus = {
+	id = FUK_the_gift_of_foresight
+	icon = GFX_UKR_The_Gift_of_Foresight
+	cost = 2
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_gift_of_foresight"
+		add_popularity = { ideology = paternalism_1 popularity = 0.02 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		add_political_power = 50
+		country_event = { id = FUK_election_spiva.1 }
+	}
+}
+
+shared_focus = {
+	id = FUK_inevitability_is_not_doom
+	icon = GFX_GER_SGR_now_or_never
+	cost = 2
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_the_gift_of_foresight
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_inevitability_is_not_doom"
+		add_popularity = { ideology = paternalism_1 popularity = 0.015 }
+		add_popularity = { ideology = fascism popularity = 0.005 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.02 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.02 }
+		FUK_election_change_pop = yes
+		country_event = {
+			id = FUK_election_spiva.2
+			days = 15
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_connections_of_the_collaborators
+	icon = GFX_UKR_A_Meeting_With_The_Workforce
+	cost = 2
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_inevitability_is_not_doom
+	}
+
+	x = -1
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_connections_of_the_collaborators"
+		add_popularity = { ideology = fascism popularity = 0.02 }
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = -0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = -0.03 }
+		FUK_election_change_pop = yes
+		add_stability = -0.05
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = -2000
+		}
+		add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = -1000
+		}
+		country_event = {
+		id = FUK_election_spiva.3
+		days = 20
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_those_who_count_the_votes
+	icon = GFX_IBR_generic_elections_rigged
+	cost = 2
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_connections_of_the_collaborators
+	}
+
+	mutually_exclusive = {
+	focus = FUK_removing_obstacles
+	}
+	x = -4
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_those_who_count_the_votes"
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = -0.05 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = -0.05 }
+		FUK_election_change_pop = yes
+		TNO_worsen_vote_franchise_policy_effectiveness_monthly_med = yes
+		country_event = { id = FUK_election_spiva.4 }
+	}
+}
+
+shared_focus = {
+	id = FUK_removing_obstacles
+	icon = GFX_UKR_Gun_Down_the_Guard
+	cost = 2
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_connections_of_the_collaborators
+	}
+
+	mutually_exclusive = {
+	focus = FUK_those_who_count_the_votes
+	}
+	x = -2
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_removing_obstacles"
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = -0.1 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = -0.1 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { gdp_growth_temp = -0.25 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { t_val = 75 }
+		FUK_election_change_political_capital = yes
+		add_political_power = -40
+		add_stability = -0.075
+		TNO_worsen_press_rights_policy_effectiveness_high = yes
+		#maybe make it even worse in the event?
+		country_event = { id = FUK_election_spiva.5 }
+	}
+}
+
+shared_focus = {
+	id = FUK_loading_the_dice
+	icon = GFX_UKR_loading_the_dice
+	cost = 2
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_those_who_count_the_votes
+		focus = FUK_removing_obstacles
+	}
+	x = -3
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_loading_the_dice"
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.025 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.025 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.025 }
+		FUK_election_change_pop = yes
+		# unlock more decisions
+		add_stability = -0.05
+		add_war_support = -0.075
+		add_political_power = 30
+	}
+}
+
+shared_focus = {
+	id = FUK_a_deal
+	icon = GFX_GER_SGR_friends_in_the_reich
+	cost = 2
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_connections_of_the_collaborators
+	}
+	x = -1
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_a_deal"
+		add_popularity = { ideology = national_socialism popularity = 0.02 }
+		set_temp_variable = { t_val = 100 }
+		FUK_election_change_political_capital = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.05 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.05 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.05 }
+		FUK_election_change_pop = yes
+		add_stability = -0.1
+		#assorted law changes, ask about that
+	}
+}
+
+shared_focus = {
+	id = FUK_the_graves_we_dug
+	icon = GFX_UKR_grave_cross_church
+	cost = 2
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_inevitability_is_not_doom
+	}
+	x = 0
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_graves_we_dug"
+		add_popularity = { ideology = paternalism_1 popularity = 0.01 }
+		add_popularity = { ideology = fascism popularity = 0.01 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.02 }
+		FUK_election_change_pop = yes
+		custom_effect_tooltip = FUK_best_forgotten_tt
+		TNO_worsen_press_rights_policy_effectiveness_med = yes
+		country_event = {
+		id = FUK_election_spiva.6
+		hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_faces_of_fascism
+	icon = GFX_UKR_Faces_Of_Fascism
+	cost = 2
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_inevitability_is_not_doom
+	}
+
+	x = 1
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_faces_of_fascism"
+		add_popularity = { ideology = fascism popularity = 0.03 }
+		set_temp_variable = { t_val = 100 }
+		FUK_election_change_political_capital = yes
+		custom_effect_tooltip = FUK_fascist_friends_tt
+	}
+}
+
+
+shared_focus = {
+	id = FUK_levers_of_power
+	icon = GFX_UKR_levers_of_power
+	cost = 2
+	relative_position_id = FUK_the_gift_of_foresight
+
+	prerequisite = {
+		focus = FUK_the_graves_we_dug
+	}
+
+	prerequisite = {
+		focus = FUK_faces_of_fascism
+	}
+
+	x = 1
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_levers_of_power"
+		add_popularity = { ideology = paternalism_1 popularity = 0.03 }
+		add_popularity = { ideology = fascism popularity = 0.01 }
+		add_political_power = 100
+		custom_effect_tooltip = FUK_reorganization_of_ukraine_tt
+		TNO_worsen_admin_efficiency_low = yes
+		set_temp_variable = { gdp_growth_temp = 0.33 }
+		econ_gdp_growth_change = yes
+		country_event = {
+		id = FUK_election_spiva.7
+		hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_dawn_of_the_descent
+	icon = GFX_UKR_Dawn_of_the_Descent
+	cost = 2
+	relative_position_id = FUK_the_gift_of_foresight
+	prerequisite = {
+		focus = FUK_loading_the_dice
+	}
+	prerequisite = {
+		focus = FUK_levers_of_power
+	}
+
+	x = 0
+	y = 5
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_dawn_of_the_descent"
+		add_popularity = { ideology = paternalism_1 popularity = 0.05 }
+		add_popularity = { ideology = fascism popularity = 0.015 }
+		add_stability = -0.05
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.02 }
+		FUK_election_change_pop = yes
+		country_event = {
+		id = FUK_election_spiva.8
+		hours = 6
+		}
+	}
+}
+
+### 2.2 Culturalist Election Tree
+
+shared_focus = {
+	id = FUK_prelude_to_politics
+	icon = GFX_UKR_The_Culturalists_Might
+	cost = 2
+
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_prelude_to_politics"
+		set_temp_variable = { temp_econ_spending_amount = 0.1 }
+		econ_spend_money_once_effect_raw_money = yes
+		add_popularity = { ideology = socialist popularity = 0.02 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		#breadbasket effect goes here too
+		country_event = {
+			id = FUK_election_cultur.1
+			hours = 6
+		}
+		hidden_effect = {
+			country_event = {
+				id = FUK_election_cultur.2
+				days = 30
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_the_cure_to_imperialism
+	icon = GFX_Generic_Minority_Protections
+	cost = 2
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_prelude_to_politics
+	}
+
+	x = -1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_cure_to_imperialism"
+		set_temp_variable = { money_reserves_temp = 0.05 }
+		econ_money_reserves_change_raw_money = yes
+		add_popularity = { ideology = socialist popularity = 0.015 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		# breadbasket effect goes here
+		set_temp_variable = { gdp_growth_temp = 0.5 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+shared_focus = {
+	id = FUK_ukraines_scarlet_fields
+	icon = GFX_UKR_Liberation
+	cost = 2
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_the_cure_to_imperialism
+	}
+
+	x = -2
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_ukraines_scarlet_fields"
+		set_temp_variable = { temp_econ_spending_amount = 0.025 }
+		econ_spend_money_once_effect_raw_money = yes
+		add_popularity = { ideology = socialist popularity = 0.04 }
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.06 }
+		FUK_election_change_pop = yes
+		TNO_improve_admin_efficiency_med = yes
+		# breadbasket effect goes here
+	}
+}
+
+shared_focus = {
+	id = FUK_the_harvest_we_will_reap
+	icon = GFX_UKR_The_Harvest_We_Will_Reap
+	cost = 2
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_ukraines_scarlet_fields
+	}
+
+	x = -3
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_harvest_we_will_reap"
+		# two breadbasket effects go here
+		add_popularity = { ideology = socialist popularity = 0.02 }
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.02 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_val = 100 }
+		FUK_election_change_political_capital = yes
+		TNO_improve_security_policy_effectiveness_low = yes
+		country_event = {
+			id = FUK_election_cultur.3
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_inform_the_lost_and_confused
+	icon = GFX_UKR_Inform_the_Lost_and_Confused
+	cost = 2
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_prelude_to_politics
+	}
+
+	x = 1
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_inform_the_lost_and_confused"
+		add_popularity = { ideology = socialist popularity = 0.02 }
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.015 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.015 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.015 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_val = 50 }
+		FUK_election_change_political_capital = yes
+		# decisions to spread the message go here
+		TNO_improve_press_rights_policy_effectiveness_med = yes
+		country_event = {
+			id = FUK_election_cultur.4
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_our_great_history
+	icon = GFX_UKR_Our_Great_History
+	cost = 2
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_inform_the_lost_and_confused
+	}
+	x = 2
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_our_great_history"
+		TNO_improve_education_policy_effectiveness_low = yes
+		TNO_improve_academic_base_med = yes
+		TNO_improve_research_facilities_low = yes
+		set_temp_variable = { t_val = 50 }
+		FUK_election_change_political_capital = yes
+	}
+}
+
+shared_focus = {
+	id = FUK_they_tried_to_kill_us_we_survived
+	icon = GFX_UKR_They_Tried_To_Kill_Us_We_Survived
+	cost = 2
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_our_great_history
+	}
+	x = 3
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_they_tried_to_kill_us_we_survived"
+		add_popularity = { ideology = socialist popularity = 0.025 }
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.04 }
+		FUK_election_change_pop = yes
+		add_stability = 0.05
+		add_war_support = 0.1
+		country_event = {
+			id = FUK_election_cultur.5
+			hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_the_blood_they_shed
+	icon = GFX_UKR_corpse_body_pile
+	cost = 2
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_prelude_to_politics
+	}
+
+	x = 0
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_blood_they_shed"
+		add_popularity = { ideology = paternalism_1 popularity = -0.02 }
+		add_popularity = { ideology = fascism popularity = -0.02 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = -0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = FUK_election_cultur.6
+				days = 20
+			}
+		}
+		#assorted law changes, ask about that
+	}
+}
+
+shared_focus = {
+	id = FUK_never_ever_again
+	icon = GFX_UKR_Never_Ever_Again
+	cost = 2
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+	
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_the_blood_they_shed
+	}
+
+	mutually_exclusive = {
+		focus = FUK_no_one_is_sacred
+	}
+
+	x = -1
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_never_ever_again"
+		add_popularity = { ideology = fascism popularity = -0.05 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.06 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.06 }
+		FUK_election_change_pop = yes
+		TNO_improve_security_policy_effectiveness_low = yes
+		hidden_effect = {
+			country_event = {
+				id = FUK_election_cultur.7
+				days = 5
+			}
+		}
+		#assorted law changes
+	}
+}
+
+shared_focus = {
+	id = FUK_no_one_is_sacred
+	icon = GFX_UKR_no_one_is_sacred
+	cost = 2
+
+	relative_position_id = FUK_prelude_to_politics
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+
+	prerequisite = {
+		focus = FUK_the_blood_they_shed
+	}
+
+	mutually_exclusive = {
+		focus = FUK_never_ever_again
+	}
+
+	x = 1
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_no_one_is_sacred"
+		add_popularity = { ideology = despotism popularity = -0.05 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = -0.06 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = -0.06 }
+		FUK_election_change_pop = yes
+		TNO_improve_press_rights_policy_effectiveness_low = yes
+		hidden_effect = {
+			country_event = {
+				id = FUK_election_cultur.8
+				days = 5
+			}
+		}
+		#assorted law changes
+	}
+}
+
+shared_focus = {
+	id = FUK_a_clear_light_not_a_twilight
+	icon = GFX_UKR_A_Clear_Light_Not_A_Twilight
+	cost = 2
+
+	relative_position_id = FUK_prelude_to_politics
+
+	prerequisite = {
+		focus = FUK_the_harvest_we_will_reap
+	}
+
+	prerequisite = {
+		focus = FUK_they_tried_to_kill_us_we_survived
+	}
+
+
+	x = 0
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_a_clear_light_not_a_twilight"
+		add_popularity = { ideology = socialist popularity = 0.04 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		custom_effect_tooltip = FUK_culturalist_poem_tt
+		country_event = {
+			id = FUK_election_cultur.9
+			hours = 6
+		}
+	}
+}
+
+### 2.3 United Struggle Election Tree
+
+shared_focus = {
+	id = FUK_the_only_answer
+	icon = GFX_UKR_The_Only_Answer
+	cost = 2
+
+	x = 8
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_only_answer"
+		add_popularity = { ideology = progressivism popularity = 0.02}
+		add_popularity = { ideology = despotism popularity = 0.02}
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		add_war_support = 0.075
+		country_event = {
+			id = FUK_election_us.1
+			hours = 6
+		}
+		hidden_effect = {
+			country_event = {
+				id = FUK_election_us.2
+				days = 10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_bury_then_rise
+	icon = GFX_UKR_Eternal_Monuments_to_Unity
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_the_only_answer
+	}
+
+	x = -2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_blood_they_shed"
+		set_temp_variable = { temp_econ_spending_amount = 0.075 }
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_admin_efficiency_low = yes
+		add_popularity = { ideology = progressivism popularity = 0.015 }
+		set_temp_variable = { gdp_growth_temp = 0.25 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.02 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_val = 50 }
+		FUK_election_change_political_capital = yes
+	}
+}
+
+
+shared_focus = {
+	id = FUK_water_with_the_tyrants_blood
+	icon = GFX_UPO_Death_to_All_Nazis
+	cost = 2
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_the_only_answer
+	}
+
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_water_with_the_tyrants_blood"
+		add_popularity = { ideology = fascism popularity = -0.03 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.06 }
+		FUK_election_change_pop = yes
+		#assorted law here
+		add_political_power = 50
+		add_manpower = -1000
+		hidden_effect = {
+			country_event = {
+				id = FUK_election_us.3
+				days = 30
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_points_of_the_program
+	icon = GFX_UKR_points_of_the_program
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_bury_then_rise
+	}
+	prerequisite = {
+		focus = FUK_water_with_the_tyrants_blood
+	}
+
+	x = -1
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_points_of_the_program"
+		TNO_improve_political_parties_policy_effectiveness_low = yes
+		TNO_improve_religious_rights_policy_effectiveness_low = yes
+		#breadbasket effect
+		add_popularity = { ideology = progressivism popularity = 0.05 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		country_event = {
+				id = FUK_election_us.4
+				hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_are_you_all_insane
+	icon = GFX_UKR_Are_You_All_Insane
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_points_of_the_program
+	}
+
+	x = -2
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_are_you_all_insane"
+		add_popularity = { ideology = paternalism_1 popularity = -0.04 }
+		add_popularity = { ideology = fascism popularity = -0.04 }
+		add_popularity = { ideology = socialist popularity = -0.025 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = -0.05 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.05 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_culturalist }
+		set_temp_variable = { t_val = -0.03 }
+		FUK_election_change_pop = yes
+		add_war_support = 0.1
+		TNO_improve_army_professionalism_med = yes
+		country_event = {
+				id = FUK_election_us.5
+				hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_the_freedom_we_have_gained
+	icon = GFX_SLO_Allow_Limited_Press_Liberalization
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = FUK_fascists_gone_tt
+			always = no
+		}	
+	}
+
+	prerequisite = {
+		focus = FUK_water_with_the_tyrants_blood
+	}
+
+	x = 0
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_the_freedom_we_have_gained"
+		TNO_improve_political_parties_policy_effectiveness_med = yes
+		TNO_improve_religious_rights_policy_effectiveness_med = yes
+		TNO_improve_press_rights_policy_effectiveness_med = yes
+		TNO_improve_education_policy_effectiveness_med = yes
+		TNO_improve_academic_base_low = yes
+		add_popularity = { ideology = progressivism popularity = 0.025 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.015 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.015 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.015 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_val = 100 }
+		FUK_election_change_political_capital = yes
+		# unlock decisions
+	}
+}
+
+shared_focus = {
+	id = FUK_factions_of_the_front
+	icon = GFX_UKR_Borovets_Commissars
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_the_only_answer
+	}
+
+	x = 2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_factions_of_the_front"
+		add_popularity = { ideology = progressivism popularity = 0.02 }
+		add_popularity = { ideology = despotism popularity = 0.03 }
+		add_war_support = 0.1
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.04 }
+		FUK_election_change_pop = yes
+		custom_effect_tooltip =  FUK_us_alliance_tt
+	}
+}
+
+shared_focus = {
+	id = FUK_reach_out_to_roman
+	icon = GFX_UKR_The_Last_Roman
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_factions_of_the_front
+	}
+
+	mutually_exclusive = {
+		focus = FUK_cooperate_with_the_communists
+	}
+
+	x = 1
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_reach_out_to_roman"
+		BOV_Roman_Shukhevych = {
+			set_nationality = FUK
+		}
+		add_popularity = { ideology = despotism popularity = 0.06 }
+		add_popularity = { ideology = progressivism popularity = -0.03 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = 0.07 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = -0.04 }
+		FUK_election_change_pop = yes
+		country_event = {
+				id = FUK_election_us.6
+				hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_cooperate_with_the_communists
+	icon = GFX_UKR_Discredit_Their_Causes
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_factions_of_the_front
+	}
+
+	mutually_exclusive = {
+		focus = FUK_reach_out_to_roman
+	}
+
+	x = 3
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_cooperate_with_the_communists"
+		#breadbasket effect i think
+		add_popularity = { ideology = progressivism popularity = 0.06 }
+		add_popularity = { ideology = despotism popularity = -0.03 }
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.07 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = -0.04 }
+		FUK_election_change_pop = yes
+		add_manpower = 25000
+		country_event = {
+				id = FUK_election_us.7
+				hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_fighting_fascisms_followers
+	icon = GFX_UPO_all_are_complicit
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_reach_out_to_roman
+		focus = FUK_cooperate_with_the_communists
+	}
+
+	x = 2
+	y = 3
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_fighting_fascisms_followers"
+		add_popularity = { ideology = paternalism_1 popularity = -0.05 }
+		add_popularity = { ideology = fascism popularity = -0.05 }
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = -0.06 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:Central_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.06 }
+		FUK_election_change_pop = yes
+		TNO_worsen_security_policy_effectiveness_low = yes
+		TNO_worsen_press_rights_policy_effectiveness_low = yes
+		add_stability = -0.05
+		country_event = {
+				id = FUK_election_us.8
+				hours = 6
+		}
+	}
+}
+
+shared_focus = {
+	id = FUK_for_we_bow_to_none
+	icon = GFX_UPO_David_and_Goliath
+	cost = 2
+
+	relative_position_id = FUK_the_only_answer
+
+	prerequisite = {
+		focus = FUK_are_you_all_insane
+	}
+
+	prerequisite = {
+		focus = FUK_fighting_fascisms_followers
+	}
+
+	x = 0
+	y = 4
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: focus FUK_for_we_bow_to_none"
+		add_stability = 0.05
+		add_war_support = 0.1
+		add_popularity = { ideology = progressivism popularity = 0.02}
+		add_popularity = { ideology = despotism popularity = 0.02 }
+		set_temp_variable = { t_region = var:West_region }
+		set_temp_variable = { t_target = target_spivavtor }
+		set_temp_variable = { t_val = -0.03 }
+		FUK_election_change_pop = yes
+		set_temp_variable = { t_region = var:East_region }
+		set_temp_variable = { t_target = target_populist }
+		set_temp_variable = { t_val = 0.03 }
+		FUK_election_change_pop = yes
+		custom_effect_tooltip = FUK_us_poem_tt
+		country_event = {
+				id = FUK_election_us.9
+				hours = 6
+		}
+	}
+}

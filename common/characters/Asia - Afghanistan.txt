@@ -1,0 +1,503 @@
+characters = {
+	AFG_mohammed_zahir_shah = {
+		name = AFG_mohammed_zahir_shah
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_absolute_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_semi_constitutional_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_transitioning_democracy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_ahmad_shah_khan = {
+		name = AFG_ahmad_shah_khan
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Ahmad_Shah_Khan.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_absolute_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_semi_constitutional_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_mohammad_daoud_khan = {
+		name = AFG_mohammad_daoud_khan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammad_Daoud_Khan.dds"
+				small = "GFX_idea_AFG_Mohammad_Daoud_Khan_hog"
+			}
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_social_nationalism_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_civilian_dictatorship_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = fascism_revolutionary_nationalism_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = national_socialism_subtype
+			traits = {}
+			id = -1
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = AFG_mohammad_daoud_khan_hog
+			allowed = { always = yes }
+			traits = { hog_local_tyrant }
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	AFG_abdulrahman_mahmudi = {
+		name = AFG_abdulrahman_mahmudi
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Abdulrahman_Mahmudi.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_agrarian_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_mawlana_qiamuddin_khadim = {
+		name = AFG_mawlana_qiamuddin_khadim
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mawlana_Qiamuddin_Khadim.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_left_wing_agrarianism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_muhammad_asif_ahang = {
+		name = AFG_muhammad_asif_ahang
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Muhammad_Asif_Ahang.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = liberalism_national_liberal_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_gul_pacha_ulfat = {
+		name = AFG_gul_pacha_ulfat
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Gul_Pacha_Ulfat.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = liberal_conservatism_big_tent_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_abdullah_yaqta = {
+		name = AFG_abdullah_yaqta
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = liberal_conservatism_big_tent_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_abdul_zahir = {
+		name = AFG_abdul_zahir
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Abdul_Zahir.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = liberal_conservatism_big_tent_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_mohammad_musa_shafiq = {
+		name = AFG_mohammad_musa_shafiq
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammad_Musa_Shafiq.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = liberal_conservatism_big_tent_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_abdul_majid_zabuli = {
+		name = AFG_abdul_majid_zabuli
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Abdul_Majid_Zabuli.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = national_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_akram_yari = {
+		name = AFG_akram_yari
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Akram_Yari.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = communist_mao_zedong_thought_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_faiz_ahmad = {
+		name = AFG_faiz_ahmad
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Faiz_Ahmad.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = communist_mao_zedong_thought_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_maulana_muhammad_ataullah_faizani = {
+		name = AFG_maulana_muhammad_ataullah_faizani
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = conservatism_islamic_conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_muhammad_yusuf_khan = {
+		name = AFG_muhammad_yusuf_khan
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_anocracy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_khalilullah_khalili = {
+		name = AFG_khalilullah_khalili
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Khalilullah_Khalili.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_anocracy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_ghulam_muhammad_farhad = {
+		name = AFG_ghulam_muhammad_farhad
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Ghulam_Muhammad_Farhad.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = liberalism_progressive_liberalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_mir_muhammad_seddiq_farhang = {
+		name = AFG_mir_muhammad_seddiq_farhang
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mir_Muhammad_Seddiq_Farhang.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_democratic_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_muhammad_hashem_maiwandwal = {
+		name = AFG_muhammad_hashem_maiwandwal
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Muhammad_Hashem_Maiwandwal.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_reformist_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_mohammad_noor_ahmad_etemadi = {
+		name = AFG_mohammad_noor_ahmad_etemadi
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammad_Noor_Ahmad_Etemadi.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_reformist_socialism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_tahir_badakshi = {
+		name = AFG_tahir_badakshi
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Tahir_Badakshi.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_left_wing_nationalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_muhammad_ibrahim_mojaddedi = {
+		name = AFG_muhammad_ibrahim_mojaddedi
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = ultranationalism_fundamentalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_muhammad_nabi_mohammedi = {
+		name = AFG_muhammad_nabi_mohammedi
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammad_Nabi_Mohammedi.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = ultranationalism_fundamentalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_burnahuddin_rabbani = {
+		name = AFG_burnahuddin_rabbani
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Mohammed_Zahir_Shah.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = ultranationalism_fundamentalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_gholam_mohammad_niazi = {
+		name = AFG_gholam_mohammad_niazi
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Gholam_Mohammad_Niazi.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = ultranationalism_fundamentalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	AFG_hafizullah_amin = {
+		name = AFG_hafizullah_amin
+		portraits = {
+			civilian = { large = "gfx/leaders/AFG/Portrait_Afghanistan_Hafizullah_Amin.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_personalistic_dictatorship_subtype
+			traits = {}
+			id = -1
+		}
+	}
+
+	#Kalat
+	KLT_mir_ahmad_yar_khan = {
+		name = KLT_mir_ahmad_yar_khan
+		portraits = {
+			civilian = { large = "gfx/leaders/KLT/Portrait_Kalat_Mir_Ahmad_Yar_Khan.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_MIR_AHMAD_YAR_KHAN_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_semi_constitutional_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	KLT_sher_mohammed_marri = {
+		name = KLT_sher_mohammed_marri
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			desc = "POLITICS_SHER_MOHAMMED_MARRI_DESC"
+			expire = "1999.1.1"
+			ideology = communist_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	KLT_mir_gul_khan_nasseer = {
+		name = KLT_mir_gul_khan_nasseer
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			#desc = ""
+			expire = "1999.1.1"
+			ideology = conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	KLT_khair_bakhsh_marri = {
+		name = KLT_khair_bakhsh_marri
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			#desc = ""
+			expire = "1999.1.1"
+			ideology = socialist_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	KLT_abdul_wali = {
+		name = KLT_abdul_wali
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			#desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+
+	#Frontier Provinces
+	MFP_nawabzada_shahabuddin_khan = {
+		name = MFP_nawabzada_shahabuddin_khan
+		portraits = {
+			civilian = { large = "gfx/leaders/MFP/Portrait_Frontier_Provinces_Nawabzada_Shahabuddin_Khan.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_NAWABZADA_SHAHABUDDIN_KHAN_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_aristocratic_conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	MFP_muhammad_akbar_khan = {
+		name = MFP_muhammad_akbar_khan
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			#desc = ""
+			expire = "1999.1.1"
+			ideology = paternalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	MFP_pashtun_tribal_clans = {
+		name = MFP_pashtun_tribal_clans
+		portraits = {
+			civilian = { large = "GFX_leader_unknown" }
+		}
+		country_leader = {
+			#desc = ""
+			expire = "1999.1.1"
+			ideology = conservatism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+}

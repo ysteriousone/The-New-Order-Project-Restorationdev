@@ -1,0 +1,42 @@
+﻿units = {
+	division = {
+		location = 6221
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6489
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11471
+		division_template = "Motorized Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 13070
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 507
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 507
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11471
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+}

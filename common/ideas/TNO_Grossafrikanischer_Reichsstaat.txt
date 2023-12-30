@@ -1,0 +1,874 @@
+ideas = {
+	country = {
+		GRO_REICHSSTAAT_the_african_triumph = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_african_triumph"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = AGS_The_Glory_of_Warfare
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+
+		GRO_REICHSSTAAT_administrative_unknowns = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_administrative_unknowns"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = IRK_administrative_shortcomings
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				income_tax_rate_modifier_factor = -0.2
+			}
+		}
+
+		GRO_REICHSSTAAT_the_afrikanischer_system = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_afrikanischer_system"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = IRK_bureaucracy_purged
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = -0.1
+				military_expenditures_factor = 0.1
+				income_tax_rate_modifier_factor = -0.2
+			}
+		}
+
+		GRO_REICHSSTAAT_the_afrikanischer_system_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_afrikanischer_system_2"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = IRK_bureaucracy_purged
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.4
+				stability_factor = 0.25
+				military_expenditures_factor = 0.3
+				income_tax_rate_modifier_factor = -0.2
+			}
+		}
+
+		GRO_REICHSSTAAT_the_afrikanischer_system_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_afrikanischer_system_3"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = IRK_bureaucracy_purged
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.35
+				foreign_subversive_activites = -0.4
+				military_expenditures_factor = 0.5
+				income_tax_rate_modifier_factor = -0.15
+			}
+		}
+
+		GRO_REICHSSTAAT_the_afrikanischer_system_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_afrikanischer_system_4"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = IRK_bureaucracy_purged
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.6
+				stability_factor = 0.5
+				foreign_subversive_activites = -0.75
+				military_expenditures_factor = 0.8
+				income_tax_rate_modifier_factor = -0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_the_kontinentales_system = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_kontinentales_system"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = MZB_USA_Legacy_Ostafrikaner_Research
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				conscription_factor = 0.1
+				civilian_expenditures_factor = 0.1
+				income_tax_rate_modifier_factor = -0.15
+			}
+		}
+
+		GRO_REICHSSTAAT_the_kontinentales_system_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_kontinentales_system_2"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = MZB_USA_Legacy_Ostafrikaner_Research
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				conscription_factor = 0.15
+				civilian_expenditures_factor = 0.2
+				military_expenditures_factor = 0.1
+				income_tax_rate_modifier_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_the_kontinentales_system_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_kontinentales_system_3"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = MZB_USA_Legacy_Ostafrikaner_Research
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.2
+				conscription_factor = 0.25
+				civilian_expenditures_factor = 0.4
+				military_expenditures_factor = 0.2
+				income_tax_rate_modifier_factor = -0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_the_kontinentales_system_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_kontinentales_system_4"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = MZB_USA_Legacy_Ostafrikaner_Research
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.25
+				conscription_factor = 0.4
+				military_expenditures_factor = 0.3
+				civilian_expenditures_factor = 0.4
+			}
+		}
+
+		GRO_REICHSSTAAT_atmosphere_of_unrest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_atmosphere_of_unrest"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = CHL_rural_collapse_idea
+
+			removal_cost = -1
+
+			modifier = {
+				military_expenditures_factor = 0.2
+				stability_factor = -0.6
+			}
+		}
+
+		GRO_REICHSSTAAT_the_legacy_of_the_traitors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_legacy_of_the_traitors"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Legacy_of_the_Traitors
+
+			removal_cost = -1
+
+			modifier = {
+				
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.2
+				civilian_expenditures_factor = 0.5
+				income_tax_rate_modifier_factor = -0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_german_management = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_german_management"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Filling_The_Stores
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				admin_program_cost_factor = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_african_exploitation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_african_exploitation"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Filling_The_Stores
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.5
+				local_resources_factor = 0.1
+				global_building_slots_factor = 0.15
+				income_tax_rate_modifier_factor = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_0 = { # Entwicklung des afrikanischen Territoriums Programm
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_0"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				
+				poverty_taxation_rate_modifier = 0.8
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_left_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_left_1"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				poverty_taxation_rate_modifier = 1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_left_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_left_2"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				poverty_taxation_rate_modifier = 2
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_left_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_left_3"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				poverty_taxation_rate_modifier = 3.2
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				admin_program_cost_factor = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_right_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_right_1"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				poverty_taxation_rate_modifier = 0.8
+				gdp_growth_modifier = 0.5
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
+				local_resources_factor = 0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_right_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_right_2"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				poverty_taxation_rate_modifier = 1.6
+				gdp_growth_modifier = 1
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_eat_program_right_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_eat_program_right_3"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				poverty_taxation_rate_modifier = 2.4
+				production_speed_buildings_factor = 0.1
+				gdp_growth_modifier = 2
+				global_building_slots_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_boer_vasallenstaat_profits_0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_boer_vasallenstaat_profits_0"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Filling_The_Stores
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.3
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_boer_vasallenstaat_profits_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_boer_vasallenstaat_profits_1"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Filling_The_Stores
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.8
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_boer_vasallenstaat_profits_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_boer_vasallenstaat_profits_2"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_EAT_Program
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 1.2
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_the_boer_betrayal_0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_boer_betrayal_0"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Boer_Betrayal
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.05
+				political_power_gain = -0.15
+				stability_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_the_boer_betrayal_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_boer_betrayal_1"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Boer_Betrayal
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_efficiency_gain_factor = -0.05
+				political_power_gain = -0.05
+				stability_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_the_boer_betrayal_2_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_boer_betrayal_2_industry"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Boer_Betrayal
+
+			removal_cost = -1
+
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				political_power_gain = -0.05
+				stability_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_the_boer_betrayal_2_armament = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_boer_betrayal_2_armament"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GRO_Boer_Betrayal
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+				political_power_gain = 0.15
+				stability_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_reichsstaat_support_for_chmilewski = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_reichsstaat_support_for_chmilewski"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = AUS_SS_kommandotruppe_rapier
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.3
+				army_org_factor = 0.25
+				army_morale_factor = 0.15
+			}
+		}
+
+		GRO_REICHSSTAAT_chemical_launches_ssafcw = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_chemical_launches_ssafcw"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = KOM_arsenal
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_border_attacks_ssafcw = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_border_attacks_ssafcw"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = PRM_Disciplined_Raiders
+
+			removal_cost = -1
+
+			modifier = {
+				defence = -0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_south_african_intel_ssafcw = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_south_african_intel_ssafcw"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_German_Spies
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.15
+			}
+		}
+
+		GRO_REICHSSTAAT_collapsed_oberkommando = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_collapsed_oberkommando"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = CHL_rural_collapse_idea
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.25
+				defence = -0.2
+				offence = -0.2
+				encryption_factor = -0.1
+			}
+		}
+
+		GRO_REICHSSTAAT_the_abwehrfront_under_threats = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_abwehrfront_under_threats"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = OKB_Defenders_of_the_Reich
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				defence = 0.2
+			}
+		}
+
+		GRO_REICHSSTAAT_exhausted_remnants = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_exhausted_remnants"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_War_Exhaustion
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				war_support_factor = -0.05
+				army_morale_factor = -0.4
+			}
+		}
+
+		GRO_REICHSSTAAT_the_new_german_administration = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_new_german_administration"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_german_rifle_army
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.05
+			}
+		}
+
+		GRO_REICHSSTAAT_local_cooperation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_the_new_german_administration"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = HGR_native_support
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = -0.2
+				
+			}
+		}
+
+		GRO_once_more_unto_SAF = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_once_more_unto_SAF"}
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_soldiers_marching
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				stability_factor = -0.15
+				war_support_factor = 0.05
+			}
+		}
+	}
+
+	hidden_ideas = {
+		GRO_REICHSSTAAT_ai_pp_malus = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea GRO_REICHSSTAAT_ai_pp_malus"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+	}
+}

@@ -1,0 +1,473 @@
+defined_text = {
+	name = GetApprovalRating
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINApprovalRating
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_approval_rating_highest
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINApprovalRating
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_approval_rating_high
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINApprovalRating
+				value = 40
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_approval_rating_moderate
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINApprovalRating
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_approval_rating_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINApprovalRating
+				value = 20
+				compare = less_than
+			}
+		}
+		localization_key = FIN_approval_rating_nonexistent
+	}
+}
+
+defined_text = {
+	name = GetRadicalizationFinlandOpp
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINRadicalization
+					value = 66
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_opposition_radicalised
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINRadicalization
+				value = 33
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_opposition_protesting
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINRadicalization
+				value = 33
+				compare = less_than
+			}
+		}
+		localization_key = FIN_opposition_placid
+	}
+}
+
+defined_text = {
+	name = GetRussiaTensions
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINRussiaTensions
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_russia_explosive
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINRussiaTensions
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_russia_dangerous
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINRussiaTensions
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_russia_moderate
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINRussiaTensions
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_russia_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINRussiaTensions
+				value = 20
+				compare = less_than
+			}
+		}
+		localization_key = FIN_russia_calm
+	}
+}
+
+defined_text = {
+	name = GetOnegaRelations
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINOnegaRelations
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_onega_happy
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINOnegaRelations
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_onega_positive
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINOnegaRelations
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_onega_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINOnegaRelations
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_onega_upset
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINOnegaRelations
+				value = 20
+				compare = less_than
+			}
+		}
+		localization_key = FIN_onega_pissed
+	}
+}
+
+defined_text = {
+	name = GetPromises
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINPromiseValue
+					value = 4
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_promises_sweeping
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINPromiseValue
+					value = 3
+					compare = equals
+				}
+			}
+		}
+		localization_key = FIN_promises_major
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINPromiseValue
+					value = 2
+					compare = equals
+				}
+			}
+		}
+		localization_key = FIN_promises_considerable
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINPromiseValue
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = FIN_promises_minor
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINPromiseValue
+				value = 0
+				compare = equals
+			}
+		}
+		localization_key = FIN_promises_none
+	}
+}
+
+defined_text = {
+	name = GetUSATradeInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINUSAInfluence
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_USA_extremely_high
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINUSAInfluence
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_USA_high
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINUSAInfluence
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_USA_medium
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINUSAInfluence
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_USA_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINUSAInfluence
+				value = 20
+				compare = less_than
+			}
+		}
+		localization_key = FIN_USA_extremely_low
+	}
+}
+
+defined_text = {
+	name = GetPaktTradeInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINGERInfluence
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_GER_extremely_high
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINGERInfluence
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_GER_high
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINGERInfluence
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_GER_medium
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINGERInfluence
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_GER_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINGERInfluence
+				value = 20
+				compare = less_than
+			}
+		}
+		localization_key = FIN_GER_extremely_low
+	}
+}
+
+defined_text = {
+	name = GetTradeBalance
+	text = {
+		trigger = {
+			check_variable = { FINGERInfluence > FINUSAInfluence }
+		}
+		localization_key = FIN_germany_ascendant
+	}
+	text = {
+		trigger = {
+			check_variable = { FINGERInfluence = FINUSAInfluence }
+		}
+		localization_key = FIN_trade_balanced
+	}
+	text = {
+		trigger = {
+			check_variable = { FINGERInfluence < FINUSAInfluence }
+		}
+		localization_key = FIN_USA_ascendant
+	}
+}
+
+defined_text = {
+	name = GetForeignInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINForeignTradeInfluence
+					value = 80
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_foreign_very_high
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINForeignTradeInfluence
+					value = 60
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_foreign_high
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					var = FINForeignTradeInfluence
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+		}
+		localization_key = FIN_foreign_medium
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINForeignTradeInfluence
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = FIN_foreign_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = FINForeignTradeInfluence
+				value = 20
+				compare = less_than
+			}
+		}
+		localization_key = FIN_foreign_very_low
+	}
+}

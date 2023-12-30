@@ -1,0 +1,36 @@
+characters = {
+	# Yemen #
+	# Country Leaders #
+	YEM_Ahmad_Bin_Yahya = {
+		name = YEM_Ahmad_Bin_Yahya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YEM/Portrait_Yemen_Ahmad_bin_Yaha.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_YAHYA_DESC"
+			expire = "1992.1.1"
+			ideology = despotism_absolute_monarchy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	# North Yemen #
+	# Country Leaders #
+	NYM_Abdullah_Al_Sallal = {
+		name = NYM_Abdullah_Al_Sallal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NYM/Portrait_Northern_Yemen_Abdullah_al-Sallal.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ABDULLAH_AL_SALLAL_DESC"
+			expire = "1992.1.1"
+			ideology = socialist_left_wing_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

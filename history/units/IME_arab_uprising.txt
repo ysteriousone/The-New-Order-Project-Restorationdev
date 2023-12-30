@@ -1,0 +1,30 @@
+﻿division_template = {
+	name = "Arab Partisans"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "Arab Partisans"
+		location = 11979
+		division_template = "Arab Partisans"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "Arab Partisans"
+		location = 1086
+		division_template = "Arab Partisans"
+		start_experience_factor = 0.05
+	}
+	division = {
+		name = "Arab Partisans"
+		location = 10089
+		division_template = "Arab Partisans"
+		start_experience_factor = 0.05
+	}
+}

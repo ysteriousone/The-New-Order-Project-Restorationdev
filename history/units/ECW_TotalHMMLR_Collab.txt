@@ -1,0 +1,80 @@
+﻿units = {
+	#London region
+	division = {
+		location = 11333
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 221
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 271
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#Central regions
+	division = {
+		location = 7239
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3241
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11345
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3205
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 6318
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9379
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11279
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 9268
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	#South region
+	division = {
+		location = 13070
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 507
+		division_template = "Militia"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 3501
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+	division = {
+		location = 11471
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+	}
+}

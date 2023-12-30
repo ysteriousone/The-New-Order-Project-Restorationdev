@@ -1,0 +1,29 @@
+#POP DONE
+state={
+	id=586
+	name="STATE_586"
+	resources={
+		steel=6.000
+		tungsten=1.000
+		aluminium=3.000
+	}
+
+	history={
+		owner = KYR
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+		}
+		victory_points = { 7706 3 }
+		add_core_of = KYR
+		
+
+	}
+
+	provinces={
+		1483 2058 7706 10408 10488 10530 10660 12581 12583 13258 13259 13262 13256 13266
+	}
+	manpower=1041000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,295 @@
+ideas = {
+	hidden_ideas = {
+		ITW_grab_your_rifles = {
+			#A temporary attack buff, to increase the odds your side wins.
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_civilwar_ai "}
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.2
+				army_defence_factor = 0.4
+			}
+		}
+		LEB_civilwar_ai = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea LEB_civilwar_ai "}
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				ai_focus_aggressive_factor = 4 #400%. you WILL march into a mountain
+				ai_focus_defense_factor = 0 #march into that mountain dammit
+			}
+		}
+	}
+	country = {
+		IME_italys_finest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_italys_finest"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_italys_finest
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.02
+				acclimatization_hot_climate_gain_factor = 0.15
+				supply_consumption_factor = -0.1
+				army_core_defence_factor = 0.2
+				army_morale_factor = 0.1
+			}
+		}
+		IME_haganah_fatah_negotiations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_haganah_fatah_negotiations"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_the_uneasy_peace
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.10
+			}
+		}
+
+		IME_terrorism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_terrorism"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_opposed_extremisms
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				attrition = 0.1
+			}
+			#custom_effect_tooltip = irgun_ANM_influence
+			#You can't put tooltips in ideas
+		}
+
+		IME_emirate_of_transjordan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_emirate_of_transjordan"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_emirate_of_transjordan
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = 0.10
+			}
+		}
+
+		IME_ghost_like_counterstrike = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_ghost_like_counterstrike"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.2
+				planning_speed = 0.50
+				army_speed_factor = 0.05
+			}
+		}
+
+		IME_operation_palmyra = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_operation_palmyra"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.2
+			}
+		}
+
+		IME_stay_behind_tactics = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_stay_behind_tactics"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				#partisan_effect = 0.15
+			}
+		}
+		IME_x_reggimento_arditi = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_x_reggimento_arditi"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				surrender_limit = 0.10
+			}
+		}
+
+		IME_grind_them_into_dust = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_grind_them_into_dust"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+
+		IME_para_counterattacks = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_para_counterattacks"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				air_paradrop_attack_factor = 0.1
+				air_paradrop_defence_factor = 0.1
+			}
+		}
+		IME_non_il_valore = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_non_il_valore"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.02
+			}
+		}
+		IME_joint_training = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_joint_training"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				training_time_factor = -0.2
+			}
+		}
+
+		IME_joint_strategy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IME_joint_strategy"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.2
+				command_power_gain = 0.4
+			}
+		}
+
+		ime_labor_camps_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ime_labor_camps_idea"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		ime_jewel_of_the_empire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ime_jewel_of_the_empire"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = IME_ghost_like_counterstrike
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		IME_corrupt_officer_corps = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ime_corrupt_officer_corps"}
+			allowed = {
+				original_tag = "IME"
+				always = no
+			}
+
+			picture = CAU_native_auxillary
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.15
+			}
+		}
+	}
+}

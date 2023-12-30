@@ -1,0 +1,302 @@
+﻿add_namespace = ilgevents
+add_namespace = ilg_gov
+
+country_event = { #Castellano Dispatch 1
+	id = ilgevents.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.1"}
+	title = ilgevents.1.t
+	desc = ilgevents.1.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Castellano Dispatch 1
+		name = ilgevents.1.a
+	}
+}
+
+country_event = { #oh shit oh shit oh shit oh shit help help help help
+	id = ilgevents.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.6"}
+	title = ilgevents.6.t
+	desc = ilgevents.6.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #well, we need to try harder lol
+		name = ilgevents.6.a
+	}
+}
+
+country_event = { #Castellano Dispatch 2
+	id = ilgevents.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.7"}
+	title = ilgevents.7.t
+	desc = ilgevents.7.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.7.a
+	}
+}
+
+country_event = { #Castellano Dispatch 3
+	id = ilgevents.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.8"}
+	title = ilgevents.8.t
+	desc = ilgevents.8.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.8.a
+	}
+}
+
+country_event = { #Castellano Dispatch 4
+	id = ilgevents.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.9"}
+	title = ilgevents.9.t
+	desc = ilgevents.9.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.9.a
+		set_country_flag = ILG_native_volunteers_cf
+	}
+
+	option = {
+		name = ilgevents.9.b
+		set_country_flag = ILG_italian_reinforcements_cf
+	}
+}
+
+country_event = { #Castellano Dispatch 5
+	id = ilgevents.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.10"}
+	title = ilgevents.10.t
+	desc = ilgevents.10.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.10.a
+	}
+}
+
+country_event = { #Castellano Dispatch 6
+	id = ilgevents.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.11"}
+	title = ilgevents.11.t
+	desc = ilgevents.11.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.11.a
+	}
+}
+
+country_event = { #Castellano Dispatch 7
+	id = ilgevents.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.12"}
+	title = ilgevents.12.t
+	desc = ilgevents.12.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.12.a
+	}
+}
+
+country_event = { #Castellano Dispatch 8
+	id = ilgevents.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.13"}
+	title = ilgevents.13.t
+	desc = ilgevents.13.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.13.a
+	}
+}
+
+country_event = { #Castellano Dispatch 9
+	id = ilgevents.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.14"}
+	title = ilgevents.14.t
+	desc = ilgevents.14.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.14.a
+	}
+}
+
+country_event = { #Castellano Dispatch 10
+	id = ilgevents.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.15"}
+	title = ilgevents.15.t
+	desc = ilgevents.15.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.15.a
+		ILG_bandit_status_effect = yes
+	}
+}
+
+country_event = { #Castellano Dispatch 11
+	id = ilgevents.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.16"}
+	title = ilgevents.16.t
+	desc = ilgevents.16.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.16.a
+	}
+}
+
+country_event = { #Castellano Dispatch 12
+	id = ilgevents.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.17"}
+	title = ilgevents.17.t
+	desc = ilgevents.17.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.17.a
+	}
+}
+
+country_event = { #Castellano Dispatch 13
+	id = ilgevents.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.18"}
+	title = ilgevents.18.t
+	desc = ilgevents.18.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.18.a
+	}
+}
+
+country_event = { #Castellano Dispatch 14
+	id = ilgevents.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.19"}
+	title = ilgevents.19.t
+	desc = ilgevents.19.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.19.a
+	}
+}
+
+country_event = { #Castellano Dispatch 15
+	id = ilgevents.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.20"}
+	title = ilgevents.20.t
+	desc = ilgevents.20.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.20.a
+	}
+}
+
+country_event = { #Castellano Dispatch 16
+	id = ilgevents.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilgevents.21"}
+	title = ilgevents.21.t
+	desc = ilgevents.21.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = ilgevents.21.a
+	}
+}
+
+country_event = { #Native Gov
+	id = ilg_gov.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event ilg_gov.1"}
+	title = ilg_gov.1.t
+	desc = ilg_gov.1.d
+	picture = GFX_unknown
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Abbas
+		name = ilg_gov.1.a
+	}
+
+	option = { #Boualam
+		name = ilg_gov.1.b
+	}
+}
+

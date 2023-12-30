@@ -1,0 +1,25 @@
+#Fire the below in a unit leader scope
+
+is_IRI_unit_leader = {
+	is_character = PER_hossein_fardoust
+}
+
+#is_IRL_unit_leader = {
+#	has_id = 50010
+#}
+
+is_IRC_unit_leader = {
+	OR = {
+		is_character = PER_gholam_alia_oveissi
+		is_character = PER_jafar_shafaghat
+		is_character = PER_gholam_reza_azhari
+	}
+}
+
+is_needing_promotion_iran = {
+	OR = {
+		is_character = PER_gholam_alia_oveissi
+		is_character = PER_hossein_fardoust
+		is_character = PER_bahram_aryana
+	}
+}

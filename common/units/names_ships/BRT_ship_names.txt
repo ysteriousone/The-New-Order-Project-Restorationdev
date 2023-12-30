@@ -1,0 +1,87 @@
+﻿##### BRITANNY NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+BRT_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { BRT }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = ""
+	fallback_name = "L-d%d"		#Lestr-distruj
+
+	unique = {
+		"Morvran" "Gouelan" "Fazan" "Gwennili" "Godez beg-plat" "Morskoul boutin" "Koailh"
+		"Poc'han" "Kefeleg-koad" "Klujar"
+	}
+}
+
+BRT_FF_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_FRIGATE
+
+	for_countries = { BRT }
+
+	type = ship
+	ship_types = { ship_hull_more_light frigate }
+
+	prefix = ""
+	fallback_name = "F-%d" #Fourgadenn
+
+	unique = {
+		"Avank" "Karv" "Hoc'h-gouez" "Greunader" "Kaerell" "Gad" "Askell-groc'hen"
+	}
+}
+
+BRT_COR_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_COR
+
+	for_countries = { BRT }
+
+	type = ship
+	ship_types = { ship_hull_very_light corvette }
+
+	prefix = ""
+	fallback_name = "K-%d"			#Korvetenn
+
+	unique = { #cities in brittany
+		"Sant-Nazar" "Kemper" "Gwened" "Sant-Maloù" "Sant-Brieg" "Kastell Paol" "Dol" "Landreger" "Dinan"
+		"Ploermael" "Redon" "Vitré" "Gwenrann" "Felger"
+	}
+}
+
+
+### CRUISER NAMES###
+BRT_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CAPITAL
+
+	for_countries = { BRT }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser cruiser ship_hull_heavy battleship ship_hull_carrier carrier }
+
+	prefix = ""
+	fallback_name = "Lestr %d"
+
+	unique = {
+		"Breizh" "Yann Perrot" "Dizalc'hted" "Broad"
+	}
+}
+
+
+### SUBMARINES ###
+BRT_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { BRT }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+
+	prefix = ""
+	fallback_name = "Ls-%d" #Lestr-spluj
+
+	unique = {
+		"Ls-1" "Ls-2"
+	}
+}

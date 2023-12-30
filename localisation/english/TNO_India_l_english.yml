@@ -1,0 +1,84 @@
+﻿l_english:
+ ###########
+ ##Parties##
+ ###########
+
+ IND_communist_party: "CPI"
+ IND_communist_party_long: "Communist Party of India"
+ IND_socialist_party: "INC - Gandhian Socialist"
+ IND_socialist_party_long: "Indian National Congress - Gandhian Socialist Wing"
+ IND_progressivism_party: "INC - Nehruvian"
+ IND_progressivism_party_long: "Indian National Congress - Nehruvian Wing"
+ IND_liberalism_party: "Swatantra"
+ IND_liberalism_party_long: "Swatantra Party"
+ IND_conservatism_party: "INC - Conservative"
+ IND_conservatism_party_long: "Indian National Congress - Conservative Wing"
+ IND_paternalism_party: "BJS-SWA-REG Coaltion"
+ IND_paternalism_party_long: "BJS-SWA-REG Coaltion"
+ IND_fascism_party: "BJS"
+ IND_fascism_party_long: "Akhil Bharatiya Jana Sangh"
+ 
+ IND_socialist_party_INC_OS: "INC (O-S)"
+ IND_socialist_party_INC_OS_long: "Indian National Congress (Organization - Socialist)"
+ IND_conservatism_party_INC_OR: "INC - (O-P)"
+ IND_conservatism_party_INC_OR_long: "Indian National Congress (Organization - Patelites)"
+ IND_progressivism_party_split: "INC - P"
+ IND_progressivism_party_split_long: "Indian National Congress - Progressive"
+ IND_socialist_party_72: "CPI-SSP Front"
+ IND_socialist_party_72_long: "Communist Party of India - Samyukta Socialist Party Front"
+
+ #######################
+ ##Leader Descriptions##
+ #######################
+ IND_jawaharlal_nehru: "Jawaharlal Nehru"
+ IND_vk_krishna_menon: "V. K. Krishna Menon"
+ IND_lal_bahadur_shastri: "Lal Bahadur Shastri"
+ IND_morarji_desai: "Morarji Desai"
+ IND_chakravarti_rajagopalachari: "C. Rajagopalachari"
+ IND_n_g_ranga: "N. G. Ranga"
+ IND_atal_bihari_vajpayee: "Atal Bihari Vajpayee"
+ IND_raghu_vira: "Raghu Vira"
+ IND_jb_kripalani: "J. B. Kripalani"
+ IND_kodandera_subayya_thimayya: "Kodandera Subayya Thimayya"
+ IND_jayanto_nath_chaudhuri: "Jayanto Nath Chaudhuri"
+ IND_yahya_khan: "Yahya Khan"
+ IND_sam_manekshaw: "Sam Manekshaw"
+ IND_pp_kumaramangalam: "Paramasiva Prabhakar Kumaramangalam"
+ IND_charles_pizey: "Charles Pizey"
+ IND_gopal_gurunath_bewoor: "Gopal Gurunath Bewoor"
+ IND_pran_nath_thapar: "Pran Nath Thapar"
+ IND_brijmohan_kaul: "Brijmohan Kaul"
+ IND_km_cariappa: "K.M. Cariappa"
+ IND_amar_nath_vidyalankar: "Amar Nath Vidyalankar"
+ IND_neelam_sanjiva_reddy: "Neelam Sanjiva Reddy"
+ IND_e_m_s_namboodiripad: "E. M. S. Namboodiripad"
+ IND_mani_ram_bagri: "Mani Ram Bagri"
+
+ POLITICS_JAWAHARLAL_NEHRU_DESC: "Born to a privileged family already involved in the independence struggle, Jawaharlal Nehru experienced India and its traditions almost as an outsider - after completing an English education at the heart of the British Empire and only then returning home. Nevertheless, participating in the Congress' independence struggle at the right-hand side of the Mahatma himself brought him popular support and leadership positions - so that when the British Raj finally collapsed ignominiously in 1943 he was right there to take up the reins.\n\nBut this leadership was not only his own. Caught between an expansionist Afghanistan in the west, the Japanese threat encroaching in from the east, and the princes at home jockeying for separate independence, Nehru chose instead to compromise his own power for the sake of the nation, inviting Subhas Bose and the INA to form a joint government for the sake of maintaining India's territorial sanctity. An alliance that would not last, and with the failures of the war against Afghanistan the only other option was to cut off his erstwhile friend and ally and watch as he escaped to the East, forming a bitter rival government in Calcutta.\n\nNow only governing half a country, Nehru nevertheless sought to build the India of his and the rest of Congress' vision - a sovereign, socialist, secular and democratic republic free from the authoritarianism that plagued other postcolonial states. For two decades he laboured as Prime Minister in this endeavour - but now it seems his time is coming to a close. Perhaps he will not be able to settle things and see a united India in his own lifetime. But his legacy - for India's sake - must persevere."
+ POLITICS_SA_DANGE_DESC: "Shripad Amrit Dange has lived a life of work. Since his birth in 1899, he has served the forces of communism and India, serving as Chairman of the Communist Party of India since 1951. Far from unorthodox, Dange believes wholeheartedly in the line formerly pushed by the Soviet Union and Bolshevism. But where, exactly, did he come from?\n\nDange's early life was similar to that of many current Indian politicians; fighting for the freedom of the Indian subcontinent from the British clutches. However, while many moved towards Gandhi, Nehru, and Bose, Dange instead moved towards another lesser-known, but still popular figure: Manabendra Nath Roy, founder of the Mexican Communist Party, the Radical Democratic Party, and, more importantly to Dange's story, the Communist Party of India. However, while Roy was more moderate and later moved from communism to his own so-called "Radical Humanism", Dange continued to support Lenin's ways to no end.\n\nIn the 1950s, Dange supported the Telangana Rebellion against the Nizam of Hyderabad, and found a friend in its leader: Chandra Rajeswara Rao. Alongside Rao, Dange began to bring the CPI from Roy's old ways to a stable, Leninist structure that would be able to compete with Congress on a national scale. With Dange being a home name and Rao a more libertarian figurehead as well as a war hero, the CPI began to catch up in elections at a breakneck pace. But it was still not enough to win. That is, until the 1960s. Gaining even more strength from the collapse of Congress into several squabbling parties, Dange made his move - and won. With a CPI majority in the Lok Sabha, however, many conservatives have already begun to riot, and it remains to be seen if Dange can keep India together, or if it shall tear apart."
+ POLITICS_MORARJI_DESAI_DESC: "Morarji Desai's political life began with activism. Together with Mohandas Gandhi, Jawaharlal Nehru, Chakravarti Rajagopalachari, and countless others, Desai joined the Swaraj movement against the British, landing him in jail for several years. His spirit and leadership during this time earned him much acclaim, which would only grow further during the Second War of Independence. Desai was responsible for the ceasefire agreement that ended the fighting and established lasting peace. In the old days of the united Indian National Congress, Morarji Desai stood as one of its most prominent and formidable members. Although often at odds with Prime Minister Nehru due to their differing views, many considered Desai to his natural successor. Had the party stayed together after Nehru's death, he might indeed have taken over leadership. That day never came though, and so Desai founded his own, conservative party in the wake of Congress' collapse. Already popular, Desai attracted most of the conservatives of the old INC to his Janata Party, forging it into the definitive organization of the Indian center-right.\n\nDesai himself is regarded as somewhat of a moral crusader, as well as somewhat religious and somewhat nationalistic man which has certainly flavoured his political career. It is however his moderate, anti-Hindutva, and secular nature that has won him his popularity and success as a politician and party leader. Desai is also openly opposed to independence for Indian Muslims, instead believing that the issues in the region can be better solved if they were to stay part of India. Like all those involved in politics, Morarji Desai is a complex figure. He is both a strict religious moralist and a secular, moderate conservative. It is perhaps because of this blend that he was able to lead a party and now an entire nation. Desai has served India in many ways prior, but now he will guide it by his own hand."
+ POLITICS_INDIRA_GANDHI_DESC: "What drives people to seek power? Is it a primal need to be the leader of the tribe, little more than an instinct to be the pack's alpha? Is it simply a need for selfish fulfillment, to prove that you really are the best? Is it something in the way certain people are born, a desire to be at the top with no understanding as to why? Is it just a way to make profit, to enrich your own life at the expense of others? Maybe, just maybe, is it even a desire to wield that power to make a better world for all who live within it? In the end, all of these varied and mysterious urges are bottled into a single term, one name to unite the unknowable motivations of the world's power-hungry: ambition. And perhaps no single person in the world better embodies that word and all of its unique and even self-conflicting meanings than Indira Gandhi.\n\nIndira Gandhi may never have had a choice in her own ambitions. Born the daughter of Jawaharlal Nehru, Hero of Independence and one of the Fathers of India, Indira's bloodline was the first rung on her climb to the highest office in India. While having one of the great men of history as her father may have set the spark of her desires, it was not as conducive to her life as a young child, and she saw her father infrequently, communicating through letters and rare visits. Later in life, this changed, and with the independence of India, Indira began to serve as Nehru's personal assistant. She worked her way up to become the President of the Indian National Congress, and as her father lay dying, she patiently waited, knowing she was destined to take up his mantle. Now, she stands victorious. Her decades of work have paid off, but this is not the end of her climb. Indira will use her power, for better or for worse. In her mind, it is hers to wield, and she alone knows how to use it. She will not be dragged down by any who would challenge her; she knows what is right, even if who it is right for disagrees. the world does not yet know the end of Indira Gandhi's ambition."
+ POLITICS_CHAKRAVARTI_INDAGOPALACHARI_DESC: "From a western outlook, Chakravarti Rajagopalachari's policy and beliefs are nearly as complex as his name. He is simultaneously socially liberal and conservative, both supporting free trade and the status quo, and at the same time saying that India must change and that India is perfect. However, Rajagopalachari follows an ideology which has died out in the aftermath of the Second World War; classical liberalism. Considered relevant in only a few countries, Rajagopalachari's belief in this system is enough to show that he is an elder statesman.\n\nRajagopalachari fought peacefully alongside many others for India's independence from Britain. However, while many others supported and even endorsed socialism, he saw that the restriction of the market was nearly, if not equally as terrible as the fascist restriction of rights. Nonetheless, as the fight for Indian independence devolved into a war for it, and, from there, a brother war. Rajagopalachari knew that Nehru's propaganda about Bose's desire to exterminate all followers of peace was a total fabrication. Nonetheless, he saw Nehru as far more approachable from an economic standpoint than Bose, and sided with him over a dyed-in-the-wool socialist.\n\nAfter the war, Rajagopalachari found himself on the conservative wing of Congress, alongside such minds as Morarji Desai. While the two were on the same side, they could hardly be considered allies, and their distrust was mutual; Rajagopalachari saw Desai as too extreme, and Desai saw Rajagopalachari as too moderate. Despite this, the two fought together as a bulwark against socialism. Now, however, Rajagopalachari has won, with his newfound Swatantra Party. In a nation filled with socialists, though, it will be difficult for him to hold the line."
+
+ #################
+ ##Leader Traits##
+ #################
+
+ father_of_india: "The Founding Father"
+
+ #########
+ ##Ideas##
+ #########
+ IND_Looming_Communal_Problem: "Looming Communal Problem"
+ IND_Looming_Communal_Problem_desc: "The incomplete Afghan War and failure of the government to address the Pakistan Movement have left millions of people across regions of both Muslim majority and minority uncertain about their security and livelihood. With the death of Gandhi the last resort has been lost - should communal violence break out again it will be bloodier and more uncontrollable than ever before."
+ IND_Neverending_Security_Budget: "Neverending Security Budget"
+ IND_Neverending_Security_Budget_desc: "The possibility of war with the East has forced the government to divert a considerable amount of the budget for military purposes, hamstringing vital and dearly needed social programs and subsidies. Until a permanent solution for this can be found we will not be able to significantly improve material conditions among the people."
+ IND_Third_Five_Year_Plan: "Third Five Year Plan"
+ IND_Third_Five_Year_Plan_desc: "The Third Five-Year Plan continues the focus on electrification, rapid industrialization and agricultural investments from the previous Plan, but with a much greater emphasis on the development of a domestic military-industrial base."
+
+ IND_religious_tension: "Religious Tension"
+ IND_religious_tension_desc: "India's religious makeup is countlessly varied, with Hindus, Muslims, Sikhs, Buddhists, Christians, and even more tiny religious groups, such as Jews and Zoroastrians. These religious groups are hardly on the best of terms, and interfaith violence is rampant, with the All-India Muslim League constantly coming at odds with the Rashtriya Swayamsevak Sangh, and the other faiths often fighting against the more major ones, as well as between each other.\n\nEither extensive autonomy or independence for at least some of these groups is inevitable, and if such changes are not brought about by the Indian government, then they will be pursued by violent means."
+ IND_Permit_Raj: "The Permit Raj"
+ IND_Permit_Raj_desc: "While the Azad Hind abolished private business as a whole, the Republic has kept it around, albeit with a byzantine bureaucratic system of regulations and red tape. This system is the product of Jawaharlal Nehru in an attempt to create a command economy, working alongside the Five-Year Plans and other economic laws and principles.\n\nThe system of bureaucracy, known popularly as the "Permit Raj" in a mocking comparison to British rule, is extremely corrupt and severely stunts economic growth, as well. It creates a heavy division between the left wing of Congress, believing it is necessary and good to keep socialism around, and the right wing, finding it a needless system run by incompetents."
+ IND_disunited_government: "Disunited Government"
+ IND_disunited_government_desc: "The Indian National Congress is a big-tent political party ranging from communism to borderline fascism, and everything in between. Unfortunately, this large-reaching coaltiion has led to many issues within our government, with conservatives constantly feuding with leftists and anarchists feuding with centralists.\n\nSo far, only one charismatic leader has managed to maintain the coalition; the father of the nation, Jawaharlal Nehru. However, the father's days are numbered, and when he inevitably passes, it is doubtful that a leader as charismatic as him will fill the vacuum, and chaos will ensue."

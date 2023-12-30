@@ -1,0 +1,50 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			DOM = {
+				country_event = { # Trujillo Dies
+					id = HIS_general.1
+					days = 2341
+				}
+				country_event = { # Trujillo Assassinated
+					id = HIS_general.2
+					days = 1610
+				}
+				country_event = { # 1966 elections
+					id = HIS_puertoplata.18
+					days = 1612
+				}
+				country_event = { # 1966 elections - Balaguer Ceasefire
+					id = HIS_PP_ceasefire.17
+					days = 1612
+				}
+				country_event = { # 1970 elections
+					id = HIS_puertoplata.19
+					days = 3057
+				}
+				country_event = { # 1970 elections - Balaguer Ceasefire
+					id = HIS_PP_ceasefire.18
+					days = 3057
+				}
+			}
+			HAI = {
+				country_event = { # Haitian Elections
+					id = HIS_HAI.4
+					days = 895
+				}
+				country_event = { # Death of Papa Doc
+					id = HIS_HAI.18
+					days = 3397
+				}
+			}
+		}
+	}
+	on_weekly_HAI = {
+		effect = {
+			if = {
+				limit = { has_global_flag = HIS_HAI_civil_war_ongoing }
+				TNO_HAI_crush_check = yes
+			}
+		}
+	}
+}

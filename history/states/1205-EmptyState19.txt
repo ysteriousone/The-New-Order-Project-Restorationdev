@@ -1,0 +1,18 @@
+
+state={
+	id=1205
+	name="STATE_1205"
+
+	history={
+		owner = CAO
+		add_core_of = CAO
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		14132 14151 14155 14177
+	}
+	manpower=156000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

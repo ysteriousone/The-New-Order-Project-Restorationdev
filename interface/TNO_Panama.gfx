@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Panama_Jose_Castillo"
+		texturefile = "gfx/leaders/PAN/Portrait_Panama_Jose_Castillo.dds"
+	}
+}

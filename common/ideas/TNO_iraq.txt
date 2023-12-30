@@ -1,0 +1,261 @@
+ideas = {
+	country = {
+		IRQ_july_14_legacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_july_14_legacy"}
+			picture = IRQ_Legacy_of_July_14th
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+
+		IRQ_july_14_legacy1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_july_14_legacy1"}
+			picture = IRQ_Legacy_of_July_14th
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.1
+			}
+		}
+
+		IRQ_dawa_ascendant = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_dawa_ascendant"}
+			allowed = {
+				NOT = { has_global_flag = OC_Iraq_CW_over }
+			}
+			picture = IRQ_Dawa_Ascendant
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.10
+			}
+		}
+
+		IRQ_italian_interference = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_italian_interference"}
+			picture = IRQ_Italian_Interference
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = -0.05
+				free_production_units_modifier = -2
+			}
+		}
+
+		IRQ_italian_interference1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_italian_interference1"}
+			picture = IRQ_Italian_Interference
+			modifier = {
+				stability_factor = 0.05
+				free_production_units_modifier = -1
+			}
+		}
+
+		IRQ_ineffecient_oil_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_ineffecient_oil_industry"}
+			picture = IRQ_Ineffecient_Oil_Economy
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.1
+				production_oil_factor = -0.1
+				fuel_gain_factor = -0.1
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+
+		IRQ_ineffecient_oil_industry1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_ineffecient_oil_industry1"}
+			picture = IRQ_Ineffecient_Oil_Economy
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.05
+				production_oil_factor = -0.5
+				fuel_gain_factor = -0.05
+			}
+		}
+
+		IRQ_the_spectre_of_baathism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_the_spectre_of_baathism"}
+			picture = IRQ_The_Spectre_of_Baathism
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.1
+			}
+		}
+
+		IRQ_the_spectre_of_baathism1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_the_spectre_of_baathism1"}
+			picture = IRQ_The_Spectre_of_Baathism
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.05
+			}
+		}
+
+		# non starting
+
+		IRQ_iraq_economy_shift = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_iraq_economy_shift"}
+			picture = generic_planned_economy
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+
+		IRQ_iraq_economy_shift1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_iraq_economy_shift1"}
+			picture = generic_planned_economy
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		IRQ_iraq_economy_shift2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_iraq_economy_shift2"}
+			picture = generic_planned_economy
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		IRQ_ENIIPC_cooperation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_ENIIPC_cooperation"}
+			picture = generic_planned_economy
+			modifier = {
+				fuel_gain_factor = 0.1
+			}
+		}
+
+		IRQ_Matteis_bookering = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_Matteis_bookering"}
+			picture = generic_planned_economy
+			modifier = {
+				production_oil_factor = 0.25
+			}
+		}
+
+		IRQ_moderinizing_agriculture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_moderinizing_agriculture"}
+			picture = generic_planned_economy
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+
+		IRQ_exports_agriculture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_exports_agriculture"}
+			picture = generic_planned_economy
+			modifier = {
+				# min_export = -0.15
+			}
+		}
+
+		IRQ_exports_moderinizing_agriculture = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_exports_moderinizing_agriculture"}
+			picture = generic_planned_economy
+			modifier = {
+				# min_export = -0.2
+				consumer_goods_use_modifier = -0.07
+			}
+		}
+
+		IRQ_Ignorance_Sucks = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_Ignorance_Sucks"}
+			picture = generic_planned_economy
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		IRQ_mandatory_enrollment = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_mandatory_enrollment"}
+			picture = generic_planned_economy
+			modifier = {
+				research_speed_factor = 0.02
+				stability_factor = 0.03
+			}
+		}
+
+		IRQ_tolerance_paradise = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_tolerance_paradise"}
+			picture = generic_planned_economy
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+
+		IRQ_pious_society = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_pious_society"}
+			picture = generic_planned_economy
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.25
+			}
+		}
+
+		IRQ_strong_society = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_strong_society"}
+			picture = generic_planned_economy
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = 0.1
+			}
+		}
+
+		IRQ_SIM_aid = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_SIM_aid"}
+			picture = generic_planned_economy
+			modifier = {
+				decryption_factor = 0.2
+				encryption_factor = 0.2
+			}
+		}
+
+		IRQ_army_situation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_army_situation"}
+			picture = generic_planned_economy
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.1
+				army_core_defence_factor = -0.1
+			}
+		}
+
+		IRQ_army_situation1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_army_situation1"}
+			picture = generic_planned_economy
+			modifier = {
+				stability_factor = -0.025
+				conscription_factor = -0.1
+				army_core_defence_factor = -0.1
+			}
+		}
+
+		IRQ_army_situation2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_army_situation2"}
+			picture = generic_planned_economy
+			modifier = {
+				conscription_factor = -0.05
+				army_core_defence_factor = -0.05
+			}
+		}
+
+		IRQ_army_situation3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_army_situation3"}
+			picture = generic_planned_economy
+			modifier = {
+				conscription_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		IRQ_NDP_Supremacy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea IRQ_NDP_Supremacy"}
+			picture = generic_planned_economy
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.1
+			}
+		}
+	}
+}

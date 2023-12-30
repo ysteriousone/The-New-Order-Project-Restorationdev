@@ -1,0 +1,413 @@
+IME_reload_tree = {
+	hidden_effect = {
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+IME_irgun_up_2 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_irgun_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_irgun_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_irgun_strength
+				value = 2
+			}
+			clamp_variable = {
+				var = IME_irgun_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_empower_irgun
+}
+
+IME_irgun_up_5 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_irgun_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_irgun_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_irgun_strength
+				value = 5
+			}
+			clamp_variable = {
+				var = IME_irgun_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_empower_irgun
+}
+
+IME_irgun_up_10 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_irgun_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_irgun_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_irgun_strength
+				value = 10
+			}
+			clamp_variable = {
+				var = IME_irgun_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_greatly_empower_irgun
+}
+
+IME_irgun_down_2 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_irgun_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_irgun_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_irgun_strength
+				value = -2
+			}
+			clamp_variable = {
+				var = IME_irgun_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_weaken_irgun
+}
+
+IME_irgun_down_5 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_irgun_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_irgun_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_irgun_strength
+				value = -5
+			}
+			clamp_variable = {
+				var = IME_irgun_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_weaken_irgun
+}
+
+IME_irgun_down_10 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_irgun_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_irgun_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_irgun_strength
+				value = -10
+			}
+			clamp_variable = {
+				var = IME_irgun_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_greatly_weaken_irgun
+}
+
+IME_anm_up_2 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_anm_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_anm_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_anm_strength
+				value = 2
+			}
+			clamp_variable = {
+				var = IME_anm_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_empower_anm
+}
+
+IME_anm_up_5 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_anm_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_anm_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_anm_strength
+				value = 5
+			}
+			clamp_variable = {
+				var = IME_anm_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_empower_anm
+}
+
+IME_anm_up_10 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_anm_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_anm_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_anm_strength
+				value = 10
+			}
+			clamp_variable = {
+				var = IME_anm_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_greatly_empower_anm
+}
+
+IME_anm_down_2 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_anm_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_anm_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_anm_strength
+				value = -2
+			}
+			clamp_variable = {
+				var = IME_anm_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_weaken_anm
+}
+
+IME_anm_down_5 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_anm_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_anm_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_anm_strength
+				value = -5
+			}
+			clamp_variable = {
+				var = IME_anm_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_weaken_anm
+}
+
+IME_anm_down_10 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					var = IME_anm_strength
+					value = 0
+					compare = greater_than
+				}
+				NOT = {
+					has_country_flag = IME_anm_wiped_out
+				}
+			}
+			add_to_variable = {
+				var = IME_anm_strength
+				value = -10
+			}
+			clamp_variable = {
+				var = IME_anm_strength
+				max = 40
+				min = 0
+			}
+		}
+	}
+	custom_effect_tooltip = IME_greatly_weaken_anm
+}
+
+
+####Exo's magical scripted effect realm for IME
+#IME_increase_anger = {
+#	if = {
+#		limit = {
+#			has_idea = IME_israeli_anger_1
+#		}
+#		swap_ideas = {
+#			add_idea = IME_israeli_anger_2
+#			remove_idea = IME_israeli_anger_1
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_israeli_anger_2
+#		}
+#		swap_ideas = {
+#			add_idea = IME_israeli_anger_3
+#			remove_idea = IME_israeli_anger_2
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_israeli_anger_3
+#		}
+#		swap_ideas = {
+#			add_idea = IME_israeli_anger_4
+#			remove_idea = IME_israeli_anger_3
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_israeli_anger_4
+#		}
+#		swap_ideas = {
+#			add_idea = IME_israeli_anger_5
+#			remove_idea = IME_israeli_anger_4
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_palestine_anger_1
+#		}
+#		swap_ideas = {
+#			add_idea = IME_palestine_anger_2
+#			remove_idea = IME_palestine_anger_1
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_palestine_anger_2
+#		}
+#		swap_ideas = {
+#			add_idea = IME_palestine_anger_3
+#			remove_idea = IME_palestine_anger_2
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_palestine_anger_3
+#		}
+#		swap_ideas = {
+#			add_idea = IME_palestine_anger_4
+#			remove_idea = IME_palestine_anger_3
+#		}
+#	}
+#	
+#	if = {
+#		limit = {
+#			has_idea = IME_palestine_anger_4
+#		}
+#		swap_ideas = {
+#			add_idea = IME_palestine_anger_5
+#			remove_idea = IME_palestine_anger_4
+#		}
+#	}
+#}

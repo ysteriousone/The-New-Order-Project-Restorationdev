@@ -1,0 +1,74 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_SAM_a_kingdom_in_the_making_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_in_the_making.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_in_the_making.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_in_the_making.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_cant_say_no_to_all_the_lights_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_cant_say_no_to_all_the_lights.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_cant_say_no_to_all_the_lights.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_cant_say_no_to_all_the_lights.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_i_remember_our_pact_kaminski_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_i_remember_our_pact_kaminski.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_i_remember_our_pact_kaminski.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_i_remember_our_pact_kaminski.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_sir_you_are_not_allowed_to_enter_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_sir_you_are_not_allowed_to_enter.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_sir_you_are_not_allowed_to_enter.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_sir_you_are_not_allowed_to_enter.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_the_king_himself_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_the_king_himself.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_the_king_himself.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_the_king_himself.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_for_your_stab_in_the_back_you_will_die_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_for_your_stab_in_the_back_you_will_die.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_for_your_stab_in_the_back_you_will_die.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_for_your_stab_in_the_back_you_will_die.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_protesting_is_just_not_beneficial_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_protesting_is_just_not_beneficial.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_protesting_is_just_not_beneficial.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_protesting_is_just_not_beneficial.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_a_kingdom_almost_made_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_almost_made.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_almost_made.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_a_kingdom_almost_made.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SAM_it_is_my_army_shine"
+		texturefile = "gfx/interface/goals/Samara/GFX_SAM_it_is_my_army.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_it_is_my_army.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = -90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		animation = { animationmaskfile = "gfx/interface/goals/Samara/GFX_SAM_it_is_my_army.dds" animationtexturefile = "gfx/interface/goals/shine_overlay.dds" animationrotation = 90.0 animationlooping = no animationtime = 0.75 animationdelay = 0 animationblendmode = "add" animationtype = "scrolling" animationrotationoffset = { x = 0.0 y = 0.0 } animationtexturescale = { x = 1.0 y = 1.0 } }
+		legacy_lazy_load = no
+	}
+}

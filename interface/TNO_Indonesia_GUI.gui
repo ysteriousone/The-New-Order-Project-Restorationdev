@@ -1,0 +1,243 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_Indonesian_Civil_War_GUI"
+		size = { width = 525 height = 450 }
+		position = { x = 29 y = 131 }
+
+		containerWindowType = {
+			name = "inner"
+			position = { x = 0 y = 0 }
+			
+			iconType = {
+				name = "sidebar"
+				position = { x = 8 y = 8 }
+				spriteType = "GFX_fopo_indonesia_sidebar"
+			}
+
+			instantTextboxType = {
+				name = "desc"
+				position = { x = 118 y = 8 }
+				font = "aldrich_18_outline"
+				text = "fopo_desc_text"
+				maxWidth = 370
+				format = left
+			}
+
+			iconType = {
+				name = "seal"
+				position = { x = 153 y = 25 }
+				spriteType = "GFX_fopo_dept_of_state_seal"
+			}
+		}
+
+		containerWindowType = {
+			name = "lower_section"
+			position = { x = 0 y = 0 }
+
+			iconType = {
+				name = "divider"
+				position = { x = 118 y = 327 }
+				spriteType = "GFX_icw_divider"
+			}
+
+			# Discontent
+			instantTextboxType = {
+				name = "discontent"
+				position = { x = 165 y = 340 }
+				font = "aldrich_20_outline"
+				text = "ICW_discontent_text"
+				maxWidth = 150
+				format = centre
+			}
+			iconType = {
+				name = "discontent_outline"
+				position = { x = 8 y = 360 }
+				spriteType = "GFX_icw_bar_outline"
+			}
+			iconType = {
+				name = "discontent_bar"
+				position = { x = 9 y = 360 }
+				spriteType = "GFX_icw_discontent_bar"
+			}
+			instantTextboxType = {
+				name = "discontent_effect_text"
+				position = { x = 374 y = 359 }
+				font = "aldrich_18_outline"
+				text = "ICW_discontent_effect_text"
+				maxWidth = 114
+				maxHeight = 46
+				format = centre
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "discontent_effect_box"
+				position = { x = 374 y = 359 }
+				spriteType = "GFX_icw_effect_box"
+				pdx_tooltip = ICW_discontent_effect_box_tt
+			}
+
+			# Escalation
+			instantTextboxType = {
+				name = "escalation"
+				position = { x = 165 y = 430 }
+				font = "aldrich_20_outline"
+				text = "ICW_outline_text"
+				maxWidth = 150
+				format = centre
+			}
+			iconType = {
+				name = "escalation_outline"
+				position = { x = 8 y = 452 }
+				spriteType = "GFX_icw_bar_outline"
+			}
+			iconType = {
+				name = "escalation_bar"
+				position = { x = 9 y = 452 }
+				spriteType = "GFX_icw_escalation_bar"
+			}
+			instantTextboxType = {
+				name = "escalation_effect_text"
+				position = { x = 374 y = 451 }
+				font = "aldrich_18_outline"
+				text = "ICW_escalation_effect_text"
+				maxWidth = 114
+				maxHeight = 46
+				format = centre
+				vertical_alignment = center
+			}
+			iconType = {
+				name = "escalation_effect_box"
+				position = { x = 374 y = 451 }
+				spriteType = "GFX_icw_effect_box"
+				pdx_tooltip = ICW_escalation_effect_box_tt
+			}
+
+		}
+	}
+
+	containerWindowType = {
+		name = "TNO_Indonesia_Decisions_GUI"
+		size = { width = 525 height = 700 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "Indonesia_GUI_Lock_1"
+			spriteType = "GFX_Indonesia_GUI_Lock_Locked"
+			position = { x = 50 y = 40 }
+		}
+		
+		iconType = {
+			name = "Indonesia_GUI_Lock_2"
+			spriteType = "GFX_Indonesia_GUI_Lock_Unlocked"
+			position = { x = 200 y = 40 }
+		}
+		
+		iconType = {
+			name = "Indonesia_GUI_Lock_3"
+			spriteType = "GFX_Indonesia_GUI_Lock_Broken"
+			position = { x = 350 y = 40 }
+		}
+		
+		instantTextboxType = {
+			name = "Indonesia_GUI_Lock_1_Title"
+			position = { x = 12 y = -15 }
+			font = "aldrich_24_outline"
+			text = INS_Scripted_GUI_the_military
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Indonesia_GUI_Lock_2_Title"
+			position = { x = 162 y = -15 }
+			font = "aldrich_24_outline"
+			text = INS_Scripted_GUI_the_skn
+			format = center
+		}
+		
+		instantTextboxType = {
+			name = "Indonesia_GUI_Lock_3_Title"
+			position = { x = 312 y = -15 }
+			font = "aldrich_24_outline"
+			text = INS_Scripted_GUI_the_politicians
+			format = center
+		}
+		
+		iconType = {
+			name = "Indonesia_GUI_Key_1"
+			spriteType = "GFX_Indonesia_GUI_Key"
+			position = { x = 78 y = 237 }
+		}
+		
+		iconType = {
+			name = "Indonesia_GUI_Key_2"
+			spriteType = "GFX_Indonesia_GUI_Key"
+			position = { x = 228 y = 237 }
+		}
+		
+		iconType = {
+			name = "Indonesia_GUI_Key_3"
+			spriteType = "GFX_Indonesia_GUI_Key"
+			position = { x = 378 y = 237 }
+		}
+		
+		buttonType = {
+			name = "Indonesia_GUI_Key_1_Button_1"
+			quadTextureSprite = "GFX_SGR_speergraph_button"
+			position = { x = 50 y = 383 }
+			buttonFont = "aldrich_20_outline"
+			text = INS_SKN_Concession
+			pdx_tooltip = "INS_Military_Concession_tt"
+			pdx_tooltip_delayed = "INS_Military_Concession_long_tt"
+		}
+		
+		buttonType = {
+			name = "Indonesia_GUI_Key_1_Button_2"
+			quadTextureSprite = "GFX_SGR_speergraph_button"
+			position = { x = 50 y = 473 }
+			buttonFont = "aldrich_20_outline"
+			text = INS_SKN_Purge
+			pdx_tooltip = "INS_Military_Purge_tt"
+			pdx_tooltip_delayed = "INS_Military_Purge_long_tt"
+		}
+		
+		buttonType = {
+			name = "Indonesia_GUI_Key_2_Button_1"
+			quadTextureSprite = "GFX_SGR_speergraph_button"
+			position = { x = 200 y = 383 }
+			buttonFont = "aldrich_20_outline"
+			text = INS_SKN_Concession
+			pdx_tooltip = "INS_SKN_Concession_tt"
+			pdx_tooltip_delayed = "INS_SKN_Concession_long_tt"
+		}
+		
+		buttonType = {
+			name = "Indonesia_GUI_Key_2_Button_2"
+			quadTextureSprite = "GFX_SGR_speergraph_button"
+			position = { x = 200 y = 473 }
+			buttonFont = "aldrich_20_outline"
+			text = INS_SKN_Purge
+			pdx_tooltip = "INS_SKN_Purge_tt"
+			pdx_tooltip_delayed = "INS_SKN_Purge_long_tt"
+		}
+		
+		buttonType = {
+			name = "Indonesia_GUI_Key_3_Button_1"
+			quadTextureSprite = "GFX_SGR_speergraph_button"
+			position = { x = 350 y = 383 }
+			buttonFont = "aldrich_20_outline"
+			text = INS_SKN_Concession
+			pdx_tooltip = "INS_Political_Concession_tt"
+			pdx_tooltip_delayed = "INS_Political_Concession_long_tt"
+		}
+		
+		buttonType = {
+			name = "Indonesia_GUI_Key_3_Button_2"
+			quadTextureSprite = "GFX_SGR_speergraph_button"
+			position = { x = 350 y = 473 }
+			buttonFont = "aldrich_20_outline"
+			text = INS_SKN_Purge
+			pdx_tooltip = "INS_Political_Purge_tt"
+			pdx_tooltip_delayed = "INS_Political_Purge_long_tt"
+		}
+	}
+}

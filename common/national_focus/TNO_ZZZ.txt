@@ -1,0 +1,26 @@
+focus_tree = {
+	id = ZZZ_national_focus #If you touch this the bookmark gets fucked
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = ZZZ
+				tag = CAN
+				tag = ARG
+				tag = CHL
+				tag = MEX
+				tag = TUR
+				tag = GRE
+				tag = MAN
+				tag = FRS
+				tag = MCW
+				tag = GGN
+				tag = UKR
+			}
+		}
+	}
+
+	default = no
+}

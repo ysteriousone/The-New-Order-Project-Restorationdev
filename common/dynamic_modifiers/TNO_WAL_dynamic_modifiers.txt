@@ -1,0 +1,5 @@
+WAL_Welsh_coal_income = {
+			enable = { always = yes }
+			####icon = "GFX_idea_GER_Opening_The_Markets"
+			misc_income_modifier = wal_coal_income
+}

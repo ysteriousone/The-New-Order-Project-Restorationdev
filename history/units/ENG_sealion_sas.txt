@@ -1,0 +1,33 @@
+division_template = {
+	name = "Special Air Service"
+	division_names_group = FEN_Special_Air_Service
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+		elite_infantry = { x = 1 y = 0 }
+		elite_infantry = { x = 1 y = 1 }
+		elite_infantry = { x = 2 y = 0 }
+		elite_infantry = { x = 2 y = 1 }
+		elite_infantry = { x = 3 y = 0 }
+		elite_infantry = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {
+		location = 219
+		division_template = "Special Air Service"
+		start_experience_factor = 0.2
+	}
+	division = {
+		location = 219
+		division_template = "Special Air Service"
+		start_experience_factor = 0.2
+	}
+}

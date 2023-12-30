@@ -1,0 +1,874 @@
+ideas = {
+
+	country = {
+		BRG_the_shadow_state = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_the_shadow_state" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = BRG_the_shadow_state
+
+			removal_cost = -1
+
+			modifier = {
+				resistance_target = -1
+				encryption_factor = 0.2
+				trade_opinion_factor = -0.8
+			}
+		}
+		BRG_purge_the_rot = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_purge_the_rot" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = BRG_purge_the_rot
+
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = -0.25
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.2
+				monthly_population = -0.25
+			}
+		}
+		BRG_the_three_realms = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_the_three_realms" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = BRG_the_three_realms
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+
+		BRG_idea_rigorous_spartanism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_rigorous_spartanism"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BRG_rigorous_spartanism
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				war_support_factor = 0.025
+				army_attack_factor = 0.0275
+				army_defence_factor = 0.0275
+				army_org_factor = 0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+
+		### GCW IDEAS ###
+		BRG_arbeit_macht_frei = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_arbeit_macht_frei" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = Burgundy_Industry_Idea_Icon
+
+			removal_cost = -1
+
+			modifier = {
+				industry_repair_factor = 0.3
+			}
+		}
+		BRG_fight_to_germania = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_fight_to_germania" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GER_the_two_principles
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = BGR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SGR
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GGR
+				attack_bonus_against = 0.1
+			}
+		}
+		BRG_GCW_officer_assassinations = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_arbeit_macht_frei" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = IRQ_assassination
+
+			removal_cost = -1
+
+			modifier = {
+				command_power_gain_mult = -0.2
+				army_org_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+		BRG_GCW_rampaging_slaves = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_GCW_rampaging_slaves" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = SAU_Qatif_Uprising
+
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = -0.1
+				compliance_gain = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		BRG_GCW_the_final_throw = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_GCW_rampaging_slaves" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = GER_endsieg_old
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 3
+			}
+		}
+
+		BRG_idea_fucking_with_sudwest = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_the_strong_right_hand"}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = The_Insecure_Homeland
+
+			modifier = {
+				fuel_gain_factor = -0.15
+				max_fuel_factor = -0.1
+				air_range_factor = -0.05
+			}
+		}
+
+		BRG_idea_the_warrior_cult = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_the_warrior_cult"}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = generic_brg_idea_army
+
+			allowed_civil_war = {
+				always = yes #{ #has_government = yes }
+			}
+
+			modifier = {
+				political_power_gain = 1
+				drift_defence_factor = 0.5
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+
+		BRG_idea_brutalism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_brutalism"}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = BRG_brutalism
+
+			allowed_civil_war = {
+				always = yes #{ #has_government = yes }
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		BRG_idea_grenzeschild = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_grenzeschild"}
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			picture = Burgundy_Bunker_Generic_icon
+
+			allowed_civil_war = {
+				always = yes #{ #has_government = yes }
+			}
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+			}
+		}
+
+
+		BRG_idea_mandatory_spartanism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_mandatory_spartanism"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BRG_rigorous_spartanism
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.06
+				war_support_factor = 0.075
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.075
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+
+		BRG_idea_advisors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_advisors"}
+
+			picture = Advisor_Level_1
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 2
+			}
+		}
+
+		BRG_idea_support_personnel = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_support_personnel"}
+
+			picture = Advisor_Level_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 3
+			}
+
+		}
+
+		BRG_idea_special_forces = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_special_forces"}
+
+			picture = Advisor_Level_3
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 4
+			}
+
+		}
+
+		BRG_idea_all_in = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_all_in"}
+
+			picture = Advisor_Level_4
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				send_volunteer_size = 5
+			}
+		}
+
+
+		BRG_idea_das_burgundische_rohstoffamt = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_das_burgundische_rohstoffamt"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BRG_company_rohstoffamt
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				free_production_units_modifier = 2
+				consumer_goods_use_modifier = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		BRG_idea_das_burgundische_rohstoffamt_totalstandardisierung = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_das_burgundische_rohstoffamt"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BRG_company_rohstoffamt
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				free_production_units_modifier = 4
+				consumer_goods_use_modifier = 0.1
+
+			}
+		}
+		BRG_idea_das_burgundische_rohstoffamt_autarky = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_das_burgundische_rohstoffamt"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = BRG_company_rohstoffamt
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				political_power_gain = 0.2
+				free_production_units_modifier = 2
+			}
+		}
+
+		BRG_idea_fuel_rations = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_fuel_rations"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = Broken_Supply_Lines
+
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_fuel_consumption_factor = -0.1
+				consumer_goods_use_modifier = 0.15
+				political_power_gain = -0.1
+			}
+		}
+
+		BRG_idea_education_tree_dynamic_modifier_placeholder = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_education_tree_dynamic_modifier_placeholder"}
+
+			allowed = {
+				always = no
+			}
+
+			picture = Burgundy_Government_Idea_Icon
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+
+
+
+		#Kondor Ideas
+		BRG_iberian_wars_cripple = { #Meant to prevent either Falange or Portugal from winning to fast so GNS and FZL can rise
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_iberian_wars_cripple"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+
+			modifier = {
+				army_attack_factor = -0.05
+				army_speed_factor = -0.05
+				attrition = 0.05
+			}
+		}
+		#Wolf Ideas
+		BRG_wolf_destabalization = { #Just fucking with IME and Turkey
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_wolf_destabalization"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = ITA_broken_army
+
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		BRG_wolf_tur_buff = { #Provoking Tur
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_wolf_tur_buff"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GRE_italian_resistance_focus
+
+			targeted_modifier = { tag = IME attack_bonus_against = 0.1 }
+			targeted_modifier = { tag = IME defense_bonus_against = -0.05 }
+		}
+
+		BRG_wolf_oil_crisis_buff = { #Buffing oil crisis factions
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_wolf_oil_crisis_buff"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_weapons_productio
+			modifier = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		#Opening tree idieas
+		BRG_idea_project_gjallarhorn = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_project_gjallarhorn"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Burgundy_Nuclear_idea_Icon
+
+			modifier = {
+				nuclear_stockpile_monthly_rate = 1
+				misc_costs_modifier = 0.300
+			}
+		}
+		BRG_idea_changed_plans = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_idea_changed_plans"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Burgundy_Government_Idea_Icon
+
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_use_modifier = 0.1
+			}
+		}
+		#Supply ideas
+		BRG_reduced_supply_consumption = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_reduced_supply_consumption"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Burgundy_Generic_Idea_Icon
+
+			modifier = {
+				BRG_supply_consumption = -1
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_gain = -0.2
+				industrial_capacity_factory = -0.05
+			}
+		}
+		BRG_humanitarian_aid = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_humanitarian_aid"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Burgundy_Generic_Idea_Icon
+
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				army_defence_factor = 0.05
+			}
+
+		}
+
+		BRG_the_pipeline_cut = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_humanitarian_aid"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Burgundy_Generic_Idea_Icon
+
+			modifier = {
+				army_attack_factor = -0.05
+				army_org_factor = -0.05
+				supply_consumption_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+
+		}
+
+		BRG_huttig_rage = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_humanitarian_aid"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Burgundy_Generic_Idea_Icon
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = -0.05
+				army_speed_factor = 0.05
+			}
+
+		}
+		BRG_Jean_Mabire_Thought = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_humanitarian_aid"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = BRG_Burgundian_Education
+
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_use_modifier = 0.05
+				drift_defence_factor = 0.25
+			}
+
+		}
+		###### Novak-Barbie
+
+		BRG_national_blackout = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_national_blackout" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = BRG_the_shadow_state
+
+			removal_cost = -1
+
+			modifier = {
+				country_resource_power = -1000
+			}
+		}
+
+		BRG_blood_diamonds = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_blood_diamonds" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = BRG_the_shadow_state
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.035
+				political_power_gain = 0.03
+			}
+
+		}
+
+		BRG_burgundian_gun_trade = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_blood_diamonds" }
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = BRG_the_shadow_state
+
+			removal_cost = -1
+
+			modifier = {
+				misc_income_modifier = 0.03
+				political_power_gain = 0.1
+			}
+		}
+
+		## Collapse ideas
+		BRG_to_ashes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_to_ashes" }
+			allowed = { always = no }
+			removal_cost = -1
+			picture = PRM_aryan_control_1
+			modifier = {
+				surrender_limit = 0.2
+				ai_focus_aggressive_factor = 0.25
+				army_org_factor = -0.1
+				supply_consumption_factor = 0.1
+			}
+		}
+		BRG_from_the_ashes = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_from_the_ashes" }
+			allowed = { always = no }
+			removal_cost = -1
+			picture = SSN_A_Grip_of_Ebon_Steel
+			modifier = {
+				surrender_limit = 0.2
+				ai_focus_aggressive_factor = 0.25
+				army_org_factor = -0.1
+				supply_consumption_factor = 0.1
+			}
+		}
+		BRG_burgundian_legacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_burgundian_legacy" }
+			allowed = { always = no }
+			removal_cost = -1
+			picture = AM_salted_earth
+			modifier = {
+				annual_gdp_growth_factor = -0.33
+				misc_costs_percent_of_GDP_modifier = 0.06
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				consumer_goods_use_modifier = 0.1
+			}
+		}
+		BRG_burgundian_legacy_GER = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BRG_burgundian_legacy_GER" }
+			allowed = { always = no }
+			removal_cost = -1
+			picture = AM_salted_earth
+			modifier = {
+				annual_gdp_growth_factor = -0.1
+				misc_costs_percent_of_GDP_modifier = 0.02
+				production_speed_buildings_factor = -0.04
+				production_factory_max_efficiency_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.04
+				consumer_goods_use_modifier = 0.04
+			}
+		}
+	}
+	hidden_ideas = {
+		BRG_SAF_sabotage = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_humanitarian_aid" }
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = -0.05
+			}
+		}
+		BRG_wolf_oil_crisis_advisors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BRG_wolf_oil_crisis_advisors"}
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = 2
+			}
+
+		}
+	}
+}

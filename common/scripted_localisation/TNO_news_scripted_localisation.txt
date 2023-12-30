@@ -1,0 +1,143 @@
+defined_text = {
+	name = Get_World_30046_LEB_Desc
+	text = {
+		trigger = {
+			LEB = { is_puppet_of = PAL }
+		}
+		localization_key = World_30046_LEB_Desc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				LEB = { is_puppet_of = PAL }
+			}
+		}
+		localization_key = World_30046_no_LEB_Desc
+	}
+}
+
+defined_text = {
+	name = Get_World_50017_Title
+	text = {
+		trigger = {
+			ENG = { has_country_flag = ENG_macmillan_victorious }
+		}
+		localization_key = World_50017_UE_reelection_Title
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = ENG_macmillan_victorious }
+			}
+		}
+		localization_key = World_50017_UE_firstelection_Title
+	}
+}
+
+defined_text = {
+	name = Get_World_50017_Desc
+	text = {
+		trigger = {
+			ENG = { has_country_flag = ENG_macmillan_victorious }
+		}
+		localization_key = World_50017_UE_reelection_Desc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = ENG_macmillan_victorious }
+			}
+		}
+		localization_key = World_50017_UE_first_election_Desc
+	}
+}
+
+defined_text = {
+	name = Get_World_50017_Response
+	text = {
+		trigger = {
+			ENG = { has_country_flag = ENG_macmillan_victorious }
+		}
+		localization_key = World_50017_UE_reelection_Response
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = ENG_macmillan_victorious }
+			}
+		}
+		localization_key = World_50017_UE_firstelection_Response
+	}
+}
+
+defined_text = {
+	name = Get_World_60008_Title
+	text = {
+		trigger = {
+			ENG = { has_country_flag = MSA_victorious }
+		}
+		localization_key = World_60008_Stirling_reelection_Title
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = MSA_victorious }
+			}
+		}
+		localization_key = World_60008_Stirling_firstelection_Title
+	}
+}
+
+defined_text = {
+	name = Get_World_60008_Desc
+	text = {
+		trigger = {
+			ENG = { has_country_flag = MSA_victorious }
+		}
+		localization_key = World_60008_Stirling_reelection_Desc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = MSA_victorious }
+			}
+		}
+		localization_key = World_60008_Stirling_first_election_Desc
+	}
+}
+
+defined_text = {
+	name = Get_World_60008_YDL_result
+	text = {
+		trigger = {
+			ENG = { has_country_flag = YDL_repealed }
+		}
+		localization_key = World_60008_YDL_Passed_Desc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = YDL_repealed }
+			}
+		}
+		localization_key = World_60008_YDL_Not_Passed_Desc
+	}
+}
+
+defined_text = {
+	name = Get_World_60008_Response
+	text = {
+		trigger = {
+			ENG = { has_country_flag = MSA_victorious }
+		}
+		localization_key = World_60008_Stirling_reelection_Response
+	}
+	text = {
+		trigger = {
+			NOT = {
+				ENG = { has_country_flag = MSA_victorious }
+			}
+		}
+		localization_key = World_60008_Stirling_firstelection_Response
+	}
+}

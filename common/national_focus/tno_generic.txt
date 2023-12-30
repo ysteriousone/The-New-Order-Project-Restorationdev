@@ -1,0 +1,23 @@
+focus_tree = {
+	id = generic_focus
+	country = { factor = 0 }
+	default = no
+}
+
+focus_tree = {
+	id = blank_no_tree_apoc
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZZZ
+		}
+	}
+	default = yes
+}
+
+focus_tree = {
+	id = shattered_ambitions
+	country = { factor = 0 }
+	default = no
+}

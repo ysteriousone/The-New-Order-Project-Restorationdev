@@ -1,0 +1,458 @@
+ideas = {
+	country = {
+		SAU_tribal_insurgency = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_tribal_insurgency"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				army_org_factor = -0.05
+				conscription_factor = -0.05
+			}
+		}
+
+		SAU_qatif_uprising = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_qatif_uprising"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SAU_Qatif_Uprising
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				army_org_factor = -0.05
+				conscription_factor = -0.05
+			}
+		}
+
+		SAU_defenders_of_the_umma = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_defenders_of_the_umma"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Defenders_of_the_Umma
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				weekly_manpower = 100
+			}
+		}
+
+		SAU_USA_strangling = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_USA_strangling"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = USA_GLD68_military
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				trade_opinion_factor = -0.5
+			}
+		}
+
+		SAU_salafi_ascendancy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_salafi_ascendancy"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = Salafi_Ascendancy
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.01
+				political_power_gain = 0.1
+			}
+		}
+
+		SAU_kingdom_of_blacck_gold = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_kingdom_of_blacck_gold"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = USA_GLD68_Gold_Standard
+
+			removal_cost = -1
+
+			modifier = {
+				production_oil_factor = 0.1
+				fuel_gain_factor = 0.2
+			}
+		}
+		SAU_kingdom_of_blacck_gold1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_kingdom_of_blacck_gold1"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = USA_GLD68_Gold_Standard
+
+			removal_cost = -1
+
+			modifier = {
+				production_oil_factor = 0.15
+				fuel_gain_factor = 0.25
+			}
+		}
+
+		SAU_ARCO_ENI_memorandum_of_understanding = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_ARCO_ENI_memorandum_of_understanding"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = IRQ_oil_economy
+
+			removal_cost = -1
+
+			modifier = {
+				max_fuel_factor = 0.1
+				# min_export = -0.05
+			}
+		}
+		SAU_ARCO_ENI_memorandum_of_understanding1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_ARCO_ENI_memorandum_of_understanding1"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = IRQ_oil_economy
+
+			removal_cost = -1
+
+			modifier = {
+				max_fuel_factor = 0.15
+				# min_export = -0.1
+			}
+		}
+
+		SAU_modernization_tradition = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_modernization_tradition"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		SAU_prince_playground = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_prince_playground"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		SAU_desert_power = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_desert_power"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				army_org = 5
+			}
+		}
+		SAU_light_and_functioning = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_light_and_functioning"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.10
+			}
+		}
+
+		SAU_further_exports = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_further_exports"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				# min_export = -0.1
+			}
+		}
+
+		SAU_air_travel = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_air_travel"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				air_range_factor = -0.1
+				air_accidents_factor = -0.05
+			}
+		}
+
+		SAU_guest_workers = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_guest_workers"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.5
+			}
+		}
+
+		SAU_shia_folds = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_shia_folds"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		SAU_spread_truth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_spread_truth"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.1
+				drift_defence_factor = 0.25
+			}
+		}
+		SAU_omani_cooperation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_omani_cooperation"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			targeted_modifier = { tag = OMA political_power_gain = 0.1 }
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		SAU_offensive_jihad = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_offensive_jihad"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.15
+			}
+		}
+		SAU_baghdad_model = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_baghdad_model"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		SAU_OPEN = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SAU_OPEN"}
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GER_master_of_europe
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = 0.2
+				fuel_gain_factor_from_states = 0.1
+				trade_opinion_factor = 0.25
+			}
+		}
+	}
+}
