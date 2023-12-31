@@ -7,16 +7,16 @@ state={
 	}
 
 	history={
-		owner = FRS
+		owner = BRG
 		victory_points = { 9434 5 }
 		victory_points = { 11563 10 }
 		victory_points = { 485 1 }
 		victory_points = { 6569 1 }
 		buildings = {
-			hospitals = 1
-			barracks = 1
+			hospitals = 0
+			barracks = 3
 			infrastructure = 6
-			air_base = 6
+			air_base = 5
 			radar_station = 1
 			dockyard = 1
 			9434 = {
@@ -27,8 +27,7 @@ state={
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = FRS
-		set_demilitarized_zone = yes
+		add_core_of = BRG
 		set_state_flag = universal_renamings
 	}
 
