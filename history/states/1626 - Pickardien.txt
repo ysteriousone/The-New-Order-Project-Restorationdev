@@ -1,8 +1,8 @@
 ###POP DONE 
 state={
 	id=1626
-	name="STATE_1626"
-	manpower = 1346798
+	name="STATE_1626_brg"
+	manpower = 1234567
 	
 	state_category = town
 	resources={
@@ -11,17 +11,16 @@ state={
 	}
 
 	history={
-		owner = FRS
+		owner = BRG
 		buildings = {
 			barracks = 1
-			prisons = 1
-			infrastructure = 5
+			prisons = 3
+			infrastructure = 3
 			11420 = {
 				coastal_bunker = 3
 			}
 		}
-		add_core_of = FRS
-		set_demilitarized_zone = yes
+		add_core_of = BRG
 		victory_points = { 9561 1 }
 		victory_points = { 6585 1 }
 		victory_points = { 11549 1 }
