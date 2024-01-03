@@ -8,9 +8,9 @@
 ####################################################################################################################################################################################################################################################################################
 
  ## Country Names ##
- BRG:0 "Ordensstaat Burgund"
- BRG_DEF:0 "Ordensstaat Burgund"
- BRG_ADJ:0 "Burgundian"
+ BRG:0 "Ordensstaat Belgien-Burgund"
+ BRG_DEF:0 "Ordensstaat Belgien-Burgund"
+ BRG_ADJ:0 "Belgo-Burgundian"
  BRG_GUI_ultranationalism:0 "Grafische-Benutzeroberflächestaat 65EBF6"
 
  ## Leader Bios ##
