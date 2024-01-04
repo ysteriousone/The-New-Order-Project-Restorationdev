@@ -408,7 +408,3 @@ music = {
 	chance = { factor = 1 }
 }
 
-music = {
-	song = Arise
-	chance = { factor = 1 }
-}
