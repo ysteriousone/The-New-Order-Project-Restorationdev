@@ -216,7 +216,7 @@ music = {
 
 music = {
 	name = tno_song_lamentation
-	file = "China_Based.ogg"
+	file = "Lamentation.ogg"
 	volume = 1
 }
 
@@ -482,25 +482,5 @@ music = {
 music = {
 	name = tno_song_welfare
 	file = "welfare.ogg"
-	volume = 1
-}
-music = {
-	name = Arise
-	file = "China_Based.ogg"
-	volume = 1
-}
-music = {
-	name = Regret
-	file = "Regret.ogg"
-	volume = 1
-}
-music = {
-	name = Anger
-	file = "Anger.ogg"
-	volume = 1
-}
-music = {
-	name = Hope
-	file = "Hope.ogg"
 	volume = 1
 }
