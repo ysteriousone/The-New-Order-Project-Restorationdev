@@ -412,17 +412,3 @@ music = {
 	song = Arise
 	chance = { factor = 1 }
 }
-
-
-music = {
-	song = Regret
-	chance = { factor = 1 }
-}
-music = {
-	song = Anger
-	chance = { factor = 1 }
-}
-music = {
-	song = Hope
-	chance = { factor = 1 }
-}
