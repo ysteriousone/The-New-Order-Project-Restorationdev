@@ -153,105 +153,99 @@ if = {
 
 add_ideas = {
 
-	### FACTION ###
+	#Faction Status
+	Pakt_Integrated_Reichskommissariat
 
-	Pakt_Observer
+	## Laws
+	# Political
+	tno_political_parties_one_party_state
+	tno_religious_rights_suppression_of_churches
+	tno_trade_unions_illegal
+	tno_immigration_skilled_labor_only
+	tno_slavery_institutionalized
+	tno_public_meetings_outlawed
+	tno_press_rights_propaganda_press
+	tno_vote_franchise_no_voting
 
-	### POLITICAL ###
+	# Military
+	tno_conscription_limited_conscription
+	tno_military_supervision_kill_em_all
+	tno_training_basic_training
+	tno_draft_exemptions_none
 
-	tno_political_parties_multiparty_system
-	tno_religious_rights_pluralism
-	tno_trade_unions_nonsocialist_allowed
-	tno_immigration_quota_immigration
-	tno_slavery_penal_labor
-	tno_public_meetings_regulated
-	tno_press_rights_censored_press
-	tno_vote_franchise_universal
-
-	### MILITARY ###
-
-	tno_conscription_volunteer_only
-	tno_military_supervision_rules_of_engagement
-	tno_training_minimal_training
-	tno_draft_exemptions_generous_exemptions
-
-	### ECONOMIC ###
-
-	tno_trade_laws_limited_exports
-	tno_income_taxation_high_income_weighted
-	tno_minimum_wage_trinket_minimum_wage
-	tno_max_workhours_12_hour_work_day
-	tno_pensions_trinket_pensions
-	tno_unemployment_low_subsidies
-
-	### SOCIAL ###
-
-	tno_health_care_low_income_protections
+	# Social
+	tno_health_care_support_for_emergencies
 	tno_education_stratified_education
-	tno_penal_system_incarceration
+	tno_penal_system_overt_oppression
 	tno_gender_rights_traditional_roles
-	tno_security_regulated_police
+	tno_security_oppressive_police
 	tno_regulations_token_regulations
 
-	### MISC ###
+	# Economic
+	tno_trade_laws_export_focus
+	tno_income_taxation_elite_tax_exemptions
+	tno_minimum_wage_trinket_minimum_wage
+	tno_max_workhours_14_hour_work_day
+	tno_pensions_low_pensions
+	tno_unemployment_no_subsidies
 
-	tno_refugees_skilled
+	# Misc
+	tno_refugees_banned
 	tno_women_banned
 	tno_racial_integration_none
-	tno_child_labor_illegal
-	tno_safety_minimal_regulations
-	tno_pollution_few_regulations
+	tno_safety_limited_regulations
+	tno_pollution_some_regulations
 	tno_lgbt_rights_lgbt_outlawed
-	tno_minorities_institutional_discrimination
-
-	### SOCIETAL DEVELOPMENT ###
-
-	tno_academic_base_primary_schooling
-	tno_research_facilities_outdated
-	tno_agriculture_basic_mechanized
-	tno_healthcare_developed
-	tno_industrial_equipment_manufacturing_lines
-	tno_industrial_expertise_incompetent
-	tno_army_professionalism_reluctant_conscripts
-	tno_admin_efficiency_functional_administrative_systems
+	tno_minorities_oppression
+	tno_child_labor_restricted
 	
+	# Societal Development
+	tno_army_professionalism_professional
+	tno_industrial_expertise_nascent
+	tno_industrial_equipment_modern
+	tno_agriculture_mass_mechanized
+	tno_healthcare_nascent
+	tno_research_facilities_modern
+	tno_academic_base_secondary_schooling
+	tno_admin_efficiency_illegitimate_administration
 }
 
 ### Policy Effectiveness
-
 set_country_flag = tno_defined_startup_effectiveness
 
 ### Political
-set_variable = { tno_political_parties_effectiveness = 65 }
-set_variable = { tno_religious_rights_effectiveness = 35 }
-set_variable = { tno_trade_unions_effectiveness = 70 }
+set_variable = { tno_political_parties_effectiveness = 70 }
+set_variable = { tno_religious_rights_effectiveness = 20 }
+set_variable = { tno_trade_unions_effectiveness = 80 }
 set_variable = { tno_immigration_effectiveness = 75 }
-set_variable = { tno_slavery_effectiveness = 100 }
+set_variable = { tno_slavery_effectiveness = 80 }
 set_variable = { tno_public_meetings_effectiveness = 70 }
-set_variable = { tno_press_rights_effectiveness = 85 }
-set_variable = { tno_vote_franchise_effectiveness = 85 }
+set_variable = { tno_press_rights_effectiveness = 80 }
+set_variable = { tno_vote_franchise_effectiveness = 100 }
 
-### Economic
-set_variable = { tno_trade_laws_effectiveness = 65 }
-set_variable = { tno_income_taxation_effectiveness = 80 }
-set_variable = { tno_minimum_wage_effectiveness = 85 }
-set_variable = { tno_max_workhours_effectiveness = 90 }
-set_variable = { tno_pensions_effectiveness = 75 }
-set_variable = { tno_unemployment_effectiveness = 70 }
-set_variable = { tno_regulations_effectiveness = 65 }
+### Military
+set_variable = { tno_conscription_effectiveness = 80 }
+set_variable = { tno_military_supervision_effectiveness = 50 }
+set_variable = { tno_training_effectiveness = 35 }
+set_variable = { tno_draft_exemptions_effectiveness = 80 }
 
 ### Social
 set_variable = { tno_health_care_effectiveness = 50 }
-set_variable = { tno_education_effectiveness = 65 }
-set_variable = { tno_penal_system_effectiveness = 55 }
-set_variable = { tno_gender_rights_effectiveness = 85 }
-set_variable = { tno_security_effectiveness = 55 }
+set_variable = { tno_education_effectiveness = 60 }
+set_variable = { tno_penal_system_effectiveness = 45 }
+set_variable = { tno_gender_rights_effectiveness = 80 }
+set_variable = { tno_security_effectiveness = 60 }
+set_variable = { tno_regulations_effectiveness = 30 }
 
-### Military
-set_variable = { tno_conscription_effectiveness = 75 }
-set_variable = { tno_military_supervision_effectiveness = 50 }
-set_variable = { tno_training_effectiveness = 55 }
-set_variable = { tno_draft_exemptions_effectiveness = 80 }
+### Economic
+set_variable = { tno_trade_laws_effectiveness = 80 }
+set_variable = { tno_income_taxation_effectiveness = 40 }
+set_variable = { tno_minimum_wage_effectiveness = 45 }
+set_variable = { tno_max_workhours_effectiveness = 60 }
+set_variable = { tno_pensions_effectiveness = 55 }
+set_variable = { tno_unemployment_effectiveness = 55 }
+
+set_research_slots = 4
 
 set_autonomy = {
 	target = ULS
@@ -259,22 +253,23 @@ set_autonomy = {
 }
 
 set_politics = {
-	ruling_party = paternalism
+	ruling_party = national_socialism
 	last_election = "1961.5.21"
 	election_frequency = 84
 	elections_allowed = yes
 }
 
 set_popularities = {
-	communist = 5
+	communist = 0
 	socialist = 4
-	progressivism = 11
-	liberal_conservatism = 20
-	conservatism = 12
-	paternalism_2 = 8
-	paternalism = 26
-	despotism = 12
+	progressivism = 0
+	liberal_conservatism = 10
+	conservatism = 6
+	national_socialism_2 = 20
+	paternalism = 8
+	despotism = 6
 	fascism = 2
+	national_socialism = 44
 }
 
 IRE_SE_MOG_start = yes
