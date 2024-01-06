@@ -3,7 +3,7 @@ capital = 113
 # Vacant
 recruit_character = IRE_Generic_Vacant
 
-load_focus_tree = IRE_spleodar
+load_focus_tree = TNO_Norway
 
 ###Playable
 set_country_flag = tno_playable_country
