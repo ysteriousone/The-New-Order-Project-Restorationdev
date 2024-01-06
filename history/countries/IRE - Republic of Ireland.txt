@@ -274,6 +274,7 @@ set_popularities = {
 
 IRE_SE_MOG_start = yes
 
+recruit_character = IRE_Fedor_Von_Bock
 recruit_character = IRE_Sean_Lemass
 recruit_character = IRE_Seamus_Twomey
 recruit_character = IRE_Jack_Lynch
