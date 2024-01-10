@@ -93,7 +93,10 @@ NOR = {
 	color = rgb { 150 150 150 }
 	color_ui = rgb { 150 150 150 }
 }
-
+IRE = {
+	color = rgb { 145 165 150 }
+	color_ui = rgb { 145 165 150 }
+}
 BRG = {
 	color = rgb { 68 40 73 }
 	color_ui = rgb { 68 40 73 }

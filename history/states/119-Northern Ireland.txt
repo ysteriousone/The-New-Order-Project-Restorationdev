@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = ULS
+		owner = IRE
 		victory_points = { 3379 20 }
 		buildings = {
 			infrastructure = 5

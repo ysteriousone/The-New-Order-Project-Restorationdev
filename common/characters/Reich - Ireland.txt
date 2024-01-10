@@ -30,6 +30,17 @@ characters = {
 		}
 	}
 
+	IRE_Fedor_Von_Bock = {
+		name = IRE_Fedor_Von_Bock
+		portraits = { civilian = { large = "gfx/leaders/IRE/Portrait_Ireland_Fedor_Von_Bock_2.dds" } }
+		country_leader = {
+			desc = ""
+			ideology = national_socialism_subtype
+			expire = "2222.2.2"
+			id = -1
+		}
+	}
+
 	IRE_Jack_Lynch = {
 		name = IRE_Jack_Lynch
 		portraits = {
