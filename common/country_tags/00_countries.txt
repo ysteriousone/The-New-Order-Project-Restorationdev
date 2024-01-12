@@ -312,8 +312,10 @@ PRM = "countries/West Russia.txt"				# Aryan Brotherhood
 SAM = "countries/West Russia.txt"				# Samara
 TAR = "countries/West Russia.txt"				# Tatarstan
 VOL = "countries/West Russia.txt"				# Vologda
+KST = "countries/Kostroma.txt"                  # Kostroma
 VYT = "countries/West Russia.txt"				# Vyatka
 WRS = "countries/West Russia.txt"				# WRRF
+KST = "countries/West Russia.txt"				# Kostroma
 
 # /// Southern Urals /// #
 DRL = "countries/South Urals.txt"				# Dirlewanger

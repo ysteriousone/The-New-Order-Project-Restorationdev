@@ -6,7 +6,7 @@ state={
 		62 97 143 164 3056 3091 3135 3190 6077 6113 6180 6215 9159 
 	}
 	history={
-		owner = VOL
+		owner = KST
 		buildings = {
 			offices = 1
 			hospitals = 2
@@ -15,7 +15,7 @@ state={
 		victory_points = { 3190 10 }
 		victory_points = { 9159 5 }
 		victory_points = { 6077 1 }
-		add_core_of = VOL
+		add_core_of = KST
 		add_claim_by = MCW
 	}
 		manpower=492000

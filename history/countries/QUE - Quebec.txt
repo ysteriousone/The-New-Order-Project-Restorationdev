@@ -9,6 +9,9 @@ recruit_character = QUE_Daniel_Johnson_Sr
 #oob = "QUE_1962"
 
 add_ideas = {
+
+	#FACTION STATUS#
+	OFN_Independent_Member
 	#political#
 	tno_political_parties_multiparty_system
 	tno_religious_rights_pluralism

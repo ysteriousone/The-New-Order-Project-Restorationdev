@@ -506,6 +506,10 @@
  KSS_DEF: "Kommandostab Waffen-SS"
  KSS_ADJ: "German"
 
+ KST: "Kostroma"
+ KST_DEF: "the Free City of Kostroma"
+ KST_ADJ: "Kostroman"
+
  KUR: "Kurdistan"
  KUR_DEF: "the Republic of Kurdistan"
  KUR_ADJ: "Kurdish"

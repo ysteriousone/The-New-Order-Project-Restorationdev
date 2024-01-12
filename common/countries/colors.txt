@@ -989,6 +989,10 @@ VOL = {
 	color = rgb { 110 110 133 }
 	color_ui = rgb { 110 110 133 }
 }
+KST = {
+	color = rgb { 112 143 129 }
+	color_ui = rgb { 112 143 129 }
+}
 VYT = {
 	color = rgb { 65 100 42 }
 	color_ui = rgb { 65 100 42 }
