@@ -1,0 +1,2123 @@
+
+shared_focus = {
+    id = OMO_sermon_of_the_father
+    icon = GFX_OMO_Sermon_Of_The_Father
+    cost = 2.2
+    x = 5
+    y = 0
+    available = {
+        NOT = {
+            has_idea = RUS_isolated_vilages
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_sermon_of_the_father"
+        add_manpower = 2500
+        hidden_effect = {
+            country_event = {
+                id = OMO.9
+                days = 1
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = OMO_the_light_shines_in_darkness
+    icon = GFX_GAY_A_Light_Shining_In_The_Darkness
+    cost = 2.2
+    x = 3
+    y = 1
+    prerequisite = {
+        focus = OMO_sermon_of_the_father
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_light_shines_in_darkness"
+        add_stability = 0.1
+        add_political_power = 50
+        add_command_power = 10
+        hidden_effect = {
+            #country_event = { id = OMO.38 days = 3 } why is it here
+        }
+    }
+}
+shared_focus = {
+    id = OMO_burn_the_idols
+    icon = GFX_GAY_Champions_of_the_Just
+    cost = 2.2
+    x = 2
+    y = 2
+    prerequisite = {
+        focus = OMO_the_light_shines_in_darkness
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_burn_the_idols"
+        add_war_support = 0.15
+    }
+}
+shared_focus = {
+    id = OMO_the_communal_union
+    icon = GFX_TNO_generic_socialist_recruitment
+    cost = 2.2
+    x = 2
+    y = 3
+    prerequisite = {
+        focus = OMO_burn_the_idols
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_communal_union"
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+        TNO_improve_admin_efficiency_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_denounce_the_oath
+    icon = GFX_generic_suspend_constitution
+    cost = 2.2
+    x = 4
+    y = 2
+    prerequisite = {
+        focus = OMO_the_light_shines_in_darkness
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_denounce_the_oath"
+        add_political_power = 50
+        add_command_power = 10
+    }
+}
+shared_focus = {
+    id = OMO_all_one_in_christ
+    icon = GFX_GAY_Shepherd_The_Flock
+    cost = 2.2
+    x = 4
+    y = 3
+    prerequisite = {
+        focus = OMO_denounce_the_oath
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_all_one_in_christ"
+        add_manpower = 12000
+    }
+}
+shared_focus = {
+    id = OMO_yet_the_darkness_did_not_overcome
+    icon = GFX_OMO_Yet_The_Darkness_Did_Not_Overcome
+    cost = 2.2
+    x = 3
+    y = 4
+    prerequisite = {
+        focus = OMO_the_communal_union
+    }
+    prerequisite = {
+        focus = OMO_all_one_in_christ
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_yet_the_darkness_did_not_overcome"
+        add_stability = 0.05
+        add_command_power = 10
+        country_event = {
+            id = OMO.10
+            days = 1
+        }
+    }
+}
+shared_focus = {
+    id = OMO_arm_the_believers
+    icon = GFX_GAY_The_Guns_of_God
+    cost = 2.2
+    x = 7
+    y = 1
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_sermon_of_the_father
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_arm_the_believers"
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 255
+            producer = IRK
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 150
+            producer = BRY
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 375
+            producer = MAG
+        }
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 120
+            producer = YAK
+        }
+    }
+}
+shared_focus = {
+    id = OMO_sudoplatovs_brigade
+    icon = GFX_IRK_NKVD_guards_divisions
+    cost = 2.2
+    x = 6
+    y = 2
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_arm_the_believers
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_sudoplatovs_brigade"
+        TNO_improve_army_professionalism_low = yes
+        add_manpower = 1000
+    }
+}
+shared_focus = {
+    id = OMO_infiltrate_their_castles
+    icon = GFX_OMO_Infiltrate_Their_Castle
+    cost = 2.2
+    x = 6
+    y = 3
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_sudoplatovs_brigade
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_infiltrate_their_castles"
+        every_neighbor_country = {
+            limit = {
+                is_far_eastern_nation = yes
+            }
+            add_political_power = -25
+        }
+        add_political_power = 25
+        army_experience = 10
+        add_command_power = 10
+    }
+}
+shared_focus = {
+    id = OMO_fraternal_militias
+    icon = GFX_GAY_Blessed_Are_The_Peacekeepers
+    cost = 2.2
+    x = 8
+    y = 2
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_arm_the_believers
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_fraternal_militias"
+        add_timed_idea = { idea = OMO_fraternal_militias_idea days = 720 }
+        TNO_improve_training_policy_effectiveness_med = yes
+    }
+}
+shared_focus = {
+    id = OMO_take_the_towns
+    icon = GFX_ANG_clear_out_the_villages
+    cost = 2.2
+    x = 8
+    y = 3
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_fraternal_militias
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_take_the_towns"
+        army_experience = 15
+        every_neighbor_country = {
+            limit = {
+                is_far_eastern_nation = yes
+            }
+            country_event = {
+                id = OMO.11
+                days = 1
+            }
+        }
+    }
+}
+shared_focus = {
+    id = OMO_end_the_thieves
+    icon = GFX_OMO_End_The_Thieves
+    cost = 2.2
+    x = 7
+    y = 4
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_infiltrate_their_castles
+    }
+    prerequisite = {
+        focus = OMO_take_the_towns
+    }
+    will_lead_to_war_with = KMC
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_end_the_thieves"
+        declare_war_on = {
+            target = KMC
+            type = annex_everything
+        }
+    }
+}
+shared_focus = {
+    id = OMO_rouse_the_masses
+    icon = GFX_goal_workers_fist
+    cost = 2.2
+    x = 5
+    y = 5
+    ai_will_do = {
+        factor = 50
+    }
+    prerequisite = {
+        focus = OMO_yet_the_darkness_did_not_overcome
+    }
+    prerequisite = {
+        focus = OMO_end_the_thieves
+    }
+    available = {
+        owns_state = 637
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_end_the_thieves"
+        custom_effect_tooltip = OMO_raise_peasant_militia_tt
+        hidden_effect = {
+            load_oob = OMO_peasants_kamchatka
+        }
+        every_other_country = {
+            limit = {
+                is_far_eastern_nation = yes
+            }
+            country_event = {
+                id = OMO.13
+                days = 1
+            }
+        }
+    }
+}
+shared_focus = {
+    id = OMO_bring_the_sword
+    icon = GFX_OMO_Bring_The_Sword
+    cost = 2.2
+    x = 5
+    y = 6
+    ai_will_do = {
+        factor = 100
+    }
+    prerequisite = {
+        focus = OMO_rouse_the_masses
+    }
+    available = {
+        owns_state = 637
+    }
+    will_lead_to_war_with = YAK
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_bring_the_sword"
+        RUS_Smuta_Enable = yes
+        add_timed_idea = { idea = RUS_far_east_war days = 365 }
+        set_country_flag = OMO_wrath_of_god
+    }
+}
+shared_focus = {
+    id = OMO_the_harbinger_of_deceit
+    icon = GFX_OMO_The_Harbinger_Of_Deceit
+    cost = 2.2
+    x = 1
+    y = 7
+    prerequisite = {
+        focus = OMO_bring_the_sword
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_harbinger_of_deceit"
+        set_temp_variable = { Y = 0.85 }
+        RUS_Smuta_Smuta_CoringCost_MultiplyBy_Y = yes
+    }
+}
+shared_focus = {
+    id = OMO_the_pharaoh_of_irkutsk
+    icon = GFX_KRS_lessons_from_yagoda
+    cost = 2.2
+    x = -1
+    y = 8
+    prerequisite = {
+        focus = OMO_the_harbinger_of_deceit
+    }
+    available = {
+        IRK = {
+            exists = yes
+        }
+    }
+    bypass = {
+        NOT = {
+            country_exists = IRK
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_pharaoh_of_irkutsk"
+        add_war_support = 0.05
+    }
+}
+shared_focus = {
+    id = OMO_revitalize_the_faith
+    icon = GFX_GAY_Shield_Of_The_Faithful
+    cost = 2.2
+    x = -2
+    y = 9
+    prerequisite = {
+        focus = OMO_the_pharaoh_of_irkutsk
+    }
+    available = {
+        owns_state = 566
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_revitalize_the_faith"
+        add_stability = 0.075
+        add_political_power = -50
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+        TNO_improve_religious_rights_policy_effectiveness_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_let_my_people_go
+    icon = GFX_OMO_Let_My_People_Go
+    cost = 2.2
+    x = 0
+    y = 9
+    prerequisite = {
+        focus = OMO_the_pharaoh_of_irkutsk
+    }
+    available = {
+        owns_state = 566
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_let_my_people_go"
+        set_temp_variable = { Y = 0.35 }
+        RUS_Smuta_Supplies_Add_Y = yes
+        add_manpower = 6000
+        TNO_improve_poverty_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_the_simon_of_buryatia
+    icon = GFX_IRK_lessons_from_sablin
+    cost = 2.2
+    x = 3
+    y = 8
+    prerequisite = {
+        focus = OMO_the_harbinger_of_deceit
+    }
+    available = {
+        BRY = {
+            exists = yes
+        }
+    }
+    bypass = {
+        NOT = {
+            country_exists = BRY
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_simon_of_buryatia"
+        add_war_support = 0.05
+    }
+}
+shared_focus = {
+    id = OMO_do_away_with_lenins_cult
+    icon = GFX_goal_Generic_Anti_Socialism
+    cost = 2.2
+    x = 2
+    y = 9
+    available = {
+        owns_state = 564
+    }
+    prerequisite = {
+        focus = OMO_the_simon_of_buryatia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_do_away_with_lenins_cult"
+		set_temp_variable = { Y = 30 }
+		RUS_Smuta_Chaos_Add_Y = yes
+        add_popularity = {
+            ideology = communist
+            popularity = -0.05
+        }
+    }
+}
+shared_focus = {
+    id = OMO_vindicate_the_virtuous
+    icon = GFX_generic_change_law_religion
+    cost = 2.2
+    x = 4
+    y = 9
+    available = {
+        owns_state = 564
+    }
+    prerequisite = {
+        focus = OMO_the_simon_of_buryatia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_vindicate_the_virtuous"
+        add_manpower = 3000
+        add_political_power = 25
+        TNO_improve_admin_efficiency_low = yes
+        TNO_improve_income_taxation_policy_effectiveness_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_end_to_the_pharisees
+    icon = GFX_GER_kick_down_the_door
+    cost = 2.2
+    x = 1
+    y = 10
+    prerequisite = {
+        focus = OMO_revitalize_the_faith
+    }
+    prerequisite = {
+        focus = OMO_do_away_with_lenins_cult
+    }
+    prerequisite = {
+        focus = OMO_let_my_people_go
+    }
+    prerequisite = {
+        focus = OMO_vindicate_the_virtuous
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_end_to_the_pharisees"
+        set_temp_variable = { Y = -50 }
+        RUS_Smuta_Chaos_Add_Y = yes
+        add_stability = 0.1
+    }
+}
+shared_focus = {
+    id = OMO_the_harbinger_of_reaction
+    icon = GFX_OMO_The_Harbinger_Of_Reaction
+    cost = 2.2
+    x = 11
+    y = 7
+    prerequisite = {
+        focus = OMO_bring_the_sword
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_harbinger_of_reaction"
+        set_temp_variable = { Y = 0.85 }
+        RUS_Smuta_Smuta_CoringCost_MultiplyBy_Y = yes
+    }
+}
+shared_focus = {
+    id = OMO_the_serpent_of_magadan
+    icon = GFX_MAG_The_True_Heir_of_Harbin
+    cost = 2.2
+    x = 7
+    y = 8
+    prerequisite = {
+        focus = OMO_the_harbinger_of_reaction
+    }
+    available = {
+        MAG = {
+            exists = yes
+        }
+    }
+    bypass = {
+        NOT = {
+            country_exists = MAG
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_serpent_of_magadan"
+        add_war_support = 0.05
+    }
+}
+shared_focus = {
+    id = OMO_expel_the_moneylenders
+    icon = GFX_ITA_Weaken_The_Banks
+    cost = 2.2
+    x = 6
+    y = 9
+    available = {
+        owns_state = 562
+    }
+    prerequisite = {
+        focus = OMO_the_serpent_of_magadan
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_expel_the_moneylenders"
+		set_temp_variable = { Y = 15 }
+		RUS_Smuta_Chaos_Add_Y = yes
+        set_temp_variable = { Y = 0.05 }
+        RUS_Smuta_SuppliesWeeklyGain_Add_Y = yes
+        TNO_improve_industrial_equipment_med = yes
+        set_temp_variable = { money_reserves_temp = 0.05 }
+        econ_money_reserves_change_raw_money = yes
+        set_temp_variable = { pus_temp = 2 }
+        econ_pus_change = yes
+    }
+}
+shared_focus = {
+    id = OMO_punish_the_leviathan
+    icon = GFX_IND_Deal_With_Fascist_Militia
+    cost = 2.2
+    x = 8
+    y = 9
+    available = {
+        owns_state = 562
+    }
+    prerequisite = {
+        focus = OMO_the_serpent_of_magadan
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_punish_the_leviathan"
+        set_temp_variable = { Y = -40 }
+        RUS_Smuta_Chaos_Add_Y = yes
+        TNO_improve_political_parties_policy_effectiveness_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_the_haman_of_amur
+    icon = GFX_AMR_the_true_heir_of_harbin
+    cost = 2.2
+    x = 11
+    y = 8
+    prerequisite = {
+        focus = OMO_the_harbinger_of_reaction
+    }
+    available = {
+        AMR = {
+            exists = yes
+        }
+    }
+    bypass = {
+        NOT = {
+            country_exists = AMR
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_haman_of_amur"
+        add_war_support = 0.05
+    }
+}
+shared_focus = {
+    id = OMO_depose_the_wicked_church
+    icon = GFX_TNO_generic_church
+    cost = 2.2
+    x = 10
+    y = 9
+    available = {
+        owns_state = 561
+    }
+    prerequisite = {
+        focus = OMO_the_haman_of_amur
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_depose_the_wicked_church"
+		set_temp_variable = { Y = -5 }
+		RUS_Smuta_Chaos_Mission_Cost_Add_Y = yes
+        add_political_power = 75
+        add_stability = 0.05
+        TNO_improve_religious_rights_policy_effectiveness_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_the_day_of_deliverance
+    icon = GFX_Generic_Smash_Fasc
+    cost = 2.2
+    x = 12
+    y = 9
+    available = {
+        owns_state = 561
+    }
+    prerequisite = {
+        focus = OMO_the_haman_of_amur
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_day_of_deliverance"
+        set_temp_variable = { Y = 0.85 }
+        RUS_Smuta_Smuta_CoringCost_MultiplyBy_Y = yes
+        TNO_improve_poverty_med = yes
+    }
+}
+shared_focus = {
+    id = OMO_the_belshazzar_of_chita
+    icon = GFX_CHT_the_true_heir_of_harbin
+    cost = 2.2
+    x = 15
+    y = 8
+    prerequisite = {
+        focus = OMO_the_harbinger_of_reaction
+    }
+    available = {
+        CHT = {
+            exists = yes
+        }
+    }
+    bypass = {
+        NOT = {
+            country_exists = CHT
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_belshazzar_of_chita"
+        add_war_support = 0.05
+    }
+}
+shared_focus = {
+    id = OMO_depose_the_justice_of_the_commoners
+    icon = GFX_OST_Unite_the_People
+    cost = 2.2
+    x = 14
+    y = 9
+    available = {
+        owns_state = 563
+    }
+    prerequisite = {
+        focus = OMO_the_belshazzar_of_chita
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_depose_the_justice_of_the_commoners"
+        set_temp_variable = { Y = 0.20 }
+        RUS_Smuta_Supplies_Add_Y = yes
+        TNO_improve_poverty_med = yes
+    }
+}
+shared_focus = {
+    id = OMO_no_render_unto_tsars
+    icon = GFX_TNO_Generic_Restricted_Monarchy
+    cost = 2.2
+    x = 16
+    y = 9
+    available = {
+        owns_state = 563
+    }
+    prerequisite = {
+        focus = OMO_the_belshazzar_of_chita
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_no_render_unto_tsars"
+        set_temp_variable = { Y = -25 }
+        RUS_Smuta_Chaos_Add_Y = yes
+        TNO_improve_political_parties_policy_effectiveness_low = yes
+    }
+}
+shared_focus = {
+    id = OMO_end_to_the_princes
+    icon = GFX_ITA_Annihilate_the_Royalists
+    cost = 2.2
+    x = 11
+    y = 10
+    prerequisite = {
+        focus = OMO_expel_the_moneylenders
+    }
+    prerequisite = {
+        focus = OMO_depose_the_wicked_church
+    }
+    prerequisite = {
+        focus = OMO_depose_the_justice_of_the_commoners
+    }
+    prerequisite = {
+        focus = OMO_punish_the_leviathan
+    }
+    prerequisite = {
+        focus = OMO_the_day_of_deliverance
+    }
+    prerequisite = {
+        focus = OMO_no_render_unto_tsars
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_end_to_the_princes"
+        set_temp_variable = { Y = 0.35 }
+        RUS_Smuta_Supplies_Add_Y = yes
+        add_stability = 0.1
+    }
+}
+shared_focus = {
+    id = OMO_the_kingdom_of_god_within_us
+    icon = GFX_GAY_Spirit_Of_Saint_George
+    cost = 2.2
+    x = 5
+    y = 11
+    available = {
+        RUS_Smuta_ScriptedTrigger_OnlyOneContenderLeft = yes
+    }
+    prerequisite = {
+        focus = OMO_end_to_the_pharisees
+    }
+    prerequisite = {
+        focus = OMO_end_to_the_princes
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_kingdom_of_god_within_us"
+        RUS_Smuta_Disable = yes
+        country_event = { id = OMO.19 }
+        clr_country_flag = OMO_wrath_of_god
+    }
+}
+##############################
+####### Regional Tree ########
+##############################
+shared_focus = {
+    id = OMO_a_new_sermon
+    icon = GFX_OMO_Sermon_Of_The_Father
+    cost = 3.6
+    x = 10
+    y = 0
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_new_sermon"
+        country_event = { id = OMO.20 }
+        add_political_power = 75
+    }
+}
+
+shared_focus = {
+    id = OMO_a_christlike_life
+    icon = GFX_generic_christianity
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_a_new_sermon
+    }
+    x = -6
+    y = 1
+    relative_position_id = OMO_a_new_sermon
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_christlike_life"
+        RUS_decrease_administrative_strain = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_the_rural_ideal
+    icon = GFX_KOM_Honor_in_a_Humble_Life
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_a_christlike_life
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_a_christlike_life
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_rural_ideal"
+        TNO_improve_agriculture_med = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_a_village_is_a_family
+    icon = GFX_ANG_clear_out_the_villages
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_a_christlike_life
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_a_christlike_life
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_village_is_a_family"
+        add_stability = 0.05
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.03
+        }
+        TNO_improve_public_meetings_policy_effectiveness_monthly_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_the_holy_cities
+    icon = GFX_The_Model_City
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_rural_ideal
+    }
+    prerequisite = {
+        focus = OMO_a_village_is_a_family
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_the_rural_ideal
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_holy_cities"
+        TNO_improve_poverty_low = yes
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+        }
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+        }
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+        }
+        set_temp_variable = { temp_econ_spending_amount = 0.005 }
+        econ_spend_money_once_effect_raw_money = yes
+		every_owned_state = {
+			set_temp_variable = { state_value_multiplier_temp = 1.15 }
+			econ_state_value_change_multiply = yes
+		}
+    }
+}
+
+shared_focus = {
+    id = OMO_communal_upbringings
+    icon = GFX_ORE_members_from_every_commune
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_rural_ideal
+    }
+    prerequisite = {
+        focus = OMO_a_village_is_a_family
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_a_village_is_a_family
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_communal_upbringings"
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.03
+        }
+        TNO_improve_education_policy_effectiveness_monthly_med = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_exalt_the_poor
+    icon = GFX_generic_change_law_welfare
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_rural_ideal
+    }
+    prerequisite = {
+        focus = OMO_a_village_is_a_family
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_the_rural_ideal
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_exalt_the_poor"
+        TNO_improve_poverty_low = yes
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_income_taxation_flat_taxes_dummy
+                add_idea = tno_income_taxation_high_income_weighted_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_income_taxation_high_income_weighted }
+        TNO_worsen_income_taxation_policy_effectiveness_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_all_one_in_heaven
+    icon = GFX_TYM_unity_foremost
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_holy_cities
+    }
+    prerequisite = {
+        focus = OMO_communal_upbringings
+    }
+    prerequisite = {
+        focus = OMO_exalt_the_poor
+    }
+    x = 1
+    y = 2
+    relative_position_id = OMO_the_rural_ideal
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_all_one_in_heaven"
+        add_political_power = 50
+        RUS_decrease_administrative_strain = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_the_revelations_of_the_past
+    icon = GFX_GAY_Shield_Of_The_Faithful
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_a_new_sermon
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_a_new_sermon
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_revelations_of_the_past"
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.03
+        }
+        add_stability = 0.05
+    }
+}
+
+shared_focus = {
+    id = OMO_let_none_go_hungry
+    icon = GFX_SAM_Food_For_All
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_revelations_of_the_past
+    }
+    mutually_exclusive = {
+        focus = OMO_let_none_go_naked
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_the_revelations_of_the_past
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_let_none_go_hungry"
+        TNO_improve_agriculture_med = yes
+        TNO_improve_poverty_low  = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_let_none_go_naked
+    icon = GFX_USA_The_Fair_Housing_Administration
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_revelations_of_the_past
+    }
+    mutually_exclusive = {
+        focus = OMO_let_none_go_hungry
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_the_revelations_of_the_past
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_let_none_go_naked"
+        TNO_improve_industrial_equipment_med = yes
+        TNO_improve_poverty_low  = yes
+        set_temp_variable = { temp_econ_spending_amount = 0.002 }
+        econ_spend_money_once_effect_raw_money = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_communal_farming
+    icon = GFX_farming
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_let_none_go_hungry
+        focus = OMO_let_none_go_naked
+    }
+    mutually_exclusive = {
+        focus = OMO_communal_housebuilding
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_let_none_go_hungry
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_communal_farming"
+        TNO_improve_agriculture_med = yes
+        TNO_improve_poverty_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_communal_housebuilding
+    icon = GFX_TNO_generic_public_houses
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_let_none_go_hungry
+        focus = OMO_let_none_go_naked
+    }
+    mutually_exclusive = {
+        focus = OMO_communal_farming
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_let_none_go_naked
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_communal_housebuilding"
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 2
+        }
+        TNO_improve_poverty_low = yes
+        set_temp_variable = { temp_econ_spending_amount = 0.002 }
+        econ_spend_money_once_effect_raw_money = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_love_thy_neighbor
+    icon = GFX_TYM_a_union_together
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_communal_farming
+        focus = OMO_communal_housebuilding
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_communal_farming
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_love_thy_neighbor"
+        TNO_improve_slavery_policy_effectiveness_monthly_low = yes
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_penal_system_incarceration_dummy
+                add_idea = tno_penal_system_rehabilitation_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_penal_system_rehabilitation }
+    }
+}
+
+shared_focus = {
+    id = OMO_progress_through_tradition
+    icon = GFX_TYM_uplift_the_proletarian
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_a_new_sermon
+    }
+    x = 6
+    y = 1
+    relative_position_id = OMO_a_new_sermon
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_progress_through_tradition"
+        RUS_decrease_administrative_strain = yes
+        TNO_improve_press_rights_policy_effectiveness_monthly_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_empower_our_mothers_and_sisters
+    icon = GFX_generic_change_law_women
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_progress_through_tradition
+    }
+    x = -2
+    y = 1
+    relative_position_id = OMO_progress_through_tradition
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_empower_our_mothers_and_sisters"
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_gender_rights_women_in_the_workplace_dummy
+                add_idea = tno_gender_rights_gender_equality_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_gender_rights_gender_equality }
+        TNO_worsen_gender_rights_policy_effectiveness_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_open_arms_for_all
+    icon = GFX_generic_change_law_immigration
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_progress_through_tradition
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_progress_through_tradition
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_open_arms_for_all"
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_refugees_open
+                add_idea = tno_refugees_give_me_your_poor
+            }
+        }
+        hidden_effect = { add_ideas = tno_refugees_give_me_your_poor }
+        TNO_improve_religious_rights_policy_effectiveness_monthly_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_stand_against_chauvinism
+    icon = GFX_generic_change_law_religion
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_progress_through_tradition
+    }
+    x = 2
+    y = 1
+    relative_position_id = OMO_progress_through_tradition
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_stand_against_chauvinism"
+        TNO_improve_religious_rights_policy_effectiveness_high = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_christian_egalitarianism
+    icon = GFX_TYM_unpopular_decisions
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_empower_our_mothers_and_sisters
+    }
+    prerequisite = {
+        focus = OMO_open_arms_for_all
+    }
+    prerequisite = {
+        focus = OMO_stand_against_chauvinism
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_open_arms_for_all
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_christian_egalitarianism"
+        add_ideas = tno_women_total_equality
+        TNO_worsen_gender_rights_policy_effectiveness_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_love_for_the_faithless
+    icon = GFX_generic_diplomacy_peace
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_empower_our_mothers_and_sisters
+    }
+    prerequisite = {
+        focus = OMO_open_arms_for_all
+    }
+    prerequisite = {
+        focus = OMO_stand_against_chauvinism
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_open_arms_for_all
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_love_for_the_faithless"
+        TNO_improve_religious_rights_policy_effectiveness_monthly_low = yes
+        add_stability = 0.05
+    }
+}
+
+shared_focus = {
+    id = OMO_friendship_between_all_peoples
+    icon = GFX_OST_Unite_the_People
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_christian_egalitarianism
+    }
+    prerequisite = {
+        focus = OMO_love_for_the_faithless
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_love_for_the_faithless
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_friendship_between_all_peoples"
+        RUS_decrease_administrative_strain = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_a_truly_holy_russia
+    icon = GFX_Focus_Russia_Orthographic
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_all_one_in_heaven
+    }
+    prerequisite = {
+        focus = OMO_love_thy_neighbor
+    }
+    prerequisite = {
+        focus = OMO_friendship_between_all_peoples
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_love_thy_neighbor
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_truly_holy_russia"
+        RUS_decrease_administrative_strain = yes
+        country_event = { id = OMO.21 }
+        add_ideas = OMO_holy_russia
+    }
+}
+
+##### Regional Economics Tree #####
+shared_focus = {
+    id = OMO_the_fruits_of_labor
+    icon = GFX_NOV_fruit_of_siberia
+    cost = 3.6
+    x = 24
+    y = 0
+    available = {
+        has_completed_focus = OMO_a_truly_holy_russia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_fruits_of_labor"
+        country_event = { id = OMO.22 }
+        TNO_improve_Income_taxation_policy_effectiveness_monthly_low = yes
+        set_temp_variable = { money_reserves_temp = 0.5 }
+        econ_money_reserves_change_raw_money = yes
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_minimum_wage_low_minimum_wage_dummy
+                add_idea = tno_minimum_wage_good_minimum_wage_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_minimum_wage_good_minimum_wage }
+        
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_max_workhours_12_hour_work_day_dummy
+                add_idea = tno_max_workhours_10_hour_work_day_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_max_workhours_10_hour_work_day }
+    }
+}
+
+shared_focus = {
+    id = OMO_remember_the_yearning_for_bread
+    icon = GFX_URL_A_Paying_Job
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_fruits_of_labor
+    }
+    x = -2
+    y = 1
+    relative_position_id = OMO_the_fruits_of_labor
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_remember_the_yearning_for_bread"
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_pensions_low_pensions_dummy
+                add_idea = tno_pensions_acceptable_pensions_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_pensions_acceptable_pensions }
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_unemployment_no_subsidies_dummy
+                add_idea = tno_unemployment_generous_subsidies_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_unemployment_generous_subsidies }
+        TNO_improve_poverty_low = yes
+        social_funding_minimal_increase_high = yes
+        social_funding_maximal_increase_high = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_the_joys_of_charity
+    icon = GFX_IBR_promote_religious_charity
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_fruits_of_labor
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_the_fruits_of_labor
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_joys_of_charity"
+        TNO_improve_health_care_policy_effectiveness_monthly_med = yes
+        add_ideas = tno_pollution_good_regulations
+        tno_regulations_improve = yes
+        TNO_worsen_regulations_policy_effectiveness_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_remember_the_sermon_on_the_mount
+    icon = GFX_OMO_Let_My_People_Go
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_fruits_of_labor
+    }
+    x = 2
+    y = 1
+    relative_position_id = OMO_the_fruits_of_labor
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_remember_the_sermon_on_the_mount"
+        TNO_improve_academic_base_med = yes
+        TNO_improve_poverty_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_look_to_kropotkin
+    icon = GFX_Generic_Liberty_Handshake
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_remember_the_yearning_for_bread
+    }
+    prerequisite = {
+        focus = OMO_the_joys_of_charity
+    }
+    prerequisite = {
+        focus = OMO_remember_the_sermon_on_the_mount
+    }
+    mutually_exclusive = {
+        focus = OMO_look_to_tolstoy
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_the_joys_of_charity
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_look_to_kropotkin"
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+        TNO_worsen_security_policy_effectiveness_low = yes
+        TNO_improve_public_meetings_policy_effectiveness_monthly_low = yes
+        set_temp_variable = { gdp_growth_temp = 1 }
+        econ_gdp_growth_change = yes
+        add_timed_idea = { idea = OMO_look_to_kropotkin_misc_costs days = 90 }
+        add_ideas = OMO_economy_of_mutual_aid
+        set_temp_variable = {econ_centralization_temp = -5}
+        econ_centralization_change = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_look_to_tolstoy
+    icon = GFX_SBA_the_foundation_laid
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_remember_the_yearning_for_bread
+    }
+    prerequisite = {
+        focus = OMO_the_joys_of_charity
+    }
+    prerequisite = {
+        focus = OMO_remember_the_sermon_on_the_mount
+    }
+    mutually_exclusive = {
+        focus = OMO_look_to_kropotkin
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_the_joys_of_charity
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_look_to_tolstoy"
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+        set_temp_variable = { gdp_growth_temp = 1.25 }
+        econ_gdp_growth_change = yes
+        add_ideas = OMO_christian_anarchism
+        set_temp_variable = {econ_centralization_temp = -2.5}
+        econ_centralization_change = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_no_king_but_god
+    icon = GFX_FSR_Only_God_And_His_Servants
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_look_to_kropotkin
+        focus = OMO_look_to_tolstoy
+    }
+    x = 1
+    y = 4
+    relative_position_id = OMO_look_to_kropotkin
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_no_king_but_god"
+        econ_raise_max_credit_rating = yes
+        set_temp_variable = { temp_econ_GDP_boost_percentage = 0.33 }
+        econ_GDP_boost_once_percentage = yes
+        tno_trade_unions_improve = yes
+        TNO_worsen_trade_unions_policy_effectiveness_low = yes
+        TNO_improve_trade_unions_policy_effectiveness_monthly_low = yes
+        set_temp_variable = { pus_temp = 4 }
+        econ_pus_change = yes
+        modify_building_resources = {
+            building = thermoelectric_plant
+            resource = power
+            amount = 3
+        }
+        country_event = { id = OMO.23 }
+    }
+}
+
+##### Regional military Tree #####
+shared_focus = {
+    id = OMO_blessed_are_the_peacemakers
+    icon = GFX_GAY_Blessed_Are_The_Peacekeepers
+    cost = 3.6
+    x = 30
+    y = 0
+    available = {
+        has_completed_focus = OMO_a_truly_holy_russia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_blessed_are_the_peacemakers"
+        army_experience = 20
+        country_event = { id = OMO.24 }
+    }
+}
+
+shared_focus = {
+    id = OMO_a_necessary_sin
+    icon = GFX_GAY_The_Guns_of_God
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_blessed_are_the_peacemakers
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_blessed_are_the_peacemakers
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_necessary_sin"
+        TNO_improve_training_policy_effectiveness_monthly_med = yes
+        random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = barracks
+                level = 1
+                instant_build = yes
+            }
+        }
+        add_manpower = 50000
+    }
+}
+
+shared_focus = {
+    id = OMO_but_a_sin_nonetheless
+    icon = GFX_speer_retire_the_officers
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_blessed_are_the_peacemakers
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_blessed_are_the_peacemakers
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_but_a_sin_nonetheless"
+        TNO_improve_army_professionalism_med = yes
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_draft_exemptions_none_dummy
+                add_idea = tno_draft_exemptions_generous_exemptions_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_draft_exemptions_generous_exemptions }
+        TNO_improve_military_supervision_policy_effectiveness_monthly_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_enforce_humanity
+    icon = GFX_GER_court_of_human_rights
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_a_necessary_sin
+    }
+    prerequisite = {
+        focus = OMO_but_a_sin_nonetheless
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_a_necessary_sin
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_enforce_humanity"
+        add_war_support = 0.05
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_military_supervision_rules_of_engagement_dummy
+                add_idea = tno_military_supervision_total_supervision_dummy
+            }
+        }
+        hidden_effect = { add_ideas = tno_military_supervision_total_supervision }
+        TNO_worsen_military_supervision_policy_effectiveness_low = yes
+        TNO_improve_military_supervision_policy_effectiveness_monthly_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_an_army_of_the_faithful
+    icon = GFX_OMO_Bring_The_Sword
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_enforce_humanity
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_enforce_humanity
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_an_army_of_the_faithful"
+        add_ideas = OMO_a_holy_army
+        tno_conscription_improve = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_an_army_of_the_righteous
+    icon = GFX_OMO_End_The_Thieves
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_enforce_humanity
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_enforce_humanity
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_an_army_of_the_righteous"
+        TNO_improve_army_professionalism_med = yes
+        tno_training_improve = yes
+        TNO_worsen_training_policy_effectiveness_low = yes
+    }
+}
+
+##### Sudoplatov Tree #####
+shared_focus = {
+    id = OMO_the_three_temptations_of_the_sinner
+    icon = GFX_OMO_The_Three_Temptations_of_the_Sinner
+    cost = 3.6
+    x = 40
+    y = 0
+    available = {
+        has_completed_focus = OMO_a_truly_holy_russia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_three_temptations_of_the_sinner"
+        country_event = { id = OMO.25 }
+        add_political_power = 40
+        set_country_flag = OMO_sudoplatovs_temptations
+        unlock_decision_category_tooltip = OMO_temptations_category
+    }
+}
+
+shared_focus = {
+    id = OMO_sudoplatovs_men
+    icon = GFX_IRK_NKVD_guards_divisions
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_three_temptations_of_the_sinner
+    }
+    x = -4
+    y = 1
+    relative_position_id = OMO_the_three_temptations_of_the_sinner
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_sudoplatovs_men"
+        add_war_support = 0.05
+        TNO_improve_army_professionalism_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_cast_the_wolves_out_from_the_flock
+    icon = GFX_SBA_learning_from_experience
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_sudoplatovs_men
+    }
+    mutually_exclusive = {
+        focus = OMO_leash_the_wolves
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_sudoplatovs_men
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_cast_the_wolves_out_from_the_flock"
+        delete_unit_template_and_units = { division_template = "Motostrelkovaya Diviziya" }
+        TNO_improve_military_supervision_policy_effectiveness_monthly_low = yes
+        add_political_power = 50
+    }
+}
+
+shared_focus = {
+    id = OMO_leash_the_wolves
+    icon = GFX_SBA_black_guards_units
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_sudoplatovs_men
+    }
+    mutually_exclusive = {
+        focus = OMO_cast_the_wolves_out_from_the_flock
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_sudoplatovs_men
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_leash_the_wolves"
+        add_ideas = OMO_sudoplatovs_wolves
+        OMO_give_in_to_temptation = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_sudoplatovs_laws
+    icon = GFX_IRK_NKVD_guards_divisions
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_three_temptations_of_the_sinner
+    }
+    x = 0
+    y = 1
+    relative_position_id = OMO_the_three_temptations_of_the_sinner
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_sudoplatovs_laws"
+        add_stability = 0.05
+        TNO_improve_security_policy_effectiveness_low = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_there_is_only_one_judge
+    icon = GFX_OMO_The_Harbinger_Of_Deceit
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_sudoplatovs_laws
+    }
+    mutually_exclusive = {
+        focus = OMO_discipline_creates_holiness
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_sudoplatovs_laws
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_there_is_only_one_judge"
+        add_stability = 0.03
+        add_political_power = 50
+    }
+}
+
+shared_focus = {
+    id = OMO_discipline_creates_holiness
+    icon = GFX_GAY_A_Light_Shining_In_The_Darkness
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_sudoplatovs_laws
+    }
+    mutually_exclusive = {
+        focus = OMO_there_is_only_one_judge
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_sudoplatovs_laws
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_discipline_creates_holiness"
+        if = {
+            limit = { has_dlc = "La Resistance" }
+            create_intelligence_agency = {
+                name = "Narodnyiy Komissariat Vnutrennikh Del"
+                icon = "GFX_intelligence_agency_logo_sov"
+            }
+        }
+        tno_security_improve = yes
+        TNO_improve_security_policy_effectiveness_low = yes
+        TNO_improve_admin_efficiency_low = yes
+        add_timed_idea = { idea = OMO_discipline_creates_holiness_misc_costs days = 90 }
+        OMO_give_in_to_temptation = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_sudoplatovs_connections
+    icon = GFX_UPO_From_the_Shadows
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_the_three_temptations_of_the_sinner
+    }
+    x = 4
+    y = 1
+    relative_position_id = OMO_the_three_temptations_of_the_sinner
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_sudoplatovs_connections"
+        add_political_power = 50	
+    }
+}
+
+shared_focus = {
+    id = OMO_one_does_not_live_by_power_alone
+    icon = GFX_KEM_And_the_Power_of_the_King
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_sudoplatovs_connections
+    }
+    mutually_exclusive = {
+        focus = OMO_and_yet_so_many_could_be_saved
+    }
+    x = -1
+    y = 1
+    relative_position_id = OMO_sudoplatovs_connections
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_one_does_not_live_by_power_alone"
+        add_stability = 0.03
+        add_political_power = 50
+    }
+}
+
+shared_focus = {
+    id = OMO_and_yet_so_many_could_be_saved
+    icon = GFX_Generic_Shady_Deal
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_sudoplatovs_connections
+    }
+    mutually_exclusive = {
+        focus = OMO_one_does_not_live_by_power_alone
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_sudoplatovs_connections
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_and_yet_so_many_could_be_saved"
+        add_ideas = OMO_sudoplatovs_connections_idea
+        TNO_improve_security_policy_effectiveness_low = yes
+        OMO_give_in_to_temptation = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_await_judgement
+    icon = GFX_OMO_Yet_The_Darkness_Did_Not_Overcome
+    cost = 3.6
+    prerequisite = {
+        focus = OMO_cast_the_wolves_out_from_the_flock
+        focus = OMO_leash_the_wolves
+    }
+    prerequisite = {
+        focus = OMO_there_is_only_one_judge
+        focus = OMO_discipline_creates_holiness
+    }
+    prerequisite = {
+        focus = OMO_one_does_not_live_by_power_alone
+        focus = OMO_and_yet_so_many_could_be_saved
+    }
+    x = 1
+    y = 1
+    relative_position_id = OMO_there_is_only_one_judge
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_await_judgement"
+        custom_effect_tooltip = OMO_await_judgement_tt
+        set_country_flag = OMO_didnt_evade_the_judgement_of_the_LORD
+        hidden_effect = {
+            if = {
+                limit = {
+                    check_variable = { OMO_sudoplatov_influence > 59 }
+                }
+                country_event = { id = OMO.28 days = 1 }
+            }
+            else = {
+                country_event = { id = OMO.30 days = 1 }
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = OMO_the_time_of_liberation
+    icon = GFX_OMO_Let_My_People_Go
+    cost = 2.3
+    x = 8
+    y = 0
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_the_time_of_liberation"
+        add_war_support = 0.05
+        RUS_integration_cost_days_decrease = yes
+    }
+}
+
+shared_focus = {
+    id = OMO_abolishing_exploitation
+    icon = GFX_generic_change_law_welfare
+    cost = 2.3
+    relative_position_id = OMO_the_time_of_liberation
+    x = -2
+    y = 1
+    prerequisite = {
+        focus = OMO_the_time_of_liberation
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_abolishing_exploitation"
+        TNO_improve_slavery_policy_effectiveness_monthly_med = yes
+        effect_tooltip = {
+            swap_ideas = {
+                remove_idea = tno_pollution_good_regulations
+                add_idea = tno_pollution_strict_regulations
+            }
+        }
+        hidden_effect = { add_ideas = tno_pollution_strict_regulations }
+        TNO_improve_poverty_med = yes
+        TNO_worsen_regulations_policy_effectiveness_med = yes
+    }
+}
+shared_focus = {
+    id = OMO_repairing_bukharins_sin
+    icon = GFX_TNO_generic_liberating_camps_prisoners
+    cost = 2.3
+    relative_position_id = OMO_the_time_of_liberation
+    x = 2
+    y = 1
+    prerequisite = {
+        focus = OMO_the_time_of_liberation
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_repairing_bukharins_sin"
+        add_manpower = 12500
+        TNO_improve_penal_system_policy_effectiveness_monthly_med = yes
+        #country_event = { id = OMO.32 } # Commented out due to being a duplicate of OMO.20
+        566 = {
+            remove_building = {
+                type = prisons
+                level = 2
+            }
+        }
+    }
+}
+shared_focus = {
+    id = OMO_a_kingdom_of_god_on_earth
+    icon = GFX_OMO_End_The_Thieves
+    available = {
+        has_completed_focus = OMO_abolishing_exploitation
+        has_completed_focus = OMO_repairing_bukharins_sin
+    }
+    mutually_exclusive = {
+        focus = OMO_bridge_the_gap
+        focus = OMO_an_ear_to_the_faithless
+    }
+    cost = 6
+    relative_position_id = OMO_the_time_of_liberation
+    x = -3
+    y = 2
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_kingdom_of_god_on_earth"
+        add_ideas = tno_religious_rights_state_religion
+        TNO_worsen_religious_rights_policy_effectiveness_low = yes
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+        country_event = { id = OMO.33 }
+    }
+}
+shared_focus = {
+    id = OMO_bridge_the_gap
+    icon = GFX_generic_change_law_religion
+    mutually_exclusive = {
+        focus = OMO_a_kingdom_of_god_on_earth
+        focus = OMO_an_ear_to_the_faithless
+    }
+    cost = 2
+    relative_position_id = OMO_the_time_of_liberation
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = OMO_abolishing_exploitation
+    }
+    prerequisite = {
+        focus = OMO_repairing_bukharins_sin
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_bridge_the_gap"
+        add_stability = 0.1
+        TNO_improve_religious_rights_policy_effectiveness_monthly_low = yes
+        country_event = { id = OMO.34 }
+    }
+}
+shared_focus = {
+    id = OMO_an_ear_to_the_faithless
+    icon = GFX_OST_Unite_the_People
+    available = {
+        has_completed_focus = OMO_abolishing_exploitation
+        has_completed_focus = OMO_repairing_bukharins_sin
+    }
+    mutually_exclusive = {
+        focus = OMO_a_kingdom_of_god_on_earth
+        focus = OMO_bridge_the_gap
+    }
+    cost = 6
+    relative_position_id = OMO_the_time_of_liberation
+    x = 3
+    y = 2
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_an_ear_to_the_faithless"
+        add_ideas = tno_religious_rights_secularism
+        TNO_worsen_religious_rights_policy_effectiveness_low = yes
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.05
+        }
+        country_event = { id = OMO.35 }
+    }
+}
+shared_focus = {
+    id = OMO_a_godly_russia
+    icon = GFX_GAY_Spirit_Of_Saint_George
+    cost = 2.3
+    relative_position_id = OMO_bridge_the_gap
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = OMO_a_kingdom_of_god_on_earth
+        focus = OMO_bridge_the_gap
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_godly_russia"
+        if = {
+            limit = {
+                has_idea = OMO_holy_russia
+            }
+            swap_ideas = {
+                remove_idea = OMO_holy_russia
+                add_idea = OMO_holy_russia_godly
+            }
+        }
+        else = {
+            add_war_support = 0.05
+        }
+        add_manpower = 10000
+    }
+}
+shared_focus = {
+    id = OMO_enlightening_the_faithless
+    icon = GFX_FSR_Only_God_And_His_Servants
+    cost = 2.3
+    relative_position_id = OMO_a_godly_russia
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = OMO_a_godly_russia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_enlightening_the_faithless"
+        TNO_improve_academic_base_med = yes
+        TNO_improve_religious_rights_policy_effectiveness_monthly_med = yes
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.03
+        }
+    }
+}
+shared_focus = {
+    id = OMO_denouncing_the_sinners
+    icon = GFX_OMO_Infiltrate_Their_Castle
+    cost = 2.3
+    relative_position_id = OMO_enlightening_the_faithless
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = OMO_enlightening_the_faithless
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_denouncing_the_sinners"
+        TNO_improve_security_policy_effectiveness_low = yes
+        TNO_worsen_public_meetings_policy_effectiveness_monthly_low = yes
+        swap_ideas = {
+            remove_idea = RUS_faith_in_holy_father
+            add_idea = RUS_faith_in_holy_father_2
+        }
+    }
+}
+shared_focus = {
+    id = OMO_a_syncretic_russia
+    icon = GFX_GAY_Shield_Of_The_Faithful
+    cost = 2.3
+    relative_position_id = OMO_bridge_the_gap
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = OMO_bridge_the_gap
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_a_syncretic_russia"
+        if = {
+            limit = {
+                has_idea = OMO_holy_russia
+            }
+            swap_ideas = {
+                remove_idea = OMO_holy_russia
+                add_idea = OMO_holy_russia_syncretic
+            }
+        }
+    }
+}
+shared_focus = {
+    id = OMO_an_equal_russia
+    icon = GFX_Generic_Liberty_Handshake
+    cost = 2.3
+    relative_position_id = OMO_bridge_the_gap
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = OMO_bridge_the_gap
+        focus = OMO_an_ear_to_the_faithless
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_an_equal_russia"
+        if = {
+            limit = {
+                has_idea = OMO_holy_russia
+            }
+            swap_ideas = {
+                remove_idea = OMO_holy_russia
+                add_idea = OMO_holy_russia_equal
+            }
+        }
+        else = {
+            add_stability = 0.05
+        }
+        TNO_improve_religious_rights_policy_effectiveness_monthly_low = yes
+        TNO_improve_poverty_med = yes
+    }
+}
+shared_focus = {
+    id = OMO_faith_is_a_choice
+    icon = GFX_JAP_Kakushin_Godo
+    cost = 2.3
+    relative_position_id = OMO_an_equal_russia
+    x = 1
+    y = 1
+    prerequisite = {
+        focus = OMO_an_equal_russia
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_faith_is_a_choice"
+        add_ideas = tno_minorities_affirmative_action
+        TNO_improve_public_meetings_policy_effectiveness_monthly_low = yes
+        add_popularity = {
+            ideology = socialist
+            popularity = 0.03
+        }
+    }
+}
+shared_focus = {
+    id = OMO_secular_yet_holy
+    icon = GFX_Secularists_Appeased
+    cost = 2.3
+    relative_position_id = OMO_faith_is_a_choice
+    x = -1
+    y = 1
+    prerequisite = {
+        focus = OMO_faith_is_a_choice
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_secular_yet_holy"
+        swap_ideas = {
+            remove_idea = OMO_holy_duty
+            add_idea = OMO_holy_duty_2
+        }
+    }
+}
+shared_focus = {
+    id = OMO_unite_the_flock
+    icon = GFX_GAY_Shepherd_The_Flock
+    cost = 2.3
+    relative_position_id = OMO_a_syncretic_russia
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = OMO_denouncing_the_sinners
+        focus = OMO_a_syncretic_russia
+        focus = OMO_secular_yet_holy
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus OMO_unite_the_flock"
+        TNO_improve_army_professionalism_low = yes
+        RUS_integration_cost_days_decrease = yes
+        country_event = { id = OMO.36 }
+    }
+}

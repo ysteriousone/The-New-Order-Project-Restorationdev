@@ -1,0 +1,450 @@
+OMO_wrath_of_god_category = {
+	OMO_stir_the_peasants_of_irkutsk = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = OMO
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = OMO_start_uprising }
+			}
+		}
+
+		visible = {
+			566 = {
+				controller = {
+					has_war_with = OMO
+				}
+			}
+		}
+		cancel_trigger = {
+			566 = {
+				is_fully_controlled_by = OMO
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		custom_cost_trigger = { command_power > 24.99 }
+		custom_cost_text = decision_cost_25_cp
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_stir_the_peasants_of_irkutsk"
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = OMO_start_uprising
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove OMO_stir_the_peasants_of_irkutsk"
+			custom_effect_tooltip = OMO_stir_the_peasants_of_irkutsk_tt
+			hidden_effect = {
+				load_oob = OMO_peasants_irkutsk
+			}
+			clr_country_flag = OMO_start_uprising
+		}
+		cancel_effect = {
+			clr_country_flag = OMO_start_uprising
+		}
+	}
+	OMO_stir_the_peasants_of_buryatia = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = OMO
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = OMO_start_uprising }
+			}
+		}
+
+		visible = {
+			564 = {
+				controller = {
+					has_war_with = OMO
+				}
+			}
+		}
+		cancel_trigger = {
+			564 = {
+				is_fully_controlled_by = OMO
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		custom_cost_trigger = { command_power > 24.99 }
+		custom_cost_text = decision_cost_25_cp
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_stir_the_peasants_of_buryatia"
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = OMO_start_uprising
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove OMO_stir_the_peasants_of_buryatia"
+			custom_effect_tooltip = OMO_stir_the_peasants_of_buryatia_tt
+			hidden_effect = {
+				load_oob = OMO_peasants_buryatia
+			}
+			clr_country_flag = OMO_start_uprising
+		}
+		cancel_effect = {
+			clr_country_flag = OMO_start_uprising
+		}
+	}
+	OMO_stir_the_peasants_of_amur = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = OMO
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = OMO_start_uprising }
+			}
+		}
+
+		visible = {
+			561 = {
+				controller = {
+					has_war_with = OMO
+				}
+			}
+		}
+		cancel_trigger = {
+			561 = {
+				is_fully_controlled_by = OMO
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		custom_cost_trigger = { command_power > 24.99 }
+		custom_cost_text = decision_cost_25_cp
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_stir_the_peasants_of_amur"
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = OMO_start_uprising
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove OMO_stir_the_peasants_of_amur"
+			custom_effect_tooltip = OMO_stir_the_peasants_of_amur_tt
+			hidden_effect = {
+				load_oob = OMO_peasants_amur
+			}
+			clr_country_flag = OMO_start_uprising
+		}
+		cancel_effect = {
+			clr_country_flag = OMO_start_uprising
+		}
+	}
+	OMO_stir_the_peasants_of_chita = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = OMO
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = OMO_start_uprising }
+			}
+		}
+
+		visible = {
+			563 = {
+				controller = {
+					has_war_with = OMO
+				}
+			}
+		}
+		cancel_trigger = {
+			563 = {
+				is_fully_controlled_by = OMO
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		custom_cost_trigger = { command_power > 24.99 }
+		custom_cost_text = decision_cost_25_cp
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_stir_the_peasants_of_chita"
+			hidden_effect = { add_command_power = -25 }
+			set_country_flag = OMO_start_uprising
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove OMO_stir_the_peasants_of_chita"
+			custom_effect_tooltip = OMO_stir_the_peasants_of_chita_tt
+			hidden_effect = {
+				load_oob = OMO_peasants_chita
+			}
+			clr_country_flag = OMO_start_uprising
+		}
+		cancel_effect = {
+			clr_country_flag = OMO_start_uprising
+		}
+	}
+	OMO_stir_the_peasants_of_magadan = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = OMO
+		}
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = OMO_start_uprising }
+			}
+		}
+
+		visible = {
+			562 = {
+				controller = {
+					has_war_with = OMO
+				}
+			}
+		}
+		cancel_trigger = {
+			562 = {
+				is_fully_controlled_by = OMO
+			}
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		days_remove = 20
+
+		fire_only_once = yes
+
+		custom_cost_trigger = { command_power > 14.99 }
+		custom_cost_text = decision_cost_15_cp
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_stir_the_peasants_of_magadan"
+			hidden_effect = { add_command_power = -15 }
+			set_country_flag = OMO_start_uprising
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove OMO_stir_the_peasants_of_magadan"
+			custom_effect_tooltip = OMO_stir_the_peasants_of_magadan_tt
+			hidden_effect = {
+				load_oob = OMO_peasants_magadan
+			}
+			clr_country_flag = OMO_start_uprising
+		}
+		cancel_effect = {
+			clr_country_flag = OMO_start_uprising
+		}
+	}
+}
+
+OMO_temptations_category = {
+	OMO_raise_peasant_militia = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		cost = 50
+		days_re_enable = 180
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_raise_peasant_militia"
+			custom_effect_tooltip = OMO_raise_peasant_militia_tt
+			OMO_medium_temptation = yes
+			hidden_effect = {
+				country_event = { id = OMO.26 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	OMO_recruit_former_nkvd = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		visible = {
+			has_completed_focus = OMO_leash_the_wolves
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_recruit_former_nkvd"
+			custom_effect_tooltip = OMO_recruit_former_nkvd_tt
+			OMO_medium_temptation = yes
+			hidden_effect = {
+				country_event = { id = OMO.27 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	OMO_galvanize_the_peasantry_for_war = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			weekly_manpower = 1000
+		}
+		days_remove = 70
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_galvanize_the_peasantry_for_war"
+			OMO_minor_temptation = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	OMO_galvanize_the_peasantry_for_production = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			industrial_capacity_factory = 0.25
+		}
+		days_remove = 140
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_galvanize_the_peasantry_for_production"
+			OMO_minor_temptation = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	OMO_galvanize_the_peasantry_for_construction = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			production_speed_buildings_factor = 0.25
+		}
+		days_remove = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_galvanize_the_peasantry_for_construction"
+			OMO_minor_temptation = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	OMO_galvanize_the_peasantry_for_hardship = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			consumer_goods_use_modifier = -0.2
+			supply_consumption_factor = -0.25
+		}
+		days_remove = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision OMO_galvanize_the_peasantry_for_hardship"
+			OMO_minor_temptation = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+OMO_post_reunification = {
+	OMO_the_ninth_crusade = {
+		allowed = {
+			original_tag = OMO
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		complete_effect = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

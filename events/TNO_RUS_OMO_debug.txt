@@ -1,0 +1,362 @@
+add_namespace = OMO_debug
+
+country_event = {
+    id = OMO_debug.1
+    title = "Initiate the holyness sequense"
+    desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+    
+    option = {
+        name = "lesgo"
+        OMO = {
+            country_event = { id = OMO.1 }
+        }
+    }
+}
+
+country_event = {
+    id = OMO_debug.2
+    title = "Create Holyness!"
+    desc = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+    
+    option = {
+        name = "lesgo"
+        OMO = {
+            drop_cosmetic_tag = yes
+            if = {
+                limit = {
+                    has_game_rule = { rule = OMO_REUNIFIY_FAR_EAST option = OMO_REUNIFIY_FAR_EAST_YES }
+                }
+                every_country = { #just in case you know
+                    limit = { is_far_eastern_nation = yes } 
+                    remove_russian_war_buff = yes
+                }
+                OMO = { apply_russian_war_buff_with_5_divisions = yes }
+            }
+            promote_character = OMO_Alexander_Men
+            promote_character = OMO_Pavel_Sudoplatov
+            set_popularities = {
+                socialist = 60
+                communist = 40
+            }
+            set_party_name = {
+                ideology = socialist
+                long_name = OMO_socialism_party_men_long
+                name = OMO_socialism_party_men
+            }
+            add_ideas = OMO_holy_duty
+            remove_all_ministers = yes
+            add_advisor_role = {
+                character = OMO_Nikolay_Eshliman
+                advisor = {
+                    slot = head_of_government
+                    idea_token = OMO_Nikolay_Eshliman_hog
+                    visible = {
+                        has_character = OMO_Alexander_Men
+                    }
+                    traits = { hog_spiritual_leader }
+                    ledger = civilian
+                    cost = -1
+                    removal_cost = -1
+                    ai_will_do = { factor = 0 }
+                }
+                activate = yes
+            }
+            add_advisor_role = {
+                character = OMO_Yuriy_Rytkheu
+                advisor = {
+                    slot = foreign_minister
+                    idea_token = OMO_Yuriy_Rytkheu_for
+                    visible = { has_character = OMO_Alexander_Men }
+                    traits = { for_well_connected }
+                    cost = -1
+                    removal_cost = -1
+                    ledger = civilian
+                }
+                activate = yes
+            }
+            add_advisor_role = {
+                character = OMO_Vasily_Nalimov
+                advisor = {
+                    slot = economy_minister
+                    idea_token = OMO_Vasily_Nalimov_eco
+                    visible = { has_character = OMO_Alexander_Men }
+                    traits = { eco_reformer }
+                    cost = -1
+                    removal_cost = -1
+                    ledger = civilian
+                }
+                activate = yes
+            }
+            add_advisor_role = {
+                character = OMO_Gleb_Yakunin
+                advisor = {
+                    slot = security_minister
+                    idea_token = OMO_Gleb_Yakunin_sec
+                    visible = { has_character = OMO_Alexander_Men }
+                    traits = { sec_steadfast_defender }
+                    cost = -1
+                    removal_cost = -1
+                    ledger = civilian
+                }
+                activate = yes
+            }
+            hidden_effect = {
+                add_ideas = {
+                    ### Standard ###
+                    RUS_warlord_manpower
+
+                    ### Political Laws ###
+                    tno_political_parties_nonpartisan_system
+                    tno_religious_rights_pluralism
+                    tno_trade_unions_nonsocialist_allowed
+                    tno_immigration_open_immigration
+                    tno_slavery_outlawed
+                    tno_public_meetings_allowed
+                    tno_press_rights_free_press
+                    tno_vote_franchise_no_voting
+
+                    ### Military Laws ###
+                    tno_conscription_broadened_conscription
+                    tno_military_supervision_rules_of_engagement
+                    tno_training_minimal_training
+                    tno_draft_exemptions_none
+
+                    ### Social Laws ###
+                    tno_health_care_low_income_protections
+                    tno_education_public_education
+                    tno_penal_system_incarceration
+                    tno_gender_rights_women_in_the_workplace
+                    tno_security_community_police
+
+                    ### Economic Laws ###
+                    tno_trade_laws_limited_exports
+                    tno_income_taxation_flat_taxes
+                    tno_minimum_wage_low_minimum_wage
+                    tno_max_workhours_12_hour_work_day
+                    tno_pensions_low_pensions
+                    tno_unemployment_no_subsidies
+                    tno_regulations_token_regulations
+
+                    ### Misc Laws
+                    tno_pollution_no_controls
+                    tno_safety_minimal_regulations
+                    tno_child_labor_illegal
+                    tno_refugees_open
+                    tno_racial_integration_integrated_military
+                    tno_women_noncombat_only
+                    tno_minorities_equal_rights
+                    tno_lgbt_rights_lgbt_allowed
+
+                    ### Societal Development ###
+                    tno_army_professionalism_political_interference
+                    tno_industrial_expertise_nascent
+                    tno_industrial_equipment_power_tools
+                    tno_agriculture_basic_mechanized
+                    tno_healthcare_rudimentary
+                    tno_research_facilities_basic
+                    tno_academic_base_basic_literacy
+                    tno_admin_efficiency_organized_chaos
+                }
+
+                set_technology = {
+                    ##INFANTRY##
+                    infantry_weapons_1 = 1
+                    infantry_kit_1 = 1
+                    infantry_weapons_2 = 1
+                    infantry_kit_2 = 1
+                    infantry_weapons_improvements_mine_1 = 1
+                    infantry_kit_3 = 1
+                    infantry_weapons_improvements_ammo_1 = 1
+                    infantry_weapons_improvements_grenade_1 = 1
+                    #
+                    basic_infantry_equipment = 1
+                    support_weapons = 1
+                    infantry_at = 1
+                    infantry_at_upgrade_1 = 1
+                    motorized_infantry = 1
+                    #infantry_aa = 1
+                    #infantry_aa2 = 1
+                    ##SUPPORT##
+                    tech_support = 1
+                    tech_engineers = 1
+                    assault_weapons_1 = 1
+                    tech_recon = 1
+                    tech_recon2 = 1
+                    ##ARTY##
+                    artillery4 = 1
+                    antiair5 = 1
+                    ##ARMOR##
+                    advanced_light_tank = 1
+                    advanced_medium_tank = 1
+                    mechanised_infantry3 = 1
+
+                    APC_1950 = 1
+                    APC_1950_basic_turret = 1
+                    #APC_1950_basic_engine = 1
+
+                    IFV_1950 = 1
+
+                    MBT_1950 = 1
+                    AC_1945 = 1
+                    AC_1950 = 1
+
+                    ##AIRCRAFT##
+                    early_fighter = 1
+                    fighter_1945 = 1
+                    interceptor_1945 = 1
+                    CAS_1945 = 1
+                    ##HEAVY AIRCRAFT##
+                    strategic_bomber1 = 1
+                    heavy_air_1945 = 1
+                    tac_bomber1 = 1
+                    tac_air_1945 = 1
+                    transport_air1 = 1
+                    transport_air_1945 = 1
+                    ##HELICOPTERS##
+                    helicopter_engines = 1
+                    very_early_helicopter = 1
+                    early_helicopter = 1
+                    ##ENGINEERING##
+                    electronic_mechanical_engineering = 1
+                    radio = 1
+                    mechanical_computing = 1
+                    computing_machine = 1
+                    basic_encryption = 1
+                    basic_decryption = 1
+                    ##INDUSTRY##
+                    ww2_line_production = 1
+                    batch_production_1 = 1
+                    resource_extraction_methods = 1
+                    excavation0 = 1
+                    energy_technology_1 = 1
+                    building_construction_1 = 1
+                    social_construction_1 = 1
+                    military_construction_1 = 1
+                }
+                clr_country_flag = can_not_use_econ_system
+                clr_country_flag = TNO_has_started_up
+                644 = {
+                    add_extra_state_shared_building_slots = 1
+                    add_building_construction = {
+                        type = thermoelectric_plant
+                        level = 1
+                        instant_build = yes
+                    }
+                }
+                TNO_startup_nation = yes
+            }
+            add_state_core = 759
+            add_state_core = 889
+		    add_state_core = 891
+		    add_state_core = 761
+		    add_state_core = 890
+		    add_state_core = 575
+            every_owned_state = {
+                set_temp_variable = { state_value_multiplier_temp = 1.5 }
+                econ_state_value_change_multiply = yes
+            }
+            TNO_improve_poverty_high = yes
+            TNO_improve_academic_base_high = yes
+            TNO_improve_research_facilities_high = yes
+            TNO_improve_agriculture_low = yes
+            TNO_improve_healthcare_high = yes
+            TNO_improve_admin_efficiency_high = yes
+            TNO_improve_industrial_expertise_low = yes
+            TNO_improve_industrial_equipment_high = yes
+            add_stability = 0.15
+            set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Christian_Anarchism }
+            econ_subtype_change = yes 
+            remove_ideas = RUS_isolated_vilages
+            set_cosmetic_tag = OMO_father_men
+            add_ideas = RUS_faith_in_holy_father
+
+            OMO_Gleb_Yakunin = {
+                add_corps_commander_role = {
+                    traits = { trait_cautious trickster }
+                    skill = 2
+                    attack_skill = 1
+                    defense_skill = 3
+                    planning_skill = 1
+                    logistics_skill = 2
+                    legacy_id = 3787
+                }
+            }
+
+            OMO_Mikhail_Vukvol = {
+                add_corps_commander_role = {
+                    traits = { winter_specialist war_hero }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 1
+                    planning_skill = 3
+                    logistics_skill = 1
+                    legacy_id = 3788
+                }
+            }
+
+            OMO_Pavel_Adelgeim = {
+                add_corps_commander_role = {
+                    traits = { trait_reckless infantry_leader }
+                    skill = 2
+                    attack_skill = 3
+                    defense_skill = 1
+                    planning_skill = 2
+                    logistics_skill = 1
+                    legacy_id = 3789
+                }
+            }
+
+            OMO_Timofey_Yelkov = {
+                add_corps_commander_role = {
+                    traits = { inflexible_strategist skilled_staffer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 1
+                    planning_skill = 1
+                    logistics_skill = 3
+                    legacy_id = 3790
+                }
+            }
+
+            OMO_Vladimir_Gladilin = {
+                add_corps_commander_role = {
+                    traits = { infantry_officer trait_engineer }
+                    skill = 2
+                    attack_skill = 2
+                    defense_skill = 2
+                    planning_skill = 1
+                    logistics_skill = 2
+                    legacy_id = 3791
+                }
+            }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = thermoelectric_plant
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            hidden_effect = {
+                load_oob = OMO_peasants_norsib
+                load_focus_tree = OMO_northern_war
+                every_country = {
+                    news_event = WORLD.104
+                }
+                every_country = {
+                    limit = {
+                        is_far_eastern_nation = yes
+                        NOT = { tag = OMO }
+                    }
+                    country_event = { id = OMO.29 hours = 6 }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+focus_tree = {
+	id = OMO_northern_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMO
+		}
+	}
+	default = no
+	shared_focus = OMO_sermon_of_the_father
+}
+
+
+focus_tree ={
+	id = OMO_father_regional
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMO
+		}
+	}
+	default = no
+	shared_focus = OMO_a_new_sermon
+	shared_focus = OMO_the_fruits_of_labor
+	shared_focus = OMO_blessed_are_the_peacemakers
+	shared_focus = OMO_the_three_temptations_of_the_sinner
+}
+
+focus_tree = {
+	id = OMO_father_superregional
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMO
+		}
+	}
+	default = no
+	shared_focus = OMO_the_time_of_liberation
+}

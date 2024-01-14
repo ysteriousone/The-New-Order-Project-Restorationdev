@@ -1,0 +1,23 @@
+﻿division_template = {
+	name = "Narodnyj Komissariát Vnútrennikh Del Novobrantsy"
+	division_names_group = IRK_Infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name="Brigada Irkutsk"
+		location= "4455"
+		division_template= "Narodnyj Komissariát Vnútrennikh Del Novobrantsy"
+		start_experience_factor = 0.7
+	}
+}

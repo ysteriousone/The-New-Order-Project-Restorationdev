@@ -1,0 +1,25 @@
+﻿division_template = {
+	name = "Motostrelkovaya Diviziya"
+	division_names_group = IRK_Motorized
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name="Brigada Sudoplatova"
+		location= "4455"
+		division_template= "Motostrelkovaya Diviziya"
+		start_experience_factor = 0.5
+	}
+}

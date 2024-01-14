@@ -1,0 +1,110 @@
+on_actions = {
+    on_monthly_KOM = {
+        effect = {
+            if = {
+                limit = {
+                    is_ai = yes
+                    has_country_leader = {
+                        character = KOM_Sergey_Taboritsky
+                        ruling_only = yes
+                    }
+                    has_game_rule = { rule = OMO_BUFF_TABBY option = OMO_BUFF_TABBY_YES }
+                }
+                set_variable = { KOM_tabby_time_hours = 0 }
+            }
+        }
+    }
+    on_startup = {
+        effect = {
+            if = { #MEN GETS BUFFS IN STARTING EVENT
+                limit = {
+                    has_game_rule = { rule = OMO_REUNIFIY_FAR_EAST option = OMO_REUNIFIY_FAR_EAST_YES }
+                }
+                every_country = {
+                    limit = { is_far_eastern_nation = yes }
+                    remove_russian_war_buff = yes
+                }
+            }
+        }
+    }
+
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = {
+                        tag = OMO
+                    }
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                            is_in_faction_with = GER
+                        }
+                    }
+                    ROOT = {
+                        every_owned_state = {
+                            add_core_of = OMO
+                        }
+                    }
+                    OMO = {
+                        annex_country = {
+                            target = ROOT
+                            transfer_troops = no
+                        }
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                country_exists = POL
+                                country_exists = UKR
+                                country_exists = BLR
+                                country_exists = DST
+                                country_exists = OST
+                                country_exists = GGN
+                                country_exists = CAU
+                                country_exists = MCW
+                            }
+                        }
+                        OMO = {
+                            transfer_state = 195
+                            add_state_core = 195
+                            transfer_state = 196
+                            add_state_core = 196
+                            transfer_state = 137
+                            add_state_core = 137
+                            transfer_state = 1532
+                            add_state_core = 1532
+                            every_state = {
+                                limit = {
+                                    OR = {
+                                        is_core_of = DST
+                                        is_core_of = OST
+                                        is_core_of = BLR
+                                    }
+                                }
+                                transfer_state_to = OMO
+                                add_core_of = OMO
+                            }
+                            every_country = {
+                                limit = {
+                                    is_in_faction_with = GER
+                                }
+                                white_peace = PREV
+                            }
+                        }
+                        if = {
+                            limit = { #compatibility with Goering Expanded because why the fuck no
+                                has_global_flag = german_civil_war_goeringvic
+                            }
+                            GER = {
+                                country_event = { id = goering_schoerner.1 days = 3 }
+                            }
+                        }
+                    }
+                    set_global_flag = skip_default_capitulation
+                }
+            }
+        }
+    }
+}

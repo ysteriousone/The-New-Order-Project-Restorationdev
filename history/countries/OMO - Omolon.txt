@@ -68,11 +68,11 @@ add_ideas = {
 	RUS_isolated_vilages
 	
 	### POLITICAL LAWS ###
-	tno_political_parties_one_party_state
-	tno_religious_rights_state_religion
+	tno_political_parties_nonpartisan_system
+	tno_religious_rights_pluralism
 	tno_trade_unions_illegal
 	tno_immigration_open_immigration
-	tno_slavery_penal_labor
+	tno_slavery_outlawed
 	tno_public_meetings_regulated
 	tno_press_rights_censored_press
 	tno_vote_franchise_no_voting
@@ -123,12 +123,12 @@ add_ideas = {
 
 ### Policy Effectiveness
 ### Political
-set_variable = { tno_political_parties_effectiveness = 16 }
-set_variable = { tno_religious_rights_effectiveness = 65 }
+set_variable = { tno_political_parties_effectiveness = 74 }
+set_variable = { tno_religious_rights_effectiveness = 75 }
 set_variable = { tno_trade_unions_effectiveness = 31 }
-set_variable = { tno_immigration_effectiveness = 100 }
+set_variable = { tno_immigration_effectiveness = 61 }
 set_variable = { tno_slavery_effectiveness = 86 }
-set_variable = { tno_public_meetings_effectiveness = 80 }
+set_variable = { tno_public_meetings_effectiveness = 87 }
 set_variable = { tno_press_rights_effectiveness = 83 }
 set_variable = { tno_vote_franchise_effectiveness = 100 }
 
@@ -149,7 +149,7 @@ set_variable = { tno_gender_rights_effectiveness = 61 }
 set_variable = { tno_security_effectiveness = 19 }
 
 ### Military
-set_variable = { tno_conscription_effectiveness = 14 }
+set_variable = { tno_conscription_effectiveness = 56 }
 set_variable = { tno_military_supervision_effectiveness = 33 }
 set_variable = { tno_training_effectiveness = 30 }
 set_variable = { tno_draft_exemptions_effectiveness = 45 }

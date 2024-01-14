@@ -1,0 +1,9 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_TNO_game_rule_flag_OMO"
+		texturefile = "gfx/flags/small/OMO.tga"
+		legacy_lazy_load = no
+	}
+
+}

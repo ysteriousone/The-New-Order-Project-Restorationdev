@@ -1,5 +1,68 @@
 ideas = {
 	country = {
+		OMO_peasant_uprisings = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_peasant_uprisings"}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = rural_resistance
+
+			modifier = {
+				war_support_factor = -0.25
+				army_morale_factor = -0.15
+				resistance_damage_to_garrison = 0.25
+				consumer_goods_use_modifier = 0.15
+			}
+		}
+
+		OMO_peasant_uprisings_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_peasant_uprisings_2"}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = rural_resistance
+
+			modifier = {
+				war_support_factor = -0.20
+				army_morale_factor = -0.10
+				resistance_damage_to_garrison = 0.15
+				consumer_goods_use_modifier = 0.10
+			}
+		}
+
+		OMO_peasant_uprisings_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_peasant_uprisings_3"}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = rural_resistance
+
+			modifier = {
+				war_support_factor = -0.10
+				army_morale_factor = -0.05
+				resistance_damage_to_garrison = 0.05
+				consumer_goods_use_modifier = 0.05
+			}
+		}
+
 		RUS_faith_in_holy_father = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_faith_in_holy_father"}
 			allowed = {
@@ -16,6 +79,25 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
+
+		RUS_faith_in_holy_father_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea RUS_faith_in_holy_father_2"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GAY_Warrior_Order
+			modifier = {
+				army_morale_factor = 0.25
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+
 		OMO_holy_duty = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_holy_duty"}
 			allowed = {
@@ -32,6 +114,226 @@ ideas = {
 				conscription = 0.015
 				army_morale_factor = 0.5
 				army_attack_factor = 0.15
+			}
+		}
+
+		OMO_holy_duty_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_holy_duty_2"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_holy_duty
+
+			modifier = {
+				conscription = 0.02
+				army_morale_factor = 0.5
+				army_attack_factor = 0.15
+			}
+		}
+
+		OMO_fraternal_militias_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_fraternal_militias_idea"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_weapons_production
+
+			modifier = {
+				weekly_manpower = 500
+				army_org_factor = 0.05
+				experience_gain_army = 0.10
+			}
+		}
+
+		OMO_holy_russia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_holy_russia"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_Holy_Russia
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.30
+			}
+		}
+
+		OMO_holy_russia_godly = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_holy_russia_godly"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_Holy_Russia
+
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.30
+				surrender_limit = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		OMO_holy_russia_syncretic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_holy_russia"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_Holy_Russia
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.15
+				surrender_limit = 0.1
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		OMO_holy_russia_equal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_holy_russia_equal"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_Holy_Russia
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.40
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		OMO_economy_of_mutual_aid = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_economy_of_mutual_aid"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_scales
+
+			modifier = {
+				# min_export = -0.15
+				consumer_goods_use_modifier = -0.15
+				production_factory_max_efficiency_factor = 0.15
+				debt_to_GDP_ceiling_modifier = 0.5
+			}
+		}
+
+		OMO_christian_anarchism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_christian_anarchism"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_Christian_Anarchism
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_start_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				local_resources_factor = 0.1
+				debt_to_GDP_ceiling_modifier = 0.75
+			}
+		}
+
+		OMO_a_holy_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_a_holy_army"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = OMO_a_holy_army
+
+			modifier = {
+				minimum_training_level = -0.15
+				supply_consumption_factor = -0.1
+				land_reinforce_rate = 0.05
+				army_defence_factor = 0.1
+			}
+		}
+
+		OMO_sudoplatovs_wolves = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_sudoplatovs_wolves"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_terror_werewolves
+
+			modifier = {
+				army_org_factor = 0.15
+				army_speed_factor = 0.05
+				planning_speed = 0.2
+				max_planning = 0.1
+			}
+		}
+
+		OMO_sudoplatovs_connections_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea OMO_sudoplatovs_connections_idea"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = A_True_Meritocracy
+
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.15
+				intel_from_operatives_factor = 0.15
 			}
 		}
 	}
