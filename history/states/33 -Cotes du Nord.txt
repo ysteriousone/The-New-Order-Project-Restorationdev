@@ -4,7 +4,7 @@ state={
 	name="STATE_33"
 
 	history={
-		owner = FRS
+		owner = BRT
 		victory_points = { 9525 1 }
 		buildings = {
 			infrastructure = 4
@@ -15,7 +15,7 @@ state={
 				coastal_bunker = 2
 			}
 		}
-		add_core_of = FRS
+		add_core_of = BRT
 
 	}
 
