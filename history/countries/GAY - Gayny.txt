@@ -19,19 +19,29 @@ set_politics = {
 }
 
 set_popularities = {
-	communist = 0
+	communist = 25
 	ultranationalism = 0
 	national_socialism = 0
-	socialist = 0
+	socialist = 25
 	progressivism = 0
 	liberalism = 0
 
 	liberal_conservatism = 0
-	conservatism = 10
-	paternalism = 30
-	despotism = 60
+	conservatism = 0
+	paternalism = 0
+	despotism = 50
 	fascism = 0
 	
+}
+create_country_leader = {
+	name = "Alexander Kazem-bek"
+	desc = ""
+	picture = Kazembek.dds
+	expire = "1965.1.1"
+	ideology = despotism_absolute_monarchy_subtype
+	traits = {
+		#
+	}
 }
 
 # Country leaders

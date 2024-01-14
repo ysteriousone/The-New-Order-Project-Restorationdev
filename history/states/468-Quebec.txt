@@ -7,7 +7,7 @@ state={
 	}
 
 	history={ 
-		owner = CAN
+		owner = QUE
 		buildings = {
 			thermoelectric_plant = 1
 			schools = 3
@@ -19,7 +19,7 @@ state={
 			radar_station = 2
 			air_base = 3
 		}
-		add_core_of = CAN
+		add_core_of = QUE
 		victory_points = { # Sherbrooke
 			7289 10 
 		}

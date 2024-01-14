@@ -4,7 +4,7 @@
 recruit_character = FEN_Generic_Vacant
 
 # Country leaders
-recruit_character = FEN_Maxwell_Knight
+
 
 # Ministers
 recruit_character = FEN_Jack_Gaster
@@ -402,6 +402,17 @@ set_popularities = {
 	socialist = 25
 	liberalism = 15
 	despotism = 55
+}
+
+create_country_leader = {
+	name = "Winston Churhchill"
+	desc = ""
+	picture = Churchill.dds
+	expire = "1965.1.1"
+	ideology = despotism_interim_government_subtype
+	traits = {
+		#
+	}
 }
 
 set_variable = { TNO_economy_type = token:Econ_Type_Planned }

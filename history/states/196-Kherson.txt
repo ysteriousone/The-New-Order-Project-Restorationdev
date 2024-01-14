@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = GER
+		owner = UKR
 		victory_points = { 568 1 }
 		victory_points = { 11700 1 }
 		set_state_flag = universal_renamings
@@ -17,7 +17,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = GER
+		add_core_of = DSG
 
 	}
 

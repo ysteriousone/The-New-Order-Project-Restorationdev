@@ -7,13 +7,13 @@ state={
 	}
 
 	history={
-		owner = CAN
+		owner = QUE
 		buildings = {
 			barracks = 2
 			infrastructure = 2
 			radar_station = 3
 		}
-		add_core_of = CAN
+		add_core_of = QUE
 		victory_points = { # Chicoutimi
 			7893 5 
 		}

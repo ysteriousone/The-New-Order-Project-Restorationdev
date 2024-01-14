@@ -3,13 +3,13 @@ state={
 	id=516
 	name="STATE_516"
 	history={
-		owner = NRL
+		owner = TOM
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = { 4859 1 }
 		victory_points = { 1757 10 }
-		add_core_of = NRL
+		add_core_of = TOM
 	}
 	
 	resources={

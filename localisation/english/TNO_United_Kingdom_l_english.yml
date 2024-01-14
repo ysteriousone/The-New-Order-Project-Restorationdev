@@ -50,13 +50,13 @@
 ############################
 # Country Names - Starting #
 ############################f
-ENG:0 "United Kingdom"
-ENG_DEF:0 "the United Kingdom of Great Britain"
+ENG:0 "State of Britain"
+ENG_DEF:0 "the State of Britain"
 ENG_ADJ:0 "British"
 
-FEN:0 "Free Britain"
-FEN_DEF:0 "Her Majesty's Most Loyal Resistance"
-FEN_ADJ:0 "Free British"
+FEN:0 "United Kingdom"
+FEN_DEF:0 "The United Kingdom"
+FEN_ADJ:0 "British"
 
 ##########################
 # Party names - Starting #
@@ -96,8 +96,8 @@ ENG_fascism_party:0 "BPP"
 ENG_fascism_party_long:0 "British People's Party"
 ENG_fascism_2_party:0 "BPP - Ideologues"
 ENG_fascism_2_party_long:0 "British People's Party - Ideologues"
-ENG_national_socialism_party:0 "BPP - Spearhead"
-ENG_national_socialism_party_long:0 "British People's Party - Spearhead"
+ENG_national_socialism_party:0 "BFC-J"
+ENG_national_socialism_party_long:0 "British Free Corps - Jordanite"
 ENG_national_socialism_2_party:0 "British Free Corps"
 ENG_national_socialism_2_party_long:0 "British Free Corps"
 ENG_national_socialism_salvation_party:0 "BPP - NS"

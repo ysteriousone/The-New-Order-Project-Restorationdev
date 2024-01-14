@@ -608,6 +608,9 @@ set_autonomy = { target = OST autonomy_state = autonomy_integrated_reichskommiss
 set_autonomy = { target = SER autonomy_state = autonomy_collaborator_puppet_state }
 set_autonomy = { target = SLO autonomy_state = autonomy_collaborator_puppet_state }
 set_autonomy = { target = UKR autonomy_state = autonomy_integrated_reichskommissariat }
+set_autonomy = { target = IRE autonomy_state = autonomy_integrated_reichskommissariat }
+set_autonomy = { target = ENG autonomy_state = autonomy_collaborator_puppet_state }
+set_autonomy = { target = CRN autonomy_state = autonomy_integrated_reichskommissariat }
 
 NOR = { set_cosmetic_tag = NOR_GER }
 SER = { set_cosmetic_tag = SER_GER }
