@@ -169,6 +169,7 @@ set_technology = {
 
 add_ideas = {
 	#Spirits
+	Pakt_Ordensstaat
 	SER_majka_srbija
 	SER_Violence
 
