@@ -30,8 +30,8 @@ set_popularities = {
 }
 create_country_leader = {
 	name = "Sepp Janko"
-	desc = ""
-	picture = Janko.dds
+	desc = "Himmler Ripoff"
+	picture = Sepp_Janko.dds
 	expire = "1965.1.1"
 	ideology = national_socialism_burgundian_system_subtype
 	traits = {
