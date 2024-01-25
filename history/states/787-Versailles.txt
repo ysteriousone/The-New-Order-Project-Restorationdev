@@ -4,7 +4,7 @@ state={
 	name="STATE_787"
 	state_category = large_town
 	provinces={
-		9507 9725 15365
+		9507 9725 15365 15231
 	}
 	history={
 		owner = FRS
