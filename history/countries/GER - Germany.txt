@@ -593,6 +593,8 @@ add_to_faction = HUN
 add_to_faction = ROM
 add_to_faction = TNS
 add_to_faction = BUL
+add_to_faction = DSG
+add_to_faction = GMS
 
 set_autonomy = { target = ANG autonomy_state = autonomy_autonomous_reichskommissariat }
 set_autonomy = { target = CAU autonomy_state = autonomy_autonomous_reichskommissariat }
@@ -611,7 +613,8 @@ set_autonomy = { target = UKR autonomy_state = autonomy_integrated_reichskommiss
 set_autonomy = { target = IRE autonomy_state = autonomy_integrated_reichskommissariat }
 set_autonomy = { target = ENG autonomy_state = autonomy_collaborator_puppet_state }
 set_autonomy = { target = CRN autonomy_state = autonomy_integrated_reichskommissariat }
-
+set_autonomy = { target = DSG autonomy_state = autonomy_integrated_reichskommissariat }
+set_autonomy = { target = GMS autonomy_state = autonomy_autonomous_reichskommissariat }
 NOR = { set_cosmetic_tag = NOR_GER }
 SER = { set_cosmetic_tag = SER_GER }
 COG = { set_cosmetic_tag = COG_GER }
@@ -637,6 +640,16 @@ set_popularities = {
 	ultranationalism = 0
 	national_socialism_2 = 17
 	national_socialism = 58
+}
+create_country_leader = {
+	name = "Joseph Goebbles"
+	desc = ""
+	picture = Goebbels.dds
+	expire = "1965.1.1"
+	ideology = fascism_ordosocialism_subtype
+	traits = {
+		#
+	}
 }
 set_variable = { national_socialism_2_var = token:GER_pre_GCW_national_socialism_2 }
 

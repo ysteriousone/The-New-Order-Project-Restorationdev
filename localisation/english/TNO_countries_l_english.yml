@@ -14,7 +14,15 @@
  ADL: "Republic of Andalusia"
  ADL_DEF: "the Republic of Andalusia"
  ADL_ADJ: "Andalusian"
+ 
+ GMS: "SS Ordensstaat Banat"
+ GMS_DEF: "SS Ordensstaat Banat"
+ GMS_ADJ: "Banat"
 
+ NPL: "New Poland"
+ NPL_DEF: "The Exiled Republic of Poland"
+ NPL_ADJ: "Polish"
+ 
  ADN: "Andean Pact"
  ADN_DEF: "the Andean Pact"
  ADN_ADJ: "Pacto Andino"

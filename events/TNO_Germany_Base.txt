@@ -335,7 +335,6 @@ country_event = {
 
 	option = { #Göring
 		name = reich.6.b
-		trigger = { always = no }
 		ai_chance = {
 			base = 10
 			modifier = {
@@ -1606,9 +1605,9 @@ country_event = {
 			ruling_party = despotism
 		}
 		set_popularities = {
-			despotism = 56
-			fascism = 12
-			national_socialism = 32
+			despotism = 80
+			fascism = 2
+			communism = 18
 		}
 
 		retire_character = GER_reichstag_emergency_council

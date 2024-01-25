@@ -4,14 +4,13 @@ state={
 	
 	
 	history={
-		owner = AZH
+		owner = IND
 		victory_points = { 16097 1 }
 		victory_points = { 4544 5 }
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = AZH
-		add_claim_by = IND
+		add_core_of = IND
 	}
 
 	provinces={

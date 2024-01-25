@@ -16,19 +16,28 @@ set_variable = { trade_opinion_embargo@WIN = 1 }
 set_variable = { trade_opinion_embargo@GUY = 1 }
 
 set_politics = {
-	ruling_party = ultranationalism
+	ruling_party = national_socialism
 	last_election = "1962.1.1"
 	election_frequency = 36
 	elections_allowed = no
 }
 
 set_popularities = {
-	ultranationalism = 40
-	national_socialism = 35
-	fascism = 17
-	despotism = 8
+	ultranationalism = 0
+	national_socialism = 100
+	fascism = 0
+	despotism = 0
 }
-
+create_country_leader = {
+	name = "Sepp Janko"
+	desc = ""
+	picture = Janko.dds
+	expire = "1965.1.1"
+	ideology = national_socialism_burgundian_system_subtype
+	traits = {
+		#
+	}
+}
 set_technology = {
 	basic_train = 1
 
@@ -160,7 +169,6 @@ set_technology = {
 
 add_ideas = {
 	#Spirits
-	SER_The_Clock_Ticks
 	SER_majka_srbija
 	SER_Violence
 
