@@ -155,7 +155,12 @@
  BUL_endless_roots_of_radicals:0 "Endless Roots of Radicals"
  BUL_endless_roots_of_radicals_desc:0 "Democracy - typical party democracy, that is - never held much power in the Bulgarian sphere. Yet its fringes have persisted long after its extinguishment. Fascism has only grown more prominent in Bulgaria, even after the disastrous Gabrovski premiership, while Communists and Agrarians remain a persistent thorn in Tsar Boris III's side. So long as Boris III remains weakened, these roots will only grow deeper."
  ##Focus Tree
-
+ BUL_Tsardom_of_Chaos: "The Tsardom of Chaos"
+ BUL_Tsardom_of_Chaos_desc: "Even though we have reigned supreme in the second World War,all is not well.We are far off than our old honour as the Prussia of the Balkans,our territories are only protected by the Germans. Once they colllapse, Romanian and Greek forces shall overrun us. And lets not talk about the Tsar's government..... GOD HELP US"
+ BUL_The_last_Tsardom: "The Last Tsardom"
+ BUL_The_last_Tsardom_desc: "We are the last Tsardom of Europe, a testament to the old. Funnier enough, we are the last Absolute Monarchy in Europe. We should make it count or even this title will escape from our grip..."
+ BUL_The_Ultimate_PLAN: "The Ultimate PLAN"
+ BUL_The_Ultimate_PLAN_desc: "The advisors have made a contigency plan if the Balkan countries declare war on us. But another plan is to seize C E N T R A L  S E R B I A. This is the one territory we did not get in World War 2. But now if the Serbians collapse, we can get this territory back. But first, we must prepare the Army for the T H I R D  B A L K A N  W A R....God save the Tsar!"
  ##Events
  bul.1.t:0 "Hippity Hoppity Your King is Now History"
  bul.1.d:0 "tldr ya boi got poisoned"
