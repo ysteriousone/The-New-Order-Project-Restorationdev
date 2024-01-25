@@ -68,6 +68,9 @@ FRA_debug_category = { #France Debug Category for TT3 Skeleton - to be deleted f
 				add_political_power = 100
 				transfer_state = 790
 				transfer_state = 30
+						}
+					}
+				}
 			}
 		}
 	}
