@@ -381,17 +381,34 @@ country_event = {
 		name = BRG_opening.6.a
 		set_global_flag = franco_burgundian_war_over
 		add_political_power = 100
-		transfer_state = 747
-		transfer_state = 787
-		transfer_state = 788
-		transfer_state = 792
-		transfer_state = 27
-		transfer_state = 20
-		transfer_state = 786
-		transfer_state = 26
-		transfer_state = 791
-		transfer_state = 789
-		transfer_state = 24
+			BRG = {
+				add_political_power = 100
+				transfer_state = 747
+				transfer_state = 787
+				transfer_state = 27
+				transfer_state = 20
+				transfer_state = 21
+				transfer_state = 32
+				transfer_state = 792
+				transfer_state = 786
+				transfer_state = 791
+				transfer_state = 24
+				transfer_state = 26
+			FIT = {
+				add_political_power = 100
+				transfer_state = 21
+				transfer_state = 22
+				transfer_state = 1609
+			BRT = {
+				add_political_power = 100
+				transfer_state = 789
+			RPY = {
+				add_political_power = 100
+				transfer_state = 790
+				transfer_state = 30
+						}
+					}
+				}
 		BRG_Domestic_GUI_Add_France = yes
 		hidden_effect = {
 			set_victory_points = { #Hello Nord-Paris
@@ -7354,5 +7371,6 @@ country_event = { #Reset
 			every_owned_state = { set_demilitarized_zone = no }
 		}
 		FRA = { every_owned_state = { set_demilitarized_zone = no } }
+		}
 	}
 }
