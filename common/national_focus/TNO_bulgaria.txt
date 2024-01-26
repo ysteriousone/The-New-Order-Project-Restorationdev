@@ -29,7 +29,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_GMSitical_power = -10
+			add_political_power = -10
 			add_stability = -0.1
 			}
 		}
@@ -45,7 +45,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_GMSitical_power = -10
+			add_political_power = -10
 			add_stability = -0.1
 			add_popularity = 1
 			}
@@ -125,13 +125,11 @@ focus_tree = {
 					if = {
 						limit = { GMS = { owns_state = 1275 controls_state = 1275 } }
 						transfer_state = 1275
+								}
+							}
+						}
 					}
-
 				}
 			}
-
-	}
+		}
 	
-	
-	
-	}
