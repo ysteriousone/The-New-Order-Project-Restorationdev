@@ -29,7 +29,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_political_power = -10
+			add_GMSitical_power = -10
 			add_stability = -0.1
 			}
 		}
@@ -45,7 +45,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_political_power = -10
+			add_GMSitical_power = -10
 			add_stability = -0.1
 			add_popularity = 1
 			}
@@ -62,9 +62,76 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_political_power = 5
+			add_GMSitical_power = 5
+			army_experience = 10
+			
 			
 			}
 		}
-	}
+		focus = {
+		id = BUL_Ally_Banat
+		prerequisite = { focus = BUL_The_Ultimate_PLAN}
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 3
+		cost = 6
 
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 5
+			add_guarentees = GMS
+			
+			}
+		}
+		focus = {
+		id = BUL_Ally_Hungary
+		prerequisite = { focus = BUL_Ally_Banat}
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 7
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 5
+			add_guarentees = HUN
+	}
+	focus = {
+		id = BUL_Seize_Cntrl_Serbia
+		prerequisite = { focus = BUL_Ally_Banat}
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			effect_tooltip = {
+				BUL = {
+					if = {
+						limit = { GMS = { owns_state = 1731 controls_state = 1731 } }
+						transfer_state = 1731
+					}
+					if = {
+						limit = { GMS = { owns_state = 108 controls_state = 108 } }
+						transfer_state = 108
+					}
+					if = {
+						limit = { GMS = { owns_state = 1275 controls_state = 1275 } }
+						transfer_state = 1275
+					}
+
+				}
+			}
+
+	}
+	
+	
+	
+	}
