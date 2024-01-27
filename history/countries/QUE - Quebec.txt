@@ -4,7 +4,7 @@ capital = 466
 recruit_character = QUE_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 recruit_character = QUE_Daniel_Johnson_Sr
-
+recruit_character = FFR_Charles_de_Gaulle
 
 #oob = "QUE_1962"
 
@@ -62,7 +62,7 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = paternalism
 	last_election = "1960.8.31"
 	election_frequency = 48
 	elections_allowed = no
@@ -71,11 +71,11 @@ set_politics = {
 set_popularities = {
 	communist = 0
 	progressivism = 2
-	liberalism = 56
+	liberalism = 0
 
 	conservatism = 42
 	socialist = 0
-	paternalism = 0
+	paternalism = 56
 	despotism = 0
 	fascism = 0
 	national_socialism = 0
