@@ -402,6 +402,7 @@ country_event = {
 			BRT = {
 				add_political_power = 100
 				transfer_state = 789
+				transfer_state = 1612
 			RPY = {
 				add_political_power = 100
 				transfer_state = 790
