@@ -12,18 +12,16 @@ focus_tree = {
 	focus = {
 		id = ROM_romanian_militarization
 		icon = GFX_goal_unknown
-		x = 4
+		x = 3
 		y = 0
 		cost = 1
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
-		select_effect = {
-add_manpower = 10000
-
-}
-	}
-
+		completion_reward = {
+			add_manpower = 100000
+			}
+		}
 	#The Final Strike
 	focus = {
 		id = ROM_the_final_strike
@@ -35,14 +33,11 @@ add_manpower = 10000
 			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = ROM_form_the_romanian_entente  }
-		select_effect = {
-declare_war_on = {
-    target = BUL
-    type = annex_everything
-}
-
-
-
+		completion_reward = {
+		declare_war_on = {
+    	target = BUL
+    	type = annex_everything
+	}
 }
 	}
 
@@ -57,9 +52,10 @@ declare_war_on = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROM_transnistrian_power  }
-		select_effect = {
-add_guarantees = SER
-}
+		completion_reward = {
+			add_political_power = 5
+			add_guarantees = GMS
+			}
 	}
 
 	#Ally Slovakia
@@ -73,11 +69,11 @@ add_guarantees = SER
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROM_romanian_militarization  }
-		select_effect = {
-add_guarantees = SLO
-}
+		completion_reward = {
+			add_political_power = 5
+			add_guarantees = SLO
+			}
 	}
-
 	#Transnistrian Power
 	focus = {
 		id = ROM_transnistrian_power
@@ -89,14 +85,10 @@ add_guarantees = SLO
 			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
 		}
 		prerequisite = { focus = ROM_claim_transylvania  } prerequisite = { focus = ROM_ally_slovakia  }
-		select_effect = {
-set_demilitarized_zone = 1289
-
-
-
-}
+		completion_reward = {
+			set_demilitarized_zone = 1965
+			}
 	}
-
 	#Claim Transylvania
 	focus = {
 		id = ROM_claim_transylvania
@@ -108,46 +100,9 @@ set_demilitarized_zone = 1289
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROM_romanian_militarization  }
-		select_effect = {
-add_state_claim = 1289
-
-
-}
-	}
-
-	#Claim Transylvania
-	focus = {
-		id = ROM_claim_transylvania
-		icon = GFX_goal_unknown
-		x = 4
-		y = 1
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
+		completion_reward = {
+			add_state_claim = 1289
+			add_state_claim = 76
+			}
 		}
-		prerequisite = { focus = ROM_romanian_militarization  }
-		select_effect = {
-add_state_claim = 1289
-
-
-}
 	}
-
-	#Romanian Militarization
-	focus = {
-		id = ROM_romanian_militarization
-		icon = GFX_goal_unknown
-		x = 3
-		y = 0
-		cost = 1
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		select_effect = {
-add_manpower = 10000
-
-
-}
-	}
-
-}
