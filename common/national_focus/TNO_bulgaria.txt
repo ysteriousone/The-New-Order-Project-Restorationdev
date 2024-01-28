@@ -62,7 +62,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			add_GMSitical_power = 5
+			add_political_power = 5
 			army_experience = 10
 			
 			
@@ -81,7 +81,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 5
-			add_guarentees = GMS
+			add_guarantees = GMS
 			
 			}
 		}
@@ -98,7 +98,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 5
-			add_guarentees = HUN
+			add_guarantees = HUN
 	}
 	focus = {
 		id = BUL_Seize_Cntrl_Serbia
