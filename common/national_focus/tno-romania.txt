@@ -1,0 +1,153 @@
+focus_tree = {
+	id = tno-romania
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ROM
+		}
+	}
+	#Romanian Militarization
+	focus = {
+		id = ROM_romanian_militarization
+		icon = GFX_goal_unknown
+		x = 4
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		select_effect = {
+add_manpower = 10000
+
+}
+	}
+
+	#The Final Strike
+	focus = {
+		id = ROM_the_final_strike
+		icon = GFX_ROM_the_final_strike-428320
+		x = 3
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ROM_form_the_romanian_entente  }
+		select_effect = {
+declare_war_on = {
+    target = BUL
+    type = annex_everything
+}
+
+
+
+}
+	}
+
+	#Form the Romanian Entente
+	focus = {
+		id = ROM_form_the_romanian_entente
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROM_transnistrian_power  }
+		select_effect = {
+add_guarantees = SER
+}
+	}
+
+	#Ally Slovakia
+	focus = {
+		id = ROM_ally_slovakia
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROM_romanian_militarization  }
+		select_effect = {
+add_guarantees = SLO
+}
+	}
+
+	#Transnistrian Power
+	focus = {
+		id = ROM_transnistrian_power
+		icon = GFX_goal_unknown
+		x = 3
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = ROM_claim_transylvania  } prerequisite = { focus = ROM_ally_slovakia  }
+		select_effect = {
+set_demilitarized_zone = 1289
+
+
+
+}
+	}
+
+	#Claim Transylvania
+	focus = {
+		id = ROM_claim_transylvania
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROM_romanian_militarization  }
+		select_effect = {
+add_state_claim = 1289
+
+
+}
+	}
+
+	#Claim Transylvania
+	focus = {
+		id = ROM_claim_transylvania
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROM_romanian_militarization  }
+		select_effect = {
+add_state_claim = 1289
+
+
+}
+	}
+
+	#Romanian Militarization
+	focus = {
+		id = ROM_romanian_militarization
+		icon = GFX_goal_unknown
+		x = 3
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		select_effect = {
+add_manpower = 10000
+
+
+}
+	}
+
+}
