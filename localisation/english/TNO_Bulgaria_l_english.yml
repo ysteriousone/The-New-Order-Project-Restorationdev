@@ -161,6 +161,11 @@
  BUL_The_last_Tsardom_desc: "We are the last Tsardom of Europe, a testament to the old. Funnier enough, we are the last Absolute Monarchy in Europe. We should make it count or even this title will escape from our grip..."
  BUL_The_Ultimate_PLAN: "The Ultimate PLAN"
  BUL_The_Ultimate_PLAN_desc: "The advisors have made a contigency plan if the Balkan countries declare war on us. But another plan is to seize C E N T R A L  S E R B I A. This is the one territory we did not get in World War 2. But now if the Serbians collapse, we can get this territory back. But first, we must prepare the Army for the T H I R D  B A L K A N  W A R....God save the Tsar!"
+ BUL_Ally_Banat: "A deal with the devil"
+ BUL_Ally_Banat_desc: "Since we have ensured a allaince with Hungary through some covert talks and we have the same enemies, we also need to get the SS in Banat to help us because we cannot take on the Romanian war machine ourselves. Hence, we will have to forget morals for Realpolitik..."
+ BUL_Bulgarian_Entente: "The Bulgarian Entente"
+ BUL_Bulgarian_Entente_desc: "The time has come. Our final test for a greater Bulgaria and survival of our Tsardom. Together, we will bring peace and order to the Balkans and end the Romanian threat. Once. And . For. A L L..."
+ 
  ##Events
  bul.1.t:0 "Hippity Hoppity Your King is Now History"
  bul.1.d:0 "tldr ya boi got poisoned"
