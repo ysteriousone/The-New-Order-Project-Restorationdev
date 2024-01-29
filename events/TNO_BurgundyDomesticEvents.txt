@@ -397,17 +397,29 @@ country_event = {
 			FIT = {
 				add_political_power = 100
 				transfer_state = 21
-				transfer_state = 22
-				transfer_state = 1609
 			BRT = {
 				add_political_power = 100
 				transfer_state = 789
 				transfer_state = 1612
-			RPY = {
+			FRV = {
 				add_political_power = 100
 				transfer_state = 790
 				transfer_state = 30
 				transfer_state = 23
+						}
+			FRM = {
+				add_political_power = 100
+				transfer_state = 22
+				transfer_state = 1609
+						}
+			FRD = {
+				add_political_power = 100
+				transfer_state = 31	
+				transfer_state = 1611
+						}
+			FGR = {
+				add_political_power = 100
+				transfer_state = 25
 						}
 					}
 				}

@@ -28,7 +28,7 @@ focus_tree = {
 		icon = GFX_ROM_the_final_strike-428320
 		x = 3
 		y = 4
-		cost = 2
+		cost = 25
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
@@ -54,7 +54,9 @@ focus_tree = {
 		prerequisite = { focus = ROM_transnistrian_power  }
 		completion_reward = {
 			add_political_power = 5
-			add_guarantees = GMS
+			add_guarantees = SLO
+			create_faction = Romanian-Entente
+			add_to_faction = SLO
 			}
 	}
 
@@ -86,7 +88,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROM_claim_transylvania  } prerequisite = { focus = ROM_ally_slovakia  }
 		completion_reward = {
-			set_demilitarized_zone = 1965
+			annex_country = {
+			target = TNS
+			transfer_troops = yes
 			}
 	}
 	#Claim Transylvania

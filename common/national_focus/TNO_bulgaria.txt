@@ -90,7 +90,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_Ally_Banat}
 		icon = GFX_goal_generic_production2
 		x = 5
-		y = 7
+		y = 5
 		cost = 6
 
 		available = {
@@ -99,6 +99,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 5
 			add_guarantees = HUN
+	}
 	}
 	focus = {
 		id = BUL_Seize_Cntrl_Serbia
@@ -114,22 +115,30 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				BUL = {
-					if = {
-						limit = { GMS = { owns_state = 1731 controls_state = 1731 } }
 						transfer_state = 1731
-					}
-					if = {
-						limit = { GMS = { owns_state = 108 controls_state = 108 } }
-						transfer_state = 108
-					}
-					if = {
-						limit = { GMS = { owns_state = 1275 controls_state = 1275 } }
 						transfer_state = 1275
 								}
 							}
 						}
-					}
-				}
 			}
+    focus = {
+		id = BUL_Bulgarian_Entente
+		prerequisite = { focus = BUL_Ally_Banat}
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 5
+		cost = 6
+
+		available = {
+
 		}
+		completion_reward = {
+			add_political_power = 5
+			create_faction = Bulgarian-Entente
+			add_to_faction = HUN
+			add_to_faction = GMS
+	}
+	}			
+			
+			}
 	

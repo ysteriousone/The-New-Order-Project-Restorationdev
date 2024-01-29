@@ -87,8 +87,8 @@
  FRM_conservatism_DEF:0 "the French Republic"
  FRM_paternalism:0 "French Republic"
  FRM_paternalism_DEF:0 "the French Republic"
- FRM_despotism:0 "Organisation Armée Secrète"
- FRM_despotism_DEF:0 "l'Organisation Armée Secrète"
+ FRM_despotism:0 "Kingdom of France"
+ FRM_despotism_DEF:0 "The Kingdom of France"
  FRM_communist:0 "French Republic"
  FRM_communist_DEF:0 "the French Republic"
  FRM_socialist:0 "French Republic"
@@ -299,9 +299,9 @@
 # DUPRAT
 ####################
  ## Country Names ##
- FGR_fascism:0 "Groupes Nationalistes Révolutionnaires"
+ FGR_fascism:0 "Reichstaat Frankreich"
  FGR_fascism_DEF:0 "the French State"
- FGR_national_socialism:0 "Groupes Nationalistes Révolutionnaires"
+ FGR_national_socialism:0 "Reichstaat Frankreich"
  FGR_national_socialism_DEF:0 "the French State"
  FGR_liberalism:0 "French Republic"
  FGR_liberalism_DEF:0 "the French Republic"
@@ -342,13 +342,13 @@
  FGR_paternalism_party:0 "-"
  FGR_paternalism_party_long:0 "-"
  FGR_despotism_party:0 "GNR"
- FGR_despotism_party_long:0 "Groupes Nationalistes Révolutionnaires"
+ FGR_despotism_party_long:0 "Reichstaat Frankreich"
  FGR_fascism_party:0 "GNR"
- FGR_fascism_party_long:0 "Groupes Nationalistes Révolutionnaires"
+ FGR_fascism_party_long:0 "Reichstaat Frankreich"
  FGR_national_socialism_party:0 "GNR"
- FGR_national_socialism_party_long:0 "Groupes Nationalistes Révolutionnaires"
+ FGR_national_socialism_party_long:0 "Reichstaat Frankreich"
  FGR_ultranationalism_party:0 "GNR"
- FGR_ultranationalism_party_long:0 "Groupes Nationalistes Révolutionnaires"
+ FGR_ultranationalism_party_long:0 "Reichstaat Frankreich"
 
  ## Characters ##
  FGR_Francois_Duprat:0 "François Duprat"

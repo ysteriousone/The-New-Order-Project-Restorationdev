@@ -589,10 +589,6 @@ add_to_faction = SER
 add_to_faction = DEN
 add_to_faction = HOL
 add_to_faction = NOR
-add_to_faction = HUN
-add_to_faction = ROM
-add_to_faction = TNS
-add_to_faction = BUL
 add_to_faction = DSG
 add_to_faction = GMS
 

@@ -130,3 +130,6 @@
  ROM_WORLD.8.t: "[Get_newspaper_header]Referendum in Transnistria"
  ROM_WORLD.8.desc: "Following the calming of the deadly Transnistrian conflict, the Bucharest government has announced a series of referendums in parts of the troubled territory on whether or not parts of the area will be annexed into Romania. These votes will be held in the five counties of the Dniester Valley, which contains the Moldovan majority areas of Ananiev, Rîbnita, Ovidiopol, Tiraspol, and Dubăsari alongside the city of Odesa.\n\nMost international observers believe that the referenda will easily pass with a majority, except in Odesa, where critics believe that only extensive electoral fraud can allow Bucharest its desired result. For the rest of the former governorate, the Romanian government has announced plans to transition it to a native ruled administration as soon as possible." #Rîbnița's ț not yet supported by font
  ROM_WORLD.8.a: "At what cost?"
+ 
+ ROM_romanian_militarization: "Romanian Militarization"
+ ROM_romanian_militarization_desc: "Given our current situation in the aftermath of the 2nd world war, Romania has grown weaker rather than stronger. But we should not wait for Germany to listen to us for they let Bulgaria and Hungary take our territories, Now is the time to arm ourselves..."

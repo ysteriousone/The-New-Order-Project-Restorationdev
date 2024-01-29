@@ -1,6 +1,5 @@
 capital = 784
 
-recruit_character = FRM_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 #oob = "RPY_1962"
 
@@ -137,7 +136,7 @@ set_variable = { TNO_economy_type = token:Econ_Type_Planned }
 set_variable = { TNO_economy_subtype = token:Econ_Subtype_Military_Directed }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = despotism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -145,17 +144,27 @@ set_politics = {
 
 set_popularities = {
 	communist = 0
-	ultranationalism = 11
+	ultranationalism = 0
 	national_socialism = 0
 	socialist = 0
 	progressivism = 0
 	liberalism = 0
 
 	conservatism = 0
-	paternalism = 12
-	despotism = 32
-	fascism = 45
+	paternalism = 50
+	despotism = 50
+	fascism = 0
 	
+}
+create_country_leader = {
+	name = "Pierre Guixote"
+	desc = ""
+	picture = Bourbonlarp.dds
+	expire = "1965.1.1"
+	ideology = despotism_interim_government_subtype
+	traits = {
+		#
+	}
 }
 
 TNO_startup_nation = yes
