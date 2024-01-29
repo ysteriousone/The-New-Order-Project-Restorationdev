@@ -127,7 +127,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = 5
 		y = 5
-		cost = 6
+		cost = 45
 
 		available = {
 

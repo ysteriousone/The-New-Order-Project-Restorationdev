@@ -95,15 +95,25 @@ set_variable = { tno_regulations_effectiveness = 40 }
 
 ### Politics
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = paternalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_socialism = 65
-	ultranationalism = 35
+	paternalism = 60
+	liberalism = 40
+}
+create_country_leader = {
+	name = "Hermann Goering"
+	desc = ""
+	picture = Fatman.dds
+	expire = "1965.1.1"
+	ideology = paternalism_stratocracy_subtype
+	traits = {
+		#
+	}
 }
 
 ### Leaders

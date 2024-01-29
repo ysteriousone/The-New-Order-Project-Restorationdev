@@ -94,25 +94,36 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = paternalism
 	last_election = "1961.9.12"
 	election_frequency = 96
 	elections_allowed = no
 }
 
 set_popularities = {
-	communist = 0
-	socialist = 0
-	progressivism = 7
-	liberalism = 4
+	communist = 10
+	socialist = 2
+	progressivism = 5
+	liberalism = 25
 	liberal_conservatism = 0
-	conservatism = 16
-	paternalism = 6
-	despotism = 11
-	fascism = 31
-	national_socialism = 16
-	national_socialism_1 = 9
+	conservatism = 10
+	paternalism = 38
+	despotism = 5
+	fascism = 5
+	national_socialism = 0
+	national_socialism_1 = 0
 }
+create_country_leader = {
+	name = "Istvan Horthy"
+	desc = ""
+	picture = Portrait_Hungary_Istvan_Horthy.dds
+	expire = "1965.1.1"
+	ideology = paternalism_national_conservatism_subtype
+	traits = {
+		#
+	}
+}
+
 
 set_stability = 0.62
 set_research_slots = 3

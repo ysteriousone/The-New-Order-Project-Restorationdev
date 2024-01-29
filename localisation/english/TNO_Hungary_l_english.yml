@@ -31,10 +31,10 @@
  HUN_liberal_conservatism_party_long: "Polgári Szabadságpárt - Kereszténydemokraták" # Civic Freedom Party - Christian Democrats
  HUN_conservatism_party: "FKgP"
  HUN_conservatism_party_long: "Független Kisgazdapárt" # Independent Smallholders, Agrarian Workers, and Civic Party
- HUN_paternalism_party: "MFP"
- HUN_paternalism_party_long: "Magyar Függetlenségi Párt" # Hungarian Independence Party
- HUN_despotism_party: "MEP"
- HUN_despotism_party_long: "Magyar Élet Pártja" # Party of Hungarian Life
+ HUN_paternalism_party: "RL"
+ HUN_paternalism_party_long: "Regency League"
+ HUN_despotism_party: "RL-A"
+ HUN_despotism_party_long: "Regency League-Absolutist" 
  HUN_fascism_party: "MEP-MMP"
  HUN_fascism_party_long: "Magyar Élet Pártja - Magyar Megújulás Pártja" # Party of Hungarian Life - Party of Hungarian Renewal (Coalition)
  HUN_national_socialism_party: "MMP"
