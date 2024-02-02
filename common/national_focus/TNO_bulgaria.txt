@@ -108,11 +108,16 @@ focus_tree = {
 			}
     focus = {
 		id = BUL_Bulgarian_Entente
-		prerequisite = { focus = BUL_Ally_Banat}
+		prerequisite = { focus = BUL_Seize_Cntrl_Serbia}
+
+		prerequisite = {tag = ROM
+		
+				         is_in_faction_with = SLO}
+		
 		icon = GFX_goal_generic_production2
 		x = 5
 		y = 5
-		cost = 45
+		cost = 2
 
 		available = {
 

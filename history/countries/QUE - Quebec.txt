@@ -4,7 +4,7 @@ capital = 466
 recruit_character = QUE_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 recruit_character = QUE_Daniel_Johnson_Sr
-recruit_character = FFR_Charles_de_Gaulle
+
 
 #oob = "QUE_1962"
 

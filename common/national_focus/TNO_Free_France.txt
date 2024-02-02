@@ -1,0 +1,104 @@
+
+
+focus_tree = {
+	id = Free_French_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FFR
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+
+	focus = {
+		id = FFR_French_Catastrophe
+
+		icon = GFX_goal_generic_production2
+		x = 0
+		y = 0
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 10
+			add_stability = 0.01
+			}
+		}
+		focus = {
+		id = FFR_Elections
+        prerequisite = { focus = FFR_French_Catastrophe}
+		icon = focus_focus_fra_revolution_upmost.ddsn2
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			
+
+			}
+		}
+		focus = {
+		id = FFR_Greatest_Restoration
+        prerequisite = { focus = FFR_Elections}
+		icon = focus_focus_fra_third_empire.dds
+		x = 3
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+	    set_politics = {
+				     ruling_party = despotism
+
+			}
+		}
+			
+			
+			}
+		focus = {
+		id = FFR_Keep_De_Gaulle
+        prerequisite = { focus = FFR_Elections}
+		mutually_exclusive = { focus = FFR_Greatest_Restoration }
+		icon = focus_focus_fra_national_resistance_council.dds
+		x = -3
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+         	add_popularity = {
+				ideology = paternalism
+				popularity = 0.50
+			}
+
+			}
+		}
+			
+			
+			}
+			
+			
+			
+			
+			
+			
+			
+			}
+			
+	

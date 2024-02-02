@@ -28,7 +28,7 @@ focus_tree = {
 		icon = GFX_ROM_the_final_strike-428320
 		x = 3
 		y = 4
-		cost = 25
+		cost = 1
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
@@ -37,10 +37,6 @@ focus_tree = {
 		declare_war_on = {
     	target = BUL
     	type = annex_everything
-		hidden_effect = {
-            news_event = { WORLD.88 }
-}
-                     
 	}
 }
 	}
@@ -114,4 +110,3 @@ focus_tree = {
 			}
 		}
 	}
-}

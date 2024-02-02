@@ -4,6 +4,7 @@ recruit_character = FFR_Charles_de_Gaulle
 
 recruit_character = FFR_Marie_Pierre_Koenig
 recruit_character = FFR_Philippe_Leclerc
+recruit_character = FFR_Charles_de_Gaulle
 recruit_character = FFR_Jacques_Massu
 recruit_character = FFR_Jean_Touzet_du_Vigier
 recruit_character = FFR_Louis_Napoleon
@@ -422,17 +423,27 @@ set_politics = {
 }
 
 set_popularities = {
-	communist = 0
-	socialist = 3
-	progressivism = 24
-	liberalism = 31
-	liberal_conservatism = 0
-	conservatism = 17
-	paternalism = 23
-	despotism = 2
+	communist = 10
+	socialist = 10
+	progressivism = 0
+	liberalism = 0
+	liberal_conservatism = 5
+	conservatism = 0
+	paternalism = 50
+	despotism = 25
 	ultranationalism = 0
 	fascism = 0
 	national_socialism = 0
+}
+create_country_leader = {
+	name = "Napoleon VI"
+	desc = ":0"
+	picture = Portrait_Free_France_Louis_Napoleon.dds
+	expire = "1965.1.1"
+	ideology = despotism_absolute_monarchy_subtype
+	traits = {
+		#
+	}
 }
 
 add_ideas = {
