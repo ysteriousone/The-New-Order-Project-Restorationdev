@@ -1,5 +1,7 @@
 capital = 1272
 
+obb = "GMS_1962"
+
 # Vacant
 recruit_character = GMS_Generic_Vacant
 fill_empty_minister_nochecks = yes

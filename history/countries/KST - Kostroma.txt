@@ -101,25 +101,22 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = paternalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	communist = 4
-	ultranational_socialism = 0
-	national_socialism = 0
-	socialist = 0
-	social_democrat = 5
-	social_liberal = 21
-	market_liberal = 0
-	social_conservative = 64
-	authoritarian_democrat = 6
-	despotism = 0
+	communist = 10
+	socialist = 10
+	progressivism = 10
+	liberalism = 10
+	liberal_conservatism = 0
+	conservatism = 2
+	paternalism = 50
+	despotism = 8
 	fascism = 0
-	burgundian_system = 0
 }
 
 ### Country Leaders ###
@@ -128,7 +125,7 @@ create_country_leader = {
 	desc = "POLITICS_SERGEI_BOLSHAKOV_DESC"
 	picture = "Portrait_Kostroma_Sergei_Bolshakov.dds"
 	expire = "1999.1.1"
-	ideology = social_conservative_subtype
+	ideology = paternalism_solidarism_subtype
 	traits = {
 
 	}

@@ -11,7 +11,7 @@ state={
 		1295 4298 7712 7898 10579 12558 9225
 	}
 	history={
-		owner = WRS
+		owner = TML
 		buildings = {
 			infrastructure = 2
 			air_base = 2
@@ -20,7 +20,8 @@ state={
 		}
 		victory_points = { 1295 7 }
 		victory_points = { 4298 3 }
-		add_core_of = WRS
+		add_claim_by = WRS
+		add_core_of = TML
 	}
 	manpower=188000
 	state_category=town

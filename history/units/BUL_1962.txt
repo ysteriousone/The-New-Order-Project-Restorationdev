@@ -200,6 +200,106 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
 	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 949
+		division_template = "Obštovojskovi Kamion Divizija"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
 }
 
 ### Starting Production ###
@@ -210,7 +310,7 @@ instant_effect = {
 			creator = "BUL"
 		}
 		requested_factories = 1
-		progress = 0.49
+		progress = 1
 		efficiency = 100
 	}
 	add_equipment_production = {

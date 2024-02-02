@@ -12,7 +12,7 @@ add_ideas = {
 
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state
-	tno_religious_rights_state_atheism
+	tno_religious_rights_state_religion
 	tno_trade_unions_illegal
 	tno_immigration_quota_immigration
 	tno_slavery_institutionalized

@@ -148,7 +148,7 @@ set_popularities = {
 }
 create_country_leader = {
 	name = "Chiang Kai Shek"
-	desc = ""
+	desc = "POLITICS_XIN_CHIANG_DESC"
 	picture = Chiang_Kai_Shek.dds
 	expire = "1965.1.1"
 	ideology = paternalism_xunzheng_subtype

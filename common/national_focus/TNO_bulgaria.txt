@@ -85,22 +85,7 @@ focus_tree = {
 			
 			}
 		}
-		focus = {
-		id = BUL_Ally_Hungary
-		prerequisite = { focus = BUL_Ally_Banat}
-		icon = GFX_goal_generic_production2
-		x = 5
-		y = 5
-		cost = 6
 
-		available = {
-
-		}
-		completion_reward = {
-			add_political_power = 5
-			add_guarantees = HUN
-	}
-	}
 	focus = {
 		id = BUL_Seize_Cntrl_Serbia
 		prerequisite = { focus = BUL_Ally_Banat}
