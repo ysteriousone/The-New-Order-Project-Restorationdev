@@ -157,7 +157,7 @@ set_popularities = {
 	
 }
 create_country_leader = {
-	name = "Pierre Guixote"
+	name = "Pierre Gaxxote"
 	desc = ""
 	picture = Bourbonlarp.dds
 	expire = "1965.1.1"

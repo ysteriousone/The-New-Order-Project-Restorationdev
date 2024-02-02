@@ -488,8 +488,8 @@ GTL = {
 	color_ui = rgb { 27 142 56 }
 }
 FIN = {
-	color = rgb { 162 162 162 }
-	color_ui = rgb { 162 162 162 }
+	color = rgb { 0 127 70 }
+	color_ui = rgb { 153 100 49 }
 }
 RFI = {
 	color = rgb { 160 25 25 }

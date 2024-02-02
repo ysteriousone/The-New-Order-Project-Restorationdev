@@ -23,6 +23,7 @@ set_popularities = {
 	fascism = 0
 	
 }
+set_autonomy = { target = KST autonomy_state = autonomy_military_government }
 
 # Vacant
 recruit_character = VOL_Generic_Vacant

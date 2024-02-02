@@ -1,6 +1,20 @@
 add_namespace = WORLD
 add_namespace = novel #for althist novels
 
+news_event = {
+	id = WORLD.888
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.888"}
+	title = WORLD.888.t
+	desc = WORLD.888.d
+	picture = GFX_news_event_3BW
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.888.a
+	}
+}
+
 #Generic Hawaiian Missile Crisis
 news_event = {
 	id = WORLD.70

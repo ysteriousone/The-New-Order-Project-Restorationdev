@@ -733,16 +733,16 @@
  RUS_ultranationalism_DEF: "the National State of Russia"
 
  # S
- SAM: "Samara"
- SAM_DEF: "Samara"
+ SAM: "Committee for the Liberation of the Peoples of Russia"
+ SAM_DEF: "the Committee for the Liberation of the Peoples of Russia"
  SAM_paternalism_DEF: "the Committee for the Liberation of the Peoples of Russia"
  SAM_despotism_DEF: "the Committee for the Liberation of the Peoples of Russia"
  SAM_fascism_DEF: "the Committee for the Liberation of the Peoples of Russia"
  SAM_national_socialism_DEF: "the Committee for the Liberation of the Peoples of Russia"
  SAM_ultranationalism_DEF: "the Committee for the Liberation of the Peoples of Russia"
- SAM_ADJ: "Samara"
+ SAM_ADJ: "KONR"
 
- SAU: "Saudi Arabia"
+ SAU: "Kingdom of Saudi Arabia"
  SAU_DEF: "the Kingdom of Saudi Arabia"
  SAU_ADJ: "Arabian"
 
@@ -937,9 +937,9 @@
  THA_DEF: "the Republic of Thailand"
  THA_ADJ: "Thai"
 
- TMA: "North Russian Liberation Front"
- TMA_DEF: "the North Russian Liberation Front"
- TMA_ADJ: "North Russian"
+ TMA: "Plesetsk Red Army"
+ TMA_DEF: "The Land of the Red Napoleon"
+ TMA_ADJ: "Soviet"
 
  TMB: "Brotherhood of Cain"
  TMB_DEF: "the Brotherhood of Cain"
@@ -981,8 +981,8 @@
  TMK_DEF: "the Free Kazakh Clans"
  TMK_ADJ: "Free Kazakh"
 
- TML: "Autonomous Soviet Liberation Army"
- TML_DEF: "the Autonomous Soviet Liberation Army"
+ TML: "Ukhta Red Army"
+ TML_DEF: "The Autonomy of Ukhtha"
  TML_ADJ: "Soviet"
 
  TMM: "Free Port of Magadan"
@@ -1037,10 +1037,10 @@
  TMY_DEF: "the Regency of Holy Russia"
  TMY_ADJ: "Imperial"
 
- TOM: "Tomsk"
- TOM_DEF: "Tomsk"
- TOM_ADJ: "Tomsk"
- TOM_communist_DEF: "the Central Siberian Republic"
+ TOM: "Central Siberian Republic"
+ TOM_DEF: "the Central Siberian Republic"
+ TOM_ADJ: "Russian"
+ TOM_communist_DEF: "Central Siberian Republic"
  TOM_socialist_DEF: "the Central Siberian Republic"
  TOM_progressivism_DEF: "the Central Siberian Republic"
  TOM_liberalism_DEF: "the Central Siberian Republic"

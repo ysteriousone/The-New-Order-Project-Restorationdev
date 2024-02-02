@@ -1,10 +1,6 @@
 capital = 407
 
 # Vacant
-recruit_character = TML_Generic_Vacant
-fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
-recruit_character = TML_Ryszard_Kuklinski
-
 
 oob = "TML_1962"
 
@@ -66,24 +62,34 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = socialist
+	ruling_party = communist
 	last_election = "1933.5.17"
 	election_frequency = 60
 	elections_allowed = no
 }
 
 set_popularities = {
-	communist = 0
+	communist = 100
 	ultranationalism = 0
-	socialist = 75
+	socialist = 0
 	progressivism = 0
 	liberalism = 0
 
 	conservatism = 0
-	paternalism = 25
+	paternalism = 0
 	despotism = 0
 	fascism = 0
 	
+}
+create_country_leader = {
+	name = "Georgy Zhukov"
+	desc = "idk"
+	picture = ZHUKOV.dds
+	expire = "1965.1.1"
+	ideology = communist_stratocratic_communism_subtype
+	traits = {
+		#
+	}
 }
 
 TNO_startup_nation = yes

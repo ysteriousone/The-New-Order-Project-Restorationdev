@@ -6,7 +6,7 @@ state={
 		72 183 3065 6075 6166 9130 9187 11074 
 	}
 	history={
-		owner = WRS
+		owner = TMA
 		buildings = {
 			infrastructure = 2
 			air_base = 1
@@ -17,8 +17,8 @@ state={
 		victory_points = { 72 5 }
 		victory_points = { 9130 7 }
 		victory_points = { 11074 3 }
-		add_core_of = WRS
-		add_claim_by = MCW
+		add_core_of = TMA
+		add_claim_by = WRS
 	}
 	manpower=126000
 	state_category=town

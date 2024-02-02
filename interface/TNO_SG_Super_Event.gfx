@@ -11,6 +11,10 @@ spriteTypes = {
 		name = "GFX_nuke_super_frame"
 		textureFile = "gfx/interface/topbar/nuke_super_frame.dds"
 	}
+		spriteType = {
+		name = "GFX_3bw"
+		textureFile = "gfx/superevent_pictures/third_balkan_war.tga"
+	}
 	spriteType = {
 		name = "GFX_nuke_super_title"
 		textureFile = "gfx/interface/topbar/nuke_super_title.dds"

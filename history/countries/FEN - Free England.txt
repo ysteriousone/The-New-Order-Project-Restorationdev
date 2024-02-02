@@ -405,7 +405,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Winston Churhchill"
+	name = "Winston Churchill"
 	desc = ""
 	picture = Churchill.dds
 	expire = "1965.1.1"
