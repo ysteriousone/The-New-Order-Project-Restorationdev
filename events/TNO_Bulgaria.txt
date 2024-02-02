@@ -1,6 +1,7 @@
 ﻿add_namespace = BUL
 add_namespace = MAC
 
+
 # Boris dies
 country_event = {
 	id = BUL.1000

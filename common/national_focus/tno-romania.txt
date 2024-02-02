@@ -37,6 +37,10 @@ focus_tree = {
 		declare_war_on = {
     	target = BUL
     	type = annex_everything
+		hidden_effect = {
+            news_event = { WORLD.88 }
+}
+                     
 	}
 }
 	}
@@ -110,3 +114,4 @@ focus_tree = {
 			}
 		}
 	}
+}

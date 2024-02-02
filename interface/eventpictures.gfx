@@ -112,6 +112,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Generic/report_generic_violin.dds"
 	}
 	spriteType = {
+	name = "GFX_news_event_3BW"
+	texturefile = "gfx/event_pictures/news_event/Generic/news_event_3BW.dds"
+	}
+	spriteType = {
 		name = "GFX_report_generic_printing_press"
 		texturefile = "gfx/event_pictures/Generic/report_generic_printing_press.dds"
 	}
