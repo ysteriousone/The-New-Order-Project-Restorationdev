@@ -125,7 +125,7 @@ focus_tree = {
 		  focus = FFR_Keep_De_Gaulle
 		}
 		icon = GFX_focus_focus_fra_third_empire
-		x = 2
+		x = 1
 		y = 4
 		cost = 1
 
@@ -169,7 +169,7 @@ focus_tree = {
 		focus = FFR_Keep_De_Gaulle
 		}
 		icon = GFX_focus_focus_fra_third_empire
-		x = -3
+		x = -5
 		y = 4
 		cost = 1
 
@@ -191,7 +191,7 @@ focus_tree = {
 		focus = FFR_Keep_De_Gaulle
 		}
 		icon = GFX_focus_focus_fra_third_empire
-		x = 4
+		x = 5
 		y = 4
 		cost = 1
 
@@ -349,6 +349,24 @@ focus = {
 		}		
 			}
 	focus = {
+		id = FFR_the_great_expansion
+       	prerequisite = {	focus = FFR_French_union	}
+		icon = GFX_BRA_A_Deal_With_the_Free_France
+		x = 0
+		y = 12
+		cost = 1
+	completion_reward = {
+	annex_country {
+		target = GBE
+			transfer_troops = yes
+			}
+	annex_country {
+		target = YOR
+			transfer_troops = yes
+		}
+	}	
+}
+	focus = {
 		id = FFR_expand_union
        	prerequisite = {	focus = FFR_French_union	}
 		icon = GFX_BRA_A_Deal_With_the_Free_France
@@ -374,19 +392,11 @@ focus = {
 			transfer_troops = yes
 			}
 	annex_country {
-		target = GBE
-			transfer_troops = yes
-			}
-	annex_country {
-		target = YOR
-			transfer_troops = yes
-			}
-	annex_country {
 		target = CAO
 			transfer_troops = yes
 			}
-			}
 		}
+	}
 	focus = {
 		id = FFR_Great_Reform
         prerequisite ={ focus =  FFR_Napoleoning_time }
@@ -401,11 +411,6 @@ focus = {
 		}
 		completion_reward = {
         remove_ideas = FFR_military_administration
-	
-			}
-			}
-
-			}
-		}	
-			
-			}
+		}
+	}
+}
