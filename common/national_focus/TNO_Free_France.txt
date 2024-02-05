@@ -20,7 +20,7 @@ focus_tree = {
 	focus = {
 		id = FFR_French_Catastrophe
 
-		icon = GFX_goal_generic_production2
+		icon = GFX_BRY_for_those_lost
 		x = 0
 		y = 0
 		cost = 5
@@ -36,7 +36,7 @@ focus_tree = {
 		focus = {
 		id = FFR_Elections
         prerequisite = { focus = FFR_French_Catastrophe}
-		icon = focus_focus_fra_revolution_upmost.ddsn2
+		icon = GFX_focus_focus_fra_national_resistance_council
 		x = 0
 		y = 1
 		cost = 5
@@ -52,10 +52,11 @@ focus_tree = {
 		focus = {
 		id = FFR_Greatest_Restoration
         prerequisite = { focus = FFR_Elections}
-		icon = focus_focus_fra_third_empire.dds
+		mutually_exclusive = { focus = FFR_Keep_De_Gaulle}
+		icon = GFX_focus_focus_fra_third_empire
 		x = 3
 		y = 3
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -73,10 +74,10 @@ focus_tree = {
 		id = FFR_Keep_De_Gaulle
         prerequisite = { focus = FFR_Elections}
 		mutually_exclusive = { focus = FFR_Greatest_Restoration }
-		icon = focus_focus_fra_national_resistance_council.dds
+		icon = GFX_BRA_A_Deal_With_the_Free_France
 		x = -3
 		y = 3
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -89,16 +90,322 @@ focus_tree = {
 
 			}
 		}
+		focus = {
+		id = FFR_French_union
+       	prerequisite = {	focus = FFR_Keep_De_Gaulle
+			focus = FFR_Greatest_Restoration
+			}
+		icon = GFX_BRA_A_Deal_With_the_Free_France
+		x = 0
+		y = 10
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+        add_state_core = 834
+		add_state_core = 1217
+		add_state_core = 1541
+		add_state_core = 827
+		add_state_core = 274
+		add_state_core = 833
+		add_state_core = 883
+		add_state_core = 882
+		add_state_core = 941
+		add_state_core = 825
+		add_state_core = 1188
+			}
+		}
 			
-			
+	focus = {
+		id = FFR_Annex_Mossiland
+        prerequisite =
+		{ focus = FFR_Greatest_Restoration
+		  focus = FFR_Keep_De_Gaulle
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = 2
+		y = 4
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+       	annex_country {
+		target = BKF
+			transfer_troops = yes
+			}
+
+			}
+		}
+	focus = {
+		id = FFR_Ghana_annex
+        prerequisite = { 
+		focus = FFR_Greatest_Restoration
+		focus = FFR_Keep_De_Gaulle
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = -1
+		y = 4
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+		declare_war_on = {
+    	target = EWE
+    	type = annex_everything
+	}
+			}
+
+			}
+	focus = {
+		id = FFR_Dahomie
+        prerequisite = { 
+		focus = FFR_Greatest_Restoration
+		focus = FFR_Keep_De_Gaulle
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = -3
+		y = 4
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+		declare_war_on = {
+    	target = GBE
+    	type = annex_everything
+	}
+			}
+
+			}			
+	focus = {
+		id = FFR_the_loose_end
+        prerequisite = { 
+		focus = FFR_Greatest_Restoration
+		focus = FFR_Keep_De_Gaulle
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = 4
+		y = 4
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+		declare_war_on = {
+    	target = YOR
+    	type = annex_everything
+	}
+			}
+
+			}
+	focus = {
+		id = FFR_WAW
+        prerequisite = { 
+		focus = FFR_Dahomie}
+		prerequisite = { focus = FFR_Annex_Mossiland }
+	    prerequisite = { focus = FFR_Ghana_annex}
+		prerequisite = { focus = FFR_the_loose_end }
+
+		icon = GFX_focus_focus_fra_third_empire
+		x = 0
+		y = 5
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+	    hidden_effect = {
+			news_event = { id =  west_african_crisis_news.1}
+			}
+        declare_war_on = {
+    	target = CAO
+    	type = annex_everything
+	                   }              
+			}			
+			}
+		focus = {
+		id = FFR_Napoleoning_time
+       available = {
+			has_government = despotism
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = -10
+		y = 0
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+        political_power = 100
+		add_stability = .7
+		add_manpower = 100
+		add_popularity = {
+				ideology = despotism
+				popularity = 0.75
+			}
+
+			}
+		}
+	focus = {
+		id = FFR_Seek_allies
+       available = {
+			has_government = despotism
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = -10
+		y = 2
+		cost = 1
+        prerequisite = { focus = FFR_Napoleoning_time }
+		completion_reward = {
+		add_manpower = 10
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.10
+
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.10
+				}
+		
+			}
+
 			}
 			
+		
 			
-			
-			
-			
-			
-			
+		focus = {
+		id = FFR_Britanny_civil_war
+       available = {
+	    controls_state = 834
+		controls_state =  827
+		controls_state =  274
+		controls_state =  833
+		controls_state =  825
+		controls_state =  1188
+		controls_state = 1205
+		BRT = {
+		controls_state = 789
+		}
+		}
+		icon = GFX_focus_focus_fra_third_empire
+		x = 10
+		y = 0
+		cost = 7
+
+		available = {
+
+		}
+		completion_reward = {
+BRT = {
+    start_civil_war = {
+    ruling_party = fascism
+    ideology = despotism
+    size = 1
+    capital = 282
+    states = { 
+ 
+    }
+
+}
 			}
-			
+
+			}
+		}
+focus = {
+		id = FFR_Return
+        prerequisite =
+		{ focus = FFR_Britanny_civil_war}
+		icon = GFX_focus_focus_fra_third_empire
+		x = 10
+		y = 2
+		cost = 14
+		
+
+		available = {
+        
+		}
+		completion_reward = {
+       	annex_country {
+		target = D01
+			transfer_troops = yes
+			}
+			add_state_core = 33
+			add_state_core = 1613
+			add_state_core = 14
+						hidden_effect = {
+			news_event = { id = FFRnews.6 }
+			}
+		}		
+			}
+	focus = {
+		id = FFR_expand_union
+       	prerequisite = {	focus = FFR_French_union	}
+		icon = GFX_BRA_A_Deal_With_the_Free_France
+		x = 2
+		y = 12
+		cost = 1
+
+		available = {
+         controls_state = 1187
+		controls_state =  793
+		}
+		completion_reward = {
+        add_state_core = 793
+		add_state_core = 1187
+		add_state_core = 1196
+		add_state_core = 1197
+		add_state_core = 826
+		add_state_core = 1189
+		add_state_core = 1198
+		
+	annex_country {
+		target = EWE
+			transfer_troops = yes
+			}
+	annex_country {
+		target = GBE
+			transfer_troops = yes
+			}
+	annex_country {
+		target = YOR
+			transfer_troops = yes
+			}
+	annex_country {
+		target = CAO
+			transfer_troops = yes
+			}
+			}
+		}
+	focus = {
+		id = FFR_Great_Reform
+        prerequisite ={ focus =  FFR_Napoleoning_time }
+		
+		icon = GFX_focus_focus_fra_third_empire
+		x = -8
+		y = 2
+		cost = 10
+
+		available = {
+
+		}
+		completion_reward = {
+        remove_ideas = FFR_military_administration
 	
+			}
+			}
+
+			}
+		}	
+			
+			}

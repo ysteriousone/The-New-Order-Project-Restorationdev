@@ -3,14 +3,14 @@ state={
 	id=244
 	name="STATE_244"
 	history={
-		owner = MCW
+		owner = CAU
 		victory_points = { 9753 10 }
 		victory_points = { 11429 5 }
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = MCW
+		add_core_of = CAU
 		set_state_flag = universal_renamings
 	}
 

@@ -92,9 +92,31 @@ units = {
 		start_equipment_factor = 0.65
 		start_experience_factor = 0.4
 	}
-
+    	division = {
+		name = "9th Infantry Division"
+		location = 13396
+		division_template = "Infantry Division"
+		start_equipment_factor = 0.65
+		start_experience_factor = 0.4
+	}
+ 
+    	division = {
+		name = "10th Infantry Division"
+		location = 13396
+		division_template = "Infantry Division"
+		start_equipment_factor = 0.65
+		start_experience_factor = 0.4
+	}
+	
 	division = {
 		name = "1. Division Cuirassé"
+		location = 13397
+		division_template = "Armour Division"
+		start_equipment_factor = 1
+		start_experience_factor = 0.6
+	}
+	division = {
+		name = "3. Division Cuirassé"
 		location = 13397
 		division_template = "Armour Division"
 		start_equipment_factor = 1

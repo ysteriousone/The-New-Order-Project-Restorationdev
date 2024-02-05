@@ -429,10 +429,10 @@ SE_MUTOS_COUP_D: "Whether the rage of heaven or the cries of earth, the roar of 
 SE_MUTOS_COUP_A: "Storm Clouds Gather"
 TNO_SE_MUTOS_COUP: "THE END OF THE YOKUSANKAI"
 
-SE_FRENCH_RECLAMATION: "THE RECLAMATION OF FRANCE"
-SE_FRENCH_RECLAMATION_D: "History does not teach fatalism.\n- Charles de Gaulle"
-SE_FRENCH_RECLAMATION_A: "Home At Last"
-TNO_SE_FRENCH_RECLAMATION: "THE RECLAMATION OF FRANCE"
+SE_FRENCH_RECLAMATION: "THE RECLAMATION WARS"
+SE_FRENCH_RECLAMATION_D: "A revolution can be neither made nor stopped. The only thing that can be done is for one of several of its children to give it a direction by dint of victories.\n- Napoleon I"
+SE_FRENCH_RECLAMATION_A: "The Great Return"
+TNO_SE_FRENCH_RECLAMATION: "THE RECLAMATION WARS"
 
 SE_FRENCH_RECONCILIATION: "THE FRENCH RECONCILIATION"
 SE_FRENCH_RECONCILIATION_D: "The true statesman is the one who is willing to take risks.\n- Charles de Gaulle"

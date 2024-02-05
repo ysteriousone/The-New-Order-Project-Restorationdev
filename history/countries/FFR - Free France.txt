@@ -1,4 +1,4 @@
-capital = 779
+capital = 786
 
 recruit_character = FFR_Charles_de_Gaulle
 

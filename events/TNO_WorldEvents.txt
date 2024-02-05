@@ -9,11 +9,21 @@ news_event = {
 	picture = GFX_news_event_3BW
 
 	is_triggered_only = yes
+	major = yes
+	
 
 	option = {
 		name = WORLD.888.a
 	}
-}
+			trigger = {
+			OR = {
+				tag = ROM
+				is_in_faction_with = SLO
+			}
+		}
+	mean_time_to_happen = {
+    days = 10
+		}
 
 #Generic Hawaiian Missile Crisis
 news_event = {

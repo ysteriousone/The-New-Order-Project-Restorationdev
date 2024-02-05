@@ -4,7 +4,7 @@ state={
 	name="STATE_237"
 
 	history={
-		owner = MCW
+		owner = CAU
 		victory_points = { 11724 10 }
 		victory_points = { 6468 5 }
 		buildings = {
@@ -12,7 +12,7 @@ state={
 			radar_station = 2
 			air_base = 1
 		}
-		add_core_of = MCW
+		add_core_of = CAU
 		set_state_flag = state_renamings
 	}
 

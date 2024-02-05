@@ -347,8 +347,10 @@
  FAV_liberalism_DEF: "the Premium Aviators"
  FAV_ADJ: "Free Aviator"
 
- FFR: "Free France"
- FFR_DEF: "the Free French Liberation Forces"
+ FFR: "Free French Republic"
+ FFR_DEF: "the Free French Republics"
+ FFR_despotism: "Third French Empire"
+ FFR_despotism_DEF: "Napoleonic France"
  FFR_ADJ: "Free French"
  
  FGB: "Firipin Gunseibu"
