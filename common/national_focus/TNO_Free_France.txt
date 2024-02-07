@@ -329,7 +329,7 @@ focus = {
 		icon = GFX_focus_focus_fra_third_empire
 		x = 10
 		y = 2
-		cost = 14
+		cost = 2
 		
 
 		available = {
@@ -345,7 +345,28 @@ focus = {
 			add_state_core = 14
 						hidden_effect = {
 			news_event = { id = FFRnews.6 }
+			
 			}
+	    declare_war_on = {
+    	target = FIT
+    	type = annex_everything
+	}
+	    declare_war_on = {
+    	target = FRV
+    	type = annex_everything
+	}
+		declare_war_on = {
+    	target = FRS
+    	type = annex_everything
+	}
+	    declare_war_on = {
+    	target = FGR
+    	type = annex_everything
+	}
+		declare_war_on = {
+    	target = FRM
+    	type = annex_everything
+	}
 		}		
 			}
 	focus = {
@@ -411,6 +432,43 @@ focus = {
 		}
 		completion_reward = {
         remove_ideas = FFR_military_administration
+<<<<<<< Updated upstream
 		}
 	}
 }
+=======
+<<<<<<< HEAD
+	
+			}
+			}
+	     focus = {
+		id = FFR_Unite_Resistance
+        prerequisite ={ focus =  FFR_Return }
+		
+		icon = GFX_focus_focus_fra_third_empire
+		x = 10
+		y = 4
+		cost = 2
+
+		available = {
+
+		}
+		completion_reward = {
+       annex_country {
+		target = FRD
+			transfer_troops = yes
+			}
+	
+			}
+			}
+
+			}
+		}	
+			
+			}
+=======
+		}
+	}
+}
+>>>>>>> c4ddc6c5612eef46f432a74b63b4d6f8d343fcaf
+>>>>>>> Stashed changes
