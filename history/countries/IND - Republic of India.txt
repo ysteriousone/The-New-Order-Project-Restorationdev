@@ -224,6 +224,17 @@ set_popularities = {
 	ultranationalism = 0
 	
 }
+create_country_leader = {
+	name = "Subhas Chandra Bose"
+	desc = ""
+	picture = NETAJI.dds
+	expire = "1965.1.1"
+	ideology = progressivism_social_democracy_subtype
+	traits = {
+		#
+	}
+}
+
 add_opinion_modifier = { target = AZH modifier = IND_ben_sucks }
 
 

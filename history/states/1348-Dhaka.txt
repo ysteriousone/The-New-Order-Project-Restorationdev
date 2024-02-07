@@ -14,12 +14,12 @@ state={
 	history={
 		victory_points = { 11929 35 }
 		victory_points = { 12423 5 }
-		owner = AZH
+		owner = IND
 		buildings = {
 			infrastructure = 4
 		}
 		add_core_of = AZH
-		add_claim_by = IND
+		add_core_of = IND
 	}
 	manpower=15296956
 	buildings_max_level_factor=1.000

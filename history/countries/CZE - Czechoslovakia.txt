@@ -20,7 +20,7 @@ set_stability = 0.62
 
 add_ideas = {
 	#Faction
-	Pakt_Protektorat
+	Pakt_Autonomous_Reichskommissariat
 	#National
 	CZE_Kurt_Daluege_hog
 	CZE_Karl_Hermann_Frank_for

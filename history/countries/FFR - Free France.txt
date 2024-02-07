@@ -437,7 +437,7 @@ set_popularities = {
 }
 create_country_leader = {
 	name = "Napoleon VI"
-	desc = ":0"
+	desc = "POLITICS_NAPOLEON_DESC"
 	picture = Portrait_Free_France_Louis_Napoleon.dds
 	expire = "1965.1.1"
 	ideology = despotism_absolute_monarchy_subtype

@@ -1,0 +1,68 @@
+characters = {
+
+		
+		FHH_henning_von_tresckow = {
+		name = FHH_henning_von_tresckow
+		portraits = {
+			civilian = { small = "GFX_idea_GER_Henning_von_Tresckow" }
+			army = {
+				large = "gfx/leaders/GER/Portrait_GER_Henning_von_Tresckow.dds"
+				small = "GFX_idea_GER_Henning_von_Tresckow"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard infantry_officer politically_connected organizer thorough_planner }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 150
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = GER_Henning_von_Tresckow_sec
+			allowed = { original_tag = GER }
+			traits = {
+				security_minister
+				sec_old_prussian
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = GER_Henning_von_Tresckow_high_command
+			allowed = { original_tag = GER }
+			traits = {
+				high_command
+			}
+			ledger = army
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+		FFR_Claus_Von_Stauffenberg = {
+		name = FFR_Claus_Von_Stauffenberg
+		portraits = {
+			civilian = { small = "GFX_idea_GER_Fritz_Bayerlein" }
+ 			army = {
+				large = "gfx/leaders/FHH/Portrait_GER_Claus_von_Stauffenberg.dds"
+				small = "GFX_idea_GER_Fritz_Bayerlein"
+			}
+		}
+		corps_commander = {
+			traits = { panzer_leader desert_fox trait_mountaineer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 101
+		}
+		
+		}

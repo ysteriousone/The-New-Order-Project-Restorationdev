@@ -1,24 +1,22 @@
-capital = 50
+capital = 37
 
 # Vacant
 recruit_character = FHH_Generic_Vacant
+recruit_character = FHH_henning_von_tresckow
+recruit_character = FFR_Claus_Von_Stauffenberg
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-recruit_character = HWL_Reinhard_Gehlen
 
-add_ideas = {
-	FHH_mastery_of_intelligence
-	FHH_safe_sane_secure
 
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state
 	tno_religious_rights_state_religion
 	tno_trade_unions_illegal
 	tno_immigration_quota_immigration
-	tno_slavery_institutionalized
+	tno_slavery_outlawed
 	tno_public_meetings_regulated
 	tno_press_rights_state_press_only
-	tno_vote_franchise_no_voting
+	tno_vote_franchise_registered_votingg
 	##MILITARY LAWS###
 	tno_conscription_broadened_conscription
 	tno_military_supervision_kill_em_all
@@ -307,18 +305,73 @@ if = {
 
 #Politics
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = paternalism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_socialism_1 = 43
-	national_socialism = 57
-	paternalism = 0
-	liberalism = 0	
-	despotism = 0
+	national_socialism = 10
+	paternalism = 50
+	liberalism = 20	
+	despotism = 10
+	progressivism = 10
+	
+}
+create_country_leader = {
+	name = "Joseph Goebbles"
+	desc = ""
+	picture = Goebbels.dds
+	expire = "1965.1.1"
+	ideology = national_socialism_revolutionary_nazism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hans Speidel"
+	desc = ""
+	picture = Portrait_GER_Hans_Speidel.dds
+	expire = "1965.1.1"
+	ideology = paternalism_provisional_government_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Helmut Smhidt"
+	desc = ""
+	picture = Portrait_GER_Helmut_Schmidt.dds
+	expire = "1965.1.1"
+	ideology = liberalism_christian_liberalism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henning von Tresckow"
+	desc = ""
+	picture = Portrait_GER_Henning_von_Tresckow.dds
+	expire = "1965.1.1"
+	ideology = despotism_aristocratic_republicanism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Willy Brandt"
+	desc = ""
+	picture = Portrait_GER_Spartakus.dds
+	expire = "1965.1.1"
+	ideology = progressivism_social_democracy_subtype
+	traits = {
+		#
+	}
 }
 
 set_variable = { national_socialism_1_var = token:HWL_FHH_national_socialism_1 }

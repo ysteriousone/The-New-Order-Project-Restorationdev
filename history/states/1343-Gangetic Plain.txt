@@ -8,14 +8,14 @@ state={
 		power = 2
 	}
 	history={
-		owner = AZH
+		owner = IND
 		victory_points = { 16136 5 }
 		buildings = {
 			infrastructure = 3
 			radar_station = 1
 		}
 		add_core_of = AZH
-		add_claim_by = IND
+		add_core_of = IND
 	}
 	manpower=1000728
 	buildings_max_level_factor=1.000

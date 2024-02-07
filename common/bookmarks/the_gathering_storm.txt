@@ -134,8 +134,7 @@ bookmarks = {
 			}
 		}
 
-		"ZZZ" = { history = "" }
-		"ZZZ" = { history = "" }
+
 
 		"CHI" = {
 			history = "CHI_THENEWORDER_DESC"
@@ -174,13 +173,6 @@ bookmarks = {
 			}
 		}
 
-		"FRS" = {
-			history = ""
-			ideology = fascism
-		}
-
-		"ZZZ" = { history = "" }
-		"ZZZ" = { history = "" }
 
 		"MAN" = {
 			history = ""
@@ -210,7 +202,7 @@ bookmarks = {
 		#### MINORS ####
 		### ROW 1 ###
 		# Buffer
-		"ZZZ" = { minor = yes history = "" }
+		
 
 		## OFN ##
 		"CHL" = {
@@ -291,6 +283,23 @@ bookmarks = {
 		## PAKT ##
 
 		## RUSSIA ##
+				
+		"FFR" = {
+		minor = yes
+		history = "VIVA LA FRANCAISE LIBRE LOL LMAO" 
+		ideology = paternalism
+			ideas = {
+				ENG_The_Terrible_Twins
+				ENG_British_Free_Corps
+				ENG_German_Corporate_Dominance_0
+			}
+			focuses = {
+				ENG_hurrah_for_the_blackshirts
+				ENG_coronation_day
+				ENG_a_government_true_to_his_majesty
+			}
+			}
+			
 		"WRS" = {
 			minor = yes
 			history = "WRS_THENEWORDER_DESC"
@@ -405,7 +414,7 @@ bookmarks = {
 			}
 		}
 
-		"ZZZ" = { minor = yes history = "" }
+		
 
 		"YUN" = {
 			minor = yes
@@ -425,28 +434,27 @@ bookmarks = {
 		## CPS ##
 
 		## TRIUM ##
-		"ZZZ" = { minor = yes history = "" }
+		
 
 		"GRE" = { minor = yes history = "" }
 
-		"ZZZ" = { minor = yes history = "" }
-
+		
 		## TRIUM ##
 
 		# Buffer
-		"ZZZ" = { minor = yes history = "" }
+		
 		### ROW 1 ###
 
 		### ROW 2 ###
 		# Buffer
-		"ZZZ" = { minor = yes history = "" }
+		
 
 		## OFN ##
-		"ZZZ" = { minor = yes history = "" }
+		
 
-		"ZZZ" = { minor = yes history = "" }
+		
 
-		"ZZZ" = { minor = yes history = "" }
+		
 		## OFN ##
 
 		## PAKT ##

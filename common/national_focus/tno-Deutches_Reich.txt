@@ -1,0 +1,166 @@
+focus_tree = {
+	id = tno-Deutches_Reich
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FHH
+		}
+	}
+	focus = {
+		id = FHH_Das_Bruderkrieg
+		icon = GFX_GER_das_schwert_des_damokles
+		x = 3
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_manpower = 100
+			add_state_core = 64
+			add_state_core = 776
+			news_event = { id = WORLD.6969 }
+			}
+		}
+		
+	focus = {
+		id = FHH_Strangle_Sper
+		icon = GFX_GER_go_with_speer
+		prerequisite = { focus = FHH_Das_Bruderkrieg }
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+					FHH = {
+				add_political_power = 100
+				transfer_state = 1813
+				add_state_core = 1813
+				}
+				SGR = {
+				add_stability = -1
+				set_politics = {
+	            ruling_party = liberalism
+				}
+		
+			}
+		}
+		}
+		focus = {
+		id = FHH_Reformist_Coup
+		icon = GFX_GER_freedom
+		prerequisite = { focus = FHH_Strangle_Sper }
+		x = 3
+		y = 2
+		cost = 2
+		completion_reward = {
+        FHH = {
+      	annex_country {
+		target = SGR
+			transfer_troops = yes
+			}
+		
+			}
+		}
+		}
+		focus = {
+		id = FHH_Fatman
+		icon = GFX_GER_go_with_goring
+		prerequisite = { focus = FHH_Das_Bruderkrieg }
+		x = -1
+		y = 1
+		cost = 2
+		completion_reward = {
+		declare_war_on = {
+    	target = GGR
+    	type = annex_everything
+	}
+			}
+		
+			}
+			
+	    focus = {
+		id = FHH_approach_albert
+		icon = GFX_GER_a_helping_hand
+		prerequisite = { focus = FHH_Fatman }
+		x = -2
+		y = 2
+		cost = 1
+		completion_reward = {
+	   GGR = {
+	   add_morale = -1
+	   add_manpower = -1000
+	   add_stability = -0.01
+	   }
+	}
+			}
+		
+		focus = {
+		id = FHH_Talks_with_GO4
+		icon = GFX_GER_democracy_vic
+		prerequisite = { focus = FHH_Reformist_Coup }
+		available = {
+			OR = {
+			NOT = { country_exists = SGR }
+			}
+			}
+		x = 4
+		y = 3
+		cost = 1
+		completion_reward = {
+       
+		
+			}
+		}
+		
+		focus = {
+		id = FHH_Boringmann
+		icon = GFX_GER_go_with_bormann
+		prerequisite = { focus = FHH_Das_Bruderkrieg }
+		x = 7
+		y = 1
+		cost = 2
+		completion_reward = {
+		declare_war_on = {
+    	target = BGR
+    	type = annex_everything
+	}
+			}
+		
+			}
+		
+		focus = {
+		id = FHH_Valkyrie
+		icon = GFX_GER_Heydrich
+		prerequisite = { focus = FHH_Das_Bruderkrieg }
+		x = 12
+		y = 1
+		cost = 2
+		completion_reward = {
+		declare_war_on = {
+    	target = HGR
+    	type = annex_everything
+	}
+			}
+		
+			}
+			
+	focus = {
+		id = FHH_fate_of_Speer
+		icon = GFX_GER_Grave_Song
+		prerequisite = { focus = FHH_Reformist_Coup }
+        available = {
+			OR = {
+			NOT = { country_exists = SGR }
+			}
+			}
+		x = 2
+		y = 3
+		cost = 2
+		completion_reward = {
+		
+	
+			}
+		
+			}
+		
+		
+		}

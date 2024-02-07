@@ -278,8 +278,8 @@
  CYL_socialist: "Socialist Republic of Sri Lanka"
  CYL_socialist_DEF: "the Socialist Republic of Sri Lanka"
  
- CZE: "Wehrkreis XIX"
- CZE_DEF: "Wehrkreis XIX"
+ CZE: "Reichsprotektorat Bohren Mahren"
+ CZE_DEF: "Die Reichsprotektorat Bohren Mahren"
  CZE_ADJ: "Czech"
 
  DEN: "Denmark"
@@ -357,8 +357,12 @@
  FGB_DEF: "Jyuyon Gun Gunseikanbu"
  FGB_ADJ: "14th Army"
  
- FHH: "Deutsches Reich"
- FHH_DEF: "the Deutsches Reich"
+ FHH: "German Reich"
+ FHH_progressivism: "German Democratic Republic"
+ FHH_progressivism_DEF: "The German Democratic Republic"
+ FHH_national_socialism: "German National Worker's State"
+ FHH_national_socialism_DEF: "the German National Worker's State"
+ FHH_DEF: "The German Reich"
  FHH_ADJ: "German"
 
  FIN: "Republic of Finland"
@@ -438,9 +442,9 @@
  HON_ADJ: "Honduran"
 
  # I
- IND: "Republic of India"
- IND_DEF: "the Republic of India"
- IND_ADJ: "West Indian"
+ IND: "Peoples Republic of India"
+ IND_DEF: "the Peoples Republic of India"
+ IND_ADJ: "Bharatiya"
 
  IRI: "Islamic Republic of Iran"
  IRI_DEF: "the Islamic Republic of Iran"

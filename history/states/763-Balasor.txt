@@ -9,9 +9,9 @@ state={
 	}
 
 	history={
-		owner = AZH
+		owner = IND
 		add_core_of = AZH
-		add_claim_by = IND
+		add_core_of = IND
 		victory_points = { 4104 5 }
 		victory_points = { 12063 5 }
 		buildings = {

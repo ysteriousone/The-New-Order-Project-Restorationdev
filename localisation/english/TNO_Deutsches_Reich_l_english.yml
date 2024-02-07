@@ -2,29 +2,33 @@
  ## Country Names ##
  
  ## Party Names ##
- FHH_national_socialism_party:0 "NSDAP"
- FHH_national_socialism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
- FHH_national_socialism_1_party:0 "NSDAP - Loyalisten"
- FHH_national_socialism_1_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Loyalisten"
- HWL_Reinhard_Gehlen:0 "Reinhard Gehlen"
- POLITICS_REINHARD_GEHLEN_DESC:0 "Broken. Scorned. Abandoned. These people, these refugees, they've found their leader...but how far can they look into the light until they are blinded?\n\nReinhard Gehlen exists within service to many things, be they for the Reich, for the people of Germany, or even just for himself. Operating as an intelligence officer since the early days of the Weimar Republic, Gehlen is attributed in being the man who revolutionized the offices of Germany's intelligence agencies, many would argue that Reinhard Gehlen acted courageously for the sake of the dedicatedly conservative National Socialists of the Reich. However, those within the inside know that, even after the end of the Second World War, Gehlen continued to operate for the sake of himself, as he continued to coalesce the intelligence community under his control more and more, and attempting to rip it away from the claws of Heinrich Himmler.\n\nArbitrary rules, a slowing bureaucracy, and more only showcased Gehlen's continued rise within the Reich. As many as he has inspired within the community, many would harbor a feeling of exhaustion and frustration in regards to Gehlen's operations of the intelligence community. Nevertheless, his stand against Heinrich Himmler and the SS's grabs towards dominating the intelligence operations of the Reich has genesised a following for the Generalleutnant that gave many Speerites and Bormannites a figure to stand behind, especially as the power of the Schutzstaffel within the Reich began to rise, and the shadow of Heinrich Himmler and Reinhard Heydrich began to overtake the shining light of the Reich for the people of Germany.\n\nNow, Germany stands shattered, with two madmen attempting to claim themselves as the true leaders of National Socialism above Germany slaughtering all who stand in their path to get there. Many who supported Albert Speer and Martin Bormann have fled to the city of Stuttgart, under the banner of the Generalleutnant. However, Gehlen fears the very image he worked so hard to build up, as the flames fervor and radicalism of the conservatives in the area continues to grow. Gehlen may stand fervently against either leader, but he knows that enemies stand at all sides, and his image alone will not save his people..."
-
- HWL_FHH_national_socialism_1:0 "$FHH_national_socialism_1_party$"
- ## Ministers ##
+ FHH_paternalism_party:0 "Wehermact"
+ FHH_national_socialism_party_long:0 "Das Wehermact"
+ FHH_fascism_party:0 "NSDAP - A"
+ FHH_national_socialism_1_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Arbeiter"
+ FHH_despotism_party:0 "OKW - T"
+ FHH_despotism_party_long:0 "OKW - Tresckow"
  
- ## Ideas ##
+ ## Characters ##
+ FHH_henning_von_tresckow:0 "Henning von Tresckow"
+ FFR_Claus_Von_Stauffenberg:0 "Claus von Stauffenberg"
  
- FHH_mastery_of_intelligence:0 "Mastery of Intelligence"
- FHH_mastery_of_intelligence_desc:0 "Reinhard Gehlen is not famed for his genius - of course, that's exactly how he would have it. In reality, Gehlen is perhaps the most talented intelligence officer in Europe, and utilizes his skills to greatly bolster his forces' capabilities."
- 
- FHH_safe_sane_secure:0 "Safe, Sane, Secure"
- FHH_safe_sane_secure_desc:0 "Gehlen has established his territory as a safe haven for those fleeing SS persecution. Reformists and conservatives alike flock to his lands, finding common cause in defending the Fatherland from Himmler's bloody grasp."
  
  ## Decisions ##
  
  ## Tooltips ##
  
  ## Focus Tree ##
+ FHH_Das_Bruderkrieg: "Das Bruderkrieg"
+ FHH_Das_Bruderkrieg_desc: "On the onset of the German civil war, Hans Speidel had couped the government in an effort to save Germania. To do this, he took the help of some.... intresting figures. But, right now Speidel has plans to intervine in the Bruderkrieg. But first, we should seek small volunteers to eventually defeat Speer and potentially, trigger a collapse on his government if we want to.. GOTT MITT UNS!"
+ FHH_Strangle_Sper: "Erwürge den „Reformer“"
+ FHH_Strangle_Sper_desc: "Speer is one of if not the most hypocritical nazi out of the four hooligans. The fact he has to rely on the "Gang of Four" speaks for his inability of leadership! We must stop him before even more poor souls fight for his cause..."
+ FHH_Valkyrie: "Operation Walküre"
+ FHH_Valkyrie_desc: "General Stauffenberg and Tresckow have come up with a plan dealing with the bastards of Heydrich and Himmler. They call it "Operation Valkyrie" Speidel has decided to listen to the plan and have decided to attack Burgundy once Germany is fully liberated. For now, he shall apply stage one : KILLING HEYDRICH."
+ FHH_Boringmann: "Fegen Sie die Vergangenheit"
+ FHH_Boringmann_desc: "One of the least intresting figures in the German crusade will be Martin Bormann, leader of his clique in Southern Germany. Bormann's administration is so out of control that Stauffenberg has a good enough presense there to cause trouble in Munich and the other cities."
+ FHH_Fatman: "Der Kriegstreiber"
+ FHH_Fatman_desc: "Although Goring is not that much of a Nazi, he's still a war criminal against the german people! We must deal with him immidiately!"
  
  ## Events ##
 

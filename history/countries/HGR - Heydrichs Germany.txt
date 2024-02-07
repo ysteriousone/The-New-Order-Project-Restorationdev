@@ -1,7 +1,6 @@
 capital = 28
 
 # Vacant
-recruit_character = HGR_Generic_Vacant
 
 oob = "HGR_1962"
 set_stability = 0.4
@@ -108,6 +107,16 @@ set_popularities = {
 	liberalism = 0
 
 	despotism = 0
+}
+create_country_leader = {
+	name = "Reinhard Heydrich"
+	desc = ""
+	picture = Evil_Man.dds
+	expire = "1965.1.1"
+	ideology = national_socialism_spartanism_subtype
+	traits = {
+		#
+	}
 }
 
 set_technology = {

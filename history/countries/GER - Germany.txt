@@ -591,6 +591,7 @@ add_to_faction = HOL
 add_to_faction = NOR
 add_to_faction = DSG
 add_to_faction = GMS
+add_to_faction = CZE
 
 set_autonomy = { target = ANG autonomy_state = autonomy_autonomous_reichskommissariat }
 set_autonomy = { target = CAU autonomy_state = autonomy_autonomous_reichskommissariat }
@@ -647,6 +648,40 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Hans Speidel"
+	desc = ""
+	picture = Portrait_GER_Hans_Speidel.dds
+	expire = "1965.1.1"
+	ideology = paternalism_provisional_government_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Helmut Smhidt"
+	desc = ""
+	picture = Portrait_GER_Helmut_Schmidt.dds
+	expire = "1965.1.1"
+	ideology = liberalism_christian_liberalism_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Henning von Tresckow"
+	desc = ""
+	picture = Portrait_GER_Henning_von_Tresckow.dds
+	expire = "1965.1.1"
+	ideology = despotism_aristocratic_republicanism_subtype
+	traits = {
+		#
+	}
+}
+
 set_variable = { national_socialism_2_var = token:GER_pre_GCW_national_socialism_2 }
 
 #econtype

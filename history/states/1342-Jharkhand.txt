@@ -5,7 +5,7 @@ state={
 		7220 4062 4204
 	}
 	history={
-		owner = AZH
+		owner = IND
 		buildings = {
 			infrastructure = 3
 			radar_station = 1
@@ -14,7 +14,7 @@ state={
 		}
 		victory_points = { 4062 15 }
 		add_core_of = AZH
-		add_claim_by = IND
+		add_core_of = IND
 	}
 
 	resources={

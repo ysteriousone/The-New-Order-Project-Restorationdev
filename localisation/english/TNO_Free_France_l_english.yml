@@ -16,8 +16,8 @@
   FFR_liberalism_party_long: "Parti de la Nouvelle Vague"
   FFR_conservatism_party: "GFL"
   FFR_conservatism_party_long: "Parti Gaulliste de la France Libre"
-  FFR_paternalism_party: "CFLN"
-  FFR_paternalism_party_long: "Comité Français de Libération Nationale"
+  FFR_paternalism_party: "UDR"
+  FFR_paternalism_party_long: "Union des Démocrates pour la République"
   FFR_despotism_party: "Bonapartistes"
   FFR_despotism_party_long: "Bonapartistes"
   FFR_fascism_party: "PRN"
@@ -115,6 +115,7 @@
   FFR_Charles_de_Gaulle: "Charles de Gaulle"
   POLITICS_CHARLES_DE_GAULLE_DESC:0 "Since there has been a "Free France", Charles de Gaulle has stood at its helm. For more than 20 years, de Gaulle has led the last remaining Free French in a desperate and drawn out battle for survival against the greatest odds. He was once a division commander in the army of the Fourth French Republic, keen to bring reform to their forces. His attempts were made too late however and France quickly fell the Wehrmacht.\n\nKeen to continue the fight, de Gaulle rallied what support he had and headed to Africa. Although the fighting continued, de Gaulle fared little better here. Over the years, the forces of Free France were relentlessly pursued across Africa until only the tiniest strip of what had once been the colonial possessions of the French Republic remained. Through it all, de Gaulle has been both a great boon and a great curse for those that still follow the dream of a Free France. The man is utterly convinced of "La Libération" to the point where it is hard not to share in the aging leader's sheer enthusiasm. Sadly, his conviction is paired with an extreme stubbornness. de Gaulle is unwilling to end the unpopular military government, despite the fact that his generals are usually too busy working as mercenaries for other West African nations and even the Germans in Zentralafrika.\n\nde Gaulle soldiers on, making his radio addresses and inspecting the troops each day, seemingly convinced that it will be part of the start of their journey home. He has even promised elections, although with the deadline drawing ever nearer, some are uncertain if de Gaulle is willing to even surrender that much to the people. Nor has he properly acknowledged the generals that wish to see him gone, and the fact they would be quite capable of having their wish fulfilled. De Gaulle must perhaps realise his situation and be willing to make compromises, should he wish to see his homeland ever again."
   POLITICS_CHARLES_DE_GAULLE_DESC1:0 "Everywhere outside of Free France. De Gaulle is seen as a failure. He failed to rouse his country from its darkest point. He failed to assist in the war effort. He failed France. But that is just outside Free France. In Free France he is a hero, albeit a fading one. Nobody can deny his charisma and optimism, and he has used it to the greatest extent he can in the tiny empire he has carved for himself. In his France, through all the troubles it goes through, they still march through the streets, singing La Marseillaise and chanting "Liberté, égalité, fraternité"\n\nIf there is one thing anybody can give credit to Charles de Gaulle for, its that he never gives up on France, and he won't till he takes his last breath."
+  POLITICS_NAPOLEON_DESC:0 "Louis Napoleon, more or less known as Napoleon VI is an astounding general like his ancestor before him. He has beaten De Gaulle in a fair election, like Napoleon III before him. Louis is a mixture of all the past Napoleons and some of himself, he values republicanism and democracy more than De Gaulle himself! Now, Louis has restored the French Empire and has began eyeing the West African regions and the eventual reclaimation of France. However, this reclaimation will prove to be the hardest of them all.... Can this Napoleon take back France like his ancestors before him? Even if he does, can he hold on to it?"
   FFR_Philippe_Leclerc: "Philippe Leclerc"
   POLITICS_PHILIPPE_LECLERC_1: "" # Victorious
   POLITICS_PHILIPPE_LECLERC_2: "" # Defeated
@@ -187,6 +188,8 @@
   FFR_Ghana_annex_desc: "Ghana was a british colony but now, their empire is dead! But we shall take over Ghana to extend our reign and then begin the imperial reclaimation wars!!"
   FFR_Britanny_civil_war: "plan-Libération"
   FFR_Britanny_civil_war_desc: "The time has come. We have secured our positions in West Africa. we have contacted the resistance in Britanny, they are willing to co operate in this plan. We can finally leave the Ivory Coast and come back to a Liberated France. But, we must be weary of the german menace..."
+  FFR_Great_Reform: "The Great Reform"
+  FFR_Great_Reform_desc: " It has come to Napoleon's attention that De Gaulle had left a system of corruption called the 'Military Administration' which allows militias privately under the generals. We should fix this corrupted and lazy system and focus on actual PROFESSIONAL armies. Any generals found guilty of such treason shall be demoted and their militias disbanded. FOR THE EMPEROR!"
   ## Events ##
   #Reconstruction events
   free_france_reconstruction.3.t: "The State of West Africa"

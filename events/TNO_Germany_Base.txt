@@ -1609,7 +1609,13 @@ country_event = {
 			fascism = 2
 			communism = 18
 		}
-
+        FHH = {
+      	annex_country {
+		target = GER
+			transfer_troops = yes
+			}
+						}
+		FHH = { change_tag_from = GER }
 		retire_character = GER_reichstag_emergency_council
 		promote_character = GER_hans_speidel
 

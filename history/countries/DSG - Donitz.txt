@@ -9,7 +9,8 @@ recruit_character = HWL_Karl_Donitz
 add_ideas = {
 	DSG_nascent_refugee_crisis
 	DSG_tiring_stance
-
+	##FACTION##
+	Pakt_Autonomous_Reichskommissariat
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state
 	tno_religious_rights_state_atheism

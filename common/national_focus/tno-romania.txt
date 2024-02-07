@@ -38,6 +38,7 @@ focus_tree = {
     	target = BUL
     	type = annex_everything
 	}
+	    news_event = {id = WORLD.888}
 }
 	}
 
@@ -109,4 +110,6 @@ focus_tree = {
 			add_state_claim = 76
 			}
 		}
+	}
+	
 	}
