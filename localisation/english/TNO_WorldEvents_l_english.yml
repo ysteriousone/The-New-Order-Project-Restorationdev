@@ -1,5 +1,10 @@
 ﻿l_english:
  ##### EVENTS #####
+ 
+ WORLD.1848.t: "[Get_newspaper_header]Speidel Victorious"
+ WORLD.1848.d: "Very suprising news came from Central Europe that general Hans Speidel's German Reich has defeated all Nazi opposition and had finally established a provisional government to bring Germany and Europe in a new dawn. A dawn without Nazism. International reception was highly positive except for Japan who now stands as one of the last Fascist nations in the world. Speidel has proclaimed his wish to move on from the sins of the past and lead a brave new world against Nazism and Fascism alike."
+ WORLD.1848.a: "Peace returns to Germany."
+ 
  WORLD.888.t: "[Get_newspaper_header]The Third Balkan War"
  WORLD.888.d: "After the fall of german control over the Balkans, Romania has been arming itself against Bulgaria and Hungary, who formed the Bulgarian Entente against Romania. Romania had secured an allaince with Slovakia against the Bulgarians, whom also contacted SS Ordensstaat Banat for allaince, it seems the Balkans is at war again. Thousands and thousands of Romanian, Bulgarian, Hungarian, Slovak and Banat forces have started fighting fiercely against each other. international opinions haven't been made yet but American troops in Romania and Italian troops in Bulgaria can be seen. As for the Japanese, they haven't chose a side yet."
  WORLD.888.a: "Took them long enough."

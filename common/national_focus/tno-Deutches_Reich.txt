@@ -161,6 +161,88 @@ focus_tree = {
 			}
 		
 			}
+			
+		focus = {
+		id = FHH_Hang_The_Madman
+		icon = GFX_BRG_focus_support_heydrichs_bid
+		prerequisite = { focus = FHH_Valkyrie }
+        available = {
+			OR = {
+			NOT = { country_exists = HGR}
+			}
+			}
+		x = 12
+		y = 3
+		cost = 1
+		completion_reward = {
 		
+	
+			}
+		
+			}
+		
+		focus = {
+		id = FHH_Trial_the_Conservatives
+		icon = GFX_UPO_David_and_Goliath
+		prerequisite = { focus = FHH_Boringmann }
+        available = {
+			OR = {
+			NOT = { country_exists = BGR}
+			}
+			}
+		x = 7
+		y = 3
+		cost = 1
+		completion_reward = {
+		
+	
+			}
+		
+			}
+			
+	    focus = {
+		id = FHH_siphon_military
+		icon = GFX_generic_planes_exploding
+		prerequisite = { focus = FHH_Fatman }
+		x = -2
+		y = 3
+		cost = 1
+		completion_reward = {
+	   GGR = {
+	   add_manpower = -100000
+	   }
+	}
+			}
+
+    focus = {
+		id = FHH_After_Victory
+		icon = "GFX_GER_Speidel"
+		prerequisite = {  }
+		        available = {
+			OR = {
+			NOT = { country_exists = BGR}
+			}
+			
+			OR = {
+			NOT = { country_exists = GGR}
+			}
+			
+			OR = {
+			NOT = { country_exists = SGR}
+			}
+			
+			}
+			
+		
+		x = 3
+		y = 8
+		cost = 0
+		completion_reward = {
+		news_event = { id = WORLD.1848 }
+		
+	   }
+	}
+			}
+			
 		
 		}
