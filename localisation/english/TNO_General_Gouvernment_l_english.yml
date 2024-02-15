@@ -1,4 +1,4 @@
-﻿ l_english:
+﻿l_english:
  GGN:0 "Generalgouvernement"
  GGN_DEF:0 "das Generalgouvernement"
  GGN_ADJ:0 "German"
@@ -57,6 +57,8 @@
 
 
  #Focuses#
+ GGN_Troubling_times: "The troubling Generalgouvernement"
+ GGN_Troubling_times_desc: "Over the years, Polen has grown into a rather unsafe place for the Fatherland. The rising tensions of the underground partisans and Hitler's ailing health has led many to suspect the Generalgouvernement won't even survive the start of the century. So, we must be ready for any attacks from the Home Army."
 
 
  #National Ideas#

@@ -1,6 +1,43 @@
 characters = {
 
 		
+		FHH_hans_speidel = {
+		name = GER_hans_speidel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/Portrait_GER_Hans_Speidel.dds"
+				small = "GFX_idea_GER_Hans_Speidel"
+			}
+			army = {
+				large = "gfx/leaders/GER/Portrait_GER_Hans_Speidel.dds"
+				small = "GFX_idea_GER_Hans_Speidel"
+			}
+		}
+		field_marshal = {
+			traits = { trait_cautious organizer skilled_staffer thorough_planner }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = 70
+		}
+		}
+		
+		FHH_adolf_heusinger = {
+		name = FHH_adolf_heusinger
+		portraits = { army = { large = "gfx/leaders/GER/Portrait_GER_Adolf_Heusinger.dds" } }
+		corps_commander = {
+			traits = { career_officer organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 96
+		}
+	}
+		
 		FHH_henning_von_tresckow = {
 		name = FHH_henning_von_tresckow
 		portraits = {
@@ -46,8 +83,8 @@ characters = {
 		}
 	}
 	
-		FFR_Claus_Von_Stauffenberg = {
-		name = FFR_Claus_Von_Stauffenberg
+		FHH_Claus_Von_Stauffenberg = {
+		name = FHH_Claus_Von_Stauffenberg
 		portraits = {
 			civilian = { small = "GFX_idea_GER_Fritz_Bayerlein" }
  			army = {
@@ -65,4 +102,5 @@ characters = {
 			legacy_id = 101
 		}
 		
+		}
 		}

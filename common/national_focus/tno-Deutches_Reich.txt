@@ -19,6 +19,7 @@ focus_tree = {
 			add_state_core = 64
 			add_state_core = 776
 			news_event = { id = WORLD.6969 }
+			country_event = {id = FHH.1}
 			}
 		}
 		
@@ -211,6 +212,7 @@ focus_tree = {
 	   GGR = {
 	   add_manpower = -100000
 	   }
+	   add_manpower = 100000
 	}
 			}
 
@@ -236,13 +238,301 @@ focus_tree = {
 		
 		x = 3
 		y = 8
-		cost = 0
+		cost = 1
 		completion_reward = {
+		add_state_core = 188
+		add_state_core = 59
+		add_state_core = 56
+		add_state_core = 1373
+		add_state_core = 1815
+		add_state_core = 57
+		add_state_core = 1810
+		add_state_core = 1809
+		add_state_core = 51
+		add_state_core = 55
+		add_state_core = 61
+		add_state_core = 58
+		add_state_core = 774
+		add_state_core = 63
+		add_state_core = 87
+		add_state_core = 66
+		add_state_core = 67
+		add_state_core = 69
+		add_state_core = 85
+		add_state_core = 5
+		add_state_core = 97
+		add_state_core = 65
+		add_state_core = 54 
+		add_state_core = 53
+		add_state_core = 50
+		add_state_core = 1028
+		add_state_core = 52
+		add_state_core = 62
+		add_state_core = 770	
+		add_state_core = 98
+		add_state_core = 4
+		add_state_core = 1772
+		add_state_core = 42
+		add_state_core = 8
+		add_state_core = 1812
+		add_state_core = 28
+		add_state_core = 1811
+		add_state_core = 1026	
+		add_state_core = 60
+		add_state_core = 1814
+		add_state_core = 775
+		add_state_core = 1025
+		add_state_core = 152
+		add_state_core = 86
+		add_state_core = 153
+		add_state_core = 68
+		add_state_core = 72
 		news_event = { id = WORLD.1848 }
+		create_faction = Europakt
 		
 	   }
 	}
+	
+	
+	    focus = {
+		id = FHH_Fall_Shwarz
+		icon = GFX_fall_schwarz
+		prerequisite = { focus = FHH_After_Victory }
+		x = 3
+		y = 9
+		cost = 1
+		completion_reward = {
+        news_event = {id = WORLD_REICH.300}
+		declare_war_on = {
+    	target = BRG
+    	type = annex_everything
+	}
+		
+	}
+			}
+	
+	    focus = {
+		id = FHH_Puppet_time
+		icon = GFX_GER_SGR_slaves_no_more
+		prerequisite = { focus = FHH_Fall_Shwarz }
+		available = {
+			OR = {
+			NOT = { country_exists = BRG}
+			}
+			}
+		x = 3
+		y = 10
+		cost = 1
+		completion_reward = {
+       	GLC = {
+				add_political_power = 100
+				transfer_state = 17
+				transfer_state = 18
+				transfer_state = 1733
+				transfer_state = 1628
+				transfer_state = 15
+				transfer_state = 788
+				transfer_state = 16
+				transfer_state = 1625
+				transfer_state = 1635
+				transfer_state = 1626
+				transfer_state = 747
+				transfer_state = 787
+				transfer_state = 27
+				transfer_state = 20
+				transfer_state = 32
+				transfer_state = 792
+				transfer_state = 786
+				transfer_state = 791
+				transfer_state = 24
+				transfer_state = 26
+		
+	}
+	
+	
+	    BEL = {
+		transfer_state = 34
+		transfer_state = 29
+		transfer_state = 6
+		transfer_state = 1734
+	
+			}
+		add_to_faction = BEL
+		add_to_faction = GLC
+		}
+		}
+	
+	
+	    focus = {
+		id = FHH_German_Democracy
+		icon = GFX_GER_promises_for_the_future
+		prerequisite = { focus = FHH_Puppet_time }
+		x = 3
+		y = 11
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = despotism
+				popularity = 0.01
+				ideology = progressivism 
+				popularity = 0.01
+				ideology = liberalism 
+				popularity = 0.1
+			}
+	}
+		
+	}
+	
+	   focus = {
+		id = FHH_Spartakus_rising
+		icon = GFX_socialism_of_the_people
+		prerequisite = { focus = FHH_German_Democracy}
+		x = 6
+		y = 12
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = progressivism 
+				popularity = 0.01
+			}
+			country_event = {id = FHH.2}
+	}
+		
+	}
+	
+	   focus = {
+		id = FHH_Kaiserboo
+		icon = GFX_generic_monarchist_constitution
+		prerequisite = { focus = FHH_German_Democracy}
+		x = -2
+		y = 12
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = despotism
+				popularity = 0.01
+			}
+	}
+		
+	}
+	
+	focus = {
+		id = FHH_Shmidty
+		icon = GFX_GER_justice
+		prerequisite = { focus = FHH_German_Democracy}
+		x = 0
+		y = 12
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = liberalism
+				popularity = 0.01
+			}
+	}
+		
+	}
+	
+	
+	focus = {
+		id = FHH_Red_Menace
+		icon = GFX_TYM_red_dawn
+		prerequisite = { focus = FHH_German_Democracy}
+		x = 3
+		y = 12
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = communist
+				popularity = 0.01
 			}
 			
+			63 = {
+			set_demilitarized_zone = yes}
+			85 = {
+			set_demilitarized_zone = yes}
+			5 = {
+			set_demilitarized_zone = yes}
+			61 = {
+			set_demilitarized_zone = yes}
+			
+	}
 		
-		}
+	}
+	
+	focus = {
+		id = FHH_NSDAP_revival
+		icon = GER_nazi_might
+		prerequisite = { focus = FHH_Red_Menace}
+		x = 3
+		y = 13
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = national_socialism
+				popularity = 0.01
+			}
+			
+			54 = {
+			set_demilitarized_zone = yes}
+			53 = {
+			set_demilitarized_zone = yes}
+			1026 = {
+			set_demilitarized_zone = yes}
+			50 = {
+			set_demilitarized_zone = yes}
+			72 = {
+			set_demilitarized_zone = yes}
+			68 = { 
+			set_demilitarized_zone = yes}
+			52 = {
+			set_demilitarized_zone = yes }
+			153 = {
+			set_demilitarized_zone = yes }
+			152 = {
+			set_demilitarized_zone = yes }
+			86 = {
+			set_demilitarized_zone = yes }
+			4 = {
+			set_demilitarized_zone = yes }
+			1772 = {
+			set_demilitarized_zone = yes }
+			62 = {
+			set_demilitarized_zone = yes }
+			770 = {
+			set_demilitarized_zone = yes }
+			98 = {
+			set_demilitarized_zone = yes }
+	}
+		
+	}
+	
+	focus = {
+		id = Co-operate_with_socialists
+		icon = GFX_BRY_Red_Terror_Marches
+		prerequisite = { focus = FHH_NSDAP_revival}
+		x = 1
+		y = 14
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+			63 = {
+			set_demilitarized_zone = no}
+			85 = {
+			set_demilitarized_zone = no}
+			5 = {
+			set_demilitarized_zone = no}
+			61 = {
+			set_demilitarized_zone = no}
+	}
+		
+	}
+	
+	
+			}
+	
+	
+	
+		

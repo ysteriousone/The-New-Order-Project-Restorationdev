@@ -3,7 +3,9 @@ capital = 37
 # Vacant
 recruit_character = FHH_Generic_Vacant
 recruit_character = FHH_henning_von_tresckow
-recruit_character = FFR_Claus_Von_Stauffenberg
+recruit_character = FHH_Claus_Von_Stauffenberg
+recruit_character = FHH_adolf_heusinger
+recruit_character = FHH_hans_speidel
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
 
@@ -342,7 +344,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Helmut Smhidt"
+	name = "Helmut Shmidt"
 	desc = ""
 	picture = Portrait_GER_Helmut_Schmidt.dds
 	expire = "1965.1.1"
@@ -369,6 +371,17 @@ create_country_leader = {
 	picture = Portrait_GER_Spartakus.dds
 	expire = "1965.1.1"
 	ideology = progressivism_social_democracy_subtype
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ernst Thalmann"
+	desc = ""
+	picture = Ernst_Thalman.dds
+	expire = "1965.1.1"
+	ideology = communist_left_communist_subtype
 	traits = {
 		#
 	}

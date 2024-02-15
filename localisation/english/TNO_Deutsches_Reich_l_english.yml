@@ -4,15 +4,21 @@
  ## Party Names ##
  FHH_paternalism_party:0 "Wehermact"
  FHH_national_socialism_party_long:0 "Das Wehermact"
- FHH_fascism_party:0 "NSDAP - A"
- FHH_national_socialism_1_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Arbeiter"
+ FHH_national_socialism_party:0 "NSDAP - A"
+ FHH_national_socialism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei - Arbeiter"
  FHH_despotism_party:0 "OKW - T"
  FHH_despotism_party_long:0 "OKW - Tresckow"
+ FHH_progressivism_party:0 "SPD"
+ FHH_progressivism_party_long:0 "Sozialdemokratische Partei Deutschlands"
+ FHH_liberalism_party:0 "CDU"
+ FHH_liberalism_party_long:0 "Christian-Democratic Union"
+ FHH_communist_party:0 "KPD"
+ FHH_communist_party_long:0 "Kommunist Partei Deutschlands"
  
  ## Characters ##
  FHH_henning_von_tresckow:0 "Henning von Tresckow"
- FFR_Claus_Von_Stauffenberg:0 "Claus von Stauffenberg"
- 
+ FHH_Claus_Von_Stauffenberg:0 "Claus von Stauffenberg"
+ FHH_adolf_heusinger:0 "Adolf Heusinger"
  
  ## Decisions ##
  
@@ -29,8 +35,30 @@
  FHH_Boringmann_desc: "One of the least intresting figures in the German crusade will be Martin Bormann, leader of his clique in Southern Germany. Bormann's administration is so out of control that Stauffenberg has a good enough presense there to cause trouble in Munich and the other cities."
  FHH_Fatman: "Der Kriegstreiber"
  FHH_Fatman_desc: "Although Goring is not that much of a Nazi, he's still a war criminal against the german people! We must deal with him immidiately!"
- FHH_After_Victory: "Wir sind Speidels schwarzer Haufen!"
+ FHH_After_Victory: "Wir sind Speidels Graue Haufen!"
  FHH_After_Victory_desc: "We did it! Germany is finally free! No one has to die under the nazi jackboot any longer! We can finally go on and do Speidel's plans and deal with Burgundy ONCE AND FOR ALL!"
+ FHH_Fall_Shwarz: "HEIA OHO"
+ FHH_Fall_Shwarz_desc: " It has all come down to this. The final confrontation. Today, the men, women and children in Burgunnd yearn for freedom. THEY YEARN FOR LIFE! Himmler has commited countless atrocities in the name of religious purity. But no more! These bastards will be cut down and be destroyed. ONE BY ONE. We have also contacted various SS dissidents and the "Red Poppy movement". We will use their help to end this creation once and for all! FUR DAS VATERLAND!
+ FHH_Puppet_time: " Rebuild Burgundy "
+ FHH_Puppet_time_desc: "We have made the black sun set. We have liberated eastern France, now is the time to rebuild it. A puppet regime in Belgium and a Paktcommision in France will do...
+ FHH_German_Democracy: "Deutsche Demokratie"
+ FHH_German_Democracy_desc: "The time has come for Speidel to keep his promises. From now onwards, Germany shall be free and never fall under Nazi rule ever. We still have some Nazi partisans under someone called "The Volksfuhrer" to deal with. Along with that, some resurgent communists that have risen up!"
+ FHH_Spartakus_rising: "Spartakus rising"
+ FHH_Spartakus_rising_desc: "A chaarismatic man called Willy Brandt has arrived in Berlin and had announced the revival of the SPD. Popular among the masses, Brandt promises freedom to  the workers and a government of the people. Things seem bright for him.."
+ FHH_Kaiserboo: "A blast from the past"
+ FHH_Kaiserboo_desc: "Another candidate is Henning von Tresckow, leader of the Tresckow faction of the OKW. He seeks a return to german glory and even a restoration of the kaiser of old. Tresckow has seen popularity within the richer and middle classes of Germany as well as some in Speidel's military cabinet too! Who knows if he can win..."
+ FHH_Shmidty: "Voices of Liberalism"
+ FHH_Shmidty_desc: " The last contender for German leadership is Helmut Shmidt, leader of the Gang of Four and the leader of the CDU. Shmidt is also a fairly intresting man to win the german elections..."
+ FHH_Red_Menace: "Memories of 1918"
+ FHH_Red_Menace_desc: "An old enemy of German democracy, the KPD has been rebuilt! Their old leader, Ernst Thalman has also returned to Germany to cause chaos to our new republic. He has set up forces in the north. If we dont deal with him, democracy will be at stake!"
  ## Events ##
+ FHH.1.t: " Arms against Tyranny "
+ FHH.1.a: " Blessed are the meek. "
+ FHH.1.d:0 " Speidel was walking across Germania. He saw the true horror of the Nazi regime in its entirity. The centre of Europe, turned into a giant propaganda area. What didnt help was the exodus of slaves into the Schuttzone. Lots of jews coming out, begging for money. What didnt help was also the degeneracy of the Heer. Speidel has had enough. He will be a puppet of the Reichstag no longer! He will end Nazism and its terror on the volk here and now! But he is not alone. Several OKW officers had joined a meeting he held."But herr Speidel, are you sure this wont go wrong?" Stauffenberg asked. " My duty may be to the reich, but my loyalty is to the people. I dont want to see good people suffer under this stupid ideology made by a maniac!", Speidel replied. The room went silent. There's no turning back after this. They will either go down as the world's greatest heroes or its greatest failure... "
+ FHH.2.t: "Return of Spartakus"
+ FHH.2.a: "Hörst du die Leute singen?"
+ FHH.2.d:0 "Willy Brandt, a man known to many as "Spartakus Reborn". Brandt is known for his lenient socialism and SPD leadership. He was to be Germany's most famous man. The Reichsbanner Schwarz-Rot-Gold (An organization led by Brandt) had stopped fighting the Nazis after Speidel's proclamation. Willy made his way to the newly reconstructed Reichstag to hold a speech for his campaign. His oponents are his friends, the two Gang of Four members, Tresckow and Shmidt. The three friends decided to sit down for some afternoon tea. "So, how was Sweden?", Tresckow asked. "Yes, we want to hear your experience.", Shmidt said excitedly. "Fine. Fine. It was a boring experience but I still had some activities as the head of the Reichsbanner of course. However, I find more warmth in my german fatherland.", Brandt replied back. "That's nice, but will this election destroy our friendship?", Shmidt questioned. "Nonsense! We are simply competing against each. Obviously we HAVE to stay united because the Nazis are back and with Thalman up in Northern Germany, people are questioning if Speidel can handle this.", Tresckow said. "What about you, Henning? Can YOU handle it?" Brandt asked. Tresckow stayed silent. "Well I ought to go, it has been a fun time with you two but now, politics calls.", Brandt said leaving. Shmidt and Tresckow were happy to meet Brandt again after so long. It seems even in these trying times, friendship never dies. But one thing is for sure, the SPD has a hell of a headstart..."
+ 
+ 
 
  

@@ -1,0 +1,38 @@
+focus_tree = {
+	id = 2WRW
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHT
+	}
+	}
+	
+	default = no
+	
+	focus = {
+		id = GGN_Troubling_times
+
+		icon = GFX_POL_general_government
+		x = 3
+		y = 0
+		cost = 3
+
+		available = {
+
+		}
+		completion_reward = {
+			add_manpower = -100
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+

@@ -339,6 +339,9 @@ focus = {
        	annex_country {
 		target = D01
 			transfer_troops = yes
+			target = BRT
+			transfer_troops = yes
+			
 			}
 			add_state_core = 33
 			add_state_core = 1613
@@ -432,15 +435,9 @@ focus = {
 		}
 		completion_reward = {
         remove_ideas = FFR_military_administration
-<<<<<<< Updated upstream
 		}
-	}
-}
-=======
-<<<<<<< HEAD
-	
 			}
-			}
+			
 	     focus = {
 		id = FFR_Unite_Resistance
         prerequisite ={ focus =  FFR_Return }
@@ -459,6 +456,54 @@ focus = {
 			transfer_troops = yes
 			}
 	
+			}
+			}
+
+			
+	     focus = {
+		id = FFR_parade_through_france
+        prerequisite ={ focus =  FFR_Unite_Resistance }
+		
+		icon = GFX_focus_focus_fra_third_empire
+		x = 10
+		y = 6
+		cost = 1
+
+		available = {
+			OR = {
+			NOT = { country_exists = FRS }
+			}
+			OR = {
+			NOT = { country_exists = FRM }
+			}
+			
+			OR = {
+			NOT = { country_exists = FRV }
+			}
+			
+			OR = {
+			NOT = { country_exists = FIT }
+			}
+
+			OR = {
+			NOT = { country_exists = FGR}
+			}
+
+		}
+		completion_reward = {
+       annex_country {
+		target = FRV
+			transfer_troops = yes
+		target = FGR
+			transfer_troops = yes
+		target = FRM
+			transfer_troops = yes
+		target = FIT
+			transfer_troops = yes
+		target = FRS
+		    transfer_troops = yes
+			}
+	news_event = {id = event france_reclamation.3 }
 			}
 			}
 
