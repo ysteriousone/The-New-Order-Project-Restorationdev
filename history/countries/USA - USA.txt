@@ -435,7 +435,6 @@ add_to_faction = BLZ
 add_to_faction = HAI
 add_to_faction = FAR
 add_to_faction = QUE
-add_to_faction = IND
 
 set_autonomy = {
 	target = WIN

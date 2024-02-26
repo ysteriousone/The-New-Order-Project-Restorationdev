@@ -1,5 +1,5 @@
 focus_tree = {
-	id = Generalgovernment_focus
+	id = TNO-Generalgouvernement
     continuous_focus_position = { x = -40 y = 1310 } 
 	country = {
 		factor = 0
@@ -12,7 +12,6 @@ focus_tree = {
 	
 	focus = {
 		id = GGN_Troubling_times
-
 		icon = GFX_POL_general_government
 		x = 3
 		y = 0

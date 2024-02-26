@@ -1,5 +1,12 @@
 ﻿l_english:
  ##### EVENTS #####
+ WORLD.423.t: "[Get_newspaper_header]France collapses into Civil War!"
+ WORLD.423.d: "It seems the famous saying that evil will always lose stays true! After the end of the Burgundian invasion, the French State has all but collapsed except the areas surrounding Bordeaux. Some Italian sympathizers have taken hold of the areas near Italy, some bourbon monarchists have taken over the areas near them. Also, the German garrison over France had taken over the areas of Limousine. Along with Britanny acheiving Irridentism, French revolutionaries have risen up in the north along with the long forgotten French resistance near Bordeaux. What doesnt help is the Free French meddling over the newly chaos that is the mainland. It seems that this will be the end of Petain's State as even in the French State, reformist candidate Pierre Poujade has been elected the new prime minister of France. France's newest chapter will be its bloddiest....."
+ WORLD.423.a: "a serious blow to Vichy!"
+ 
+ WORLD.243.t: "[Get_newspaper_header]The Western war!"
+ WORLD.243.d: "It seems another Sino  Japanese war will happen. Several KMT exile forces along with NRA forces from the warlord areas of Western China have begun fighting with the forces of Seihokuo Homengun. Homengun was once a Japanese expedition against the Ma remnants but lately, it has become a rogue state. As such, Japan has refused to aid the Homengun forces against the bloodthirsty KMT armies. However, Nanjing has announced a buildup of armed forces for confrontation against Xinjiang. It seems the greatest proxy war in history is yet to be seen...."
+ WORLD.243.a: "We should keep an eye on this"
  
  WORLD.1848.t: "[Get_newspaper_header]Speidel Victorious"
  WORLD.1848.d: "Very suprising news came from Central Europe that general Hans Speidel's German Reich has defeated all Nazi opposition and had finally established a provisional government to bring Germany and Europe in a new dawn. A dawn without Nazism. International reception was highly positive except for Japan who now stands as one of the last Fascist nations in the world. Speidel has proclaimed his wish to move on from the sins of the past and lead a brave new world against Nazism and Fascism alike."
@@ -962,7 +969,7 @@
  WORLD.2062.h: "Give me a line to Tokyo, NOW!"
  WORLD.2062.i: "Let us pray it doesn't get any worse..."
 
- WORLD.2069.t: "[Get_newspaper_header]The Great Asian War"
+ WORLD.2069.t: "[Get_newspaper_header]The Third Sino-Japanese  War"
  WORLD.2069.d: "Every empire, it seems, has its end. What started out as a regional rebellion within China has, beyond the wildest of predictions, brought the Japan-affiliated Republic to its knees, prompting full-scale intervention from Tokyo and dragging the entire Co-Prosperity Sphere into an all-out ground conflict unseen since the 1940s, as the conflagration of war rages ever more fierier upon the Asian continent.\n\nEyes from the OFN, from the Einheitspakt, and from every other corner across the globe watch with fearful anticipation as IJA tanks and men flood across the borders of Manchuria once more as they had done almost two decades ago. The clash between the Two Suns has reached its blood-soaked climax; soon, perhaps, the Cold War's status quo shall forever perish in their combined blaze."
  WORLD.2069.a: "March on, march on and on!"
  WORLD.2069.b: "Never!"

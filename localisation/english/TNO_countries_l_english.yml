@@ -128,7 +128,7 @@
  BIR_DEF: "the Arab Republic of Iraq"
  BIR_ADJ: "Iraqi"
 
- BKR: "Bashkortostan"
+ BKR: "Bashkortostan Republic"
  BKR_DEF: "the Bashqortostan Respublikahy"
  BKR_ADJ: "Bashkir"
 
@@ -385,8 +385,8 @@
  FRS_liberalism_DEF: "the French Republic"
  FRS_conservatism: "French State"
  FRS_conservatism_DEF: "the French State"
- FRS_paternalism: "French State"
- FRS_paternalism_DEF: "the French State"
+ FRS_paternalism: "Provisonal Government of the French Republic"
+ FRS_paternalism_DEF: "the Provisonal Government of the French Republic"
  FRS_despotism: "French State"
  FRS_despotism_DEF: "the French State"
  FRS_despotism_absolute_monarchy_subtype: "Kingdom of France"
@@ -413,8 +413,8 @@
  GND_DEF: "Grenada"
  GND_ADJ: "Grenadan"
 
- GOR: "Gorky"
- GOR_DEF: "Gorky"
+ GOR: "Gorky Tank Regiments"
+ GOR_DEF: "the Military Control Commission in Gorky"
  GOR_communist_DEF: "the Military Control Commission in Gorky"
  GOR_socialist_DEF: "the Military Control Commission in Gorky"
  GOR_despotism_DEF: "the Military Control Commission in Gorky"
@@ -682,8 +682,8 @@
 
  PRM: "Perm"
  PRM_DEF: "Perm"
- PRM_national_socialism: "Aryan Brotherhood"
- PRM_national_socialism_DEF: "the Aryan Brotherhood"
+ PRM_national_socialism: "Perm provisional settlements"
+ PRM_national_socialism_DEF: "the Aryan Brotherhood in Perm"
  PRM_ADJ: "Perm"
 
  PRU: "Peru"
@@ -933,7 +933,7 @@
  TAN_socialist_DEF: "the Altai-Tuvan People's Republic"
  TAN_socialist_ADJ: "Altai-Tuvan"
 
- TAR: "Tatarstan"
+ TAR: "Tatar Republic"
  TAR_DEF: "the Tatarstan Respublikası"
  TAR_ADJ: "Tatar"
  TAR_socialist_DEF: "the Tatar ASSR"

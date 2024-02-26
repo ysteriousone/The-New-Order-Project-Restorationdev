@@ -1,4 +1,7 @@
 ideas = {
+
+	
+
 	country = {
 		FFR_military_administration = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FFR_military_administration"}
@@ -168,6 +171,31 @@ ideas = {
 				army_defence_factor = 0.4
 			}
 		}
+    
+			FFR_native_rebellion = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FFR_native_rebellion"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.6
+				conscription_factor = -0.31
+				political_power_gain = -5
+				planning_speed = -2
+				army_org_factor = -3
+				taxable_population_modifier = -0.55
+			}
+		}
+		
+
 
 	}
 }

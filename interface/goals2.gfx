@@ -1,6 +1,33 @@
 spriteTypes = {
 	#### Generic continuous goal icons
-	#### Bormann OFN Tree
+	SpriteType = {
+		name = "GFX_FFR_plan_liberation"
+		texturefile = "gfx/interface/goals/FFR_plan_liberation.dds"
+	}
+	SpriteType = {
+		name = "GFX_FFR_Mossiland"
+		texturefile = "gfx/interface/goals/FFR_Mossiland.dds"
+	}
+	SpriteType = {
+		name = "GFX_FFR_Ghana"
+		texturefile = "gfx/interface/goals/FFR_Ghana.dds"
+	}
+		SpriteType = {
+		name = "GFX_FFR_Dahomie"
+		texturefile = "gfx/interface/goals/FFR_Damohey.dds"
+	}
+	SpriteType = {
+		name = "GFX_FFR_WAW"
+		texturefile = "gfx/interface/goals/WAW.dds"
+	}
+	SpriteType = {
+		name = "GFX_FFR_parade_through_france"
+		texturefile = "gfx/interface/goals/parade_through_france.dds"
+	}
+		SpriteType = {
+		name = "GFX_FFR_a_new_era"
+		texturefile = "gfx/interface/goals/FFR_a_new_era.dds"
+	}
 	SpriteType = {
 		name = "GFX_GER_A_Pain_We_Know"
 		texturefile = "gfx/interface/goals/GER_A_Pain_We_Know.dds"

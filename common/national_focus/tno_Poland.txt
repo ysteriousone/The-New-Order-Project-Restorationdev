@@ -1,0 +1,26 @@
+focus_tree = {
+	id = tno-Poland
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	focus = {
+		id = POL_Never_Lost
+		icon = GFX_POL_Secret_government
+		x = 3
+		y = 0
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		completion_reward = {
+			add_manpower = 100000
+			}
+		}
+
+	
+	}

@@ -296,14 +296,14 @@ bookmarks = {
 		history = "VIVA LA FRANCAISE LIBRE LOL LMAO" 
 		ideology = paternalism
 			ideas = {
-				ENG_The_Terrible_Twins
-				ENG_British_Free_Corps
-				ENG_German_Corporate_Dominance_0
+				FFR_native_rebellion
+				FFR_spirit_french
+				FFR_military_administration
 			}
 			focuses = {
-				ENG_hurrah_for_the_blackshirts
-				ENG_coronation_day
-				ENG_a_government_true_to_his_majesty
+				FFR_Napoleoning_time
+				FFR_Greatest_Restoration
+				FFR_parade_through_france
 			}
 			}
 		

@@ -439,7 +439,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_LIU_WENHUI_DESC"
-			ideology = despotism_warlordism_subtype
+			ideology = paternalism_military_mandate_subtype
 			traits = { }
 			expire = "1999.1.1.1"
 			id = -1
@@ -461,7 +461,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_MA_JIYUAN_DESC"
-			ideology = despotism_military_junta_subtype
+			ideology = paternalism_military_mandate_subtype
 			traits = { }
 			expire = "1999.1.1.1"
 			id = -1
@@ -475,41 +475,7 @@ characters = {
 			logistics_skill = 3
 		}
 	}
-	XIN_zhang_zhizhong = {
-		name = XIN_zhang_zhizhong
-		portraits = {
-			civilian = { large = "gfx/leaders/XIN/Portrait_Xinjiang_Zhang_Zhizhong.dds" }
-			army = { large = "gfx/leaders/XIN/Portrait_Xinjiang_Zhang_Zhizhong.dds" }
-		}
-		country_leader = {
-			desc = "POLITICS_ZHANG_ZHIZHONG_DESC"
-			ideology = despotism_warlordism_subtype
-			traits = { }
-			expire = "1999.1.1.1"
-			id = -1
-		}
-		corps_commander = {
-			traits = { old_guard politically_connected }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
-	XIN_power_vacuum = {
-		name = XIN_power_vacuum
-		portraits = {
-			civilian = { large = "gfx/leaders/XIN/Portrait_Xinjiang_Power_Vacuum.dds" }
-		}
-		country_leader = {
-			desc = "POLITICS_XIN_POWER_VACUUM_DESC"
-			ideology = despotism_interim_government_subtype
-			traits = { }
-			expire = "1999.1.1.1"
-			id = -1
-		}
-	}
+
 	TIB_tenzin_gyatso = {
 		name = TIB_tenzin_gyatso
 		portraits = {

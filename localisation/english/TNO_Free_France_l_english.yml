@@ -46,7 +46,8 @@
 
   FFR_tomb_republic: "Tomb of the French Republic"
   FFR_tomb_republic_desc: "After their failed war in Western Africa, the last remnants of Free France have been reduced to occupying the lonely island of Kerguelen.\n\nKerguelen is a small landmass devoid of both strategic value and military resources. There is no hope of reclaiming the mainland for the exiles now, and like Napoleon and Saint Helena, the last scraps of Free France can now only wait for death to take them."
-
+  FFR_native_rebellion: "Native revolts"
+  FFR_native_rebellion_desc: "Over the end of the second world war and the begining of the new decade, the natives in the Ivory coast are not given any significant autonomy by the exile government. This has led to years of resentment and rebellion, crippling the Free French extensively. If the exiles wish to finally come home, they must deal with the native rebellion."
   FFR_the_reclamation: "The Reclamation"
   FFR_Reclamation_DynamicModifier: "The Reclamation"
   FFR_the_reclamation_desc: "§FDivision Organisation: [?FFR_Reclamation_Modifier_army_org_factor|1%+=]\nNon-Combat Out of Supply Penalties: [?FFR_Reclamation_Modifier_out_of_supply_factor|1%-=]\nDivision Recovery Rate: [?FFR_Reclamation_Modifier_army_morale_factor|1%+=]\nWar Support: [?FFR_Reclamation_Modifier_war_support_factor|1%+=]\nDivision Defense: [?FFR_Reclamation_Modifier_army_defence_factor|1%+=]\nPlanning Speed: [?FFR_Reclamation_Modifier_planning_speed|1%+=]\n--------------§!\nWhat our enemies, deserters and even allies deemed impossible is finally happening. Our troops are landing across the shores of France! We are not longer a rump state kept alive only by the weight of our former colonies, the hearts of our men and the sharp mind of our leader, we are the liberators of France!\n\nWe have no illusions that this is not a do or die situation, if we fail all it's over, but it we triumph our men will collect the fruits of their labor. The old ones will reconnect with their families and friends, and the young ones will grow old and die in their fatherland. Their tired eyes will be free to contemplate the beauty of Paris and the Seine for as long as they desire."
@@ -190,6 +191,14 @@
   FFR_Britanny_civil_war_desc: "The time has come. We have secured our positions in West Africa. we have contacted the resistance in Britanny, they are willing to co operate in this plan. We can finally leave the Ivory Coast and come back to a Liberated France. But, we must be weary of the german menace..."
   FFR_Great_Reform: "The Great Reform"
   FFR_Great_Reform_desc: " It has come to Napoleon's attention that De Gaulle had left a system of corruption called the 'Military Administration' which allows militias privately under the generals. We should fix this corrupted and lazy system and focus on actual PROFESSIONAL armies. Any generals found guilty of such treason shall be demoted and their militias disbanded. FOR THE EMPEROR!"
+  FFR_apply_to_ofn: "Apply to the OFN"
+  FFR_apply_to_ofn_desc: "Through extensive talks, Napoleon has decided to ally with the Americans at the OFN. Although we dont plan on joining just yet, we will join them as a partner to stop Germany from invading us since we have US support.."
+  ofn_volunteers: "Volunteers from abroad"
+  ofn_volunteers_desc: "Through more talks with the OFN and Brazil, we will get many volunteers across the Americas, mainly in the North and Cayene. This will bolster our forces and thus, increase our legitamacy as the one true France!"
+  FFR_Great_Emperor: "The Great Emperor"
+  FFR_Great_Emperor_desc: "Napoleon will be the greatest emperor of France. No one shall match him! As a show of his kindness, the emperor has decided to give the natives significant autonomy!"
+  FFR_parade_through_france: "Parade Through France"
+  FFR_parade_through_france_desc: "We have done it! France has been reclaimed! Now, we will keep it liberated and march on to Paris once more! France? La France indignée, la France brisée, la France martyrisée... Mais la France, libérée !"
   ## Events ##
   #Reconstruction events
   free_france_reconstruction.3.t: "The State of West Africa"
@@ -418,9 +427,9 @@
   FFRnews.2.c: "War comes to France, now in the form of a brother." # Rest of the world
   FFRnews.2.d: "What are they doing?!" # GER
 
-  FFRnews.3.t: "[Get_newspaper_header]French Republic Restored!"
-  FFRnews.3.desc: ""The Empire, long divided, must unite; the Empire, long united, must divide. Thus it has always been". Chinese writer Luo Guangzhong may have been talking about China, during its ancient blood feuds, but it appears that this saying has failed to lose its point. Astonishing news have leaked today. Peace talks between Paris and Free French forces have resulted in an agreement to reconciliate into a renewed French Republic.\n\nAcross France rapturous celebrations and impromptu street parties have flared up as the civilian populace celebrate the prevention of war and the unification of France, untainted by the stain of war and occupation. Exiled soldiers and equipment flood the mainland - but not as enemies, but as long lost brothers now reunited. [FRA_GetReconciliationText]\n"
-  FFRnews.3.a: "War will not find its prey in France."
+  FFRnews.3.t: "[Get_newspaper_header]Return of the old!"
+  FFRnews.3.desc: ""The Empire, long divided, must unite; the Empire, long united, must divide. Thus it has always been". Chinese writer Luo Guangzhong may have been talking about China, during its ancient blood feuds, but it appears that this saying has not failed to lose its point. Astonishing news have leaked today. Free French forces have finally managed to win the french civil war!\n\nAcross France rapturous celebrations and impromptu street parties have flared up as the civilian populace celebrate the prevention of war and the unification of France, untainted by the stain of war and occupation. Exiled soldiers and equipment flood the mainland - but not as enemies, but as long lost brothers now reunited. [FRA_GetReconciliationText]\n"
+  FFRnews.3.a: "A surprise to be sure."
   FFRnews.3.b: "The French need to be protected from their own impulses."
 
   FFRnews_degaulledeath_1: "While France jubilates under the shadow of peace, Charles de Gaulle's remains have been moved back to the homeland he longed for so much. A private funeral will be held in his home town of Colombey-les-Deux-Églises."

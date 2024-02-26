@@ -1,6 +1,10 @@
 capital = 25
 
-#oob = "RPY_1962"
+#oob = "FGR_1962"
+set_major = yes
+set_research_slots = 3
+set_stability = 0.95
+set_convoys = 200
 
 recruit_character = FGR_Francois_Duprat
 recruit_character = FGR_Mark_Fredriksen

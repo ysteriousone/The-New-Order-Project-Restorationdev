@@ -1,6 +1,35 @@
 add_namespace = WORLD
 add_namespace = novel #for althist novels
 
+
+news_event = {
+	id = WORLD.423
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.243"}
+	title = WORLD.423.t
+	desc = WORLD.423.d
+	picture = GFX_news_event_FRA_vichy_revoked
+
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = WORLD.423.a
+	}
+	}
+
+news_event = {
+	id = WORLD.243
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.243"}
+	title = WORLD.243.t
+	desc = WORLD.243.d
+	picture = GFX_news_event_GER_hans_speidel
+
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = WORLD.243.a
+	}
+	}
+
 news_event = {
 	id = WORLD.1848
 	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1848"}

@@ -9,8 +9,9 @@ set_war_support = 0.70
 set_stability = 1.00
 add_manpower = 400000
 
-recruit_character = XIN_zhang_zhizhong
-recruit_character = XIN_power_vacuum
+recruit_character = XIN_liu_wenhui
+recruit_character = XIN_ma_jiyuan
+recruit_character = XIN_long_yun
 
 set_variable = { chi_influence = 0 }
 
@@ -156,6 +157,18 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Deng Xiaoping"
+	desc = "POLITICS_XIN_DENG_DESC"
+	picture = Deng.dds
+	expire = "1965.1.1"
+	ideology = communist_workerism_subtype
+	traits = {
+		#
+	}
+}
+
 add_ideas = {
 	#Political
 	tno_political_parties_one_party_state
@@ -266,3 +279,5 @@ add_equipment_to_stockpile = {
 	amount = 1000
 	producer = XIN
 }
+set_autonomy = { target = XIK autonomy_state = autonomy_military_district }
+set_autonomy = { target = QIN autonomy_state = autonomy_military_district }

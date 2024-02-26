@@ -1922,7 +1922,7 @@ country_event = { # Reconciliation
 	desc = france_reclamation.3.desc
 
 	is_triggered_only = yes
-
+    major = yes
 	option = {
 		name = france_reclamation.3.a
 
@@ -2550,7 +2550,7 @@ news_event = { # Reclamation / post-Civil War
 	title = FFRnews.6.t
 	desc = FFRnews.6.desc
 	picture = GFX_news_event_FRA_reclamation
-
+    major = yes
 	is_triggered_only = yes
 
 	option = {

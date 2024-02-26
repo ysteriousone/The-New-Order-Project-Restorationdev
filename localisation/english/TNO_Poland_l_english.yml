@@ -1,9 +1,9 @@
 ﻿ l_english:
  #Poland
  
- POL_paternalism:0 "Poland"
- POL_paternalism_DEF:0 "Rząd Tymczasowy Rzeczypospolitej Polskiej"
- POL_paternalism_ADJ:0 "Polish"
+ POL:0 "Polish Home Army"
+ POL_DEF:0 "The Polish Republic"
+ POL_ADJ:0 "Polish"
  POL_communist:0 "Polish People's Republic"
  POL_communist_DEF:0 "Polska Rzeczpospolita Ludowa"
  POL_communist_ADJ:0 "Polish"

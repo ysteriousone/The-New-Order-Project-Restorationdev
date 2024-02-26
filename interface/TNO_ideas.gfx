@@ -2771,6 +2771,11 @@ spriteTypes = {
 	}
 
 	###Free France
+	
+		spriteType = {
+		name = "GFX_idea_FFR_native_rebellion"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_FFR_native_rebellion.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_ffr_military_administration"

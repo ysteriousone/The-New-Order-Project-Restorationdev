@@ -451,7 +451,7 @@ add_ideas = {
 	FFR_military_administration
 	FFR_precious_metal
 	FFR_spirit_french
-
+    FFR_native_rebellion
 	##MINISTERS##
 	FFR_Jacques_Chaban_Delmas_hog
 	FFR_Georges_Pompidou_for

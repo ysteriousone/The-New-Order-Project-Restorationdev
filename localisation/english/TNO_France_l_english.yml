@@ -254,13 +254,10 @@
  FRA_SKELETON.2.desc:0 "apology for bad english\n\nwhere were u wen huntziger die\n\ni was at house eating baguette when phone ring\n\n"Huntziger is kil""
  FRA_SKELETON.2.a:0 ""no""
 
- FRA_SKELETON.3.t:0 "The new Président of France"
- FRA_SKELETON.3.desc:0 ""
- FRA_SKELETON.3.a:0 "The Longist"
- FRA_SKELETON.3.b:0 "The Racist"
- FRA_SKELETON.3.c:0 "The Liberal"
- FRA_SKELETON.3.d:0 "The Speerite"
- FRA_SKELETON.3.e:0 "The Redditor"
+ FRA_SKELETON.3.t:0 "Fall of the old order"
+ FRA_SKELETON.3.desc:0 "With the fall of order in the French State, it's time to decide who will be the new president!"
+ FRA_SKELETON.3.a:0 "Poujdae takes absolute control!"
+
 
  FRA_SKELETON.4.t:0 "Port-Neuf Completed"
  FRA_SKELETON.4.desc:0 ""

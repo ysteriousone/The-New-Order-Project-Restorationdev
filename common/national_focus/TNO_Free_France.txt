@@ -20,7 +20,7 @@ focus_tree = {
 	focus = {
 		id = FFR_French_Catastrophe
 
-		icon = GFX_BRY_for_those_lost
+		icon = GFX_focus_generic_vichy_france_triumphant
 		x = 0
 		y = 0
 		cost = 5
@@ -124,7 +124,7 @@ focus_tree = {
 		{ focus = FFR_Greatest_Restoration
 		  focus = FFR_Keep_De_Gaulle
 		}
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_Mossiland
 		x = 1
 		y = 4
 		cost = 1
@@ -146,7 +146,7 @@ focus_tree = {
 		focus = FFR_Greatest_Restoration
 		focus = FFR_Keep_De_Gaulle
 		}
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_Ghana
 		x = -1
 		y = 4
 		cost = 1
@@ -168,7 +168,7 @@ focus_tree = {
 		focus = FFR_Greatest_Restoration
 		focus = FFR_Keep_De_Gaulle
 		}
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_Dahomie
 		x = -5
 		y = 4
 		cost = 1
@@ -190,7 +190,7 @@ focus_tree = {
 		focus = FFR_Greatest_Restoration
 		focus = FFR_Keep_De_Gaulle
 		}
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_generic_artillery_warfare
 		x = 5
 		y = 4
 		cost = 1
@@ -214,7 +214,7 @@ focus_tree = {
 	    prerequisite = { focus = FFR_Ghana_annex}
 		prerequisite = { focus = FFR_the_loose_end }
 
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_WAW
 		x = 0
 		y = 5
 		cost = 1
@@ -237,7 +237,7 @@ focus_tree = {
        available = {
 			has_government = despotism
 		}
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_a_new_era
 		x = -10
 		y = 0
 		cost = 1
@@ -256,31 +256,7 @@ focus_tree = {
 
 			}
 		}
-	focus = {
-		id = FFR_Seek_allies
-       available = {
-			has_government = despotism
-		}
-		icon = GFX_focus_focus_fra_third_empire
-		x = -10
-		y = 2
-		cost = 1
-        prerequisite = { focus = FFR_Napoleoning_time }
-		completion_reward = {
-		add_manpower = 10
-			add_popularity = {
-				ideology = conservatism
-				popularity = 0.10
 
-			}
-			add_popularity = {
-				ideology = liberalism
-				popularity = 0.10
-				}
-		
-			}
-
-			}
 			
 		
 			
@@ -298,7 +274,7 @@ focus_tree = {
 		controls_state = 789
 		}
 		}
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_plan_liberation
 		x = 10
 		y = 0
 		cost = 7
@@ -336,20 +312,10 @@ focus = {
         
 		}
 		completion_reward = {
-       	annex_country {
-		target = D01
-			transfer_troops = yes
-			target = BRT
-			transfer_troops = yes
-			
-			}
-			add_state_core = 33
-			add_state_core = 1613
-			add_state_core = 14
-						hidden_effect = {
+		add_ideas ={ FFR_the_reclamation}
+	
 			news_event = { id = FFRnews.6 }
 			
-			}
 	    declare_war_on = {
     	target = FIT
     	type = annex_everything
@@ -370,31 +336,18 @@ focus = {
     	target = FRM
     	type = annex_everything
 	}
+		annex_country {
+		target = D01
+			transfer_troops = yes
+			}
 		}		
 			}
-	focus = {
-		id = FFR_the_great_expansion
-       	prerequisite = {	focus = FFR_French_union	}
-		icon = GFX_BRA_A_Deal_With_the_Free_France
-		x = 0
-		y = 12
-		cost = 1
-	completion_reward = {
-	annex_country {
-		target = GBE
-			transfer_troops = yes
-			}
-	annex_country {
-		target = YOR
-			transfer_troops = yes
-		}
-	}	
-}
+
 	focus = {
 		id = FFR_expand_union
        	prerequisite = {	focus = FFR_French_union	}
 		icon = GFX_BRA_A_Deal_With_the_Free_France
-		x = 2
+		x = 0
 		y = 12
 		cost = 1
 
@@ -425,9 +378,9 @@ focus = {
 		id = FFR_Great_Reform
         prerequisite ={ focus =  FFR_Napoleoning_time }
 		
-		icon = GFX_focus_focus_fra_third_empire
-		x = -8
-		y = 2
+		icon = GFX_focus_chi_army_reform
+		x = -9
+		y = 1
 		cost = 10
 
 		available = {
@@ -464,7 +417,7 @@ focus = {
 		id = FFR_parade_through_france
         prerequisite ={ focus =  FFR_Unite_Resistance }
 		
-		icon = GFX_focus_focus_fra_third_empire
+		icon = GFX_FFR_parade_through_france
 		x = 10
 		y = 6
 		cost = 1
@@ -491,6 +444,7 @@ focus = {
 
 		}
 		completion_reward = {
+		remove_ideas = FFR_the_reclamation
        annex_country {
 		target = FRV
 			transfer_troops = yes
@@ -503,17 +457,106 @@ focus = {
 		target = FRS
 		    transfer_troops = yes
 			}
-	news_event = {id = event france_reclamation.3 }
+			add_state_core = 790
+		    add_state_core = 30
+			add_state_core = 23
+			add_state_core = 25
+			add_state_core = 19
+			add_state_core = 1611
+			add_state_core = 31
+			add_state_core = 22
+			add_state_core = 1609
+			add_state_core = 21
+	news_event = {id = FFRnews.3 }
 			}
 			}
 
-			}
-		}	
-			
-			}
-=======
+
+	     focus = {
+		id = FFR_apply_to_ofn
+        prerequisite ={ focus =  FFR_Napoleoning_time }
+		
+		icon = GFX_OFN_handshake
+		x = -11
+		y = 1 
+		cost = 2
+
+		available = {
+
 		}
+		completion_reward = {
+        add_ideas = {OFN_Observer}
+			}
+	
+			}
+			
+		focus = {
+		id = ofn_volunteers
+        prerequisite ={ focus =  FFR_apply_to_ofn }
+		
+		icon = GFX_goal_TNO_generic_OFN_light
+		x = -11
+		y = 2 
+		cost = 2
+
+		available = {
+
+		}
+		completion_reward = {
+        add_manpower = 5000
+			}
+	
+			}	
+			
+		focus = {
+		id = FFR_Great_Emperor
+        prerequisite ={ focus =  FFR_Great_Reform }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = -9
+		y = 2
+		cost = 10
+
+		available = {
+
+		}
+		completion_reward = {
+        add_stability = .09
+		remove_ideas = FFR_native_rebellion
+		}
+			}	
+			
+	focus = {
+		id = FFR_deal_with_the_rest
+        prerequisite ={ focus =  FFR_expand_union }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 0
+		y = 13
+		cost = 10
+
+		available = {
+
+		}
+		completion_reward = {
+    	declare_war_on = {
+    	target = KNM
+		}
+    	type = annex_everything
+	    declare_war_on = {
+    	target = AYR
+    	type = annex_everything
 	}
-}
->>>>>>> c4ddc6c5612eef46f432a74b63b4d6f8d343fcaf
->>>>>>> Stashed changes
+		declare_war_on = {
+    	target = HAU
+    	type = annex_everything
+	}
+	}
+		}
+			}	
+	}
+
+			}
+			
+			
+			

@@ -1,16 +1,32 @@
 ﻿l_english:
- XIN_communist_party:0 "CPC Remnants"
- XIN_communist_party_long:0 "CPC Remnants"
- XIN_conservatism_party:0 "KMT Remnants"
- XIN_conservatism_party_long:0 "KMT Remnants"
+ XIN_communist_party:0 "CPC-D"
+ XIN_communist_party_long:0 "CCP-Dengists"
+ XIN_conservatism_party:0 "KMT-R"
+ XIN_conservatism_party_long:0 "KMT-Reformist"
+ XIN_paternalism_party:0 "KMT"
+ XIN_paternalism_party_long:0 "Koumintang"
  XIN_despotism_party:0 "Xinjiang Junfa"
  XIN_despotism_party_long:0 "Xinjiang Junfa"
- POLITICS_ZHANG_ZHIZHONG_DESC:0 "Born in Anhui Province in the year 1890, Zhang Zhizhong was one of many young Chinese men whose nation was lost to them in the chaos of the Warlord Age. Unlike many of his peers, however, the fighting of that time never truly ended. Zhang studied and graduated from the Baoding Military Academy, and was nearly immediately thrust into the very heart of the chaos of early twentieth century China. He served the Kuomintang's National Revolutionary Army with courage and valor, participating in the legendary Northern Expedition, before turning his gun from his countrymen against the invading Japanese menace during the Anti-Japanese War.\n\nThe Japanese advance was vicious, inexorable, but Zhang Zhizhong held firm in the province of Hunan, holding the line against fate itself for months. One solitary mistake, a single broken communication ruined it all in the end. Fearing the fall of Changsha, Zhang Zhizhong gave the order to burn the city's most valuable assets before the Japanese could secure it, and yet no such risk of capture existed, and the general had to not only deal with the embarrassment of this err, but so too did it cripple his ability to properly defend Hunan. Zhang Zhizhong, however, was not done fighting. He would take his war to the Northwest, and he would never surrender to the invader.\n\nXinjiang is an inhospitable place, even moreso for an outsider like Zhang. His army is not alone, and he finds himself in the uncomfortable position of needing to negotiate between the Kuomintang, the last remnants of the Communist Party, and the local minorities upon whom they depend. Zhang Zhizhong takes the days as they come though, one step at a time, and just hopes that the long road he walks brings him closer to the restoration of his nation."
- XIN_zhang_zhizhong:0 "Zhang Zhizhong"
- 
+
+
  #Post-GAW Cosmetic Tag
  XIN_power_vacuum: "Provisional Government of Xinjiang"
  POLITICS_XIN_POWER_VACUUM_DESC: "" #
  POLITICS_XIN_CHIANG_DESC: "yay"
  XIN_IJA_despotism_party: "Xinjiang Linshi Shengzhengfu"
  XIN_IJA_despotism_party_long: "Xinjiang Linshi Shengzhengfu"
+ 
+ XIN_Enduring: "The last remnant"
+ XIN_Enduring_desc: "Ever since the end of the war in 1949, we have been left alone in the westernmost parts of China due to supply issues. Although on map we "united" western China, most of it is in a disorderly state among our few generals of the NRA. If we ever hope to reclaim the homeland, we must unite the west here and now!"
+ XIN_Planning: "Re-organizing the West"
+ XIN_Planning_desc: "We will now begin to integrate the West"
+ XIN_fate_of_the_24th: "The everlasting fighters"
+ XIN_fate_of_the_24th_desc: "The fighters in Sichuan are ferocious fighters against the japanese oppressors, but they do not heed to the orders from Chiang. As such, they might get attacked by the lapdogs anytime. We must integrate them!"
+ XIN_Integrating_the_NRA_in_Qinghai: "Qinghai be dammed!"
+ XIN_Integrating_the_NRA_in_Qinghai_desc: "The remnants of the Ma are an intresting bunch. They are fighting eternally against Seihokuo Homengun to liberate the Ma and they have made considerable progress. But nontheless, Qinghai must be subjugated by Xinjiang"
+ XIN_consolidation: "Consolidating the West"
+ XIN_consolidation_desc: ""
+ XIN_power_struggles: "Power Struggles"
+ XIN_power_struggles_desc: ""
+ XIN_ally_Deng: "Ally Deng"
+ 

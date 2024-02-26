@@ -1,0 +1,95 @@
+characters = {
+
+	XIN_liu_wenhui = {
+		name = XIK_liu_wenhui
+		portraits = {
+			civilian = { large = "gfx/leaders/XIK/Portrait_Liu_Wenhui.dds" }
+			army = { large = "gfx/leaders/XIK/Portrait_Liu_Wenhui.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_LIU_WENHUI_DESC"
+			ideology = paternalism_military_mandate_subtype
+			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { old_guard politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	XIN_ma_jiyuan = {
+		name = QIN_ma_jiyuan
+		portraits = {
+			civilian = { large = "gfx/leaders/QIN/Portrait_Ma_Jiyuan.dds" }
+			army = { large = "gfx/leaders/QIN/Portrait_Ma_Jiyuan.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_MA_JIYUAN_DESC"
+			ideology = paternalism_military_mandate_subtype
+			traits = { }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = { cavalry_leader adaptable }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	XIN_long_yun = {
+		name = YUN_long_yun
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+				small = "GFX_idea_YUN_minister_Long_Yun"
+			}
+			army = {
+				large = "gfx/leaders/YUN/Portrait_Yunnan_Long_Yun.dds"
+				small = "GFX_idea_YUN_minister_Long_Yun"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_LONG_YUN_DESC"
+			ideology = despotism_military_junta_subtype
+			traits = { king_of_the_southwest }
+			expire = "1999.1.1.1"
+			id = -1
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = YUN_Long_Yun_hog_1
+			allowed = { original_tag = YUN }
+			traits = {
+				head_of_government
+				hog_old_general
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = YUN_long_yun_high_command
+			ledger = army
+			allowed = {
+				original_tag = YUN
+			}
+			traits = {
+				high_command
+			}
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+		}

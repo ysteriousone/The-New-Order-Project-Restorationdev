@@ -1,0 +1,398 @@
+focus_tree = {
+	id = tno-ROC
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = XIN
+		}
+	}
+
+	focus = {
+		id = XIN_Enduring
+		icon = GFX_YUN_For_The_Nation
+		x = 3
+		y = 0
+		cost = 5
+		
+		completion_reward = {
+		add_political_power = -10
+			add_stability = 0.001
+			}
+		}
+	
+		focus = {
+		id = XIN_Planning
+        prerequisite = { focus = XIN_Enduring}
+		icon = GFX_focus_chi_one_china_policy
+		x = 3
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+        
+			}
+
+			}
+			focus = {
+		id = XIN_Integrating_the_NRA_in_Qinghai
+        prerequisite =
+		{ focus = XIN_Planning}
+		icon = GFX_focus_chi_whampoa_military_academy
+		x = 4
+		y = 2
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+       	annex_country {
+		target = QIN
+			transfer_troops = yes
+			transfer_generals = yes
+			}
+       
+			}
+			}
+			
+		focus = {
+		id = XIN_fate_of_the_24th
+        prerequisite =
+		{ focus = XIN_Planning}
+		icon = GFX_focus_chi_whampoa_military_academy
+		x = 2
+		y = 2
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+       	annex_country {target = XIK transfer_troops = yes	}
+       
+			}
+			}
+			focus = {
+		id = XIN_consolidation
+        prerequisite =
+		{ focus = XIN_fate_of_the_24th}
+        prerequisite =
+		{ focus = XIN_Integrating_the_NRA_in_Qinghai}
+		icon = GFX_Against_The_Opposition
+		x = 3
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+        add_state_core = 604
+		add_state_core = 906
+		add_state_core = 905
+			}
+       
+			}
+			
+		focus = {
+		id = XIN_power_struggles
+        prerequisite =
+		{ focus = XIN_consolidation}
+		x = 3
+		y = 4
+		cost = 3
+        icon = GFX_focus_attack_china
+		available = {
+
+		}
+		completion_reward = {
+		
+			}
+       
+			}
+			
+	focus = {
+		id = XIN_ally_Deng
+        prerequisite =
+		{ focus = XIN_power_struggles}
+		mutually_exclusive = { focus = XIN_heed_to_the_reformists}
+		x = 5
+		y = 5
+		cost = 2
+        icon = GFX_focus_chi_united_front
+		available = {
+
+		}
+		completion_reward = {
+		set_politics = {
+		ruling_party = communist
+
+			}
+			}
+       
+			}
+			
+			
+		focus = {
+		id = XIN_heed_to_the_reformists
+        prerequisite =
+		{ focus = XIN_power_struggles}
+		mutually_exclusive = { focus = XIN_ally_Deng}
+		x = -1
+		y = 5
+		cost = 2
+        icon = GFX_ENG_Onwards_to_Democracy
+		available = {
+
+		}
+		completion_reward = {
+		add_popularity = {
+				ideology = conservatism
+				popularity = 0.10
+			}
+			}
+       
+			}
+
+
+		
+				
+		focus = {
+		id = XIN_power_to_the_workers
+        prerequisite =
+		{ focus = XIN_ally_Deng}
+		x = 5
+		y = 6
+		cost = 2
+
+		available = {
+
+		}
+		completion_reward = {
+	add_popularity = {
+				ideology = communist
+				popularity = 1
+			}
+        set_cosmetic_tag = XIN_Deng
+
+			}
+			}
+       
+	focus = {
+		id = XIN_Looking_outwards
+		icon = GFX_YUN_For_The_Nation
+		x = 10
+		y = 2
+		cost = 5
+		available = {
+		
+		controls_state = 905
+		controls_state = 906
+		controls_state = 604
+		
+		}
+		completion_reward = {
+		add_political_power = -10
+			add_stability = 0.001
+			}
+		}
+			
+	
+	focus = {
+		id = XIN_target_Tibet
+		icon = GFX_YUN_For_The_Nation
+		x = 10
+		y = 3
+		cost = 3
+	   prerequisite = {focus = XIN_Looking_outwards}
+		completion_reward = {
+		add_war_support = 0.01
+		add_state_claim = 964
+		add_state_claim = 601
+		add_state_claim = 322
+		add_state_claim = 324
+		add_state_claim = 1341
+		add_state_claim = 1963
+		add_state_claim = 1962 
+		add_state_claim = 765
+			}
+		}
+	
+	focus = {
+		id = XIN_seize_his_hollines
+		icon = GFX_YUN_For_The_Nation
+		x = 11
+		y = 4
+		cost = 3
+	   prerequisite = {focus = XIN_target_Tibet}
+		completion_reward = {
+        	declare_war_on = {
+    	target = TIB
+    	type = annex_everything
+	}
+			}
+		}
+	
+	focus = {
+		id = XIN_liberate_the_hui
+		icon = GFX_YUN_For_The_Nation
+		x = 9
+		y = 4
+		cost = 3
+	   prerequisite = {focus = XIN_target_Tibet}
+		completion_reward = {
+       add_state_core = 764
+	   add_state_core = 616
+	   add_state_core = 1302
+	   add_state_core = 283
+	   
+	   GAN =  {
+	   create_faction = Nipponrikugun-no-tōhō-ensei
+	   }
+	    declare_war_on = {
+    	target = GAN
+    	type = annex_everything
+	}
+	news_event = { id = WORLD.423 }
+	}
+			}
+		
+		focus = {
+		id = XIN_occupy_Tibet
+		icon = GFX_YUN_For_The_Nation
+		x = 10
+		y = 5
+		cost = 3
+		available = {
+		OR = {
+			NOT = { country_exists = TIB}
+			}
+		}
+	   prerequisite = {focus = XIN_liberate_the_hui}
+	   prerequisite = {focus = XIN_seize_his_hollines}
+		completion_reward = {
+		add_war_support = 0.01
+		add_state_core= 964
+		add_state_core= 601
+		add_state_core= 322
+		add_state_core= 324
+		add_state_core= 1341
+		add_state_core= 1963
+		add_state_core= 1962 
+		add_state_core = 765
+			}
+		}
+	
+	
+		focus = {
+		id = XIN_eyes_on_the_prize
+		icon = GFX_YUN_For_The_Nation
+		x = 10
+		y = 6
+		cost = 3
+	   prerequisite = {focus = XIN_occupy_Tibet}
+	   	available = {
+		OR = {
+			NOT = { country_exists = GAN}
+			}
+		}
+		completion_reward = {
+        
+			}
+		}
+	
+	
+	
+	
+		focus = {
+		id = XIN_an_offer_to_Delhi
+		icon = GFX_YUN_For_The_Nation
+		x = 12
+		y = 7
+		cost = 3
+	   prerequisite = {focus = XIN_eyes_on_the_prize}
+		completion_reward = {
+		create_faction = Pan-Asian-Allaince
+		add_to_faction = IND
+        
+			}
+		}
+	
+	
+		focus = {
+		id = XIN_the_fighting_vietnamese
+		icon = GFX_YUN_For_The_Nation
+		x = 12
+		y = 8
+		cost = 3
+	   prerequisite = {focus = XIN_an_offer_to_Delhi}
+		completion_reward = {
+		add_to_faction = VIC
+        
+			}
+		}
+	
+		focus = {
+		id = XIN_integrate_the_NPA
+		icon = GFX_YUN_For_The_Nation
+		       available = {
+			   YUN ={
+			has_government = ultranationalism
+			}
+		}
+		
+		x = 10
+		y = 7
+		cost = 3
+	   prerequisite = {focus = XIN_eyes_on_the_prize}
+		completion_reward = {
+        annex_country {target = YUN transfer_troops = yes	}
+			}
+		}
+	
+	
+		focus = {
+		id = XIN_the_final_strike
+		icon = GFX_YUN_For_The_Nation	
+		x = 10
+		y = 10
+		cost = 3
+	   prerequisite = {focus = XIN_integrate_the_NPA}
+	   prerequisite = {focus = XIN_the_fighting_vietnamese}
+		completion_reward = {
+     	    declare_war_on = {
+    	target = CHI
+    	type = annex_everything
+	}
+	
+    declare_war_on = {
+    	target = JAP
+    	type = annex_everything
+	}
+	news_event = {id = WORLD.2069}
+	
+			}
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
