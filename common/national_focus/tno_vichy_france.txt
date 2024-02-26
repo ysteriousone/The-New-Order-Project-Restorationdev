@@ -1,0 +1,35 @@
+﻿focus_tree = {
+	id = vichy_french_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRS
+		}
+	}
+	
+	default = no
+	focus = {
+		id = FRS_another_year
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 0
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		add_political_power = 10
+
+			}
+		}
+	}
+
+	
+
+}
