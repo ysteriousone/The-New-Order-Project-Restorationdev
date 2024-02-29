@@ -5006,7 +5006,7 @@ country_event = {
 
 country_event = {
 	id = komi_burgsys_purity.6
-	immediate = {log = "[GetDateText]: [Root.GetName]: event komi_burgsys_purity.5"}
+	immediate = {log = "[GetDateText]: [Root.GetName]: event komi_burgsys_purity.6"}
 	title = komi_burgsys_purity.6.t
 	desc = komi_burgsys_purity.6.d
 	picture = GFX_report_event_KOM_bombing_2

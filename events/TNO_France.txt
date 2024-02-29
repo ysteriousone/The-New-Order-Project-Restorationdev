@@ -92,7 +92,7 @@ country_event = { # The new Président of France
 	immediate = {log = "[GetDateText]: [Root.GetName]: event FRA_SKELETON.3"}
 	title = FRA_SKELETON.3.t
 	desc = FRA_SKELETON.3.desc
-	picture = GFX_report_event_FFR_de_gaulle_tv
+	picture = GFX_report_poujdae_victory
 
 	is_triggered_only = yes
 
