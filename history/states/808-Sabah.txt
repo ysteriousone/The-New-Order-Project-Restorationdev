@@ -5,8 +5,9 @@ state={
 		rubber=6.000
 	}
 	history={
-		owner = NRB
+		owner = INS
 		add_core_of = NRB
+		add_core_of = INS
 		victory_points = { 10212 5 }
 		victory_points = { 10199 20 }
 		victory_points = { 12228 5 }

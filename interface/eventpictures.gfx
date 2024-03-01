@@ -1,7 +1,7 @@
 # Report/Country Event Pics GFX
 # news events pics go in TNO_news_events.gfx
 
-## REORG INCOMPLETE ##
+
 
 #Index; Search for these names using CTRL+F and you'll find the section they entitle.
 #Subfolders of each section are ordered alphabetically
@@ -107,6 +107,10 @@ spriteTypes = {
 	###################
 	###   Generic   ###
 	###################
+		spriteType = {
+		name = "GFX_report_poujdae_victory"
+		texturefile = "gfx/event_pictures/Generic/report_event_poujdae_power.dds"
+	}
 	spriteType = {
 		name = "GFX_report_generic_violin"
 		texturefile = "gfx/event_pictures/Generic/report_generic_violin.dds"

@@ -4,12 +4,10 @@ state={
 	name="STATE_1154"
 
 	history={
-		owner = SLG
+		owner = FRS
 		add_core_of = FRS
 		add_core_of = ALG
-		add_core_of = SLG
-		#add_core_of = MOR
-		set_demilitarized_zone = yes
+
 		victory_points = { 14386 1 }
 		buildings = {
 			infrastructure = 1

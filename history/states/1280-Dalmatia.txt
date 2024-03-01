@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = CRO
+		owner = ITA
 		victory_points = { 6889 5 }
 		buildings = {
 			thermoelectric_plant = 1

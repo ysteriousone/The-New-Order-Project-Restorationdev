@@ -592,6 +592,10 @@ add_to_faction = NOR
 add_to_faction = DSG
 add_to_faction = GMS
 add_to_faction = CZE
+add_to_faction = FIN
+add_to_faction = HUN
+add_to_faction = ROM
+add_to_faction = BUL
 
 set_autonomy = { target = ANG autonomy_state = autonomy_autonomous_reichskommissariat }
 set_autonomy = { target = CAU autonomy_state = autonomy_autonomous_reichskommissariat }
@@ -612,6 +616,7 @@ set_autonomy = { target = ENG autonomy_state = autonomy_collaborator_puppet_stat
 set_autonomy = { target = CRN autonomy_state = autonomy_integrated_reichskommissariat }
 set_autonomy = { target = DSG autonomy_state = autonomy_integrated_reichskommissariat }
 set_autonomy = { target = GMS autonomy_state = autonomy_autonomous_reichskommissariat }
+set_autonomy = { target = CZE autonomy_state = autonomy_autonomous_reichskommissariat }
 NOR = { set_cosmetic_tag = NOR_GER }
 SER = { set_cosmetic_tag = SER_GER }
 COG = { set_cosmetic_tag = COG_GER }

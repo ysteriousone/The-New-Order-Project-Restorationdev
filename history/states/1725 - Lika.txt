@@ -3,7 +3,7 @@ state={
 	name="STATE_1725"
 
 	history={
-		owner = CRO
+		owner = ITA
 		add_core_of = CRO
 		buildings = {
 			schools = 1

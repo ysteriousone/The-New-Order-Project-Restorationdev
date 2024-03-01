@@ -10,6 +10,19 @@
  ## If not then I'm going to appear on your bedroom at 2AM brandishing an axe
 
  # A
+ 
+ PAV: "Pavlodar"
+ PAV_DEF: "Pavlodar"
+ PAV_ADJ: "Kazakh"
+ 
+ 
+ AKT: "Aktobe"
+ AKT_DEF: "Aktobe"
+ AKT_ADJ: "Kazakh"
+ 
+ ASF: "Australian Worker's Front"
+ ASF_DEF: "the Australian Worker's Front"
+ ASF_ADJ: "Australian"
 
  ADL: "Republic of Andalusia"
  ADL_DEF: "the Republic of Andalusia"
@@ -842,8 +855,8 @@
  SNS_DEF: "the Syrian National State"
  SNS_ADJ: "Syrian"
 
- SOR: "Soviet Remnants"
- SOR_DEF: "the Soviet Remnants"
+ SOR: "Chukota ASR"
+ SOR_DEF: "the Chukota Autonomous Soviet Republic"
  SOR_ADJ: "Russian"
 
  SPA: "Spanish State"
@@ -926,12 +939,12 @@
  TAJ_ultranationalism_DEF: "the Tajik Soviet Socialist Republic"
  TAJ_ADJ: "Tajik"
 
- TAN: "Tuva"
- TAN_DEF: "Tuva"
- TAN_ADJ: "Tuvan"
- TAN_socialist: "Altai-Tuva"
- TAN_socialist_DEF: "the Altai-Tuvan People's Republic"
- TAN_socialist_ADJ: "Altai-Tuvan"
+ TAN: "Mongolia"
+ TAN_DEF: "Mongolia"
+ TAN_ADJ: "Mongolian"
+ TAN_socialist: "Mongolian Peoples Republic"
+ TAN_socialist_DEF: "the Mongolian Peoples Republic"
+ TAN_socialist_ADJ: "Mongolian"
 
  TAR: "Tatar Republic"
  TAR_DEF: "the Tatarstan Respublikası"

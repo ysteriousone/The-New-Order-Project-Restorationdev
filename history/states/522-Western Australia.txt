@@ -4,7 +4,7 @@ state={
 	name="STATE_522" #Swan River
 
 	history={
-		owner = AST
+		owner = ASF
 		buildings = {
 			infrastructure = 5
 			radar_station = 2
@@ -27,7 +27,7 @@ state={
 		victory_points = {
 			8243 1 
 		}
-		add_core_of = AST
+		add_core_of = ASF
 
 	}
 

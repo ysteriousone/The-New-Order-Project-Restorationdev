@@ -8,11 +8,10 @@ state={
 	}
 
 	history={
-		owner = SLG
+		owner = FRS
 		add_core_of = FRS
 		add_core_of = ALG
-		add_core_of = SLG
-		set_demilitarized_zone = yes
+		set_demilitarized_zone = no
 		buildings = {
 			infrastructure = 4
 		}

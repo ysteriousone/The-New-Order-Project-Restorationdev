@@ -436,7 +436,7 @@ set_popularities = {
 	national_socialism = 0
 }
 create_country_leader = {
-	name = "Napoleon VI"
+	name = "Louis Napoleon Bonaparte"
 	desc = "POLITICS_NAPOLEON_DESC"
 	picture = Portrait_Free_France_Louis_Napoleon.dds
 	expire = "1965.1.1"
@@ -446,6 +446,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Napoleon VI"
+	desc = "POLITICS_NAPOLEON_DESC_2"
+	picture = Napoleon_Liberation.dds
+	expire = "1965.1.1"
+	ideology = conservatism_paternalistic_conservatism_subtype
+	traits = {
+		#
+	}
+}
 add_ideas = {
 	WEST_AFRICA_idea_terror_bombing
 	FFR_military_administration

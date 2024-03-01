@@ -1,4 +1,4 @@
-# CURRENT TAG COUNT: 516 (Master)
+# CURRENT TAG COUNT: 517 (Master)
 #
 # Index - Tag organized into extremely relative geographic regions/political groups
 #	Europe
@@ -671,5 +671,6 @@ ZOM = "countries/West Europe.txt"				# Zombies - 2020 Halloween Event
 PKT = "countries/West Europe.txt"				# Zollverein - Sphere Tag
 OFN = "countries/West Europe.txt"				# OFN - Unused?
 ADN = "countries/West Europe.txt"				# Andean Pact - Sphere Tag
-CME = "countries/West Europe.txt"				# COMECON - Sphere Tag
+CME = "countries/West Europe.txt"               # COMECON - Sphere Tag
+ASF = "countries/Australianworkersfront.txt"				                            # Australian Workers Front
 ZZZ = "countries/West Europe.txt"				# Anarchy - SHOULD BE LAST TAG ALWAYS

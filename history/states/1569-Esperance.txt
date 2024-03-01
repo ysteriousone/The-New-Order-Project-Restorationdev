@@ -3,8 +3,8 @@ state={
 	name="STATE_1569"
 
 	history = {
-		owner = AST
-		add_core_of = AST
+		owner = ASF
+		add_core_of = ASF
 		buildings = {
 			infrastructure = 2
 			radar_station = 2

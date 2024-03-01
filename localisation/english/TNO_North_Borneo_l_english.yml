@@ -1,8 +1,8 @@
 ﻿l_english:
  #Country Names
- NRB_despotism:0 "Nanpo Gunseikan"
- NRB_despotism_DEF:0 "Nanpo Gunseikan"
- NRB_despotism_ADJ:0 "North Bornean"
+ NRB_despotism:0 "Burunei to ōsutoraria"
+ NRB_despotism_DEF:0 "The Japanese Protectorate of Brunei and Australia"
+ NRB_despotism_ADJ:0 "Japanese"
  #Parties
  NRB_despotism_party:0 "37th Army Headquarters" # Changed to english for consistency with the Philippines and Malaysia
  NRB_despotism_party_long:0 "37th Army's Headquarters in North Borneo"

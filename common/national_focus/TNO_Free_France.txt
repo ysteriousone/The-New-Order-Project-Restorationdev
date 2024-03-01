@@ -283,21 +283,18 @@ focus_tree = {
 
 		}
 		completion_reward = {
-BRT = {
-    start_civil_war = {
-    ruling_party = fascism
-    ideology = despotism
-    size = 1
-    capital = 282
-    states = { 
- 
-    }
+	annex_country {
+		target = BRT
+			transfer_troops = yes
+			}
+
+			}
 
 }
-			}
+			
 
-			}
-		}
+			
+		
 focus = {
 		id = FFR_Return
         prerequisite =
@@ -312,7 +309,12 @@ focus = {
         
 		}
 		completion_reward = {
-		add_ideas ={ FFR_the_reclamation}
+		add_state_core = 13
+		add_state_core = 33
+		add_state_core = 1613
+		add_state_core = 1612
+		add_state_core = 789
+	
 	
 			news_event = { id = FFRnews.6 }
 			
@@ -336,10 +338,7 @@ focus = {
     	target = FRM
     	type = annex_everything
 	}
-		annex_country {
-		target = D01
-			transfer_troops = yes
-			}
+
 		}		
 			}
 
@@ -356,6 +355,14 @@ focus = {
 		controls_state =  793
 		}
 		completion_reward = {
+			annex_country {
+		target = EWE
+			transfer_troops = yes
+			}
+	annex_country {
+		target = CAO
+			transfer_troops = yes
+			}
         add_state_core = 793
 		add_state_core = 1187
 		add_state_core = 1196
@@ -364,14 +371,7 @@ focus = {
 		add_state_core = 1189
 		add_state_core = 1198
 		
-	annex_country {
-		target = EWE
-			transfer_troops = yes
-			}
-	annex_country {
-		target = CAO
-			transfer_troops = yes
-			}
+
 		}
 	}
 	focus = {
@@ -444,7 +444,7 @@ focus = {
 
 		}
 		completion_reward = {
-		remove_ideas = FFR_the_reclamation
+		
        annex_country {
 		target = FRV
 			transfer_troops = yes
@@ -527,36 +527,31 @@ focus = {
 			}	
 			
 	focus = {
-		id = FFR_deal_with_the_rest
-        prerequisite ={ focus =  FFR_expand_union }
+		id = FFR_eternal_restoration
+        available = {
+		controls_state = 21
+		}
 		
 		icon = GFX_focus_fra_le_deluge
-		x = 0
-		y = 13
+		x = 11
+		y = 10
 		cost = 10
 
 		available = {
 
 		}
 		completion_reward = {
-    	declare_war_on = {
-    	target = KNM
+        add_stability = .09
+		add_political_power = 100
+		set_politics = {
+		ruling_party = conservatism
 		}
-    	type = annex_everything
-	    declare_war_on = {
-    	target = AYR
-    	type = annex_everything
-	}
-		declare_war_on = {
-    	target = HAU
-    	type = annex_everything
-	}
-	}
 		}
-			}	
-	}
-
 			}
+			
+
+			}	
+
 			
 			
 			

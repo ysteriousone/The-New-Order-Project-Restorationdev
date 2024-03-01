@@ -287,7 +287,7 @@ focus_tree = {
 		add_state_core = 153
 		add_state_core = 68
 		add_state_core = 72
-		news_event = { id = WORLD.1848 }
+		news_event = { id = WORLD_REICH.212 }
 		create_faction = Europakt
 		
 	   }

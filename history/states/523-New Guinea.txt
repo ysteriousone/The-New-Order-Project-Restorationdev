@@ -4,7 +4,8 @@ state={
 	name="STATE_523"
 
 	history={
-		owner = JAP
+		owner = INS
+		add_core_of = INS
 		buildings = {
 			prisons = 1
 			infrastructure = 2

@@ -1,0 +1,56 @@
+﻿focus_tree = {
+	id = Alexei_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TMG
+		}
+	}
+	
+	default = no
+	focus = {
+		id = TMG_God_Save_The_Tsar
+		icon = GFX_focus_SOV_zemsky_sobor
+		x = 0
+		y = 0
+       cost = 1
+		completion_reward = {
+		add_political_power = 10
+		news_event = {id = WORLD.1920}
+
+			}
+		}
+	focus = {
+		id = TMG_fixing_the_lands
+		 prerequisite ={ focus =  TMG_God_Save_The_Tsar }
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+         remove_ideas = {RUS_sytyvkar_arsenal}
+		}
+		}
+	focus = {
+		id = TMG_purge_the_madmans_cabinet
+		 prerequisite ={ focus =  TMG_God_Save_The_Tsar }
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 1
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+        add_stability = 0.10
+		}
+		}		
+		
+	}

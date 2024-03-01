@@ -258,7 +258,7 @@ focus_tree = {
     	target = GAN
     	type = annex_everything
 	}
-	news_event = { id = WORLD.423 }
+	news_event = { id = WORLD.243 }
 	}
 			}
 		

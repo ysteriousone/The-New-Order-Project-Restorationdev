@@ -1,4 +1,4 @@
-load_focus_tree = ZZZ_national_focus #If you touch this the bookmark gets fucked
+
 capital = 786
 
 oob = "FRA_1962"

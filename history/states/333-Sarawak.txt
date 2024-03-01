@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = NRB
+		owner = INS
 		victory_points = { 1208 25 }
 		victory_points = { 10285 5 }
 		victory_points = { 12283 5 }
@@ -21,6 +21,7 @@ state={
 			}
 		}
 		add_core_of = NRB
+		add_core_of = INS
 	}
 
 	provinces={

@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = GRE
+		owner = TUR
 		victory_points = { 7193 1 }
 		buildings = {
 			thermoelectric_plant = 1

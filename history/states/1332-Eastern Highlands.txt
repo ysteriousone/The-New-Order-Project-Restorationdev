@@ -6,7 +6,8 @@ state={
 	impassable = yes
 
 	history = {
-		owner = JAP
+		owner = INS
+		set_core_of = INS
 	}
 
 	provinces={

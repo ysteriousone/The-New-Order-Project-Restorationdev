@@ -4,11 +4,9 @@ state={
 	name="STATE_1145"
 
 	history={
-		owner = ILG
+		owner = FRS
 		add_core_of = FRS
-		add_core_of = ILG
 		add_core_of = ALG
-		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 1
 			radar_station = 1

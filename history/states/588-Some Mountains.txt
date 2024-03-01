@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = KAZ
+		owner = PAV
 		buildings = {
 			infrastructure = 2
 			schools = 1
@@ -19,7 +19,7 @@ state={
 			thermoelectric_plant = 2
 		}
 		victory_points = { 7708 5 }
-		add_core_of = KAZ
+		add_core_of = PAV
 	}
 	
 	provinces={

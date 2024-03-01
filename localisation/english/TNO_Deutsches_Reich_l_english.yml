@@ -52,6 +52,9 @@
  FHH_Red_Menace: "Memories of 1918"
  FHH_Red_Menace_desc: "An old enemy of German democracy, the KPD has been rebuilt! Their old leader, Ernst Thalman has also returned to Germany to cause chaos to our new republic. He has set up forces in the north. If we dont deal with him, democracy will be at stake!"
  FHH_Hang_The_Madman: "Hang the Madman!"
+ FHH_Hang_The_Madman_desc: "We have captured Heydrich's goons! We will now trial and execute each of these traitors for their betrayal to the Volk and the fatherland! UBER ALLES!"
+ FHH_Reformist_Coup: "A coup by the Gang of 4"
+ FHH_Reformist_Coup: "we have contacted Shmidt and his band to coup Speer and take over his clique. This helps us to get more support from the german people in our crusade!"
  ## Events ##
  FHH.1.t: " Arms against Tyranny "
  FHH.1.a: " Blessed are the meek. "

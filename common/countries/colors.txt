@@ -2285,6 +2285,11 @@ D15 = {
 
 ### Misc ###
 
+ASF = {
+	color = rgb { 109 32 32 }
+	color_ui = rgb { 109 32 32 }
+}
+
 SAA = {
 	color = rgb { 60 60 60 }
 	color_ui = rgb { 60 60 60 }

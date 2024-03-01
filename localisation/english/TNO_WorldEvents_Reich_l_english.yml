@@ -192,12 +192,9 @@
  WORLD_REICH.211.a: "Will the thousand year Reich finally crumble under the weight of oil?"
  WORLD_REICH.211.b: "Nicht schon wieder!"
 
- WORLD_REICH.212.t: "[Get_newspaper_header]Slave Revolt in the Reich"
- WORLD_REICH.212.desc: "There are many things that the Reich is infamous for internationally, none as egregious as its heavy use of slave labor in its projects, sowing resentment across Europe. However, with Führer Speer's method of steady reform, it seemed that unrest among the slave class had been quelled. This has been spectacularly proven false.\n\nAcross the Reich's eastern holdings, slaves have taken up arms against their German masters, carving a gash across the continent. While Speer's government scrambles to put together a response, Feldmarschall Schörner has seized control of the Reich's Russian territory, promising a crushing response to the revolt if Germany is unable to control the situation. Though an uneasy peace still holds between all three parties, the world watches with bated breath if Germany will finally drop the shackles of slavery altogether."
- WORLD_REICH.212.a: "This is a disaster!"
- WORLD_REICH.212.b: "Rise, all slaves, for your freedom is here!"
- WORLD_REICH.212.c: "No more concessions!"
- WORLD_REICH.212.d: "The time for choosing is at hand."
+ WORLD_REICH.212.t: "[Get_newspaper_header]Speidel Victorious"
+ WORLD_REICH.212.desc: "Very suprising news came from Central Europe that general Hans Speidel's German Reich has defeated all Nazi opposition and had finally established a provisional government to bring Germany and Europe in a new dawn. A dawn without Nazism. International reception was highly positive except for Japan who now stands as one of the last Fascist nations in the world. Speidel has proclaimed his wish to move on from the sins of the past and lead a brave new world against Nazism and Fascism alike.\n\American response has seen to be extremely positive and already talks with possible OFN membership is being discussed. As for Speidel himself, he announced a year of temporary rule until furthur stability returns to Germany."
+ WORLD_REICH.212.a: "A new era for the German people."
  
  WORLD_REICH.213.t: "[Get_newspaper_header]Wehrmacht Mutiny Crushed"
  WORLD_REICH.213.desc: "Feldmarschall Ferdinand Schörner's Wehrmacht mutiny in the former Reichskommissariat Moskowien has been soundly defeated according to both independent and Reich-based sources. Originally exiled to the Russian territory to protect the vast Wehrmacht reform project led by Feldmarschalls Henning von Tresckow and Hans Speidel in Germany proper, Schörner undermined local authority under General Alexis von Roenne only to stage a coup when the Slave Revolt broke out.\n\nWith Moskowien in ruins and the slaves still controlling swathes of Eastern Europe, the rogue Feldmarschall's fate is all but assured to be an unceremonious death. As long as the slaves are still in revolt, however, there is no saying when stability will fully return to Europe."

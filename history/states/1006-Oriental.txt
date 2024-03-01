@@ -5,8 +5,7 @@ state={
 		3991 4116 
 	}
 	history={
-		owner = SLG
-		add_core_of = SLG
+		owner = FRS
 		add_core_of = FRS
 		#add_core_of = MOR
 		add_core_of = ALG

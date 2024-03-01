@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = AST
+		owner = NRB
 		buildings = {
 			infrastructure = 3
 			air_base = 4
