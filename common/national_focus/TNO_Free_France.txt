@@ -45,7 +45,7 @@ focus_tree = {
 
 		}
 		completion_reward = {
-			
+			country_event = {id = free_france.4}
 
 			}
 		}
@@ -342,38 +342,7 @@ focus = {
 		}		
 			}
 
-	focus = {
-		id = FFR_expand_union
-       	prerequisite = {	focus = FFR_French_union	}
-		icon = GFX_BRA_A_Deal_With_the_Free_France
-		x = 0
-		y = 12
-		cost = 1
 
-		available = {
-         controls_state = 1187
-		controls_state =  793
-		}
-		completion_reward = {
-			annex_country {
-		target = EWE
-			transfer_troops = yes
-			}
-	annex_country {
-		target = CAO
-			transfer_troops = yes
-			}
-        add_state_core = 793
-		add_state_core = 1187
-		add_state_core = 1196
-		add_state_core = 1197
-		add_state_core = 826
-		add_state_core = 1189
-		add_state_core = 1198
-		
-
-		}
-	}
 	focus = {
 		id = FFR_Great_Reform
         prerequisite ={ focus =  FFR_Napoleoning_time }
@@ -423,24 +392,17 @@ focus = {
 		cost = 1
 
 		available = {
-			OR = {
 			NOT = { country_exists = FRS }
-			}
-			OR = {
+			
 			NOT = { country_exists = FRM }
-			}
 			
-			OR = {
 			NOT = { country_exists = FRV }
-			}
 			
-			OR = {
+			
 			NOT = { country_exists = FIT }
-			}
-
-			OR = {
+			
 			NOT = { country_exists = FGR}
-			}
+			
 
 		}
 		completion_reward = {
@@ -535,7 +497,7 @@ focus = {
 		icon = GFX_focus_fra_le_deluge
 		x = 11
 		y = 10
-		cost = 10
+		cost = 1
 
 		available = {
 
@@ -548,7 +510,44 @@ focus = {
 		}
 		}
 			}
+		focus = {
+		id = FFR_on_the_streets_of_france
+        prerequisite ={ focus =  FFR_eternal_restoration }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 9
+		y = 11
+		cost = 2
+
+		available = {
+
+		}
+		completion_reward = {
+        add_stability = -.09
+		add_ideas = {FFR_communist_partisans}
+		}
+			}
 			
+		focus = {
+		id = FFR_French_Sahara?
+        prerequisite ={ focus =  FFR_eternal_restoration }
+		
+		icon = GFX_focus_fra_le_deluge
+		x = 12
+		y = 11
+		cost = 2
+
+		available = {
+
+		}
+		completion_reward = {
+        add_stability = .09
+		set_autonomy = { target = CAO autonomy_state = autonomy_military_government }
+		white_peace = CAO
+		CAO = {
+		set_cosmetic_tag = CAO_FFR
+		}
+			}
 
 			}	
 

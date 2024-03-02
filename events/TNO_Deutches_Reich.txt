@@ -18,7 +18,7 @@ country_event = {
 
 country_event = {  
 	id = FHH.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.1" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.2" }
 	title = FHH.2.t
 	desc = FHH.2.d
 	
@@ -31,4 +31,152 @@ country_event = {
 		name = FHH.2.a
 		}
 	}
+	country_event = {  
+	id = FHH.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.3" }
+	title = FHH.3.t
+	desc = FHH.3.d
+	
+	picture = GFX_report_event_GER_communists_riot
+	
+	
+	is_triggered_only = yes
 
+	option = {
+		name = FHH.3.a
+		}
+	}
+	
+	country_event = {  
+	id = FHH.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.4" }
+	title = FHH.4.t
+	desc = FHH.4.d
+	
+	picture = GFX_report_event_GER_communists_riot
+	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = FHH.4.a
+		BRG = {
+		transfer_state = 28
+		transfer_state = 1812
+		transfer_state = 8
+		}
+		DSH = {
+		transfer_state = 72
+		transfer_state = 50
+		transfer_state = 68
+		add_state_core = 72
+		add_state_core = 50
+		add_state_core = 68
+		}
+		ITA = {
+		transfer_state = 98
+		transfer_state = 770
+		add_state_core = 98
+		add_state_core = 770
+		}
+		POL = {
+		transfer_state = 87
+		transfer_state = 85
+		transfer_state = 5
+		transfer_state = 97
+		add_state_core = 87
+		add_state_core = 85
+		add_state_core = 5
+		add_state_core = 97
+		add_state_core = 87	
+	}
+	CZE = {
+	transfer_state = 69
+	add_state_core = 69
+	}
+	DEN = {
+	transfer_state = 774
+	}
+	DSG = {
+	transfer_state = 775
+	add_state_core = 775
+	transfer_state = 58
+	add_state_core = 58
+	add_ideas ={ DSG_tiring_stance}
+	}
+	SRT = {
+	transfer_state = 63
+	transfer_state = 61
+	add_state_core = 63
+	add_state_core = 61
+}
+    PRK = {
+	transfer_state = 153
+	transfer_state = 86
+	add_state_core = 153
+	add_state_core = 86
+	}
+	ISS = {
+	transfer_state = 67
+	add_state_core = 67
+	}
+	DFK = {
+	transfer_state = 52
+	add_state_core = 52
+	}
+	AUS = {
+	transfer_state = 1025
+	add_state_core = 1025
+	}
+	FSP = {
+	transfer_state = 66
+	add_state_core = 66
+	}
+	AUD = {
+	transfer_state = 4
+	add_state_core = 4
+	}
+	FPG = {
+	transfer_state = 1814
+	add_state_core = 1814
+	}
+	GO4 = {
+	transfer_state = 56
+	add_state_core = 56
+	transfer_state = 1373
+	add_state_core = 1373
+	}
+	}
+	}
+	country_event = {  
+	id = FHH.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.5" }
+	title = FHH.5.t
+	desc = FHH.5.d
+	
+	picture = GFX_report_event_GER_communists_riot
+	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = FHH.5.a
+		KSS = {
+		transfer_state = 776
+		}
+	}
+	option = {
+		name = FHH.5.b
+		SNP = {
+		transfer_state = 776
+		}
+	}
+	option = {
+	name = FHH.5.c
+    776 = {
+	set_demilitarized_zone = yes
+	}
+		}
+	}
+	
+	

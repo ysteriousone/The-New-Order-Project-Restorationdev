@@ -53,6 +53,14 @@ GER = {
 	color = rgb { 60 60 60 }
 	color_ui = rgb { 60 60 60 }
 }
+GO4 = {
+	color = rgb { 45 45 45 }
+	color_ui = rgb { 45 45 45}
+}
+AUD = {
+	color = rgb { 60 60 60 }
+	color_ui = rgb { 60 60 60 }
+}
 SGR = {
 	color = rgb { 141 128 115 }
 	color_ui = rgb { 141 128 115 }

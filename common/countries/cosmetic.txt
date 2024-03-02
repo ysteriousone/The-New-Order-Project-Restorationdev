@@ -2191,6 +2191,11 @@ FRA_FFR = {
 	color_ui = rgb { 105 114 228 }
 }
 
+CAO_FFR = {
+	color = rgb { 105 114 228 }
+	color_ui = rgb { 105 114 228 }
+}
+
 CME_PACIFICA = {
 	color = rgb { 175 170 171 }
 	color_ui = rgb { 175 170 171 }

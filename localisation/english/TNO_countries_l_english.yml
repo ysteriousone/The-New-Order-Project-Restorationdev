@@ -15,6 +15,13 @@
  PAV_DEF: "Pavlodar"
  PAV_ADJ: "Kazakh"
  
+ AUD: "Österreichischer Flügel des deutschen Widerstands"
+ AUD_DEF: "The Austrian wing of the German resistance"
+ AUD_ADJ: "German
+ 
+ GO4: "Provisional Government of the German Republic"
+ GO4_DEF: "The Provisional Government of the German Republic"
+ GO4_ADJ: "German
  
  AKT: "Aktobe"
  AKT_DEF: "Aktobe"
@@ -433,9 +440,9 @@
  GOR_despotism_DEF: "the Military Control Commission in Gorky"
  GOR_ADJ: "Gorky"
 
- GRN: "Greenland"
- GRN_DEF: "Greenland"
- GRN_ADJ: "Greenlandic"
+ GRN: "Danish Government in Exile"
+ GRN_DEF: "The Kingdom of Danemark"
+ GRN_ADJ: "Danish"
 
  GTL: "Gotland"
  GTL_DEF: "Gotland"
@@ -885,9 +892,9 @@
  SRN_DEF: "the Ravna Gora Movement"
  SRN_ADJ: "Serbian"
 
- SRT: "Armeeverband "Freies Europa""
- SRT_DEF: "Armeeverband "Freies Europa""
- SRT_ADJ: "Armeeverband "Freies Europa""
+ SRT: "Deutches Volksrepublik"
+ SRT_DEF: "The German Peoples Republic"
+ SRT_ADJ: "Free German"
 
  SSF: "SS-Kampfgruppe Fegelein"
  SSF_DEF: "SS-Kampfgruppe Fegelein"

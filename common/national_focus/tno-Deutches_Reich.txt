@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_GER_das_schwert_des_damokles
 		x = 3
 		y = 0
-		cost = 5
+		cost = 1
 		completion_reward = {
 			add_manpower = 100
 			add_state_core = 64
@@ -38,10 +38,6 @@ focus_tree = {
 				}
 				SGR = {
 				add_stability = -1
-				set_politics = {
-	            ruling_party = liberalism
-				}
-		
 			}
 		}
 		}
@@ -157,7 +153,7 @@ focus_tree = {
 		y = 3
 		cost = 2
 		completion_reward = {
-		
+		country_event = {id = FHH.3}
 	
 			}
 		
@@ -221,15 +217,16 @@ focus_tree = {
 		icon = "GFX_GER_Speidel"
 		prerequisite = {  }
 		        available = {
-			OR = {
+				date > 1964.2.3
+			AND = {
 			NOT = { country_exists = BGR}
 			}
 			
-			OR = {
+			AND = {
 			NOT = { country_exists = GGR}
 			}
 			
-			OR = {
+			AND = {
 			NOT = { country_exists = SGR}
 			}
 			
@@ -529,7 +526,38 @@ focus_tree = {
 	}
 		
 	}
-	
+		focus = {
+		id = FHH_incoming_reports
+		icon = GFX_BRY_Red_Terror_Marches
+		x = 20
+		y = 1
+		cost = 1
+		available = {
+		date > 1964.2.5
+			OR =  { country_exists = BGR}
+			
+			OR = { country_exists = GGR}
+			
+			OR =  { country_exists = SGR}
+		}
+		completion_reward = {
+		country_event = {id = FHH.4}
+
+	}
+		
+	}
+		focus = {
+		id = FFR_Keeping_the_calm
+		icon = GFX_BRY_Red_Terror_Marches
+		prerequisite = { focus = FHH_incoming_reports}
+		x = 20
+		y = 2
+		cost = 1
+		completion_reward = {
+        country_event = {id = FHH.5}
+	}
+		
+	}
 	
 			}
 	

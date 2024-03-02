@@ -54,7 +54,9 @@
  FHH_Hang_The_Madman: "Hang the Madman!"
  FHH_Hang_The_Madman_desc: "We have captured Heydrich's goons! We will now trial and execute each of these traitors for their betrayal to the Volk and the fatherland! UBER ALLES!"
  FHH_Reformist_Coup: "A coup by the Gang of 4"
- FHH_Reformist_Coup: "we have contacted Shmidt and his band to coup Speer and take over his clique. This helps us to get more support from the german people in our crusade!"
+ FHH_Reformist_Coup_desc: "we have contacted Shmidt and his band to coup Speer and take over his clique. This helps us to get more support from the german people in our crusade!"
+ FHH_approach_albert: "Approach the brother"
+ FHH_approach_albert_desc: "Albert Goering is the best man we have in Goering's clique. He's a reformer like us and he also hates the nazi regime. Perhaps, we can bring him to our side..."
  ## Events ##
  FHH.1.t: " Arms against Tyranny "
  FHH.1.a: " Blessed are the meek. "
@@ -62,7 +64,17 @@
  FHH.2.t: "Return of Spartakus"
  FHH.2.a: "Hörst du die Leute singen?"
  FHH.2.d:0 "Willy Brandt, a man known to many as "Spartakus Reborn". Brandt is known for his lenient socialism and SPD leadership. He was to be Germany's most famous man. The Reichsbanner Schwarz-Rot-Gold (An organization led by Brandt) had stopped fighting the Nazis after Speidel's proclamation. Willy made his way to the newly reconstructed Reichstag to hold a speech for his campaign. His oponents are his friends, the two Gang of Four members, Tresckow and Shmidt. The three friends decided to sit down for some afternoon tea. "So, how was Sweden?", Tresckow asked. "Yes, we want to hear your experience.", Shmidt said excitedly. "Fine. Fine. It was a boring experience but I still had some activities as the head of the Reichsbanner of course. However, I find more warmth in my german fatherland.", Brandt replied back. "That's nice, but will this election destroy our friendship?", Shmidt questioned. "Nonsense! We are simply competing against each. Obviously we HAVE to stay united because the Nazis are back and with Thalman up in Northern Germany, people are questioning if Speidel can handle this.", Tresckow said. "What about you, Henning? Can YOU handle it?" Brandt asked. Tresckow stayed silent. "Well I ought to go, it has been a fun time with you two but now, politics calls.", Brandt said leaving. Shmidt and Tresckow were happy to meet Brandt again after so long. It seems even in these trying times, friendship never dies. But one thing is for sure, the SPD has a hell of a headstart..."
- 
+ FHH.3.t: "Trial of the Architect"
+ FHH.3.a: "And so ends the dreams of Speer"
+ FHH.3.d:0 "Speer was hurridly carried over to the Reich trials. Even in his old age, he wasnt given too much care./n/"Reichsarkitekt Speer, you are being trials for warcrimes against the German people and the Eastern Slavs, your punishment is... DEATH!" Speidel concluded when meeting Speer."No,no no! I didnt do anything! I just wanted to focus on architecture for the Reich! This is false judgement!", Speer replied. "Oh please, spare me the talk. You are yourself the inventor of the holocaust and responsible for the hard work forced by the slaves in Germania! Take him away!", Speer replied with anger.\n\Speidel was hastily taken away from the court, never to be seen again"
+ FHH.4.t: "The collapse of Germany"
+ FHH.4.a: "Wer sind verloren..."
+ FHH.4.d:0 ""We have failed to liberate Germany and her people for the volk has become tired of the endless war. Thousands of men and women leave the ranks of both 5 contenders for the civil war. Speidel announced the war will go on until Germany is united. But who shall listen? Even his generals have created their own cliques. Who can we trust after this?"
+ FHH.5.t: "The Battle of Brandenburg"
+ FHH.5.d:0 "It was this day when Speidel's eternal regency may end. Three sides battle it out.n/nThe SS, The Operationzone Sanktpetersburg remants lead by Dietrich Von Sauken and Speidel himself. WHo will win?"
+ FHH.5.a: "The SS overpowers everyone!"
+ FHH.5.b: "Von Sauken succeeds!"
+ FHH.5.c: "Speidel keeps control over Brandenburg!"
  
 
  

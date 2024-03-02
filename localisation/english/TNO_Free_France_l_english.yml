@@ -32,6 +32,9 @@
   FFR_military_administration: "Military Administration"
   FFR_military_administration_desc: "Our current situation has forced Charles de Gaulle to put under military control most of our territory. The generals are free to befriend the local chiefs and leaders, giving them access to their personal troops. While it is an efficient method, this prevents us from knowing what is happening in the rest of the nation, and is leaving a lot of power in the hands of our generals."
   
+  FFR_communist_partisans: "communist partisans"
+  FFR_communist_partisans_desc: "Although all frenchmen are happy for our return to France, there are some that fight with the Imperial troops. They are the communist partisans roaming the Mainland. Currently, they arent that strong but they might coup our current administration.."
+  
   FFR_military_administration_2: "Military Administration"
   FFR_military_administration_2_desc: "War has come to Free France.\n\nOur borders have come under siege, our soldiers march, and our state begins to mobilize against our enemies. The generals and officers of the military administration have prioritized the management and mitigation of the internal matters of the state, matters which will ensure the territory in our possession is effectively maintained and controlled."
   
@@ -200,8 +203,16 @@
   FFR_Great_Emperor_desc: "Napoleon will be the greatest emperor of France. No one shall match him! As a show of his kindness, the emperor has decided to give the natives significant autonomy!"
   FFR_parade_through_france: "Parade Through France"
   FFR_parade_through_france_desc: "We have done it! France has been reclaimed! Now, we will keep it liberated and march on to Paris once more! France? La France indignée, la France brisée, la France martyrisée... Mais la France, libérée !"
+  FFR_eternal_restoration: "La restauration éternelle"
+  FFR_eternal_restoration_desc: "It has been done, France has been reconquered and our humiliation has been forgotten. Now we march on the streets of Bourdeaux as the liberators of France. Now we shall set our sights to securing our future as the Empire and going outwards."
+  FFR_Return: "The Reclamation wars"
+  FFR_Return_desc: "It's time to finally start the great fight to liberate France. We must liberate the Mainland ONCE and FOR ALL!"
   ## Events ##
+  
   #Reconstruction events
+  free_france.4.t: "The election"
+  free_france.4.d: "As the elections of Free France begins, De Gaulle looks over the election boxes and sees most africans flocking to Napoleon, even some frenchmen. It seems Charle's popularity is at an alltime low. Just then, Leclerc came to his room.n\n"Charles, it seems Napoleon is going to win, we cant let our grip on the Republic collapse! We must somehow get the africans in our si-" Just then, De Gaulle stopped him.n\n"I dont want to be the leader anymore. Im tired, Phillpe. Im TIRED. I HAVE WAITED SO MANY YEARS FOR A CHANCE OF LIBERATION. AND WHAT? THE AMERICANS HAVE FORGOTTEN US, EVERYONE HAS FORGOTTEN US. I CANT KEEP DOING IT ANYMORE. *sigh* Just... Let Napoleon win this time"
+  free_france.4.a: ""A choice must be made.""
   free_france_reconstruction.3.t: "The State of West Africa"
   free_france_reconstruction.3.d: "It is done. The West African War is over. Across the new nations founded in the wake of PALF's collapse, hundreds of thousands have been displaced and entire towns erased from the maps. Orphans roam the land, searching for parents that would never come home. America stares at her triumph. There will be no true victory until liberty spread its wings over the nations it has won.\n\nThe nations of West Africa and exiles of France cry for our help. They argue that only America's involvement in the reconstruction can save West Africa for itself. For our part, corporations like Firestone and DuPont are chomping at the bit to exploit the resources in the region. President [USA.GetLeader] has approved the initial aid packages and projects, and it is up to us to ensure that we hold West Africa humanely.\n\nIt is a hard task. The people of the United States believe that they are up to the task of helping these people rebuild and rise from their ashes. It is up to the administration to ensure that this belief does not remain a metaphysical object."
   free_france_reconstruction.3.a: "The torch of liberty passes."

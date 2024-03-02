@@ -33,6 +33,16 @@ set_popularities = {
 	despotism = 100	
 }
 
+create_country_leader = {
+	name = "Dietrich Von Sauken"
+	desc = ""
+	picture = Portrait_MSK_Dietrich_von_Saucken_drip.dds
+	expire = "1965.1.1"
+	ideology = despotism_interim_government_subtype
+	traits = {
+		#
+	}
+}
 # /// Ideas /// #
 add_ideas = {
 	# //// Ministers //// #

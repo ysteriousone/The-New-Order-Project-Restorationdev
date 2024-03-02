@@ -950,46 +950,8 @@ news_event = { # THE SLAVE REVOLT STARTS WOOO
 
 	option = {
 		name = WORLD_REICH.212.a
-		trigger = { tag = GER }
-		if = {
-			limit = {  is_ai = no }
-			set_temp_variable = { TNO_temp_super_event = token:SE_SLAVE_REVOLT }
-			TNO_fire_super_event = yes
-		}
-	}
-	option = {
-		name = WORLD_REICH.212.b
-		trigger = { tag = SRT }
-		if = {
-			limit = {  is_ai = no }
-			set_temp_variable = { TNO_temp_super_event = token:SE_SLAVE_REVOLT }
-			TNO_fire_super_event = yes
-		}
-	}
-	option = {
-		name = WORLD_REICH.212.c
-		trigger = { tag = MCW }
-		if = {
-			limit = {  is_ai = no }
-			set_temp_variable = { TNO_temp_super_event = token:SE_SLAVE_REVOLT }
-			TNO_fire_super_event = yes
-		}
-	}
-	option = {
-		name = WORLD_REICH.212.d
-		trigger = {
-			NOT = {
-				tag = GER
-				tag = SRT
-				tag = MCW
-			}
-		}
-		if = {
-			limit = {  is_ai = no }
-			set_temp_variable = { TNO_temp_super_event = token:SE_SLAVE_REVOLT }
-			TNO_fire_super_event = yes
-		}
-	}
+      }
+
 }
 
 news_event = { # Schörner's ass has been beaten

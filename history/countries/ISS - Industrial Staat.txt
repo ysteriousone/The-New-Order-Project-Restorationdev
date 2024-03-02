@@ -4,7 +4,6 @@ capital = 67
 recruit_character = ISS_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-recruit_character = HWL_Karl_Hanke
 
 add_ideas = {
 	ISS_back_to_work
@@ -75,6 +74,18 @@ set_popularities = {
 	liberalism = 0
 	despotism = 0
 }
+
+create_country_leader = {
+	name = "Hermann Joseph Abs"
+	desc = ""
+	picture = Abs.dds
+	expire = "1965.1.1"
+	ideology = national_socialism_technocratic_nazism_subtype
+	traits = {
+		#
+	}
+}
+
 
 set_research_slots = 3
 set_convoys = 200

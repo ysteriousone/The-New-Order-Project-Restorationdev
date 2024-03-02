@@ -8,7 +8,8 @@ state=
 	state_category = pastoral
 	
 	history= {
-		owner = USA
+		owner = GRN
+		add_core_of = GRN
 		victory_points = { 10245 3 }
 		buildings = {
 			infrastructure = 1

@@ -8,7 +8,6 @@ recruit_character = HWL_Ulrich_Wegener
 
 add_ideas = {
 	FPG_first_and_foremost
-	FPG_backs_to_the_sea
 
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state

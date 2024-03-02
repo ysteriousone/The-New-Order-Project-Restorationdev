@@ -3,6 +3,25 @@ ideas = {
 	
 
 	country = {
+		FFR_communist_partisans = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FFR_communist_partisans"}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			communist_drift = 0.025
+			socialist_drift = 0.01
+            
+			}
+		}
 		FFR_military_administration = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea FFR_military_administration"}
 
@@ -17,7 +36,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				war_support_factor = 0.1
+				war_support_factor = -0.1
 				conscription_factor = 0.1
 				political_power_gain = -0.2
 				planning_speed = -0.6

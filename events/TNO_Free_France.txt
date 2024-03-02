@@ -156,6 +156,23 @@ country_event = { # de gaulle death mainland edition
 	}
 }
 
+country_event = {  
+	id = free_france.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event free_france.4" }
+	title = free_france.4.t
+	desc = free_france.4.d
+	
+	picture = GFX_report_event_GER_antifa
+	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = free_france.4.a
+		}
+	}
+
+
 #### RECONSTRUCTION ####
 country_event = { # empty
 	id = free_france_reconstruction.1

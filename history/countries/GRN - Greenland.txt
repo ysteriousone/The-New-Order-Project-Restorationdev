@@ -6,18 +6,9 @@ fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 recruit_character = GRN_Jonathan_Motzfeldt
 recruit_character = GRN_Lars_Chemnitz
 
-USA = {
-	country_event = {
-		id = US_Greenland.1
-		days = 160
-	}
-}
 
 add_ideas = {
-	GRN_the_beginning_of_a_new_era
-	GRN_combatting_the_long_winters
-	GRN_the_arctic_puzzle_piece
-
+    OFN_Independent_Member
 	#political#
 	tno_political_parties_multiparty_system
 	tno_religious_rights_pluralism
@@ -70,10 +61,20 @@ add_ideas = {
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = progressivism
+	ruling_party = socialist
 	last_election = "1962.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+create_country_leader = {
+	name = "Jens Otto Krag"
+	desc = ""
+	picture = Kraggity.dds
+	expire = "1965.1.1"
+	ideology = socialist_revolutionary_frontism_subtype
+	traits = {
+		#
+	}
 }
 
 # Starting tech
@@ -338,9 +339,9 @@ if = {
 }
 
 set_popularities = {
-	socialist = 6
-	progressivism = 58
-	conservatism = 36
+	socialist = 50
+	progressivism = 0
+	conservatism = 50
 }
 
 set_country_flag = TNO_eliminate_military_spending
