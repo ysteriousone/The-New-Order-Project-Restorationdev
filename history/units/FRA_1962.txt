@@ -40,6 +40,76 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "9523"
+		division_template = "Division d'infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
 	division = {
 		division_name = {
 			is_name_ordered = yes

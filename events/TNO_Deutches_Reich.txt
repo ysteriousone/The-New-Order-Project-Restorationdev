@@ -146,6 +146,13 @@ country_event = {
 	transfer_state = 1373
 	add_state_core = 1373
 	}
+	DEN = {
+	start_civil_war = {
+ ideology = progressivism 
+ size = var:party_popularity@progressivism 
+}
+ news_event = {id = WORLD.1525}
+}
 	}
 	}
 	country_event = {  
@@ -177,6 +184,62 @@ country_event = {
 	set_demilitarized_zone = yes
 	}
 		}
+	}	
+country_event = {  
+	id = FHH.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.6" }
+	title = FHH.6.t
+	desc = FHH.6.d
+	
+	picture = GFX_report_event_GER_documents
+	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = FHH.6.a
+		}
 	}
+	country_event = {  
+	id = FHH.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.7" }
+	title = FHH.7.t
+	desc = FHH.7.d
+	
+	picture = GFX_report_event_GER_documents
 	
 	
+	is_triggered_only = yes
+
+	option = {
+		name = FHH.7.a
+		country_event = {id = FHH.8}
+		}
+	option = {
+		name = FHH.7.b
+		}
+	}
+	country_event = {  
+	id = FHH.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.8" }
+	title = FHH.8.t
+	desc = FHH.8.d
+	
+	picture = GFX_report_event_GER_documents
+	
+	
+	is_triggered_only = yes
+		mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = FHH.8.a
+		FHH = {
+		set_politics = {
+				ruling_party = national_socialism
+		}
+		load_focus_tree = tno-Goebbels
+		news_event = {id = WORLD.1924}
+     }
+	}

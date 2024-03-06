@@ -1,0 +1,108 @@
+focus_tree = {
+	id = tno-Goebbels
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FHH
+		}
+	}
+	focus = {
+		id = FHH_Heil_Goebbels
+		icon = GFX_GER_thousand_year_wirtschaft
+		x = 3
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_manpower = 1000
+			      add_popularity = {
+				ideology = national_socialism 
+				popularity = 1
+				}
+			}
+		}
+		focus = {
+		id = FHH_consolidate_power
+		icon = GFX_GER_Cleansing_the_Stain
+		prerequisite = { focus = FHH_Heil_Goebbels }
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+        
+			}
+		}
+	focus = {
+		id = FHH_TOTALEN_KRIEG
+		icon = GFX_GER_war_plan_0
+		prerequisite = { focus = FHH_consolidate_power }
+		x = 3
+		y = 2
+		cost = 1
+		completion_reward = {
+        add_war_support = 1
+			}
+		}
+	focus = {
+		id = FHH_Invade_denmark
+		icon = GFX_DEN_Yesmen_Government
+		prerequisite = { focus = FHH_TOTALEN_KRIEG }
+		x = 6
+		y = 3
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = DEN
+    	type = annex_everything
+	}
+			}
+		}
+	focus = {
+		id = FHH_The_sorry_dutch
+		icon = GFX_DEN_Yesmen_Government
+		prerequisite = { focus = FHH_TOTALEN_KRIEG }
+		x = 2
+		y = 3
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = HOL
+    	type = annex_everything
+	}
+			}
+		}
+		focus = {
+		id = FHH_Fall_Boemus	
+		icon = GFX_GER_Fall_Boemus
+		prerequisite = { focus = FHH_TOTALEN_KRIEG }
+		x = 0
+		y = 3
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = CZE
+    	type = annex_everything
+	}
+			}
+		}
+		focus = {
+		id = FHH_Fall_Augustus	
+		icon = GFX_GER_Fall_Ausgustus
+		prerequisite = { focus = FHH_TOTALEN_KRIEG }
+		x = -2
+		y = 3
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = POL
+    	type = annex_everything
+	}
+			}
+		}
+	
+			}
+	
+	
+	
+		

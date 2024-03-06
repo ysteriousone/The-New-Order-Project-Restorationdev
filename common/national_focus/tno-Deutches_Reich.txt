@@ -103,7 +103,10 @@ focus_tree = {
 		y = 3
 		cost = 1
 		completion_reward = {
-       
+       add_popularity = {
+				ideology = liberalism 
+				popularity = 0.10
+	   }
 		
 			}
 		}
@@ -191,7 +194,7 @@ focus_tree = {
 		y = 3
 		cost = 1
 		completion_reward = {
-		
+		country_event = {id = FHH.6}
 	
 			}
 		
@@ -217,7 +220,7 @@ focus_tree = {
 		icon = "GFX_GER_Speidel"
 		prerequisite = {  }
 		        available = {
-				date > 1964.2.3
+				date < 1964.3.5
 			AND = {
 			NOT = { country_exists = BGR}
 			}
@@ -499,41 +502,18 @@ focus_tree = {
 			set_demilitarized_zone = yes }
 			98 = {
 			set_demilitarized_zone = yes }
-	}
-		
-	}
-	
-	focus = {
-		id = Co-operate_with_socialists
-		icon = GFX_BRY_Red_Terror_Marches
-		prerequisite = { focus = FHH_NSDAP_revival}
-		x = 1
-		y = 14
-		cost = 1
-		completion_reward = {
-        add_popularity = {
-				ideology = communist
-				popularity = 0.1
-			}
-			63 = {
-			set_demilitarized_zone = no}
-			85 = {
-			set_demilitarized_zone = no}
-			5 = {
-			set_demilitarized_zone = no}
-			61 = {
-			set_demilitarized_zone = no}
+			country_event = {id = FHH.7}
 	}
 		
 	}
 		focus = {
 		id = FHH_incoming_reports
-		icon = GFX_BRY_Red_Terror_Marches
+		icon = GFX_GER_failure_warrants_punishment
 		x = 20
 		y = 1
 		cost = 1
 		available = {
-		date > 1964.2.5
+		date > 1964.3.5
 			OR =  { country_exists = BGR}
 			
 			OR = { country_exists = GGR}
@@ -547,14 +527,53 @@ focus_tree = {
 		
 	}
 		focus = {
-		id = FFR_Keeping_the_calm
-		icon = GFX_BRY_Red_Terror_Marches
+		id = FHH_Keeping_the_calm
+		icon = GFX_GER_to_all_who_fought
 		prerequisite = { focus = FHH_incoming_reports}
 		x = 20
 		y = 2
 		cost = 1
 		completion_reward = {
         country_event = {id = FHH.5}
+	}
+		
+	}
+	focus = {
+		id = FHH_Wir_haben_verloren
+		icon = GFX_GER_No_end_in_sight
+		available = {
+		OR = {
+		KSS = {
+		controls_state = 776
+		}
+		}
+		OR = {
+		SNP = {
+		controls_state = 776
+		}
+		}
+		}
+		prerequisite = { focus = FHH_Keeping_the_calm}
+		x = 19
+		y = 3
+		cost = 2
+		completion_reward = {
+        load_focus_tree = blank_focus
+	}
+		
+	}
+	focus = {
+		id = FHH_Hope_is_not_lost
+		icon = GFX_GIB_messages_of_hope
+		available = {
+        controls_state = 776
+		}
+		prerequisite = { focus = FHH_Keeping_the_calm}
+		x = 21
+		y = 3
+		cost = 2
+		completion_reward = {
+        
 	}
 		
 	}

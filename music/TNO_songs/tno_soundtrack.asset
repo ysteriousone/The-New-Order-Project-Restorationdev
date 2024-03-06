@@ -11,6 +11,18 @@ music = {
 }
 
 music = {
+	name = Mountain-King
+	file = "Grieg Peer Gynt Suite No. 1 In the Hall of the Mountain King.ogg"
+	volume = 1
+}
+
+music = {
+	name = Neu-Berlin
+	file = "Wolfenstein House of the Rising Sun Remix - Ayden George.ogg"
+	volume = 1
+}
+
+music = {
 	name = tno_song_a_storm_of_silence
 	file = "a_storm_of_silence.ogg"
 	volume = 1
@@ -335,6 +347,11 @@ music = {
 	volume = 1
 }
 
+music = {
+	name = TRESCKOWW
+	file = "Tresckow.ogg"
+	volume = 1
+}
 music = {
 	name = tno_song_rookery
 	file = "rookery.ogg"

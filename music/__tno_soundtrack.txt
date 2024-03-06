@@ -256,6 +256,16 @@ music = {
 	song = tno_song_puerto_plata
 	chance = { factor = 1 }
 }
+music = {
+	song = TRESCKOWW
+	chance = {
+		modifier = { factor = 0
+		FHH = {
+		has_government = despotism
+		}
+        		}
+	}
+}
 
 music = {
 	song = tno_song_pulling_strings
@@ -405,6 +415,16 @@ music = {
 
 music = {
 	song = tno_song_welfare
+	chance = { factor = 1 }
+}
+
+music = {
+	song = Mountain-King
+	chance = { factor = 1 }
+}
+
+music = {
+	song = Neu-Berlin
 	chance = { factor = 1 }
 }
 
