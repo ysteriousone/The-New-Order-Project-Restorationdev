@@ -88,7 +88,7 @@ focus_tree = {
 		}
 		focus = {
 		id = FHH_Fall_Augustus	
-		icon = GFX_GER_Fall_Ausgustus
+		icon = GFX_GER_Fall_Augustus
 		prerequisite = { focus = FHH_TOTALEN_KRIEG }
 		x = -2
 		y = 3
@@ -96,6 +96,28 @@ focus_tree = {
 		completion_reward = {
         declare_war_on = {
     	target = POL
+    	type = annex_everything
+	}
+			}
+		}
+			focus = {
+		id = FHH_Fall_Nord	
+		icon = GFX_GER_Fall_Venedig2
+		prerequisite = { focus = FHH_TOTALEN_KRIEG }
+		x = 3
+		y = 4
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = NOR
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = SWE
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = FIN
     	type = annex_everything
 	}
 			}
