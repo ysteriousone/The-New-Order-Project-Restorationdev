@@ -98,6 +98,33 @@ shared_focus = {
 	}
 }
 shared_focus = {
+	id = JST_Smuggling_From_the_West_2
+	icon = GFX_GGR_The_Smugglers
+	cost = 4
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JST_Smuggling_From_the_West
+	}
+	x = 3
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JST_Smuggling_From_the_West"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = BRG
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 300
+			producer = BRG
+		}
+	}
+}
+shared_focus = {
 	id = JST_The_Northern_Crusade
 	icon = GFX_BRG_Operation_Teutoburg
 	cost = 3
@@ -432,7 +459,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = JST_A_Pure_Ostland
+	id = JST_No_Lives_Only_Purity
 	icon = GFX_GER_A_Pure_Ostland
 	cost = 5.00
 	available_if_capitulated = no
@@ -451,6 +478,28 @@ shared_focus = {
 		NOT = { has_global_flag = OST_OCW_Ongoing }
 	}
 	completion_reward = {
+		add_manpower = 10000
+		add_war_support = 0.2
+		add_stability = 0.2
+	}
+}
+shared_focus = {
+	id = JST_A_Pure_Ostland
+	icon = GFX_GER_A_Pure_Ostland
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JST_No_Lives_Only_Purity
+	}
+	x = 7
+	y = 8
+	available = {
+		NOT = { has_global_flag = OST_OCW_Ongoing }
+	}
+	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JST_A_Pure_Ostland"
 		custom_effect_tooltip = OST_end_tt
 		hidden_effect = {
@@ -458,6 +507,104 @@ shared_focus = {
 				limit = { is_ai = no }
 				TNO_Country_Closing_Screen_Show = yes
 			}
+		}
+	}
+}
+shared_focus = {
+	id = JST_Strike_Ukraine
+	icon = GFX_GER_A_Pure_Ostland
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JST_A_Pure_Ostland
+	}
+	x = 5
+	y = 9
+	available = {
+		NOT = { has_global_flag = OST_OCW_Ongoing }
+	}
+	completion_reward = {
+		declare_war_on = {
+    	target = FUK
+    	type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = JST_Total_Commie_Death
+	icon = GFX_GER_A_Pure_Ostland
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JST_A_Pure_Ostland
+	}
+	x = 7
+	y = 9
+	available = {
+		NOT = { has_global_flag = OST_OCW_Ongoing }
+	}
+	completion_reward = {
+		declare_war_on = {
+    	target = UKS
+    	type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = JST_Crush_Ukrainian_Nationalism
+	icon = GFX_GER_A_Pure_Ostland
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JST_A_Pure_Ostland
+	}
+	x = 9
+	y = 9
+	available = {
+		NOT = { has_global_flag = OST_OCW_Ongoing }
+	}
+	completion_reward = {
+		declare_war_on = {
+    	target = BOV
+    	type = annex_everything
+		}
+	}
+}
+shared_focus = {
+	id = JST_The_Great_Betrayal
+	icon = GFX_GER_A_Pure_Ostland
+	cost = 5.00
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JST_Strike_Ukraine
+	}
+	prerequisite = {
+		focus = JST_Total_Commie_Death
+	}
+	prerequisite = {
+		focus = JST_Crush_Ukrainian_Nationalism
+	}
+	x = 7
+	y = 10
+	available = {
+		NOT = { has_global_flag = OST_OCW_Ongoing }
+	}
+	completion_reward = {
+		declare_war_on = {
+    	target = UKR
+    	type = annex_everything
 		}
 	}
 }
