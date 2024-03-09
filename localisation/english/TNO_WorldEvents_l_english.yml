@@ -1,5 +1,12 @@
 ﻿l_english:
  ##### EVENTS #####
+ WORLD.1924.t: "[Get_newspaper_header]The return of Goebbels!"
+ WORLD.1924.d: "After many years of faking his death, Joseph Goebbels have returned to Germany in an abrupt fashion. It hadnt been found out how he faked his death or why even, but whats important is that Goebbels have proclaimed the 'rebirth of the aryan man' and the declaration of total war! Many nations in the world have begun building up their forces against Goebbels's crusade against 'the jewish plot'. The world trembles!"
+ WORLD.1924.a: "There shall be Total War!"
+ WORLD.1525.t: "[Get_newspaper_header]The German Collapse"
+ WORLD.1525.d: "It seems the end of Germany has arrived. After a year of brutal and "valueless" fighting, the German civil war has ended up in Anarchy! With revolts and new sides breaking away from the initial five contenders, Hans Speidel has announced that 'Germania has ended up in a great test'. international reports assume a huge humanitarian crisis. The shadow State of Burgundy has revoked their support for Heydrich and has begun gearing up for 'The Aryan brother war' after seizing Alsace and Lorraine. It seems Bismarck's efforts were for not!"
+ WORLD.1525.a: "The end of Germany?"
+ 
  WORLD.1920.t: "[Get_newspaper_header]The return of Alexei!"
  WORLD.1920.d: "If new reports in Vyatka is belived to be true, Alexei Romanove has returned to the throne!n/nWhile international observers are baffled by this revelation, the new Russian Empire has begun contacts with Washington for humanitarian aid and already a cabinet has been made comprising of Socialist and Monarchist elements.\n\n It seems that God has finally salvaged Russia in its time of dispair. Thousands of Russians were seeing enjoying the moment of the return of the Tsarevich. As for Alexei, he announced a "return of stability to Russia". Germany has seen preparing troops for this threat and Japan has begun negotiations for a peaceful resolution to the occupation of the Far East."
  WORLD.1920.a: "S nami Bog!"

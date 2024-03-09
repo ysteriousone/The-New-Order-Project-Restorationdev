@@ -100,7 +100,33 @@ focus_tree = {
 	}
 			}
 		}
-			focus = {
+	focus = {
+		id = FHH_Our_new_puppets
+		icon = GFX_GER_Operation_Lapland
+		available = {
+		OR = {
+		NOT = {
+		country_exists = NOR
+		country_exists = SWE
+		country_exists = FIN
+		}
+		}
+		}
+		prerequisite = { focus = FHH_Fall_Nord }
+		x = 3
+		y = 5
+		cost = 1
+		completion_reward = {
+        release = NOR
+		release = SWE
+		release = FIN
+		set_autonomy = { target = NOR autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = SWE autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = FIN autonomy_state = autonomy_reichsprotektorat }
+			}
+		}
+		
+		focus = {
 		id = FHH_Fall_Nord	
 		icon = GFX_GER_Fall_Venedig2
 		prerequisite = { focus = FHH_TOTALEN_KRIEG }
@@ -122,9 +148,251 @@ focus_tree = {
 	}
 			}
 		}
+		focus = {
+		id = FHH_Invading_France	
+		icon = GFX_GGR_Securing_france
+		prerequisite = { focus = FHH_Our_new_puppets }
+		x = 3
+		y = 6
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = FRS
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = FRV
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = FRD
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = FIT
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = FGR
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = FRM
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = BRT
+    	type = annex_everything
+	}
+			}
+		}
+		focus = {
+		id = FHH_Expand_the_Paktkomission
+		icon = GFX_GER_Fall_Venedig2
+		available = {
+		OR = {
+		NOT = {
+		country_exists = FRS
+		country_exists = FRV
+		country_exists = FGR
+		country_exists = FRM
+		country_exists = FRD
+		country_exists = FIT
+		country_exists = BRT
+		}
+		}
+		}
+		prerequisite = { focus = FHH_Fall_Nord }
+		x = 3
+		y = 7
+		cost = 1
+		completion_reward = {
+        GLC = {
+		transfer_state = 33
+		transfer_state = 1613
+		transfer_state = 14
+		transfer_state = 789
+		transfer_state = 790
+		transfer_state = 30
+		transfer_state = 23
+		transfer_state = 25
+		transfer_state = 19
+		transfer_state = 31
+		transfer_state = 1611
+		transfer_state = 22
+		transfer_state = 21
+		transfer_state  = 1609
+			}
+		}
 	
 			}
-	
-	
-	
+	focus = {
+		id = FHH_Unite_Switzerland
+		icon = focus_operation_tannenbaum
+		prerequisite = { focus = FHH_Expand_the_Paktkomission }
+		x = 3
+		y = 8
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = SWI
+    	type = annex_everything
+	}
+			}
+		}
+	focus = {
+		id = FHH_Going_South
+		icon = GFX_TNO_generic_italy
+		prerequisite = { focus = FHH_Unite_Switzerland }
+		x = 3
+		y = 9
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = ITA
+    	type = annex_everything
+	}
+			}
+		}
+	focus = {
+		id = FHH_Italy_Pacified
+		icon = GFX_ITA_In_the_PNF
+		prerequisite = { focus = FHH_Going_South }
+		available = {
+		OR = {
+		NOT = {
+		country_exists = ITA
+		}
+		}
+		}
+		x = 3
+		y = 10
+		cost = 1
+		completion_reward = {
+		set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = CRO autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = MNT autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = EGY autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = IEA autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = GRE autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = GUL autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = BOS autonomy_state = autonomy_reichsprotektorat }
+		GLC = {
+		transfer_state = 735
+		}
+		ITA = {
+		transfer_state = 1377
+		transfer_state = 1376
+		}
+		GUL = {
+		annex_country {
+		target = YEM
+			transfer_troops = yes
+			}
+		release = ALB
+		set_autonomy = { target = ALB autonomy_state = autonomy_reichsprotektorat }
 		
+	}
+	FHH = {
+	transfer_state = 39
+	transfer_state = 116
+	transfer_state = 736
+	transfer_state = 1
+	transfer_state = 114
+	transfer_state = 1327
+			}
+		}
+	
+		}
+	focus = {
+		id = FHH_Ostland	
+		icon = GFX_GER_war_in_the_ostfront
+		prerequisite = { focus = FHH_Italy_Pacified }
+		x = 3
+		y = 11
+		cost = 1
+		completion_reward = {
+        declare_war_on = {
+    	target = BLR
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = OST
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = MST
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = UPO
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = DST
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = JST
+    	type = annex_everything
+	}
+
+			}
+		}
+	focus = {
+		id = FHH_save_Ukraine	
+		icon = GFX_GER_Ukraine_Aflame
+		prerequisite = { focus = FHH_Ostland }
+		x = 3
+		y = 12
+		cost = 1
+		completion_reward = {
+	declare_war_on = {
+    	target = FUK
+    	type = annex_everything
+	}
+    declare_war_on = {
+    	target = UKS
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = BOV
+    	type = annex_everything
+	}
+		declare_war_on = {
+    	target = BOV
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = GOT
+    	type = annex_everything
+	}
+		}
+		}
+	focus = {
+		id = FHH_Men_In_The_High_Castle
+		icon = GFX_GER_Ein_Reich_2
+		available = {
+		OR = {
+		NOT = {
+		country_exists = GOT
+		country_exists = BOV
+		country_exists = UKS
+		country_exists = FUK
+		}
+		}
+		}
+		prerequisite = { focus = FHH_save_Ukraine }
+		x = 3
+		y = 13
+		cost = 1
+		completion_reward = {
+		set_autonomy = { target = BLR autonomy_state = autonomy_reichsprotektorat }
+		set_autonomy = { target = UKR autonomy_state = autonomy_reichsprotektorat }
+		}
+	
+			}
+		}
+		}
+		}
+		}

@@ -242,4 +242,7 @@ country_event = {
 		load_focus_tree = tno-Goebbels
 		news_event = {id = WORLD.1924}
      }
+	
 	}
+	]
+	

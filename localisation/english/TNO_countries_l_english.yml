@@ -386,6 +386,8 @@
  FHH_ADJ: "German"
 
  FIN: "Republic of Finland"
+ FIN_national_socialism: "Reichsprotektorat Finnland"
+ FIN_national_socialism_DEF: "Das Reichsprotektorat Finnland"
  FIN_DEF: "the Republic of Finland"
  FIN_ADJ: "Finnish"
 
@@ -927,6 +929,8 @@
  SVR_ADJ: "Uralian"
 
  SWE: "Kingdom of Sweden"
+ SWE_national_socialism: "Reichsprotektorat Schweden"
+ SWE_national_socialism_DEF: "Das Reichsprotektorat Schweden"
  SWE_DEF: "the Kingdom of Sweden"
  SWE_ADJ: "Swedish"
 

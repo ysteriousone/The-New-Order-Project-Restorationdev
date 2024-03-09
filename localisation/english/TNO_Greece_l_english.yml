@@ -23,6 +23,9 @@
  GRE_despotism_ADJ:0 "Greek"
  GRE_communist_ADJ:0 "Greek"
  GRE_socialist_ADJ:0 "Greek"
+ GRE_national_socialism:0 "Deutsches Protektorat Griechenland"
+ GRE_national_socialism_DEF:0 "Die Deutsches Protektorat Griechenland"
+ GRE_ADJ:0 "Greek
  
  #Parties
  GRE_communist_party:0 "EAM"
