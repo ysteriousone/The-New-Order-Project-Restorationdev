@@ -272,7 +272,6 @@ OST_check_victor = {
 					JST_The_Speed_of_the_Totenkopf
 					JST_The_Wolves_Claws
 				}
-				load_focus_tree = OST_empty
 			}
 			#Vituska
 			else_if = {
