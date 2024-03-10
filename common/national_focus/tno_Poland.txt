@@ -21,6 +21,16 @@ focus_tree = {
 			add_manpower = 100000
 			}
 		}
-
+    focus = {
+		id = POL_The_Many_Faces
+		icon = GFX_GER_thousand_year_wirtschaft
+		prerequisite = { focus = POL_Never_Lost }
+		x = 3
+		y = 1
+		cost = 1
+		completion_reward = {
+				}
+			}
+		}
 	
 	}
