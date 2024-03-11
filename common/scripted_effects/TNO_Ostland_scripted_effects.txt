@@ -203,6 +203,7 @@ OST_check_victor = {
 					OST_Haste_Makes_Waste
 					OST_Prussian_Values
 				}
+				load_focus_tree = OST_empty
 			}
 			#Kovner
 			else_if = {
@@ -226,6 +227,7 @@ OST_check_victor = {
 					KOV_death_to_collaborators1
 					KOV_death_to_collaborators2
 				}
+				load_focus_tree = OST_empty
 			}
 			#Meyer-Landrut
 			else_if = {
@@ -250,6 +252,7 @@ OST_check_victor = {
 					MST_Social_Rights_3
 					MST_The_Drive_For_Freedom
 				}
+				load_focus_tree = OST_empty
 			}
 			#Jeckeln
 			else_if = {
@@ -269,6 +272,7 @@ OST_check_victor = {
 					JST_The_Speed_of_the_Totenkopf
 					JST_The_Wolves_Claws
 				}
+				load_focus_tree = OST_empty
 			}
 			#Vituska
 			else_if = {
@@ -290,6 +294,7 @@ OST_check_victor = {
 					BLR_We_Are_Like_Vipers
 					BLR_For_Ostland
 				}
+				load_focus_tree = OST_empty
 			}
 			#Drechsler
 			else_if = {
@@ -305,6 +310,8 @@ OST_check_victor = {
 				remove_ideas = {
 					DST_last_push
 				}
+				DST_remove_focus = yes
+				load_focus_tree = OST_empty
 			}
 
 			else = {

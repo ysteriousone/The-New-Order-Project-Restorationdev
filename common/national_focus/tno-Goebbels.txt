@@ -269,6 +269,14 @@ focus_tree = {
 		y = 10
 		cost = 1
 		completion_reward = {
+		release = ITA
+		release = CRO
+		release = MNT
+		release = EGY
+		release = IEA
+		release = GRE
+		release = GUL
+		release = BOS
 		set_autonomy = { target = ITA autonomy_state = autonomy_reichsprotektorat }
 		set_autonomy = { target = CRO autonomy_state = autonomy_reichsprotektorat }
 		set_autonomy = { target = MNT autonomy_state = autonomy_reichsprotektorat }
@@ -387,6 +395,8 @@ focus_tree = {
 		y = 13
 		cost = 1
 		completion_reward = {
+		release = BLR
+		release = UKR
 		set_autonomy = { target = BLR autonomy_state = autonomy_reichsprotektorat }
 		set_autonomy = { target = UKR autonomy_state = autonomy_reichsprotektorat }
 		}

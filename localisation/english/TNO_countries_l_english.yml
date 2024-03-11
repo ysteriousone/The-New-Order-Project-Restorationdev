@@ -10,21 +10,18 @@
  ## If not then I'm going to appear on your bedroom at 2AM brandishing an axe
 
  # A
- JST: "SS-Ordensstaat Osteuropa"
- JST_DEF: "The SS Order State of Eastern Europe"
- JST_ADJ: "Schutzstaffel"
  
  PAV: "Pavlodar"
  PAV_DEF: "Pavlodar"
  PAV_ADJ: "Kazakh"
  
- AUD: "Österreichischer Widerstands"
- AUD_DEF: "The Austrian Resistance"
- AUD_ADJ: "German"
+ AUD: "Österreichischer Flügel des deutschen Widerstands"
+ AUD_DEF: "The Austrian wing of the German resistance"
+ AUD_ADJ: "German
  
  GO4: "Provisional Government of the German Republic"
  GO4_DEF: "The Provisional Government of the German Republic"
- GO4_ADJ: "German"
+ GO4_ADJ: "German
  
  AKT: "Aktobe"
  AKT_DEF: "Aktobe"
@@ -42,7 +39,7 @@
  GMS_DEF: "SS Ordensstaat Banat"
  GMS_ADJ: "Banat"
 
- NPL: "Nowa Polska"
+ NPL: "New Poland"
  NPL_DEF: "The Exiled Republic of Poland"
  NPL_ADJ: "Polish"
  
@@ -83,7 +80,7 @@
  AMK_DEF: "Reichskommissariat Amerika"
  AMK_ADJ: "American"
 
- AMR: "All-Russian Government of Amur"
+ AMR: "Amur"
  AMR_DEF: "Amur"
  AMR_fascism_DEF: "the All-Russian Government of Amur"
  AMR_national_socialism_DEF: "the All-Russian Government of Amur"
@@ -114,7 +111,7 @@
  ARM_DEF: "the Republic of Armenia"
  ARM_ADJ: "Armenian"
 
- ARG: "Argentine Republic"
+ ARG: "Argentina"
  ARG_DEF: "the Argentine Republic"
  ARG_ADJ: "Argentine"
 
@@ -131,8 +128,8 @@
  AZA_ADJ: "Azanian"
 
  AZH: "State of India"
- AZH_DEF: "the Japanese Associate of India"
- AZH_ADJ: "Indian"
+ AZH_DEF: "the Japanese associate of India"
+ AZH_ADJ: "Indohito"
 
  # B
  BAH: "Bahamas"
@@ -163,7 +160,7 @@
  BLR_DEF: "the Republic of Belarus"
  BLR_ADJ: "Belarusian"
 
- BOL: "Republic of Bolivia"
+ BOL: "Bolivia"
  BOL_DEF: "the Republic of Bolivia"
  BOL_ADJ: "Bolivian"
 
@@ -175,7 +172,7 @@
  BOT_DEF: "Botswana"
  BOT_ADJ: "Botswanan"
 
- BRA: "Republic of the United States of Brazi"
+ BRA: "Brazil"
  BRA_DEF: "the Republic of the United States of Brazil"
  BRA_ADJ: "Brazilian"
 
@@ -199,7 +196,7 @@
  BRU_DEF: "the Sultanate of Brunei"
  BRU_ADJ: "Bruneian"
 
- BSO: "Her Majesty's Most Loyal Resistance"
+ BSO: "Free Britain"
  BSO_DEF: "Special Operations Executive"
  BSO_ADJ: "British"
 
@@ -220,7 +217,7 @@
  BUL_ADJ: "Bulgarian"
 
  # C
- CAN: "Dominion of Canada"
+ CAN: "Canada"
  CAN_DEF: "Canada"
  CAN_ADJ: "Canadian"
 
@@ -236,8 +233,8 @@
  CHN_DEF: "the Chin State"
  CHN_ADJ: "Chin"
 
- CHT: "Regency of Chita"
- CHT_DEF: "the Regency of Chita"
+ CHT: "Chita"
+ CHT_DEF: "Chita"
  CHT_paternalism: "Chita"
  CHT_despotism: "Chita"
  CHT_paternalism_DEF: "Chita"
@@ -284,7 +281,7 @@
  CSK_DEF: "the Cossack State"
  CSK_ADJ: "Cossack"
 
- CUB: "People's Republic of Cuba"
+ CUB: "Cuba"
  CUB_DEF: "the Republic of Cuba"
  CUB_ADJ: "Cuban"
 
@@ -317,7 +314,7 @@
  DMI_DEF: "Dominica"
  DMI_ADJ: "Dominican"
 
- DRL: "Dirlewanger's Brigade"
+ DRL: "Dirlewanger Brigade"
  DRL_DEF: "the Dirlewanger Brigade"
  DRL_ADJ: "Orsk"
  
@@ -380,12 +377,12 @@
  FGB_DEF: "Jyuyon Gun Gunseikanbu"
  FGB_ADJ: "14th Army"
  
- FHH: "German State"
+ FHH: "German Reich"
  FHH_progressivism: "German Democratic Republic"
  FHH_progressivism_DEF: "The German Democratic Republic"
  FHH_national_socialism: "German National Worker's State"
  FHH_national_socialism_DEF: "the German National Worker's State"
- FHH_DEF: "The German State"
+ FHH_DEF: "The German Reich"
  FHH_ADJ: "German"
 
  FIN: "Republic of Finland"
@@ -545,7 +542,7 @@
  KSS_DEF: "Kommandostab Waffen-SS"
  KSS_ADJ: "German"
 
- KST: "Free City of Kostroma"
+ KST: "Kostroma"
  KST_DEF: "the Free City of Kostroma"
  KST_ADJ: "Kostroman"
 
@@ -568,7 +565,7 @@
  MAC_DEF: "Democratic Federal Macedonia"
  MAC_ADJ: "Macedonian"
 
- MGN: "People's Republic of Magnitogorsk"
+ MGN: "Magnitogorsk"
  MGN_DEF: "the People's Republic of Magnitogorsk"
  MGN_ADJ: "Magnitogorsk"
 
@@ -638,7 +635,7 @@
  OMO_DEF: ""
  OMO_ADJ: "Siberian"
  
- OMS: "All-Russian Black League"
+ OMS: "Omsk"
  OMS_DEF: "the Siberian Black League"
  OMS_ultranationalism_DEF: "the Siberian Black League"
  OMS_ADJ: "Black League"
@@ -707,8 +704,8 @@
 
  PRM: "Perm"
  PRM_DEF: "Perm"
- PRM_national_socialism: "Arische Bruedershaft"
- PRM_national_socialism_DEF: "the Aryan Brotherhood in Permhayn"
+ PRM_national_socialism: "Perm provisional settlements"
+ PRM_national_socialism_DEF: "the Aryan Brotherhood in Perm"
  PRM_ADJ: "Perm"
 
  PRU: "Peru"
@@ -728,7 +725,7 @@
  QIN_DEF: "the NRA 40th Army Group"
  QIN_ADJ: "Hui"
 
- QUE: "Republic of Québec"
+ QUE: "Québec"
  QUE_DEF: "Québec"
  QUE_ADJ: "Québécois"
 
@@ -867,9 +864,9 @@
  SNS_DEF: "the Syrian National State"
  SNS_ADJ: "Syrian"
 
- SOR: "Chukotka ASR"
- SOR_DEF: "the Chukotka Autonomous Soviet Republic"
- SOR_ADJ: "Chukotka"
+ SOR: "Chukota ASR"
+ SOR_DEF: "the Chukota Autonomous Soviet Republic"
+ SOR_ADJ: "Russian"
 
  SPA: "Spanish State"
  SPA_DEF: "the Spanish State"
@@ -1112,7 +1109,7 @@
  UPH_despotism: "Free Philippine Republic"
  UPH_despotism_DEF: "the Free Philippine Republic"
 
- URG: "Oriental Republic of Uruguay"
+ URG: "Uruguay"
  URG_DEF: "the Oriental Republic of Uruguay"
  URG_ADJ: "Uruguayan"
 
@@ -1161,7 +1158,7 @@
  VAC_DEF: "Vatican City"
  VAC_ADJ: "Vatican"
 
- VEN: "Republic of Venezuela"
+ VEN: "Venezuela"
  VEN_DEF: "the Republic of Venezuela"
  VEN_ADJ: "Venezuelan"
 

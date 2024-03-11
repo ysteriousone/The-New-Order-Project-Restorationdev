@@ -4122,6 +4122,7 @@ on_actions = {
 									OST_Haste_Makes_Waste
 									OST_Prussian_Values
 								}
+								load_focus_tree = OST_empty
 							}
 						}
 						else_if = { # Speer
@@ -4176,6 +4177,7 @@ on_actions = {
 											}
 										}
 										join_zollverein = yes
+										load_focus_tree = OST_empty
 										set_variable = { national_debt = 0 }
 										remove_ideas = {
 											OST_model_colony
@@ -4240,6 +4242,7 @@ on_actions = {
 								}
 								OST = {
 									join_zollverein = yes
+									load_focus_tree = OST_empty
 									set_variable = { national_debt = 0 }
 									remove_ideas = {
 										OST_model_colony
