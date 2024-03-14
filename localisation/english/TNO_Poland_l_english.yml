@@ -7,12 +7,14 @@
  POL_communist:0 "Polish People's Republic"
  POL_communist_DEF:0 "Polska Rzeczpospolita Ludowa"
  POL_communist_ADJ:0 "Polish"
+ POL_ultranationalism:0 "Polish redemption Army"
+ POL_DEF:0 "The Falangist Republic of Poland"
 
 
 #Party Names
 
- POL_ultranationalism_party:0 "ZJ"
- POL_ultranationalism_party_long:0 "Związek Jaszczurczy"
+ POL_ultranationalism_party:0 "ONR - F"
+ POL_ultranationalism_party_long:0 "National Radical Camp - Falangist"
  POL_despotism_party:0 "SCN"
  POL_despotism_party_long:0 "Służba Cywilna Narodu"
  POL_paternalism_party:0 "Krajowa Rada"
@@ -61,3 +63,12 @@
  POL_Witold_Pilecki:0 "Witold Pilecki"
  POL_Kazimierz_Iranek_Osmecki:0 "Kazimierz Iranek-Osmecki"
  POL_Stanislaw_Jankowski:0 "Stanisław Jankowski"
+ #Focus Tree
+POL_Never_Lost: "Poland is not yet lost!"
+POL_Never_Lost_desc: "Poland didnt die. Poland never died! Today, we will end these Nazis once and for all!"
+POL_Raise_The_Ghetto: "Raise the Ghettos!"
+POL_Raise_The_Ghetto_desc: "The most powerful tool of our great uprising is the Warsawa ghettos. We shall use this to create several partisan divsions against the germans to liberate Poland!"
+POL_Our_way: "The many parties of the Home Army"
+POL_Our_way_desc: "Although all of the Home Army are united against the common goal of destroying the German occupiers, there exists various factions in our liberation force. First of them are the Polish People's Army, lead by none other than Władysław Gomułka, leader of the Communists and workers. Next up is the Armiya - Warsawa, lead by the democrats who wish for a Third Republic of Poland, they are supported by Emil Fieldorf. Finally, there's the old remnants of the ONR - F lead by none other than Piasecki."
+POL_Warsawa_Walcz: "Warsawa Walcz!"
+POL_Warsawa_Walcz_desc: "It has been done! We have defeated the Germans and White and Red fly over Warsaw once more. Now, Emil will attempt to establish a provisional government in Poland to restore democracy!"

@@ -59,6 +59,8 @@
  #Focuses#
  GGN_Troubling_times: "The troubling Generalgouvernement"
  GGN_Troubling_times_desc: "Over the years, Polen has grown into a rather unsafe place for the Fatherland. The rising tensions of the underground partisans and Hitler's ailing health has led many to suspect the Generalgouvernement won't even survive the start of the century. So, we must be ready for any attacks from the Home Army."
+ GGN_Not_lost: "The dream..."
+ GGN_Not_lost_desc: "It has been many years since the polish people have seen hope. Now, the Generalgouvernement has become widely unstable following the West Russian War and overal failing stability in the East. Now, we can prepare to reclaim Poland."
 
 
  #National Ideas#
@@ -74,6 +76,7 @@
  GGN_not_fine:0 "Disaster has been averted, for now..."
  GGN_end_of_the_line:0 "The Poles may not have been as weak as previously thought..."
  GGN_its_time:0 "When the time is right, the Secret Government will strike out against the garrison!" 
+ GGN_tooltip_2:0 "We shall begin preparations to liberate Poland!"
 
  #Opinion modifier# 
  POL_germanys_loyal_sons:0 "Germany's loyal sons"

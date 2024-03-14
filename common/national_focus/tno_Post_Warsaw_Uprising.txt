@@ -1,0 +1,27 @@
+﻿focus_tree = {
+	id = Post_Polish_Liberation
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	
+	default = no
+	focus = {
+		id = POL_Restoration_Of_hope
+		icon = GFX_POL_The_Partisan_Problem
+		x = 0
+		y = 0
+       cost = 1
+		completion_reward = {
+
+
+			}
+		}
+
+	
+	
+	}

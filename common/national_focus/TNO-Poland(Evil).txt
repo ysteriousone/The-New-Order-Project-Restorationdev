@@ -25,34 +25,36 @@ focus_tree = {
 			}
 		}
 	
-	focus = {
-		id = GGN_contact_germans
-		icon = GFX_ENG_Expanding_Policing_in_Glasgow_and_Aberdeen
-		prerequisite = { focus = GGN_Troubling_times}
-		mutually_exclusive = { focus = GGN_Not_lost}
-		x = 2	
-		y = 1
-		cost = 2
-		completion_reward = {
-        polticial_power = 10
-		}
-	}
-	
 	
 	focus = {
 		id = GGN_Not_lost
 		icon = GFX_POL_retribution
 		prerequisite = { focus = GGN_Troubling_times}
 		mutually_exclusive = { focus = GGN_contact_germans}
-		x = 4	
+		x = 3	
 		y = 1
-		cost = 2
+		cost = 5
+		completion_reward = {
+        10 = {
+		set_demilitarized_zone = yes
+		}
+		}
+		}
+	focus = {
+		id = GGN_reaching_out
+		icon = GFX_POL_retribution
+		prerequisite = { focus = GGN_Not_lost}
+		x = 3	
+		y = 2
+		cost = 3
 		completion_reward = {
         10 = {
 		set_demilitarized_zone = yes
 		}
 		}
 	}
+	}
+	
 	
 
 

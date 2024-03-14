@@ -99,20 +99,21 @@ OZA_despotism_party: "NPO"
 OZA_despotism_party_long: "Notfallpräventionsorganisation"
 
 # /// ORL - Council of the Russian Republic (Gorbachev)/// #
-ORL: "Council of the Russian Republic"
-ORL_DEF: "Council of the Russian Republic"
-ORL_ADJ: "Council of the Russian Republic's"
-ORL_MSK_DissolutionWinner: "Russian Republic"
-ORL_MSK_DissolutionWinner_DEF: "Russian Republic"
-ORL_MSK_DissolutionWinner_ADJ: "Russian Republic"
+ORL: "Russian united Socialist Front"
+ORL_DEF: "The Russian united Socialist Front"
+ORL_ADJ: "Russian"
+ORL_MSK_DissolutionWinner: "Russian Socialist Federative Republic"
+ORL_MSK_DissolutionWinner_DEF: "The Russian Socialist Federative Republic"
+ORL_MSK_DissolutionWinner_ADJ: "Slavic"
 MSK_Mikhail_Gorbachev: "Mikhail Gorbachev"
 MSK_Mikhail_Gorbachev_desc: "One day the full story will be told. The story of millions of souls - each with their own tale. The more Europe's scars open, the more we will know."
 MSK_Ivan_Bessonov: "Ivan Bessonov"
 MSK_Ivan_Bessonov_desc: "One day the full story will be told. The story of millions of souls - each with their own tale. The more Europe's scars open, the more we will know."
-ORL_progressivism_party: "KRSNS"
-ORL_progressivism_party_long: "Kongress rossiyskih Sotsial-Narodnokhozyaystvennih sil"
+ORL_progressivism_party: "VKP(B) - Reformist"
+ORL_progressivism_party_long: "Reformatorskoye krylo VKPB."
 ORL_fascism_party: "PTsB"
 ORL_fascism_party_long: "Politicheskiy tsentr po bor'be s bolshevizmom"
+
 
 # /// POV - SPG "Winners" (V) /// #
 POV: "SPG "Winners" (V)"
@@ -332,3 +333,7 @@ MCW_emergence: "Emergence"
 MCW_emergence_desc: "One day the full story will be told. The story of millions of souls - each with their own tale. The more Europe's scars open, the more we will know."
 
 MSK_Dissolution_DeclareWarOnEveryoneThere_Tt: "We will declare on §Rany remaining secessionist states§! in Moskowien."
+
+## Focus Tree ##
+ORL_Rise_Of_the_Partisans: "Rise of the Partisans"
+ORL_Rise_Of_the_Partisans_desc: "For long has the people of East Europe been enslaved by the german menace. For long had they forgotten about the shining light of democracy. Now, comrade Gorbachev has given up his work as the double agent collaborator to Kashe and taken up arms in Oyol. For Russia, FOR DEMOCRACY!"

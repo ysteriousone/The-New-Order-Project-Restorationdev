@@ -13,7 +13,7 @@ focus_tree = {
 		icon = GFX_POL_Secret_government
 		x = 3
 		y = 0
-		cost = 6
+		cost = 1
 		search_filters = {
 			FOCUS_FILTER_MANPOWER
 		}
@@ -21,6 +21,85 @@ focus_tree = {
 			add_manpower = 100000
 			}
 		}
+		focus = {
+		id = POL_Raise_The_Ghetto
+		 prerequisite ={ focus =  POL_Never_Lost }
+		icon = GFX_POL_send_them_to_freedom
+		x = 3
+		y = 1
+		cost = 1
 
+		available = {
+
+		}
+		completion_reward = {
+        add_war_support = .04
+		10 = {
+		create_unit = {
+					division = "name = \"Partisan forces\" division_template = \"Srochniy Politseyskiy Otryad\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = POL
+				}
+		create_unit = {
+					division = "name = \"Partisan forces\" division_template = \"Srochniy Politseyskiy Otryad\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = POL
+				}
+		create_unit = {
+					division = "name = \"Partisan forces\" division_template = \"Srochniy Politseyskiy Otryad\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = POL
+				}
+		create_unit = {
+					division = "name = \"Partisan forces\" division_template = \"Srochniy Politseyskiy Otryad\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = POL
+				}
+		create_unit = {
+					division = "name = \"Partisan forces\" division_template = \"Srochniy Politseyskiy Otryad\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = POL
+				}
+		}
+		}
+		}
+    focus = {
+		id = POL_Our_way
+		icon = GFX_POL_ludowa_i_krajowa
+		prerequisite = {focus = POL_Raise_The_Ghetto }
+		x = 3
+		y = 2
+		cost = 1
+		completion_reward = {
+        add_popularity = {
+		ideology = communist
+		popularity = 0.125
+		}
+		add_popularity = {
+		ideology = ultranationalism
+		popularity = 0.1
+		}
+		add_popularity = {
+		ideology = progressivism
+		popularity = 0.25
+		}
+		}
+		}
+		focus = {
+		id = POL_Warsawa_Walcz
+		icon = GFX_POL_integrate_the_army
+		available = {
+		NOT = {
+		country_exists = GGN
+		}
+		}
+		x = 3
+		y = 5
+		cost = 1
+
+		completion_reward = {
+			add_stability = 0.5
+			add_war_support = 0.75
+			hidden_effect = {
+			load_focus_tree = Post_Polish_Liberation
+			}
+			}
+		}
+	
 	
 	}
