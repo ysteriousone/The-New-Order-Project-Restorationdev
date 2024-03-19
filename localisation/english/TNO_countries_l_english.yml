@@ -17,11 +17,11 @@
  
  AUD: "Österreichischer Flügel des deutschen Widerstands"
  AUD_DEF: "The Austrian wing of the German resistance"
- AUD_ADJ: "German
+ AUD_ADJ: "German"
  
  GO4: "Provisional Government of the German Republic"
  GO4_DEF: "The Provisional Government of the German Republic"
- GO4_ADJ: "German
+ GO4_ADJ: "German"
  
  AKT: "Aktobe"
  AKT_DEF: "Aktobe"
@@ -39,7 +39,7 @@
  GMS_DEF: "SS Ordensstaat Banat"
  GMS_ADJ: "Banat"
 
- NPL: "New Poland"
+ NPL: "Nowa Polska"
  NPL_DEF: "The Exiled Republic of Poland"
  NPL_ADJ: "Polish"
  
@@ -320,7 +320,7 @@
  
  DSG: "Deutsche Notstandsregierung"
  DSG_DEF: "the Deutsche Notstandsregierung"
- DSG_ADJ: "German"
+ DSG_ADJ: "
 
  DSH: "Schwarze Bande"
  DSH_DEF: "die Schwarze Bande"
