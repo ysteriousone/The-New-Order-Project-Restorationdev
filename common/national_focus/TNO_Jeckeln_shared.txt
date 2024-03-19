@@ -646,6 +646,10 @@ shared_focus = {
 		declare_war_on = {
     	target = POL
     	type = annex_everything
+		declare_war_on = {
+		target = HEE
+		type = annex_everything
+			}
 		}
 	}
 }
@@ -659,6 +663,12 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = JST_More_Land
+		}
+	prerequisite = {
+		focus = JST_More_Supplies
+	}
+		prerequisite = {
+		focus = JST_More_Men
 	}
 	x = 7
 	y = 12
@@ -666,12 +676,11 @@ shared_focus = {
 		NOT = { has_global_flag = OST_OCW_Ongoing }
 	}
 	completion_reward = {
-		declare_war_on = {
-    	target = TVR
-    	type = annex_everything
+		add_manpower = 10000		
+			MSK_Dissolution_DeclareWarOnEveryoneThere = yes
+			set_country_flag = BGR_Open_Reorg
 		}
 	}
-}
 shared_focus = {
 	id = JST_More_Supplies
 	icon = GFX_GER_Asian_Expeditions
