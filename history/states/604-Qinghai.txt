@@ -4,7 +4,7 @@ state={
 	name="STATE_604"
 
 	history={
-		owner = QIN
+		owner = GAN
 		add_core_of = QIN
 		buildings = {
 			infrastructure = 1

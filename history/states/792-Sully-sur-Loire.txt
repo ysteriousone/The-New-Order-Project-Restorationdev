@@ -10,7 +10,7 @@ state={
 		9490 15242
 	}
 	history={
-		owner = FRS
+		owner = BRG
 		buildings = {
 			infrastructure = 5
 			schools = 1
