@@ -1,0 +1,226 @@
+# created by Karimlebg
+shared_focus = {
+	id = BOR_the_war_of_liberation
+	icon = GFX_GRO_So_It_Begins
+	cost = 2.00
+	x = 10
+	y = 0
+	completion_reward = {
+		add_stability = 0.1
+		TNO_improve_conscription_policy_effectiveness_low = yes
+    }
+
+}
+shared_focus = {
+	id = BOR_the_bush_war
+	icon = GFX_DST_a_gun_under_every_blade_of_grass
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_the_war_of_liberation
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 10
+	y = 1
+
+}
+shared_focus = {
+	id = BOR_our_allies
+	icon = GFX_goal_COG_icon_our_neighbors
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_the_bush_war
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 6
+	y = 2
+}
+shared_focus = {
+	id = BOR_ostafrikas_rifles
+	icon = GFX_GRO_building_a_stockpile
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_our_allies
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 8
+	y = 3
+}
+shared_focus = {
+	id = BOR_sudwestafrikas_planes
+	icon = GFX_ANG_protect_the_boers
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_our_allies
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 6
+	y = 3
+}
+shared_focus = {
+	id = BOR_zentralafrikas_mercenaries
+	icon = GFX_COG_Send_Mercenaries_Away
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_our_allies
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 4
+	y = 3
+}
+shared_focus = {
+	id = BOR_for_a_free_boerstadt
+	icon = GFX_GRO_The_Drums_Echo
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_ostafrikas_rifles
+		focus = BOR_sudwestafrikas_planes
+		focus = BOR_zentralafrikas_mercenaries
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 6
+	y = 4
+}
+shared_focus = {
+	id = BOR_our_rivals
+	icon = GFX_SAF_for_south_africa
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_the_bush_war
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 14
+	y = 2
+}
+shared_focus = {
+	id = BOR_against_south_africa
+	icon = GFX_SAF_icon_south_african_war_2
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_our_rivals
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 12
+	y = 3
+}
+shared_focus = {
+	id = BOR_against_usa
+	icon = GFX_TNO_generic_america
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_our_rivals
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 14
+	y = 3
+}
+shared_focus = {
+	id = BOR_against_anc
+	icon = GFX_ANC_Pacified
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_our_rivals
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 16
+	y = 3
+
+}
+shared_focus = {
+	id = BOR_united_boers
+	icon = GFX_OST_Unite_the_People
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_against_south_africa
+		focus = BOR_against_usa
+		focus = BOR_against_anc
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 14
+	y = 4
+}
+shared_focus = {
+	id = BOR_lesson_from_the_boer_wars
+	icon = GFX_goal_GRO_To_Rule_a_Continent
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_for_a_free_boerstadt
+		focus = BOR_united_boers
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 9
+	y = 5
+}
+shared_focus = {
+	id = BOR_never_again
+	icon = GFX_WAL_The_English_Devil
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_lesson_from_the_boer_wars
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 9
+	y = 6
+}
+shared_focus = {
+	id = BOR_liberty_or_death
+	icon = GFX_UPO_We_Die_for_Freedom
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_never_again
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 9
+	y = 7
+}
+
+
+
+
+
+
+
+
+
+

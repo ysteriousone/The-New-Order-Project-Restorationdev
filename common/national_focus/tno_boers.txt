@@ -1,0 +1,11 @@
+focus_tree = {
+	id = BOR_south_africa_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BOR
+		}
+	}
+	shared_focus = BOR_the_war_of_liberation
+}
