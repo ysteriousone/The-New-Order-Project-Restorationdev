@@ -9,6 +9,7 @@ recruit_character = BOR_Boere_Volksraad
 recruit_character = BOR_P_W_Botha
 recruit_character = BOR_Jaap_Marais
 recruit_character = BOR_Rudolph_Hiemstra
+load_focus_tree = tno_boers
 
 add_ideas = {
    	BOR_Fight_Home
