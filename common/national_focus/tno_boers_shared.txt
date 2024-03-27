@@ -1,4 +1,4 @@
-# created by Karimlebg
+# created by dysentery, used TCE boer tree as base
 shared_focus = {
 	id = BOR_the_war_of_liberation
 	icon = GFX_GRO_So_It_Begins
@@ -183,7 +183,7 @@ shared_focus = {
 		add_war_support = 0.1
 		TNO_improve_conscription_policy_effectiveness_med = yes
 	}
-	x = 9
+	x = 10
 	y = 5
 }
 shared_focus = {
@@ -197,7 +197,7 @@ shared_focus = {
 		add_war_support = 0.1
 		TNO_improve_conscription_policy_effectiveness_med = yes
 	}
-	x = 9
+	x = 10
 	y = 6
 }
 shared_focus = {
@@ -211,16 +211,81 @@ shared_focus = {
 		add_war_support = 0.1
 		TNO_improve_conscription_policy_effectiveness_med = yes
 	}
-	x = 9
+	x = 10
 	y = 7
 }
-
-
-
-
-
-
-
-
-
-
+shared_focus = {
+	id = BOR_towards_the_black_sun
+	icon = GFX_BRG_Clouds_Over_The_Black_Sun
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_liberty_or_death
+    }
+	mutually_exclusive = { focus = BOR_reject_the_SS }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 9
+	y = 8
+}
+shared_focus = {
+	id = BOR_Proclaim_the_Ordensstat
+	icon = GFX_BRG_Focus_A_Simpler_Life
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_towards_the_black_sun
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+		set_cosmetic_tag = BOR_Ordensstat
+	}
+	x = 9
+	y = 9
+}
+shared_focus = {
+	id = BOR_reject_the_SS
+	icon = GFX_City_Guerrilla
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_liberty_or_death
+    }
+	mutually_exclusive = { focus = BOR_towards_the_black_sun }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 11
+	y = 8
+}
+shared_focus = {
+	id = BOR_Afrika_for_Boers
+	icon = GFX_COG_icon_our_neighbors
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_reject_the_SS
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 11
+	y = 9
+}
+shared_focus = {
+	id = BOR_Erika
+	icon = GFX_COR_Mercenary_Republic
+	cost = 2.00
+	prerequisite = {
+		focus = BOR_Afrika_for_Boers
+		focus = BOR_Proclaim_the_Ordensstat
+    }
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+		remove_national_spirit = BOR_disorganised_state
+	}
+	x = 10
+	y = 10
+}
