@@ -11,7 +11,10 @@ recruit_character = BOR_Jaap_Marais
 recruit_character = BOR_Rudolph_Hiemstra
 
 add_ideas = {
-	BOR_Fight_Home
+   	BOR_Fight_Home
+  	BOR_disorganised_state
+	BOR_the_false_republic
+  	BOR_against_the_hardliner
 	#POLITICAL
 	tno_political_parties_multiparty_system
 	tno_religious_rights_secularism
