@@ -7,7 +7,9 @@
  ## Cosmetic Tags ##
  BOR_Pakt: "Afrikaner Volkstaat"
  BOR_Pakt_DEF: "the Afrikaner Volkstaat"
-
+ BOR_Ordensstat: "SS-Ordensstat Südafrika"
+ BOR_Ordensstat_DEF: "the SS-Ordensstat of Südafrika"
+ 
  ### Parties ###
  BOR_conservatism_party: "Konserwatiewe Party"
  BOR_conservatism_party_long: "Konserwatiewe Party"
