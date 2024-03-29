@@ -147,27 +147,9 @@ set_popularities = {
 	despotism = 0
 	fascism = 0
 }
-create_country_leader = {
-	name = "Chiang Kai Shek"
-	desc = "POLITICS_XIN_CHIANG_DESC"
-	picture = Chiang_Kai_Shek.dds
-	expire = "1965.1.1"
-	ideology = paternalism_xunzheng_subtype
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "Deng Xiaoping"
-	desc = "POLITICS_XIN_DENG_DESC"
-	picture = Deng.dds
-	expire = "1965.1.1"
-	ideology = communist_workerism_subtype
-	traits = {
-		#
-	}
-}
+
+
 
 add_ideas = {
 	#Political
@@ -222,6 +204,7 @@ add_ideas = {
 	tno_academic_base_mass_illiteracy
 	tno_admin_efficiency_deficient_administrative_systems
 
+	Sphere_Chinese_Warlord
 	CHI_chinese_warlords
 }
 
@@ -279,5 +262,3 @@ add_equipment_to_stockpile = {
 	amount = 1000
 	producer = XIN
 }
-set_autonomy = { target = XIK autonomy_state = autonomy_military_district }
-set_autonomy = { target = QIN autonomy_state = autonomy_military_district }

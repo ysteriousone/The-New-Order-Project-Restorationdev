@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = CYL
+		owner = JAP
 		add_core_of = CYL
 		add_claim_by = AZH
 		victory_points = { 16151 20 }

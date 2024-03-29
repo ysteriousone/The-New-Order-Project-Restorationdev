@@ -5,7 +5,7 @@ state={
 		1018 4023 4160 7135 7192 10004 10105 11926 11981 14740 
 	}
 	history={
-		owner = JAP
+		owner = GNG
 		add_core_of = GNG
 		set_state_flag = state_renamings		
 		buildings = {

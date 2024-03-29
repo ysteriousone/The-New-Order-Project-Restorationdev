@@ -118,3 +118,13 @@ set_popularities = {
 	fascism = 0
 	
 }
+create_country_leader = {
+	name = "Nikolai Onoprienko"
+	desc = ""
+	picture = Nikolai.dds
+	expire = "1965.1.1"
+	ideology = paternalism_social_nationalism_subtype
+	traits = {
+		#
+	}
+}

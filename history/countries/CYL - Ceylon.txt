@@ -173,7 +173,7 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = conservatism
+	ruling_party = progressivism
 	last_election = "1960.3.19"
 	election_frequency = 60
 	elections_allowed = yes

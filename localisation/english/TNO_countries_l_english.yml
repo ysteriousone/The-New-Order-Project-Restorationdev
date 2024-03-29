@@ -55,9 +55,9 @@
  AFR_DEF: "Afar"
  AFR_ADJ: "Afari"
 
- AGS: "Angriffsgruppe Steiner"
- AGS_DEF: "Angriffsgruppe Steiner"
- AGS_ADJ: "Angriffsgruppe Steiner"
+ AGS: "Hamburg Commune"
+ AGS_DEF: "The Hamburg Commune"
+ AGS_ADJ: "Hamburger"
 
  ALB: "Albania"
  ALB_DEF: "Albania"
@@ -1184,9 +1184,9 @@
  WRS_ADJ: "West Russian"
 
  # X
- XIN: "Republic of China"
- XIN_DEF: "The Remnants of the Kuomintang"
- XIN_ADJ: "Kuomintang"
+ XIN: "Ottoman State in Xinjiang"
+ XIN_DEF: "The Ottoman State in Xinjiang"
+ XIN_ADJ: "Turk"
 
  XSM: "Ma Clique"
  XSM_DEF: "the Ma Clique"

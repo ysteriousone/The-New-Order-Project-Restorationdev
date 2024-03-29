@@ -395,6 +395,14 @@ set_autonomy = {
 	autonomous_state = autonomy_china_warlord_regime
 }
 set_autonomy = {
+	target = XIK
+	autonomous_state = autonomy_china_warlord_regime
+}
+set_autonomy = {
+	target = XIN
+	autonomous_state = autonomy_china_warlord_regime
+}
+set_autonomy = {
 	target = GUX
 	autonomous_state = autonomy_china_warlord_regime
 }

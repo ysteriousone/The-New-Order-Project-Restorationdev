@@ -1,0 +1,27 @@
+﻿focus_tree = {
+	id = Goering_start
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GGR
+		}
+	}
+	
+	default = no
+	focus = {
+		id = GGR_Der_Bruderkreig
+		icon = GFX_GER_GGR_der_burgerkrieg
+		x = 0
+		y = 0
+       cost = 1
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	
+	
+	}

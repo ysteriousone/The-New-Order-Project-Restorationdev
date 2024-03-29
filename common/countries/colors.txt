@@ -731,8 +731,8 @@ SHX = {
 	color_ui = rgb { 193 52 87 }
 }
 XIK = {
-	color = rgb { 175 153 187 }
-	color_ui = rgb { 175 153 187 }
+	color = rgb { 122 0 0 }
+	color_ui = rgb { 122 0 0 }
 }
 QIN = {
 	color = rgb { 86 91 125 }
@@ -743,8 +743,8 @@ NCC = {
 	color_ui = rgb { 0 145 99 }
 }
 XIN = {
-	color = rgb { 0 0 113 }
-	color_ui = rgb { 0 0 113 }
+	color = rgb { 64 124 67}
+	color_ui = rgb { 125 50 49 }
 }
 ETR = {
 	color = rgb { 105 128 137 }

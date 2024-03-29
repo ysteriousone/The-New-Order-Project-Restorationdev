@@ -1,0 +1,42 @@
+focus_tree = {
+	id = USA_GCW
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	default = no
+	shared_focus = USA_the_nixon_presidency
+	shared_focus = USA_SAW_Smash_the_Dominoes
+	shared_focus = USA_mccormack_against_the_npp
+	shared_focus = USA_the_jfk_presidency
+	#shared_focus = USA_the_iranian_civil_war
+	focus = {
+		id = USA_getting_involved
+
+		icon = GFX_generic_anglo_soldier
+		x = 0
+		y = 0
+		cost = 1
+
+		available = {
+        country_exists = FEN
+		}
+		completion_reward = {
+        add_to_faction = FEN
+		USA = {
+		transfer_state = 1566
+		transfer_state = 1322
+			}
+		FEN = { 
+		add_ideas = OFN_Independent_Member
+		}
+		}
+
+}
+
+
+}
+

@@ -119,3 +119,13 @@ set_popularities = {
 	fascism = 0
 	
 }
+create_country_leader = {
+	name = "Marian Spychalski"
+	desc = ""
+	picture = Spychalski.dds
+	expire = "1965.1.1"
+	ideology = despotism_military_junta_subtype
+	traits = {
+		#
+	}
+}

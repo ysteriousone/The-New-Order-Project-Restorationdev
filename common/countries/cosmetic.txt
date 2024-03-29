@@ -3,6 +3,11 @@ XIN_Deng = {
 	color_ui = rgb { 0 100 49 }
 }
 
+BRG_Frankreich = {
+	color = rgb { 0 0 0}
+	color_ui = rgb { 0 0 0 }
+}
+
 COG_GER = {
 	color = rgb { 118 124 94 }
 	color_ui = rgb { 118 124 94 }

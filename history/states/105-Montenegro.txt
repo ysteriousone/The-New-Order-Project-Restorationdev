@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = ITA
+		owner = ALB
 		victory_points = { 9874 5 }
 		victory_points = { 6913 1 }
 		buildings = {

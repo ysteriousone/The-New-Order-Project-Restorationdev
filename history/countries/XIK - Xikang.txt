@@ -148,6 +148,8 @@ set_popularities = {
 }
 
 add_ideas = {
+	Sphere_Chinese_Warlord
+	CHI_chinese_warlords
 	#Political
 	tno_political_parties_one_party_state
 	tno_religious_rights_secularism

@@ -299,7 +299,7 @@ country_event = {
 		}
 		add_to_variable = {
 			var = GER_Bormann_Influence
-			value = 30
+			value = 50
 		}
 		add_to_variable = {
 			var = GER_Goring_Influence
@@ -357,7 +357,7 @@ country_event = {
 		}
 		add_to_variable = {
 			var = GER_Goring_Influence
-			value = 20
+			value = 50
 		}
 		add_to_variable = {
 			var = GER_Speer_Influence
@@ -415,7 +415,7 @@ country_event = {
 		}
 		add_to_variable = {
 			var = GER_Speer_Influence
-			value = 15
+			value = 50
 		}
 		add_to_variable = {
 			var = GER_Heydrich_Influence
@@ -472,7 +472,7 @@ country_event = {
 		}
 		add_to_variable = {
 			var = GER_Heydrich_Influence
-			value = 10
+			value = 50
 		}
 		set_country_flag = GER_Hitler_Stage1
 		set_country_flag = GER_power_struggle
@@ -1474,7 +1474,11 @@ country_event = {
 				set_temp_variable = { SeaZone_ID = 6 } # 6; Indian Ocean
 				Cold_War_GUI_PowerProjection_RemoveSeaZone = yes
 			}
-
+        AGS = {
+		transfer_state = 188
+		transfer_state = 56
+		transfer_state = 775
+		}
 			GER_GCW_begin = yes
 
 			#Speidel Coup

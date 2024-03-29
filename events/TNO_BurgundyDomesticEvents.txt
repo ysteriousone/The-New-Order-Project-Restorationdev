@@ -393,6 +393,7 @@ country_event = {
 				transfer_state = 791
 				transfer_state = 24
 				transfer_state = 26
+				load_focus_tree = Burgundy_2
 			FIT = {
 				add_political_power = 100
 				transfer_state = 21

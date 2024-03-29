@@ -4,8 +4,8 @@ state={
 	name="STATE_607"
 
 	history={
-		owner = CHI
-		add_core_of = CHI
+		owner = SHX
+		add_core_of = SHX
 		buildings = {
 			schools = 2
 			offices = 1

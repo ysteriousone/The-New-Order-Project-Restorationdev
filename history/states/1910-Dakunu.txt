@@ -9,7 +9,7 @@ state={
 		power = 2
 	}
 	history={
-		owner = CYL
+		owner = JAP
 		victory_points = { 16152 1 }
 		buildings = {
 			infrastructure = 4

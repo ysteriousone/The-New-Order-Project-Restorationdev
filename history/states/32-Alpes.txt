@@ -13,7 +13,7 @@ state={
 	}
 
 	history={
-		owner = FRS
+		owner = BRG
 		buildings = {
 			schools = 2
 			infrastructure = 4

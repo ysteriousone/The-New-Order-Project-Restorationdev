@@ -5,7 +5,7 @@ state={
 		10229 16153 12258
 	}
 	history={
-		owner = CYL
+		owner = JAP
 		victory_points = { 10229 1 }
 		victory_points = { 12258 5 }
 		buildings = {

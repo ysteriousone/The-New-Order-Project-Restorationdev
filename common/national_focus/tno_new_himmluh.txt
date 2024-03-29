@@ -1,0 +1,114 @@
+focus_tree = {
+	id = Burgundy_2
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRG
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = BRG_triumph_of_the_Aryan_Man
+
+		icon = GFX_GER_Aryan_Supremacy
+		x = 0
+		y = 0
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			add_state_core = 792
+			add_state_core = 27
+			add_state_core = 20
+			add_state_core = 32
+			add_state_core = 26
+			add_state_core = 24
+			add_state_core = 791
+			add_state_core = 747
+			add_state_claim = 735
+			add_state_claim = 789
+			add_state_claim = 33
+			add_state_claim = 1613
+			add_state_claim = 14
+			add_state_claim = 1612
+			}
+		}
+		focus = {
+		id = BRG_not_finished
+		icon = GFX_CAU_by_right_of_aryan_blood
+		prerequisite = { focus = BRG_triumph_of_the_Aryan_Man }
+		x = 0
+		y = 1
+		cost = 2
+		completion_reward = {
+		declare_war_on = {
+    	target = BRT
+    	type = annex_everything
+	}
+			}
+		
+			}
+	focus = {
+		id = BRG_the_last_enemy
+		icon = GFX_AMK_an_army_under_the_burning_swastika
+		prerequisite = { focus = BRG_triumph_of_the_Aryan_Man }
+		x = 0
+		y = 2
+		cost = 2
+		completion_reward = {
+		declare_war_on = {
+    	target = HOL
+    	type = annex_everything
+	}
+			}
+		
+			}
+	focus = {
+		id = BRG_the_greatest_ambition
+		icon = GFX_KOM_vision_for_the_world
+		prerequisite = { focus = BRG_the_last_enemy }
+		available = {
+		NOT = {
+		country_exists = HOL
+		country_exists = BRT
+		}
+		}
+		x = 0
+		y = 3
+		cost = 2
+		completion_reward = {
+        set_cosmetic_tag = BRG_Frankreich
+	}
+			}
+			
+	focus = {
+		id = BRG_uneasy_first_days
+		icon = GFX_KOM_vision_for_the_world
+		prerequisite = { focus = BRG_the_greatest_ambition }
+		
+		x = 0
+		y = 4
+		cost = 2
+		completion_reward = {
+ 
+	}
+			}	
+			
+			
+	
+	
+	
+	
+}
+
+
+

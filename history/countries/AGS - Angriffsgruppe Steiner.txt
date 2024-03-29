@@ -1,15 +1,13 @@
-capital = 55
+capital = 64
 
 # Vacant
-recruit_character = AGS_Generic_Vacant
+
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-recruit_character = HWL_Felix_Steiner
+
 
 add_ideas = {
 
-	AGS_Angriffsgruppe_Standoff
-	AGS_Glorious_Warfare
 
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state
@@ -62,21 +60,25 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = communist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	national_socialism = 65
-	fascism = 35
-	paternalism = 0
-	liberalism = 0
-
-	despotism = 0
+communist = 100
 }
-
+create_country_leader = {
+	name = "Ulrike Meinhoff"
+	desc = ""
+	picture = Meinhoff.dds
+	expire = "1965.1.1"
+	ideology = communist_mao_zedong_thought_subtype
+	traits = {
+		#
+	}
+}
 set_research_slots = 3
 set_convoys = 200
 add_stability = 0.46
@@ -320,6 +322,6 @@ if = {
 }
 
 set_variable = { TNO_economy_type = token:Econ_Type_Planned }
-set_variable = { TNO_economy_subtype = token:Econ_Subtype_Burgsys }
+set_variable = { TNO_economy_subtype = token:Econ_Subtype_War_Communism }
 
 TNO_startup_nation = yes
