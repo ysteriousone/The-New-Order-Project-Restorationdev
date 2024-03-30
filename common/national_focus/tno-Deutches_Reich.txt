@@ -54,7 +54,10 @@ focus_tree = {
 		target = SGR
 			transfer_troops = yes
 			}
-		
+	declare_war_on = {
+    	target = AGS
+    	type = annex_everything
+	}
 			}
 		}
 		}
@@ -121,6 +124,10 @@ focus_tree = {
 		completion_reward = {
 		declare_war_on = {
     	target = BGR
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = SSW
     	type = annex_everything
 	}
 			}

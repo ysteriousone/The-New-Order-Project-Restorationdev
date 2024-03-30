@@ -1,0 +1,987 @@
+
+
+focus_tree = {
+	id = turkey_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+
+	focus = {
+		id = TUR_prepare_state
+
+		icon = GFX_USA_duty_to_country
+		x = 0
+		y = 0
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_prepare_state"
+		custom_effect_tooltip = TUR_tooltip_1
+		hidden_effect = {
+			TUR = {
+				country_event = { id = turkey.33 }
+			}
+		}
+	}
+}
+		focus = {
+		id = TUR_turkish_inds
+		prerequisite = { focus = TUR_prepare_state }
+		icon = GFX_factories_red
+		x = 9
+		y = 2
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			343 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
+			}
+			add_ideas = { JAP_maximizing_growth_idea_0 days = 100 }
+			add_political_power = 50
+			
+			}
+		}
+		focus = {
+		id = TUR_invest_infrastructure
+		prerequisite = { focus = TUR_turkish_inds }
+		icon = GFX_ENG_rebuilding_roads
+		relative_position_id = TUR_turkish_inds
+		x = -1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			347 = {
+				add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+				}
+			}
+			add_political_power = 50
+			}
+		}
+	focus = {
+		id = TUR_new_funds
+		prerequisite = { focus = TUR_turkish_inds }
+		icon = GFX_USA_money_wall
+		relative_position_id = TUR_turkish_inds
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+			}
+		completion_reward = {
+		set_temp_variable = { gdp_growth_temp = 0.25 }
+		add_political_power = 25
+						}
+		}
+    focus = {
+		id = TUR_develop_work
+		prerequisite = { focus = TUR_invest_infrastructure }
+		icon = GFX_USA_workers_for_business
+			relative_position_id = TUR_invest_infrastructure
+		x = -1
+		y = 1
+		cost = 6
+
+		available = {
+		completion_reward = {
+		349 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		344 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = hospitals
+				level = 3
+				instant_build = yes
+				}
+			}
+			
+	}
+	}	
+
+	 focus = {
+		id = TUR_eco_reforms
+		prerequisite = { focus = TUR_invest_infrastructure }
+		prerequisite = { focus = TUR_new_funds }
+		icon = GFX_IBR_paperwork
+		relative_position_id = TUR_invest_infrastructure
+		x = 1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = JAP_maximizing_growth_idea_0
+			add_idea = JAP_maximizing_growth_idea_1
+		}
+		add_political_power = 25
+	}
+	}
+	
+	 focus = {
+		id = TUR_tech_promo
+		prerequisite = { focus = TUR_new_funds }
+		icon = GFX_CHI_We_Have_The_Technology
+		relative_position_id = TUR_new_funds
+		x = 1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 3
+				category = electronics
+}
+	}
+	}
+	
+	 focus = {
+		id = TUR_dom_comp
+		prerequisite = { focus = TUR_eco_reforms }
+		prerequisite = { focus = TUR_develop_work }
+		prerequisite = { focus = TUR_tech_promo }
+		icon = GFX_generic_money_handout
+		relative_position_id = TUR_eco_reforms
+		x = 0
+		y = 2
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = -250
+			354 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+				}
+			}
+			339 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
+			}
+			1446 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+				}
+			}
+	}
+	}
+	
+	 focus = {
+		id = TUR_l_italy
+		prerequisite = { focus = TUR_dom_comp }
+		icon = GFX_IME_Appeal_to_the_Italians_at_Home
+		relative_position_id = TUR_dom_comp
+		mutually_exclusive = { focus = TUR_new_invest }
+		x = -3
+		y = 1
+		cost = 6
+
+		available = {
+			is_in_faction_with = ITA
+		}
+		completion_reward = {
+			TUR = {
+			set_country_flag = HAS_ECON_SPHERE
+			econ_leave_sphere_TUR = yes
+			econ_join_sphere_ITA = yes
+			}
+			BKU = { 
+			set_country_flag = HAS_ECON_SPHERE
+			econ_join_sphere_ITA = yes
+			econ_leave_sphere_TUR = yes
+			}
+			SNS = {
+			set_country_flag = HAS_ECON_SPHERE
+			econ_join_sphere_ITA = yes
+			econ_leave_sphere_TUR = yes
+			}
+	}
+	}
+	
+	 focus = {
+		id = TUR_neo_deals
+		prerequisite = { focus = TUR_l_italy }
+		icon = GFX_focus_MAD_meet_with_moorer
+		relative_position_id = TUR_l_italy
+		x = -1
+		y = 2
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+			add_idea = TUR_economic_stagnation_2
+			remove_idea = TUR_economic_stagnation_1
+			}
+	}
+	}
+	
+	 focus = {
+		id = TUR_more_itrade
+		prerequisite = { focus = TUR_neo_deals }
+		icon = GFX_goal_generic_trade
+		relative_position_id = TUR_neo_deals
+		x = -1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = ITA modifier = large_increase }
+	}
+	}
+	
+	 focus = {
+		id = TUR_med_trade_only
+		prerequisite = { focus = TUR_neo_deals }
+		icon = GFX_DST_lock_down_the_cities
+		relative_position_id = TUR_neo_deals
+		x = 1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = tno_trade_laws_closed_economy
+	}
+	}
+	
+	 focus = {
+		id = TUR_new_invest
+		prerequisite = { focus = TUR_dom_comp }
+		icon = GFX_IND_Build_Up_Support
+		relative_position_id = TUR_dom_comp
+		mutually_exclusive = { focus = TUR_l_italy }
+		x = 3
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			swap_ideas = {
+			add_idea = TUR_economic_stagnation_2
+			remove_idea = TUR_economic_stagnation_1
+			}
+	}
+	}
+	
+	 focus = {
+		id = TUR_reach_out
+		prerequisite = { focus = TUR_new_invest }
+		icon = GFX_focus_MAD_send_the_letter
+		relative_position_id = TUR_new_invest
+		x = 1
+		y = 2
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_opinion_modifier = { target = USA modifier = large_increase }
+			add_opinion_modifier = { target = CAN modifier = large_increase }
+			add_opinion_modifier = { target = QUE modifier = large_increase }
+			add_opinion_modifier = { target = AST modifier = large_increase }
+			add_opinion_modifier = { target = NZL modifier = large_increase }
+			add_opinion_modifier = { target = IND modifier = large_increase }
+			add_opinion_modifier = { target = GUY modifier = large_increase }
+			add_opinion_modifier = { target = SUR modifier = large_increase }
+			add_opinion_modifier = { target = BLZ modifier = large_increase }
+			add_opinion_modifier = { target = WIN modifier = large_increase }
+			add_opinion_modifier = { target = HAI modifier = large_increase }
+			add_opinion_modifier = { target = FAR modifier = large_increase }
+			add_opinion_modifier = { target = ICE modifier = large_increase }
+			add_opinion_modifier = { target = ITA modifier = medium_decrease }
+			add_opinion_modifier = { target = IBR modifier = medium_decrease }
+			add_opinion_modifier = { target = CRO modifier = medium_decrease }
+			add_opinion_modifier = { target = BUL modifier = medium_decrease }
+			add_opinion_modifier = { target = GRE modifier = medium_decrease }
+			add_opinion_modifier = { target = EGY modifier = medium_decrease }
+			add_opinion_modifier = { target = IME modifier = medium_decrease }
+			add_opinion_modifier = { target = IRQ modifier = medium_decrease }
+			add_opinion_modifier = { target = SLG modifier = medium_decrease }
+			add_opinion_modifier = { target = MNT modifier = medium_decrease }
+			add_opinion_modifier = { target = IEA modifier = medium_decrease }
+			add_opinion_modifier = { target = YEM modifier = medium_decrease }
+			add_opinion_modifier = { target = GUL modifier = medium_decrease }
+	}
+	}
+	
+	 focus = {
+		id = TUR_ofn_trade
+		prerequisite = { focus = TUR_reach_out }
+		icon = GFX_OFN_handshake
+		relative_position_id = TUR_reach_out
+		x = 1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			TUR = {
+			set_country_flag = HAS_ECON_SPHERE
+			econ_leave_sphere_TUR = yes
+			econ_join_sphere_USA = yes
+			}
+	}
+	}
+	
+	 focus = {
+		id = TUR_free_trade
+		prerequisite = { focus = TUR_reach_out }
+		icon = GFX_KOM_restore_international_trade
+		relative_position_id = TUR_reach_out
+		x = -1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_ideas = tno_trade_laws_free_trade
+	}
+	}
+	
+	 focus = {
+		id = TUR_europe
+		prerequisite = { focus = TUR_reach_out }
+		icon = GFX_Generic_Ship_Trade
+		relative_position_id = TUR_reach_out
+		x = 0
+		y = 2
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			remove_from_faction = TUR
+			remove_from_faction = BKU
+			remove_from_faction = SNS
+	}
+	}
+	
+	focus = {
+		id = TUR_new_investm
+		prerequisite = { focus = TUR_reach_out focus = TUR_neo_deals }
+		icon = GFX_ORE_a_more_professional_council
+		relative_position_id = TUR_reach_out
+		x = -4
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 75
+	}
+	}
+	
+	 focus = {
+		id = TUR_healthcare
+		prerequisite = { focus = TUR_new_investm }
+		icon = GFX_USA_The_Workplace_Healthcare_Act
+		relative_position_id = TUR_new_investm
+		x = -1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			346 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = hospitals
+				level = 3
+				instant_build = yes
+				}
+			}
+	}
+	}
+	
+	focus = {
+		id = TUR_education
+		prerequisite = { focus = TUR_new_investm }
+		icon = GFX_VIN_Education_Reform
+		relative_position_id = TUR_new_investm
+		x = 1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			341 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = schools
+				level = 3
+				instant_build = yes
+				}
+			}
+	}
+	}
+	
+	focus = {
+		id = TUR_correctional
+		prerequisite = { focus = TUR_healthcare }
+		prerequisite = { focus = TUR_education }
+		icon = GFX_TNO_generic_prison_camp
+		relative_position_id = TUR_healthcare
+		x = 1
+		y = 1
+		cost = 6
+
+		available = {
+
+		}
+		completion_reward = {
+			346 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+				type = prisons
+				level = 5
+				instant_build = yes
+				}
+			}
+	}
+	}
+	
+	##LEFT SIDE
+	
+	focus = {
+		id = TUR_mehmetcik
+		prerequisite = { focus = TUR_prepare_state }
+		icon = GFX_Generic_Army_Officers
+		x = -9
+		y = 2
+		cost = 1
+
+		available = {
+			has_idea = TUR_military_attempt_1
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_mehmetcik"
+		custom_effect_tooltip = TUR_tooltip_2
+		hidden_effect = {
+			TUR = {
+				country_event = { id = turkey.34 }
+			}
+			war_support_factor = 0.05
+		}
+	}
+}
+	
+	focus = {
+		id = TUR_military_staff
+		prerequisite = { focus = TUR_mehmetcik }
+		icon = GFX_SGR_Keep_them_on_leash
+		relative_position_id = TUR_mehmetcik
+		x = 0 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+			has_idea = TUR_military_attempt_2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_military_attempt_2
+				add_idea = TUR_military_attempt_3
+			}
+			max_command_power = 20
+			war_support_factor = 0.05
+		}
+	}
+	
+	focus = {
+		id = TUR_expand_army
+		prerequisite = { focus = TUR_mehmetcik }
+		icon = GFX_YUN_Every_Man_A_Soldier
+		relative_position_id = TUR_mehmetcik
+		x = -2 #<>
+		y = 2 #^
+		cost = 1
+
+		available = {
+		has_idea = TUR_military_attempt_4
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_military_attempt_4
+				add_idea = TUR_military_attempt_5
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_rule_med
+		prerequisite = { focus = TUR_expand_army }
+		icon = GFX_KEM_dragon_ships
+		relative_position_id = TUR_expand_army
+		x = 0 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				category = naval_equipment
+			}	
+		}
+	}
+	
+	focus = {
+		id = TUR_air_supreme
+		prerequisite = { focus = TUR_expand_army }
+		icon = GFX_SVR_The_Airfields_of_Surgut
+		relative_position_id = TUR_expand_army
+		x = -2 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_air_techs_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 2
+				category = air_equipment
+				}
+			}
+			experience_gain_air_factor = 25
+		}
+		
+	focus = {
+		id = TUR_paratroopers
+		prerequisite = { focus = TUR_air_supreme }
+		icon = GFX_GGR_Prepare_the_Fallschirmjagers
+		relative_position_id = TUR_air_supreme
+		x = 0 #<>
+		y = 2 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = transport_air_1950
+				amount = 400
+				producer = TUR
+			}
+		}
+	}	
+	
+	focus = {
+		id = TUR_sof
+		prerequisite = { focus = TUR_paratroopers }
+		prerequisite = { focus = TUR_marines }
+		icon = GFX_goal_COG_icon_zentralafrikaner_chain_of_command
+		relative_position_id = TUR_paratroopers
+		x = 0 #<>
+		y = 2 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+		army_experience = 50
+			
+			
+			}
+		}
+	
+	focus = {
+		id = TUR_marines
+		prerequisite = { focus = TUR_rule_med }
+		icon = GFX_TNO_generic_marine
+		relative_position_id = TUR_rule_med
+		x = 0 #<>
+		y = 3 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				category = naval_equipment
+			}
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 50
+				producer = TUR
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_mil_org
+		prerequisite = { focus = TUR_military_staff }
+		icon = GFX_Generic_Army_of_Compromise
+		relative_position_id = TUR_military_staff
+		x = 0 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+			has_idea = TUR_military_attempt_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_military_attempt_3
+				add_idea = TUR_military_attempt_4
+			}
+			add_ideas = tno_military_supervision_rules_of_engagement
+			war_support_factor = 0.05
+		}
+	}
+	
+	focus = {
+		id = TUR_expand
+		prerequisite = { focus = TUR_mil_org }
+		prerequisite = { focus = TUR_speed_arms }
+		prerequisite = { focus = TUR_paratroopers focus = TUR_marines }
+		icon = GFX_BOV_burn_their_cities
+		relative_position_id = TUR_mil_org
+		x = 0 #<>
+		y = 4 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			war_support_factor = 0.15
+			
+			}
+		}
+	
+	focus = {
+		id = TUR_grants
+		prerequisite = { focus = TUR_mehmetcik }
+		icon = GFX_ORE_grant_full_access
+		relative_position_id = TUR_mehmetcik
+		x = 2 #<>
+		y = 2 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 4
+				category = infantry_weapons
+			}
+			add_political_power = -25
+			}
+		}
+	
+	focus = {
+		id = TUR_speed_arms
+		prerequisite = { focus = TUR_grants }
+		icon = GFX_factories_red
+		relative_position_id = TUR_grants
+		x = 0 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+			has_idea = TUR_military_attempt_5
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_military_attempt_5
+				add_idea = TUR_military_attempt_6
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_peak_factory
+		prerequisite = { focus = TUR_speed_arms }
+		icon = GFX_factories_red
+		relative_position_id = TUR_speed_arms
+		x = 1 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+			has_idea = TUR_military_attempt_6
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = TUR_military_attempt_6
+				add_idea = TUR_military_attempt_7
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_naval
+		prerequisite = { focus = TUR_grants }
+		icon = GFX_Shipping_Expansion
+		relative_position_id = TUR_grants
+		x = 2 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			342 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 4
+				category = naval_equipment
+			}
+			experience_gain_navy_factor = 25
+		}
+	}
+	
+	focus = {
+		id = TUR_l_germans
+		prerequisite = { focus = TUR_naval }
+		icon = GFX_JAP_The_Hidden_Menace_submarine
+		relative_position_id = TUR_naval
+		x = 1 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 4
+				category = naval_equipment
+			}
+			experience_gain_navy_factor = 25
+		}
+	}
+	
+	focus = {
+		id = TUR_seize
+		prerequisite = { focus = TUR_expand }
+		icon = GFX_GGR_March_On_Copenhagen
+		relative_position_id = TUR_expand
+		x = 0 #<>
+		y = 2 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TUR_seize"
+		custom_effect_tooltip = TUR_tooltip_3
+		hidden_effect = {
+		start_border_war = {
+			change_state_after_war = no
+				attacker = {
+					state = 1267
+					num_provinces = 2
+					on_win = turkey.35
+					on_lose = turkey.36
+					on_cancel = turkey.37
+				}
+				
+				defender = {
+					state = 1266
+					num_provinces = 2
+					on_win = japan_border_conflict.3
+					on_lose = japan_border_conflict.2
+					on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+	}
+}
+	
+	focus = {
+		id = TUR_land
+		prerequisite = { focus = TUR_seize }
+		icon = GFX_generic_Naval_Hit_and_Run
+		relative_position_id = TUR_seize
+		x = -1 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_land"
+		custom_effect_tooltip = TUR_tooltip_4
+			hidden_effect = {
+			GRE = { country_event = turkey.42 }
+			}
+			}
+		}
+	
+	focus = {
+		id = TUR_request
+		prerequisite = { focus = TUR_seize }
+		icon = GFX_WAL_Generic_Papers
+		relative_position_id = TUR_seize
+		x = 1 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_request"
+		custom_effect_tooltip = TUR_tooltip_5
+			hidden_effect = {
+			TUR = { country_event = turkey.48 }
+			}
+			}
+		}
+	
+	focus = {
+		id = TUR_conquer
+		prerequisite = { focus = TUR_land }
+		prerequisite = { focus = TUR_request }
+		icon = GFX_Generic_Desert_Patrols
+		relative_position_id = TUR_land
+		x = 1 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus TUR_conquer"
+		custom_effect_tooltip = TUR_tooltip_6
+			hidden_effect = {
+			IRQ = { country_event = turkey.49 }
+			}
+			}
+		}
+	
+	focus = {
+		id = TUR_oil
+		prerequisite = { focus = TUR_conquer }
+		icon = GFX_JAP_oil_concessions
+		relative_position_id = TUR_conquer
+		x = 0 #<>
+		y = 1 #^
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+			SAU = { country_event = turkey.53 }
+			
+			
+			}
+		}
+	
+			}
+	

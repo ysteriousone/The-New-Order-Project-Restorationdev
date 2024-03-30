@@ -31,6 +31,101 @@
  TUR_1971_conservatism_party_long:0 "Adalet Partisi"
 
  ###############
+ ##Focus Names##
+ ###############
+ 
+ #Right
+ 
+ TUR_prepare_state:0 "Prepare the State"
+ TUR_prepare_state_desc:0 "The preparation of the Turkish State for its current issues and the future things that will allow Turkey to thrive is essential. To accomplish this the first step is to assess the current situation and gather the results.\n\nWe know of the three major issues in our country, our outdated military, the ethnic crisis in South Turkey, and our economic stagnation. We will go down a step-by-step plan to allow us to safely get rid of these threats to our nation.\n\nWe will have a limited amount of time before only more bad things happen or more crisis arise and we will need to complete the first part of each plan quickly before our nation suffocates under the pressure."
+ 
+ TUR_turkish_inds:0 "The Turkish Industry"
+ TUR_invest_infrastructure:0 "Investing into Infrastructure"
+ TUR_new_funds:0 "New Funds"
+ TUR_develop_work:0 "Development of the Workforce"
+ TUR_eco_reforms:0 "Economic Reforms"
+ TUR_tech_promo:0 "Promotion of Technology"
+ TUR_dom_comp:0 "Funding Domestic Companies"
+ TUR_new_invest:0 "New Investments"
+ TUR_reach_out:0 "Reaching Out"
+ TUR_ofn_trade:0 "Trade with the OFN"
+ TUR_free_trade:0 "Free Trade"
+ TUR_europe:0 "Abandoning Europe"
+ TUR_l_italy:0 "Loyalty to the Italians"
+ TUR_neo_deals:0 "Re-Negotiate Deals"
+ TUR_more_itrade:0 "Increase Italian Trade"
+ TUR_med_trade_only:0 "Mediterranean Trade Only"
+ TUR_med_trade:0 "Mediterranean Trade"
+ TUR_new_investm:0 "More Investments"
+ TUR_healthcare:0 "Healthcare Spending"
+ TUR_education:0 "Increasing Education"
+ TUR_correctional:0 "Correctional Facilities"
+ 
+ #Left
+ 
+ TUR_mehmetcik:0 "Mehmetçik"
+ TUR_mehmetcik_desc:0 "Mehmetfaf is a Turkish word that describes a Turkish Soldier which is fitting for our first step as the soldiers are the main ingredient for our path to glory. We will start by doing some micro changes to our organization and some updates to our military.\n\nAlthough we have done a little, we will need a lot to be able to fix our military and bring it to a state where our enemy fears us again. The Soldier will allow us to do this by being brave, using his equipment, organizational skills, things from the military command, and their reliable weapon produced at a high rates of production."
+ TUR_military_staff:0 "Military Staff"
+ TUR_expand_army:0 "Expanding our Military"
+ TUR_grants:0 "Weapon Grants"
+ TUR_mil_org:0 "Military Organization"
+ TUR_air_supreme:0 "Supremecy in the Air"
+ TUR_rule_med:0 "Rule the Mediterranean"
+ TUR_paratroopers:0 "Prepare Paratroopers"
+ TUR_marines:0 "Prepare Marines"
+ TUR_sof:0 "Special Operations"
+ TUR_expand:0 "Expansionist Policy"
+ TUR_seize:0 "Seize Thrace and Kardzhali"
+ TUR_land:0 "Land on Cyprus"
+ TUR_request:0 "Request the Dodecanese Islands"
+ TUR_conquer:0 "Conquer Iraq"
+ TUR_oil:0 "Demand Reserve Saudi Oil"
+ TUR_speed_arms:0 "Speed up Armament Production"
+ TUR_naval:0 "Produce Naval Vessels"
+ TUR_peak_factory:0 "Peak Factory Production"
+ TUR_l_germans:0 "Learn from the U-boats"
+ 
+ ##########
+ ##Events##
+ ##########
+ 
+ WORLD.596.t:0 "[Get_newspaper_header]The Republic of Turkey Seizes Bulgaria"
+ WORLD.596.d:0 "There has been a series of provacations in the Balkan territories. The events started in Turkish Thrace and Greek Thrace, it first started as a border conflict then the Turkish Armed Forces 'liberated' the rest of Thrace.\n\nEarly today the Government Office from Turkey demanded the submission of the Tsardom of Bulgaria and they suprisingly accepted. It seems that in the Mediterranean and the East Balkans things are starting to escalate and it appears there will be nobody to stop the escalation.\n\nThis is not helping the ongoing Cold War, even though its irrelevant. With more and more conflicts starting around the World it may appear that the World may be headed into another Massive World War."
+ WORLD.596.a:0 "Another Balkan Incident?"
+ 
+ # World ^
+ turkey.33.t:0 "Status of Turkey"
+ turkey.33.d:0 "Ever since the Second Weltkrieg, the Turkish-German relations have only went down. The Germans decided they had no more care for nations like ours because of how 'Insignificant' we're. On top of that, we were promised investments that in turn never came. We are now stuck in a State of Political discontent and Economic Crisis.\n\nOur Country now, on top of the economic crisis, has to deal with the mismanagement of the population that were previously located in the Caucasus. This was due to the incompetence of the Fifth and Sixth Inspectorate Generals and now they're coming to haunt us as resistance is spreading throughout our land.\n\nAnother issue is that our military is lacking in technology, equipment, and manpower. To be able to actually be a major nation in the Middle-East we will have to quickly fix our situation.\n\nTo add the final cherry on top, the Italo-Turkish relations have been at a all time low and tensions higher than ever due to them occuping rightful Turkish land. "
+ turkey.33.a:0 "What will become of us?"
+ 
+ turkey.34.t:0 "The Path to Glory"
+ turkey.34.d:0 "Our post-war military has been in a decline for years causing things like our factories to slow and our army to weaken, our military factories have almost halted due to a civilian economy. In the year 1962 we have nothing to show of ourselves except some divisions with old equipment and old ways of military command.\n\nWe must now take the initiative to reform our military and re-equip our divisions so we can take actions with future plans. We must decide what path to take first, expansion of our army, organization, or production."
+ turkey.34.a:0 "Soon the world will fear us!"
+ 
+ turkey.41.t:0 "The Bulgarians Accepted!"
+ turkey.41.d:0 "The Bulgarians sent a letter back to Ankara and we hesitant with the decision but with the assurance of our military to protect them the willingly agreed.\n\nAlthough this is the first nation to fall to us, the rest will not come so easily and we must be prepared for that."
+ turkey.41.a:0 "This is just the first step!"
+ 
+ turkey.42.t:0 "Turks Demand Our Islands!"
+ turkey.42.d:0 "We have recieved a telegram from the Government Office of Turkey, they demand our islands including Crete, Cyprus, and Cyclades.\n\nWe need these islands for strategic importance and because of the Chromium on the Cyclades, however, the Turkish Army is far superior, we are left with only two options.."
+ turkey.42.a:0 "Secede the usless islands.."
+ turkey.42.b:0 "We shall fight for our land! WE'RE GREEK!"
+ 
+ turkey.43.t:0 "Greeks Accepts Our Demands!"
+ turkey.43.d:0 "The Greeks seem to know their place in the world and have ceded all of their occupied islands back into the rightful hands of us.\n\nNow that we have the land there is only two questions that remain with the Greeks, do we push for submission or are we happy with our land back?"
+ turkey.43.a:0 "Push for more demands."
+ turkey.43.b:0 "We're satisfied with our land."
+ 
+ turkey.44.t:0 "Greeks Deny Our Demands!"
+ turkey.44.d:0 "The Greeks appear to believe in themselves despite all odds, we outnumber them in the catagories in Naval, Army, and Air yet they deny our demands.\n\nWe can go in on them Immediately or we can build up a little more then strike, there is almost no question that Greece will become occupied by us."
+ turkey.44.a:0 "They must be insane!"
+ 
+ turkey.45.t:0 "The Turks Demand More!"
+ turkey.45.d:0 "The Turkish State seems to believe they're stronger than us! We know that outnumber us, they have more planes, ships, and more men, but they do not have the Greek Warrior spirit.\n\nThis came in this morning and we decided to vote on it, the voting result is.."
+ turkey.45.a:0 "Change our Country's language to Turkish.."
+ turkey.45.b:0 "Greece shall never fall to a outside invader!"
+
+ ###############
  ##Leader Bios##
  ###############
  
@@ -51,6 +146,10 @@
  TUR_italo_turkish_tension_desc:0 "The Triumvirate is on its deathbed, and the "loving" relatives are mostly cheering for the agony to end. With relationships between Turkey and its former Italian ally at an all-times low, several nationalist politicians have resurrected the old Turkish claims to the Levant, Cyprus, Rhodes and Thessaly, in the hope of bolstering national morale - and their own popularity.\n\nDespite this nationalistic revival, there are many who express worry, or outright fear, for the potential consequences of such claims. Italy is - after all - the most powerful country in the Mediterranean, and despite its overstretched forces, there is no guarantee that they won't find the strength to fight..."
  TUR_inspectorate_generals:0 "Legacy of The Fifth and Sixth Inspectorate Generals"
  TUR_inspectorate_generals_desc:0 "The Fifth and Sixth Inspectorates were government commissions tasked with extending Turkification policies to the lands acquired after the war, mainly the new provinces in the Caucasus and the Levant. Despite their efforts, they only managed to create more problems than they were actually able to solve: the Fifth Inspectorate simply deported Armenians and Kurds from the Caucasus to the Levant, while the Sixth was only able of replacing a colonial administration with a Turkish one, leaving rural areas de facto abandoned to themselves.\n\nNow, unrest is rising across all newly-acquired provinces. Despite harsher and harsher methods - which are slowly turning even peaceful locals against the government - dissent and separatism are constantly growing, and the military police is unable to keep them under control: reforms are needed for something to change, and even then, it is not clear whether the change will be for good, or for worse..."
+ TUR_military_attempt_1:0 "Military Crisis"
+ TUR_military_attempt_1_desc:0 "“I will no longer fight the Turks. They are very brave and good people.” - Andreas Phitiades\n\nWith our current standing of a under equipped, outdated, and no properly organized military, we are facing a crisis where the military is on the verge of collapse, only Allah knows what will happen if that does happen.."
+ TUR_military_attempt_2:0 "Fixing Our Military"
+ TUR_military_attempt_2_desc:0 "Give me an army of Turks and I’ll take the world hostage.” - Napoleon Bonaparte\n\nWe've decided that its not too late to attempt at fixing our military. This will be difficult and will present many obstacles, however, we must prevail as this is the very much the one thing that will determine the fate of our nation."
  
  ### Character Localisation ###
  TUR_Ismet_Inonu: "Ismet Inönü"

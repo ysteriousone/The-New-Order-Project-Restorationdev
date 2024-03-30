@@ -1,15 +1,12 @@
 capital = 57
 
 # Vacant
-recruit_character = SSW_Generic_Vacant
+
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-recruit_character = HWL_Fritz_Klingenberg
+
 
 add_ideas = {
-	SSW_wewelsburg_citadel_project
-	SSW_a_unit_divided
-	SSW_come_in_ostparis
 
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state
@@ -71,13 +68,23 @@ set_politics = {
 }
 
 set_popularities = {
-	national_socialism = 88
-	ultranationalism = 12
+	national_socialism = 90
+	ultranationalism = 5
 	fascism = 0
 	paternalism = 0
-	liberalism = 0
+	liberalism = 5
 
 	despotism = 0
+}
+create_country_leader = {
+	name = "Otto Strasser"
+	desc = ""
+	picture = Strasser.dds
+	expire = "1965.1.1"
+	ideology = national_socialism_revolutionary_nazism_subtype
+	traits = {
+		#
+	}
 }
 
 #econtype

@@ -1,10 +1,9 @@
 capital = 55
 
 # Vacant
-recruit_character = AGS_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-recruit_character = HWL_Felix_Steiner
+
 
 add_ideas = {
 

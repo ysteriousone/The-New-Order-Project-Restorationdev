@@ -1478,6 +1478,17 @@ country_event = {
 		transfer_state = 188
 		transfer_state = 56
 		transfer_state = 775
+		add_state_core = 188
+		add_state_core = 56
+		add_state_core = 775
+		}
+		DEN = {
+		transfer_state = 774
+		}
+		SSW = {
+		transfer_state = 1814
+		transfer_state = 60
+		transfer_state = 65
 		}
 			GER_GCW_begin = yes
 

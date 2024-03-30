@@ -1635,7 +1635,7 @@ country_event = { #Syria, Kurdistan and Armenia freed
 		1241 = {
 			set_demilitarized_zone = no
 		}
-		1450 = {
+		1459 = {
 			set_demilitarized_zone = no
 		}
 		1242 = {
@@ -1675,7 +1675,7 @@ country_event = { #Syria, Kurdistan and Armenia freed
 			transfer_state = 1241
 			transfer_state = 1242
 			transfer_state = 1243
-			transfer_state = 1450
+			transfer_state = 1459
 			econ_join_sphere_TUR = yes
 			if = {
 				limit = {
@@ -2039,7 +2039,7 @@ country_event = { #Dashnak Revolt
 			}
 			declare_war_on = { type = independence_wargoal target = TUR }
 		}
-		country_event = { id = turkey_skeleton.10 days = 150 }
+		country_event = { id = turkey_skeleton.10 days = 159 }
 	}
 }
 
@@ -2183,7 +2183,7 @@ country_event = {
 		1372 = {
 			set_demilitarized_zone = no
 		}
-		1450 = {
+		1459 = {
 			set_demilitarized_zone = no
 		}
 		470 = {
@@ -2519,7 +2519,7 @@ country_event = {
 		344 = {
 			damage_building = { type = infrastructure damage = 0.6}
 		}
-		350 = {
+		359 = {
 			damage_building = { type = infrastructure damage = 0.6}
 		}
 		353 = {
@@ -2706,7 +2706,7 @@ country_event = { #Surrender Event
 
 	option = {
 		name = turkey.30.a
-		add_political_power = -50
+		add_political_power = -59
 		hidden_effect = {
 			country_event = {
 				id = turkey.31
@@ -2755,7 +2755,7 @@ country_event = { #Surrender Event 2
 
 	option = {
 		name = turkey.31.a
-		add_political_power = -50
+		add_political_power = -59
 		hidden_effect = {
 			country_event = {
 				id = turkey.27
@@ -2816,10 +2816,550 @@ country_event = { # Scorza's Italy propose A new Congress
 		name = turkey.32.c
 		ITA = {
 			country_event = {
-				id = scorza.50
+				id = scorza.59
 				days = 1
 				random = 1
 			}
 		}
 	}
 }
+
+# Focus
+
+country_event = { # Status of Turkey
+	id = turkey.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.33"}
+	title = turkey.33.t
+	desc = turkey.33.d
+	picture = GFX_report_event_TUR_inonu_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.33.a
+		TUR = {
+			add_political_power = 25
+			add_stability = 0.05
+		}
+	}
+}
+
+country_event = { # The Path to Glory
+	id = turkey.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.34"}
+	title = turkey.34.t
+	desc = turkey.34.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.34.a
+		TUR = {
+			swap_ideas = {
+				remove_idea = TUR_military_attempt_1
+				add_idea = TUR_military_attempt_2
+			}
+		}
+	}
+}
+	
+country_event = { # Border Conflict Won
+	id = turkey.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.35"}
+	title = turkey.35.t
+	desc = turkey.35.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.35.a
+		TUR = {
+			country_event = turkey.38 
+			transfer_state = 1266
+			transfer_state = 184
+			transfer_state = 1984
+			}
+		}
+	}
+
+country_event = { # Border Conflict Lost
+	id = turkey.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.36"}
+	title = turkey.36.t
+	desc = turkey.36.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.36.a
+		TUR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				generator = { 1266 1984 184 }
+				}
+			}
+		}		
+	}
+	
+country_event = { # Border Conflict Backed Out
+	id = turkey.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.37"}
+	title = turkey.37.t
+	desc = turkey.37.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.37.a
+		TUR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BUL
+				generator = { 1266 1984 184 }
+				}
+			}
+		}		
+	}
+	
+country_event = { # Demand BUL Sub
+	id = turkey.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.38"}
+	title = turkey.38.t
+	desc = turkey.38.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.38.a
+		BUL = {
+			country_event = turkey.39 
+		}
+	
+	option = {
+		name = turkey.38.b
+		TUR = {
+			add_stability = 0.05
+			}
+		}
+	}
+}
+
+country_event = { # Demand BUL Sub PT 2
+	id = turkey.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.39"}
+	title = turkey.39.t
+	desc = turkey.39.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.39.a # yes
+		TUR = {
+			country_event = turkey.41
+		}
+		
+		ai_chance = {
+            factor = 60
+			}
+	
+		hidden_effect = {
+			TUR = {
+				country_event = { id = WORLD.596 }
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.39.b # no
+		TUR = {
+			country_event = turkey.40
+		}
+		
+		ai_chance = {
+            factor = 40
+			}
+		}
+	}
+
+country_event = { # War or no (rejected)
+	id = turkey.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.40"}
+	title = turkey.40.t
+	desc = turkey.40.d
+	picture = GFX_report_event_TUR_victory_day_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.40.a
+		TUR = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BUL
+				}
+			add_stability -0.05
+			}
+		}
+
+	option = {
+		name = turkey.40.b
+		TUR = {
+			add_stability = 0.05
+			}
+		}
+	}
+	
+country_event = { # Submission of Bulgaria
+	id = turkey.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.41"}
+	title = turkey.41.t
+	desc = turkey.41.d
+	picture = GFX_report_event_TUR_inonu_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.41.a
+		BUL = { set_cosmetic_tag = TUR_BUL }
+		TUR = { puppet = TUR_BUL }
+		BUL = {
+			set_country_flag = HAS_ECON_SPHERE
+			econ_join_sphere_TUR = yes
+			}
+		hidden_effect = {
+			TUR = {
+				country_event = { id = WORLD.596 }
+			}
+		}
+	}
+}
+
+country_event = { # GREECE | Turks Demand Crete and the 
+	id = turkey.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.42"}
+	title = turkey.42.t
+	desc = turkey.42.d
+	picture = GFX_report_event_RUS_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.42.a
+		TUR = {
+			country_event = turkey.43
+			transfer_state = 183
+			transfer_state = 1328
+			transfer_state = 182
+			transfer_state = 1263
+			transfer_state = 187
+		}
+		stability_factor = -0.20
+	ai_chance = {
+            factor = 90
+			}
+		}
+	option = {
+		name = turkey.42.b
+		war_support_factor = 0.15
+		TUR = {
+			country_event = turkey.44
+	}
+	ai_chance = {
+            factor = 10
+			}
+	}
+}
+
+country_event = { # Greece Accepts PT2
+	id = turkey.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.43"}
+	title = turkey.43.t
+	desc = turkey.43.d
+	picture = GFX_report_event_ALG_algerian_war_5
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.43.a
+			GRE = { country_event = turkey.45 } 
+			stabilty_factor = 0.05
+			war_support_factor = -0.05
+		}
+	
+	option = {
+		name = turkey.43.b
+			stabilty_factor = 0.05
+			war_support_factor = -0.05
+	}
+}
+
+country_event = { # Greece Denies
+	id = turkey.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.44"}
+	title = turkey.44.t
+	desc = turkey.44.d
+	picture = GFX_report_event_USA_f110_fighter_takeoff
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.44.a
+		TUR = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GRE
+				}
+			}
+		}
+	}
+
+country_event = { # GREECE | Decide sub
+	id = turkey.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.45"}
+	title = turkey.45.t
+	desc = turkey.45.d
+	picture = GFX_report_event_TUR_inonu_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.45.a # yes
+		TUR = {
+			country_event = turkey.47
+		}
+		
+		ai_chance = {
+            factor = 80
+			}
+	
+		}
+	}
+	option = {
+		name = turkey.45.b # no
+			TUR = {
+			country_event = turkey.44
+		}
+		
+		ai_chance = {
+            factor = 20
+			}
+		}
+		
+
+country_event = { 
+	id = turkey.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.47"}
+	title = turkey.47.t
+	desc = turkey.47.d
+	picture = GFX_report_event_TUR_inonu_speech
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.47.a
+		GRE = { set_cosmetic_tag = TUR_GRE }
+		TUR = { puppet = GRE }
+		GRE = {
+			set_country_flag = HAS_ECON_SPHERE
+			econ_leave_sphere_TUR = yes
+			econ_join_sphere_TUR = yes
+			}
+		}
+	}
+
+country_event = {
+	id = turkey.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.48"}
+	title = turkey.48.t
+	desc = turkey.48.d
+	picture = GFX_report_event_IBR_canarias_ship
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.48.a
+		TUR = { 
+			transfer_state = 164
+		}
+	}
+}
+
+country_event = { 
+	id = turkey.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.49"}
+	title = turkey.49.t
+	desc = turkey.49.d
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # BKU annex irq
+		name = turkey.49.a
+		BKU = {
+			set_cosmetic_tag = TUR_BKU_2
+			annex_country = { target = IRQ 
+			transfer_troops = yes 
+			}
+			add_state_core = 675
+			add_state_core = 676
+			add_state_core = 924
+			add_state_core = 656
+			add_state_core = 916
+			add_state_core = 1773
+			add_state_core = 1333
+			add_state_core = 1774
+			add_state_core = 1775
+			add_state_core = 1778
+			add_state_core = 1777
+			add_state_core = 1776
+			add_state_core = 291
+		}
+		TUR = {
+			country_event = turkey.59
+			}
+			ai_chance = {
+            factor = 80
+			}
+	}
+	option = {
+		name = turkey.49.b
+		TUR = {
+		country_event = turkey.53
+		}
+		ai_chance = {
+            factor = 20
+			}
+	}
+}
+
+country_event = { 
+	id = turkey.59
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.59"}
+	title = turkey.59.t
+	desc = turkey.59.d
+	picture = GFX_report_event_IBR_canarias_ship
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.59.a
+		}
+	}
+	
+country_event = { 
+	id = turkey.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.53"}
+	title = turkey.53.t
+	desc = turkey.53.d
+	picture = GFX_report_event_IBR_canarias_ship
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.53.a
+		TUR = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = IRQ
+				}
+		}
+	}
+}
+
+country_event = { # Demand Oil
+	id = turkey.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.52"}
+	title = turkey.52.t
+	desc = turkey.52.d
+	picture = GFX_report_event_IBR_canarias_ship
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.52.a
+		SAU = { country_event = turkey.53 }
+	}
+}
+
+country_event = { # SAU | turks want oil
+	id = turkey.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.53"}
+	title = turkey.53.t
+	desc = turkey.53.d
+	picture = GFX_report_event_IBR_canarias_ship
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.53.a
+		TUR = {
+			country_event = { turkey.60 }
+				}
+		}
+	option = {
+		name = turkey.53.b
+		TUR = {
+			country_event = { turkey.59 }
+		}
+	}
+}
+
+country_event = { # SAU | turks want oil
+	id = turkey.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.54"}
+	title = turkey.54.t
+	desc = turkey.54.d
+	picture = GFX_report_event_IBR_canarias_ship
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = turkey.54.a
+		TUR = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SAU
+				}
+		}
+	}
+}
+
+country_event = { 
+	id = turkey.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event turkey.61"}
+	title = turkey.61.t
+	desc = turkey.61.d
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		option = {
+		name = turkey.61.a
+		BKU = {
+			set_cosmetic_tag = TUR_BKU_3
+			set_state_owner = 923
+			set_state_owner = 922
+			set_state_owner = 292
+			set_state_owner = 679
+			set_state_owner = 921
+
+		}
+		
+		TUR = {
+			give_resource_rights = { receiver = TUR state = 923 }
+			give_resource_rights = { receiver = TUR state = 5927 }
+			give_resource_rights = { receiver = ENG state = 679 }
+				}
+	ai_chance = {
+            factor = 10
+			}
+		}
+	}
