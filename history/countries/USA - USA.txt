@@ -434,7 +434,10 @@ add_to_faction = SUR
 add_to_faction = BLZ
 add_to_faction = HAI
 add_to_faction = FAR
-add_to_faction = QUE
+add_to_faction = MEX
+add_to_faction = BRA
+add_to_faction = SAF
+add_to_faction = ROM
 add_to_faction = GRN
 
 set_autonomy = {
