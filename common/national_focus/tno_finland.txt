@@ -10,7 +10,7 @@ focus_tree = {
 		#	tag = FIN
 		#}
 	}
-	default = yes
+	default = no
 
 	focus = {
 		id = FIN_intro_start_election

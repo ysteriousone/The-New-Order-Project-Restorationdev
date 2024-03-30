@@ -98,33 +98,6 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = JST_Smuggling_From_the_West_2
-	icon = GFX_GGR_The_Smugglers
-	cost = 4
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_Smuggling_From_the_West
-	}
-	x = 3
-	y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JST_Smuggling_From_the_West"
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 2000
-			producer = BRG
-		}
-		add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = 300
-			producer = BRG
-		}
-	}
-}
-shared_focus = {
 	id = JST_The_Northern_Crusade
 	icon = GFX_BRG_Operation_Teutoburg
 	cost = 3
@@ -397,24 +370,6 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = JST_From_the_Wolves_Lair_2
-	icon = GFX_ss_werewolves
-	cost = 3.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_Totenkopf_Speed
-	}
-	x = 11
-	y = 5
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JST_Totenkopf_Speed"
-		add_manpower = 10000
-	}
-}
-shared_focus = {
 	id = JST_By_Order_of_Jeckeln
 	icon = GFX_ORE_create_the_higher_command
 	cost = 3
@@ -477,8 +432,8 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = JST_No_Lives_Only_Purity
-	icon = GFX_GER_To_Defend_The_Reich
+	id = JST_A_Pure_Ostland
+	icon = GFX_GER_A_Pure_Ostland
 	cost = 5.00
 	available_if_capitulated = no
 	ai_will_do = {
@@ -496,28 +451,6 @@ shared_focus = {
 		NOT = { has_global_flag = OST_OCW_Ongoing }
 	}
 	completion_reward = {
-		add_manpower = 10000
-		add_war_support = 0.2
-		add_stability = 0.2
-	}
-}
-shared_focus = {
-	id = JST_A_Pure_Ostland
-	icon = GFX_GER_A_Rebuilt_Ostland
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_No_Lives_Only_Purity
-	}
-	x = 7
-	y = 8
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JST_A_Pure_Ostland"
 		custom_effect_tooltip = OST_end_tt
 		hidden_effect = {
@@ -526,212 +459,5 @@ shared_focus = {
 				TNO_Country_Closing_Screen_Show = yes
 			}
 		}
-	}
-}
-shared_focus = {
-	id = JST_Strike_Ukraine
-	icon = GFX_GER_limitless_potential
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_A_Pure_Ostland
-	}
-	x = 5
-	y = 9
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		declare_war_on = {
-    	target = FUK
-    	type = annex_everything
-		}
-	}
-}
-shared_focus = {
-	id = JST_Total_Commie_Death
-	icon = GFX_GER_limitless_potential
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_A_Pure_Ostland
-	}
-	x = 7
-	y = 9
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		declare_war_on = {
-    	target = UKS
-    	type = annex_everything
-		}
-	}
-}
-shared_focus = {
-	id = JST_Crush_Ukrainian_Nationalism
-	icon = GFX_GER_limitless_potential
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_A_Pure_Ostland
-	}
-	x = 9
-	y = 9
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		declare_war_on = {
-    	target = BOV
-    	type = annex_everything
-		}
-	}
-}
-shared_focus = {
-	id = JST_The_Great_Betrayal
-	icon = GFX_GER_limitless_potential
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_Strike_Ukraine
-	}
-	prerequisite = {
-		focus = JST_Total_Commie_Death
-	}
-	prerequisite = {
-		focus = JST_Crush_Ukrainian_Nationalism
-	}
-	x = 7
-	y = 10
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		declare_war_on = {
-    	target = UKR
-    	type = annex_everything
-		}
-	}
-}
-shared_focus = {
-	id = JST_More_Land
-	icon = GFX_GER_A_Pure_Ostland
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_The_Great_Betrayal
-	}
-	x = 7
-	y = 11
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		declare_war_on = {
-    	target = POL
-    	type = annex_everything
-		declare_war_on = {
-		target = HEE
-		type = annex_everything
-			}
-		}
-	}
-}
-shared_focus = {
-	id = JST_Moskau_Moskau
-	icon = GFX_GER_Reinforce_The_East
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_More_Land
-		}
-	prerequisite = {
-		focus = JST_More_Supplies
-	}
-		prerequisite = {
-		focus = JST_More_Men
-	}
-	x = 7
-	y = 12
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		add_manpower = 10000		
-			MSK_Dissolution_DeclareWarOnEveryoneThere = yes
-			set_country_flag = BGR_Open_Reorg
-		}
-	}
-shared_focus = {
-	id = JST_More_Supplies
-	icon = GFX_GER_Asian_Expeditions
-	cost = 5.00
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_The_Great_Betrayal
-	}
-	x = 5
-	y = 11
-	available = {
-		NOT = { has_global_flag = OST_OCW_Ongoing }
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus JST_Smuggling_From_the_West"
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 20000
-			producer = BRG
-		}
-		add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = 3000
-			producer = BRG
-		}
-		add_equipment_to_stockpile = {
-			type = artillery_equipment
-			amount = 3000
-			producer = GER
-		}
-	}
-}
-shared_focus = {
-	id = JST_More_Men
-	icon = GFX_GER_A_Strong_People
-	cost = 3
-	available_if_capitulated = no
-	ai_will_do = {
-		factor = 1
-	}
-	prerequisite = {
-		focus = JST_The_Great_Betrayal
-	}
-	x = 9
-	y = 11
-	completion_reward = {
-		add_manpower = 50000
-		add_war_support = 0.50
-		add_stability = 0.50
 	}
 }

@@ -301,7 +301,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRG_the_ultimate_salvation"
-		news_event = {id = WORLD_REICH.2300}
+		country_event = { id = BRG_opening.7 }
 		custom_effect_tooltip = BRG_it_begins_tt
 	}
 }
