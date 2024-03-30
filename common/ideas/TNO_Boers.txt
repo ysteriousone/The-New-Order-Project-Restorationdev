@@ -17,5 +17,57 @@ ideas = {
 
 			}
 		}
+		BOR_disorganised_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOR_disorganised_state"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FEN_Army_Mutiny
+			modifier = {
+				planning_speed = -0.1
+				army_org_factor = -0.1
+				
+
+			}
+		}
+	    BOR_the_false_republic = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOR_the_false_republic"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GRO_Boer_Betrayal
+			modifier = {
+                political_power_gain = -0.05
+				war_support_factor = -0.2
+				stability_factor = -0.02
+				
+
+			}
+		}
+	    BOR_against_the_hardliner = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BOR_against_the_hardliner"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IRK_bureaucracy_purged
+			modifier = {
+                war_support_factor = 0.1
+				stability_factor = 0.1
+				
+
+			}
+		}
 	}
 }
