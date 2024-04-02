@@ -134,10 +134,10 @@ l_english:
  #|=====[ SPOOK NEWS ]=====|#
 
  #|===[ SPOOK NOT NEWS ]===|#
-    spook_temp.11.t: "To Break the Seal"
-    spook_temp.11.desc: "I looked, and behold, an ashen horse; and he who sat on it had the name Death; and Hades was following with him. Authority was given to them over a fourth of the earth, to kill with sword and with famine and with pestilence and by the wild beasts of the earth.\n\nYou are worthy to take the scroll\nand to open its seals,\nbecause you were slain...\n\nWorthy is the Lamb, who was slain,\nto receive power and wealth and wisdom and strength\nand honor and glory and praise!\n\nDare the Lamb break the seal, and see what it be that the scroll conceals?"
-    spook_temp.11.a: "...and to the Lamb be praise and honor and glory and power!"
-    spook_temp.11.a_tt: "§RThe earth is loose, and forever never closes.§!\nPlay as the Undead Horde."
+    spook_temp.11.t: "He hath come"
+    spook_temp.11.desc: "Himmler, NO!", Monke screamed as Himmler finished the touches on the Portal machine. The Degenerate Germans wo'nt catch him this time! A big BOOM happened, engulfing the room in flames, and he appeared.\n\nHe wore a bonnet, a scarf and a.... troll face?"
+    spook_temp.11.a: "FASTER FASTER FASTER"
+    spook_temp.11.a_tt: "§RAnd so, fate is sealed§!\nArtaud will now conquer this feeble reality."
     spook_temp.11.b: "Some seals are best left unbroken."
-    spook_temp.11.b_tt: "Maybe you will be caught by surprise, but §Ryou should know that it stirs.§!\nFight against the Undead Horde."
+    spook_temp.11.b_tt: "Maybe you will be caught by surprise, but §Ryou should know that it stirs.§!\nFight against Artaud."
  #|===[ SPOOK NOT NEWS ]===|#

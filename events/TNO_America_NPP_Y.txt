@@ -25,6 +25,10 @@ country_event = { #
 				USA_John_Crommelin_mil
 			}
 			359 = { add_to_variable = { senator_2_NPP_R_name = 1 } }
+			CAN = {
+			transfer_state = 463
+			}
+			country_event = {id = USA.yockey.9 }
 		}
 	}
 }
@@ -187,7 +191,9 @@ country_event = { #First day on the job
 	option = { #
 		name = USA.yockey.6.a
 		ai_chance = { factor = 1 }
-
+    PAN = {
+	transfer_state = 685
+	}
 	}
 }
 
@@ -228,5 +234,19 @@ country_event = { #Failing the SAFE act
 		add_political_power = -60
 		add_stability = -0.03
 		TNO_Country_Closing_Screen_Show = yes
+	}
+}
+country_event = { #O Canada!
+	id = USA.yockey.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event USA.yockey.8" }
+	title = USA.yockey.9.t
+	desc = USA.yockey.9.desc
+	picture = GFX_report_event_USA_congress_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = USA.yockey.9.a
 	}
 }

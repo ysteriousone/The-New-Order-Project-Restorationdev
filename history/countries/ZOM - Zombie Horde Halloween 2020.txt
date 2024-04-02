@@ -4,11 +4,7 @@ capital = 15
 recruit_character = ZOM_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-# Foreign Country Leaders (All others can be handled by set_name and set_portraits)
-recruit_character = ZOM_Zombie_Mussolini
-ZOM_Zombie_Mussolini = {
-	set_nationality = ITA
-}
+
 
 add_ideas = {
 ### POLITICAL LAWS ###
@@ -140,7 +136,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = despotism
+	ruling_party = ultranationalism
 	last_election = "31.1.1"
 	election_frequency = 96
 	elections_allowed = no
@@ -148,16 +144,26 @@ set_politics = {
 
 set_popularities = {
 	communist = 0
-	ultranationalism = 0
+	ultranationalism = 100
 	socialist = 0
 	progressivism = 0
 	liberalism = 0
 
 	conservatism = 0
 	paternalism = 0
-	despotism = 100
+	despotism = 0
 	fascism = 0
 	
+}
+create_country_leader = {
+	name = "Le Patron"
+	desc = ""
+	picture = WhyisArtaudhere.dds
+	expire = "1965.1.1"
+	ideology = ultranationalism_esoteric_despotism_subtype
+	traits = {
+		#
+	}
 }
 
 TNO_startup_nation = yes

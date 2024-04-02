@@ -6,11 +6,11 @@
  RULE_OPTION_BRITAIN_OLD_DESC:0 "Enable the §Yold§! British content. §OThis option will be removed once the new content has advanced to cover the whole decade§!."
 
  ### Halloween zombie event rules
- ZOMBIE_EASTEREGG_STATUS: "£TNO_game_rule_flag_ZOM_zombie   Halloween Event"
- RULE_OPTION_DEFAULT_ZOMBIES: "Disabled"
- RULE_OPTION_DEFAULT_ZOMBIES_DESC: "§GDisable the undead event.§!"
- RULE_OPTION_ZOMBIES_ACTIVE: "§RBreak the Seal§!"
- RULE_OPTION_ZOMBIES_ACTIVE_DESC: "§REnable the undead event.§!"
+ ZOMBIE_EASTEREGG_STATUS: "£TNO_game_rule_flag_ZOM_zombie   Arrival of Artaud"
+ RULE_OPTION_DEFAULT_ZOMBIES: "Himmler doesnt make the Portal"
+ RULE_OPTION_DEFAULT_ZOMBIES_DESC: "§GDisable the Artaud event.§!"
+ RULE_OPTION_ZOMBIES_ACTIVE: "§RBehold, a Pale Reality!§!"
+ RULE_OPTION_ZOMBIES_ACTIVE_DESC: "§RAnd the rider's name is Antonin Artaud.§!"
 
  ### 2022 April Fools - Pony Bukharin
  PONY_BUKHARIN_STATUS: "£TNO_game_rule_flag_OMO_Harmonious_State_communist   Project Ferus"

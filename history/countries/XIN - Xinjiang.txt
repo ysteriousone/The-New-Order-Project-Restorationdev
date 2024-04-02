@@ -9,7 +9,7 @@ set_war_support = 0.70
 set_stability = 1.00
 add_manpower = 400000
 
-recruit_character = XIN_liu_wenhui
+
 recruit_character = XIN_ma_jiyuan
 recruit_character = XIN_long_yun
 

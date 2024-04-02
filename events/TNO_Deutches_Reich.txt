@@ -217,6 +217,7 @@ country_event = {
 		}
 	option = {
 		name = FHH.7.b
+		country_event = {id = FHH.9}
 		}
 	}
 	country_event = {  
@@ -244,5 +245,28 @@ country_event = {
      }
 	
 	}
-	]
+	}
+country_event = {  
+	id = FHH.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FHH.8" }
+	title = FHH.8.t
+	desc = FHH.8.d
+	
+	picture = GFX_report_event_GER_documents
+	
+	
+	is_triggered_only = yes
+		mean_time_to_happen = {
+		days = 7
+	}
+
+	option = {
+		name = FHH.8.a
+		FHH = {
+		
+               }
+     }
+	
+	}
+	
 	

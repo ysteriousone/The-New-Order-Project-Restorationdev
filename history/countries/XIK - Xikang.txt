@@ -2,6 +2,7 @@ capital = 905
 
 # Vacant
 recruit_character = XIK_Generic_Vacant
+recruit_character = XIN_liu_wenhui
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
 set_war_support = 0.70

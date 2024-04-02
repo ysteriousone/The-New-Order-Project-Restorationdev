@@ -1,7 +1,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "TNO_songs/Lamentation.ogg"
+	file = "TNO_songs/New_Theme.ogg"
 	volume = 0.65
 }
 
