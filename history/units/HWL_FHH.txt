@@ -23,6 +23,48 @@ units = {
 		start_experience_factor = 0.7
 		start_equipment_factor = 0.6
 	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
+		division = {
+		location = "11640"
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.6
+	}
 	division = {
 		location = "11640"
 		division_template = "Infanterie-Division"

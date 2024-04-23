@@ -1,6 +1,6 @@
 ﻿l_english:
  TNO_ArcadeMode_category:0 "§OArcade Mode§!"
- TNO_ArcadeMode_category_desc:0 "Have fun!\n\n§YDEVELOPER'S NOTE:§! §RTHESE OPTIONS ARE NON-CANONICAL AND COMPLETLY UNSUPPORTED FROM THIS POINT ONWARDS. THERE'S NO EXTRA CONTENT FOR THESE, NOR WILL THERE EVER BE. DO NOT POST BUG REPORTS RESULTING FROM THE USE OF THESE OPTIONS.§!"
+ TNO_ArcadeMode_category_desc:0 "Have fun!\n\n§RTNO DEVELOPER'S NOTE:§! §RTHESE OPTIONS ARE NON-CANONICAL AND COMPLETLY UNSUPPORTED FROM THIS POINT ONWARDS. THERE'S NO EXTRA CONTENT FOR THESE, NOR WILL THERE EVER BE( GET FUCKED BASE TNO DEVS HAHAHAHHAHAHHAHAHHA). DO NOT POST BUG REPORTS RESULTING FROM THE USE OF THESE OPTIONS.§!"
 
  TNO_ArcadeMode_Disable:0 "Disable §OArcade Mode§!"
 
@@ -57,15 +57,11 @@
  nukes_disabled:0 "§YNuclear Arsenals§! are disabled"
 
 ### Great Trial mode ###
-TNO_ArcadeMode_GreatTrial: "Initiate the §eGreat Trial§!"
-TNO_ArcadeMode_GreatTrial_tt: "§YYour game will most likely freeze for a while.§!"
-ArcadeMode.3.t: "Great Trial Setup"
-ArcadeMode.3.desc: "This event sets up some stuff for the tags, please hang on until the next event in a few hours."
+TNO_ArcadeMode_GreatTrial: "§BKill ALL Teutons!§!"
+TNO_ArcadeMode_GreatTrial_tt: "§YAnd thus the Great Trial shall Begin!.§!"
+ArcadeMode.3.t: "The Great Trial"
+ArcadeMode.3.desc: "LESS GOO."
 ArcadeMode.3.a: "Alright."
-ArcadeMode.4.t: "Pick your Country"
-ArcadeMode.4.desc: "Please select which country you'd like to play as."
-ArcadeMode.4.a: "The Reich of Evil"
-ArcadeMode.4.b: "The Gosudarstvo of Great Trial"
 
 TNO_ArcadeGreatTrial_category: "The §eGreat Trial§!"
 

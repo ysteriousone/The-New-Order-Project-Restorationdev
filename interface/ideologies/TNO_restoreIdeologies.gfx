@@ -1,0 +1,99 @@
+spriteTypes = {
+	# --- esoteric_nazism --- #
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_imperial_cult_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_imperial_cult_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_spartanism_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_spartanism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_agrarian_spartanism_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_agrarian_spartanism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_burgundian_system_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_burgundian_system_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_deep_ecology_nazism_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_deep_ecology_nazism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_group"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_jucheism_subtype"
+		texturefile = "gfx/interface/ideologies/esoteric_nazism_jucheism_subtype.dds"
+	}
+	# --- national_socialism --- #
+	spriteType = {
+		name = "GFX_ideology_national_socialism_national_bolshevism_subtype"
+		texturefile = "gfx/interface/ideologies/national_socialism_national_bolshevism_subtype.dds"
+	}
+	# --- despotism --- #
+	spriteType = {
+		name = "GFX_ideology_despotism_chinesesocialism_subtype"
+		texturefile = "gfx/interface/ideologies/despotism_chinesesocialism_subtype.dds"
+	}
+	# --- conservatism --- #
+	spriteType = {
+		name = "GFX_ideology_conservatism_bonapartism_subtype"
+		texturefile = "gfx/interface/ideologies/conservatism_bonapartism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_paternalism_bonapartism_subtype"
+		texturefile = "gfx/interface/ideologies/conservatism_bonapartism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_conservatism_tridemism_subtype"
+		texturefile = "gfx/interface/ideologies/conservatism_tridemism_subtype.dds"
+	}
+	# --- communism --- #
+	spriteType = {
+		name = "GFX_ideology_communist_stalinism_subtype"
+		texturefile = "gfx/interface/ideologies/communist_stalinism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_communist_liberal_socialism_subtype"
+		texturefile = "gfx/interface/ideologies/communist_liberal_socialism_subtype.dds"
+	}
+	# --- 2WRWBar --- #
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/EsotericNazism/EsotericNazism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_burgundian_system_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/EsotericNazism/BurgundianSystem.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_imperial_cult_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/EsotericNazism/ImperialCult.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_deep_ecology_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/EsotericNazism/DeepEcologyNazism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_spartanism_subtype_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/EsotericNazism/Spartanism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_esoteric_nazism_agrarian_spartanism_subtype_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/EsotericNazism/AgrarianSpartanism.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ideology_communist_stalinism_bar"
+		textureFile = "gfx/interface/ideologies/ideology_bars/Communism/Stalinism.dds"
+		legacy_lazy_load = no
+	}
+}

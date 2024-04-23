@@ -4,6 +4,7 @@
 
 add_namespace = HUN_skeleton
 add_namespace = HUN_WORLD
+add_namespace = HUN_Speer
 
 # HUN_skeleton.1   - Nov  2nd  1963 - Electoral Reform
 # HUN_skeleton.100 - Jan  21st 1964 - Struggle for the Military
@@ -12,7 +13,27 @@ add_namespace = HUN_WORLD
 # HUN_skeleton.200 - Apr  10th 1965 - Horthy's New PM Dies
 # HUN_skeleton.201 - Sept 7th  1965 - Coalitions Form, Chaos in Streets
 # HUN_skeleton.202 - May  20th 1967 - 1967 Elections
-# HUN_skeleton.203 - Oct  15th 1965 - Arrow Cross Coup
+# HUN_skeleton.203 - Oct  15th 1965 - Arrow Cross Coup|
+
+
+country_event = { # Oberlander Gaming
+	id = HUN_Speer.1
+	title = HUN_Speer.1.t
+	desc = HUN_Speer.1.desc
+	#picture =
+
+	immediate = { log = "[GetDateText]: [Root.GetName]: event HUN_Speer.1" }
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Istvan L
+		name = HUN_Speer.1.a
+        GER = {
+		transfer_state = 1292
+		}
+	set_politics = { ruling_party = national_socialism }
+		}
 
 country_event = { # Electoral Reform
 	id = HUN_skeleton.1

@@ -1,0 +1,10 @@
+restoreideologies_goring_expanded_decisions = {
+	icon = GFX_decision_category_debug
+
+	visible = {
+	OR = {
+		tag = GER
+		tag = GGR
+	}
+	}
+}

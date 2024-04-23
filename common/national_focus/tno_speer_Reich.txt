@@ -1,0 +1,283 @@
+focus_tree = {
+	id = Speer_Reich
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = GER_Thousand_Year_Reforms
+
+		icon = GFX_SGR_Watch_the_Wehrmacht
+		x = 0
+		y = 0
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+			focus = {
+		id = GER_Choosing_the_direction
+        prerequisite = { focus = GER_Thousand_Year_Reforms}
+		icon = GFX_GER_reforming_business
+		x = 0
+		y = 1
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+		focus = {
+		id = GER_Oberlander_way
+        prerequisite = { focus = GER_Choosing_the_direction}
+		mutually_exclusive = { focus = GER_Speer_way}
+		mutually_exclusive = { focus = GER_GO4_way}
+		icon = GFX_GER_Oberlanders_Mandate
+		x = -4
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+		focus = {
+		id = GER_Widen_Reichstag_control
+        prerequisite = { focus = GER_Demand_from_Hungry}
+		icon = GFX_GER_meeting_in_the_reichskanzlei
+		x = -4
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+		focus = {
+		id = GER_Demand_from_Hungry
+        prerequisite = { focus = GER_Oberlander_way}
+		icon = GFX_ITA_Hungary
+		x = -4
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+        GER = {
+		add_state_claim = 1292
+			}
+		HUN = {
+		country_event = {id = HUN_Speer.1} days = 4
+		}
+		}
+		}
+		focus = {
+		id = GER_Speer_way
+        prerequisite = { focus = GER_Choosing_the_direction}
+		mutually_exclusive = { focus = GER_Oberlander_way}
+		mutually_exclusive = { focus = GER_GO4_way}
+		icon = GFX_GER_zollverein_investment
+		x = 0
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+	focus = {
+		id = GER_Dreams_of_Zollverin
+        prerequisite = { focus = GER_Speer_way}
+		icon = GFX_GER_europes_dreams
+		x = 0
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			econ_leave_sphere = yes
+			join_zollverein = yes
+			}
+		}
+	focus = {
+		id = GER_appease_the_north
+        prerequisite = { focus = GER_Dreams_of_Zollverin}
+		icon = GFX_GER_The_scandinavians
+		x = -1
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+	
+			}
+		}
+		focus = {
+		id = GER_appease_France
+        prerequisite = { focus = GER_Dreams_of_Zollverin}
+		icon = GFX_GER_rebuild_france
+		x = 1
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+	
+			}
+		}
+	focus = {
+		id = GER_Introduce_the_concept
+        prerequisite = { focus = GER_appease_France}
+		prerequisite = { focus = GER_appease_the_north}
+		icon = GFX_GER_Caesars_Due_Speer
+		x = 0
+		y = 5
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+	
+			}
+		}
+	focus = {
+		id = GER_GO4_way
+        prerequisite = { focus = GER_Choosing_the_direction}
+		mutually_exclusive = { focus = GER_Oberlander_way}
+		mutually_exclusive = { focus = GER_Speer_way_way}
+		icon = GFX_GER_the_schmidt_proposal
+		x = 4
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+	focus = {
+		id = GER_Liberalize_the_Economy
+        prerequisite = { focus = GER_GO4_way}
+		icon = GFX_Generic_Economic_Liberalization 
+		x = 4
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+	focus = {
+		id = GER_new_Reichsmark
+        prerequisite = { focus = GER_Liberalize_the_Economy}
+		prerequisite = { focus = GER_Ease_in_the_slavery}
+		icon = GFX_GER_the_new_reichsmark
+		x = 4
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+	focus = {
+		id = GER_Ease_in_the_slavery
+        prerequisite = { focus = GER_GO4_way}
+		icon = GFX_generic_change_law_slavery
+		x = 6
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.01
+			}
+		}
+	
+	focus = {
+		id = GER_Reclaiming_our_Empire
+        available = {
+		focus = GER_Thousand_Year_Reforms
+		}
+		icon = GFX_DRL_When_The_World_Stopped_Making_Sense
+		x = 0
+		y = 7
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+		custom_effect_tooltip = GER_reclaiming_europe_tooltip
+			add_political_power = 100
+			add_stability = 0.01
+	
+			}
+		}
+	
+	
+	
+}
+
+
+

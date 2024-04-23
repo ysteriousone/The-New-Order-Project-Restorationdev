@@ -1,6 +1,10 @@
 spriteTypes = {
 	# --- Subideologies --- #
 	spriteType = {
+		name = "GFX_ideology_ultranationalism_ultracommunism_subtype"
+		texturefile = "gfx/interface/ideologies/ultracommunism.dds"
+	}
+	spriteType = {
 		name = "GFX_ideology_national_socialism_ariocriollismo_subtype"
 		texturefile = "gfx/interface/ideologies/national_socialism_ariocriollismo_subtype.dds"
 	}

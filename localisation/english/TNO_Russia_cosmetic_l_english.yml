@@ -461,11 +461,11 @@
  ###RUSSIANS
 
  #Omsk
- OMS_POTEMKIN_RUS: "Russian National Reclamation Government"
- OMS_POTEMKIN_RUS_DEF: "the Russian National Reclamation Government"
+ OMS_POTEMKIN_RUS: "Soviet Black League"
+ OMS_POTEMKIN_RUS_DEF: "the Soviet Black League"
  OMS_POTEMKIN_RUS_ADJ: "Russian"
- OMS_RUS_ultranationalism: "Russian National Reclamation Government"
- OMS_RUS_ultranationalism_DEF: "the Russian National Reclamation Government"
+ OMS_RUS_ultranationalism: "Soviet Black League"
+ OMS_RUS_ultranationalism_DEF: "the Soviet Black League"
  OMS_RUS_ultranationalism_ADJ: "Russian"
 
  #Tyumen

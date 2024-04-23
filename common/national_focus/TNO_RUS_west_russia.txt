@@ -100,6 +100,12 @@ focus_tree = {
 			country_event = { id = WRS_power_struggle.1 days = 1 }
 			hidden_effect = {
 				activate_mission = WRS_zhukov_influence_ticker
+			WRS = {
+		annex_country {
+             target = TMA
+			transfer_troops = yes
+			}
+			}
 			}
 		}
 	}
@@ -341,6 +347,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus WRS_a_heroic_forty_six_years"
 			country_event = { id = WRS.30 days = 1 }
 			WRS_increase_tukha_influence_high = yes
+				declare_war_on = {
+    	target = TML
+    	type = annex_everything
+	}
 		}
 	}
 
@@ -717,6 +727,12 @@ focus_tree = {
 			country_event = { id = WRS_power_struggle.100 days = 1 }
 			hidden_effect = {
 				activate_mission = WRS_tukha_influence_ticker
+				WRS = {
+				      	annex_country {
+		              target = TML
+			         transfer_troops = yes
+			}
+			}
 			}
 		}
 	}
@@ -957,6 +973,10 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus WRS_a_united_front"
 			country_event = { id = WRS.34 days = 1 }
 			WRS_increase_zhukov_influence_high = yes
+		declare_war_on = {
+    	target = TMA
+    	type = annex_everything
+	}
 		}
 	}
 
@@ -3813,6 +3833,67 @@ focus_tree = {
 		}
 	}
 	default = no
+	focus = {
+		id = WRS_zhukov_Our_reasons_of_existence
+		icon = goal_WRS_The_Neighbors
+		cost = 1
+		x = 50
+		y = 0
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+        create_faction = Soviet_coalition
+			declare_war_on = {
+    	target = NTI
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = LUF
+    	type = annex_everything
+	}
+	add_state_core = 264
+	add_state_core = 238
+		}
+	}
+		focus = {
+		id = WRS_Operation_Uranus
+		icon = goal_WRS_The_Neighbors
+		cost = 1
+		x = 50
+		y = 1
+		ai_will_do = {
+			factor = 80
+		}
+				prerequisite = {
+		focus = WRS_zhukov_Our_reasons_of_existence
+		}
+		completion_reward = {
+        add_to_faction = POV
+		add_to_faction = POP
+		transfer_state = 245
+		transfer_state =  260
+		POV = {
+		transfer_state = 239
+		}
+		POP = {
+		transfer_state = 217
+		}
+	
+	declare_war_on = {
+    	target = PAU
+    	type = annex_everything
+	}
+    	declare_war_on = {
+    	target = OZP
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = CAU
+    	type = annex_everything
+	}
+		}
+	}
 
 	focus = {
 		id = WRS_zhukov_regional_the_new_soviet_era

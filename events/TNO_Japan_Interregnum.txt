@@ -29,11 +29,43 @@ country_event = {
 			remove_idea = JAP_showa_emperor
 			add_idea = JAP_showa_emperor_yasuda
 		}
-		country_event = { id = jap_interregnum.2 days = 4}
+		country_event = { id = jap_interregnum.pm days = 4}
+		hidden_effect = {
+		CHI = {
+		drop_cosmetic_tag = CHI_JAP
+		create_faction = Chinese-League
+		}
+		ETR = {
+		transfer_state = 619
+		transfer_state = 958
+		}
+		AZH = {
+		create_faction = Indian-Liberation-front
+	declare_war_on = {
+    	target = IND
+    	type = annex_everything
+	}
+	}
+	AFG = {
+		declare_war_on = {
+    	target = IND
+    	type = annex_everything
 	}
 }
-
-#A New Prime Minister?
+KOR = {
+transfer_state = 1820
+transfer_state = 527
+transfer_state = 1024
+transfer_state = 560
+transfer_state = 1817
+		declare_war_on = {
+    	target = JAP
+    	type = annex_everything
+	}
+}
+load_focus_tree = JAP_showa_emperor
+}
+}
 country_event = {
 	id = jap_interregnum.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event jap_interregnum.2"}
@@ -56,7 +88,12 @@ country_event = {
 		name = jap_interregnum.2.c
 		country_event = { id = jap_interregnum.8 days = 4}
 	}
+
+	option = { #Hirohito
+		name = jap_interregnum.2.d
+	}
 }
+
 
 #Kaya tries to secure backing
 country_event = {

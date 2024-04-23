@@ -237,7 +237,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ENG_freedom_security_act"
 		custom_effect_tooltip = ENG_freedom_security_act_tooltip
-		country_event = domvile_focus.10
+		load_focus_tree = ENG_Interwar
 	}
 }
 shared_focus = {
@@ -247,9 +247,6 @@ shared_focus = {
 	x = 2
 	y = 1
 	relative_position_id = ENG_who_is_the_boss
-	available = {
-		has_country_flag = ENG_hmmlr_update_flag
-	}
 	prerequisite = {
 		focus = ENG_who_is_the_boss
 	}
@@ -258,7 +255,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ENG_greatest_lie_ever_told"
-		custom_effect_tooltip = ENG_coming_soon_tooltip
+		custom_effect_tooltip = ENG_Rise_tooltip
 	}
 }
 

@@ -67,7 +67,10 @@ country_event = { # CIVIL WAR NOW!!! GNS vs ASNOS
 					option = SERBIA_CIVIL_WAR_OUTCOME_SER
 				}
 			}
-			SER = { apply_war_buff_with_5_divisions = yes }
+			SER = { apply_war_buff_with_5_divisions = yes
+        load_focus_tree = SER_Uprising
+		}
+		
 		}
 		else_if = {
 			limit = {

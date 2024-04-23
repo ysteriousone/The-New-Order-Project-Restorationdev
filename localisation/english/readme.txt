@@ -1,0 +1,1 @@
+If you are playing 2WRW Submod, please use that file to replace TNO_restoreIdeologies_l_english.

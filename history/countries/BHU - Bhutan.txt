@@ -3,14 +3,7 @@ capital = 324
 # Vacant
 recruit_character = BHU_Generic_Vacant
 
-recruit_character = BHU_kanwal_singh
-recruit_character = BHU_ian_cardozo
-recruit_character = BHU_piru_singh
-recruit_character = BHU_hussain_muhammad_ershad
-recruit_character = BHU_dasho_kesang
-recruit_character = BHU_lhendup_dorji
-recruit_character = BHU_jigme_dorji_wangchuck
-recruit_character = BHU_khaled_mosharraf
+
 
 
 oob = "BHU_1962"
@@ -27,7 +20,7 @@ set_popularities = {
 	despotism = 70
 }
 
-set_cosmetic_tag = BHU_AZH
+
 
 
 set_country_flag = TNO_eliminate_military_spending

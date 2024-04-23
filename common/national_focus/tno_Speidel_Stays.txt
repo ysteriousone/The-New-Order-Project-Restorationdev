@@ -1,0 +1,103 @@
+focus_tree = {
+	id = Speidel_stays
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FHH
+		}
+	}
+	focus = {
+		id = FHH_Survival
+		icon = GFX_GER_speidels_strategy
+		x = 3
+		y = 0
+		cost = 1
+		completion_reward = {
+			add_manpower = 100
+			add_stability = 0.01
+			news_event = {id = WORLD.2999}
+			}
+		}
+	focus = {
+		id = FHH_Election_season
+		icon = GFX_generic_elections
+		x = 3
+		y = 1
+		prerequisite = { focus = FHH_Survival }
+		cost = 1
+		completion_reward = {
+			add_manpower = 100
+			add_stability = 0.01
+			country_event = {id =  FHH.9 }
+			}
+		}
+			focus = {
+		id = FHH_Imperial_Legacy
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 4
+		y = 2
+		prerequisite = { focus = FHH_Election_season }
+		available = {
+		has_government_type = despotism
+		}
+		cost = 1
+		completion_reward = {
+			add_manpower = 100
+			country_event = {id =  FHH.9 }
+			}
+		}
+		focus = {
+		id = FHH_Find_an_heir
+		icon = GFX_SAF_Monarchy_Debate
+		x = 4
+		y = 3
+		prerequisite = { focus = FHH_Imperial_Legacy }
+		cost = 1
+		completion_reward = {
+			add_manpower = 100
+			
+			}
+		}
+		focus = {
+		id = FHH_He_Be_Found
+		icon = GFX_SAF_Monarchy_Debate
+		x = 4
+		y = 4
+		prerequisite = { focus = FHH_Imperial_Legacy }
+		cost = 1
+		completion_reward = {
+			add_manpower = 100
+			
+			}
+		}
+		focus = {
+		id = FHH_Across_the_Ocean
+		icon = GFX_OFN_handshake
+		x = 10
+		y = 0
+		cost = 1
+		completion_reward = {
+	    SUR = {
+		transfer_state = 7
+		transfer_state = 36
+		transfer_state = 74
+		transfer_state = 1886
+		add_state_core = 1886
+		add_state_core = 7
+		add_state_core = 36
+		add_state_core = 74
+		}
+		BEL = {
+		transfer_state = 35
+		}
+			
+			}
+		}
+	
+			}
+	
+	
+	
+		

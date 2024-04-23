@@ -45,6 +45,42 @@ country_event = { # Hazratal Shrine Incident, May 7 1963
 		}
 	}
 }
+country_event = { # Mughal Empire takes Pakistan, Baller
+	id = IND_skeleton.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event IND_skeleton.8" }
+	title = IND_skeleton.8.t
+	desc = IND_skeleton.8.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+	AFG = {
+	controls_state = 1316
+	controls_state = 1475
+	}
+	}
+	option = {
+		name = IND_skeleton.8.a
+		hidden_effect = {
+        KLT = {
+		transfer_state = 1316
+		transfer_state = 1475
+		transfer_state = 443
+		transfer_state = 1913
+		transfer_state = 1914
+		transfer_state = 1912
+		}
+		MFP = {
+		transfer_state = 236
+		transfer_state = 441
+		transfer_state = 433
+		transfer_state = 928
+		AFG = {
+		white_peace = IND
+		}
+	}
+}
+}
+}
 
 country_event = { # Death of Nehru (weep and woeisme), May 30 1963
 	id = IND_skeleton.3

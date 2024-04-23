@@ -595,6 +595,7 @@ add_to_faction = CZE
 add_to_faction = FIN
 add_to_faction = HUN
 add_to_faction = BUL
+add_to_faction = ROM
 
 set_autonomy = { target = ANG autonomy_state = autonomy_autonomous_reichskommissariat }
 set_autonomy = { target = CAU autonomy_state = autonomy_autonomous_reichskommissariat }

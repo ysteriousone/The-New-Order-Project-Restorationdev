@@ -107,6 +107,21 @@
  FHH_save_Ukraine_desc: ""
  FHH_Men_In_The_High_Castle: "The Men in the High Castle"
  FHH_Men_In_The_High_Castle_desc: ""
+ FHH_Survival: "Einigeit und Rekt und Freiheit!"
+ FHH_Survival_desc: "We have survived the greatest trial to Speidel's government and can finally begin the return to democracy!"
+ FHH_Across_the_Ocean: "Across the Ocean"
+ FHH_Across_the_Ocean_desc: "With talks coming to an end, we decided to hand over all of the Netherlands except Eindhoven, that will be given to Degrelle. With this being said, we have secured a great ally in our war against fascism. Onwards, to total liberation!"
+ FHH_Election_season: "Spring in Germany"
+ FHH_Election_season_desc: "With the provisional government coming to an end, we have decided to hold the German elections. The main contenders are Shmidt, Tresckow, Brandt and possibly Thalman."
+ FHH_Imperial_Legacy: "And so it begins..."
+ FHH_Imperial_Legacy_desc: "Tresckow has been elected as the chancellor of Germany, he wishes to restore Germany to old traditions before the Great War. Obviously, there will be democracy, but there will be democracy with a .... KAISER"
+ FHH_Find_an_heir: "Finding the kaiser"
+ FHH_Find_an_heir_desc: "Tresckow has begun a month-long regency to find the Kaiser for Germany. The choice were the Wilhems, but they're mostly unpopular and mysterious. We must dig deeper!"
+ 
+ 
+ 
+ 
+ 
  ## Events ##
  FHH.1.t: " Arms against Tyranny "
  FHH.1.a: " Blessed are the meek. "
@@ -135,6 +150,11 @@
  FHH.8.t: "The second mandate!"
  FHH.8.d:0 "Goebbels had invited Speidel for a 'meeting' on talking about the armistice. Little did Speidel know, this was part of the Volksfuhrer's plot.8:00AM, Speidel got into Goebbels room. 8:10, Goebbels reveals himself. 8:11AM, Speidel gets 'into an accident'. 9:00AM, Goebbels secures control over Germania. It ends, Speidels crusade was for nothing. It only brought back the Nazis with a more 'human' face..."
  FHH.8.a: "Heil Goebbels!"
+ FHH.9.t: "Elections of Germany"
+ FHH.9.d:0 "After sucessful negotiations with Thalman, he announced the halt of all KPD activities and subsequently went on a more... peaceful route to REVOLUTION.. So finally, we can hold the German elections!"
+ FHH.9.a: "Heil im Dir Seigerkanz!"
+ FHH.9.b: "Einigeit und Rekt and Freiheit!"
+ FHH.9.c: "Und veil der Mensh ein Mensh ist..."
  
 
  

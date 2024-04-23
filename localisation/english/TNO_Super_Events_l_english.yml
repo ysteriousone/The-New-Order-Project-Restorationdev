@@ -1,4 +1,9 @@
 ﻿l_english:
+SE_FALL_ROT: "Operation Uranus"
+SE_FALL_ROT_D: "Serve me Moscow in a plate!.\n-Georgy Zhukov"
+SE_FALL_ROT_A: "The Great Return"
+TNO_SE_FALL_ROT: "Operation Uranus"
+
 SE_GERMAN_CIVIL_WAR: "THE GERMAN CIVIL WAR"
 SE_GERMAN_CIVIL_WAR_D: "It is thus necessary that the individual should finally come to realize that his own ego is of no importance in comparison with the existence of the nation.\n- Adolf Hitler"
 SE_GERMAN_CIVIL_WAR_A: "The end of an Era"
@@ -27,7 +32,7 @@ SE_GREAT_ASIAN_WAR: "THE THIRD SINO-JAPANESE WAR"
 SE_GREAT_ASIAN_WAR_D_1: "The Chinese have the spirit to fight the enemy to the last drop of our blood, the determination to recover our lost territory by our own efforts, and the ability to stand on our own feet.\n- Mao Zedong"
 SE_GREAT_ASIAN_WAR_D_2: "If and when the war starts, wherever or whoever you are, all have the responsibility to protect our home and repel our enemy, all must have the will to achieve ultimate sacrifice!\n- Chiang Kai-Shek"
 SE_GREAT_ASIAN_WAR_A: "The Samurai fights the Sun"
-TNO_SE_GREAT_ASIAN_WAR: "THE GREAT ASIAN WAR"
+TNO_SE_GREAT_ASIAN_WAR: "THE THIRD SINO-JAPANESE WAR"
 TNO_SE_GREAT_ASIAN_WAR_2: "THE GREAT ASIAN WAR"
 TNO_SE_GREAT_ASIAN_WAR_3: "THE GREAT ASIAN WAR"
 
@@ -335,10 +340,7 @@ SE_FALL_SCHWARZ_D: "Mutinies are crushed in accordance with eternal and unchangi
 SE_FALL_SCHWARZ_A: "Tying Loose Ends"
 TNO_SE_FALLSCHWARZ: "FALL SCHWARZ"
 
-SE_FALL_ROT: "FALL ROT"
-SE_FALL_ROT_D: "Those who want to live, let them fight, and those who do not want to fight in this world of eternal struggle do not deserve to live.\n- Adolf Hitler"
-SE_FALL_ROT_A: "One Final War"
-TNO_SE_FALLROT: "FALL ROT"
+
 
 SE_FALL_DAMMERUNG: "FALL DÄMMERUNG"
 SE_FALL_DAMMERUNG_D: "If we value so highly the dignity of life, how can we not also value the dignity of death? No death may be called futile.\n- Yukio Mishima"
@@ -419,10 +421,10 @@ TNO_SE_WEST_AFRICAN_WAR_1: "THE WEST AFRICAN WAR"
 TNO_SE_WEST_AFRICAN_WAR_2: "THE WEST AFRICAN WAR"
 TNO_SE_WEST_AFRICAN_WAR_3: "THE WEST AFRICAN WAR"
 
-SE_JUSHIN_COUP: "THE END OF THE YOKUSANKAI"
-SE_JUSHIN_COUP_D: "The Emperor is the head of the Empire, combining in Himself the rights of sovereignty, and exercises them, according to the provisions of the present Constitution.\n- Article 4 of the Meiji Constitution"
-SE_JUSHIN_COUP_A: "When All Else Fails"
-TNO_SE_JUSHIN_COUP: "THE END OF THE YOKUSANKAI"
+SE_JUSHIN_COUP: "THE SHOWA §RRESTORATION§"
+SE_JUSHIN_COUP_D: "I discovered freedom for the first time in England.\n- Hirohito"
+SE_JUSHIN_COUP_A: "Banzai!"
+TNO_SE_JUSHIN_COUP: "THE SHOWA §RRESTORATION§"
 
 SE_MUTOS_COUP: "THE END OF THE YOKUSANKAI"
 SE_MUTOS_COUP_D: "Whether the rage of heaven or the cries of earth, the roar of the epoch is thundering now.\n - Ode of the Shōwa Restoration, 1930"

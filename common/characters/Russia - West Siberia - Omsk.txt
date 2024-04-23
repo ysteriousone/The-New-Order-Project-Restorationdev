@@ -56,7 +56,7 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_DMITRY_YAZOV_DESC"
 			expire = "1999.1.1"
-			ideology = ultranationalism_ultramilitarism_subtype
+			ideology = ultranationalism_ultracommunism_subtype
 			traits = { the_supreme_commander_of_the_great_trial }
 			id = -1
 		}

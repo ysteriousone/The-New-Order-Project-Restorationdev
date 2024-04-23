@@ -10,6 +10,44 @@ on_actions = {
 	# ROOT = country being capitulated/loser
 	
 	# Anytime y'all are triggering the popup manually, please add 1 to the dirty variable, `global.peace_popup_dirty`
+	
+					#Romania defeats The Bulgarian Entente
+				else_if = {
+				set_global_flag = skip_default_capitulation
+					limit = {
+						ROOT = {
+							original_tag = BUL
+							original_tag = GMS
+							original_tag = HUN
+						}
+						FROM = {
+							OR = {
+								original_tag = SLO
+								original_tag = ROM
+							}
+						}
+					}
+
+					every_country = {
+						limit = { has_war_with = BUL }
+						white_peace = BUL
+						white_peace = HUN
+					}
+
+
+						ROM = {
+							
+							add_state_core = 77
+							add_state_core = 1982
+							transfer_state = 1982
+							transfer_state = 77
+							}
+
+						SLO = {
+                        transfer_state = 73
+						transfer_state = 664
+						}
+                    }
 
 	#See TNO_economy_scripted_effects regarding how transfer_GDP works
 	on_capitulation = {

@@ -3,6 +3,96 @@ add_namespace = jap_fopo
 add_namespace = jap_oil
 add_namespace = jap_ar
 add_namespace = jap_acg
+add_namespace = jap_sphere_collapse
+
+
+country_event = { # Vietnam Collapse
+	id = jap_sphere_collapse.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event jap_sphere_collapse.1"}
+	title = jap_sphere_collapse.1.t
+	desc = jap_sphere_collapse.1.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap_sphere_collapse.1.a
+		JAP = {
+		transfer_state = 878
+		}
+		VIC = {
+		annex_country {
+		target = VIN
+			transfer_troops = yes
+			}
+			}
+	JAP = {
+		country_event = { id = jap_sphere_collapse.2 days = 10 }
+			}
+			
+
+	}
+}
+country_event = { # Indonesia Collapse
+	id = jap_sphere_collapse.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event jap_sphere_collapse.2"}
+	title = jap_sphere_collapse.2.t
+	desc = jap_sphere_collapse.2.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap_sphere_collapse.2.a
+		INS = {
+    country_event = { id = INS_scripted.5}
+    }
+	JAP = {
+	country_event = { id = jap_sphere_collapse.3 }
+			}
+
+	}
+	}
+	country_event = { # Burma Collapse
+	id = jap_sphere_collapse.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event jap_sphere_collapse.3"}
+	title = jap_sphere_collapse.3.t
+	desc = jap_sphere_collapse.3.d
+	picture = GFX_report_event_generic_riot
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jap_sphere_collapse.3.a
+    KAC = {
+	transfer_state = 762
+	}
+	CHN  ={
+	transfer_state = 1308
+	}
+	ARA = {
+	transfer_state = 1307
+	}
+	SHA = {
+	transfer_state = 1319
+	transfer_state =  640
+	}
+	THA = {
+	transfer_state = 842 
+	}
+	KAR = {
+	transfer_state = 1309
+	}
+	RAM = {
+	transfer_state 1310
+	}
+	}
+	}
+	
+			}
 
 country_event = { # Triggers intervention in ICW
 	id = jap_fopo.1

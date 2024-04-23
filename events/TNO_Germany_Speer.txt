@@ -121,6 +121,7 @@ country_event = { #Speidel surrenders
 	option = {
 		name = speer.7.a
 		GER_GCW_conclude = yes
+		load_focus_tree = Speer_Reich
 	}
 }
 

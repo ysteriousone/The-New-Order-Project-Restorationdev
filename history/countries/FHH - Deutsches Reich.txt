@@ -1,5 +1,5 @@
 capital = 37
-
+oob = "HWL_FHH"
 # Vacant
 recruit_character = FHH_Generic_Vacant
 recruit_character = FHH_henning_von_tresckow
@@ -355,9 +355,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Henning von Tresckow"
+	name = "Henning  Tresckow"
 	desc = ""
-	picture = Portrait_GER_Henning_von_Tresckow.dds
+	picture = Regent_Tresckow.dds
 	expire = "1965.1.1"
 	ideology = despotism_aristocratic_republicanism_subtype
 	traits = {

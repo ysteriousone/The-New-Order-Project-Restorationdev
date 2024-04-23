@@ -1,0 +1,25 @@
+focus_tree = {
+	id = tno-Goebbels
+	continuous_focus_position = { x = -40 y = 1310 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HGR
+		}
+	}
+	focus = {
+		id = HGR_SS_Marchiet
+		icon = GFX_GER_thousand_year_wirtschaft
+		x = 3
+		y = 0
+		cost = 1
+		available = {
+		controls_state = 64
+		}
+		completion_reward = {
+			add_manpower = -1000
+			add_stability = -0.1
+			}
+		}
+		}

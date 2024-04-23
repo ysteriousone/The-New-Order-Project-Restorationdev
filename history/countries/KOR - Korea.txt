@@ -5,7 +5,7 @@ recruit_character = KOR_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 recruit_character = KOR_Mr_Korea
 
-
+set_oob = "KOR_1962"
 add_ideas = {
 	#political#
 	tno_political_parties_multiparty_system

@@ -1,8 +1,8 @@
 ﻿l_english:
   # ADJ
-  SUR:0 "Suriname"
+  SUR:0 "Netherlands"
   SUR_DEF:0 "the Kingdom of the Netherlands"
-  SUR_ADJ:0 "Surinamese"
+  SUR_ADJ:0 "Dutch"
   
   SUR_Republic_of_Suriname: "Suriname"
   SUR_Republic_of_Suriname_DEF: "the Republic of Suriname"

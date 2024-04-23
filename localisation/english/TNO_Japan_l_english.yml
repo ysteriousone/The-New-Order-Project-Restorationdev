@@ -1,6 +1,6 @@
 ﻿l_english:
  JAP: "Dai-Nippon Teikoku"
- JAP_DEF: "Dai-Nippon Teikoku"
+ JAP_DEF: "The Japanese Empire"
  JAP_national_socialism: "Dai-Nippon Teikoku"
  JAP_national_socialism_DEF: "Dai-Nippon Teikoku"
  JAP_ADJ: "Japanese"
@@ -648,6 +648,7 @@
  jap_interregnum.2.a: "Kaya?"
  jap_interregnum.2.b: "Ikeda?"
  jap_interregnum.2.c: "Kido?"
+ jap_interregnum.2.d: "Enough! The Emperor shall Intervene!"
  jap_interregnum.3.t: "Kaya Tries to Secure Backing"
  jap_interregnum.3.d: "In the somewhat confused situation after the fall of Ino, the technocrat faction has been trying to bolster their ranks and wrestle control of the Yokusankai. Rallying around Kaya Okinori, their candidate for PM, their voices are becoming louder and louder in the party, to the point where some speculate that their ultimate victory is close at hand.\n\nKaya himself has been releasing more and more bold statements in interview, with some commenting that he speaks as if he were Prime Minister already. Some murmuring is rising from representatives of the conservative wing of the Yokusankai, and there is fears that the technocrats are attempting a takeover of the party. However, it seems like Kaya's bid for the position has never been stronger."
  jap_interregnum.3.a: "Could reform be the way to go?"

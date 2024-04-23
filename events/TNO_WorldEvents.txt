@@ -13,6 +13,32 @@ news_event = {
 		name = WORLD.1525.a
 	}
 	}
+	news_event = {
+	id = WORLD.430
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.430"}
+	title = WORLD.430.t
+	desc = WORLD.430.d
+	picture = GFX_news_event_GER_germany_nuke_anarchy
+
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = WORLD.430.a
+	}
+	}
+	news_event = {
+	id = WORLD.432
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.432"}
+	title = WORLD.432.t
+	desc = WORLD.432.d
+	picture = GFX_news_event_GER_germany_nuke_anarchy
+
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = WORLD.432.a
+	}
+	}
 
 news_event = {
 	id = WORLD.1920

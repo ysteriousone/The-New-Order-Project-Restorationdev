@@ -1,0 +1,80 @@
+﻿focus_tree = {
+	id = Yazov_Post_Unification
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OMS
+		}
+	}
+	
+	default = no
+	focus = {
+		id = OMS_Glory_to_Yazov
+		icon = GFX_POL_The_Partisan_Problem
+		x = 0
+		y = 0
+       cost = 1
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = ORL_Death_or_Dishonour
+		 prerequisite ={ focus =  ORL_Rise_Of_the_Partisans }
+		icon = GFX_OST_Unite_the_Partisans
+		x = -1
+		y = 1
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+        add_war_support = .04
+
+		}
+		}
+	focus = {
+		id = ORL_the_workers_rise
+		 prerequisite ={ focus =  ORL_Rise_Of_the_Partisans }
+		icon = GFX_IND_Workers_Paradise
+		x = 1
+		y = 1
+		cost = 1
+
+		available = {
+
+		}
+		completion_reward = {
+        add_stability = 0.10
+		1435 = {
+				create_unit = {
+					division = "name = \"1ya Proleterskaya diviziya\" division_template = \"Ukreplyonnaya Narodnaya Diviziya\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = ORL
+				}
+		
+				create_unit = {
+					division = "name = \"2ya Proleterskaya diviziya\" division_template = \"Ukreplyonnaya Narodnaya Diviziya\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = ORL
+				}
+		
+				create_unit = {
+					division = "name = \"3ya Proleterskaya diviziya\" division_template = \"Ukreplyonnaya Narodnaya Diviziya\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = ORL
+				}
+		
+				create_unit = {
+					division = "name = \"4ya Proleterskaya diviziya\" division_template = \"Ukreplyonnaya Narodnaya Diviziya\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = ORL
+				}
+		}
+		}		
+		
+	}
+	
+	
+	}

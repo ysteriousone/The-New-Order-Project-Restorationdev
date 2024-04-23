@@ -3,7 +3,6 @@ capital = 1349
 # Vacant
 recruit_character = AZH_Generic_Vacant
 
-recruit_character = AZH_subhas_chandra_bose
 recruit_character = AZH_lakshmi_sahgal
 recruit_character = AZH_john_thivy
 recruit_character = AZH_mohan_singh
@@ -195,21 +194,21 @@ set_stability = 0.7
 set_war_support = 0.67
 
 set_politics = {
-	ruling_party = paternalism
+	ruling_party = socialist
 	last_election = "1961.5.23"
 	election_frequency = 36
 	elections_allowed = yes
 }
 
 set_popularities = {
-	communist = 25
+	communist = 50
 	ultranationalism = 0
-	socialist = 5
-	progressivism = 20
+	socialist = 25
+	progressivism = 25
 	liberalism = 0
 	conservatism = 0
-	paternalism = 40
-	despotism = 10
+	paternalism = 0
+	despotism = 0
 	fascism = 0
 	national_socialism = 0
 	
@@ -244,7 +243,6 @@ add_ideas = {
 	Sphere_Coequal
 	AZH_Hindustan_Land_Development_Authority
 	AZH_The_Language_Problem
-	AZH_What_Is_Subhasism
 	#MINISTERS
 	
 	#POLITICAL

@@ -1,0 +1,1 @@
+如果你在玩第二次西俄战争Submod，请用那个文件替换TNO_restoreIdeologies_l_simp_chinese.yml.

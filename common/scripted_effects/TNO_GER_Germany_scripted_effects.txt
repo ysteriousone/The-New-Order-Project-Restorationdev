@@ -1007,7 +1007,7 @@ GER_GCW_conclude = {
 				set_global_flag = german_civil_war_speervic
 				GER_GCW_conclude_speer = yes
 
-				#country_event = { id = CA_Speer.1 days = 1800 random_days = 30 }
+				country_event = { id = CA_Speer.1 days = 1800 random_days = 30 }
 				country_event = { id = reich.559 days = 7 } # Heydrich dead event
 				if = {
 					limit = { 
@@ -1690,7 +1690,7 @@ GER_GCW_conclude_speer = {
 	}
 	##Content Setup
 	load_focus_tree = {
-		tree = GER_speer_post_cw_tree
+		tree = Speer_Reich
 		keep_completed = no
 	}
 

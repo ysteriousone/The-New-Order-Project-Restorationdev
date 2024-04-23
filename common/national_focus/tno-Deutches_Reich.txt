@@ -20,6 +20,28 @@ focus_tree = {
 			add_state_core = 776
 			news_event = { id = WORLD.6969 }
 			country_event = {id = FHH.1}
+					11640 = {
+		create_unit = {
+					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = FHH
+				}
+		create_unit = {
+					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = FHH
+				}
+		create_unit = {
+					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = FHH
+				}
+		create_unit = {
+					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = FHH
+				}
+		create_unit = {
+					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = FHH
+				}
+		}
 			}
 		}
 		
@@ -49,11 +71,11 @@ focus_tree = {
 		y = 2
 		cost = 2
 		completion_reward = {
-        FHH = {
-      	annex_country {
-		target = SGR
-			transfer_troops = yes
-			}
+	declare_war_on = {
+    	target = SGR
+    	type = annex_everything
+	}
+
 	declare_war_on = {
     	target = AGS
     	type = annex_everything

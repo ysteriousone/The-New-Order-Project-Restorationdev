@@ -1,0 +1,56 @@
+
+
+focus_tree = {
+	id = ENG_interwar
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+
+
+	focus = {
+		id = ENG_The_Watchful_Eye
+
+		icon = GFX_focus_generic_vichy_france_triumphant
+		x = 0
+		y = 0
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 10
+			add_stability = 0.01
+			custom_effect_tooltip = ENG_BFC_watching_tooltip
+			}
+		}	
+	focus = {
+		id = ENG_Into_The_Highlands
+
+		icon = GFX_focus_generic_vichy_france_triumphant
+		x = 0
+		y = 0
+		cost = 5
+        prerequisite = { focus = ENG_The_Watchful_Eye }
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 10
+			add_stability = 0.01
+			}
+		}
+		}
+			
+			
+			

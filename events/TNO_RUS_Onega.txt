@@ -869,6 +869,7 @@ country_event = { #Onega has defeated the West Russian unifier.
 		econ_raise_max_credit_rating = yes
 		generate_russia_state_gdp = yes
 		clr_country_flag = is_warlord
+		create_faction = Russian_Confederation
 		if = {
 			limit = {
 				has_idea = ONG_politics_4
