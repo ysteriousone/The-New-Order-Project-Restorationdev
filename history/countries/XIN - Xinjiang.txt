@@ -10,7 +10,6 @@ set_stability = 1.00
 add_manpower = 400000
 
 
-recruit_character = XIN_ma_jiyuan
 
 set_variable = { chi_influence = 0 }
 

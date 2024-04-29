@@ -11,7 +11,9 @@ state={
 	history={
 		owner = PRC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			thermoelectric_plant = 1
+
 		}
 		victory_points = { 10627 8 }
 		#add_core_of = TAN

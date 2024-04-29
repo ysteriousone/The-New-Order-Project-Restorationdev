@@ -1,0 +1,43 @@
+unique_id = PRC_achievements
+
+PRC_Bocchi_the_Rock = {
+	possible = {
+		has_start_date < 1962.01.02
+		tag = PRC
+	}
+
+	happened = {
+		AST = { has_idea = KOM_socintern_member }
+		KAZ = { has_idea = KOM_socintern_member }
+		SPH = { has_idea = KOM_socintern_member }
+		IND = { has_idea = KOM_socintern_member }
+	}
+}
+
+PRC_Fuck_off_Japs = {
+	possible = {
+		has_start_date < 1962.01.02
+		tag = PRC
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			JAP = { has_capitulated = yes }
+			tooltip = PRC_Achievement_Fuck_off_Japs
+		}
+	}
+}
+
+PRC_Crush_Germania = {
+	possible = {
+		has_start_date < 1962.01.02
+		tag = PRC
+	}
+
+	happened = {
+		custom_trigger_tooltip = {
+			BRG = { has_capitulated = yes }
+			tooltip = PRC_Achievement_Crush_Germania
+		}
+	}
+}

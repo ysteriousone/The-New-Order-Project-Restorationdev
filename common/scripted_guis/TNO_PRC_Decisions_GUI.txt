@@ -1,0 +1,364 @@
+scripted_gui = {
+	TNO_PRC_Army_Decisions_GUI = {
+		context_type = decision_category
+		window_name = "PRC_Army_Decisions_GUI"
+
+		triggers = {
+			PRC_1_Name_click_enabled = {
+				PRC_Modifier_1_grey_trigger = yes
+			}
+			PRC_1_Modifier_click_enabled = {
+				PRC_Modifier_1_grey_trigger = yes
+			}
+			PRC_1_Interact_Plus_click_enabled = {
+				PRC_Modifier_1_button_trigger = yes
+				PRC_Modifier_1_grey_trigger = yes
+				check_variable = { PRC_RA_army_armor_attack_factor < 0.5 }
+			}
+			PRC_1_Interact_Minus_click_enabled = {
+				PRC_Modifier_1_button_trigger = yes
+				PRC_Modifier_1_grey_trigger = yes
+				check_variable = { PRC_RA_army_armor_attack_factor > -0.50 }
+			}
+			PRC_2_Name_click_enabled = {
+				PRC_Modifier_2_grey_trigger = yes
+			}
+			PRC_2_Modifier_click_enabled = {
+				PRC_Modifier_2_grey_trigger = yes
+			}
+			PRC_2_Interact_Plus_click_enabled = {
+				PRC_Modifier_2_button_trigger = yes
+				PRC_Modifier_2_grey_trigger = yes
+				check_variable = { PRC_RA_army_infantry_attack_factor < 0.5 }
+			}
+			PRC_2_Interact_Minus_click_enabled = {
+				PRC_Modifier_2_button_trigger = yes
+				PRC_Modifier_2_grey_trigger = yes
+				check_variable = { PRC_RA_army_infantry_attack_factor > -0.50 }
+			}
+
+			PRC_3_Name_click_enabled = {
+				PRC_Modifier_3_grey_trigger = yes
+			}
+			PRC_3_Modifier_click_enabled = {
+				PRC_Modifier_3_grey_trigger = yes
+			}
+			PRC_3_Interact_Plus_click_enabled = {
+				PRC_Modifier_3_button_trigger = yes
+				PRC_Modifier_3_grey_trigger = yes
+				check_variable = { PRC_RA_army_armor_speed_factor < 0.5 }
+			}
+			PRC_3_Interact_Minus_click_enabled = {
+				PRC_Modifier_3_button_trigger = yes
+				PRC_Modifier_3_grey_trigger = yes
+				check_variable = { PRC_RA_army_armor_speed_factor > -0.50 }
+			}
+			PRC_4_Name_click_enabled = {
+				PRC_Modifier_4_grey_trigger = yes
+			}
+			PRC_4_Modifier_click_enabled = {
+				PRC_Modifier_4_grey_trigger = yes
+			}
+			PRC_4_Interact_Plus_click_enabled = {
+				PRC_Modifier_4_button_trigger = yes
+				PRC_Modifier_4_grey_trigger = yes
+				check_variable = { PRC_RA_army_infantry_defence_factor < 0.5 }
+			}
+			PRC_4_Interact_Minus_click_enabled = {
+				PRC_Modifier_4_button_trigger = yes
+				PRC_Modifier_4_grey_trigger = yes
+				check_variable = { PRC_RA_army_infantry_defence_factor > -0.50 }
+			}
+
+			PRC_5_Name_click_enabled = {
+				PRC_Modifier_5_grey_trigger = yes
+			}
+			PRC_5_Modifier_click_enabled = {
+				PRC_Modifier_5_grey_trigger = yes
+			}
+			PRC_5_Interact_Plus_click_enabled = {
+				PRC_Modifier_5_button_trigger = yes
+				PRC_Modifier_5_grey_trigger = yes
+				check_variable = { PRC_RA_army_org < 0.50 }
+			}
+			PRC_5_Interact_Minus_click_enabled = {
+				PRC_Modifier_5_button_trigger = yes
+				PRC_Modifier_5_grey_trigger = yes
+				check_variable = { PRC_RA_army_org > -0.50 }
+			}
+			PRC_6_Name_click_enabled = {
+				PRC_Modifier_6_grey_trigger = yes
+			}
+			PRC_6_Modifier_click_enabled = {
+				PRC_Modifier_6_grey_trigger = yes
+			}
+			PRC_6_Interact_Plus_click_enabled = {
+				PRC_Modifier_6_button_trigger = yes
+				PRC_Modifier_6_grey_trigger = yes
+				check_variable = { PRC_RA_training_time_army < 0.50 }
+			}
+			PRC_6_Interact_Minus_click_enabled = {
+				PRC_Modifier_6_button_trigger = yes
+				PRC_Modifier_6_grey_trigger = yes
+				check_variable = { PRC_RA_training_time_army > -0.50 }
+			}
+
+			PRC_7_Name_click_enabled = {
+				PRC_Modifier_7_grey_trigger = yes
+			}
+			PRC_7_Modifier_click_enabled = {
+				PRC_Modifier_7_grey_trigger = yes
+			}
+			PRC_7_Interact_Plus_click_enabled = {
+				PRC_Modifier_7_button_trigger = yes
+				PRC_Modifier_7_grey_trigger = yes
+				check_variable = { PRC_RA_army_sub_unit_air_assault_attack_factor < 0.50 }
+			}
+			PRC_7_Interact_Minus_click_enabled = {
+				PRC_Modifier_7_button_trigger = yes
+				PRC_Modifier_7_grey_trigger = yes
+				check_variable = { PRC_RA_army_sub_unit_air_assault_attack_factor > -0.50 }
+			}
+			PRC_8_Name_click_enabled = {
+				PRC_Modifier_8_grey_trigger = yes
+			}
+			PRC_8_Modifier_click_enabled = {
+				PRC_Modifier_8_grey_trigger = yes
+			}
+			PRC_8_Interact_Plus_click_enabled = {
+				PRC_Modifier_8_button_trigger = yes
+				PRC_Modifier_8_grey_trigger = yes
+				check_variable = { PRC_RA_experience_gain_army_factor < 0.50 }
+			}
+			PRC_8_Interact_Minus_click_enabled = {
+				PRC_Modifier_8_button_trigger = yes
+				PRC_Modifier_8_grey_trigger = yes
+				check_variable = { PRC_RA_experience_gain_army_factor > -0.50 }
+			}
+		}
+
+		effects = {
+			PRC_1_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_1_2_Frame = 2 }
+					add_to_variable = { PRC_RA_army_armor_attack_factor = 0.05 }
+					add_to_variable = { PRC_RA_army_infantry_attack_factor = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.2 days = 60 }
+				}
+			}
+			PRC_1_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_1_2_Frame = 2 }
+				add_to_variable = { PRC_RA_army_armor_attack_factor = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.2 days = 60 }
+			}
+
+			PRC_2_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_1_2_Frame = 3 }
+					add_to_variable = { PRC_RA_army_infantry_attack_factor = 0.05 }
+					add_to_variable = { PRC_RA_army_armor_attack_factor = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.2 days = 60 }
+				}
+			}
+			PRC_2_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_1_2_Frame = 3 }
+				add_to_variable = { PRC_RA_army_infantry_attack_factor = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.2 days = 60 }
+			}
+
+			PRC_3_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_3_4_Frame = 2 }
+					add_to_variable = { PRC_RA_army_armor_speed_factor = 0.05 }
+					add_to_variable = { PRC_RA_army_infantry_defence_factor = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.3 days = 60 }
+				}
+			}
+			PRC_3_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_3_4_Frame = 2 }
+				add_to_variable = { PRC_RA_army_armor_speed_factor = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.3 days = 60 }
+			}
+
+			PRC_4_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_3_4_Frame = 3 }
+					add_to_variable = { PRC_RA_army_infantry_defence_factor = 0.05 }
+					add_to_variable = { PRC_RA_army_armor_speed_factor = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.3 days = 60 }
+				}
+			}
+			PRC_4_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_3_4_Frame = 3 }
+				add_to_variable = { PRC_RA_army_infantry_defence_factor = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.3 days = 60 }
+			}
+
+			PRC_5_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_5_6_Frame = 2 }
+					add_to_variable = { PRC_RA_army_org = 0.05 }
+					add_to_variable = { PRC_RA_training_time_army = 0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.4 days = 60 }
+				}
+			}
+			PRC_5_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_5_6_Frame = 2 }
+				add_to_variable = { PRC_RA_army_org = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.4 days = 60 }
+			}
+
+			PRC_6_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_5_6_Frame = 3 }
+					add_to_variable = { PRC_RA_training_time_army = -0.05 }
+					add_to_variable = { PRC_RA_army_org = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.4 days = 60 }
+				}
+			}
+			PRC_6_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_5_6_Frame = 3 }
+				add_to_variable = { PRC_RA_training_time_army = 0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.4 days = 60 }
+			}
+
+			PRC_7_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_7_8_Frame = 2 }
+					add_to_variable = { PRC_RA_army_sub_unit_air_assault_attack_factor = 0.05 }
+					add_to_variable = { PRC_RA_army_sub_unit_air_assault_old_attack_factor = 0.05 }
+					add_to_variable = { PRC_RA_experience_gain_army_factor = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.5 days = 60 }
+				}
+			}
+			PRC_7_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_7_8_Frame = 2 }
+				add_to_variable = { PRC_RA_army_sub_unit_air_assault_attack_factor = -0.05 }
+				add_to_variable = { PRC_RA_army_sub_unit_air_assault_old_attack_factor = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.5 days = 60 }
+			}
+
+			PRC_8_Interact_Plus_click = {
+				if = {
+					limit = { command_power > 19.99 }
+					add_command_power = -20
+					set_variable = { PRC_Exclusive_7_8_Frame = 3 }
+					add_to_variable = { PRC_RA_experience_gain_army_factor = 0.05 }
+					add_to_variable = { PRC_RA_army_sub_unit_air_assault_attack_factor = -0.025 }
+					add_to_variable = { PRC_RA_army_sub_unit_air_assault_old_attack_factor = -0.025 }
+					PRC_update_dynamic_modifier_values = yes
+					country_event = { id = PRC_debug.5 days = 60 }
+				}
+			}
+			PRC_8_Interact_Minus_click = {
+				army_experience = 20
+				set_variable = { PRC_Exclusive_7_8_Frame = 3 }
+				add_to_variable = { PRC_RA_experience_gain_army_factor = -0.05 }
+				PRC_update_dynamic_modifier_values = yes
+				country_event = { id = PRC_debug.5 days = 60 }
+			}
+		}
+
+		properties = {
+			PRC_1_2_Exclusive_Icon = { frame = PRC_Exclusive_1_2_Frame }
+			PRC_3_4_Exclusive_Icon = { frame = PRC_Exclusive_3_4_Frame }
+			PRC_5_6_Exclusive_Icon = { frame = PRC_Exclusive_5_6_Frame }
+			PRC_7_8_Exclusive_Icon = { frame = PRC_Exclusive_7_8_Frame }
+			PRC_Modernization_ProgressBar = { frame = PRC_Army_Modernization }
+		}
+	}
+
+	#Estates
+	PRC_ownership_display = {
+		window_name = "PRC_State_Container"
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+		visible = {
+			ROOT = {
+				original_tag = PRC
+			}
+			THIS = {
+				owner = { tag = PRC }
+			}
+		}
+		properties = {
+			#PRC_remove_status = { image = "[GetPRC_remove_status]" }
+		}
+		triggers = {
+			PRC_remove_status_click_enabled = {
+				NOT = { check_variable = { THIS.PRC_Owner = 0 } }
+			}
+			PRC_add_civ_status_click_enabled = {
+				PRC = { NOT = { has_country_flag = PRC_destroyed_citzenry } }
+				PRC_can_assign_status = yes
+			}
+			PRC_add_mil_status_click_enabled = {
+				PRC = { NOT = { has_country_flag = PRC_destroyed_military } }
+				PRC_can_assign_status = yes
+			}
+		}
+		effects = {
+			PRC_remove_status_click = {
+				if = {
+					limit = { check_variable = { THIS.PRC_Owner = -1 } }
+					add_to_variable = { PRC.PRC_Army_Power = -10 }
+					add_to_variable = { PRC.PRC_Army_Loyalty = -20 }
+				}
+
+				if = {
+					limit = { check_variable = { THIS.PRC_Owner = 1 } }
+
+					add_to_variable = { PRC.PRC_Civilian_Power = -10 }
+					add_to_variable = { PRC.PRC_Civilian_Loyalty = -20 }
+				}
+
+				set_variable = { THIS.PRC_Owner = 0 }
+				PRC_apply_relationship_effect = yes
+
+			}
+
+			PRC_add_civ_status_click = {
+				PRC_add_civ_status_effect = yes
+			}
+
+			PRC_add_mil_status_click = {
+				PRC_add_mil_status_effect = yes
+			}
+		}
+	}
+}

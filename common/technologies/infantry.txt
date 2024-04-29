@@ -900,6 +900,7 @@ technologies = {
 
 		enable_subunits = {
 			air_assault
+			air_assault_old
 		}
 
 		path = {
@@ -942,6 +943,12 @@ technologies = {
 	paratroopers2 = {
 
 		air_assault = {
+			max_organisation = 2
+			soft_attack = 0.025
+			default_morale = 0.025
+		}
+
+		air_assault_old = {
 			max_organisation = 2
 			soft_attack = 0.025
 			default_morale = 0.025
@@ -991,6 +998,13 @@ technologies = {
 			soft_attack = 0.025
 			default_morale = 0.025
 		}
+
+		air_assault_old = {
+			max_organisation = 2
+			soft_attack = 0.025
+			default_morale = 0.025
+		}
+
 		path = {
 			leads_to_tech = paratroopers4
 			research_cost_coeff = 1
@@ -1035,6 +1049,12 @@ technologies = {
 			default_morale = 0.025
 		}
 
+		air_assault_old = {
+			max_organisation = 2
+			soft_attack = 0.025
+			default_morale = 0.025
+		}
+
 		path = {
 			leads_to_tech = paratroopers5
 			research_cost_coeff = 1
@@ -1072,6 +1092,13 @@ technologies = {
 			soft_attack = 0.025
 			default_morale = 0.025
 		}
+
+		air_assault_old = {
+			max_organisation = 2
+			soft_attack = 0.025
+			default_morale = 0.025
+		}
+
 		path = {
 			leads_to_tech = paratroopers6
 			research_cost_coeff = 1
@@ -1105,6 +1132,12 @@ technologies = {
 	paratroopers6 = {
 
 		air_assault = {
+			max_organisation = 2
+			soft_attack = 0.025
+			default_morale = 0.025
+		}
+
+		air_assault_old = {
 			max_organisation = 2
 			soft_attack = 0.025
 			default_morale = 0.025
@@ -2786,6 +2819,12 @@ technologies = {
 			}
 		}
 
+		air_assault_old = {
+			jungle = {
+				attack = 0.025
+				movement = 0.1
+			}
+		}
 	}
 
 ## SUPPORT WEAPONS ##
@@ -3257,6 +3296,11 @@ technologies = {
 				anti_air_shoulder_equipment = 5
 			}
 		}
+		air_assault_old = {
+			need = {
+				anti_air_shoulder_equipment = 5
+			}
+		}
 		mountaineers = {
 			need = {
 				anti_air_shoulder_equipment = 5
@@ -3323,6 +3367,11 @@ technologies = {
 			}
 		}
 		air_assault = {
+			need = {
+				anti_air_shoulder_equipment = 10
+			}
+		}
+		air_assault_old = {
 			need = {
 				anti_air_shoulder_equipment = 10
 			}

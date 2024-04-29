@@ -2148,11 +2148,11 @@ WSB_ONG_west_siberia_collapse = {
 			add_state_core = 652
 			set_politics = {
 				ruling_party = paternalism
-			}
+	}
 			add_popularity = {
 				ideology = paternalism
 				popularity = 0.27
-			}
+}
 			swap_ideas = {
 				remove_idea = tno_admin_efficiency_organized_chaos
 				add_idea = tno_admin_efficiency_nonexistent_state_apparatus
@@ -2464,7 +2464,7 @@ WSB_add_collapse_administration = {
 		add_state_core = 756
 		add_state_core = 581
 		add_state_core = 863
-	}
+}
 }
 
 ### Central Siberia - Worker's Revolt Collapse ###
@@ -3334,7 +3334,7 @@ RUS_fire_southern_urals_aftermath_magnitogorsk_despotism = {
 			}
 			###Post-Magnitogorsk Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -3591,7 +3591,7 @@ RUS_fire_southern_urals_aftermath_magnitogorsk_communist = {
 			}
 			###Post-NKVD Magnitogorsk Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -3848,7 +3848,7 @@ RUS_fire_southern_urals_aftermath_orenburg_socialist = {
 			}
 			###Post-LibSoc Orenburg Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -4105,7 +4105,7 @@ RUS_fire_southern_urals_aftermath_orenburg_communist = {
 			}
 			###Post-AuthSoc Orenburg Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -4362,7 +4362,7 @@ RUS_fire_southern_urals_aftermath_orenburg_authdem = {
 			}
 			###Post-AuthDem Orenburg Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -4614,7 +4614,7 @@ RUS_fire_southern_urals_aftermath_ural_league = {
 			}
 			###Post-Ural League Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -4866,7 +4866,7 @@ RUS_fire_southern_urals_aftermath_orsk = {
 			}
 			###Post-Orsk Events Here
 		}
-	}
+			}
 
 	### VYATKA ###
 
@@ -5270,7 +5270,7 @@ VP_change_outman = {
 
 
 VP_change_fin = {
-	if = {
+	 if = {
 		limit = {
 			state = 213
 		}
@@ -5578,7 +5578,7 @@ RUS_select_regional_news_event = {
 				if = {
 					limit = {
 						has_government = liberal_conservatism
-					} #Make a new one
+						} #Make a new one
 					every_country = {
 						limit = { is_ai = no }
 						news_event = {
@@ -6954,6 +6954,14 @@ RUS_select_superregional_focus_tree = {
 	}
 	if = {
 		limit = {
+			original_tag = PRC
+		}
+		hidden_effect = {
+			load_focus_tree = { tree = PRC_superregional_tree keep_completed = no }
+		}
+	}
+	if = {
+		limit = {
 			original_tag = IRK
 		}
 		if = {
@@ -7062,15 +7070,15 @@ RUS_select_superregional_focus_tree = {
 			}
 		}
 	}
-	#if = {
-	#	limit = {
-	#		original_tag = OMO
-	#		OMO_2022_aprilfools_gamerule_active = no
-	#	}
-	#	hidden_effect = {
-	#		load_focus_tree = OMO_father_superregional
-	#	}
-	#}
+	if = {
+		limit = {
+			original_tag = OMO
+			OMO_2022_aprilfools_gamerule_active = no
+		}
+		hidden_effect = {
+			load_focus_tree = OMO_father_superregional
+		}
+	}
 	if = {
 		limit = {
 			original_tag = OMO
@@ -8300,9 +8308,9 @@ RUS_reset_war_weariness = {
 			OR = {
 				has_war = no
 				any_enemy_country = {
-					is_russian_nation = no
-				}
+				is_russian_nation = no
 			}
+		}
 		}
 		set_variable = { RUS_surrender_limit = 0 }
 		clr_country_flag = RUS_war_start
@@ -8529,7 +8537,7 @@ RUS_capitulation_effect = {
 				ideology = socialist 
 				long_name = IRK_post_sablin_socialist_party_long
 				name = IRK_post_sablin_socialist_party
-			}
+		}
 		}
 		set_global_flag = skip_default_capitulation
 	}

@@ -1,7 +1,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "TNO_songs/New_Theme.ogg"
+	file = "TNO_songs/Lullaby_of_freedom.ogg"
 	volume = 0.65
 }
 

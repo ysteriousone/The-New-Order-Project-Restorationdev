@@ -342,6 +342,12 @@ technologies = {
 			}
 		}
 
+		air_assault_old = {
+			need = {
+				attack_helicopter_equipment = 30
+			}
+		}
+
 		categories = {
 			helicopter
 		}

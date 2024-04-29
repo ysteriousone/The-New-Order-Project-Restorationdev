@@ -20,6 +20,13 @@ TNO_fire_super_event = {
 				}
 			}
 			else_if = {
+				limit = { check_variable = { TNO_temp_super_event = token:SE_RUSSIAN_REUNIFICATION_PRC }}
+				random_list = {
+					50 = { scoped_play_song = "TNO_SE_RUSSIAN_REUNIFICATION_PRC" }
+					50 = { scoped_play_song = "TNO_SE_RUSSIAN_REUNIFICATION_PRC_2" }
+				}
+			}
+			else_if = {
 				limit = { check_variable = { TNO_temp_super_event = token:SE_WEST_AFRICAN_WAR } has_global_flag = WAC_scenario_1 }
 				scoped_play_song = "TNO_SE_WEST_AFRICAN_WAR_1"
 			}

@@ -1,0 +1,166 @@
+﻿capital = 330
+
+# Vacant
+recruit_character = MON_Generic_Vacant
+fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
+recruit_character = MON_yumjaagiin_tsedenbal
+
+
+oob = "MON_1962"
+
+set_stability = 0.84
+add_manpower = 30000
+
+set_politics = {
+	ruling_party = despotism
+	last_election = "1962.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    communist = 20
+    ultranationalism = 0
+    socialist = 20
+    progressivism = 0
+    liberalism = 0
+
+    conservatism = 0
+    paternalism = 0
+    despotism = 50
+    fascism = 10
+    
+}
+
+add_ideas = {
+	#Political#
+	tno_political_parties_one_party_state
+	tno_religious_rights_secularism
+	tno_trade_unions_state_controlled
+	tno_immigration_quota_immigration
+	tno_slavery_outlawed
+	tno_public_meetings_regulated
+	tno_press_rights_censored_press
+	tno_vote_franchise_no_voting
+	tno_refugees_banned
+	
+	#Military#
+	tno_conscription_service_by_requirement
+	tno_women_military_assistance
+	tno_military_supervision_no_supervision
+	tno_training_minimal_training
+	tno_racial_integration_integrated_military
+	tno_draft_exemptions_none
+	
+	#Economic#
+	tno_trade_laws_limited_exports
+	tno_income_taxation_low_income_weighted
+	tno_minimum_wage_trinket_minimum_wage
+	tno_max_workhours_12_hour_work_day
+	tno_child_labor_illegal
+	tno_pensions_low_pensions
+	tno_unemployment_no_subsidies
+	
+	#Social#
+	tno_safety_no_regulations
+	tno_health_care_no_government_support
+	tno_pollution_few_regulations
+	tno_education_public_education
+	tno_penal_system_politicized_penal_system
+	tno_lgbt_rights_lgbt_outlawed
+	tno_gender_rights_traditional_roles
+	tno_minorities_oppression
+	tno_security_regulated_police
+
+	#Societal Development#
+	
+	tno_army_professionalism_reluctant_conscripts
+	tno_industrial_expertise_incompetent
+	tno_industrial_equipment_power_tools
+	tno_agriculture_basic_mechanized
+	tno_research_facilities_basic
+	tno_academic_base_mass_illiteracy
+	tno_admin_efficiency_deficient_administrative_systems
+}
+
+set_country_flag = tno_defined_startup_effectiveness
+
+set_variable = { tno_health_care_effectiveness = 0 }
+
+set_variable = { tno_health_care_effectiveness = 0 }
+
+# ECONOMIC LAWS
+set_variable = { tno_trade_laws_effectiveness = 43 }
+set_variable = { tno_income_taxation_effectiveness = 38 }
+set_variable = { tno_minimum_wage_effectiveness = 67 }
+set_variable = { tno_max_workhours_effectiveness = 54 }
+set_variable = { tno_child_labor_effectiveness = 34 }
+set_variable = { tno_pensions_effectiveness = 25 }
+set_variable = { tno_unemployment_effectiveness = 28 }
+
+# SOCIAL LAWS
+set_variable = { tno_safety_effectiveness = 34 }
+set_variable = { tno_health_care_effectiveness = 0 }
+set_variable = { tno_pollution_effectiveness = 26 }
+set_variable = { tno_education_effectiveness = 27 }
+set_variable = { tno_penal_system_effectiveness = 73 }
+set_variable = { tno_lgbt_rights_effectiveness = 87 }
+set_variable = { tno_gender_rights_effectiveness = 64 }
+set_variable = { tno_minorities_effectiveness = 56 }
+set_variable = { tno_security_effectiveness = 32 }
+
+# POLITICAL LAWS
+set_variable = { tno_political_parties_effectiveness = 76 }
+set_variable = { tno_religious_rights_effectiveness = 63 }
+set_variable = { tno_trade_unions_effectiveness = 86 }
+set_variable = { tno_immigration_effectiveness = 63 }
+set_variable = { tno_slavery_effectiveness = 27 }
+set_variable = { tno_public_meetings_effectiveness = 71 }
+set_variable = { tno_press_rights_effectiveness = 42 }
+set_variable = { tno_vote_franchise_effectiveness = 66 }
+set_variable = { tno_refugees_effectiveness = 36 }
+
+# MILITARY LAWS
+set_variable = { tno_conscription_effectiveness = 62 }
+set_variable = { tno_women_effectiveness = 49 }
+set_variable = { tno_military_supervision_effectiveness = 37 }
+set_variable = { tno_training_effectiveness = 57 }
+set_variable = { tno_racial_integration_effectiveness = 61 }
+set_variable = { tno_draft_exemptions_effectiveness = 34 }
+
+add_equipment_to_stockpile = {
+   type = infantry_equipment
+   amount = 600
+   producer = MON
+}
+
+add_equipment_to_stockpile = {
+   type = anti_tank_equipment
+   amount = 200
+   producer = MON
+}
+
+set_technology = {
+	basic_train = 1
+
+	infantry_weapons_1 = 1
+	infantry_weapons_2 = 1
+	infantry_weapons_improvements_mine_1 = 1
+	infantry_weapons_improvements_ammo_1 = 1
+	infantry_weapons_improvements_grenade_1 = 1
+	basic_infantry_equipment = 1
+	support_weapons = 1
+	infantry_at = 1
+	tech_support = 1
+	tech_engineers = 1
+
+	electronic_mechanical_engineering = 1
+	radio = 1
+	
+	ww2_line_production = 1
+	batch_production_1 = 1
+	building_construction_1 = 1
+	energy_technology_1 = 1
+    social_construction_1 = 1
+}
+

@@ -1,0 +1,84 @@
+#Organ Tree by Wendell08
+
+focus_tree = {
+	id = PRC_starting_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PRC
+		}
+	}
+	default = no
+	shared_focus = PRC_The_Eastern_Conflict
+}
+
+focus_tree = {
+	id = PRC_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PRC
+		}
+	}
+	default = no
+	shared_focus = PRC_The_Eastern_Conflict
+}
+
+focus_tree = {
+	id = PRC_post_war_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PRC
+		}
+	}
+	default = no
+	shared_focus = PRC_Aftermath_of_the_War
+	shared_focus = PRC_Red_Spring
+}
+
+focus_tree = {
+	id = PRC_blank_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PRC
+		}
+	}
+	default = no
+}
+
+focus_tree = {
+	id = PRC_regional_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PRC
+		}
+	}
+	default = no
+	shared_focus = PRC_Secure_our_Position
+	shared_focus = PRC_Into_the_Military_Front
+	shared_focus = PRC_Restoring_our_Riches
+	shared_focus = PRC_The_International_Field
+}
+
+
+focus_tree = {
+	id = PRC_superregional_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = PRC
+		}
+	}
+	default = no
+	shared_focus = PRC_MIL_A_United_Siberia
+	shared_focus = RUS_SIB_nukes_into_the_atomic_age
+}

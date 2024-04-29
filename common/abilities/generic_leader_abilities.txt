@@ -185,6 +185,8 @@ ability = {
 		unit_modifiers = {
 			modifier_army_sub_unit_air_assault_attack_factor = 0.05
 			modifier_army_sub_unit_air_assault_defence_factor = 0.1
+			modifier_army_sub_unit_air_assault_old_attack_factor = 0.05
+			modifier_army_sub_unit_air_assault_old_defence_factor = 0.1
 			special_forces_no_supply_grace = 24
 		}
 

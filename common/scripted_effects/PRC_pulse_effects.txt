@@ -1,0 +1,6 @@
+first_every_month_script = {
+	PRC = {
+		add_to_variable = { PRC_Army_Modernization = PRC_Army_Modernization_monthly_change }
+		PRC_monthly_decay_estates = yes
+	}
+}

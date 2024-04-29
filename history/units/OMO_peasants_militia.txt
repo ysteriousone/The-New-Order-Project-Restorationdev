@@ -12,19 +12,19 @@
 units = {
 	division = {
 		name="Krest'janskoe Opolchenie"
-		location= "13063"
+		location= "10540"
 		division_template= "Sibirskoe Krest'janskoe Opolchenie"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name="Krest'janskoe Opolchenie"
-		location="4455"
+		location="12592"
 		division_template= "Sibirskoe Krest'janskoe Opolchenie"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name="Krest'janskoe Opolchenie"
-		location="13350"
+		location="10540"
 		division_template= "Sibirskoe Krest'janskoe Opolchenie"
 		start_experience_factor = 0.1
 	}

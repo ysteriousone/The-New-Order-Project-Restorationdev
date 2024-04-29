@@ -14,16 +14,7 @@ OMO_wrath_of_god_category = {
 		}
 
 		visible = {
-			566 = {
-				controller = {
-					has_war_with = OMO
-				}
-			}
-		}
-		cancel_trigger = {
-			566 = {
-				is_fully_controlled_by = OMO
-			}
+			has_war = yes
 		}
 
 		ai_will_do = {
@@ -50,9 +41,6 @@ OMO_wrath_of_god_category = {
 			}
 			clr_country_flag = OMO_start_uprising
 		}
-		cancel_effect = {
-			clr_country_flag = OMO_start_uprising
-		}
 	}
 	OMO_stir_the_peasants_of_buryatia = {
 
@@ -69,16 +57,7 @@ OMO_wrath_of_god_category = {
 		}
 
 		visible = {
-			564 = {
-				controller = {
-					has_war_with = OMO
-				}
-			}
-		}
-		cancel_trigger = {
-			564 = {
-				is_fully_controlled_by = OMO
-			}
+			has_war = yes
 		}
 
 		ai_will_do = {
@@ -105,9 +84,6 @@ OMO_wrath_of_god_category = {
 			}
 			clr_country_flag = OMO_start_uprising
 		}
-		cancel_effect = {
-			clr_country_flag = OMO_start_uprising
-		}
 	}
 	OMO_stir_the_peasants_of_amur = {
 
@@ -124,16 +100,7 @@ OMO_wrath_of_god_category = {
 		}
 
 		visible = {
-			561 = {
-				controller = {
-					has_war_with = OMO
-				}
-			}
-		}
-		cancel_trigger = {
-			561 = {
-				is_fully_controlled_by = OMO
-			}
+			has_war = yes
 		}
 
 		ai_will_do = {
@@ -160,9 +127,6 @@ OMO_wrath_of_god_category = {
 			}
 			clr_country_flag = OMO_start_uprising
 		}
-		cancel_effect = {
-			clr_country_flag = OMO_start_uprising
-		}
 	}
 	OMO_stir_the_peasants_of_chita = {
 
@@ -179,16 +143,7 @@ OMO_wrath_of_god_category = {
 		}
 
 		visible = {
-			563 = {
-				controller = {
-					has_war_with = OMO
-				}
-			}
-		}
-		cancel_trigger = {
-			563 = {
-				is_fully_controlled_by = OMO
-			}
+			has_war = yes
 		}
 
 		ai_will_do = {
@@ -215,9 +170,6 @@ OMO_wrath_of_god_category = {
 			}
 			clr_country_flag = OMO_start_uprising
 		}
-		cancel_effect = {
-			clr_country_flag = OMO_start_uprising
-		}
 	}
 	OMO_stir_the_peasants_of_magadan = {
 
@@ -234,16 +186,7 @@ OMO_wrath_of_god_category = {
 		}
 
 		visible = {
-			562 = {
-				controller = {
-					has_war_with = OMO
-				}
-			}
-		}
-		cancel_trigger = {
-			562 = {
-				is_fully_controlled_by = OMO
-			}
+			has_war = yes
 		}
 
 		ai_will_do = {
@@ -268,9 +211,6 @@ OMO_wrath_of_god_category = {
 			hidden_effect = {
 				load_oob = OMO_peasants_magadan
 			}
-			clr_country_flag = OMO_start_uprising
-		}
-		cancel_effect = {
 			clr_country_flag = OMO_start_uprising
 		}
 	}
@@ -339,7 +279,8 @@ OMO_temptations_category = {
 		cost = 75
 		fire_only_once = yes
 		modifier = {
-			weekly_manpower = 1000
+			war_support_weekly = 0.5
+			weekly_manpower = 200
 		}
 		days_remove = 70
 
@@ -422,26 +363,6 @@ OMO_temptations_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision OMO_galvanize_the_peasantry_for_hardship"
 			OMO_minor_temptation = yes
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-}
-OMO_post_reunification = {
-	OMO_the_ninth_crusade = {
-		allowed = {
-			original_tag = OMO
-		}
-
-		cost = 0
-		fire_only_once = yes
-
-		complete_effect = {
-			declare_war_on = {
-				target = GER
-				type = annex_everything
-			}
 		}
 		ai_will_do = {
 			factor = 0

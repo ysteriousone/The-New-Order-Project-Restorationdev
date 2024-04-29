@@ -134,7 +134,8 @@ bookmarks = {
 			}
 		}
 
-
+		"ZZZ" = { history = "" }
+		"ZZZ" = { history = "" }
 
 		"CHI" = {
 			history = "CHI_THENEWORDER_DESC"
@@ -173,6 +174,13 @@ bookmarks = {
 			}
 		}
 
+		"FRS" = {
+			history = ""
+			ideology = fascism
+		}
+
+		"ZZZ" = { history = "" }
+		"ZZZ" = { history = "" }
 
 		"MAN" = {
 			history = ""
@@ -202,7 +210,7 @@ bookmarks = {
 		#### MINORS ####
 		### ROW 1 ###
 		# Buffer
-		
+		"ZZZ" = { minor = yes history = "" }
 
 		## OFN ##
 		"CHL" = {
@@ -211,7 +219,7 @@ bookmarks = {
 			ideology = liberal_conservatism
 			ideas = {}
 			focuses = {}
-		}
+			}
 
 		"MEX" = {
 			minor = yes
@@ -283,23 +291,6 @@ bookmarks = {
 		## PAKT ##
 
 		## RUSSIA ##
-				
-		"FFR" = {
-		minor = yes
-		history = "VIVA LA FRANCAISE LIBRE LOL LMAO" 
-		ideology = paternalism
-			ideas = {
-				ENG_The_Terrible_Twins
-				ENG_British_Free_Corps
-				ENG_German_Corporate_Dominance_0
-			}
-			focuses = {
-				ENG_hurrah_for_the_blackshirts
-				ENG_coronation_day
-				ENG_a_government_true_to_his_majesty
-			}
-			}
-			
 		"WRS" = {
 			minor = yes
 			history = "WRS_THENEWORDER_DESC"
@@ -414,7 +405,7 @@ bookmarks = {
 			}
 		}
 
-		
+		"ZZZ" = { minor = yes history = "" }
 
 		"YUN" = {
 			minor = yes
@@ -434,27 +425,28 @@ bookmarks = {
 		## CPS ##
 
 		## TRIUM ##
-		
+		"ZZZ" = { minor = yes history = "" }
 
 		"GRE" = { minor = yes history = "" }
 
-		
+		"ZZZ" = { minor = yes history = "" }
+
 		## TRIUM ##
 
 		# Buffer
-		
+		"ZZZ" = { minor = yes history = "" }
 		### ROW 1 ###
 
 		### ROW 2 ###
 		# Buffer
-		
+		"ZZZ" = { minor = yes history = "" }
 
 		## OFN ##
-		
+		"ZZZ" = { minor = yes history = "" }
 
-		
+		"ZZZ" = { minor = yes history = "" }
 
-		
+		"ZZZ" = { minor = yes history = "" }
 		## OFN ##
 
 		## PAKT ##
@@ -474,7 +466,7 @@ bookmarks = {
 				UKR_breadbasket_of_the_reich
 				UKR_land_of_contrasts
 				UKR_paradise_undone
-			}
+		}
 			focuses = {
 				UKR_the_melt_of_rot
 				UKR_the_new_hruchevsky
@@ -591,7 +583,7 @@ bookmarks = {
 		## RUSSIA ##
 
 		## CPS ##
-		"ZZZ" = { minor = yes history = "" }
+		"SHX" = { minor = yes history = "" }
 
 		"ZZZ" = { minor = yes history = "" }
 
@@ -756,6 +748,21 @@ bookmarks = {
 			}
 		}
 
+		"PRC" = {
+			minor = yes
+			history = "PRC_THENEWORDER_DESC"
+			ideology = communist
+			ideas = {
+				PRC_factionalism
+				PRC_red_army_exile
+				PRC_democratic_military
+			}
+			focuses = {
+				PRC_The_Eastern_Conflict
+				PRC_Legacy_of_the_Siberian_Red_Army
+				PRC_War_with_Menjiang
+			}
+		}
 		## RUSSIA ##
 
 		## CPS ##

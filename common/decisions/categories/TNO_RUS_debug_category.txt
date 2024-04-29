@@ -49,6 +49,24 @@ AMR_debug_category = {
 	}
 }
 
+PRC_debug_category = {
+	icon = GFX_decision_category_border_war
+	picture = GFX_RUS_placeholder
+
+	allowed = {
+		original_tag = PRC
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 15
+	}
+}
 
 PRM_debug_category = {
 	icon = GFX_decision_category_debug
@@ -115,7 +133,6 @@ OMO_debug_category = {
 	visible = {
 		is_debug = yes
 		is_ai = no
-		OMO_2022_aprilfools_gamerule_active = no
 	}
 }
 

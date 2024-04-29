@@ -644,7 +644,7 @@ RUS_reunification_category = {
 						has_country_leader = {
 							character = KOM_Sergey_Taboritsky
 							ruling_only = yes
-						}
+					}
 					}
 					if = {
 						limit = {
@@ -1486,7 +1486,7 @@ RUS_reunification_category = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_intervene_in_kazakhstan"
-		}
+				}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_intervene_in_kazakhstan remove"
 			every_country = {
@@ -2376,7 +2376,7 @@ RUS_reunification_category = {
 					limit = {
 						NOT = { tag = AMR }
 						is_ai = yes
-					}
+			}
 					MAN = {
 						country_event = {
 							id = MAN_skeleton.28
@@ -2437,18 +2437,6 @@ RUS_reunification_category = {
 				set_variable = { OMO_2022_crystal_generics_increase_ic_cost = 50 }
 				set_variable = { OMO_2022_crystal_generics_increase_construction_cost = 50 }
 				set_variable = { OMO_2022_crystal_generics_increase_population_cost = 50 }
-			}
-
-			if = {
-				limit = {
-					original_tag = OMO
-					OMO_2022_aprilfools_gamerule_active = no
-				}
-				country_event = {
-					id = RUS_collapse.4
-					days = 300
-					random = 100
-				}
 			}
 
 			hidden_effect = {
@@ -8381,7 +8369,7 @@ SIB_war_category = {
 				}
 			}
 			NOT = { has_country_flag = RWS_SIB_WAR }
-		}
+			}
 		custom_cost_trigger = { command_power > 24.99 }
 		custom_cost_text = decision_cost_25_cp
 		available = {

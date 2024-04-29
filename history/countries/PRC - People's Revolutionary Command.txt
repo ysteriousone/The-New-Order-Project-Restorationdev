@@ -25,6 +25,8 @@ recruit_character = PRC_Lodongiin_Dandar
 oob = "PRC_1962"
 add_manpower = 13000
 
+###Playable
+set_country_flag = tno_playable_country
 
 add_ideas = {
 	### National Spirits ###
@@ -92,6 +94,8 @@ add_ideas = {
 	tno_research_facilities_basic
 	tno_academic_base_basic_literacy
 }
+
+set_research_slots = 3
 
 # Policy effectivness
 

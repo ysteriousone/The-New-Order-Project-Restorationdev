@@ -64,7 +64,7 @@ country_event = {
 				cost = -1
 				can_be_fired = no
 				ai_will_do = { factor = 0 }
-			}
+		}
 			activate = yes
 		}
 		add_advisor_role = {
@@ -363,68 +363,68 @@ country_event = {
 		RUS_Smuta_Enable = yes
 		add_stability = 0.15
 		set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Christian_Anarchism }
-		econ_subtype_change = yes 
+        econ_subtype_change = yes 
 		remove_ideas = RUS_isolated_vilages
 		add_ideas = RUS_faith_in_holy_father
-		OMO_Gleb_Yakunin = {
-			add_corps_commander_role = {
-				traits = { trait_cautious trickster }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 3
-				planning_skill = 1
-				logistics_skill = 2
-				legacy_id = 3787
-			}
-		}
+				OMO_Gleb_Yakunin = {
+					add_corps_commander_role = {
+						traits = { trait_cautious trickster }
+						skill = 2
+						attack_skill = 1
+						defense_skill = 3
+						planning_skill = 1
+						logistics_skill = 2
+						legacy_id = 3787
+					}
+				}
 
-		OMO_Mikhail_Vukvol = {
-			add_corps_commander_role = {
-				traits = { winter_specialist war_hero }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 3
-				logistics_skill = 1
-				legacy_id = 3788
-			}
-		}
+				OMO_Mikhail_Vukvol = {
+					add_corps_commander_role = {
+						traits = { winter_specialist war_hero }
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 3
+						logistics_skill = 1
+						legacy_id = 3788
+					}
+				}
 
-		OMO_Pavel_Adelgeim = {
-			add_corps_commander_role = {
-				traits = { trait_reckless infantry_leader }
-				skill = 2
-				attack_skill = 3
-				defense_skill = 1
-				planning_skill = 2
-				logistics_skill = 1
-				legacy_id = 3789
-			}
-		}
+				OMO_Pavel_Adelgeim = {
+					add_corps_commander_role = {
+						traits = { trait_reckless infantry_leader }
+						skill = 2
+						attack_skill = 3
+						defense_skill = 1
+						planning_skill = 2
+						logistics_skill = 1
+						legacy_id = 3789
+					}
+				}
 
-		OMO_Timofey_Yelkov = {
-			add_corps_commander_role = {
-				traits = { inflexible_strategist skilled_staffer }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 3
-				legacy_id = 3790
-			}
-		}
+				OMO_Timofey_Yelkov = {
+					add_corps_commander_role = {
+						traits = { inflexible_strategist skilled_staffer }
+						skill = 2
+						attack_skill = 2
+						defense_skill = 1
+						planning_skill = 1
+						logistics_skill = 3
+						legacy_id = 3790
+					}
+				}
 
-		OMO_Vladimir_Gladilin = {
-			add_corps_commander_role = {
-				traits = { infantry_officer trait_engineer }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 2
-				legacy_id = 3791
-			}
-		}
+				OMO_Vladimir_Gladilin = {
+					add_corps_commander_role = {
+						traits = { infantry_officer trait_engineer }
+						skill = 2
+						attack_skill = 2
+						defense_skill = 2
+						planning_skill = 1
+						logistics_skill = 2
+						legacy_id = 3791
+					}
+				}
 		random_owned_controlled_state = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -435,10 +435,618 @@ country_event = {
 		}
 		hidden_effect = {
 			load_oob = OMO_peasants_norsib
+			load_focus_tree = OMO_northern_war
 			every_country = {
 				limit = { is_ai = no }
 				news_event = WORLD.104
 			}
+			MAG = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			AMR = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			CHT = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			BRY = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			IRK = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			KMC = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			YAK = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
+			VIL = {
+				country_event = { id = OMO.29 hours = 6 }
+			}
 		}
+	}
+}
+
+country_event = { #Sudoplatov says hi
+	id = OMO.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.9"}
+	title = OMO.9.t
+	desc = OMO.9.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.9.a
+		OMO_Pavel_Sudoplatov = {
+			add_field_marshal_role = {
+				traits = { organizer fast_planner infantry_leader career_officer skilled_staffer winter_specialist }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+				legacy_id = 3786
+			}
+		}
+		custom_effect_tooltip = OMO_sudoplatov_brigade_tt
+		hidden_effect = {
+			load_oob = OMO_sudoplatov
+		}
+	}
+}
+
+country_event = { #The Darkness Did Not Overcome
+	id = OMO.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.10"}
+	title = OMO.10.t
+	desc = OMO.10.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.10.a
+		add_war_support = 0.20
+	}
+}
+
+country_event = { #Border towns taken over
+	id = OMO.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.11"}
+	title = OMO.11.t
+	desc = OMO.11.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.11.a
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = OMO.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.12"}
+	title = OMO.12.t
+	desc = OMO.12.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.12.a
+	}
+}
+
+country_event = { #Reaction Event
+	id = OMO.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.13"}
+	title = OMO.13.t
+	desc = OMO.13.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.13.a
+		add_war_support = 0.05
+		add_ideas = OMO_peasant_uprisings
+	}
+}
+
+country_event = {#Dealing with Yagoda
+	id = OMO.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.14"}
+	title = OMO.14.t
+	desc = OMO.14.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.14.a
+		add_stability = 0.03
+		add_political_power = 20
+	}
+}
+
+country_event = {#Dealing with Sablin
+	id = OMO.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.15"}
+	title = OMO.15.t
+	desc = OMO.15.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.15.a
+		add_stability = 0.03
+		add_political_power = 20
+	}
+}
+
+country_event = {#Dealing with Matkovsky
+	id = OMO.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.16"}
+	title = OMO.16.t
+	desc = OMO.16.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.16.a
+		add_stability = 0.03
+		add_political_power = 20
+	}
+}
+
+country_event = {#Dealing with Rodzaevsky
+	id = OMO.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.17"}
+	title = OMO.17.t
+	desc = OMO.17.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.17.a
+		add_stability = 0.03
+		add_political_power = 20
+	}
+}
+
+country_event = {#Dealing with Mikhail
+	id = OMO.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.18"}
+	title = OMO.18.t
+	desc = OMO.18.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.18.a
+		add_stability = 0.03
+		add_political_power = 20
+	}
+}
+
+country_event = {#Launch Regional
+	id = OMO.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.19"}
+	title = OMO.19.t
+	desc = OMO.19.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.19.a
+		load_focus_tree = OMO_father_regional
+	}
+}
+
+country_event = {#A New Sermon
+	id = OMO.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.20"}
+	title = OMO.20.t
+	desc = OMO.20.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.20.a
+
+	}
+}
+
+country_event = {#A Truly Holy Russia
+	id = OMO.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.21"}
+	title = OMO.21.t
+	desc = OMO.21.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.21.a
+
+	}
+}
+
+country_event = {#The Fruits of Labor
+	id = OMO.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.22"}
+	title = OMO.22.t
+	desc = OMO.22.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.22.a
+
+	}
+}
+
+country_event = {#No King but God
+	id = OMO.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.23"}
+	title = OMO.23.t
+	desc = OMO.23.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.23.a
+
+	}
+}
+
+country_event = {#Blessed are the Peacemakers
+	id = OMO.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.24"}
+	title = OMO.24.t
+	desc = OMO.24.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.24.a
+
+	}
+}
+
+country_event = {#The Three Temptations of the Sinner
+	id = OMO.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.25"}
+	title = OMO.25.t
+	desc = OMO.25.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.25.a
+
+	}
+}
+
+country_event = {#Raise Peasant Militia/hidden event
+	id = OMO.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.26"}
+	title = OMO.26.t
+	desc = OMO.26.d
+	picture = GFX_report_event_RUS_siberia
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.26.a
+		load_oob = "OMO_peasants_militia"
+	}
+}
+
+country_event = {#Raise NKVD brigade/hidden event
+	id = OMO.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.27"}
+	title = OMO.27.t
+	desc = OMO.27.d
+	picture = GFX_report_event_RUS_siberia
+
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.27.a
+		load_oob = "OMO_nkvd_recruits"
+	}
+}
+
+country_event = {#Sudoplatov Collapse
+	id = OMO.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.28"}
+	title = OMO.28.t
+	desc = OMO.28.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.28.a
+		clear_global_event_target = RUS_far_east_unifier
+		if = {
+			limit = {
+				owns_state = 570
+			}
+			CSB = {
+				if = {
+					limit = {
+						NOT = { has_global_flag = TNO_RUS_central_siberia_collapse }
+					}
+					transfer_state = 570
+					transfer_state = 578
+					transfer_state = 40
+					transfer_state = 654
+					transfer_state = 569
+					transfer_state = 887
+					transfer_state = 757
+					transfer_state = 568
+					transfer_state = 888
+					transfer_state = 576
+					transfer_state = 566
+					transfer_state = 567
+					transfer_state = 758
+					transfer_state = 577
+					transfer_state = 516
+					transfer_state = 329
+					transfer_state = 814
+					load_oob = NOV_1962
+					declare_war_on = {
+						target = BRY
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CHT
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = IRK
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = KMC
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = MAG
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = OMO
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = VIL
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = YAK
+						type = annex_everything
+					}
+				}
+			}
+		}
+		FST_far_east_collapse = yes
+		if = {
+			limit = {
+				has_war = yes
+			}
+			every_other_country = {
+				limit = {
+					has_war_with = OMO
+					if = {
+						limit = { is_central_siberian_nation = yes }
+						NOT = { has_global_flag = TNO_RUS_central_siberia_collapse }
+					}
+				}
+				country_event = { id = OMO.31 hours = 12 }
+			}
+		}
+	}
+}
+
+country_event = {#Divine Siberia is formed/player can switch to them
+	id = OMO.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.29"}
+	title = OMO.29.t
+	desc = OMO.29.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.29.a
+		ai_chance = { base = 1 }
+	}
+	option = {
+		name = OMO.29.b
+		ai_chance = { base = 0 }
+		OMO = { change_tag_from = ROOT }
+	}
+}
+
+country_event = {#Await Judgement
+	id = OMO.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.30"}
+	title = OMO.30.t
+	desc = OMO.30.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.30.a
+		GER = {
+			set_country_flag = GER_Espionage_disable_teufel
+		}
+	}
+}
+
+country_event = {#Divine Siberia has collapsed while at war, the enemy declares war on all breakaway states.
+	id = OMO.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.31"}
+	title = OMO.31.t
+	desc = OMO.31.d
+	picture = GFX_report_event_RUS_siberia
+
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.31.a
+		declare_war_on = {
+			target = YAK
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = CHT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = BRY
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {#Repairing Bukharin's Sin
+	id = OMO.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.32"}
+	title = OMO.32.t
+	desc = OMO.32.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.32.a
+	}
+}
+
+country_event = {#A Kingdom of God On Earth
+	id = OMO.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.33"}
+	title = OMO.33.t
+	desc = OMO.33.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.33.a
+	}
+}
+
+country_event = {#Bridge the Gap
+	id = OMO.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.34"}
+	title = OMO.34.t
+	desc = OMO.34.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.34.a
+	}
+}
+
+country_event = {#An Ear To The Faithless
+	id = OMO.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.35"}
+	title = OMO.35.t
+	desc = OMO.35.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.35.a
+	}
+}
+
+country_event = {#Unite the Flock
+	id = OMO.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.36"}
+	title = OMO.36.t
+	desc = OMO.36.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.36.a
+	}
+}
+
+country_event = {#Evil Made Flesh
+	id = OMO.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.37"}
+	title = OMO.37.t
+	desc = OMO.37.d
+	picture = GFX_report_event_RUS_orthodox_bible
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.37.a
+	}
+}
+
+country_event = {#Against the Winds
+	id = OMO.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event OMO.38"}
+	title = OMO.38.t
+	desc = OMO.38.d
+	picture = GFX_report_event_RUS_siberia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = OMO.38.a
 	}
 }

@@ -1,0 +1,412 @@
+ideas = {
+	country = {
+		PRC_factionalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_factionalism" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Directional_Disputes
+			modifier = {
+				stability_factor = -0.3
+				political_power_gain = -0.5
+			}
+		}
+		PRC_red_army_exile = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_red_army_exile" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Red_Army_in_Exile
+			modifier = {
+
+			}
+		}
+		PRC_democratic_military = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_democrattic_military" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Democratic_Military
+			modifier = {
+				army_org_Factor = -0.10
+				political_power_gain = 0.25
+			}
+		}
+		PRC_last_stand_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_last_stand_idea" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Generic_Defense
+			modifier = {
+				defense_bonus_against = 0.15
+				ai_focus_defense_factor = 0.5
+			}
+		}
+		PRC_old_union = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_old_union" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Generic_Defense
+			modifier = {
+				army_org_Factor = 0.10
+				stability_factor = -0.2
+				war_support_factor = 0.2
+				political_power_gain = -0.30
+			}
+		}
+		PRC_old_union_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_old_union" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Generic_Defense
+			modifier = {
+				army_org_Factor = 0.10
+				stability_factor = -0.1
+				war_support_factor = 0.2
+				political_power_gain = -0.15
+			}
+		}
+		PRC_new_union = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_new_union" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PRC_Generic_Defense
+			modifier = {
+				army_org_Factor = 0.4
+				army_attack_factor = 0.1
+				political_power_gain = -0.25
+			}
+		}
+		PRC_Mongolian_Tactics_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Mongolian_Tactics_idea" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IRK_peoples_union
+			modifier = {
+				defense_bonus_against = 0.10
+			}
+		}
+		PRC_Cavalry_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Cavalry_Army" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Kazakh_Horsemen
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}
+		}
+		PRC_Industrial_Mobilization = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Industrial_Mobilization" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_breakneck_industrialization
+			modifier = {
+				Free_production_units_modifier = 2
+				industrial_capacity_factory  = 0.10
+				consumer_goods_production_factor = -0.05
+			}
+		}
+		PRC_Civilian_Buff = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Civilian_Buff" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = Economy_Civilian_Budget_Boost
+			modifier = {
+				consumer_goods_production_factor = 0.05
+				production_speed_buildings_factor = 0.12
+			}
+		}
+		PRC_Overrun_Tomsk_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Overrun_Tomsk_idea" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_Preparing_The_Army
+			targeted_modifier = {
+				tag = TOM
+				attack_bonus_against = 0.20
+			}
+		}
+		PRC_Tank_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Tank_idea_1" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_Preparing_The_Army
+			modifier = {
+				army_armor_attack_factor = 0.15
+				army_armor_speed_factor = 0.15
+				training_time_army_factor = 0.20
+			}
+			research_bonus = {
+				armor = 0.20
+			}
+		}
+		PRC_Infantry_idea_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Infantry_idea_1" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_Preparing_The_Army
+			modifier = {
+				army_infantry_attack_factor = 0.15
+				army_infantry_defence_factor = 0.15
+				experience_gain_army_factor = -0.20
+			}
+			research_bonus = {
+				infantry_weapons = 0.20
+			}
+		}
+		PRC_Warlord_Remnants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Warlord_Remnants" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MZB_USA_East_African_Warlordism
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.15
+			}
+		}
+		PRC_Warlords_Deal = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Warlords_Deal" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MZB_USA_East_African_Warlordism
+			modifier = {
+				political_power_gain = -0.25
+				stability_factor = -0.10
+			}
+		}
+		PRC_Warlords_War = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Warlords_War" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MZB_USA_East_African_Warlordism
+			modifier = {
+				stability_factor = -0.20
+				army_org_Factor = -0.10
+			}
+		}
+		PRC_Trade_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Trade_1" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_Opening_The_Markets
+			modifier = {
+				consumer_goods_production_factor = 0.03
+			}
+		}
+		PRC_Trade_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Trade_2" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_Opening_The_Markets
+			modifier = {
+				consumer_goods_production_factor = 0.06
+			}
+		}
+		PRC_Trade_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Trade_3" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_Opening_The_Markets
+			modifier = {
+				consumer_goods_production_factor = 0.1
+				gdp_growth_modifier = 0.2
+			}
+		}
+		PRC_Civ_Gov = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_MilCiv_Gov" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = IRK_bureaucracy_purged
+			modifier = {
+				political_power_gain = 0.25
+				consumer_goods_production_factor = 0.05
+			}
+		}
+		PRC_Mil_Gov = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Mil_Gov" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KRS_Military_Guided_Democracy
+			modifier = {
+				political_power_gain = -0.50
+				experience_gain_army_factor = 0.15
+			}
+		}
+		PRC_Age_of_Science = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Age_of_Science" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MGN_Constructive_Science
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		PRC_Preparing_for_Unification = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_Preparing_for_Unification" }
+			allowed = {
+				always = no
+			}
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOM_dream_for_russia
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		PRC_preparation_for_war = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRC_prepared_for_war"}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = BRY_wheels_of_labor
+			modifier = {
+				production_units_to_GDP_ratio_modifier = 0.10
+			}
+		}
+	}
+}

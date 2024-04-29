@@ -1,0 +1,214 @@
+﻿focus_tree = {
+	id = Shanxi_War
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SHX
+		}
+	}
+	
+	default = no
+	focus = {
+		id = SHX_Ma_Uprising
+		icon = GFX_YUN_However_Wherever_Whoever
+		x = 0
+		y = 0
+       cost = 10
+		completion_reward = {
+		QIN = {
+		transfer_state = 906
+	declare_war_on = {
+    	target = GAN
+    	type = annex_everything
+	}
+		}
+		GAN = {
+		create_faction = IJA-Expedition
+		}
+
+			}
+		}
+	focus = {
+		id = SHX_Getting_involved
+		icon = GFX_YUN_honor
+		x = 0
+		y = 1
+       cost = 2
+	   prerequisite = { focus = SHX_Ma_Uprising }
+		completion_reward = {
+    create_faction = CHI_THE_CHINESE_LEAGUE
+	declare_war_on = {
+    	target = GAN
+    	type = annex_everything
+	}
+		}
+
+
+		}
+	focus = {
+		id = SHX_The_West_Secured
+		icon = GFX_YUN_For_China
+		x = 0
+		y = 2
+       cost = 3
+	   prerequisite = { focus = SHX_Getting_involved }
+	   available = {
+	   NOT = {
+	   country_exists = GAN}
+	   }
+		completion_reward = {
+	QIN = {
+	transfer_state = 604
+	transfer_state = 764
+	add_state_core = 764
+	}
+	SHX = {
+	add_state_core = 1302
+	add_state_core = 616
+	add_to_faction = QIN 
+	}
+	}
+	}
+focus = {
+		id = SHX_Using_the_collapse
+		icon = GFX_JAP_Collapse_Proof_Supremacy
+		x = 0
+		y = 3
+       cost = 3
+	   prerequisite = { focus = SHX_The_West_Secured }
+	   available = {
+	   NOT = {
+	CHI = {
+	is_in_faction_with = JAP
+	   }
+	   }
+	   }
+		completion_reward = {
+    
+	}
+	}
+focus = {
+		id = SHX_In_Mongolia
+		icon = GFX_NOV_connections_in_mongolia
+		x = 4
+		y = 4
+       cost = 3
+	   prerequisite = { focus = SHX_Using_the_collapse }
+	   available = {
+	   country_exists = MEN
+               }
+	   
+	   
+		completion_reward = {
+    
+	}
+	}
+focus = {
+		id = SHX_Stir_up_trouble
+		icon = GFX_OST_Unite_the_Partisans
+		x = 3
+		y = 5
+       cost = 3
+	   prerequisite = { focus = SHX_In_Mongolia }
+		completion_reward = {
+		955 = {
+		set_demilitarized_zone = yes
+		}
+    
+	}
+	}
+focus = {
+		id = SHX_Revive_the_MPF
+		icon = GFX_GER_SGR_now_or_never
+		x = 5
+		y = 5
+       cost = 3
+	   prerequisite = { focus = SHX_In_Mongolia }
+	  
+		completion_reward = {
+    
+	}
+	}
+focus = {
+		id = SHX_Strike_First
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 4
+		y = 6
+       cost = 3
+	   prerequisite = { focus = SHX_Stir_up_trouble }
+	   prerequisite = { focus = SHX_Revive_the_MPF }
+	  
+		completion_reward = {
+	declare_war_on = {
+    	target = MEN
+    	type = annex_everything
+	}
+    
+	}
+	}
+	focus = {
+		id = SHX_Mongolia_Pacified
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 4
+		y = 7
+       cost = 3
+	   available = {
+	   NOT = {
+	   country_exists = MEN
+	   }
+	   }
+	   
+	   prerequisite = { focus = SHX_Strike_First}
+	  
+		completion_reward = {
+	MON = {
+	transfer_state = 815
+	transfer_state = 330
+	}
+	SHX = {
+	add_state_core = 955
+	add_state_core = 621
+	add_state_core = 612
+	add_to_faction = MON
+	}
+    
+	}
+	}
+focus = {
+		id = SHX_In_Sichuan
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = -3
+		y = 4
+       cost = 3
+	   prerequisite = { focus = SHX_Using_the_collapse }
+	   available = {
+	   NOT = {
+	   XIK = {
+	   is_in_faction_with = CHI
+               }
+	   }
+	   }
+	   
+		completion_reward = {
+    
+	}
+	}
+focus = {
+		id = SHX_Chongqings_weak_point
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = -3
+		y = 5
+       cost = 3
+	   prerequisite = { focus = SHX_In_Sichuan } 
+		completion_reward = {
+    SHX = {
+    add_to_faction = XIK
+	}
+	}
+	}	
+
+
+	
+	}

@@ -35,6 +35,7 @@ recruit_character = CHI_chen_daqing
 recruit_character = CHI_sun_dianying
 recruit_character = CHI_luo_benli
 recruit_character = CHI_pang_bingxun
+
  set_technology = {
 	basic_train = 1
 
@@ -390,34 +391,6 @@ set_popularities = {
 
 set_cosmetic_tag = CHI_JAP
 
-set_autonomy = {
-	target = SHX
-	autonomous_state = autonomy_china_warlord_regime
-}
-set_autonomy = {
-	target = XIK
-	autonomous_state = autonomy_china_warlord_regime
-}
-set_autonomy = {
-	target = XIN
-	autonomous_state = autonomy_china_warlord_regime
-}
-set_autonomy = {
-	target = GUX
-	autonomous_state = autonomy_china_warlord_regime
-}
-set_autonomy = {
-	target = GUZ
-	autonomous_state = autonomy_china_warlord_regime
-}
-set_autonomy = {
-	target = YUN
-	autonomous_state = autonomy_china_warlord_regime
-}
-set_autonomy = {
-	target = MEN
-	autonomous_state = autonomy_china_warlord_regime
-}
 
 
 add_ideas = {
@@ -539,7 +512,7 @@ set_variable = { TNO_economy_subtype = token:Econ_Subtype_Dirigisme }
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_intelligence_agency = yes
-}
+	}
 
 # NSB #
 if = {

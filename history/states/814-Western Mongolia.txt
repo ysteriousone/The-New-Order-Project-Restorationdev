@@ -10,9 +10,9 @@ state={
 			
 			infrastructure = 2
 		}
-		owner = PRC
-		add_core_of = MEN
-		add_core_of = PRC
+	    owner = PRC
+	    add_core_of = PRC
+	    add_core_of = MON
 		victory_points = { 12544 3 }
 		victory_points = { 10695 1 }
 		victory_points = { 1834 3 }

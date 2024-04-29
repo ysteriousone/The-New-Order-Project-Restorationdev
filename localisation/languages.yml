@@ -8,6 +8,7 @@
  l_russian:0 "Russian"
  l_spanish:0 "Spanish"
  l_japanese:0 "Japanese"
+ l_simp_chinese:0 "Chinese(simplified)"
 l_braz_por:
  PDX_DUMMY_LOCALIZATION:0 ""
  l_english:0 "Inglês"
@@ -66,3 +67,12 @@ l_japanese:
  PDX_DUMMY_LOCALIZATION:0 ""
 l_simp_chinese:
  PDX_DUMMY_LOCALIZATION:0 ""
+ l_english:0 "英语"
+ l_braz_por:0 "巴西葡萄牙语"
+ l_french:0 "法语"
+ l_german:0 "德语"
+ l_polish:0 "波兰语"
+ l_russian:0 "俄语"
+ l_spanish:0 "西班牙语"
+ l_japanese:0 "日语"
+ l_simp_chinese:0 "简体中文"

@@ -1,0 +1,109 @@
+﻿focus_tree = {
+	id = Shanxi_Pre_War
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SHX
+		}
+	}
+	
+	default = no
+	focus = {
+		id = SHX_Another_year
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 0
+		y = 0
+       cost = 3
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = SHX_Covert_Operations
+		icon = GFX_YUN_Create_Volunteers
+		x = 0
+		y = 1
+       cost = 3
+	   prerequisite = { focus = SHX_Another_year }
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = SHX_Working_our_way_to
+		icon = GFX_YUN_ghost_of_the_past
+		x = 0
+		y = 2
+       cost = 3
+	   prerequisite = { focus = SHX_Covert_Operations }
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = SHX_Strengh
+		icon = GFX_YUN_Never_Again
+		x = 2
+		y = 3
+       cost = 5
+	   prerequisite = { focus = SHX_Working_our_way_to }
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = SHX_Freedom
+		icon = GFX_YUN_The_Chinese_Army_Unbowed
+		x = -2
+		y = 3
+       cost = 5
+	   prerequisite = { focus = SHX_Working_our_way_to }
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+	focus = {
+		id = SHX_and_Liberation
+		icon = GFX_YUN_For_The_Country
+		x = 0
+		y = 4
+       cost = 3
+	   prerequisite = { focus = SHX_Strengh }
+	   prerequisite = { focus = SHX_Freedom }
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+
+			}
+		}
+    focus = {
+		id = SHX_Begining_operations
+		icon = GFX_POL_The_Partisan_Problem
+		x = 0
+		y = 6
+       cost = 10
+	   prerequisite = { focus = SHX_and_Liberation}
+		completion_reward = {
+		add_political_power = 10
+		add_manpower = 1000
+		add_state_core = 283
+		hidden_effect = {
+		load_focus_tree =  Shanxi_War
+		}
+
+			}
+		}
+	
+	}

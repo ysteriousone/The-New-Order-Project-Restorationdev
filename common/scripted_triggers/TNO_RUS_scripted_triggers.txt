@@ -18,6 +18,7 @@ is_russian_unifier = {
 		original_tag = SBA
 		original_tag = NOV
 		original_tag = KEM
+		original_tag = PRC
 
 		original_tag = CHT
 		original_tag = AMR
@@ -1377,5 +1378,16 @@ RUS_consider_aryan_regime = {
 			character = PRM_Velimir
 			ruling_only = yes
 		}
+	}
+}
+
+PRC_can_assign_status = {
+	check_variable = { THIS.PRC_Owner = 0 }
+	OR = {
+		AND = {
+			NOT = { is_core_of = PRC }
+			PRC = { has_country_flag = PRC_can_give_non_cores }
+		}
+		is_core_of = PRC
 	}
 }

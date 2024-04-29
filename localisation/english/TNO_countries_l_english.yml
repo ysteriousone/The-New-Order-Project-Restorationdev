@@ -217,10 +217,14 @@
  BUL_ADJ: "Bulgarian"
 
  # C
- CAN: "Canada"
+ CAN: "Dominion of Canada"
  CAN_DEF: "Canada"
  CAN_ADJ: "Canadian"
 
+ COR: "Correntia"
+ COR_DEF: "Correntia"
+ COR_ADJ: "Italo-African"
+ 
  CBR: "People's Republic of Burma"
  CBR_DEF: "the People's Republic of Burma"
  CBR_ADJ: "Burmese"
@@ -556,8 +560,8 @@
  KYK_Mr_Kikuyuland: "Mr. Kikuyuland"
 
  # L
- LHH: "Leibstandarte Heinrich Himmler"
- LHH_DEF: "Leibstandarte Heinrich Himmler"
+ LHH: "SS Ordensstaat Kuban"
+ LHH_DEF: "Der SS Ordensstaat Kuban"
  LHH_ADJ: "Leibstandarte"
 
  # M

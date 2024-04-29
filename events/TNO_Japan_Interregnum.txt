@@ -29,7 +29,7 @@ country_event = {
 			remove_idea = JAP_showa_emperor
 			add_idea = JAP_showa_emperor_yasuda
 		}
-		country_event = { id = jap_interregnum.pm days = 4}
+		country_event = { id = jap_sphere_collapse.1 days = 4}
 		hidden_effect = {
 		CHI = {
 		drop_cosmetic_tag = CHI_JAP
@@ -51,6 +51,9 @@ country_event = {
     	target = IND
     	type = annex_everything
 	}
+}
+JAP = {
+dismantle_faction = yes
 }
 KOR = {
 transfer_state = 1820

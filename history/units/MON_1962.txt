@@ -1,0 +1,125 @@
+﻿division_template = {
+	name = "Angijralyn Diviziin"
+
+	division_names_group = MON_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	##### Mongol Ardyn Armiin #####
+	division = {
+		#name = "1-r Angijralyn Diviziin"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4801
+		division_template = "Angijralyn Diviziin"
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		#name = "2-p Angijralyn Diviziin"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1781
+		division_template = "Angijralyn Diviziin"
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		#name = "3-p Angijralyn Diviziin"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7885
+		division_template = "Angijralyn Diviziin"
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		#name = "4-p Angijralyn Diviziin"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12541
+		division_template = "Angijralyn Diviziin"
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		#name = "5-p Angijralyn Diviziin"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10704
+		division_template = "Angijralyn Diviziin"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		#name = "6-p Angijralyn Diviziin"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 12686
+		division_template = "Angijralyn Diviziin"
+		start_experience_factor = 0.2
+
+	}
+	# division = {
+	# 	name = "7-p Angijralyn Diviziin"
+	# 	division_name = {    # New syntax for compatibility with name lists
+	# 		is_name_ordered = yes
+	# 		name_order = 7
+	# 	}
+	# 	location = 7806
+	# 	division_template = "Angijralyn Diviziin"
+	# 	start_experience_factor = 0.2
+	# }
+	# division = {
+	# 	name = "8-p Angijralyn Diviziin"
+	# 	division_name = {    # New syntax for compatibility with name lists
+	# 		is_name_ordered = yes
+	# 		name_order = 8
+	# 	}
+	# 	location = 13361
+	# 	division_template = "Angijralyn Diviziin"
+	# 	start_experience_factor = 0.2
+	# }
+}
+
+### Starting Equipment ###
+
+instant_effect = {
+     add_equipment_production = {
+          equipment = {
+              type = infantry_equipment_1
+              creator = "MON"
+              }
+              requested_factories = 1
+              progress = 0.20
+              efficiency = 100
+              }
+	
+	 add_equipment_production = {
+          equipment = {
+              type = anti_tank_equipment_0
+              creator = "MON"
+              }
+              requested_factories = 1
+              progress = 0.20
+              efficiency = 100
+              }
+}

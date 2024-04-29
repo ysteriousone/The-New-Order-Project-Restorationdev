@@ -1,0 +1,672 @@
+########################
+###Mengjiang Conflict###
+########################
+
+JAP_foreign_policy_category = {
+	intervene_for_mengjiang = {
+
+		icon = GFX_decision_generic_phone_call
+
+		available = {
+
+		}
+
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision intervene_for_menjiang"
+			if = {
+				limit = {
+					has_variable = JAP_advisor_level
+				}
+				add_to_variable = {
+					var = JAP_advisor_level
+					value = 1
+				}
+			}
+			else = {
+				set_variable = {
+					JAP_advisor_level = 0
+				}
+			}
+			add_stability = -0.025
+
+			set_temp_variable = { target = MEN }
+			TNO_increase_volunteer_cap_1 = yes
+			custom_effect_tooltip = "TNO_increase_volunteers_MEN_1"
+
+			custom_effect_tooltip = JAP_mongolia_intervention_starter_tt
+			set_country_flag = JAP_intervened_in_mongolia
+			set_country_flag = mongolia_war_timer
+		}
+
+		ai_will_do = {
+			base = 40
+			modifier = {
+				factor = 4
+				MEN = { surrender_progress > 0.4 }
+			}
+			modifier = {
+				factor = 8
+				MEN = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				factor = 2
+				MEN = { num_divisions < 5 }
+			}
+			modifier = {
+				factor = 2
+				MEN = { enemies_strength_ratio > 0.5 }
+			}
+			modifier = {
+				factor = 1000
+				date > 1962.9.1
+			}
+		}
+	}
+	menjiang_increase_support = {
+
+		icon = GFX_decision_generic_shake_hands
+
+		available = {
+		}
+
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+			has_country_flag = JAP_intervened_in_mongolia
+			#has_country_flag = mongolia_war_intervention_full
+			set_temp_variable = { target = MEN }
+			TNO_volunteer_cap_less_5 = yes
+		}
+
+		cost = 40
+		days_re_enable = 20
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision menjiang_increase_support"
+			add_to_variable = {
+				var = JAP_advisor_level
+				value = 1
+			}
+			add_stability = -0.025
+
+			set_temp_variable = { target = MEN }
+			TNO_increase_volunteer_cap_1 = yes
+			custom_effect_tooltip = "TNO_increase_volunteers_MEN_1"
+
+			custom_effect_tooltip = JAP_mongolia_intervention_increase_tt
+		}
+
+		ai_will_do = {
+			base = 40
+			modifier = {
+				factor = 4
+				MEN = { surrender_progress > 0.4 }
+			}
+			modifier = {
+				factor = 8
+				MEN = { surrender_progress > 0.5 }
+			}
+			modifier = {
+				factor = 2
+				MEN = { num_divisions > 5 }
+			}
+			modifier = {
+				factor = 2
+				MEN = { enemies_strength_ratio > 0.5 }
+			}
+			modifier = {
+				factor = 1000
+				date > 1962.9.1
+			}
+		}
+	}
+	mongol_war_timer = {
+
+		icon = GFX_decision_clock
+		allowed = { tag = JAP }
+		activation = {
+			MON = {
+				exists = yes
+				has_war_with = MEN
+			}
+			has_country_flag = mongolia_war_timer
+		}
+		available = {
+			MON = {
+				exists = no
+			}
+		}
+
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+
+		is_good = no
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_stability = -0.10
+			add_political_power = -200
+			increase_ija_strength_medium = yes
+			set_country_flag = failed_mongol_war
+			activate_mission = JAP_prepare_full_intervention_mongol
+			log = "[GetDateText]: [Root.GetName]: Mission timeout mongol_war_timer"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Mission mongol_war_timer"
+			add_political_power = 35
+		}
+	}
+
+	JAP_prepare_full_intervention_mongol = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = { tag = JAP }
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			MON = {
+				exists = no
+			}
+		}
+
+		is_good = no
+		days_mission_timeout = 7
+
+		timeout_effect = {
+			add_to_faction = MEN
+			declare_war_on = {
+				target = MON
+				type = annex_everything
+			}
+			MAN = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = MON
+				}
+			}
+			MEN = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = MON
+				}
+			}
+
+			MEN = {
+				clr_country_flag = requested_intervention_mongolia
+			}
+			log = "[GetDateText]: [Root.GetName]: Mission JAP_prepare_full_intervention_mongol timeout"
+		}
+
+		complete_effect = {
+
+		}
+	}
+
+	JAP_full_intervention_decision = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {tag = JAP}
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+			has_country_flag = JAP_enable_full_intervention
+		}
+		available = {
+			hidden_trigger = {
+				always = yes
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_to_faction = MEN
+			declare_war_on = {
+				target = MON
+				type = annex_everything
+			}
+			MAN = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = MON
+				}
+			}
+			MEN = {
+				add_to_war = {
+					targeted_alliance = JAP
+					enemy = MON
+				}
+			}
+			MEN = {
+				clr_country_flag = requested_intervention_mongolia
+			}
+			clr_country_flag = JAP_enable_full_intervention
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_full_intervention_decision"
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	JAP_MEN_airbase_d = {
+		icon = GFX_decision_generic_fighter_plane
+		allowed = {tag = JAP}
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		available = {
+			has_equipment = {
+				jet_CAS_equipment_1 > 15
+			}
+		}
+
+		custom_cost_trigger = {
+			command_power > 29
+			has_political_power > 29
+		}
+		custom_cost_text = decision_cost_30_cp_30_pp
+
+		days_remove = 60
+		fire_only_once = yes
+
+		complete_effect = {
+			send_equipment = {
+				equipment = jet_CAS_equipment_1
+				amount = 15
+				target = MEN
+			}
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_airbase"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_MEN_airbase"
+			612 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = JAP_MEN_airbase_done_flag
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	JAP_MEN_send_planes_d = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		allowed = {tag = JAP}
+		available = {
+			has_country_flag = JAP_MEN_airbase_done_flag
+			has_equipment = {
+				jet_CAS_equipment_1 > 15
+			}
+		}
+		visible = {
+			has_country_flag = JAP_MEN_airbase_done_flag
+		}
+
+		cost = 30
+
+		fire_only_once = yes
+
+		complete_effect = {
+			send_equipment = {
+				equipment = jet_CAS_equipment_1
+				amount = 35
+				target = MEN
+			}
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_send_planes"
+		}
+		ai_will_do = {
+			factor = 80
+		}
+	}
+	JAP_MEN_Kalgan_supply_network_d = {
+		icon = GFX_decision_generic_infrastructure
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		allowed = {tag = JAP}
+		available = {
+
+		}
+
+		custom_cost_trigger = {
+			has_political_power > 49
+			check_variable = { GDP > 0.0 } #already converted to billion
+		}
+		custom_cost_text = decision_cost_50_m_50_pp
+
+		days_remove = 60
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_Kalgan_supply_network"
+			set_temp_variable = { temp_econ_spending_amount = 0.005 }
+			econ_spend_money_once_effect_raw_money = yes
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove JAP_MEN_Kalgan_supply_network"
+			build_railway = {
+				level = 1
+				fallback = yes
+				build_only_on_allied = no
+				path = { 6969 3955 952 1489 7674 11752 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = men.30
+				}
+			}
+			MEN = {
+				country_event = {
+					id = men.30
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+				}
+				add_to_variable = {
+					var = MEN_japhelp_supply_consumption_factor
+					value = -0.1
+				}
+				custom_effect_tooltip = JAP_MEN_Kalgan_supply_network_tt
+			}
+		}
+
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	JAP_MEN_Send_Equipment = {
+		icon = GFX_decision_generic_supply
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		cost = 10
+		fire_only_once = yes
+		remove_effect = {
+
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_Send_Equipment"
+			hidden_effect = {
+				country_event = {
+					id = men.27
+				}
+			}
+			MEN = {
+				country_event = {
+					id = men.27
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment_1
+					amount = 300
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 100
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 50
+					producer = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	JAP_MEN_Advisory_Battalions = {
+		icon = GFX_decision_generic_military_parade
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		allowed = {
+			original_tag = JAP
+		}
+		custom_cost_trigger = {
+			command_power > 9
+		}
+		custom_cost_text = decision_cost_10_cp
+
+		fire_only_once = yes
+		remove_effect = {
+
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_Advisory_Battalions"
+			hidden_effect = {
+				country_event = {
+					id = men.28
+				}
+			}
+			MEN = {
+				country_event = {
+					id = men.28
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_attack_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Advisory_Battalions_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_attack_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Advisory_Battalions_tt
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	JAP_MEN_Strengthen_Cav_Patrols = {
+		icon = GFX_decision_generic_prepare_civil_war
+		allowed = {
+			original_tag = JAP
+		}
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		custom_cost_trigger = {
+			command_power > 4
+			has_political_power > 19
+		}
+		custom_cost_text = decision_cost_5_cp_20_pp
+
+		fire_only_once = yes
+		remove_effect = {
+
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_Strengthen_Cav_Patrols"
+			hidden_effect = {
+				country_event = {
+					id = men.29
+				}
+			}
+			MEN = {
+				country_event = {
+					id = men.29
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_recon_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Strengthen_Cav_Patrols_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_recon_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Strengthen_Cav_Patrols_tt
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	JAP_MEN_Unite_Princes = {
+		icon = GFX_decision_generic_shake_hands
+		allowed = {
+			original_tag = JAP
+		}
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_Unite_Princes"
+			hidden_effect = {
+				country_event = {
+					id = men.31
+				}
+			}
+			MEN = {
+				country_event = {
+					id = men.31
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 110
+		}
+	}
+
+	JAP_MEN_Kenpeitai_Rearguard_Operations = {
+		icon = GFX_decision_generic_use_force
+		allowed = {
+			original_tag = JAP
+		}
+		visible = {
+			TNO_fopo_mengjiang_conflict_selected = yes
+		}
+		custom_cost_trigger = {
+			command_power > 9
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_10_cp_25_pp
+
+		fire_only_once = yes
+		remove_effect = {
+
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision JAP_MEN_Kenpeitai_Operations"
+			hidden_effect = {
+				country_event = {
+					id = men.32
+				}
+			}
+			MEN = {
+				country_event = {
+					id = men.32
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_morale_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = MEN_japhelp_defence_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kenpeitai_Operations_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_morale_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = MEN_japhelp_defence_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kenpeitai_Operations_tt
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 110
+		}
+	}
+}

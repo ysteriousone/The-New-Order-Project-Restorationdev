@@ -1,0 +1,95 @@
+TNO_improve_minorities_policy_effectiveness_low = {
+	custom_effect_tooltip = TNO_improve_minorities_policy_effectiveness_low_tt
+}
+TNO_improve_minorities_policy_effectiveness_med = {
+	custom_effect_tooltip = TNO_improve_minorities_policy_effectiveness_med_tt
+}
+TNO_improve_minorities_policy_effectiveness_high = {
+	custom_effect_tooltip = TNO_improve_minorities_policy_effectiveness_high_tt
+}
+TNO_improve_minorities_policy_effectiveness_monthly_low = {
+	custom_effect_tooltip = TNO_improve_minorities_policy_effectiveness_monthly_low_tt
+}
+TNO_improve_minorities_policy_effectiveness_monthly_med = {
+	custom_effect_tooltip = TNO_improve_minorities_policy_effectiveness_monthly_med_tt
+}
+TNO_improve_minorities_policy_effectiveness_monthly_high = {
+	custom_effect_tooltip = TNO_improve_minorities_policy_effectiveness_monthly_high_tt
+}
+TNO_worsen_minorities_policy_effectiveness_low = {
+	custom_effect_tooltip = TNO_worsen_minorities_policy_effectiveness_low_tt
+}
+TNO_worsen_minorities_policy_effectiveness_med = {
+	custom_effect_tooltip = TNO_worsen_minorities_policy_effectiveness_med_tt
+}
+TNO_worsen_minorities_policy_effectiveness_high = {
+	custom_effect_tooltip = TNO_worsen_minorities_policy_effectiveness_high_tt
+}
+TNO_worsen_minorities_policy_effectiveness_monthly_low = {
+	custom_effect_tooltip = TNO_worsen_minorities_policy_effectiveness_monthly_low_tt
+}
+TNO_worsen_minorities_policy_effectiveness_monthly_med = {
+	custom_effect_tooltip = TNO_worsen_minorities_policy_effectiveness_monthly_med_tt
+}
+TNO_worsen_minorities_policy_effectiveness_monthly_high = {
+	custom_effect_tooltip = TNO_worsen_minorities_policy_effectiveness_monthly_high_tt
+}
+TNO_improve_racial_integration_policy_effectiveness_low = {
+	custom_effect_tooltip = TNO_improve_racial_integration_policy_effectiveness_low_tt
+}
+TNO_improve_racial_integration_policy_effectiveness_med = {
+	custom_effect_tooltip = TNO_improve_racial_integration_policy_effectiveness_med_tt
+}
+TNO_improve_racial_integration_policy_effectiveness_high = {
+	custom_effect_tooltip = TNO_improve_racial_integration_policy_effectiveness_high_tt
+}
+TNO_improve_racial_integration_policy_effectiveness_monthly_low = {
+	custom_effect_tooltip = TNO_improve_racial_integration_policy_effectiveness_monthly_low_tt
+}
+TNO_improve_racial_integration_policy_effectiveness_monthly_med = {
+	custom_effect_tooltip = TNO_improve_racial_integration_policy_effectiveness_monthly_med_tt
+}
+TNO_improve_racial_integration_policy_effectiveness_monthly_high = {
+	custom_effect_tooltip = TNO_improve_racial_integration_policy_effectiveness_monthly_high_tt
+}
+TNO_worsen_racial_integration_policy_effectiveness_low = {
+	custom_effect_tooltip = TNO_worsen_racial_integration_policy_effectiveness_low_tt
+}
+TNO_worsen_racial_integration_policy_effectiveness_med = {
+	custom_effect_tooltip = TNO_worsen_racial_integration_policy_effectiveness_med_tt
+}
+TNO_worsen_racial_integration_policy_effectiveness_high = {
+	custom_effect_tooltip = TNO_worsen_racial_integration_policy_effectiveness_high_tt
+}
+TNO_worsen_racial_integration_policy_effectiveness_monthly_low = {
+	custom_effect_tooltip = TNO_worsen_racial_integration_policy_effectiveness_monthly_low_tt
+}
+TNO_worsen_racial_integration_policy_effectiveness_monthly_med = {
+	custom_effect_tooltip = TNO_worsen_racial_integration_policy_effectiveness_monthly_med_tt
+}
+TNO_worsen_racial_integration_policy_effectiveness_monthly_high = {
+	custom_effect_tooltip = TNO_worsen_racial_integration_policy_effectiveness_monthly_high_tt
+}
+TNO_improve_child_labor_policy_effectiveness_monthly_low = {
+	custom_effect_tooltip = TNO_improve_child_labor_policy_effectiveness_monthly_low_tt
+	add_to_variable = { child_labor_policy_monthly_change = 0.5 }
+	TNO_update_policy_effectiveness = yes
+}
+
+TNO_worsen_women_policy_effectiveness_low = {
+	custom_effect_tooltip = TNO_worsen_women_policy_effectiveness_low_tt
+	subtract_from_variable = { tno_women_effectiveness = 5 }
+	TNO_update_policy_effectiveness = yes
+}
+
+TNO_worsen_pollution_policy_effectiveness_med = {
+	custom_effect_tooltip = TNO_worsen_pollution_policy_effectiveness_med_tt
+	subtract_from_variable = { tno_pollution_effectiveness = 5 }
+	TNO_update_policy_effectiveness = yes
+}
+
+TNO_worsen_pollution_policy_effectiveness_monthly_low = {
+	custom_effect_tooltip = TNO_worsen_pollution_policy_effectiveness_monthly_low_tt
+	subtract_from_variable = { pollution_policy_effectiveness_monthly_change = 0.25 }
+	TNO_update_policy_effectiveness = yes
+}

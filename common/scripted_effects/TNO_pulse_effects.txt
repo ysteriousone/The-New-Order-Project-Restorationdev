@@ -30,6 +30,12 @@ first_every_month_script = {
 		add_to_variable = { econ_graph_month = 1 }
 	}
 
+	PRC = {
+		add_to_variable = { PRC_Army_Modernization = PRC_Army_Modernization_monthly_change }
+		PRC_monthly_decay_estates = yes
+	}
+
+
 	every_country = {
 		set_variable = { total_pop_m = 0 }
 		set_variable = { total_core_pop_m = 0 }
@@ -165,16 +171,16 @@ first_every_month_script = {
 
 			if = {
 				limit = {
-					check_variable = {
-						IRA_Power > 89
+						check_variable = {
+							IRA_Power > 89
+						}
+						check_variable = {
+							IRA_Anger = 3
+						}
+						NOT = {
+							has_country_flag = SE_troubles
+						}
 					}
-					check_variable = {
-						IRA_Anger = 3
-					}
-					NOT = {
-						has_country_flag = SE_troubles
-					}
-				}
 				country_event = IRE_crisis.51
 			}
 
@@ -383,8 +389,8 @@ first_every_month_script = {
 		limit = {
 			KOM = {
 				exists = yes
-				check_variable = { KOM_leader_status^5 = 1 }
-				check_variable = { KOM_leader_status^2 = 1 }
+					check_variable = { KOM_leader_status^5 = 1 }
+					check_variable = { KOM_leader_status^2 = 1 }
 				NOT = {
 					has_country_flag = KOM_prison_chain_started
 				}
@@ -411,22 +417,22 @@ first_every_month_script = {
 			add_to_variable = { KOM_tabby_time_accumulated = KOM_tabby_time_progress }
 			if = {
 				limit = {
-					check_variable = { KOM_tabby_time_accumulated > 99 }
-					NOT = {
-						check_variable = { KOM_tabby_time_hours > 23 }
+						check_variable = { KOM_tabby_time_accumulated > 99 }
+						NOT = {
+							check_variable = { KOM_tabby_time_hours > 23 }
+						}
 					}
-				}
 				set_variable = { KOM_tabby_time_accumulated = 0 }
 				add_to_variable = { KOM_tabby_time_hours = 1 }
 				KOM_tabby_fire_journal_event = yes
 			}
 			if = {
 				limit = {
-					check_variable = { KOM_tabby_time_accumulated < -99 }
-					NOT = {
-						check_variable = { KOM_tabby_time_hours < 2 }
+						check_variable = { KOM_tabby_time_accumulated < -99 }
+						NOT = {
+							check_variable = { KOM_tabby_time_hours < 2 }
+						}
 					}
-				}
 				set_variable = { KOM_tabby_time_accumulated = 0 }
 				subtract_from_variable = { KOM_tabby_time_hours = 1 }
 			}
@@ -624,40 +630,40 @@ first_every_month_script = {
 
 	if = {
 		limit = {
-			JAP = {
-				is_ai = yes
+				JAP = {
+					is_ai = yes
+				}
+				GER = {
+					is_ai = yes
+				}
+				USA = {
+					is_ai = yes
+				}
+				BRG = {
+					is_ai = yes
+				}
 			}
-			GER = {
-				is_ai = yes
-			}
-			USA = {
-				is_ai = yes
-			}
-			BRG = {
-				is_ai = yes
-			}
-		}
 		set_global_flag = DISABLE_AI_CRISES
 	}
 
 	if = {
 		limit = {
-			OR = {
-				JAP = {
-					is_ai = no
+				OR = {
+					JAP = {
+						is_ai = no
+					}
+					GER = {
+						is_ai = no
+					}
+					USA = {
+						is_ai = no
+					}
+					BRG = {
+						is_ai = no
+					}
 				}
-				GER = {
-					is_ai = no
-				}
-				USA = {
-					is_ai = no
-				}
-				BRG = {
-					is_ai = no
-				}
+				has_global_flag = DISABLE_AI_CRISES
 			}
-			has_global_flag = DISABLE_AI_CRISES
-		}
 		clr_global_flag = DISABLE_AI_CRISES
 	}
 
@@ -837,9 +843,9 @@ first_every_month_script = {
 	every_country = {
 		if = {
 			limit = {
-				has_country_flag = SOCINTERN_LEADER
-				exists = no
-			}
+					has_country_flag = SOCINTERN_LEADER
+					exists = no
+				}
 			set_global_flag = RESET_COMINTERN_LEADER
 		}
 	}
@@ -1755,42 +1761,42 @@ first_every_month_script = {
 			}
 			if = {
 				limit = {
-					has_global_flag = ENG_Faction_Start_Flag
-				}
-				add_to_variable = {
-					ENG_EP_Influence = ENG_EP_Influence_Increase
-				}
-				add_to_variable = {
-					ENG_OFN_Influence = ENG_OFN_Influence_Increase
-				}
-				add_to_variable = {
-					ENG_Independent_Influence = ENG_Independent_Influence_Increase
-				}
-				clamp_variable = {
-					var = ENG_EP_Influence
-					min = 0
-				}
-				clamp_variable = {
-					var = ENG_OFN_Influence
-					min = 0
-				}
-				clamp_variable = {
-					var = ENG_Independent_Influence
-					min = 0
+				has_global_flag = ENG_Faction_Start_Flag
+			}
+			add_to_variable = {
+				ENG_EP_Influence = ENG_EP_Influence_Increase
+			}
+			add_to_variable = {
+				ENG_OFN_Influence = ENG_OFN_Influence_Increase
+			}
+			add_to_variable = {
+				ENG_Independent_Influence = ENG_Independent_Influence_Increase
+			}
+			clamp_variable = {
+				var = ENG_EP_Influence
+				min = 0
+			}
+			clamp_variable = {
+				var = ENG_OFN_Influence
+				min = 0
+			}
+			clamp_variable = {
+				var = ENG_Independent_Influence
+				min = 0
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = ENG_Margaret_Thatcher
+					ruling_only = yes
 				}
 			}
-			if = {
-				limit = {
-					has_country_leader = {
-						character = ENG_Margaret_Thatcher
-						ruling_only = yes
-					}
-				}
-				ENG_Thatcher_Tick = yes
-			}
-			#MONTY COUP
-			if = {
-				limit = {
+			ENG_Thatcher_Tick = yes
+		}
+		#MONTY COUP
+		if = {
+			limit = {
 					is_ai = no
 					OR = {
 						has_country_leader = {
@@ -1804,15 +1810,15 @@ first_every_month_script = {
 					}
 					check_variable = { ParliamentMechanic_GovStab < 0.1 }
 				}
-				country_event = {
-					id = ENG_Corn_crisis.21
-					days = 5
-				}
+			country_event = {
+				id = ENG_Corn_crisis.21
+				days = 5
 			}
+		}
 
-			#BUTLER COUP
-			if = {
-				limit = {
+		#BUTLER COUP
+		if = {
+			limit = {
 					is_ai = no
 					has_country_leader = {
 						character = ENG_Margaret_Thatcher
@@ -1820,15 +1826,15 @@ first_every_month_script = {
 					}
 					check_variable = { ENG_OG_Party_Lead > 0.9 }
 				}
-				country_event = {
-					id = ENG_Government_Changes.14
-					days = 5
-				}
+			country_event = {
+				id = ENG_Government_Changes.14
+				days = 5
 			}
+		}
 
-			#YDL COUP
-			if = {
-				limit = {
+		#YDL COUP
+		if = {
+			limit = {
 					is_ai = no
 					OR = {
 						has_country_flag = NDL_victorious
@@ -1836,12 +1842,12 @@ first_every_month_script = {
 					}
 					check_variable = { ParliamentMechanic_GovStab < 0.1 }
 				}
-				country_event = {
-					id = ENG_Government_Changes.9
-					days = 5
-				}
+			country_event = {
+				id = ENG_Government_Changes.9
+				days = 5
 			}
 		}
+	}
 	}
 	update_state_population_custom_growth = yes
 }

@@ -18,7 +18,7 @@
 units = {
 	division = {
 		name="Brigada Sudoplatova"
-		location= "4455"
+		location= "12592"
 		division_template= "Motostrelkovaya Diviziya"
 		start_experience_factor = 0.5
 	}

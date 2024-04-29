@@ -1,15 +1,15 @@
 ﻿l_english:
  ## Country Names ##
- BEL:0 "Orde National Belge"
- BEL_DEF:0 "the Orde National Belge"
- BEL_ADJ:0 "Belgian"
+ BEL:0 "Burgundian Provisional Government"
+ BEL_DEF:0 "the Burgundian Provisional Government"
+ BEL_ADJ:0 "Burgundian"
 
  BEL_national_socialism:0 "Reichskommissariat Belgien-Nordfrankreich"
  BEL_national_socialism_DEF:0 "Reichskommissariat Belgien-Nordfrankreich"
 
  ## Party Names ##
- BEL_ultranationalism_party:0 "28. SS-Div "Wallonien""
- BEL_ultranationalism_party_long:0 "SS-Freiwilligen-Grenadier-Division Wallonien"
+ BEL_ultranationalism_party:0 "Parti Rexiste"
+ BEL_ultranationalism_party_long:0 "Parti Rexiste"
  BEL_national_socialism_party:0 "Parti Rexiste"
  BEL_national_socialism_party_long:0 "Parti Rexiste"
 

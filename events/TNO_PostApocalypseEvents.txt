@@ -186,6 +186,14 @@ country_event = {
 	}
 
 	option = {
+	LHH = {
+	transfer_state = 224
+	}
+	CSK = {
+	transfer_state = 234
+	transfer_state = 237
+	transfer_state = 235
+	}
 		name = RAD_RUS.4.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {

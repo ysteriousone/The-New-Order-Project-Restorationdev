@@ -274,7 +274,26 @@ focus_tree = {
 	
 			}
 		}
+	focus = {
+		id = GER_Appeal_To_Poland?
+        available = {
+		focus = GER_Thousand_Year_Reforms
+		}
+		icon = GFX_DRL_When_The_World_Stopped_Making_Sense
+		x = 0
+		y = 7
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = {
+		custom_effect_tooltip = GER_reclaiming_europe_tooltip
+			add_political_power = 100
+			add_stability = 0.01
 	
+			}
+		}
 	
 	
 }

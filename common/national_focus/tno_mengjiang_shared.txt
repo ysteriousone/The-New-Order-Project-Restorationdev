@@ -1,0 +1,236 @@
+# By Roniius
+shared_focus = {
+	id = MEN_Saving_the_Country
+	icon = GFX_JAP_bolster_mongolians
+	cost = 2.00
+	x = 7
+	y = 0
+	completion_reward = {
+		add_stability = 0.1
+		TNO_improve_conscription_policy_effectiveness_low = yes
+		MEN = { country_event = { id = men.6 } }
+		hidden_effect = { JAP = { country_event = { id = men.16 } } }
+	}
+
+}
+shared_focus = {
+	id = MEN_By_the_Princes_Orders
+	icon = GFX_JAP_New_Showa_Warfare_2
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Saving_the_Country
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+	x = 7
+	y = 1
+
+}
+shared_focus = {
+	id = MEN_Japanese_Support
+	icon = GFX_VIN_Japanese_Army
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_By_the_Princes_Orders
+	}
+	completion_reward = {
+		JAP = {
+			country_event = { id = men.12 }
+		}
+		TNO_improve_training_policy_effectiveness_med = yes
+	}
+	x = 7
+	y = 2
+
+}
+shared_focus = {
+	id = MEN_Destroy_Resistance_Agents
+	icon = GFX_CAU_stomp_on_partisans
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Japanese_Support
+	}
+	x = 5
+	y = 3
+	completion_reward = {
+		add_popularity = {
+			ideology = despotism
+			popularity = 0.1
+		}
+		TNO_improve_military_supervision_policy_effectiveness_med = yes
+	}
+
+}
+shared_focus = {
+	id = MEN_Intensify_Japanese_Bombing
+	icon = GFX_ANG_bomber_buildup
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Japanese_Support
+	}
+	available ={
+		has_war_with = MON
+	}
+	x = 7
+	y = 3
+	completion_reward = {
+		MEN = { country_event = { id = men.17 days = 2 } }
+		hidden_effect = {
+			JAP = { country_event = { id = men.17 days = 2 } }
+			JAP = { country_event = { id = men.8 days = 7 } }
+			MON = { country_event = { id = men.7 days = 2 } }
+		}
+	}
+
+}
+shared_focus = {
+	id = MEN_Death_From_Above
+	icon = GFX_JAP_Weathered_the_Storm
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Intensify_Japanese_Bombing
+	}
+	available ={
+		has_war_with = MON
+	}
+	x = 7
+	y = 4
+	completion_reward = {
+		MEN = { country_event = { id = men.18 days = 2 } }
+		hidden_effect = {
+			JAP = { country_event = { id = men.18 days = 2 } }
+		}
+	}
+
+}
+shared_focus = {
+	id = MEN_Slash_And_Burn
+	icon = GFX_generic_burn_it_down
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Destroy_Resistance_Agents
+	}
+	available ={
+		has_war_with = MON
+	}
+	completion_reward = {
+		MEN = {
+			country_event = { id = men.19 }
+		}
+		TNO_improve_military_supervision_policy_effectiveness_med = yes
+	}
+	x = 5
+	y = 4
+
+}
+shared_focus = {
+	id = MEN_Destabilize_the_Ulaanbataar_Rebels
+	icon = GFX_DRL_Deep_in_the_West
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Slash_And_Burn
+	}
+	available ={
+		has_war_with = MON
+	}
+	completion_reward = {
+		MON = {
+			add_stability = -0.1
+			add_war_support = -0.1
+		}
+	}
+	x = 5
+	y = 5
+
+}
+shared_focus = {
+	id = MEN_The_Relentless_Attack
+	icon = GFX_new_model_army
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Japanese_Support
+	}
+	completion_reward = {
+		add_ideas = { MEN_attack_idea_1 }
+		TNO_improve_military_supervision_policy_effectiveness_med = yes
+	}
+	x = 9
+	y = 3
+
+}
+shared_focus = {
+	id = MEN_Nomadic_Legacy
+	icon = GFX_AKT_Masters_of_Man_and_Horse
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_The_Relentless_Attack
+	}
+	completion_reward = {
+		swap_ideas = { remove_idea = MEN_attack_idea_1 add_idea = MEN_attack_idea_2 }
+	}
+	x = 9
+	y = 4
+
+}
+shared_focus = {
+	id = MEN_Prince_of_the_Steppes
+	icon = GFX_CHI_Propaganda
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_The_Relentless_Attack
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		TNO_improve_political_parties_policy_effectiveness_med = yes
+	}
+	x = 11
+	y = 4
+
+}
+shared_focus = {
+	id = MEN_For_the_Final_Victory
+	icon = GFX_USA_We_fight_for_Stability
+	cost = 2.00
+	prerequisite = {
+		focus = MEN_Nomadic_Legacy
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_war_support = 0.1
+		add_manpower = 4000
+	}
+	x = 9
+	y = 5
+
+}
+shared_focus = {
+	id = MEN_Beg_Japan
+	icon = GFX_CHI_Bring_Japanese_Officers_Into_The_Council
+	cost = 4.00
+	available = {
+		has_war_with = MON
+		has_completed_focus = MEN_Destabilize_the_Ulaanbataar_Rebels
+		has_completed_focus = MEN_Death_From_Above
+		OR = {
+			surrender_progress > 0.6
+			AND = {
+				surrender_progress > 0.35
+				date > 1962.6.1
+			}
+			date > 1962.10.1
+		}
+
+	}
+	prerequisite = {
+		focus = MEN_For_the_Final_Victory
+	}
+	completion_reward = {
+		JAP = { country_event = { id = men.9 } }
+		set_country_flag = requested_intervention_mongolia
+	}
+	x = 9
+	y = 6
+
+}

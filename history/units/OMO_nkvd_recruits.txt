@@ -16,7 +16,7 @@
 units = {
 	division = {
 		name="Brigada Irkutsk"
-		location= "4455"
+		location= "12592"
 		division_template= "Narodnyj Komissariát Vnútrennikh Del Novobrantsy"
 		start_experience_factor = 0.7
 	}

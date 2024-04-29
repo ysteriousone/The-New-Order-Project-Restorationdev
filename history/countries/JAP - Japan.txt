@@ -537,6 +537,7 @@ add_to_faction = AZH
 add_to_faction = GNG
 add_to_faction = GUZ
 add_to_faction = NRB
+add_to_faction = XIK
 
 
 set_country_flag = JAP_TRAD_IN_POWER

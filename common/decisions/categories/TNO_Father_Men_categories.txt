@@ -10,7 +10,6 @@ OMO_wrath_of_god_category = {
 		has_country_flag = OMO_wrath_of_god
 		NOT = { has_country_flag = RUS_regional_stage }
 	}
-	visible_when_empty = no
 }
 
 OMO_temptations_category = {
@@ -23,20 +22,6 @@ OMO_temptations_category = {
 	}
 	visible = {
 		has_country_flag = OMO_sudoplatovs_temptations
-	}
-	visible_when_empty = yes
-}
-
-OMO_post_reunification = {
-	icon = GFX_decision_category_generic_foreign_policy
-
-	picture = GFX_RUS_category_insurgency
-
-	allowed = {
-		original_tag = OMO
-	}
-	visible = {
-		can_form_west_russia = yes
 	}
 	visible_when_empty = no
 }

@@ -25,22 +25,6 @@ focus_tree = {
 					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
 					owner = FHH
 				}
-		create_unit = {
-					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
-					owner = FHH
-				}
-		create_unit = {
-					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
-					owner = FHH
-				}
-		create_unit = {
-					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
-					owner = FHH
-				}
-		create_unit = {
-					division = "name = \"Infanterie-Division\" division_template = \"Infanterie-Division\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
-					owner = FHH
-				}
 		}
 			}
 		}
@@ -82,7 +66,7 @@ focus_tree = {
 	}
 			}
 		}
-		}
+		
 		focus = {
 		id = FHH_Fatman
 		icon = GFX_GER_go_with_goring

@@ -1,4 +1,608 @@
-add_namespace = men
+﻿add_namespace = men
+
+country_event = { #Rejoing the Sphere
+	id = men.1
+	title = men.1.t
+	desc = men.1.d
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_men.1"
+		hidden_effect = {
+			MEN = {
+				clr_country_flag = requested_intervention_mongolia
+				remove_dynamic_modifier = {
+					modifier = MEN_japanese_help
+				}
+			}
+			JAP = {
+				clear_variable = JAP_advisor_level
+				set_temp_variable = { target = MEN }
+				TNO_clear_num_volunteers = yes
+				TNO_fopo_remove_mengjiang_conflict_tab = yes
+				clr_country_flag = JAP_intervened_in_mongolia
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = men.1.a
+		custom_effect_tooltip = JAP_clear_monwar_spending_tt
+	}
+}
+
+country_event = { #Japan reacts to Mongol victory
+	id = men.2
+	title = men.2.t
+	desc = men.2.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: Event_men.2"
+		hidden_effect = {
+			MEN = {
+				clr_country_flag = requested_intervention_mongolia
+			}
+		}
+	}
+
+	option = {
+		name = men.2.a
+		custom_effect_tooltip = JAP_clear_monwar_spending_tt
+		JAP = {
+			declare_war_on = {
+				target = MON
+				type = annex_everything
+			}
+		}
+		MAN = {
+			declare_war_on = {
+				target = MON
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { #Fate of Mongolia
+	id = men.3
+	title = men.3.t
+	desc = men.3.d
+
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event men.3"
+		hidden_effect = {
+			MEN = {
+				clr_country_flag = requested_intervention_mongolia
+			}
+			JAP = {
+				clear_variable = JAP_advisor_level
+				set_temp_variable = { target = MEN }
+				TNO_clear_num_volunteers = yes
+				TNO_fopo_remove_mengjiang_conflict_tab = yes
+				clr_country_flag = JAP_intervened_in_mongolia
+			}
+			remove_dynamic_modifier = {
+				modifier = MEN_japanese_help
+			}
+		}
+	}
+
+	option = {
+		name = men.3.a
+		hidden_effect = {
+			MEN = {
+				CHI_save_pre_puppet_politics = yes
+				transfer_state = 955
+				transfer_state = 621
+				transfer_state = 612
+				transfer_state = 815
+				transfer_state = 330
+				add_state_core = 330
+			}
+			CHI = {
+				set_autonomy = {
+					target = MEN
+					autonomous_state = autonomy_satellite
+				}
+			}
+			MEN = {
+				CHI_apply_pre_puppet_politics = yes
+				JAP = { country_event = { id = men.23 days = 30 } }
+				country_event = {
+					id = men.5
+					days = 45
+				}
+				set_capital = { state = 330 remember_old_capital = no }
+				set_variable = {interest_rates = 0.02}
+			}
+		}
+	}
+}
+
+country_event = { #Mengjiang victory event
+	id = men.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.4"}
+	title = men.4.t
+	desc = men.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = men.4.a
+		add_political_power = 50
+		add_state_core = 330
+		#load postwar focus tree
+		set_variable = {interest_rates = 0.02}
+	}
+}
+
+country_event = { #fuck you organ
+	id = men.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.5"}
+	title = men.5.t
+	desc = men.5.d
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_global_flag = PRC_MEN_war }
+	}
+
+	option = {
+		name = men.5.a
+		MEN = {
+			add_state_core = 814
+			declare_war_on = {
+				target = PRC
+				type = take_core_state
+				generator = { 814 }
+			}
+		}
+		hidden_effect = {
+			PRC = { country_event = PRC.0 }
+			set_global_flag = PRC_MEN_war
+		}
+	}
+}
+
+country_event = { #mongolia war overview for Mengjiang
+	id = men.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.6"}
+	title = men.6.t
+	desc = men.6.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.6.a
+	}
+}
+country_event = { #bombing event - mongolia side
+	id = men.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.7"}
+	title = men.7.t
+	desc = men.7.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.7.a
+		add_manpower = -2000
+	}
+}
+country_event = { #quick war
+	id = men.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.8"}
+	title = men.8.t
+	desc = men.8.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.8.a
+	}
+}
+country_event = { #ya done fucked up
+	id = men.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.9"}
+	title = men.9.t
+	desc = men.9.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.9.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = -30
+		add_war_support = -0.05
+		set_country_flag = mongolia_intervention
+		custom_effect_tooltip = JAP_mongolia_intervention_tt
+	}
+	option = {
+		name = men.9.b
+	}
+}
+country_event = { #auxilliaries trained event - jap side
+	id = men.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.10"}
+	title = men.10.t
+	desc = men.10.d
+	picture = GFX_report_event_south_african_war_us_soldier
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.10.a
+		army_experience = 5
+		MEN = { TNO_improve_army_professionalism_med = yes }
+	}
+}
+country_event = { #auxilliaries trained event - men side
+	id = men.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.11"}
+	title = men.11.t
+	desc = men.11.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.11.a
+		army_experience = 50
+	}
+}
+country_event = { #Japan asked for help
+	id = men.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.12"}
+	title = men.12.t
+	desc = men.12.d
+	picture = GFX_report_event_south_african_war_us_soldier
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.12.a
+		MEN = {
+			country_event = {
+				id = men.13
+				days = 7
+			}
+		}
+	}
+	option = {
+		name = men.12.b
+		set_temp_variable = { temp_econ_spending_amount = 0.25 }
+		econ_spend_money_once_effect_raw_money = yes
+		add_manpower = -1000
+		MEN = {
+			country_event = {
+				id = men.14
+				days = 7
+			}
+		}
+	}
+	option = {
+		name = men.12.c
+		set_temp_variable = { temp_econ_spending_amount = 0.4 }
+		econ_spend_money_once_effect_raw_money = yes
+		MEN = {
+			country_event = {
+				id = men.15
+				days = 7
+			}
+		}
+	}
+}
+country_event = { #MEN receives air support
+	id = men.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.13"}
+	title = men.13.t
+	desc = men.13.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.13.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_1
+			amount = 20
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = tac_bomber_equipment_1
+			amount = 40
+			producer = JAP
+		}
+	}
+}
+country_event = { #MEN receives air support and training
+	id = men.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.14"}
+	title = men.14.t
+	desc = men.14.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.14.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_1
+			amount = 20
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = tac_bomber_equipment_1
+			amount = 40
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = JAP
+		}
+		hidden_effect = {
+			JAP = { country_event = { id = men.10 days = 40 } }
+			MEN = { country_event = { id = men.11 days = 40 } }
+		}
+	}
+}
+country_event = { #Men receives air, training, and armor
+	id = men.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.15"}
+	title = men.15.t
+	desc = men.15.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.15.a
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_1
+			amount = 20
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = tac_bomber_equipment_1
+			amount = 40
+			producer = JAP
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = JAP
+		}
+		hidden_effect = {
+			JAP = { country_event = { id = men.10 days = 40 } }
+			MEN = { country_event = { id = men.11 days = 40 }
+				set_country_flag = jap_men_full_support
+			}
+		}
+		621 ={
+			create_unit = {
+				division = "name = \"1 Menggu Sensha Shidan\" division_template = \"Sensha Shidan\" start_experience_factor = 0.1 start_equipment_factor = 0.2"
+				owner = MEN
+			}
+		}
+	}
+}
+country_event = { #mongolia war overview for Japan
+	id = men.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.7"}
+	title = men.16.t
+	desc = men.16.d
+	picture = GFX_report_event_JAP_army_1
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.16.a
+		custom_effect_tooltip = men.16.a.t
+	}
+}
+country_event = { #bombing event - jap/men side
+	id = men.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.7"}
+	title = men.17.t
+	desc = men.17.d
+	picture = GFX_report_event_iberia_road_bomb
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.17.a
+		air_experience = 20
+	}
+}
+country_event = { #Second bombing event for jap/men - gone wrong
+	id = men.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.18"}
+	title = men.18.t
+	desc = men.18.d
+	picture = GFX_report_event_child_german_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.18.a
+		add_political_power = -25
+		if = {
+			limit = { original_tag = MEN }
+			add_manpower = -1000
+		}
+	}
+}
+country_event = { #Slash and Burn - attack on suspected Tsagaan sympathisers
+	id = men.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.19"}
+	title = men.19.t
+	desc = men.19.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.19.a
+		add_war_support = -0.05
+	}
+}
+country_event = { #People's Revolutionary Command troops rout Mongols with armor - hook up to PRC events later w/ country flag jap_men_full_support
+	id = men.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.20"}
+	title = men.20.t
+	desc = men.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.20.a
+		add_war_support = -0.10
+		add_manpower = -2000
+	}
+}
+
+country_event = {#Mongolia defeats Manchukuo - just in case the hoi4 AI is being special again
+	id = men.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.21"}
+	title = men.21.t
+	desc = men.21.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.21.a
+		add_war_support = 0.05
+		add_stability = -0.10
+		JAP_IJA_increase_med = yes
+	}
+}
+
+country_event = {#Enough time has passed for full intervention
+	id = men.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.22"}
+	title = men.22.t
+	desc = men.22.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_report_event_india_war_2
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_active_mission = mongol_war_timer
+				has_active_mission = JAP_prepare_full_intervention_mongol
+			}
+		}
+		MEN = {
+			has_war_with = MON
+		}
+	}
+
+	option = {
+		name = men.22.a
+		add_war_support = 0.05
+		add_stability = -0.05
+		JAP_IJA_increase_small = yes
+		#unlock_decision_tooltip = some_decision_here
+		set_country_flag = JAP_enable_full_intervention
+	}
+}
+
+country_event = { #event for Japan about invasion of Mongolia
+	id = men.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.23"}
+	title = men.23.t
+	desc = men.23.d
+	picture = GFX_report_event_bengal_war
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.23.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Organ pushes Mengjiang out of Khüree - Japanese intervention, Mengjiang side
+	id = men.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.24"}
+	title = men.24.t
+	desc = men.24.d
+	picture = GFX_report_event_china_vietnam
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.24.a
+		add_stability = -0.05
+		add_war_support = -0.05
+		custom_effect_tooltip = men.24.a.tt
+	}
+}
+
+country_event = {
+	id = men.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.25"}
+	title = men.25.t
+	desc = men.25.d
+	picture = GFX_report_event_china_vietnam
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.25.a
+		add_to_war = {
+			targeted_alliance = MEN
+			enemy = PRC
+		}
+		CHI = { country_event = men.26 }
+		MAN = {
+			add_to_war = {
+				targeted_alliance = MEN
+				enemy = PRC
+			}
+		}
+	}
+}
+
+country_event = {
+	id = men.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.26"}
+	title = men.26.t
+	desc = men.26.d
+	picture = GFX_report_event_china_vietnam
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.26.a
+		add_to_war = {
+			targeted_alliance = MEN
+			enemy = PRC
+		}
+	}
+}
 
 country_event = { #Death of Li Shouxin
 	id = men.1975
@@ -12,6 +616,515 @@ country_event = { #Death of Li Shouxin
 	option = { name = men.1975.a
 		CHI = {
 			country_event = { id = chi.5017 days = 2 }
+		}
+	}
+}
+
+country_event = { #MEN receives guns, arty and support equipment
+	id = men.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.27"}
+	title = men.27.t
+	desc = men.27.d
+	picture = GFX_report_event_crate_of_guns_bolt_action
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.27.a
+		if = {
+			limit = { tag = MEN }
+			effect_tooltip = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2000
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment_1
+					amount = 300
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 100
+					producer = JAP
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_2
+					amount = 50
+					producer = JAP
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				MEN = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = 2000
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment_1
+						amount = 300
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = 100
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment_2
+						amount = 50
+						producer = JAP
+					}
+				}
+			}
+		}
+
+	}
+}
+
+country_event = { #MEN receives advisory battalions, +attack
+	id = men.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.28"}
+	title = men.28.t
+	desc = men.28.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.28.a
+		if = {
+			limit = { tag = MEN }
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_attack_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Advisory_Battalions_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_attack_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Advisory_Battalions_tt
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					MEN = {
+						add_dynamic_modifier = {
+							modifier = MEN_japanese_help
+						}
+						add_to_variable = {
+							var = MEN_japhelp_attack_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Advisory_Battalions_tt
+					}
+				}
+				else = {
+					MEN = {
+						add_to_variable = {
+							var = MEN_japhelp_attack_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Advisory_Battalions_tt
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #MEN calvary patrols are strengthened, +recon
+	id = men.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.29"}
+	title = men.29.t
+	desc = men.29.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.29.a
+		if = {
+			limit = { tag = MEN }
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_recon_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Strengthen_Cav_Patrols_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_recon_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Strengthen_Cav_Patrols_tt
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					MEN = {
+						add_dynamic_modifier = {
+							modifier = MEN_japanese_help
+						}
+						add_to_variable = {
+							var = MEN_japhelp_recon_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Strengthen_Cav_Patrols_tt
+					}
+				}
+				else = {
+					MEN = {
+						add_to_variable = {
+							var = MEN_japhelp_recon_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Strengthen_Cav_Patrols_tt
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #MEN Kalgan Railway extended, supply bonus
+	id = men.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.30" }
+	title = men.30.t
+	desc = men.30.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.30.a
+		if = {
+			limit = { tag = MEN }
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_supply_consumption_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kalgan_supply_network_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_supply_consumption_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kalgan_supply_network_tt
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					MEN = {
+						add_dynamic_modifier = {
+							modifier = MEN_japanese_help
+						}
+						add_to_variable = {
+							var = MEN_japhelp_supply_consumption_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Kalgan_supply_network_tt
+					}
+				}
+				else = {
+					MEN = {
+						add_to_variable = {
+							var = MEN_japhelp_supply_consumption_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Kalgan_supply_network_tt
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #MEN Japan unite the mongol princes
+	id = men.31
+	immediate = { log = "[GetDateText]: [Root.GetName]: event men.31" }
+	title = men.31.t
+	desc = men.31.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.31.a
+		if = {
+			limit = { tag = MEN	}
+			add_stability = 0.1
+			add_political_power = 75
+		}
+		else = {
+			effect_tooltip = {
+				MEN = {
+					add_stability = 0.1
+					add_political_power = 75
+				}
+			}
+		}
+	}
+}
+
+country_event = { #MEN Japan sends Kenpeitai Agents
+	id = men.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.32" }
+	title = men.32.t
+	desc = men.32.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.32.a
+		if = {
+			limit = { tag = MEN }
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = MEN_japanese_help
+					}
+					add_to_variable = {
+						var = MEN_japhelp_morale_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = MEN_japhelp_defence_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kenpeitai_Operations_tt
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_morale_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = MEN_japhelp_defence_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kenpeitai_Operations_tt
+				}
+			}
+		}
+		else = {
+			effect_tooltip = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = MEN_japanese_help
+							}
+						}
+					}
+					MEN = {
+						add_to_variable = {
+							var = MEN_japhelp_morale_factor
+							value = 0.05
+						}
+						add_to_variable = {
+							var = MEN_japhelp_defence_factor
+							value = 0.1
+						}
+						custom_effect_tooltip = JAP_MEN_Kenpeitai_Operations_tt
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = MEN_japhelp_morale_factor
+						value = 0.05
+					}
+					add_to_variable = {
+						var = MEN_japhelp_defence_factor
+						value = 0.1
+					}
+					custom_effect_tooltip = JAP_MEN_Kenpeitai_Operations_tt
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Japan Reacts to Mongolia reaching Korea
+	id = men.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event men.33" }
+	title = men.33.t
+	desc = men.33.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = men.33.a
+		MON = {
+			country_event = men.34
+		}
+	}
+}
+
+country_event = {#Japan threatens nukes oh no
+	id = men.34
+	title = men.34.t
+	desc = men.34.desc
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event men.34"
+	}
+
+	picture = GFX_report_event_iberia_eta_bombing2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = men.34.a
+		ai_chance = {
+			factor = 1000
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = men.35
+			}
+		}
+		custom_effect_tooltip = men.34.a.tt
+	}
+
+	option = {
+		name = men.34.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = nuclearwar.6
+					days = 1
+				}
+			}
+		}
+		custom_effect_tooltip = men.34.b.tt
+	}
+}
+
+country_event = {#MON accepts peace
+	id = men.35
+	title = men.35.t
+	desc = men.35.desc
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event men.35"
+	}
+
+	picture = GFX_report_event_peace_deal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = men.35.a
+		add_stability = -0.20
+		add_war_support = -0.20
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = MEN
+				}
+				add_core_of = MON
+			}
+			MON = {
+				annex_country = {
+					target = MEN
+					transfer_troops = no
+				}
+
+				every_enemy_country = {
+					white_peace = MON
+				}
+			}
+			PRC = {
+				load_focus_tree = { tree = PRC_post_war_tree keep_completed = yes }
+				unlock_national_focus = PRC_Aftermath_of_the_War
+			}
 		}
 	}
 }

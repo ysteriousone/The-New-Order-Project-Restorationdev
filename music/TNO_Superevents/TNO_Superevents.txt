@@ -7,7 +7,6 @@ music = {
 	}
 }
 
-
 music = {
 	song = "TNO_SE_SOUTH_AFRICAN_WAR"
 	chance = {
@@ -423,6 +422,13 @@ music = {
 
 music = {
 	song = "TNO_SE_RUSSIAN_REUNIFICATION_PRC"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_RUSSIAN_REUNIFICATION_PRC_2"
 	chance = {
 		modifier = { factor = 0 }
 	}

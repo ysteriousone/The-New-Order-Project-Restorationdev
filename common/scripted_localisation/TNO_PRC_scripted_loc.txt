@@ -1,0 +1,341 @@
+#
+defined_text = {
+	name = PRCGetArmyModInPercent
+	text = {
+		trigger = {
+			set_temp_variable = { PRC_Army_Modernization_display = PRC_Army_Modernization_monthly_change }
+			multiply_temp_variable = { PRC_Army_Modernization_display = 0.01 }
+		}
+		localization_key = PRCGetArmyModInPercent_text
+	}
+}
+
+defined_text = {
+	name = PRCGet20CPColor
+	text = {
+		trigger = {
+			check_variable = { command_power > 20 }
+		}
+		localization_key = PRC_Army_20_CP_Y_cost_tt
+	}
+	text = {
+		localization_key = PRC_Army_20_CP_R_cost_tt
+	}
+}
+
+defined_text = {
+	name = PRC_GetPowerStruggle
+	text = {
+		trigger = {
+			check_variable = { PRC_MON_divide < -2 }
+		}
+		localization_key = PRC_Mongol_Power_Good
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_MON_divide < 0 }
+		}
+		localization_key = PRC_Mongol_Power
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_MON_divide < 2 }
+		}
+		localization_key = PRC_Russian_Power
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_MON_divide > 2 }
+		}
+		localization_key = PRC_Russian_Power_Good
+	}
+}
+
+defined_text = {
+	name = PRC_GetArmyPower
+	text = {
+		trigger = {
+			check_variable = { PRC_Army_Power < 30 }
+		}
+		localization_key = PRC_Army_Power_low
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_Army_Power < 70 }
+		}
+		localization_key = PRC_Army_Power_med
+	}
+	text = {
+		localization_key = PRC_Army_Power_high
+	}
+}
+
+defined_text = {
+	name = PRC_GetArmyLoyalty
+	text = {
+		trigger = {
+			check_variable = { PRC_Army_Loyalty < 30 }
+		}
+		localization_key = PRC_Army_Loyalty_low
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_Army_Loyalty < 70 }
+		}
+		localization_key = PRC_Army_Loyalty_med
+	}
+	text = {
+		localization_key = PRC_Army_Loyalty_high
+	}
+}
+
+defined_text = {
+	name = PRC_GetCivilianPower
+	text = {
+		trigger = {
+			check_variable = { PRC_Civilian_Power < 30 }
+		}
+		localization_key = PRC_Civilian_Power_low
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_Civilian_Power < 70 }
+		}
+		localization_key = PRC_Civilian_Power_med
+	}
+	text = {
+		localization_key = PRC_Civilian_Power_high
+	}
+}
+
+defined_text = {
+	name = PRC_GetCivilianLoyalty
+	text = {
+		trigger = {
+			check_variable = { PRC_Civilian_Loyalty < 30 }
+		}
+		localization_key = PRC_Civilian_Loyalty_low
+	}
+	text = {
+		trigger = {
+			check_variable = { PRC_Civilian_Loyalty < 70 }
+		}
+		localization_key = PRC_Civilian_Loyalty_med
+	}
+	text = {
+		localization_key = PRC_Civilian_Loyalty_high
+	}
+}
+
+defined_text = {
+	name = GetPRC_owner
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 1 }
+		}
+		localization_key = PRC_Civilian_Owned
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = -1 }
+		}
+		localization_key = PRC_Military_Owned
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+		}
+		localization_key = PRC_Not_Owned
+	}
+}
+
+defined_text = {
+	name = GetPRC_remove_status
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+		}
+		localization_key = GFX_PRC_army_unavailable
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { THIS.PRC_Owner = -1 }
+				check_variable = { THIS.PRC_Owner = 1 }
+			}
+		}
+		localization_key = GFX_PRC_army_info
+	}
+}
+
+defined_text = {
+	name = GetPRC_remove_status_text
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+		}
+		localization_key = PRC_remove_status_tt_unavailable
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { THIS.PRC_Owner = -1 }
+				check_variable = { THIS.PRC_Owner = 1 }
+			}
+		}
+		localization_key = PRC_remove_status_tt_available
+	}
+}
+
+defined_text = {
+	name = GetPRC_civilian_status_text
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+			NOT = { PRC = { has_country_flag = PRC_destroyed_citzenry } }
+			OR = {
+				is_core_of = PRC
+				PRC = { has_country_flag = PRC_can_give_non_cores }
+			}
+		}
+		localization_key = PRC_civ_status_tt_available
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { THIS.PRC_Owner = -1 }
+				PRC = { has_country_flag = PRC_destroyed_citzenry }
+				check_variable = { THIS.PRC_Owner = 1 }
+				AND = {
+					NOT = { is_core_of = PRC }
+					PRC = { NOT = { has_country_flag = PRC_can_give_non_cores } }
+				}
+			}
+		}
+		localization_key = PRC_civ_status_tt_unavailable
+	}
+}
+
+defined_text = {
+	name = GetPRC_military_status_text
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+			NOT = { PRC = { has_country_flag = PRC_destroyed_military } }
+			OR = {
+				is_core_of = PRC
+				PRC = { has_country_flag = PRC_can_give_non_cores }
+			}
+		}
+		localization_key = PRC_mil_status_tt_available
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { THIS.PRC_Owner = -1 }
+				check_variable = { THIS.PRC_Owner = 1 }
+				PRC = { has_country_flag = PRC_destroyed_military }
+				AND = {
+					NOT = { is_core_of = PRC }
+					PRC = { NOT = { has_country_flag = PRC_can_give_non_cores } }
+				}
+			}
+		}
+		localization_key = PRC_mil_status_tt_unavailable
+	}
+}
+
+defined_text = {
+	name = GetPRC_remove_status_tt
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+		}
+		localization_key = PRC_remove_status_ttip_unavailable
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 1 }
+		}
+		localization_key = PRC_remove_status_ttip_available_civ
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = -1 }
+		}
+		localization_key = PRC_remove_status_ttip_available_mil
+	}
+}
+
+defined_text = {
+	name = GetPRC_civilian_status_tt
+	text = {
+		trigger = {
+			NOT = {
+				is_core_of = PRC
+				PRC = { has_country_flag = PRC_can_give_non_cores }
+			}
+		}
+		localization_key = PRC_civ_status_ttip_not_cored
+	}
+	text = {
+		trigger = {
+			PRC = { has_country_flag = PRC_destroyed_citzenry }
+		}
+		localization_key = PRC_civilian_status_tt_none
+	}
+	text = {
+		trigger = {
+			PRC = { NOT = { has_country_flag = PRC_destroyed_citzenry } }
+			check_variable = { THIS.PRC_Owner = 0 }
+		}
+		localization_key = PRC_civ_status_ttip_available
+	}
+	text = {
+		trigger = {
+			PRC = { NOT = { has_country_flag = PRC_destroyed_citzenry } }
+			OR = {
+				check_variable = { THIS.PRC_Owner = -1 }
+				check_variable = { THIS.PRC_Owner = 1 }
+			}
+		}
+		localization_key = PRC_civ_status_ttip_unavailable
+	}
+}
+
+defined_text = {
+	name = GetPRC_military_status_tt
+	text = {
+		trigger = {
+			NOT = {
+				is_core_of = PRC
+				PRC = { has_country_flag = PRC_can_give_non_cores }
+			}
+		}
+		localization_key = PRC_civ_status_ttip_not_cored
+	}
+	text = {
+		trigger = {
+			PRC = { has_country_flag = PRC_destroyed_military }
+		}
+		localization_key = PRC_mil_status_tt_none
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.PRC_Owner = 0 }
+			PRC = { NOT = { has_country_flag = PRC_destroyed_military } }
+		}
+		localization_key = PRC_mil_status_ttip_available
+	}
+	text = {
+		trigger = {
+			PRC = { NOT = { has_country_flag = PRC_destroyed_military } }
+			OR = {
+				check_variable = { THIS.PRC_Owner = -1 }
+				check_variable = { THIS.PRC_Owner = 1 }
+			}
+		}
+		localization_key = PRC_civ_status_ttip_unavailable
+	}
+
+}

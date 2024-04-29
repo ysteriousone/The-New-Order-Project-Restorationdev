@@ -1,0 +1,79 @@
+PRC_Modifier_1_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_1_2_Frame = 3 }
+	}
+}
+
+PRC_Modifier_2_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_1_2_Frame = 2 }
+	}
+}
+
+PRC_Modifier_1_button_trigger = {
+	check_variable = { PRC_Exclusive_1_2_Frame = 1 }
+}
+
+PRC_Modifier_2_button_trigger = {
+	check_variable = { PRC_Exclusive_1_2_Frame = 1 }
+}
+
+PRC_Modifier_3_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_3_4_Frame = 3 }
+	}
+}
+
+PRC_Modifier_4_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_3_4_Frame = 2 }
+	}
+}
+
+PRC_Modifier_3_button_trigger = {
+	check_variable = { PRC_Exclusive_3_4_Frame = 1 }
+}
+
+PRC_Modifier_4_button_trigger = {
+	check_variable = { PRC_Exclusive_3_4_Frame = 1 }
+}
+
+PRC_Modifier_5_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_5_6_Frame = 3 }
+	}
+}
+
+PRC_Modifier_6_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_5_6_Frame = 2 }
+	}
+}
+
+PRC_Modifier_5_button_trigger = {
+	check_variable = { PRC_Exclusive_5_6_Frame = 1 }
+}
+
+PRC_Modifier_6_button_trigger = {
+	check_variable = { PRC_Exclusive_5_6_Frame = 1 }
+}
+
+PRC_Modifier_7_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_7_8_Frame = 3 }
+	}
+}
+
+PRC_Modifier_8_grey_trigger = {
+	NOT = {
+		check_variable = { PRC_Exclusive_7_8_Frame = 2 }
+	}
+}
+
+PRC_Modifier_7_button_trigger = {
+	check_variable = { PRC_Exclusive_7_8_Frame = 1 }
+}
+
+PRC_Modifier_8_button_trigger = {
+	check_variable = { PRC_Exclusive_7_8_Frame = 1 }
+}

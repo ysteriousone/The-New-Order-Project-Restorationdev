@@ -1,0 +1,4534 @@
+#PRC Tree by Wendell08
+#Starting Tree
+
+shared_focus = {
+	id = PRC_The_Eastern_Conflict
+	icon = GFX_PRC_The_Eastern_Conflict
+	cost = 3.00
+	x = 5
+	y = 0
+	select_effect = {
+		hidden_effect = {
+			country_event = { #intro event
+				id = PRC.4
+				days = 1
+			}
+		}
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Eastern_Conflict"
+		country_event = {
+			id = PRC.1
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Fortify_the_Border
+	icon = GFX_YUN_Fortify_The_Border
+	cost = 3.00
+	prerequisite = {
+		focus = PRC_The_Eastern_Conflict
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_The_Eastern_Conflict
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Fortify_the_Border"
+		814 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 10695
+					id = 1834
+					id = 12544
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Prepare_the_Men
+	icon = GFX_Generic_Soldiers_Red
+	cost = 3.00
+	prerequisite = {
+		focus = PRC_Fortify_the_Border
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Fortify_the_Border
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Prepare_the_Men"
+		add_stability = 0.05
+		add_manpower = 500
+		TNO_improve_conscription_policy_effectiveness_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Favor_the_Mongolians
+	icon = GFX_NOV_connections_in_mongolia
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_Prepare_the_Men
+	}
+	mutually_exclusive = {
+		focus = PRC_Favor_the_Russians
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = -1
+	y = 1
+	relative_position_id = PRC_Prepare_the_Men
+	ai_will_do = {
+		factor = 0.5
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Favor_the_Mongolians"
+		add_to_variable = {
+			PRC_MON_divide = -1
+			tooltip = PRC_MON_faction_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Favor_the_Russians
+	icon = GFX_Against_The_Opposition
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_Prepare_the_Men
+	}
+	mutually_exclusive = {
+		focus = PRC_Favor_the_Mongolians
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	ai_will_do = {
+		factor = 2
+	}
+	x = 1
+	y = 1
+	relative_position_id = PRC_Prepare_the_Men
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Favor_the_Russians"
+		add_to_variable = {
+			PRC_MON_divide = 1
+			tooltip = PRC_RUS_faction_tt
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Recruitment_campaign
+	icon = GFX_new_model_army
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Favor_the_Mongolians
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Favor_the_Mongolians
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Recruitment_campaign"
+		add_manpower = 500
+		TNO_improve_conscription_policy_effectiveness_med = yes
+		TNO_worsen_army_professionalism_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Legacy_of_the_Siberian_Red_Army
+	icon = GFX_IRK_Red_Siberia
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Favor_the_Russians
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Favor_the_Russians
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Legacy_of_the_Siberian_Red_Army"
+		army_experience = 25
+	}
+}
+
+shared_focus = {
+	id = PRC_Give_More_Rights
+	icon = GFX_socialism_of_the_people
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Recruitment_campaign
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = -1
+	y = 1
+	relative_position_id = PRC_Recruitment_campaign
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Give_More_Rights"
+		tno_minorities_improve = yes
+		country_event = {
+			id = PRC.15
+			days = 1
+		}
+		hidden_effect = {
+			set_variable = {
+				var = tno_minorities_effectiveness
+				value = 10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Military_Industry
+	icon = GFX_Industry_For_The_Defence_Of_Socialism
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Recruitment_campaign
+		focus = PRC_Legacy_of_the_Siberian_Red_Army
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 1
+	y = 1
+	relative_position_id = PRC_Recruitment_campaign
+	completion_reward = {
+		add_resource = {
+			type = power
+			amount = 1
+			state = 329
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Military_Industry"
+		SIB_increase_worker_tension_low = yes
+		set_temp_variable = {econ_centralization_temp = 5}
+		econ_centralization_change = yes 
+	}
+}
+
+shared_focus = {
+	id = PRC_An_Elite_Army
+	icon = GFX_Those_Who_Fight_No_Longer
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Legacy_of_the_Siberian_Red_Army
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 1
+	y = 1
+	relative_position_id = PRC_Legacy_of_the_Siberian_Red_Army
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_An_Elite_Army"
+		tno_training_improve = yes
+		TNO_improve_military_supervision_policy_effectiveness_low = yes
+		TNO_improve_training_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Mobilize_the_Economy
+	icon = GFX_TNO_generic_socialist_industry
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Military_Industry
+	}
+	prerequisite = {
+		focus = PRC_Give_More_Rights
+		focus = PRC_An_Elite_Army
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = -1
+	y = 1
+	relative_position_id = PRC_Military_Industry
+	completion_reward = {
+		set_temp_variable = {state_value_multiplier_temp = 1.2}
+		if = {
+			limit = { owns_state = 814}
+			814 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+			set_temp_variable = {state_value_multiplier_temp = 1.2}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		else = {
+			set_temp_variable = {state_value_multiplier_temp = 1.5}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		SIB_increase_worker_tension_low = yes
+		set_temp_variable = {econ_centralization_temp = 5}
+		econ_centralization_change = yes 
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Mobilize_the_Economy"
+		#tno_economic_focus_improve = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Improve_Our_Weapons
+	icon = GFX_DRL_Soviet_Arms
+	cost = 4.00
+	prerequisite = {
+		focus = PRC_Military_Industry
+	}
+	prerequisite = {
+		focus = PRC_Give_More_Rights
+		focus = PRC_An_Elite_Army
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 1
+	y = 1
+	relative_position_id = PRC_Military_Industry
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Improve_Our_Weapons"
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Last_Preparations
+	icon = GFX_CAU_Prepare_the_Troops
+	cost = 3.00
+	prerequisite = {
+		focus = PRC_Improve_Our_Weapons
+	}
+	prerequisite = {
+		focus = PRC_Mobilize_the_Economy
+	}
+	available = {
+		has_war = no
+	}
+	bypass = {
+		has_war = yes
+	}
+	x = 1
+	y = 1
+	relative_position_id = PRC_Mobilize_the_Economy
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Last_Preparations"
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = PRC_War_with_Menjiang
+	icon = GFX_CHI_Strike_when_the_Iron_is_hot
+	cost = 2.50
+	prerequisite = {
+		focus = PRC_Last_Preparations
+	}
+	available = {
+		country_exists = MEN
+		NOT = {
+			country_exists = MON
+			has_war_with = MEN
+		}
+		hidden_trigger = {
+			NOT = { has_global_flag = PRC_MEN_war }
+		}
+	}
+	bypass = {
+		has_war_with = MEN
+		hidden_trigger = {
+			has_global_flag = PRC_MEN_war
+		}
+	}
+	will_lead_to_war_with = MEN
+	x = 0
+	y = 1
+	relative_position_id = PRC_Last_Preparations
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_War_with_Menjiang"
+		effect_tooltip = {
+			declare_war_on = {
+				target = MEN
+				type = topple_government
+			}
+		}
+		hidden_effect = {
+			MEN = { #because puppet fuckery
+				add_state_core = 814
+				declare_war_on = {
+					target = PRC
+					type = take_core_state
+					generator = { 814 }
+				}
+			}
+			set_global_flag = PRC_MEN_war
+			if = {
+				limit = {
+					NOT = { has_country_flag = PRC_war_tree }
+				}
+				set_country_flag = PRC_war_tree
+				load_focus_tree = { tree = PRC_war_tree keep_completed = yes }
+			}
+			PRC_Get_war_date = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Backline_Defense
+	icon = GFX_YUN_The_Best_Defense
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_War_with_Menjiang
+	}
+	allow_branch = {
+		has_country_flag = PRC_war_tree
+	}
+	available = {
+		has_war = yes
+	}
+	bypass = {
+		has_war = no
+	}
+	x = -2
+	y = 1
+	relative_position_id = PRC_War_with_Menjiang
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Backline_Defense"
+		814 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 10539
+				}
+			}
+		}
+		329 = {
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 10627
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Guns_From_the_Great_Patriotic_War
+	icon = GFX_TNO_generic_gun_production
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_War_with_Menjiang
+	}
+	allow_branch = {
+		has_country_flag = PRC_war_tree
+	}
+	available = {
+		has_war = yes
+	}
+	bypass = {
+		has_war = no
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_War_with_Menjiang
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Guns_From_the_Great_Patriotic_War"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 800
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_War_Propaganda
+	icon = GFX_IRK_propaganda
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_War_with_Menjiang
+	}
+	allow_branch = {
+		has_country_flag = PRC_war_tree
+	}
+	available = {
+		has_war = yes
+	}
+	bypass = {
+		has_war = no
+	}
+	x = 2
+	y = 1
+	relative_position_id = PRC_War_with_Menjiang
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_War_Propaganda"
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = PRC_Evacuate_Western_Mongolia
+	icon = GFX_UPO_Prepare_the_Evacuations
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_Backline_Defense
+	}
+	available = {
+		has_war = yes
+	}
+	bypass = {
+		has_war = no
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Backline_Defense
+	completion_reward = {
+		custom_effect_tooltip = PRC_GDP_transfer_tt
+		subtract_from_variable = {814.state_value = 50}
+		add_to_variable = {329.state_value = 50}	
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Evacuate_Western_Mongolia"
+		SIB_increase_worker_tension_high = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Red_Shells
+	icon = GFX_generic_preserve_communism
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_Guns_From_the_Great_Patriotic_War
+	}
+	available = {
+		has_war = yes
+	}
+	bypass = {
+		has_war = no
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Guns_From_the_Great_Patriotic_War
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Red_Shells"
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 150
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Expand_Conscription
+	icon = GFX_TNO_generic_socialist_recruitment
+	cost = 2.00
+	prerequisite = {
+		focus = PRC_War_Propaganda
+	}
+	available = {
+		has_war = yes
+	}
+	bypass = {
+		has_war = no
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_War_Propaganda
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Expand_Conscription"
+		tno_conscription_worsen = yes
+		hidden_effect = {
+			TNO_worsen_conscription_policy_effectiveness_med = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Last_Stand
+	icon = GFX_IRK_the_union_forever
+	cost = 0.70
+	available = {
+		has_war = yes
+	}
+	prerequisite = {
+		focus = PRC_Evacuate_Western_Mongolia
+		focus = PRC_Red_Shells
+		focus = PRC_Expand_Conscription
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Expand_Conscription
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Last_Stand"
+		add_timed_idea = {
+			idea = PRC_last_stand_idea
+			days = 20
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Offer_a_Peace_Deal
+	icon = GFX_SIB_diplo_organ
+	cost = 0.50
+	available = {
+		has_war = yes
+		NOT = { controls_state = 814 }
+	}
+	mutually_exclusive = {
+		focus = PRC_Ask_for_a_ceasefire
+	}
+	bypass = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = PRC_Evacuate_Western_Mongolia
+		focus = PRC_Red_Shells
+		focus = PRC_Expand_Conscription
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Evacuate_Western_Mongolia
+	ai_will_do = {
+		factor = 0.1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Offer_a_Peace_Deal"
+		MEN = {
+			country_event = {
+				id = PRC.10
+				hours = 6
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Ask_for_a_ceasefire
+	icon = GFX_KOM_peace
+	cost = 0.50
+	available = {
+		has_war = yes
+		controls_state = 814
+		OR = {
+			MEN = {
+				surrender_progress > 0.1
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_Ask_for_a_ceasefire_tt
+				meta_trigger = {
+					text = {
+						date > [Get_PRC_war_date]
+					}
+					Get_PRC_war_date = "[?PRC_war_date.GetDateStringNoHour]"
+				}
+			}
+		}
+	}
+	mutually_exclusive = {
+		focus = PRC_Offer_a_Peace_Deal
+	}
+	prerequisite = {
+		focus = PRC_Evacuate_Western_Mongolia
+		focus = PRC_Red_Shells
+		focus = PRC_Expand_Conscription
+	}
+	x = 0
+	y = 1
+	relative_position_id = PRC_Red_Shells
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Ask_for_a_ceasefire"
+		MEN = {
+			country_event = {
+				id = PRC.8
+				hours = 6
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Peace_at_least
+	icon = GFX_generic_diplomacy_peace
+	cost = 1.50
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = PRC_Offer_a_Peace_Deal
+		focus = PRC_Ask_for_a_ceasefire
+	}
+	x = -2
+	y = 1
+	relative_position_id = PRC_Last_Stand
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Peace_at_least"
+		country_event = {
+			id = PRC.17
+			days = 1
+		}
+		hidden_effect = {
+			load_focus_tree = { tree = PRC_post_war_tree keep_completed = yes }
+			complete_national_focus = PRC_Aftermath_of_the_War
+		}
+	}
+}
+
+#Pre-Conquest Tree - Military
+
+shared_focus = {
+	id = PRC_Aftermath_of_the_War
+	icon = GFX_GER_A_War_of_Attrition
+	cost = 3.00
+	x = 8
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Aftermath_of_the_War"
+		add_manpower = 6000
+		division_template = {
+			name = "Infantry Division"
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+			}
+		}
+		329 = {
+			create_unit = {
+				division = "name = \"1st Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+				owner = PRC
+			}
+			create_unit = {
+				division = "name = \"2nd Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+				owner = PRC
+			}
+			create_unit = {
+				division = "name = \"3rd Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
+				owner = PRC
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Learn_our_Mistakes
+	icon = GFX_IND_Question_The_Army
+	cost = 3.00
+	x = -4
+	y = 1
+	relative_position_id = PRC_Aftermath_of_the_War
+	prerequisite = {
+		focus = PRC_Aftermath_of_the_War
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Learn_our_Mistakes"
+		if = {
+			limit = {
+				owns_state = 814
+			}
+			army_experience = 10
+		}
+		else = {
+			army_experience = 30
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Mongolian_Tactics
+	icon = GFX_PRC_Mongolian_Tactics
+	cost = 3.00
+	x = -2
+	y = 1
+	relative_position_id = PRC_Learn_our_Mistakes
+	mutually_exclusive = {
+		focus = PRC_Siberian_Strategy
+	}
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			add = 1
+			controls_state = 814
+		}
+	}
+	prerequisite = {
+		focus = PRC_Learn_our_Mistakes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Mongolian_Tactics"
+		add_ideas = PRC_Mongolian_Tactics_idea
+		add_to_variable = {
+			PRC_MON_divide = -1
+			tooltip = PRC_MON_faction_tt
+		}
+		custom_effect_tooltip =  PRC_no_content_warning_tt
+	}
+}
+
+shared_focus = {
+	id = PRC_Siberian_Strategy
+	icon = GFX_PRC_Siberian_Strategy
+	cost = 3.00
+	x = 2
+	y = 1
+	relative_position_id = PRC_Learn_our_Mistakes
+	mutually_exclusive = {
+		focus = PRC_Mongolian_Tactics
+	}
+	prerequisite = {
+		focus = PRC_Learn_our_Mistakes
+	}
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Siberian_Strategy"
+		add_to_variable = {
+			PRC_MON_divide = 2
+			tooltip = PRC_RUS_faction_2_tt
+		}
+		add_to_variable = {
+			PRC_RA_army_armor_speed_factor = 0.05
+			tooltip = PRC_Siberian_Strategy_tt
+		}
+		PRC_update_dynamic_modifier_values = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_More_is_Better
+	icon = GFX_TNO_generic_socialist_recruitment
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Mongolian_Tactics
+	prerequisite = {
+		focus = PRC_Mongolian_Tactics
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_More_is_Better"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 900
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Cavalry_Divisions
+	icon = GFX_AKT_Masters_of_Man_and_Horse
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Mongolian_Tactics
+	prerequisite = {
+		focus = PRC_Mongolian_Tactics
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Cavalry_Divisions"
+		add_ideas = PRC_Cavalry_Army
+	}
+}
+
+shared_focus = {
+	id = PRC_Army_of_the_Steppes
+	icon = GFX_DER_remote_steppe
+	cost = 3.00
+	x = 0
+	y = 2
+	relative_position_id = PRC_Mongolian_Tactics
+	prerequisite = {
+		focus = PRC_More_is_Better
+	}
+	prerequisite = {
+		focus = PRC_Cavalry_Divisions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Army_of_the_Steppes"
+		custom_effect_tooltip = PRC_Focus_on_Infantry_3
+		add_to_variable = { PRC_RA_army_infantry_attack_factor = 0.05 }
+		add_to_variable = { PRC_RA_army_infantry_defence_factor = 0.05 }
+		add_to_variable = { PRC_RA_army_armor_attack_factor = -0.10 }
+		PRC_update_dynamic_modifier_values = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Industry_of_War
+	icon = GFX_Generic_Industry
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Siberian_Strategy
+	prerequisite = {
+		focus = PRC_Siberian_Strategy
+	}
+	completion_reward = {
+		add_resource = {
+			type = power
+			amount = 2
+			state = 329
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Industry_of_War"
+		add_timed_idea = {
+			idea = PRC_Industrial_Mobilization
+			days = 720
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Air_Cavalry_Divisions
+	icon = GFX_generic_helicopter_2
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Siberian_Strategy
+	prerequisite = {
+		focus = PRC_Siberian_Strategy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Air_Cavalry_Divisions"
+		add_tech_bonus = {
+			bonus = 0.30
+			uses = 1
+			category = helicopter
+		}
+		add_to_variable = {
+			PRC_RA_army_sub_unit_air_assault_attack_factor = 0.03
+			tooltip = PRC_Air_Cavalry_Divisions_tt
+		}
+		PRC_update_dynamic_modifier_values = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Spearhead_of_the_Red_Army
+	icon = GFX_TNO_generic_socialist_tank
+	cost = 3.00
+	x = 0
+	y = 2
+	relative_position_id = PRC_Siberian_Strategy
+	prerequisite = {
+		focus = PRC_Air_Cavalry_Divisions
+	}
+	prerequisite = {
+		focus = PRC_Industry_of_War
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Spearhead_of_the_Red_Army"
+		custom_effect_tooltip = PRC_Spearhead_of_the_Red_Army_tt
+		add_to_variable = { PRC_RA_army_armor_attack_factor = 0.07 }
+		add_to_variable = { PRC_RA_army_armor_speed_factor = 0.07 }
+		PRC_update_dynamic_modifier_values = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Modernize_the_Army
+	icon = GFX_CAU_Militarize_The_Outskirts
+	cost = 3.00
+	x = 2
+	y = 1
+	relative_position_id = PRC_Army_of_the_Steppes
+	prerequisite = {
+		focus = PRC_Army_of_the_Steppes
+		focus = PRC_Spearhead_of_the_Red_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Modernize_the_Army"
+		custom_effect_tooltip = PRC_Modernize_the_Army_tt
+		set_country_flag = PRC_Army_Modernization_Project
+	}
+}
+
+shared_focus = {
+	id = PRC_Relax_Training_Standards
+	icon = GFX_TNO_generic_military_contacts
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Modernize_the_Army
+	mutually_exclusive = {
+		focus = PRC_Mantain_Proffesional_Army
+	}
+	prerequisite = {
+		focus = PRC_Modernize_the_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Relax_Training_Standards"
+		custom_effect_tooltip = PRC_Relax_Training_Standards_tt
+		add_to_variable = { PRC_RA_training_time_army = 0.08 }
+		add_to_variable = { PRC_RA_army_org = 0.05 }
+		add_to_variable = { PRC_RA_army_infantry_attack_factor = -0.10 }
+		add_to_variable = { PRC_RA_army_infantry_defence_factor = -0.10 }
+		PRC_update_dynamic_modifier_values = yes
+		TNO_worsen_training_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Mantain_Proffesional_Army
+	icon = GFX_IND_Reform_The_Militia
+	cost = 3.00
+	x = 1
+	y = 1
+	mutually_exclusive = {
+		focus = PRC_Relax_Training_Standards
+	}
+	relative_position_id = PRC_Modernize_the_Army
+	prerequisite = {
+		focus = PRC_Modernize_the_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Mantain_Proffesional_Army"
+		add_to_variable = {
+			PRC_RA_training_time_army = -0.10
+			tooltip = PRC_Mantain_Proffesional_Army_tt
+		}
+		tno_conscription_improve = yes
+		PRC_update_dynamic_modifier_values = yes
+		TNO_improve_training_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Aggressive_Doctrine
+	icon = GFX_CHI_Strike_when_the_Iron_is_hot
+	cost = 3.00
+	x = 0
+	y = 1
+	mutually_exclusive = {
+		focus = PRC_Prioritize_Defense
+	}
+	relative_position_id = PRC_Relax_Training_Standards
+	prerequisite = {
+		focus = PRC_Relax_Training_Standards
+		focus = PRC_Mantain_Proffesional_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Aggressive_Doctrine"
+		custom_effect_tooltip = PRC_Aggressive_Doctrine_tt
+		add_to_variable = { PRC_RA_army_infantry_attack_factor = 0.10 }
+		add_to_variable = { PRC_RA_army_armor_attack_factor = 0.05 }
+		add_to_variable = { PRC_RA_army_armor_speed_factor = 0.05 }
+		add_to_variable = { PRC_RA_army_infantry_defence_factor = -0.10 }
+		PRC_update_dynamic_modifier_values = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Prioritize_Defense
+	icon = GFX_generic_preserve_communism
+	cost = 3.00
+	x = 0
+	y = 1
+	mutually_exclusive = {
+		focus = PRC_Aggressive_Doctrine
+	}
+	relative_position_id = PRC_Mantain_Proffesional_Army
+	prerequisite = {
+		focus = PRC_Relax_Training_Standards
+		focus = PRC_Mantain_Proffesional_Army
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Prioritize_Defense"
+		custom_effect_tooltip = PRC_Prioritize_Defense_tt
+		add_to_variable = { PRC_RA_army_infantry_defence_factor = 0.10 }
+		add_to_variable = { PRC_RA_army_infantry_attack_factor = -0.10 }
+		add_to_variable = { PRC_RA_army_armor_attack_factor = -0.10 }
+		PRC_update_dynamic_modifier_values = yes
+	}
+}
+
+#Economic Tree
+
+shared_focus = {
+	id = PRC_Old_Union_Remnants
+	icon = GFX_KRS_bukharins_legacy
+	cost = 3.00
+	x = 4
+	y = 1
+	relative_position_id = PRC_Aftermath_of_the_War
+	prerequisite = {
+		focus = PRC_Aftermath_of_the_War
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Old_Union_Remnants"
+		SIB_increase_ic_low = yes
+		#SIB_increase_consumer_goods_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Road_for_Industrialization
+	icon = GFX_GER_Forward_Looking_Industry
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Old_Union_Remnants
+	prerequisite = {
+		focus = PRC_Old_Union_Remnants
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Road_for_Industrialization"
+		SIB_increase_worker_tension_med = yes
+		if = {
+			limit = { owns_state = 814}
+			set_temp_variable = {state_value_multiplier_temp = 1.1}
+			814 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+			set_temp_variable = {state_value_multiplier_temp = 1.1}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		else = {
+			set_temp_variable = {state_value_multiplier_temp = 1.15}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Build_Up_Civilian_Industry
+	icon = GFX_TNO_generic_socialist_industry
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_The_Road_for_Industrialization
+	prerequisite = {
+		focus = PRC_The_Road_for_Industrialization
+	}
+	completion_reward = {
+		if = {
+			limit = { owns_state = 814}
+			set_temp_variable = {state_value_multiplier_temp = 1.4}
+			814 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+			set_temp_variable = {state_value_multiplier_temp = 1.4}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		else = {
+			set_temp_variable = {state_value_multiplier_temp = 1.5}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Build_Up_Civilian_Industry"
+	}
+}
+
+shared_focus = {
+	id = PRC_Reopen_Mining_Fields
+	icon = GFX_IND_Invest_In_Coal
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Build_Up_Civilian_Industry
+	prerequisite = {
+		focus = PRC_Build_Up_Civilian_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Reopen_Mining_Fields"
+		SIB_increase_resources_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Modern_Construction_Equipments
+	icon = GFX_CHI_Modern_Construction_Equipment
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Build_Up_Civilian_Industry
+	prerequisite = {
+		focus = PRC_Build_Up_Civilian_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Modern_Construction_Equipments"
+		set_temp_variable = {temp_econ_spending_amount = GDP}
+		multiply_temp_variable = {temp_econ_spending_amount = 0.1}
+		econ_spend_money_once_effect_raw_money = yes
+		TNO_improve_industrial_equipment_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Tuva_Road
+	icon = GFX_IBR_open_road
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Reopen_Mining_Fields
+	prerequisite = {
+		focus = PRC_Reopen_Mining_Fields
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Tuva_Road"
+		329 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Establish_Minimum_Wage
+	icon = GFX_IND_India_Worker_Rights
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Modern_Construction_Equipments
+	prerequisite = {
+		focus = PRC_Modern_Construction_Equipments
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Establish_Minimum_Wage"
+		SIB_decrease_worker_tension_low = yes
+		tno_minimum_wage_improve = yes
+		tno_improve_minimum_wage_policy_effectiveness_low = yes
+		TNO_improve_poverty_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Radar_Stations
+	icon = GFX_TNO_generic_radio_tower
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_The_Tuva_Road
+	prerequisite = {
+		focus = PRC_The_Tuva_Road
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Radar_Stations"
+		random_owned_state = {
+			add_building_construction = {
+				type = radar_station
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = radar_tech
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Decryption_Machines
+	icon = GFX_CNT_signals_intelligence
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_The_Tuva_Road
+	prerequisite = {
+		focus = PRC_The_Tuva_Road
+	}
+	prerequisite = {
+		focus = PRC_Establish_Minimum_Wage
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Decryption_Machines"
+		add_tech_bonus = {
+			bonus = 1.00
+			uses = 2
+			category = decryption_tech
+			category = encryption_tech
+			category = computing_tech
+		}
+		set_temp_variable = {temp_econ_spending_amount = 0.02}
+ 		econ_spend_money_once_effect_raw_money = yes		
+	}
+}
+
+shared_focus = {
+	id = PRC_Agriculture_Mechanization
+	icon = GFX_WRS_Agriculture_Situation
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Establish_Minimum_Wage
+	prerequisite = {
+		focus = PRC_Establish_Minimum_Wage
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Agriculture_Mechanization"
+		TNO_improve_agriculture_low = yes #coded with a script
+		set_temp_variable = { gdp_growth_temp = 0.8 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = {temp_econ_spending_amount = 0.02}
+ 		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Work_to_Do
+	icon = GFX_goal_workers_fist
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Decryption_Machines
+	prerequisite = {
+		focus = PRC_Radar_Stations
+	}
+	prerequisite = {
+		focus = PRC_Decryption_Machines
+	}
+	prerequisite = {
+		focus = PRC_Agriculture_Mechanization
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Work_to_Do"
+		SIB_increase_efficiency_gain_med = yes
+		#SIB_decrease_consumer_goods_low = yes
+		SIB_decrease_worker_tension_low = yes
+		if = {
+			limit = { owns_state = 814}
+			set_temp_variable = {state_value_multiplier_temp = 1.1}
+			814 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+			set_temp_variable = {state_value_multiplier_temp = 1.15}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+		else = {
+			set_temp_variable = {state_value_multiplier_temp = 1.18}
+			329 = {
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Decide_Our_Future
+	icon = GFX_OST_The_future_frozen
+	cost = 3.00
+	x = 3
+	y = 1
+	relative_position_id = PRC_Prioritize_Defense
+	prerequisite = {
+		focus = PRC_Aggressive_Doctrine
+		focus = PRC_Prioritize_Defense
+	}
+	prerequisite = {
+		focus = PRC_Work_to_Do
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Decide_Our_Future"
+		country_event = PRC.22
+	}
+}
+
+#Expansion Tree
+
+shared_focus = {
+	id = PRC_Red_Spring
+	icon = GFX_Generic_Authoritarian_Socialism
+	cost = 3.00
+	x = 24
+	y = 0
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = SIB_spring_tt
+			date > 1963.5.1
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Red_Spring"
+		country_event = PRC.3
+		RUS_Smuta_Enable = yes
+		swap_ideas = {
+			remove_idea = PRC_factionalism
+			add_idea = PRC_old_union
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Deal_with_the_Old_Believers
+	icon = GFX_SIB_diplo_oyrotia
+	cost = 3.00
+	x = -4
+	y = 1
+	relative_position_id = PRC_Red_Spring
+	prerequisite = {
+		focus = PRC_Red_Spring
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+		country_exists = ALT
+	}
+	mutually_exclusive = {
+		focus = PRC_March_to_Oyrotia
+	}
+	bypass = {
+		NOT = {
+			country_exists = ALT
+			controls_state = 654
+		}
+	}
+	will_lead_to_war_with = ALT
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Deal_with_the_Old_Believers"
+		custom_effect_tooltip = PRC_Deal_with_the_Old_Believers_tt
+		ALT = {
+			country_event = {
+				id = PRC.19
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_March_to_Oyrotia
+	icon = GFX_SIB_invade_oyrotia
+	cost = 3.00
+	x = -2
+	y = 1
+	relative_position_id = PRC_Red_Spring
+	prerequisite = {
+		focus = PRC_Red_Spring
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+	}
+	mutually_exclusive = {
+		focus = PRC_Deal_with_the_Old_Believers
+	}
+	bypass = {
+		OR = {
+			has_war_with = ALT
+			NOT = { country_exists = ALT }
+		}
+	}
+	will_lead_to_war_with = ALT
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_March_to_Oyrotia"
+		if = {
+			limit = {
+				NOT = { has_country_flag = ALT_refused }
+			}
+			declare_war_on = {
+				target = ALT
+				type = annex_everything
+			}
+		}
+		else = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = ALT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Integrate_the_Administration
+	icon = GFX_SBA_expand_administrative_umbrella
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Deal_with_the_Old_Believers
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 654
+		custom_trigger_tooltip = {
+			tooltip = PRC_Integrate_the_Administration_tt
+			NOT = { has_country_flag = ALT_refused }
+		}
+	}
+	bypass = {
+		NOT = {
+			country_exists = ALT
+			controls_state = 654
+		}
+	}
+	prerequisite = {
+		focus = PRC_Deal_with_the_Old_Believers
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Deal_with_the_Old_Believers"
+		RUS_integration_cost_days_decrease = yes
+		tno_worsen_religious_rights_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Persecute_the_Believers
+	icon = GFX_Generic_Orthodox_Cross
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_March_to_Oyrotia
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 654
+	}
+	bypass = {
+		NOT = {
+			country_exists = ALT
+			controls_state = 654
+		}
+	}
+	prerequisite = {
+		focus = PRC_March_to_Oyrotia
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Persecute_the_Believers"
+		SIB_increase_worker_tension_med = yes
+		tno_improve_religious_rights_policy_effectiveness_low = yes
+		country_event = {
+			id = PRC.24
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_End_with_Anarchy
+	icon = GFX_SIB_invade_SBA
+	cost = 3.00
+	x = 3
+	y = 1
+	relative_position_id = PRC_Red_Spring
+	prerequisite = {
+		focus = PRC_Red_Spring
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+	}
+	bypass = {
+		OR = {
+			has_war_with = SBA
+			NOT = { country_exists = SBA }
+		}
+	}
+	will_lead_to_war_with = SBA
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_End_with_Anarchy"
+		declare_war_on = {
+			target = SBA
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Restore_Order
+	icon = GFX_generic_communist_deal
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_End_with_Anarchy
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 568
+	}
+	bypass = {
+		NOT = {
+			country_exists = SBA
+			controls_state = 568
+		}
+	}
+	prerequisite = {
+		focus = PRC_End_with_Anarchy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Restore_Order"
+		RUS_integration_cost_days_decrease = yes
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Crush_the_Communes
+	icon = GFX_TNO_generic_global_anti_communism
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_End_with_Anarchy
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 568
+	}
+	bypass = {
+		NOT = {
+			country_exists = SBA
+			controls_state = 568
+		}
+	}
+	prerequisite = {
+		focus = PRC_End_with_Anarchy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Crush_the_Communes"
+		custom_effect_tooltip = PRC_Crush_the_Communes_tt
+		hidden_effect = {
+			country_event = {
+				id = PRC.52
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Ruriks_Madness
+	icon = GFX_KEM_The_Kings_Society
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Integrate_the_Administration
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		country_exists = KEM
+	}
+	bypass = {
+		NOT = {
+			country_exists = KEM
+		}
+	}
+	prerequisite = {
+		focus = PRC_Integrate_the_Administration
+		focus = PRC_Persecute_the_Believers
+	}
+	prerequisite = {
+		focus = PRC_Restore_Order
+	}
+	prerequisite = {
+		focus = PRC_Crush_the_Communes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Ruriks_Madness"
+
+		custom_effect_tooltip = PRC_Ruriks_Madness_tt
+		country_event = {
+			id = PRC.53
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Dismantle_the_Kingdom
+	icon = GFX_SIB_invade_kemerovo
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Ruriks_Madness
+	prerequisite = {
+		focus = PRC_Ruriks_Madness
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+	}
+	bypass = {
+		OR = {
+			has_war_with = KEM
+			NOT = { country_exists = KEM }
+		}
+	}
+	will_lead_to_war_with = KEM
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Dismantle_the_Kingdom"
+		declare_war_on = {
+			target = KEM
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Royal_Family_Fate
+	icon = GFX_TNO_Generic_Restricted_Monarchy
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Dismantle_the_Kingdom
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 569
+	}
+	bypass = {
+		NOT = {
+			country_exists = KEM
+			controls_state = 569
+		}
+	}
+	prerequisite = {
+		focus = PRC_Dismantle_the_Kingdom
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Royal_Family_Fate"
+		country_event = {
+			id = PRC.54
+			days = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Integrate_Crownlands
+	icon = GFX_SIB_diplo_kemerovo
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Dismantle_the_Kingdom
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 569
+	}
+	bypass = {
+		NOT = {
+			country_exists = KEM
+			controls_state = 569
+		}
+	}
+	prerequisite = {
+		focus = PRC_Dismantle_the_Kingdom
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Integrate_Crownlands"
+		RUS_integration_cost_days_decrease = yes
+		TNO_improve_admin_efficiency_low = yes
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Northern_Populists
+	icon = GFX_KRS_the_enemy_within
+	cost = 3.00
+	x = 0
+	y = 2
+	relative_position_id = PRC_End_with_Anarchy
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		country_exists = KRS
+	}
+	bypass = {
+		NOT = {
+			country_exists = KRS
+		}
+	}
+	prerequisite = {
+		focus = PRC_Integrate_the_Administration
+		focus = PRC_Persecute_the_Believers
+	}
+	prerequisite = {
+		focus = PRC_Restore_Order
+	}
+	prerequisite = {
+		focus = PRC_Crush_the_Communes
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Northern_Populists"
+		add_war_support = 0.05
+	}
+}
+
+
+shared_focus = {
+	id = PRC_Strike_Krasnoyarsk
+	icon = GFX_SIB_invade_krasnoyarsk
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_The_Northern_Populists
+	prerequisite = {
+		focus = PRC_The_Northern_Populists
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+	}
+	bypass = {
+		OR = {
+			has_war_with = KRS
+			NOT = { country_exists = KRS }
+		}
+	}
+	will_lead_to_war_with = KRS
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Strike_Krasnoyarsk"
+		declare_war_on = {
+			target = KRS
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Offer_Amnesty
+	icon = GFX_generic_fight_for_freedom
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Strike_Krasnoyarsk
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 757
+	}
+	mutually_exclusive = {
+		focus = PRC_Destroy_the_Military_Remnants
+	}
+	bypass = {
+		NOT = {
+			country_exists = KRS
+			controls_state = 757
+		}
+	}
+	prerequisite = {
+		focus = PRC_Strike_Krasnoyarsk
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Offer_Amnesty"
+		custom_effect_tooltip = PRC_Offer_Amnesty_tt
+
+		# KRS = {
+		# 	every_unit_leader = {
+		# 		set_nationality = PRC
+		# 	}
+		# }
+		TNO_improve_admin_efficiency_med = yes
+		TNO_worsen_political_parties_policy_effectiveness_low = yes
+		SIB_increase_worker_tension_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Destroy_the_Military_Remnants
+	icon = GFX_goal_COG_icon_military_clusterfuck
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Strike_Krasnoyarsk
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 757
+	}
+	mutually_exclusive = {
+		focus = PRC_Offer_Amnesty
+	}
+	bypass = {
+		NOT = {
+			country_exists = KRS
+			controls_state = 757
+		}
+	}
+	prerequisite = {
+		focus = PRC_Strike_Krasnoyarsk
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Destroy_the_Military_Remnants"
+		custom_effect_tooltip = PRC_Destroy_the_Military_Remnants_tt
+		TNO_improve_security_policy_effectiveness_low = yes
+		SIB_increase_worker_tension_low = yes
+		hidden_effect = {
+			country_event = {
+				id = PRC.57
+				days = 1
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Border_Fortifications
+	icon = GFX_COG_Fortify_The_Border
+	cost = 3.00
+	x = 2
+	y = 2
+	relative_position_id = PRC_Dismantle_the_Kingdom
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		NOT = {
+			country_exists = KEM
+			country_exists = KRS
+		}
+	}
+	bypass = {
+		NOT = {
+			country_exists = NOV
+			country_exists = TOM
+		}
+	}
+	prerequisite = {
+		focus = PRC_The_Royal_Family_Fate
+	}
+	prerequisite = {
+		focus = PRC_Integrate_Crownlands
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Border_Fortifications"
+		every_owned_state = {
+			limit = {
+				any_neighbor_state = {
+					OR = {
+						is_controlled_by = TOM
+						is_controlled_by = NOV
+					}
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Prepare_our_Troops
+	icon = GFX_CAU_Prepare_the_Troops
+	cost = 3.00
+	x = -2
+	y = 2
+	relative_position_id = PRC_Strike_Krasnoyarsk
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		NOT = {
+			country_exists = KEM
+			country_exists = KRS
+		}
+	}
+	bypass = {
+		NOT = {
+			country_exists = NOV
+			country_exists = TOM
+		}
+	}
+	prerequisite = {
+		focus = PRC_Offer_Amnesty
+		focus = PRC_Destroy_the_Military_Remnants
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Prepare_our_Troops"
+		TNO_improve_training_policy_effectiveness_med = yes
+		every_army_leader = {
+			add_temporary_buff_to_units = {
+				combat_offense = 0.10
+				combat_breakthrough = 0.25
+				cannot_retreat_while_defending = 0.10
+				war_support_reduction_on_damage = 0.05
+				days = 75
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Last_Fight
+	icon = GFX_TNO_generic_socialist_tank
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Border_Fortifications
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+	}
+	bypass = {
+		NOT = {
+			country_exists = NOV
+			country_exists = TOM
+			country_exists = KEM
+			country_exists = KRS
+			country_exists = SBA
+			country_exists = ALT
+		}
+	}
+	prerequisite = {
+		focus = PRC_Border_Fortifications
+	}
+	prerequisite = {
+		focus = PRC_Prepare_our_Troops
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Last_Fight"
+		add_war_support = 0.05
+	}
+}
+
+shared_focus = {
+	id = PRC_Crush_the_Artists_Republic
+	icon = GFX_SIB_invade_tomsk
+	cost = 3.00
+	x = -3
+	y = 1
+	relative_position_id = PRC_The_Last_Fight
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+	}
+	bypass = {
+		OR = {
+			has_war_with = TOM
+			NOT = { country_exists = TOM }
+		}
+	}
+	prerequisite = {
+		focus = PRC_The_Last_Fight
+	}
+	will_lead_to_war_with = TOM
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Crush_the_Artists_Republic"
+		declare_war_on = {
+			target = TOM
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Overrun_Tomsk
+	icon = GFX_USA_The_Pacific_Blitz_alt
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Crush_the_Artists_Republic
+	prerequisite = {
+		focus = PRC_Crush_the_Artists_Republic
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war_with = TOM
+	}
+	bypass = {
+		NOT = { has_war_with = TOM }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Overrun_Tomsk"
+		add_timed_idea = {
+			idea = PRC_Overrun_Tomsk_idea
+			days = 60
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Spread_Political_Division
+	icon = GFX_generic_political_chaos
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Crush_the_Artists_Republic
+	prerequisite = {
+		focus = PRC_Crush_the_Artists_Republic
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war_with = TOM
+	}
+	bypass = {
+		NOT = { has_war_with = TOM }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Spread_Political_Division"
+		TOM = {
+			effect_tooltip = { add_war_support = -0.10 }
+			country_event = PRC.27
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Incorpore_Friendly_Elements
+	icon = GFX_SIB_diplo_tomsk
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Overrun_Tomsk
+	prerequisite = {
+		focus = PRC_Overrun_Tomsk
+	}
+	mutually_exclusive = {
+		focus = PRC_Purge_Them_All
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 578
+	}
+	bypass = {
+		NOT = {
+			country_exists = TOM
+			controls_state = 578
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Incorpore_Friendly_Elements"
+		custom_effect_tooltip = PRC_Incorpore_Friendly_Elements_tt
+		add_stability = -0.05
+		TNO_improve_admin_efficiency_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Purge_Them_All
+	icon = GFX_Generic_Political_Purge
+	cost = 3.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Spread_Political_Division
+	prerequisite = {
+		focus = PRC_Spread_Political_Division
+	}
+	mutually_exclusive = {
+		focus = PRC_Incorpore_Friendly_Elements
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 578
+	}
+	bypass = {
+		NOT = {
+			country_exists = TOM
+			controls_state = 578
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Incorpore_Friendly_Elements"
+		add_manpower = -500
+		TNO_improve_political_parties_policy_effectiveness_med = yes
+		SIB_increase_worker_tension_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Hunt_Down_the_Siberian_Falcon
+	icon = GFX_SIB_invade_novosibirsk
+	cost = 3.00
+	x = 3
+	y = 1
+	relative_position_id = PRC_The_Last_Fight
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war = no
+	}
+	bypass = {
+		OR = {
+			has_war_with = NOV
+			NOT = { country_exists = NOV }
+		}
+	}
+	prerequisite = {
+		focus = PRC_The_Last_Fight
+	}
+	will_lead_to_war_with = NOV
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Hunt_Down_the_Siberian_Falcon"
+		declare_war_on = {
+			target = NOV
+			type = annex_everything
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Infiltrate_Their_Army
+	icon = GFX_focus_prc_infiltration
+	cost = 3.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Hunt_Down_the_Siberian_Falcon
+	prerequisite = {
+		focus = PRC_Hunt_Down_the_Siberian_Falcon
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war_with = NOV
+	}
+	bypass = {
+		NOT = { has_war_with = NOV }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Infiltrate_Their_Army"
+		NOV = {
+			country_event = PRC.25
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Sabotage_Supply_Lines
+	icon = GFX_TNO_generic_arms_shipments
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Hunt_Down_the_Siberian_Falcon
+	prerequisite = {
+		focus = PRC_Hunt_Down_the_Siberian_Falcon
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		has_war_with = NOV
+	}
+	bypass = {
+		NOT = { has_war_with = NOV }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Sabotage_Supply_Lines"
+		NOV = {
+			country_event = PRC.26
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Siberian_Air_Fleet
+	icon = GFX_TNO_generic_socialist_plane
+	cost = 3.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Infiltrate_Their_Army
+	prerequisite = {
+		focus = PRC_Infiltrate_Their_Army
+	}
+	prerequisite = {
+		focus = PRC_Sabotage_Supply_Lines
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+		controls_state = 570
+	}
+	bypass = {
+		NOT = {
+			country_exists = NOV
+			controls_state = 570
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Siberian_Air_Fleet"
+		add_equipment_to_stockpile = {
+        type = cas_equipment
+        amount = 100
+        producer = PRC
+        }
+		570 = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Liberation_of_Siberia
+	icon = GFX_generic_socialist_movement
+	cost = 4.00
+	x = 2
+	y = 1
+	relative_position_id = PRC_Purge_Them_All
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_russian_prc_tt
+			OR = {
+				check_variable = { PRC_MON_divide > 0 }
+				NOT = { has_variable = PRC_MON_divide }
+			}
+		}
+#		custom_trigger_tooltip = {
+#			tooltip = PRC_has_formed_regional_tt
+#			has_cosmetic_tag = PRC_regional_unifier
+#		}
+		has_war = no
+		has_completed_focus = PRC_Decide_Our_Future
+		NOT = {
+			country_exists = NOV
+			country_exists = TOM
+			country_exists = KEM
+			country_exists = KRS
+			country_exists = SBA
+			country_exists = ALT
+		}
+	}
+	prerequisite = {
+		focus = PRC_Incorpore_Friendly_Elements
+		focus = PRC_Purge_Them_All
+	}
+	prerequisite = {
+		focus = PRC_The_Siberian_Air_Fleet
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Liberation_of_Siberia"
+		RUS_Smuta_Disable = yes
+#		custom_effect_tooltip = PRC_Liberation_of_Siberia_tt
+		TNO_improve_admin_efficiency_med = yes
+		country_event = {
+			id = PRC.61
+			days = 1
+		}
+		814 = {
+			remove_core_of = PRC
+			start_resistance = yes
+			set_compliance = 30
+		}
+		PRC_Improve_union_status = yes
+		hidden_effect = {
+			load_focus_tree = { tree = PRC_regional_tree keep_completed = yes }
+		}
+	}
+}
+
+#Regional Tree
+##tex did the poli side :)
+
+shared_focus = {
+	id = PRC_Secure_our_Position
+	icon = GFX_PRC_Siberian_Strategy
+	cost = 4.40
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Secure_our_Position"
+		country_event = { id = PRC.62 days = 1 } #capital event
+	}
+}
+##poli side starts here :)))
+shared_focus = {
+	id = PRC_The_Krasnoyarsk_Conference
+	icon = GFX_WAL_Generic_Papers
+	cost = 4.00
+	x = -3
+	y = 1
+
+	relative_position_id = PRC_Secure_our_Position
+	prerequisite = { focus = PRC_Secure_our_Position }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Krasnoyarsk_Conference"
+		country_event = { id = PRC.83 }
+	}
+}
+
+shared_focus = {
+	id = PRC_A_Way_Of_Hope
+	icon = GFX_TNO_generic_left_unity
+	cost = 4.00
+	x = -2
+	y = 1
+	relative_position_id = PRC_The_Krasnoyarsk_Conference
+	mutually_exclusive = { focus = PRC_Defenders_Of_The_Union }
+	prerequisite = { focus = PRC_The_Krasnoyarsk_Conference }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_A_Way_Of_Hope"
+		custom_effect_tooltip = PRC_A_Way_Of_Hope_tt
+	}
+}
+
+shared_focus = {
+	id = PRC_Defenders_Of_The_Union
+	icon = GFX_TNO_generic_left_unity_warfare
+	cost = 4.00
+	x = 2
+	y = 1
+	relative_position_id = PRC_The_Krasnoyarsk_Conference
+	mutually_exclusive = { focus = PRC_A_Way_Of_Hope }
+	prerequisite = { focus = PRC_The_Krasnoyarsk_Conference }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Defenders_Of_The_Union"
+		custom_effect_tooltip = PRC_Defenders_Of_The_Union_tt
+	}
+}
+
+shared_focus = {
+	id = PRC_Deal_With_Officers
+	icon = GFX_CAU_purge_the_bureaucrats
+	cost = 4.00
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_Deal_With_Officers_trigger_tt
+			check_variable = { PRC_Army_Loyalty > 49.9 }
+		}
+	}
+	x = 1
+	y = 1
+	relative_position_id = PRC_A_Way_Of_Hope
+	prerequisite = { focus = PRC_A_Way_Of_Hope }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Deal_With_Officers"
+		custom_effect_tooltip = PRC_Deal_With_Officers_tt
+		hidden_effect = {
+			random_owned_state = {
+				limit = { check_variable = { PRC_Owner = -1 } }
+				set_variable = { PRC_Owner = 0 }
+			}
+
+			random_owned_state = {
+				limit = { check_variable = { PRC_Owner = -1 } }
+				set_variable = { PRC_Owner = 0 }
+			}
+
+			random_owned_state = {
+				limit = { check_variable = { PRC_Owner = -1 } }
+				set_variable = { PRC_Owner = 0 }
+
+			}
+			subtract_from_variable = { PRC_Army_Power = 30 }
+			subtract_from_variable = { PRC_Army_Loyalty = 10 }
+			PRC_apply_relationship_effect = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Establish_A_Civilian_Goverment
+	icon = GFX_TNO_generic_public_houses
+	cost = 4.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_A_Way_Of_Hope
+	prerequisite = { focus = PRC_A_Way_Of_Hope }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Establish_A_Civilian_Goverment"
+		custom_effect_tooltip = PRC_Establish_A_Civilian_Goverment_tt
+		add_to_variable = { PRC_Civilian_Loyalty = 40 }
+		add_to_variable = { PRC_Civilian_Power = 40 }
+		PRC_apply_relationship_effect = yes
+		757= {
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = {econ_centralization_temp = -5}
+		econ_centralization_change = yes 
+	}
+}
+
+shared_focus = {
+	id = PRC_Deal_With_The_Administration
+
+	icon = GFX_CAU_The_Government_Purge
+	cost = 4.00
+	x = 5
+	y = 1
+	relative_position_id = PRC_A_Way_Of_Hope
+	prerequisite = { focus = PRC_Defenders_Of_The_Union }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Deal_With_The_Administration"
+		custom_effect_tooltip = PRC_Deal_With_The_Administration_tt
+		every_owned_state = {
+			limit = { check_variable = { PRC_Owner = 1 } }
+			set_variable = { PRC_Owner = 0 }
+		}
+		add_to_variable = { PRC_Civilian_Loyalty = -65 }
+		PRC_apply_relationship_effect = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Strength_Military_Institutions
+	icon = GFX_Against_The_Opposition
+	cost = 4.00
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = PRC_Strength_Military_Institutions_trigger_tt
+			check_variable = { PRC_Civilian_Power < 50 }
+		}
+	}
+	x = 3
+	y = 1
+	relative_position_id = PRC_A_Way_Of_Hope
+	prerequisite = { focus = PRC_Defenders_Of_The_Union }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Strength_Military_Institutions"
+		custom_effect_tooltip = PRC_Talk_To_The_Generals_tt
+		add_to_variable = { PRC_Army_Loyalty = 5 }
+		PRC_apply_relationship_effect = yes
+		578= {
+			add_building_construction = {
+				type = barracks
+				level = 1
+				instant_build = yes
+			}
+		}
+		
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = barracks
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = {econ_centralization_temp = 5}
+		econ_centralization_change = yes 
+	}
+}
+
+shared_focus = {
+	id = PRC_Talk_To_The_Generals
+	icon = GFX_BRT_Negotiate_With_Clique
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Deal_With_Officers
+	prerequisite = { focus = PRC_Deal_With_Officers }
+
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Talk_To_The_Generals"
+		custom_effect_tooltip = PRC_Talk_To_The_Generals_tt
+		add_to_variable = { PRC_Army_Loyalty = 5 }
+		PRC_apply_relationship_effect = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Decide_Power_Balance
+	icon = GFX_ORE_balancing_the_council
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Establish_A_Civilian_Goverment
+	prerequisite = { focus = PRC_Establish_A_Civilian_Goverment }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Decide_Power_Balance"
+		custom_effect_tooltip = PRC_Decide_Power_Balance_tt
+		set_temp_variable = { econ_centralization_temp = -10 }
+		econ_centralization_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Talk_To_The_Civilians
+	icon = GFX_WAL_Talk_with_socialist_militias
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Deal_With_The_Administration
+	prerequisite = { focus = PRC_Deal_With_The_Administration }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Talk_To_The_Civilians"
+		custom_effect_tooltip = PRC_Talk_To_The_Civilians_tt
+		add_to_variable = { PRC_Civilian_Loyalty = 15 }
+		PRC_apply_relationship_effect = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Ensure_Our_Rule
+	icon = GFX_ORE_codify_central_powers
+	cost = 4.00
+	x = 0
+	y = 1
+	available = {
+		has_completed_focus = PRC_Deal_With_The_Administration
+		has_completed_focus = PRC_Talk_To_The_Civilians
+	}
+	relative_position_id = PRC_Strength_Military_Institutions
+	prerequisite = { focus = PRC_Strength_Military_Institutions }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Ensure_Our_Rule"
+		#custom_effect_tooltip = PRC_Ensure_Our_Rule_tt
+		#set_country_flag = PRC_no_bonuses_from_civ
+		#set_variable = { PRC_pp_civilian_bonus = 0 }
+		#set_variable = { PRC_ic_civilian_bonus = 0 }
+		#set_variable = { PRC_agriculture_civilian_bonus = 0 }
+		custom_effect_tooltip = PRC_Strength_Military_Institutions_tt
+		add_to_variable = { PRC_Army_Power = 40 }
+		add_to_variable = { PRC_Army_Loyalty = 40 }
+		PRC_apply_relationship_effect = yes
+		TNO_improve_press_rights_policy_effectiveness_med = yes
+		set_temp_variable = {econ_centralization_temp = 10}
+		econ_centralization_change = yes 
+	}
+}
+
+shared_focus = {
+	id = PRC_A_New_Future
+	icon = GFX_generic_socialist_progressive_values
+	cost = 4.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Talk_To_The_Generals
+	available = {
+		has_completed_focus = PRC_Peace_In_Central_Siberia
+		if = {
+			limit = {
+				has_completed_focus = PRC_A_Way_Of_Hope
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_A_New_Future_trigger_1_tt
+				check_variable = { PRC_Army_Loyalty > 49.9 }
+				check_variable = { PRC_Civilian_Power > 49.9 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = PRC_Defenders_Of_The_Union
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_A_New_Future_trigger_2_tt
+				check_variable = { PRC_Civilian_Loyalty > 49.9 }
+				check_variable = { PRC_Army_Power > 49.9 }
+			}
+		}
+	}
+	prerequisite = {
+		focus = PRC_Talk_To_The_Generals
+		focus = PRC_Talk_To_The_Civilians
+	}
+	prerequisite = {
+		focus = PRC_Decide_Power_Balance
+		focus = PRC_Ensure_Our_Rule
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_A_New_Future"
+		custom_effect_tooltip = PRC_A_New_Future_tt
+		RUS_decrease_administrative_strain = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { PRC_Army_Power > PRC_Civilian_Power }
+					check_variable = { PRC_Army_Loyalty > 50 }
+				}
+				country_event = { id = PRC.68 } #Military overpowers citizens
+			}
+			else_if = {
+				limit = {
+					check_variable = { PRC_Civilian_Power > PRC_Army_Power }
+					check_variable = { PRC_Civilian_Loyalty > 50 }
+				}
+				country_event = { id = PRC.69 } #Citizens overpowers military
+			}
+			else = {
+				country_event = { id = PRC.70 } #Deadlock
+			}
+		}
+	}
+}
+
+
+shared_focus = {
+	id = PRC_The_New_Territories
+	icon = GFX_ORE_the_soviet_land_surveys
+	cost = 4.00
+	x = 4
+	y = 1
+	relative_position_id = PRC_Secure_our_Position
+	prerequisite = { focus = PRC_Secure_our_Position }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_New_Territories"
+		RUS_integration_cost_days_decrease = yes
+		add_stability = 0.05
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Kostins_Legacy
+	icon = GFX_goal_workers_fist
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_The_New_Territories
+	prerequisite = { focus = PRC_The_New_Territories }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Kostins_Legacy"
+		country_event = PRC.85
+		set_country_flag = PRC_can_give_non_cores
+		custom_effect_tooltip = PRC_Kostins_Legacy_tt
+	}
+}
+
+shared_focus = {
+	id = PRC_Pardon_Them
+	icon = GFX_TNO_generic_liberating_camps_prisoners
+	cost = 4.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Kostins_Legacy
+	mutually_exclusive = { focus = PRC_Smash_Them }
+	prerequisite = { focus = PRC_Kostins_Legacy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Pardon_Them"
+		custom_effect_tooltip = PRC_raise_military_effect_loyalty_tt
+		add_to_variable = { PRC_Army_Loyalty = 5 }
+	}
+}
+
+shared_focus = {
+	id = PRC_Smash_Them
+	icon = GFX_YUN_Public_Executions
+	cost = 4.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Kostins_Legacy
+	mutually_exclusive = { focus = PRC_Pardon_Them }
+	prerequisite = { focus = PRC_Kostins_Legacy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Smash_Them"
+		custom_effect_tooltip = PRC_raise_civilian_effect_loyalty_tt
+		add_to_variable = { PRC_Civilian_Loyalty = 5 }
+		tno_security_improve = yes
+		TNO_worsen_security_policy_effectiveness_high = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Defeat_Warlord_Pockets
+	icon = GFX_GER_A_Gentle_Purge
+	cost = 4.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Smash_Them
+	prerequisite = { focus = PRC_Smash_Them }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Defeat_Warlord_Pockets"
+		add_manpower = -1500
+		RUS_integration_cost_days_decrease = yes
+		add_to_variable = { PRC_Army_Loyalty = -10 }
+		custom_effect_tooltip = PRC_lower_military_effect_loyalty_tt
+		TNO_improve_security_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Make_An_Offer
+	icon = GFX_Generic_Liberty_Handshake
+	cost = 4.00
+	x = -1
+	y = 1
+	relative_position_id = PRC_Pardon_Them
+	prerequisite = { focus = PRC_Pardon_Them }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Make_An_Offer"
+		custom_effect_tooltip = PRC_raise_military_effect_power_tt
+		add_to_variable = { PRC_Army_Power = 10 }
+		add_manpower = 5000
+	}
+}
+
+shared_focus = {
+	id = PRC_Integrate_Our_Land
+	icon = GFX_IND_National_Land_Reform
+	cost = 4.00
+	x = 1
+	y = 1
+	relative_position_id = PRC_Pardon_Them
+	prerequisite = {
+		focus = PRC_Pardon_Them
+		focus = PRC_Smash_Them
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Integrate_Our_Land"
+		RUS_decrease_administrative_strain = yes
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.6 }
+		econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { inflation_temp = 0.2 }
+		econ_inflation_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Towards_Peace_And_Unity
+	icon = GFX_IRK_remember_the_revolution
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Make_An_Offer
+	prerequisite = { focus = PRC_Make_An_Offer }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Towards_Peace_And_Unity"
+		add_stability = 0.05
+		#SIB_decrease_consumer_goods_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Put_Traitors_On_Trial
+	icon = GFX_generic_trials
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Defeat_Warlord_Pockets
+	prerequisite = { focus = PRC_Defeat_Warlord_Pockets }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Put_Traitors_On_Trial"
+		country_event = { id = PRC.84 }
+	}
+}
+
+shared_focus = {
+	id = PRC_Birth_Of_A_State
+	icon = GFX_TYM_new_soviet_spirit
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Integrate_Our_Land
+	prerequisite = { focus = PRC_Integrate_Our_Land }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Birth_Of_A_State"
+		TNO_improve_industrial_equipment_low = yes
+		TNO_improve_agriculture_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Peace_In_Central_Siberia
+	icon = GFX_IRK_Red_Siberia
+	cost = 4.00
+	x = 0
+	y = 1
+	relative_position_id = PRC_Birth_Of_A_State
+	prerequisite = {
+		focus = PRC_Towards_Peace_And_Unity
+		focus = PRC_Put_Traitors_On_Trial
+	}
+	prerequisite = { focus = PRC_Birth_Of_A_State }
+
+	completion_reward = {
+		RUS_decrease_administrative_strain = yes
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Peace_In_Central_Siberia"
+		custom_effect_tooltip = PRC_raise_civilian_effect_loyalty_tt
+		custom_effect_tooltip = PRC_raise_military_effect_loyalty_tt
+		add_to_variable = { PRC_Army_Loyalty = 5 }
+		add_to_variable = { PRC_Civilian_Loyalty = 5 }
+		add_political_power = 25
+		add_stability = 0.05
+		TNO_improve_admin_efficiency_low = yes
+	}
+}
+
+#Military Tree
+
+shared_focus = {
+	id = PRC_Into_the_Military_Front
+	icon = GFX_KOM_army_for_the_motherland_ultravisionary
+	cost = 4.40
+	x = 17
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Into_the_Military_Front"
+		army_experience = 30
+		army_funding_minimal_increase_low = yes
+		army_funding_maximal_increase_low = yes
+		set_temp_variable = { interest_rates_temp = 0.03 } 
+		econ_interest_rates_change = yes 
+	}
+}
+
+shared_focus = {
+	id = PRC_Great_Patriotic_War_Legacy
+	icon = GFX_YUN_The_Chinese_Army_Unbowed
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Into_the_Military_Front
+	mutually_exclusive = {
+		focus = PRC_Warlord_Era_Legacy
+	}
+	prerequisite = {
+		focus = PRC_Into_the_Military_Front
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Great_Patriotic_War_Legacy"
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = cat_strategic_theorem
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Warlord_Era_Legacy
+	icon = GFX_CAU_purge_the_officers
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Into_the_Military_Front
+	mutually_exclusive = {
+		focus = PRC_Great_Patriotic_War_Legacy
+	}
+	prerequisite = {
+		focus = PRC_Into_the_Military_Front
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Warlord_Era_Legacy"
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = cat_combined_operations
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Our_Man_Will_March
+	icon = GFX_TNO_generic_Marching_Men_Soviet
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Warlord_Era_Legacy
+	prerequisite = {
+		focus = PRC_Warlord_Era_Legacy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Our_Man_Will_March"
+		add_timed_idea = {
+			idea = PRC_Infantry_idea_1
+			days = 1800
+		}
+		set_temp_variable = { inflation_temp = 0.1 }
+		econ_inflation_change = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.12 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Our_Tanks_Will_Run
+	icon = GFX_TNO_generic_socialist_tank
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Great_Patriotic_War_Legacy
+	prerequisite = {
+		focus = PRC_Great_Patriotic_War_Legacy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [RFoot.GetName]: Focus PRC_Our_Tanks_Will_Run"
+		add_timed_idea = {
+			idea = PRC_Tank_idea_1
+			days = 1800
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.25 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Right_Hand_of_the_Soldiers
+	icon = GFX_generic_artillery_warfare
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Our_Tanks_Will_Run
+	prerequisite = {
+		focus = PRC_Our_Man_Will_March
+		focus = PRC_Our_Tanks_Will_Run
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Right_Hand_of_the_Soldiers"
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 1
+			category = artillery
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 540
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Army_of_the_Tundras
+	icon = GFX_IRK_ironclad_union
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Our_Man_Will_March
+	prerequisite = {
+		focus = PRC_Our_Man_Will_March
+		focus = PRC_Our_Tanks_Will_Run
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Army_of_the_Tundras"
+		tno_training_improve = yes
+		hidden_effect = {
+			set_variable = {
+				var = tno_training_effectiveness
+				value = 10
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Expand_Helicopter_Divisions
+	icon = GFX_TNO_generic_helicopter
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Our_Man_Will_March
+	prerequisite = {
+		focus = PRC_Our_Man_Will_March
+		focus = PRC_Our_Tanks_Will_Run
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Expand_Helicopter_Divisions"
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = helicopter
+		}
+		set_temp_variable = {temp_econ_spending_amount = 0.2}
+		econ_spend_money_once_effect_raw_money = yes
+		add_equipment_to_stockpile = {
+			type = transport_helicopter_equipment
+			amount = 100
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Red_Air_Force
+	icon = GFX_TNO_generic_socialist_plane
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Right_Hand_of_the_Soldiers
+	prerequisite = {
+		focus = PRC_Right_Hand_of_the_Soldiers
+	}
+	prerequisite = {
+		focus = PRC_Expand_Helicopter_Divisions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Red_Air_Force"
+		air_experience = 30
+		set_temp_variable = { temp_econ_spending_amount = 0.2 }
+		econ_spend_money_once_effect_raw_money = yes
+
+		570 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = air_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Bomber-Focused_Doctrine
+	icon = GFX_ANG_bomber_buildup
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Red_Air_Force
+	mutually_exclusive = {
+		focus = PRC_Fighter-Focused_Doctrine
+	}
+	prerequisite = {
+		focus = PRC_Red_Air_Force
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Bomber-Focused_Doctrine"
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = air_parity
+		}
+		add_equipment_to_stockpile = {
+			type = cas_equipment
+			amount = 150
+			producer = PRC
+        }
+	}
+}
+
+shared_focus = {
+	id = PRC_Fighter-Focused_Doctrine
+	icon = GFX_generic_jet_fighter_1
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Red_Air_Force
+	mutually_exclusive = {
+		focus = PRC_Bomber-Focused_Doctrine
+	}
+	prerequisite = {
+		focus = PRC_Red_Air_Force
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Bomber-Focused_Doctrine"
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = air_superiority
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 150
+			producer = PRC
+        }
+	}
+}
+
+
+shared_focus = {
+	id = PRC_Foreign_Weapons
+	icon = GFX_DRL_Soviet_Arms
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Army_of_the_Tundras
+	available = {
+		has_completed_focus = PRC_Foreign_Advisors
+	}
+	prerequisite = {
+		focus = PRC_Army_of_the_Tundras
+	}
+	prerequisite = {
+		focus = PRC_Expand_Helicopter_Divisions
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Foreign_Weapons"
+		country_event = { id = PRC.92 days = 1 }
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 800
+			producer = USA
+		}
+		add_equipment_to_stockpile = {
+			type = anti_tank_equipment
+			amount = 150
+			producer = USA
+		}
+		if = { 
+			limit = { 
+				has_dlc = "No Step Back"
+			}
+			add_equipment_to_stockpile = {
+				type = IFV_chassis_2
+				amount = 75
+				producer = USA
+				variant_name = "M706 Commando"
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = {
+				type = IFV_equipment
+				amount = 75
+				producer = USA
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Soviet_War_Machine
+	icon = GFX_GER_mobile_infantry
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Foreign_Weapons
+	prerequisite = {
+		focus = PRC_Foreign_Weapons
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Soviet_War_Machine"
+		TNO_improve_army_professionalism_high = yes
+		TNO_improve_training_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Restoring_our_Riches
+	icon = GFX_BRT_Mind_the_Economy
+	cost = 4.40
+	x = 26
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Restoring_our_Riches"
+		set_temp_variable = {temp_econ_GDP_boost_percentage = 0.05}
+		econ_GDP_boost_once_percentage = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Establish_a_Budget
+	icon = GFX_TNO_generic_gold_bars
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Restoring_our_Riches
+	prerequisite = {
+		focus = PRC_Restoring_our_Riches
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Establish_a_Budget"
+		country_event = { id = PRC.90 days = 1 }
+		#SIB_decrease_consumer_goods_med = yes
+		tno_income_taxation_improve = yes
+		TNO_improve_admin_efficiency_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Siberian_Wealth
+	icon = GFX_SVR_The_Resources_of_Siberia
+	cost = 4.40
+	x = -3
+	y = 1
+	relative_position_id = PRC_Establish_a_Budget
+	prerequisite = {
+		focus = PRC_Establish_a_Budget
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Siberian_Wealth"
+		set_temp_variable = { temp_econ_spending_amount = 0.5 }
+		econ_spend_money_once_effect_raw_money = yes
+		SIB_increase_ic_high = yes
+		569 = {
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+		}
+		757 = {
+			add_building_construction = {
+				type = hospitals
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { inflation_temp = 0.3}
+		econ_inflation_change = yes
+		set_temp_variable = { gdp_growth_temp = 1 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Novosibirsk_Civilian_Industry
+	icon = GFX_TNO_generic_socialist_industry
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_The_Siberian_Wealth
+	prerequisite = {
+		focus = PRC_The_Siberian_Wealth
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Novosibirsk_Civilian_Industry"
+		set_temp_variable = { temp_econ_spending_amount = 0.3 }
+		econ_spend_money_once_effect_raw_money = yes
+		570 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = offices
+				level = 1
+				instant_build = yes
+			}
+			add_to_variable = {
+				state_GDP_growth_factor_modifier = 1
+			}
+			set_temp_variable = { state_value_multiplier_temp = 1.03 }
+			econ_state_value_change_multiply = yes
+			
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Biysk_Military_Industry
+	icon = GFX_generic_advanced_weapons
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_The_Siberian_Wealth
+	prerequisite = {
+		focus = PRC_The_Siberian_Wealth
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Biysk_Military_Industry"
+		set_temp_variable = { temp_econ_spending_amount = 0.5 }
+		econ_spend_money_once_effect_raw_money = yes
+		654 = {
+			set_temp_variable = { temp_state_value_addition = 0.4 }
+			econ_state_value_change_addition = yes
+			add_to_variable = {state_GDP_growth_factor_modifier = 0.1}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Oil_Exploration
+	icon = GFX_Protect_the_oil
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Novosibirsk_Civilian_Industry
+	prerequisite = {
+		focus = PRC_Novosibirsk_Civilian_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Oil_Exploration"
+		set_temp_variable = { temp_econ_spending_amount = 0.1 }
+		econ_spend_money_once_effect_raw_money = yes
+		SIB_increase_resources_high = yes
+		add_resource = {
+			type = oil
+			amount = 6
+			state = 577
+		}
+		577 = {
+			set_temp_variable = { temp_state_value_addition = 0.05 }
+			econ_state_value_change_addition_specified_state = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Connect_the_Cities
+	icon = GFX_ITA_Modernize_the_Infrastructures
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Novosibirsk_Civilian_Industry
+	prerequisite = {
+		focus = PRC_Novosibirsk_Civilian_Industry
+	}
+	prerequisite = {
+		focus = PRC_Biysk_Military_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Connect_the_Cities"
+		set_temp_variable = { temp_econ_spending_amount = 0.5}
+		econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { inflation_temp = 0.5 }
+		econ_inflation_change = yes
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+			
+				modifier = {
+				tag = PRC
+				add = 2
+				}
+			}
+			fallback = yes
+			path = { 7825 7274 4866 4789 12631 1685 13299 1816 10649 10580 10712 7815 4724 12691 12621 }
+			start_province = 7825
+			target_province = 12621
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Norilsk_Legacy
+	icon = GFX_The_Model_City
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Biysk_Military_Industry
+	prerequisite = {
+		focus = PRC_Biysk_Military_Industry
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Norilsk_Legacy"
+		TNO_improve_industrial_equipment_high = yes
+		set_temp_variable = { gdp_growth_temp = 0.15 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_tuning_our_economy
+	icon = GFX_ITA_center_of_production
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Connect_the_Cities
+
+	allow_branch = {
+		NOT = {
+			has_country_flag = PRC_civ_eco
+			has_country_flag = PRC_war_eco
+		}
+	}
+	prerequisite = {
+		focus = PRC_Oil_Exploration
+	}
+	prerequisite = {
+		focus = PRC_Connect_the_Cities
+	}
+	prerequisite = {
+		focus = PRC_Norilsk_Legacy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Expand_Industrial_Centers"
+		set_temp_variable = { gdp_growth_temp = 0.25 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { inflation_temp = -0.15 }
+		econ_inflation_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Expand_Industrial_Centers
+	icon = GFX_ITA_center_of_production
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Connect_the_Cities
+	mutually_exclusive = {
+		focus = PRC_Prepared_for_War
+	}
+	allow_branch = {
+		has_country_flag = PRC_civ_eco
+	}	
+	prerequisite = {
+		focus = PRC_Oil_Exploration
+	}
+	prerequisite = {
+		focus = PRC_Connect_the_Cities
+	}
+	prerequisite = {
+		focus = PRC_Norilsk_Legacy
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Expand_Industrial_Centers"
+		set_temp_variable = { interest_rates_temp = 0.35 }
+		econ_interest_rates_change = yes 
+		SIB_increase_construction_speed_med = yes
+		SIB_increase_max_efficiency_med = yes
+		set_temp_variable = { gdp_growth_temp = 1.8 } 
+		econ_gdp_growth_change = yes
+		set_temp_variable = { inflation_temp = 0.4 }
+		econ_inflation_change = yes
+		econ_raise_max_credit_rating = yes
+	}
+}
+
+
+shared_focus = {
+	id = PRC_Prepared_for_War
+	icon = GFX_SVR_Sverdlovsk_Tank_Factory
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Connect_the_Cities
+	allow_branch = {
+		has_country_flag = PRC_war_eco
+	}
+	mutually_exclusive = {
+		focus = PRC_Expand_Industrial_Centers
+	}
+	prerequisite = {
+		focus = PRC_Norilsk_Legacy
+	}
+	prerequisite = {
+		focus = PRC_Connect_the_Cities
+	}
+	prerequisite = {
+		focus = PRC_Oil_Exploration
+	}	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Prepared_for_War"
+		#SIB_decrease_consumer_goods_high = yes
+		SIB_decrease_max_efficiency_med = yes
+		set_temp_variable = { gdp_growth_temp = 1 } 
+		econ_gdp_growth_change = yes
+		add_ideas = PRC_preparation_for_war
+	}
+}
+
+shared_focus = {
+	id = PRC_Into_the_Modern_Age
+	icon = GFX_IRK_The_International_Factory
+	cost = 4.40
+	x = 3
+	y = 1
+	relative_position_id = PRC_Establish_a_Budget
+	prerequisite = {
+		focus = PRC_Establish_a_Budget
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Into_the_Modern_Age"
+		set_temp_variable = { temp_econ_spending_amount = 0.1 }
+		econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { inflation_temp = 0.5 }
+		econ_inflation_change = yes
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Soviet_Worker
+	icon = GFX_IRK_construction
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Into_the_Modern_Age
+	prerequisite = {
+		focus = PRC_Into_the_Modern_Age
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Soviet_Worker"
+		RUS_decrease_administrative_strain = yes
+		SIB_increase_max_efficiency_high = yes
+		TNO_improve_minimum_wage_policy_effectiveness_med = yes
+		tno_pensions_improve = yes
+		TNO_worsen_pensions_policy_effectiveness_high = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Farms_of_the_Future
+	icon = GFX_CHI_New_Farming_Techniques
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_The_Soviet_Worker
+	prerequisite = {
+		focus = PRC_The_Soviet_Worker
+	}
+	completion_reward = {
+		set_temp_variable = {temp_econ_spending_amount = 0.5}
+		econ_spend_money_once_effect_raw_money = yes
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Farms_of_the_Future"
+		set_temp_variable = { inflation_temp = 0.2 }
+		econ_inflation_change = yes
+		
+		TNO_improve_agriculture_med = yes
+		TNO_improve_poverty_high = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_New_Industrial_Methods
+	icon = GFX_TNO_generic_socialist_industry
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_The_Soviet_Worker
+	prerequisite = {
+		focus = PRC_The_Soviet_Worker
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_New_Industrial_Methods"
+		TNO_improve_industrial_expertise_high = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Import_Electronic_Designs
+	icon = GFX_CHI_Adapt_Computer_Designs
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_New_Industrial_Methods
+	prerequisite = {
+		focus = PRC_New_Industrial_Methods
+	}
+	prerequisite = {
+		focus = PRC_Farms_of_the_Future
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Import_Electronic_Designs"
+		TNO_improve_industrial_equipment_high = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.2 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Education_for_All
+	icon = GFX_TYM_new_soviet_family
+	cost = 4.40
+	x = 3
+	y = 1
+	relative_position_id = PRC_Into_the_Modern_Age
+	prerequisite = {
+		focus = PRC_Into_the_Modern_Age
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Education_for_All"
+		TNO_improve_academic_base_med = yes
+		TNO_improve_education_policy_effectiveness_monthly_low = yes
+		set_temp_variable = { temp_econ_spending_amount = 0.6 }
+		econ_spend_money_once_effect_raw_money = yes
+		random_owned_state = {
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Restore_the_Universities
+	icon = GFX_KOM_socialist_science
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Education_for_All
+	prerequisite = {
+		focus = PRC_Education_for_All
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Restore_the_Universities"
+		country_event = { id = PRC.93 days = 1 }
+		578 = {
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}
+		}
+		570 = {
+			add_building_construction = {
+				type = schools
+				level = 1
+				instant_build = yes
+			}	
+		}
+		TNO_improve_research_facilities_med = yes
+		TNO_improve_education_policy_effectiveness_monthly_low = yes
+		RUS_decrease_administrative_strain = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_The_International_Field
+	icon = GFX_KOM_restore_international_trade
+	cost = 4.40
+	x = 37
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_International_Field"
+		custom_effect_tooltip = PRC_The_International_Field_tt
+	}
+}
+
+shared_focus = {
+	id = PRC_Over_the_Asian_Continent
+	icon = GFX_CNT_Asia
+	cost = 4.40
+	x = -2
+	y = 1
+	relative_position_id = PRC_The_International_Field
+	prerequisite = {
+		focus = PRC_The_International_Field
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Over_the_Asian_Continent"
+		PRC_increase_trade_idea = yes
+		TNO_improve_trade_laws_policy_effectiveness_high = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Search_for_Recognition
+	icon = GFX_TNO_generic_soviet_coat_of_arms
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Over_the_Asian_Continent
+	prerequisite = {
+		focus = PRC_Over_the_Asian_Continent
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Search_for_Recognition"
+		every_country = {
+			limit = {
+				is_warlord = no
+				is_russian_nation = no
+				NOT = { tag = ZZZ }
+				capital_scope = {
+					is_on_continent = asia
+				}
+			}
+			add_opinion_modifier = { target = PRC modifier = RUS_recognition }
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_The_Central_Asia_Countries
+	icon = GFX_TRK_Redraw_Traditional_Borders
+	cost = 4.40
+	x = -1
+	y = 1
+	relative_position_id = PRC_Search_for_Recognition
+	prerequisite = {
+		focus = PRC_Search_for_Recognition
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_The_Central_Asia_Countries"
+		every_country = {
+			limit = {
+				OR = {
+					tag = TRK
+					tag = UZB
+					tag = KRK
+					tag = TAJ
+					tag = KYR
+				}
+			}
+			TNO_improve_trade_laws_policy_effectiveness_med = yes
+			set_temp_variable = { temp_modifier = 25 }
+			PRC = { add_to_trade_modifier_PREV = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Solidarity_to_the_Socialist_Cause
+	icon = GFX_generic_communist_deal
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Search_for_Recognition
+	prerequisite = {
+		focus = PRC_Search_for_Recognition
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Solidarity_to_the_Socialist_Cause"
+		every_other_country = {
+			limit = {
+				OR = {
+					has_government = communist
+					has_government = socialist
+				}
+				comintern_disabled = no
+				is_russian_nation = no
+			}
+			set_temp_variable = { temp_modifier = 25 }
+			PRC = { add_to_trade_modifier_PREV = yes }
+		}
+		PRC_increase_trade_idea = yes
+		TNO_run_socintern_script = yes
+		TNO_improve_trade_laws_policy_effectiveness_low = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Friends_in_the_Western_Hemisphere
+	icon = GFX_USA_American_Federation_Of_Labor
+	cost = 4.40
+	x = 2
+	y = 1
+	relative_position_id = PRC_The_International_Field
+	prerequisite = {
+		focus = PRC_The_International_Field
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Friends_in_the_Western_Hemisphere"
+		every_country = {
+			limit = {
+				is_warlord = no
+				is_russian_nation = no
+				NOT = { tag = ZZZ }
+				capital_scope = {
+					is_on_continent = north_america
+				}
+			}
+			add_opinion_modifier = { target = PRC modifier = RUS_recognition }
+		}
+		country_event = { id = PRC.91 days = 1 }
+	}
+}
+
+shared_focus = {
+	id = PRC_Deal_with_the_OFN
+	icon = GFX_goal_OFN_COG_The_Leopoldville_Committee
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Friends_in_the_Western_Hemisphere
+	prerequisite = {
+		focus = PRC_Friends_in_the_Western_Hemisphere
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Deal_with_the_OFN"
+		PRC_increase_trade_idea = yes
+		TNO_improve_trade_laws_policy_effectiveness_high = yes
+		every_country = {
+			limit = {
+				is_in_faction_with = USA
+			}
+			set_temp_variable = { temp_modifier = 25 }
+			PRC = { add_to_trade_modifier_PREV = yes }
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_Foreign_Advisors
+	icon = GFX_goal_OFN_CAR_American_Foreign_Legions
+	cost = 4.40
+	x = 0
+	y = 1
+	relative_position_id = PRC_Deal_with_the_OFN
+	prerequisite = {
+		focus = PRC_Deal_with_the_OFN
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Foreign_Advisors"
+		TNO_improve_army_professionalism_med = yes
+		set_temp_variable = { gdp_growth_temp = 0.002 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_Taking_Back_our_Place
+	icon = GFX_SBA_revolutionary_reconstruction
+	cost = 4.40
+	x = 1
+	y = 1
+	relative_position_id = PRC_Solidarity_to_the_Socialist_Cause
+	prerequisite = {
+		focus = PRC_The_Central_Asia_Countries
+	}
+	prerequisite = {
+		focus = PRC_Solidarity_to_the_Socialist_Cause
+	}
+	prerequisite = {
+		focus = PRC_Foreign_Advisors
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_Taking_Back_our_Place"
+		add_stability = 0.10
+	}
+	
+}
+
+#SUPERREGIONAL TREES
+
+shared_focus = {
+	id = PRC_MIL_A_United_Siberia
+	icon = GFX_IRK_Red_Siberia
+	cost = 2.3
+	x = 6
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_A_United_Siberia"
+		add_stability = 0.10
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Securing_Far_East
+	icon = GFX_UPO_Secure_the_Bombs
+	cost = 2.3
+	x = -2
+	y = 1
+	relative_position_id = PRC_MIL_A_United_Siberia
+	prerequisite = { focus = PRC_MIL_A_United_Siberia }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Securing_Far_East"
+		add_political_power = 50
+		RUS_integration_cost_days_decrease = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_The_Soviet_Navy
+	icon = GFX_FEN_The_Red_Navy
+	cost = 2.3
+	x = 0
+	y = 1
+	relative_position_id = PRC_MIL_A_United_Siberia
+	prerequisite = { focus = PRC_MIL_A_United_Siberia }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_The_Soviet_Navy"
+		country_event = { id = PRC.96 days = 1 }
+		navy_experience = 25
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = naval_equipment
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Open_New_Doors
+	icon = GFX_USA_Door_in_Face
+	cost = 2.3
+	x = 2
+	y = 1
+	relative_position_id = PRC_MIL_A_United_Siberia
+	prerequisite = { focus = PRC_MIL_A_United_Siberia }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Open_New_Doors"
+		set_temp_variable = { gdp_growth_temp = 1 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Rebuild_The_Cities
+	icon = GFX_JAP_Rebuilding_the_Cities
+	cost = 2.3
+	x = -1
+	y = 1
+	relative_position_id = PRC_MIL_Securing_Far_East
+	prerequisite = { focus = PRC_MIL_Securing_Far_East }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Rebuild_The_Cities"
+		TNO_improve_poverty_med = yes
+		set_temp_variable = {temp_econ_GDP_boost_percentage = 0.05}
+		econ_GDP_boost_once_percentage = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Invite_Their_Scientists
+	icon = GFX_KOM_socialist_science
+	cost = 2.3
+	x = 0
+	y = 1
+	relative_position_id = PRC_MIL_Rebuild_The_Cities
+	prerequisite = { focus = PRC_MIL_Rebuild_The_Cities }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Invite_Their_Scientists"
+		TNO_improve_research_facilities_high = yes
+		add_timed_idea = { idea = PRC_Age_of_Science days = 720 }
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Move_Our_Troops
+	icon = GFX_TNO_generic_Marching_Men_Soviet
+	cost = 2.3
+	x = 1
+	y = 1
+	relative_position_id = PRC_MIL_Securing_Far_East
+	prerequisite = { focus = PRC_MIL_Securing_Far_East }
+	prerequisite = { focus = PRC_MIL_The_Soviet_Navy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Move_Our_Troops"
+		country_event = { id = PRC.87 days = 1 }
+		army_experience = 30
+		TNO_improve_army_professionalism_med = yes
+		add_timed_idea = { idea = PRC_Preparing_for_Unification days = 720 }
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Reallocate_Our_Forts
+	icon = GFX_YUN_Fortify_The_Border
+	cost = 2.3
+	x = 0
+	y = 1
+	relative_position_id = PRC_MIL_Move_Our_Troops
+	prerequisite = { focus = PRC_MIL_Move_Our_Troops }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Reallocate_Our_Forts"
+		custom_effect_tooltip = PRC_MIL_Reallocate_Our_Forts_tt
+		TNO_improve_training_policy_effectiveness_med = yes
+		
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					NOT = {
+						any_neighbor_state = { is_controlled_by = RWS }
+						any_province_building_level = { building = bunker level > 1 }
+					}
+				}
+				set_building_level = { type = bunker level = 1 instant_build = yes }
+			}
+		}
+		every_owned_state = {
+			limit = {
+				any_neighbor_state = {
+					owner = { is_russian_nation = yes }
+				}
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Looking_Into_The_West
+	icon = GFX_RUS_russia_superregional
+	cost = 2.3
+	x = 1
+	y = 1
+	relative_position_id = PRC_MIL_Invite_Their_Scientists
+	prerequisite = { focus = PRC_MIL_Invite_Their_Scientists }
+	prerequisite = { focus = PRC_MIL_Reallocate_Our_Forts }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Looking_Into_The_West"
+		TNO_improve_conscription_policy_effectiveness_med = yes
+		if = {
+			limit = {
+				RWS = {
+					has_government = communist
+				}
+			}
+			RWS = {
+				add_opinion_modifier = {
+					target = SIB
+					modifier = TNO_opened_diplomatic_relations
+				}
+				reverse_add_opinion_modifier = {
+					target = SIB
+					modifier = TNO_opened_diplomatic_relations
+				}
+			}
+		}
+		else = {
+			add_war_support = 0.10
+			add_manpower = 65000
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Port_Modernization_Program
+	icon = GFX_Generic_Ship_Trade
+	cost = 2.3
+	x = 1
+	y = 1
+	relative_position_id = PRC_MIL_The_Soviet_Navy
+	prerequisite = { focus = PRC_MIL_Open_New_Doors }
+	prerequisite = { focus = PRC_MIL_The_Soviet_Navy }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Port_Modernization_Program"
+		886 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 1772
+			}
+		}
+		562 = {
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 12683
+			}
+		}
+		set_temp_variable = { temp_econ_spending_amount = 0.2 }
+		econ_spend_money_once_effect_raw_money = yes		
+		set_temp_variable = { inflation_temp = 0.1 }
+		econ_inflation_change = yes
+		add_equipment_to_stockpile = { type = convoy amount = 70 }
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_The_Pacific_Route
+	icon = GFX_KOM_restore_international_trade
+	cost = 2.3
+	x = 0
+	y = 1
+	relative_position_id = PRC_MIL_Port_Modernization_Program
+	prerequisite = { focus = PRC_MIL_Port_Modernization_Program }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_The_Pacific_Route"
+		custom_effect_tooltip = PRC_MIL_The_Pacific_Route_tt
+		every_other_country = {
+			limit = {
+				AND = {
+					is_warlord = no
+					is_subject = no
+					is_russian_nation = no
+					NOT = {
+						OR = {
+							is_in_faction_with = USA
+							is_in_faction_with = JAP
+							is_in_faction_with = GER
+						}
+					}
+					capital_scope = {
+						OR = {
+							is_on_continent = asia
+							is_on_continent = north_america
+							is_on_continent = south_america
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
+			log = "[GetDateText]: [tHIS.GetName] : PRC TEST"
+			set_temp_variable = { temp_modifier = 25 }
+			PRC = { add_to_trade_modifier_PREV = yes }
+			TNO_improve_trade_laws_policy_effectiveness_low = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_Roads_Through_The_Wastes
+	icon = GFX_IBR_open_road
+	cost = 2.3
+	x = 1
+	y = 1
+	relative_position_id = PRC_MIL_Open_New_Doors
+	prerequisite = { focus = PRC_MIL_Open_New_Doors }
+	prerequisite = { focus = PRC_MIL_The_Soviet_Navy }
+
+	completion_reward = {
+		set_temp_variable = { temp_econ_spending_amount = 0.8 }
+		econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { inflation_temp = 0.3 }
+		econ_inflation_change = yes
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_Roads_Through_The_Wastes"
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_The_Siberian_Trains
+	icon = GFX_SBA_repair_the_trans_siberian_railway
+	cost = 2.3
+	x = 0
+	y = 1
+	relative_position_id = PRC_MIL_Roads_Through_The_Wastes
+	prerequisite = { focus = PRC_MIL_Roads_Through_The_Wastes }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_The_Siberian_Trains"
+		country_event = { id = PRC.88 days = 1 }
+		set_temp_variable = { temp_econ_spending_amount = 0.3 }
+		econ_spend_money_once_effect_raw_money = yes
+		set_temp_variable = { gdp_growth_temp = 0.4 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { inflation_temp = 0.2 }
+		econ_inflation_change = yes
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = industry
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_The_Workers_Example
+	icon = GFX_goal_workers_fist
+	cost = 2.3
+	x = 1
+	y = 1
+	relative_position_id = PRC_MIL_The_Pacific_Route
+	prerequisite = { focus = PRC_MIL_The_Pacific_Route }
+	prerequisite = { focus = PRC_MIL_The_Siberian_Trains }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_The_Workers_Example"
+		tno_minimum_wage_improve = yes
+		TNO_improve_minimum_wage_policy_effectiveness_med = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_MIL_A_Renewed_Union
+	icon = GFX_TNO_generic_soviet_flag
+	cost = 2.3
+	x = 2
+	y = 1
+	relative_position_id = PRC_MIL_Looking_Into_The_West
+	prerequisite = { focus = PRC_MIL_Looking_Into_The_West }
+	prerequisite = { focus = PRC_MIL_The_Workers_Example }
+
+	completion_reward = {
+		PRC_Improve_union_status = yes
+		log = "[GetDateText]: [Root.GetName]: Focus PRC_MIL_A_Renewed_Union"
+		country_event = { id = PRC.89 days = 1 }
+		add_stability = 0.10
+	}
+}

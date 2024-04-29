@@ -1,0 +1,64 @@
+characters = {
+	MON_yumjaagiin_tsedenbal = {
+		name = MON_yumjaagiin_tsedenbal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MON/Portrait_Mongolia_Yuumjaagiin_Tsedenbal.dds"
+				small = "GFX_idea_MON_Yuumjaagiin_Tsedenbal"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_YUMJAAGIIN_TSEDENBAL_DESC"
+			expire = "1965.1.1"
+			ideology = despotism_civilian_dictatorship_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	MON_Generic_Vacant = {
+		name = Generic_Vacant_Minister
+		portraits = {
+			civilian = { small = "GFX_idea_Generic_Position_Vacant" }
+		}
+		advisor = {
+			slot = head_of_government
+			traits = { head_of_government }
+			idea_token = MON_Generic_Vacant_hog
+			ledger = civilian
+			cost = -1
+				removal_cost = -1
+			allowed = { original_tag = MON }
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = economy_minister
+			traits = { economy_minister }
+			idea_token = MON_Generic_Vacant_eco
+			ledger = civilian
+			cost = -1
+				removal_cost = -1
+			allowed = { original_tag = MON }
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = foreign_minister
+			traits = { foreign_minister }
+			idea_token = MON_Generic_Vacant_for
+			ledger = civilian
+			cost = -1
+				removal_cost = -1
+			allowed = { original_tag = MON }
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = security_minister
+			traits = { security_minister }
+			idea_token = MON_Generic_Vacant_sec
+			ledger = civilian
+			cost = -1
+				removal_cost = -1
+			allowed = { original_tag = MON }
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

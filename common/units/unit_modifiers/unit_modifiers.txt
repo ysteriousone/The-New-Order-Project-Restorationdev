@@ -10,7 +10,7 @@
 #	modifier_army_sub_unit_infantry_attack_factor #modifiers for sub_unit infantry
 #	modifier_army_sub_unit_infantry_defence_factor
 #	modifier_army_sub_unit_infantry_speed_factor
-#
+#	
 #
 #	modifier_army_sub_unit_category_all_infantry_attack_factor #modifiers for sub_unit category all_infantry_attack
 #	modifier_army_sub_unit_category_all_infantry_defence_factor
@@ -78,4 +78,8 @@ sub_unit_modifiers = {
 	modifier_army_sub_unit_air_assault_speed_factor
 	modifier_army_sub_unit_air_assault_training_time_factor
 
+	modifier_army_sub_unit_air_assault_old_attack_factor
+	modifier_army_sub_unit_air_assault_old_defence_factor
+	modifier_army_sub_unit_air_assault_old_speed_factor
+	modifier_army_sub_unit_air_assault_old_training_time_factor
 }

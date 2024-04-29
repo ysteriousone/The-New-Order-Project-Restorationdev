@@ -101,7 +101,76 @@ focus_tree = {
 		completion_reward = {
  
 	}
-			}	
+			}
+	focus = {
+		id = BRG_Himmler_is_eternal
+		icon = GFX_KOM_vision_for_the_world
+		prerequisite = { focus = BRG_uneasy_first_days }
+		
+		x = 0
+		y = 5
+		cost = 2
+		completion_reward = {
+ 
+	}
+			}
+	focus = {
+		id = BRG_A_Terror_gone
+		icon = GFX_KOM_vision_for_the_world
+		prerequisite = { focus = BRG_uneasy_first_days }
+		
+		x = -2
+		y = 5
+		cost = 2
+		completion_reward = {
+    RPY = {
+	annex_country = {
+	target = BRG
+	transfer_troops = yes
+	}
+	}
+	RPY = { change_tag_from = BRG }
+	}
+	}
+	focus = {
+		id = BRG_Dreams_of_Francia
+		icon = GFX_KOM_vision_for_the_world
+		prerequisite = { focus = BRG_uneasy_first_days }
+		
+		x = 2
+		y = 5
+		cost = 2
+		completion_reward = {
+		PIC = {
+		annex_country ={
+		target = BRG
+        transfer_troops = yes
+		}
+		}
+		PIC = { change_tag_from = BRG }
+		}
+	}
+	focus = {
+		id = BRG_Rexists_triumphant
+		icon = GFX_KOM_vision_for_the_world
+		prerequisite = { focus = BRG_uneasy_first_days }
+		
+		x = 4
+		y = 5
+		cost = 2
+		completion_reward = {
+		BEL = {
+		annex_country ={
+		target = BRG
+        transfer_troops = yes
+		}
+		BEL = { change_tag_from = BRG }
+		
+		}
+ 
+	}
+			}			
+						
 			
 			
 	

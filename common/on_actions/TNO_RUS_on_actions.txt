@@ -110,6 +110,11 @@ on_actions = {
 				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
 			}
 
+			OMO = {
+				if = { limit = { OMO_2022_aprilfools_gamerule_active = no} }
+					country_event = { id = OMO.1 days = 1270 random = 10 }
+			}
+
 			SBA = {
 				set_variable = { SBASavedDespotismValue = THIS.party_popularity@despotism }
 				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
@@ -197,7 +202,7 @@ on_actions = {
 						has_game_rule = {
 							rule = KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES
 							option = KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES_LEFT
-						}
+			}
 					}
 					set_country_flag = KOM_SEROV_LEFT_FLAG
 				}
@@ -323,6 +328,15 @@ on_actions = {
 				country_event = { id = NOV.46 days = 100 random = 30 } #A Day on the Kit Farm
 				country_event = { id = NOV.47 days = 35 } #Megacorp event
 				country_event = { id = NOV_regional.19 days = 1860 random = 48 } #Kharitonov event
+				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
+			}
+
+			PRC = {
+				country_event = { id = PRC_flavor.1 days = 1860 random = 48 } #Distant Days
+				country_event = { id = PRC_flavor.2 days = 2920 random = 48 } #In Old Ossetia
+				country_event = { id = PRC_flavor.3 days = 1580 random = 50 } #Echoes of Khalkhin Gol
+				country_event = { id = PRC_flavor.4 days = 60 random = 50 } #Path of Peace
+				country_event = { id = PRC_flavor.5 days = 90 random = 50 } #For Glory Once More
 				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
 			}
 
@@ -734,6 +748,18 @@ on_actions = {
 				set_variable = { RUS_siberian_plan_resources = 0 }
 				set_variable = { RUS_siberian_plan_efficiency_gain = 0 }
 				SIB_gui_pulse_effect = yes
+
+				set_country_flag = PRC_political_path_decisions
+				set_variable = { PRC_Army_Power = 80 }
+				set_variable = { PRC_Army_Loyalty = 85 }
+				set_variable = { PRC_Civilian_Power = 30 }
+				set_variable = { PRC_Civilian_Loyalty = 60 }
+				add_dynamic_modifier = { modifier = PRC_army_civilian_support }
+				PRC_clamp_regional_vars = yes
+				PRC_monthly_decay_estates = yes
+				814 = {
+					set_variable = { PRC_Owner = -1 }
+				}
 			}
 
 			ORE = {
@@ -863,9 +889,9 @@ on_actions = {
 			every_country = {
 				limit = {
 					NOT = {
-						has_idea = KOM_socintern_member
-						has_idea = KOM_socintern_associate
-					}
+							has_idea = KOM_socintern_member
+							has_idea = KOM_socintern_associate
+						}
 					OR = {
 						has_government = communist
 						has_government = socialist
@@ -1035,6 +1061,56 @@ on_actions = {
 		}
 	}
 
+	on_monthly_PRC = {
+		effect = {
+			if = {
+				limit = { PRC = { is_ai = yes } }
+				every_owned_state = {
+					limit = {
+						PRC_can_assign_status = yes
+					}
+					if = {
+						limit = {
+							PRC = { has_country_flag = PRC_destroyed_citzenry }
+						}
+						PRC_add_mil_status_effect = yes
+					}
+					else_if = {
+						limit = {
+							PRC = { has_country_flag = PRC_destroyed_military }
+						}
+						PRC_add_civ_status_effect = yes
+					}
+					else = {
+						PRC = {
+							set_temp_variable = { PRC_total = 0 }
+							set_variable = { PRC_mil_chance = 1 }
+							set_variable = { PRC_civ_chance = 1 }
+							if = {
+								limit = { # More state controlled by military
+									check_variable = { PRC_total < 0 }
+								}
+								# Subtract a negative number is adding it's absolute value
+								subtract_from_variable = { PRC_civ_chance = PRC_total }
+							}
+							else = { # More state controlled by citzenry / balanced
+								add_to_variable = { PRC_mil_chance = PRC_total }
+							}
+						}
+						random_list = {
+							PRC.PRC_civ_chance = {
+								PRC_add_civ_status_effect = yes
+							}
+							PRC.PRC_mil_chance = {
+								PRC_add_mil_status_effect = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	on_weekly_FIN = {
 		effect = {
 			if = {
@@ -1043,6 +1119,20 @@ on_actions = {
 				}
 				WSR = {
 					add_to_variable = { MPRInterventionProgress = MPRInterventionProgressGain }
+				}
+			}
+		}
+	}
+	on_monthly_OMO = {
+		effect = {
+			OMO = {
+				if = {
+					limit = {
+						has_dynamic_modifier = {
+							modifier = OMO_out_of_time
+						}
+					}
+					add_to_variable = { OMO_surrender_limit = -0.05 }
 				}
 			}
 		}
@@ -1855,7 +1945,7 @@ on_actions = {
 							NOT = {
 								has_idea = KOM_unrestricted_arsenal
 								has_idea = KOM_unrestricted_arsenal_2
-							}
+						}
 						}
 						set_country_flag = RUS_OWNS_SYKTYVKAR_ARSENAL
 						country_event = { id = RUS_wonder.2 hours = 1 }
@@ -1869,7 +1959,7 @@ on_actions = {
 							NOT = {
 								has_idea = KOM_unrestricted_arsenal
 								has_idea = KOM_unrestricted_arsenal_2
-							}
+						}
 						}
 						clr_country_flag = RUS_OWNS_SYKTYVKAR_ARSENAL
 						country_event = { id = RUS_wonder.5 hours = 1 }
@@ -2356,9 +2446,9 @@ on_actions = {
 						OR = {
 							has_war = no
 							any_enemy_country = {
-								is_russian_nation = no
-							}
+							is_russian_nation = no
 						}
+					}
 					}
 					set_variable = { RUS_surrender_limit = 0 }
 					clr_country_flag = RUS_war_start

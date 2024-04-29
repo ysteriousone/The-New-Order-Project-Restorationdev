@@ -5,6 +5,12 @@ music = {
 }
 
 music = {
+	name = Lullaby-Of-Freedom
+	file = "Lullaby_of_freedom.ogg"
+	volume = 1
+}
+
+music = {
 	name = tno_song_a_narrow_path
 	file = "a_narrow_path.ogg"
 	volume = 1

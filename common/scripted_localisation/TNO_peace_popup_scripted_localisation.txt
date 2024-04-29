@@ -748,8 +748,8 @@ defined_text = {
 				has_country_leader = {
 					character = KOM_Sergey_Taboritsky
 					ruling_only = yes
-				}
 			}
+		}
 		}
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_RUS_tabby
 	}
@@ -1090,6 +1090,14 @@ defined_text = {
 			}
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_DRECHSLER
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MON
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MON
 	}
 	text = {
 		trigger = {
@@ -1787,9 +1795,9 @@ defined_text = {
 				has_country_leader = {
 					character = KAZ_Zhumabek_Tashenev
 					ruling_only = yes
-				}
 			}
 		}
+	}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_KAZ_TASHENEV
 	}
 	text = {
@@ -1799,9 +1807,9 @@ defined_text = {
 				has_country_leader = {
 					character = KAZ_Sagadat_Nurmagambetov
 					ruling_only = yes
-				}
 			}
 		}
+	}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_KAZ_NURMAGAMBETOV
 	}
 	text = {
@@ -1811,7 +1819,7 @@ defined_text = {
 				has_country_leader = {
 					character = KZR_Nikolai_Shchelokov
 					ruling_only = yes
-				}
+			}
 			}
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_KZR_SHCHELOKOV
@@ -1823,11 +1831,11 @@ defined_text = {
 				has_country_leader = {
 					character = KZR_Mikhail_Solomentsev
 					ruling_only = yes
-				}
 			}
 		}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_KZR_SOLOMENTSEV
 	}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_KZR_SOLOMENTSEV
+			}
 	text = {
 		trigger = {
 			event_target:losing_country = {
@@ -2452,8 +2460,8 @@ defined_text = {
 		localization_key = TNO_PEACE_POPUP_FLAVOR_MSK_SNP
 	}
 	text = {
-		trigger = {
-			event_target:losing_country = { original_tag = PAU }
+		trigger = { 
+			event_target:losing_country = { original_tag = PAU } 
 			NOT = { has_global_flag = SGR_Slave_Revolt }
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_MSK_PAU

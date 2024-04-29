@@ -1,0 +1,2609 @@
+add_namespace = PRC
+add_namespace = PRC_MONGOL
+
+
+
+country_event = { #War Tree
+	id = PRC.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.0"}
+	title = PRC.0.t
+	desc = PRC.0.desc
+	picture = GFX_report_event_russia_burning_village
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.0.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = PRC.86 days = 5 }
+			PRC_Get_war_date = yes
+			set_country_flag = PRC_war_tree
+			load_focus_tree = { tree = PRC_war_tree keep_completed = yes }
+		}
+	}
+}
+
+country_event = { #Western Conflict
+	id = PRC.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.1"}
+	title = PRC.1.t
+	desc = PRC.1.desc
+	picture = GFX_report_event_russia_kazakh_riders_4
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Send Guns
+		name = PRC.1.a
+		ai_chance = { factor = 1 }
+		MON = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = PRC
+			}
+		}
+		hidden_effect = {
+			set_country_flag = PRC_send_guns_to_MON
+			country_event = { id = PRC.28 days = 30 random = 240 }
+		}
+	}
+
+	option = { #Send Man
+		name = PRC.1.b
+		ai_chance = { factor = 1 }
+		MON = { add_manpower = 500 }
+		hidden_effect = {
+			set_country_flag = PRC_send_men_to_MON
+			country_event = { id = PRC.28 days = 30 random = 240 }
+		}
+	}
+	option = { #ignore
+		name = PRC.1.c
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {#Japan enters the MEN-PRC war
+	id = PRC.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC.2"
+		set_temp_variable = { PRC_war_date_temp = global.date }
+		add_to_temp_variable = { PRC_war_date_temp = 0.336 } # 336 hrs / 14 days
+		if = {
+			limit = {
+				check_variable = { PRC_war_date_temp < PRC_war_date }
+			}
+			set_variable = { PRC_war_date = PRC_war_date_temp }
+		}
+	}
+	title = PRC.2.t
+	desc = PRC.2.desc
+	picture = GFX_report_event_russia_burning_village
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = PRC.2.a
+		custom_effect_tooltip = PRC_JAP_ceasefire
+		add_war_support = 0.05
+
+	}
+}
+
+country_event = { #Expansion Intro event
+	id = PRC.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.3"}
+	title = PRC.3.t
+	desc = PRC.3.desc
+	picture = GFX_report_event_russia_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Intro event
+	id = PRC.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.4"}
+	title = PRC.4.t
+	desc = PRC.4.desc
+	picture = GFX_report_event_russia_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Debt intro event
+	id = PRC.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.5"}
+	title = PRC.5.t
+	desc = PRC.5.desc
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+		check_variable = {GDP < 0.5}
+	}
+
+	picture = GFX_report_event_russia_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.5.a
+		ai_chance = { factor = 80 }
+		RUS_expand_promisory_notes_system = yes
+	}
+	option = { #
+		name = PRC.5.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Debt worsening event (if too long)
+	id = PRC.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.6"}
+	title = PRC.6.t
+	desc = PRC.6.desc
+	picture = GFX_report_event_russia_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.6.a
+		ai_chance = { factor = 1 }
+		RUS_expand_promisory_notes_system = yes
+	}
+}
+
+country_event = { #solving the debt
+	id = PRC.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.7"}
+	title = PRC.7.t
+	desc = PRC.7.desc
+	picture = GFX_report_event_russia_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.7.a
+		ai_chance = { factor = 1 }
+		RUS_solve_deferred_military_payments = yes
+	}
+}
+
+country_event = { #Ceasefire, for MEN
+	id = PRC.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.8"}
+	title = PRC.8.t
+	desc = PRC.8.desc
+	picture = GFX_report_event_russia_tanks
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.8.a
+		ai_chance = { factor = 1 }
+		set_global_flag = PRC_MEN_peace_deal
+		hidden_effect = {
+			every_country  = {
+				news_event = {
+					id = RUS_news.43
+				}
+			}
+		}
+		PRC = {
+			country_event = {
+				id = PRC.9
+				hours = 1
+			}
+			save_global_event_target_as = winning_country
+			white_peace = MEN
+			white_peace = MAN
+			white_peace = JAP
+			white_peace = CHI
+		}
+		MEN = {
+			hidden_effect = { remove_state_core = 814 }
+			save_global_event_target_as = losing_country
+			MEN_buff_mengjiang = yes
+		}
+		set_global_flag = war_won
+		set_global_flag = show_peace_popup_alert
+		add_to_variable = { global.peace_popup_dirty = 1 }
+	}
+}
+
+country_event = { #Victory
+	id = PRC.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.9" }
+	title = PRC.9.t
+	desc = PRC.9.desc
+	picture = GFX_report_event_russia_soldier_weapon_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.9.a
+		ai_chance = { factor = 1 }
+		set_temp_variable = {money_reserves_temp = 0.1}
+		econ_money_reserves_change_raw_money = yes
+		hidden_effect = {
+			country_event = {
+				id = PRC.37
+				days = 10
+			}
+			country_event = {
+				id = PRC.5
+				days = 20
+			}
+		}
+	}
+}
+
+country_event = { #surrender, for MEN
+	id = PRC.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.10"}
+	title = PRC.10.t
+	desc = PRC.10.desc
+	picture = GFX_report_event_russia_burning_village
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.10.a
+		ai_chance = { factor = 1 }
+		transfer_state = 814
+		PRC = {
+			remove_state_core = 814
+			white_peace = MEN
+			white_peace = MAN
+			white_peace = JAP
+			white_peace = CHI
+			save_global_event_target_as = losing_country
+		}
+		MEN = {
+			save_global_event_target_as = winning_country
+			MEN_buff_mengjiang = yes
+		}
+		set_global_flag = war_won
+		set_global_flag = show_peace_popup_alert
+		add_to_variable = { global.peace_popup_dirty = 1 }
+	}
+}
+
+country_event = { #Defeat
+	id = PRC.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.11" }
+	title = PRC.11.t
+	desc = PRC.11.desc
+
+	picture = GFX_report_event_russia_soldier_weapon_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.11.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.41
+				days = 10
+			}
+			country_event = {
+				id = PRC.5
+				days = 20
+			}
+
+		}
+	}
+}
+
+country_event = { #Give More Rights
+	id = PRC.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.14"}
+	title = PRC.15.t
+	desc = PRC.15.desc
+	picture = GFX_report_event_russia_trade_caravan
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.15.a
+		ai_chance = { factor = 1 }
+		TNO_improve_minorities_policy_effectiveness_high = yes
+
+	}
+}
+
+#PRC.16 is already used 
+
+country_event = { #Peace at least
+	id = PRC.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.17"}
+	title = PRC.17.t
+	desc = PRC.17.desc
+	picture = GFX_report_event_russia_sack_of_tashkent
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.17.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Unbalanced Army
+	id = PRC.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC.18"
+	}
+	title = PRC.18.t
+	desc = PRC.18.desc
+	picture = GFX_report_event_russia_court
+
+	is_triggered_only = yes
+
+	option = { #
+		name = PRC.18.a
+		ai_chance = { factor = 1 }
+
+	}
+	option = { #
+		name = PRC.18.b
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Oyrotia Ultimatum
+	id = PRC.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.19"}
+	title = PRC.19.t
+	desc = PRC.19.desc
+	picture = GFX_report_event_russia_orenburg2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Accept
+		name = PRC.19.a
+		ai_chance = { factor = 1 }
+		PRC = {
+			country_event = {
+				id = PRC.20
+				days = 1
+			}
+		}
+	}
+	option = { #Refuse
+		name = PRC.19.a
+		ai_chance = { factor = 1 }
+		PRC = {
+			country_event = {
+				id = PRC.21
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Oyrotia Accepted
+	id = PRC.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.20"}
+	title = PRC.20.t
+	desc = PRC.20.desc
+	picture = GFX_report_event_russian_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.20.a
+		ai_chance = { factor = 1 }
+		annex_country = {
+			target = ALT
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #Oyrotia Refused, War
+	id = PRC.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.21"}
+	title = PRC.21.t
+	desc = PRC.21.desc
+	picture = GFX_report_event_russia_court
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.21.a
+		ai_chance = { factor = 1 }
+		set_country_flag = ALT_refused
+		complete_national_focus = PRC_March_to_Oyrotia
+		declare_war_on = {
+			target = ALT
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #Decide Our Future
+	id = PRC.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC.22"
+	}
+	title = PRC.22.t
+	desc = PRC.22.desc
+	picture = GFX_report_event_russia_special_forces
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.22.a
+		trigger = {
+			OR = {
+				is_ai = yes
+				check_variable = { PRC_MON_divide > 0 }
+				check_variable = { PRC_MON_divide = 0 }
+			}
+		}
+		TNO_worsen_political_parties_policy_effectiveness_low = yes
+		clear_variable = PRC_MON_divide
+	}
+
+	option = { #
+		name = PRC.22.b
+		custom_effect_tooltip = PRC.22.b.tt
+		trigger = {
+			is_ai = no
+			OR = {
+				check_variable = { PRC_MON_divide < 0 }
+				check_variable = { PRC_MON_divide = 0 }
+			}
+		}
+		custom_effect_tooltip = PRC.22.b_tt
+		create_country_leader = {
+			name = "Jamiyangiin Lkhagvasuren"
+			desc = "POLITICS_JAMIYANGIIN_LKHAGVASUREN_DESC"
+			picture = "Portrait_Svobodnyy_Organ_Jamiyangiin_Lkhagvasuren.dds"
+			expire = "1999.1.1"
+			ideology = communist_subtype
+		}
+		hidden_effect = {
+			load_focus_tree = { tree = PRC_blank_tree keep_completed = yes }
+		}
+		set_country_flag = PRC_MON
+		clr_country_flag = PRC_red_army_decision
+		clear_variable = PRC_MON_divide
+		TNO_worsen_political_parties_policy_effectiveness_med = yes
+		TNO_improve_minorities_policy_effectiveness_low = yes
+	}
+}
+
+country_event = { #Full Modernized Army
+	id = PRC.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.23"}
+	title = PRC.23.t
+	desc = PRC.23.desc
+	picture = GFX_report_event_russia_war_planning
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.23.a
+		ai_chance = { factor = 1 }
+		clr_country_flag = PRC_red_army_decision
+	}
+}
+
+country_event = { #Organ gaming
+	id = PRC.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.24"}
+	title = PRC.24.t
+	desc = PRC.24.desc
+	picture = GFX_report_event_russia_tank_crew
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.24.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Infiltrate novosibirsk army
+	id = PRC.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.25"}
+	title = PRC.25.t
+	desc = PRC.25.desc
+	picture = GFX_report_event_russia_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.25.a
+		ai_chance = { factor = 1 }
+		every_army_leader = {
+			add_temporary_buff_to_units = {
+				combat_offense = -0.05
+				combat_defense = -0.05
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = { #Infiltrate novosibirsk supply lines
+	id = PRC.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.26"}
+	title = PRC.26.t
+	desc = PRC.26.desc
+	picture = GFX_report_event_russia_tribunal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.26.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #doing stuff in Tomsk
+	id = PRC.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.27"}
+	title = PRC.27.t
+	desc = PRC.27.desc
+	picture = GFX_report_event_russian_crowd
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.27.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.10
+		hidden_effect = {
+			country_event = { id = PRC.16 days = 5 }
+		}
+	}
+}
+
+country_event = { #
+	id = PRC.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.16"}
+	title = PRC.16.t
+	desc = PRC.16.desc
+	picture = GFX_report_event_russia_soldier_weapon_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.16.a
+	}
+}
+
+
+country_event = { #hidden event to trigger an event chain
+	id = PRC.28
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC.28"
+		if = {
+			limit = {
+				has_country_flag = PRC_send_guns_to_MON
+			}
+			random_list = {
+				50 = { #good
+					country_event = {
+						id = PRC.29
+						days = 30
+						random = 240
+					}
+					modifier = {
+						factor = 2
+						MON = {
+							surrender_progress < 0.1
+						}
+					}
+				}
+				50 = { #bad
+					country_event = {
+						id = PRC.30
+						days = 30
+						random = 240
+					}
+					modifier = {
+						factor = 2
+						MON = {
+							surrender_progress > 0.3
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PRC_send_men_to_MON
+			}
+			random_list = {
+				50 = { #good
+					country_event = {
+						id = PRC.31
+						days = 30
+						random = 240
+					}
+					modifier = {
+						factor = 2
+						MON = {
+							surrender_progress < 0.1
+						}
+					}
+				}
+				50 = { #bad
+					country_event = {
+						id = PRC.32
+						days = 30
+						random = 240
+					}
+					modifier = {
+						factor = 2
+						MON = {
+							surrender_progress > 0.3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	trigger = {
+		MON = { has_war_with = MEN }
+	}
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+}
+
+country_event = { #good guns
+	id = PRC.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.29"}
+	title = PRC.29.t
+	desc = PRC.29.desc
+	picture = GFX_report_event_russian_labor
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.29.a
+		ai_chance = { factor = 1 }
+		army_funding_minimal_increase_low = yes
+		country_event = {
+			id = PRC.34
+			days = 30
+			random = 240
+		}
+	}
+	option = { #
+		name = PRC.29.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #bad guns
+	id = PRC.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.30"}
+	title = PRC.30.t
+	desc = PRC.30.desc
+	picture = GFX_report_event_russia_soldier_weapon_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.30.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = PRC.33
+			days = 30
+			random = 240
+		}
+		army_funding_minimal_increase_low = yes
+		army_funding_maximal_increase_low = yes
+	}
+	option = { #
+		name = PRC.30.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.35
+				days = 15
+				random = 120
+			}
+		}
+	}
+}
+
+country_event = { #good men
+	id = PRC.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.31"}
+	title = PRC.31.t
+	desc = PRC.31.desc
+	picture = GFX_report_event_russia_dacha
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.31.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = PRC.33
+			days = 30
+			random = 240
+		}
+	}
+	option = { #
+		name = PRC.31.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #bad men
+	id = PRC.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.32"}
+	title = PRC.32.t
+	desc = PRC.32.desc
+	picture = GFX_report_event_russia_nkvd_officer
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.32.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = PRC.34
+			days = 30
+			random = 240
+		}
+	}
+	option = { #
+		name = PRC.29.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.35
+				days = 15
+				random = 120
+			}
+		}
+	}
+}
+
+country_event = { #doctrine review #1
+	id = PRC.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.33"}
+	title = PRC.33.t
+	desc = PRC.33.desc
+	picture = GFX_report_event_russian_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.33.a
+		ai_chance = { factor = 1 }
+		add_tech_bonus = {
+			bonus = 0.20
+			uses = 1
+			category = cat_combined_operations
+		}
+	}
+	option = { #
+		name = PRC.33.b
+		ai_chance = { factor = 1 }
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 1
+			category = cat_strategic_theorem
+		}
+	}
+}
+
+country_event = { #doctrine review #2
+	id = PRC.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.34"}
+	title = PRC.34.t
+	desc = PRC.34.desc
+	picture = GFX_report_event_russia_trade_caravan
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.34.a
+		ai_chance = { factor = 1 }
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 1
+			category = cat_combined_operations
+		}
+	}
+	option = { #
+		name = PRC.34.b
+		ai_chance = { factor = 1 }
+		add_tech_bonus = {
+			bonus = 0.20
+			uses = 1
+			category = cat_maneuver_warfare
+		}
+	}
+}
+
+country_event = { #army failure
+	id = PRC.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.35"}
+	title = PRC.35.t
+	desc = PRC.35.desc
+	picture = GFX_report_event_russia_forest_battle
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.35.a
+		ai_chance = { factor = 1 }
+		army_experience = -20
+	}
+}
+
+country_event = { #end of MCW
+	id = PRC.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.36"}
+	title = PRC.36.t
+	desc = PRC.36.desc
+	picture = GFX_report_event_russian_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.36.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #mongolian support
+	id = PRC.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.37"}
+	title = PRC.37.t
+	desc = PRC.37.desc
+	picture = GFX_report_event_russia_food_line
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.37.a
+		ai_chance = { factor = 1 }
+		TNO_worsen_minorities_policy_effectiveness_low = yes
+		hidden_effect = {
+			country_event = {
+				id = PRC.38
+				days = 10
+				random = 120
+			}
+		}
+	}
+	option = { #
+		name = PRC.37.b
+		ai_chance = { factor = 1 }
+		TNO_worsen_minorities_policy_effectiveness_low = yes
+		hidden_effect = {
+			country_event = {
+				id = PRC.39
+				days = 10
+				random = 120
+			}
+		}
+	}
+}
+
+country_event = { #russians doing shit
+	id = PRC.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.38"}
+	title = PRC.38.t
+	desc = PRC.38.desc
+	picture = GFX_report_event_russia_food_line
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.38.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.46
+				days = 20
+				random = 120
+			}
+		}
+		TNO_worsen_minorities_policy_effectiveness_low = yes
+		add_to_variable = {
+			PRC_MON_divide = 1
+			tooltip = PRC_RUS_faction_tt
+		}
+	}
+	option = { #
+		name = PRC.38.b
+		ai_chance = { factor = 1 }
+		TNO_improve_minorities_policy_effectiveness_low = yes
+		hidden_effect = {
+			set_country_flag = PRC_38
+			country_event = {
+				id = PRC.40
+				days = 25
+				random = 120
+			}
+		}
+	}
+}
+
+country_event = { #mongolians doing shit
+	id = PRC.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.39"}
+	title = PRC.39.t
+	desc = PRC.39.desc
+	picture = GFX_report_event_russia_soldiers_bombed_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.39.a
+		ai_chance = { factor = 1 }
+		TNO_improve_minorities_policy_effectiveness_med = yes
+		TNO_worsen_penal_system_policy_effectiveness_low = yes
+		hidden_effect = {
+			country_event = {
+				id = PRC.46
+				days = 20
+				random = 120
+			}
+		}
+	}
+	option = { #
+		name = PRC.39.b
+		ai_chance = { factor = 1 }
+		TNO_worsen_minorities_policy_effectiveness_low = yes
+		TNO_improve_penal_system_policy_effectiveness_med = yes
+		hidden_effect = {
+			set_country_flag = PRC_39
+
+			country_event = {
+				id = PRC.40
+				days = 25
+				random = 120
+			}
+		}
+	}
+}
+
+country_event = { #army crackdown
+	id = PRC.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.40"}
+	title = PRC.40.t
+	desc = PRC.40.desc
+	picture = GFX_report_event_russian_refugees
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.40.a
+		ai_chance = { factor = 1 }
+		SIB_increase_worker_tension_med = yes
+		if = {
+			limit = {
+				has_country_flag = PRC_38
+			}
+			add_to_variable = {
+				PRC_MON_divide = -0.50
+				tooltip = PRC_MON_faction_2_tt
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = PRC_39
+			}
+			add_to_variable = {
+				PRC_MON_divide = 0.50
+				tooltip = PRC_RUS_faction_2_tt
+			}
+		}
+		clr_country_flag = PRC_38
+		clr_country_flag = PRC_39
+	}
+}
+
+country_event = { #russian support
+	id = PRC.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.41"}
+	title = PRC.41.t
+	desc = PRC.41.desc
+	picture = GFX_report_event_russia_kazakh_rider
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.41.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.42
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = { #purge the mongolian faction
+	id = PRC.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.42"}
+	title = PRC.42.t
+	desc = PRC.42.desc
+	picture = GFX_report_event_russian_commissar
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #yes
+		name = PRC.42.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			random_list = {
+				45 = {
+					country_event = {
+						id = PRC.43
+						days = 15
+					}
+				}
+				55 = {
+					country_event = {
+						id = PRC.45
+						days = 15
+					}
+				}
+			}
+		}
+	}
+
+	option = { #no
+		name = PRC.42.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+country_event = { #infiltration sucess
+	id = PRC.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.43"}
+	title = PRC.43.t
+	desc = PRC.43.desc
+	picture = GFX_report_event_russian_handshake
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.43.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = PRC.44
+			days = 20
+			random = 120
+		}
+	}
+}
+
+country_event = { #final move
+	id = PRC.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.44"}
+	title = PRC.44.t
+	desc = PRC.44.desc
+	picture = GFX_report_event_russian_commissar
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.44.a
+		ai_chance = { factor = 1 }
+		set_variable = { PRC_MON_divide = -2 }
+	}
+}
+
+country_event = { #infiltration failure
+	id = PRC.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.45"}
+	title = PRC.45.t
+	desc = PRC.45.desc
+	picture = GFX_report_event_russia_sack_of_tashkent
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.45.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.10
+		hidden_effect = {
+			country_event = {
+				id = PRC.46
+				days = 20
+				random = 120
+			}
+		}
+	}
+}
+
+country_event = { #agreement
+	id = PRC.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.46"}
+	title = PRC.46.t
+	desc = PRC.46.desc
+	picture = GFX_report_event_russia_kazakh_uranium_mine
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.46.a
+		country_event = { id = PRC.47 days = 5 }
+		TNO_improve_racial_integration_policy_effectiveness_med = yes
+	}
+	option = { #
+		name = PRC.46.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.10
+		TNO_improve_draft_exemptions_policy_effectiveness_med = yes
+	}
+}
+
+country_event = { #agreement
+	id = PRC.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC.47"}
+	title = PRC.47.t
+	desc = PRC.47.desc
+	picture = GFX_report_event_russia_vyatka
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.47.a
+		add_to_variable = { PRC_MON_divide = 1 }
+		TNO_improve_training_policy_effectiveness_low = yes
+	}
+	option = { #
+		name = PRC.47.b
+		add_to_variable = { PRC_MON_divide = -1 }
+		TNO_improve_racial_integration_policy_effectiveness_low = yes
+	}
+}
+
+country_event = { #eliminate anarchists elements
+	id = PRC.52
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.52" }
+	title = PRC.52.t
+	desc = PRC.52.desc
+	picture = GFX_report_event_russian_sailors
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.52.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Ruriks madness
+	id = PRC.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.53" }
+	title = PRC.53.t
+	desc = PRC.53.desc
+	picture = GFX_report_event_russia_airborne_troops
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.53.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Royal Family Fate
+	id = PRC.54
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.54" }
+	title = PRC.54.t
+	desc = PRC.54.desc
+	picture = GFX_report_event_russian_refugees
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.54.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+		country_event = {
+			id = PRC.55
+			days = 5
+		}
+	}
+	option = { #
+		name = PRC.54.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #execution
+	id = PRC.55
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.55" }
+	title = PRC.55.t
+	desc = PRC.55.desc
+	picture = GFX_report_event_russia_special_forces
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.55.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #destroy krasnoyarsk remnants #1
+	id = PRC.57
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.57" }
+	title = PRC.57.t
+	desc = PRC.57.desc
+	picture = GFX_report_event_russian_crowd
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.57.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.58
+				days = 15
+				random = 120
+			}
+		}
+	}
+	option = { #
+		name = PRC.57.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = PRC.59
+				days = 40
+				random = 240
+			}
+		}
+	}
+}
+
+country_event = { #destroy krasnoyarsk remnants #2
+	id = PRC.58
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.58" }
+	title = PRC.58.t
+	desc = PRC.58.desc
+	picture = GFX_report_event_russia_famine
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.58.a
+		ai_chance = { factor = 1 }
+		add_state_core = 757
+	}
+}
+
+country_event = { #destroy krasnoyarsk remnants #3
+	id = PRC.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.59" }
+	title = PRC.59.t
+	desc = PRC.59.desc
+	picture = GFX_report_event_russia_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.59.a
+		ai_chance = { factor = 1 }
+		add_state_core = 757
+	}
+}
+
+country_event = { #united central siberia
+	id = PRC.61
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.61" }
+	title = PRC.61.t
+	desc = PRC.61.desc
+	picture = GFX_report_event_russia_soldiers
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.61.a
+		ai_chance = { factor = 1 }
+		TNO_improve_political_parties_policy_effectiveness_low = yes
+
+	}
+}
+
+#REGIONAL EVENTS
+
+country_event = { #new capital
+	id = PRC.62
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.62" }
+	title = PRC.62.t
+	desc = PRC.62.desc
+	picture = GFX_report_event_russia_soldiers_relaxing
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Novosibirsk
+		name = PRC.62.a
+		ai_chance = { factor = 1 }
+		set_capital = { state = 570 }
+	}
+	option = { #Krasnoyarsk
+		name = PRC.62.b
+		ai_chance = { factor = 1 }
+		set_capital = { state = 757 }
+	}
+	option = { #Kemerovo
+		name = PRC.62.c
+		ai_chance = { factor = 1 }
+		set_capital = { state = 569 }
+	}
+}
+
+country_event = { #Vasilevsky Speech
+	id = PRC.66
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.66" }
+	title = PRC.66.t
+	desc = PRC.66.desc
+	picture = GFX_report_event_russian_refugees
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.66.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = PRC_war_commies_forever_tt 
+	}
+}
+
+country_event = { #The new Goverment Commision
+	id = PRC.67
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.67" }
+	title = PRC.67.t
+	desc = PRC.67.desc
+	picture = GFX_report_event_russia_war_planning
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.67.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = PRC_a_more_civilian_econ_tt 
+		hidden_effect = {
+			set_temp_variable = {TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed}
+			econ_subtype_change = yes 
+		}
+	}
+}
+
+country_event = { #The Military won the Conference
+	id = PRC.68
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.68" }
+	title = PRC.68.t
+	desc = PRC.68.desc
+	picture = GFX_report_event_russia_frogmen
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.68.a
+		ai_chance = { factor = 1 }
+		add_ideas = PRC_Mil_Gov
+		set_country_flag = PRC_military
+		country_event = { id = PRC.66 days = 15 }
+		hidden_effect = {
+			country_event = { id = PRC.101 days = 50 random_days = 10 }
+		}
+	}
+}
+
+country_event = { #The Civilians won the Conference
+	id = PRC.69
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.69" }
+	title = PRC.69.t
+	desc = PRC.69.desc
+	picture = GFX_report_event_russia_soldier_weapon_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.69.a
+		ai_chance = { factor = 1 }
+		add_ideas = PRC_Civ_Gov
+		set_country_flag = PRC_civilian
+		country_event = { id = PRC.67 days = 15 }
+		hidden_effect = {
+			country_event = { id = PRC.98 days = 50 random_days = 10 }
+		}
+	}
+}
+
+country_event = { #PRC Deadlock - No one can decide on anything
+	id = PRC.70
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.70" }
+	title = PRC.70.t
+	desc = PRC.70.desc
+	picture = GFX_report_event_russia_advertisements
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #military brawls citizenry
+		name = PRC.70.a
+		ai_chance = { factor = 1 }
+		trigger = { has_completed_focus = PRC_A_Way_Of_Hope }
+		country_event = { id = PRC.71 hours = 1 }
+		add_stability = -0.025
+	}
+	option = { #citizenry continues debate
+		name = PRC.70.b
+		ai_chance = { factor = 1 }
+		trigger = { has_completed_focus = PRC_Defenders_Of_The_Union }
+		country_event = { id = PRC.75 hours = 1 }
+	}
+}
+
+country_event = { #PRC Deadlock - Military shoots a bunch of citizens
+	id = PRC.71
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.71" }
+	title = PRC.71.t
+	desc = PRC.71.desc
+	picture = GFX_report_event_russia_nkvd_officer
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #this is our shot
+		name = PRC.71.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { PRC_Civilian_Power < 20 } }
+				country_event = { id = PRC.72 hours = 1 }
+			}
+			else = { country_event = { id = PRC.73 hours = 1 } }
+		}
+		add_stability = -0.025
+	}
+	option = { #fuck it, retreat
+		name = PRC.71.b
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.82 days = 4 }
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - the citizenry is removed as a threat entirely, this is a coup
+	id = PRC.72
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.71" }
+	title = PRC.72.t
+	desc = PRC.72.desc
+	picture = GFX_report_event_russia_soldiers_relaxing
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #based
+		name = PRC.72.a
+		ai_chance = { factor = 1 }
+		PRC_military_coup = yes
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - the citizenry fights back at a reasonable effort
+	id = PRC.73
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.73" }
+	title = PRC.73.t
+	desc = PRC.73.desc
+	picture = GFX_report_event_russia_airborne_troops
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ONE LAST PUSH
+		name = PRC.73.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { PRC_Civilian_Power < 30 } }
+				country_event = { id = PRC.72 hours = 1 }
+			}
+			else = { country_event = { id = PRC.74 hours = 1 } }
+		}
+		add_stability = -0.025
+	}
+
+	option = { #we need to retreat
+		name = PRC.73.b
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.82 days = 4 }
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - citizen counter coup wtf
+	id = PRC.74
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.74" }
+	title = PRC.74.t
+	desc = PRC.74.desc
+	picture = GFX_report_event_russia_soldier_weapon_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #damn
+		name = PRC.74.a
+		ai_chance = { factor = 1 }
+		PRC_citizen_coup = yes
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - citizenry continues debating army gets impatient
+	id = PRC.75
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.75" }
+	title = PRC.75.t
+	desc = PRC.75.desc
+	picture = GFX_report_event_russia_special_forces
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #wait and see what they do
+		name = PRC.75.a
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.76 hours = 2 }
+		add_stability = -0.025
+	}
+
+	option = { #force them to back down with threats
+		name = PRC.75.b
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.81 hours = 1 }
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - army starts shooting wtffff
+	id = PRC.76
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.76" }
+	title = PRC.76.t
+	desc = PRC.76.desc
+	picture = GFX_report_event_russia_tribunal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #charge them into a surrender
+		name = PRC.76.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { PRC_Army_Power < 20 } }
+				country_event = { id = PRC.78 hours = 1 }
+			}
+			else = { country_event = { id = PRC.79 hours = 1 } }
+		}
+		add_stability = -0.025
+	}
+
+	option = { #hide and wait
+		name = PRC.76.b
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.77 hours = 1 }
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - now we charge
+	id = PRC.77
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.77" }
+	title = PRC.77.t
+	desc = PRC.77.desc
+	picture = GFX_report_event_russia_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #force them to surrender
+		name = PRC.77.a
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.78 hours = 1 }
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - citizen counter-coup based
+	id = PRC.78
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.78" }
+	title = PRC.78.t
+	desc = PRC.78.desc
+	picture = GFX_report_event_russia_orenburg2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #force them to surrender
+		name = PRC.78.a
+		ai_chance = { factor = 1 }
+		PRC_citizen_coup = yes
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - we're getting eaten alive
+	id = PRC.79
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.19" }
+	title = PRC.79.t
+	desc = PRC.79.desc
+	picture = GFX_report_event_russian_labor
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #surrender
+		name = PRC.79.a
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.80 hours = 1 }
+		add_stability = -0.025
+	}
+
+	option = { #charge through
+		name = PRC.79.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			if = {
+				limit = { check_variable = { PRC_Army_Power < 30 } }
+				country_event = { id = PRC.78 hours = 1 }
+			}
+			else = {country_event = { id = PRC.80 hours = 1 } }
+		}
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - military does coup
+	id = PRC.80
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.80" }
+	title = PRC.80.t
+	desc = PRC.80.desc
+	picture = GFX_report_event_russian_handshake
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #FUCk
+		name = PRC.80.a
+		ai_chance = { factor = 1 }
+		PRC_military_coup = yes
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - Intimidation tactic works
+	id = PRC.81
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.81" }
+	title = PRC.81.t
+	desc = PRC.81.desc
+	picture = GFX_report_event_russian_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #based, now we can co-exist
+		name = PRC.81.a
+		ai_chance = { factor = 1 }
+		set_country_flag = PRC_civilian
+		add_stability = -0.025
+	}
+}
+
+country_event = { #PRC Deadlock - retreat
+	id = PRC.82
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.82" }
+	title = PRC.82.t
+	desc = PRC.82.desc
+	picture = GFX_report_event_russian_commissar
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #based, now we can co-exist
+		name = PRC.82.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.025
+
+	}
+}
+
+country_event = { #Krasnoyarsk Conference planned
+	id = PRC.83
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.83" }
+	title = PRC.83.t
+	desc = PRC.83.desc
+	picture = GFX_report_event_russia_novotroitsk
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #hmm now we should pick a side
+		name = PRC.83.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Traitors on Trial
+	id = PRC.84
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.84" }
+	title = PRC.84.t
+	desc = PRC.84.desc
+	picture = GFX_report_event_russia_vorkutlag
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #kill em
+		name = PRC.84.a
+		ai_chance = { factor = 1 }
+		add_manpower = -500
+		custom_effect_tooltip = PRC_raise_civilian_effect_loyalty_tt_big
+		add_to_variable = { PRC_Civilian_Loyalty = 30 }
+		custom_effect_tooltip = PRC_lower_military_effect_loyalty_tt
+		add_to_variable = { PRC_Army_Loyalty = -10 }
+	}
+
+	option = { #imprison
+		name = PRC.84.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = PRC_raise_civilian_effect_loyalty_tt
+		add_to_variable = { PRC_Civilian_Loyalty = 15 }
+
+	}
+
+	option = { #hard labor
+		name = PRC.84.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = PRC_lower_civilian_effect_loyalty_tt
+		add_to_variable = { PRC_Civilian_Loyalty = -5 }
+		TNO_improve_penal_system_policy_effectiveness_low = yes
+	}
+}
+
+country_event = { #The Rebels Situation
+	id = PRC.85
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.85" }
+	title = PRC.85.t
+	desc = PRC.85.desc
+	picture = GFX_report_event_russian_city
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.85.a
+
+	}
+}
+
+country_event = { #Office being Replaced
+	id = PRC.86
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.86" }
+	title = PRC.86.t
+	desc = PRC.86.desc
+	picture = GFX_report_event_russia_dacha
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.86.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Siberian Border
+	id = PRC.87
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.87" }
+	title = PRC.87.t
+	desc = PRC.87.desc
+	picture = GFX_report_event_russia_sack_of_tashkent
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.87.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #The Siberian Trains
+	id = PRC.88
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.88" }
+	title = PRC.88.t
+	desc = PRC.88.desc
+	picture = GFX_report_event_russian_irregulars
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.88.a
+		ai_chance = { factor = 1 }
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+			
+				modifier = {
+				tag = PRC
+				add = 2
+				}
+			}
+			fallback = yes
+			path = { 12621 1876 1813 10549 10661 12540 4797 1727 }
+			start_province = 12621
+			target_province = 1727
+		}
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			controller_priority = {
+				base = 1
+			
+				modifier = {
+				tag = PRC
+				add = 2
+				}
+			}
+			fallback = yes
+			path = { 4797 1762 4837 14458 10528 7835 1696 4705 7751 12641 }
+			start_province = 4797
+			target_province = 12641
+		}
+	}
+}
+
+country_event = { #A New Union
+	id = PRC.89
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.89" }
+	title = PRC.89.t
+	desc = PRC.89.desc
+	picture = GFX_report_event_russia_novotroitsk_cemetary
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.89.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Budget for Economy
+	id = PRC.90
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.90" }
+	title = PRC.90.t
+	desc = PRC.90.desc
+	picture = GFX_report_event_russia_tank_crew
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.90.b
+		ai_chance = { factor = 1 }
+		random_owned_state = {
+			add_building_construction = {
+				type = barracks
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_country_flag = PRC_war_eco
+		mark_focus_tree_layout_dirty = yes
+		set_temp_variable = { econ_centralization_temp = 5 }
+		econ_centralization_change = yes
+		custom_effect_tooltip = "We will fine tune our economy for war."
+	}
+	option = { #
+		name = PRC.90.a
+		ai_chance = { factor = 1 }
+		random_owned_state = {
+			add_building_construction = {
+				type = hospitals
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = { econ_centralization_temp = -5 }
+		econ_centralization_change = yes
+		set_country_flag = PRC_civ_eco
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = "We will temper our military's demands."
+	}
+}
+
+country_event = { #USA Embassy
+	id = PRC.91
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.91" }
+	title = PRC.91.t
+	desc = PRC.91.desc
+	picture = GFX_report_event_russia_female_soldiers_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.91.a
+		add_political_power = 25
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Foreign Weapons Event
+	id = PRC.92
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.92" }
+	title = PRC.92.t
+	desc = PRC.92.desc
+	picture = GFX_report_event_russia_partisan
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.92.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #the New Universities
+	id = PRC.93
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.93" }
+	title = PRC.93.t
+	desc = PRC.93.desc
+	picture = GFX_report_event_russia_soldier_weapon_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.93.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = PRC.94 days = 15 random_days = 10 }
+		}
+	}
+	option = { #
+		name = PRC.93.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = PRC.95 days = 15 random_days = 10 }
+		}
+	}
+}
+
+country_event = { #the New Universities - Integrated
+	id = PRC.94
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.94" }
+	title = PRC.94.t
+	desc = PRC.94.desc
+	picture = GFX_report_event_russia_soldier_weapon_1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.94.a
+		ai_chance = { factor = 1 }
+		TNO_improve_education_policy_effectiveness_med = yes
+
+	}
+}
+
+country_event = { #the New Universities - Purge
+	id = PRC.95
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.95" }
+	title = PRC.95.t
+	desc = PRC.95.desc
+	picture = GFX_report_event_russia_red_army_march
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.95.a
+		ai_chance = { factor = 1 }
+		TNO_improve_security_policy_effectiveness_monthly_high = yes
+		TNO_worsen_education_policy_effectiveness_monthly_low = yes
+
+	}
+}
+
+country_event = { #Soviet Navy
+	id = PRC.96
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.96" }
+	title = PRC.96.t
+	desc = PRC.96.desc
+	picture = GFX_report_event_russia_vyatka
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.96.a
+		ai_chance = { factor = 1 }
+		country_event = { id = PRC.97 days = 180 random = 30 }
+	}
+}
+
+country_event = { #The First Ship
+	id = PRC.97
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.97" }
+	title = PRC.97.t
+	desc = PRC.97.desc
+	picture = GFX_report_event_russia_orenburg
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.97.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Army's Elections Fate
+	id = PRC.98
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.98" }
+	title = PRC.98.t
+	desc = PRC.98.desc
+	picture = GFX_report_event_russia_soldiers_relaxing
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.98.a
+		ai_chance = { factor = 1 }
+		remove_ideas = PRC_democratic_military
+		hidden_effect = {
+			country_event = { id = PRC.99 days = 180 random = 30 }
+		}
+	}
+	option = { #
+		name = PRC.98.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = PRC.100 days = 180 random = 30 }
+		}
+	}
+}
+
+country_event = { #Army's Elections Fate - Abolish
+	id = PRC.99
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.99" }
+	title = PRC.99.t
+	desc = PRC.99.desc
+	picture = GFX_report_event_russia_advertisements
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.99.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Army's Elections Fate - Maintain
+	id = PRC.100
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.100" }
+	title = PRC.100.t
+	desc = PRC.100.desc
+	picture = GFX_report_event_russia_airborne_troops
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.100.a
+		ai_chance = { factor = 1 }
+
+	}
+}
+
+country_event = { #Military ask for more Influence
+	id = PRC.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.101" }
+	title = PRC.101.t
+	desc = PRC.101.desc
+	picture = GFX_report_event_russia_vyatka
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.101.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = PRC.102 days = 180 random = 30 }
+		}
+	}
+	option = { #
+		name = PRC.101.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = { id = PRC.103 days = 180 random = 30 }
+		}
+	}
+}
+
+country_event = { #Corruption in the Goverment
+	id = PRC.102
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.102" }
+	title = PRC.102.t
+	desc = PRC.102.desc
+	picture = GFX_report_event_russia_devastated_village
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.102.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = { #Army Incident
+	id = PRC.103
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC.103" }
+	title = PRC.103.t
+	desc = PRC.103.desc
+	picture = GFX_report_event_russian_handshake
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC.103.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.10
+	}
+}
+
+country_event = { #Japan Reacts to PRC reaching Korea
+	id = prc.104
+	immediate = {log = "[GetDateText]: [Root.GetName]: event prc.104" }
+	title = prc.104.t
+	desc = prc.104.d
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = prc.104.a
+		PRC = {
+			country_event = prc.105
+		}
+	}
+}
+
+country_event = {#Japan threatens nukes oh no
+	id = prc.105
+	title = prc.105.t
+	desc = prc.105.desc
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event prc.105"
+	}
+
+	picture = GFX_report_event_iberia_eta_bombing2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc.105.a
+		ai_chance = {
+			factor = 1000
+		}
+		set_temp_variable = {money_reserves_temp = 0.3}
+		econ_money_reserves_change_raw_money = yes
+		hidden_effect = {
+			JAP = {
+				country_event = prc.106
+			}
+		}
+		custom_effect_tooltip = prc.105.a.tt
+	}
+
+	option = {
+		name = prc.105.b
+		ai_chance = {
+			factor = 0
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = nuclearwar.6
+					days = 1
+				}
+			}
+		}
+		custom_effect_tooltip = prc.105.b.tt
+	}
+}
+
+country_event = {#PRC accepts peace
+	id = prc.106
+	title = prc.106.t
+	desc = prc.106.desc
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event prc.106"
+	}
+
+	picture = GFX_report_event_peace_deal
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = prc.106.a
+		add_stability = -0.20
+		add_war_support = -0.20
+		hidden_effect = {
+			PRC = {
+				complete_national_focus = PRC_Ask_for_a_ceasefire
+				country_event = {
+					id = PRC.37
+					days = 10
+				}
+				country_event = {
+					id = PRC.5
+					days = 20
+				}
+			}
+		}
+	}
+}
+
+add_namespace = PRC_flavor
+
+country_event = { #Distant Days
+	id = PRC_flavor.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC_flavor.1"}
+	title = PRC_flavor.1.t
+	desc = PRC_flavor.1.desc
+	picture = GFX_report_event_russia_orenburg
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC_flavor.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #In Old Ossetia
+	id = PRC_flavor.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC_flavor.2"}
+	title = PRC_flavor.2.t
+	desc = PRC_flavor.2.desc
+	picture = GFX_report_event_vodka
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC_flavor.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Echoes of Khalkhin Gol
+	id = PRC_flavor.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC_flavor.3"}
+	title = PRC_flavor.3.t
+	desc = PRC_flavor.3.desc
+	picture = GFX_report_event_russia_kazakh_riders_3
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC_flavor.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #Path of Peace
+	id = PRC_flavor.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC_flavor.4"}
+	title = PRC_flavor.4.t
+	desc = PRC_flavor.4.desc
+	picture = GFX_report_event_iberia_home_office_desk
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC_flavor.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #For Glory Once More
+	id = PRC_flavor.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event PRC_flavor.5"}
+	title = PRC_flavor.5.t
+	desc = PRC_flavor.5.desc
+	picture = GFX_report_event_russia_food_line
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = PRC_flavor.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+add_namespace = PRC_debug
+
+
+country_event = { #
+	id = PRC_debug.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event PRC_debug.1" }
+	title = PRC_debug.1
+	desc = PRC_debug.1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "national debug"
+		unite_russia = yes
+		every_owned_state = {
+			limit = {
+				NOT = { state = 814 }
+			}
+			PRC = { add_state_core = PREV }
+		}
+		every_other_country = {
+			limit = {
+				is_central_asian_nation = yes
+			}
+			ROOT = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		transfer_state = 216
+		transfer_state = 213
+		transfer_state = 215
+		transfer_state = 147
+		transfer_state = 1359
+		transfer_state = 722
+		transfer_state = 137
+		transfer_state = 1532
+		transfer_state = 783
+		transfer_state = 230
+		transfer_state = 192
+		transfer_state = 198
+		218 = {
+			set_demilitarized_zone = no
+		}
+		228 = {
+			set_demilitarized_zone = no
+		}
+		annex_country = {
+			target = MCW
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = OST
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = UKR
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = CAU
+			transfer_troops = yes
+		}
+	}
+
+	option = { #
+		name = "regional debug"
+		load_focus_tree = { tree = PRC_regional_tree keep_completed = yes }
+		clear_variable = PRC_MON_divide
+	}
+	option = { #
+		name = "update dynamic modifier vars"
+		PRC_apply_relationship_effect = yes
+	}
+}
+
+country_event = {
+	id = PRC_debug.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC_debug.2"
+		set_variable = { PRC_Exclusive_1_2_Frame = 1 }
+	}
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = PRC_debug.2.a
+	}
+}
+
+country_event = {
+	id = PRC_debug.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC_debug.3"
+		set_variable = { PRC_Exclusive_3_4_Frame = 1 }
+	}
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = PRC_debug.3.a
+	}
+}
+
+country_event = {
+	id = PRC_debug.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC_debug.4"
+		set_variable = { PRC_Exclusive_5_6_Frame = 1 }
+	}
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = PRC_debug.4.a
+	}
+}
+
+country_event = {
+	id = PRC_debug.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC_debug.5"
+		set_variable = { PRC_Exclusive_7_8_Frame = 1 }
+	}
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = PRC_debug.5.a
+	}
+}
+
+country_event = {
+	id = PRC_debug.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event PRC_debug.5"
+		set_variable = { PRC_Exclusive_7_8_Frame = 1 }
+	}
+	hidden = yes
+	is_triggered_only = yes
+
+	option = { #
+		name = PRC_debug.6.a
+		set_temp_variable = {temp_month_income_spent = 4}
+		set_temp_variable = {temp_gdp_paid = 0.4}
+		set_temp_variable = {temp_econ_spending = 0.01}
+		econ_spend_money_once_effect_modal = yes
+	}
+	
+		option = { #
+		name = PRC_debug.6.b
+		set_temp_variable = {temp_month_income_spent = 36}
+		set_temp_variable = {temp_gdp_paid = 0.4}
+		set_temp_variable = {temp_econ_spending = 0.01}
+		econ_spend_money_once_effect_modal = yes
+	}
+}
+

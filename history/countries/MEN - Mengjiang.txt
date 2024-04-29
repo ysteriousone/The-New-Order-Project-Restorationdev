@@ -25,6 +25,11 @@ set_politics = {
 	elections_allowed = no
 }
 
+declare_war_on = {
+	target = MON
+	type = civil_war
+}
+
 set_popularities = {
 	communist = 10
 	socialist = 5

@@ -322,6 +322,11 @@ technologies = {
 			defense = 0.15
 			default_morale = 0.3
 		}
+		air_assault_old = {
+			max_organisation = 10
+			defense = 0.15
+			default_morale = 0.3
+		}
 		enable_tactic = tactic_vertical_envelopement
 
 		doctrine = yes

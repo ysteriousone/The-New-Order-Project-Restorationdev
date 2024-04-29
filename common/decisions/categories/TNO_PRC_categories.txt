@@ -1,0 +1,37 @@
+PRC_The_Red_Army = {
+	icon = GFX_decision_category_military_operation
+	scripted_gui = TNO_PRC_Army_Decisions_GUI
+	allowed = {
+		tag = PRC
+	}
+	visible_when_empty = yes
+	priority = {
+		base = 300
+	}
+}
+
+PRC_The_Conference = {
+	icon = GFX_decision_category_army_reform
+	picture = GFX_PRC_decision_category_relationships
+	allowed = {
+		tag = PRC
+	}
+	visible_when_empty = yes
+	priority = {
+		base = 30
+	}
+}
+
+PRC_Rus_Mon_divide_category = {
+	icon = GFX_decision_category_power_struggle
+	allowed = {
+		tag = PRC
+	}
+	visible = {
+		has_variable = PRC_MON_divide
+	}
+	visible_when_empty = yes
+	priority = {
+		base = 20
+	}
+}

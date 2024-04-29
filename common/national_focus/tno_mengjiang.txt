@@ -1,0 +1,11 @@
+focus_tree = {
+	id = MEN_civilwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEN
+		}
+	}
+	shared_focus = MEN_Saving_the_Country
+}

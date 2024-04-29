@@ -1,0 +1,430 @@
+PRC_Get_war_date = {	
+	set_variable = { PRC_war_date = global.date }
+	add_to_variable = { PRC_war_date = 1.440 } # 1440 hours / 60 days
+}
+
+PRC_clamp_regional_vars = {
+	clamp_variable = { var = PRC_Army_Power min = 0 max = 100 }
+	clamp_variable = { var = PRC_Army_Loyalty min = 0 max = 100 }
+	clamp_variable = { var = PRC_Civilian_Power min = 0 max = 100 }
+	clamp_variable = { var = PRC_Civilian_Loyalty min = 0 max = 100 }
+}
+
+PRC_update_dynamic_modifier_values = {
+	clamp_variable = { var = PRC_RA_army_armor_attack_factor min = -0.50 max = 0.50 }
+	clamp_variable = { var = PRC_RA_army_armor_speed_factor min = -0.50 max = 0.50 }
+	clamp_variable = { var = PRC_RA_army_org min = -0.50 max = 0.50 }
+	clamp_variable = { var = PRC_RA_army_sub_unit_air_assault_attack_factor min = -0.50 max = 0.50 }
+	clamp_variable = { var = PRC_RA_army_sub_unit_air_assault_old_attack_factor min = -0.50 max = 0.50 }
+
+	clamp_variable = { var = PRC_RA_army_infantry_attack_factor min = -0.50 max = 0.5 }
+	clamp_variable = { var = PRC_RA_army_infantry_defence_factor min = -0.50 max = 0.50 }
+	clamp_variable = { var = PRC_RA_training_time_army min = -0.50 max = 0.50 }
+	clamp_variable = { var = PRC_RA_experience_gain_army_factor min = -0.50 max = 0.50 }
+
+	force_update_dynamic_modifier = yes
+}
+
+PRC_Increase_Balancing = {
+	add_to_variable = {
+		PRC_RA_BALANCE = 1
+		tooltip = PRC_Increase_Balancing_tt
+	}
+}
+
+PRC_Increase_Unbalancing = {
+	add_to_variable = {
+		PRC_RA_BALANCE = -1
+		tooltip = PRC_Increase_Unbalancing_tt
+	}
+}
+
+PRC_Greatly_Increase_Unbalancing = {
+	add_to_variable = {
+		PRC_RA_BALANCE = -2
+		tooltip = PRC_Greatly_Increase_Unbalancing_tt
+	}
+}
+
+PRC_clamp_decision_variable = {
+	clamp_variable = {
+		var = PRC_Improve_our_Tanks_1
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = PRC_Improve_our_Tanks_2
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = PRC_Improve_our_Tanks_3
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = PRC_Focus_on_Infantry_1
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = PRC_Focus_on_Infantry_2
+		min = 0
+		max = 10
+	}
+	clamp_variable = {
+		var = PRC_Focus_on_Infantry_3
+		min = 0
+		max = 10
+	}
+}
+
+PRC_increase_Army_Power_low = {
+	add_to_variable = { PRC_Army_Power = 2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Army_Power_low_tt
+}
+
+PRC_increase_Army_Power_med = {
+	add_to_variable = { PRC_Army_Power = 4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Army_Power_med_tt
+}
+
+PRC_increase_Army_Power_high = {
+	add_to_variable = { PRC_Army_Power = 6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Army_Power_high_tt
+}
+
+PRC_increase_Army_Loyalty_low = {
+	add_to_variable = { PRC_Army_Loyalty = 2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Army_Loyalty_low_tt
+}
+
+PRC_increase_Army_Loyalty_med = {
+	add_to_variable = { PRC_Army_Loyalty = 4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Army_Loyalty_med_tt
+}
+
+PRC_increase_Army_Loyalty_high = {
+	add_to_variable = { PRC_Army_Loyalty = 6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Army_Loyalty_high_tt
+}
+
+PRC_increase_Civilian_Power_low = {
+	add_to_variable = { PRC_Civilian_Power = 2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Civilian_Power_low_tt
+}
+
+PRC_increase_Civilian_Power_med = {
+	add_to_variable = { PRC_Civilian_Power = 4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Civilian_Power_med_tt
+}
+
+PRC_increase_Civilian_Power_high = {
+	add_to_variable = { PRC_Civilian_Power = 6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Civilian_Power_high_tt
+}
+
+PRC_increase_Civilian_Loyalty_low = {
+	add_to_variable = { PRC_Civilian_Loyalty = 2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Civilian_Loyalty_low_tt
+}
+
+PRC_increase_Civilian_Loyalty_med = {
+	add_to_variable = { PRC_Civilian_Loyalty = 4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Civilian_Loyalty_med_tt
+}
+
+PRC_increase_Civilian_Loyalty_high = {
+	add_to_variable = { PRC_Civilian_Loyalty = 6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_increase_Civilian_Loyalty_high_tt
+}
+
+PRC_decrease_Army_Power_low = {
+	add_to_variable = { PRC_Army_Power = -2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Army_Power_low_tt
+}
+
+PRC_decrease_Army_Power_med = {
+	add_to_variable = { PRC_Army_Power = -4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Army_Power_med_tt
+}
+
+PRC_decrease_Army_Power_high = {
+	add_to_variable = { PRC_Army_Power = -6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Army_Power_high_tt
+}
+
+PRC_decrease_Army_Loyalty_low = {
+	add_to_variable = { PRC_Army_Loyalty = -2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Army_Loyalty_low_tt
+}
+
+PRC_decrease_Army_Loyalty_med = {
+	add_to_variable = { PRC_Army_Loyalty = -4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Army_Loyalty_med_tt
+}
+
+PRC_decrease_Army_Loyalty_high = {
+	add_to_variable = { PRC_Army_Loyalty = -6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Army_Loyalty_high_tt
+}
+
+PRC_decrease_Civilian_Power_low = {
+	add_to_variable = { PRC_Civilian_Power = -2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Civilian_Power_low_tt
+}
+
+PRC_decrease_Civilian_Power_med = {
+	add_to_variable = { PRC_Civilian_Power = -4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Civilian_Power_med_tt
+}
+
+PRC_decrease_Civilian_Power_high = {
+	add_to_variable = { PRC_Civilian_Power = -6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Civilian_Power_high_tt
+}
+
+PRC_decrease_Civilian_Loyalty_low = {
+	add_to_variable = { PRC_Civilian_Loyalty = -2 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Civilian_Loyalty_low_tt
+}
+
+PRC_decrease_Civilian_Loyalty_med = {
+	add_to_variable = { PRC_Civilian_Loyalty = -4 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Civilian_Loyalty_med_tt
+}
+
+PRC_decrease_Civilian_Loyalty_high = {
+	add_to_variable = { PRC_Civilian_Loyalty = -6 }
+	PRC_apply_relationship_effect = yes
+	custom_effect_tooltip = PRC_decrease_Civilian_Loyalty_high_tt
+}
+
+PRC_increase_trade_idea = {
+	if = {
+		limit = { has_idea = PRC_Trade_1 }
+		swap_ideas = {
+			remove_idea = PRC_Trade_1
+			add_idea = PRC_Trade_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = PRC_Trade_2 }
+		swap_ideas = {
+			remove_idea = PRC_Trade_2
+			add_idea = PRC_Trade_3
+		}
+	}
+	else = {
+		add_ideas = PRC_Trade_1
+	}
+}
+
+PRC_apply_relationship_effect = {
+	hidden_effect = {
+		PRC_clamp_regional_vars = yes
+		if = {
+			limit = { NOT = { PRC = { has_country_flag = PRC_no_bonuses_from_mil } } }
+			set_variable = { PRC_speed_military_bonus = PRC_Army_Power }
+			set_variable = { PRC_conscription_military_bonus = PRC_Army_Power }
+			set_variable = { PRC_morale_military_bonus = PRC_Army_Power }
+
+			divide_variable = { PRC_speed_military_bonus = 800 }
+			divide_variable = { PRC_conscription_military_bonus = 1000 }
+			divide_variable = { PRC_morale_military_bonus = 800 }
+
+			set_temp_variable = { PRC_Army_Loyalty_bonus = PRC_Army_Loyalty }
+			add_to_temp_variable = { PRC_Army_Loyalty_bonus = -50 }
+			divide_temp_variable = { PRC_Army_Loyalty_bonus = 20 }
+
+			multiply_variable = { PRC_speed_military_bonus = PRC_Army_Loyalty_bonus }
+			multiply_variable = { PRC_conscription_military_bonus = PRC_Army_Loyalty_bonus }
+			multiply_variable = { PRC_morale_military_bonus = PRC_Army_Loyalty_bonus }
+		}
+		if = {
+			limit = { NOT = { PRC = { has_country_flag = PRC_no_bonuses_from_civ } } }
+			set_variable = { PRC_pp_civilian_bonus = PRC_Civilian_Power }
+			set_variable = { PRC_ic_civilian_bonus = PRC_Civilian_Power }
+			set_variable = { PRC_agriculture_civilian_bonus = PRC_Civilian_Power }
+
+			divide_variable = { PRC_pp_civilian_bonus = 800 }
+			divide_variable = { PRC_ic_civilian_bonus = 700 }
+			divide_variable = { PRC_agriculture_civilian_bonus = 50 }
+
+			set_temp_variable = { PRC_Civilian_Loyalty_bonus = PRC_Civilian_Loyalty }
+			add_to_temp_variable = { PRC_Civilian_Loyalty_bonus = -50 }
+			divide_temp_variable = { PRC_Civilian_Loyalty_bonus = 20 }
+
+			multiply_variable = { PRC_pp_civilian_bonus = PRC_Civilian_Loyalty_bonus }
+			multiply_variable = { PRC_ic_civilian_bonus = PRC_Civilian_Loyalty_bonus }
+			multiply_variable = { PRC_agriculture_civilian_bonus = PRC_Civilian_Loyalty_bonus }
+		}
+
+		if = {
+			limit = { PRC = { has_country_flag = PRC_destroyed_military } }
+			set_variable = { PRC_Army_Loyalty = 0 }
+			set_variable = { PRC_Army_Loyalty_dummy = 0 }
+		}
+
+		if = {
+			limit = { PRC = { has_country_flag = PRC_destroyed_citzenry } }
+			set_variable = { PRC_Civilian_Loyalty = 0 }
+			set_variable = { PRC_Civilian_Loyalty_dummy = 0 }
+		}
+
+		force_update_dynamic_modifier = yes
+	}
+}
+
+PRC_monthly_decay_estates = {
+	set_variable = { PRC.PRC_Civ_Decay = 0 }
+	set_variable = { PRC.PRC_Army_Decay = 0 }
+	set_variable = { PRC.PRC_Army_Loyalty_dummy = 0 }
+	set_variable = { PRC.PRC_Civilian_Loyalty_dummy = 0  }
+
+	every_owned_state = {
+		limit = { check_variable = { PRC_Owner = -1 } }
+		add_to_variable = { PRC.PRC_Army_Loyalty = 1 }
+		add_to_variable = { PRC.PRC_Army_Loyalty_dummy = 1 }
+	}
+
+	every_owned_state = {
+		limit = { check_variable = { PRC_Owner = 1 } }
+		add_to_variable = { PRC.PRC_Civilian_Loyalty = 1 }
+		add_to_variable = { PRC.PRC_Civilian_Loyalty_dummy = 1 }
+	}
+
+	every_owned_state = {
+		add_to_variable = { PRC.PRC_Army_Loyalty = -0.5 }
+		add_to_variable = { PRC.PRC_Civilian_Loyalty = -0.5 }
+		add_to_variable = { PRC.PRC_Civilian_Loyalty_dummy = -0.5 }
+		add_to_variable = { PRC.PRC_Army_Loyalty_dummy = -0.5 }
+	}
+
+	if = {
+		limit = { has_completed_focus = PRC_Decide_Power_Balance }
+		#add_to_variable = { PRC_Army_Loyalty = 5 }
+		add_to_variable = { PRC_Army_Loyalty_dummy = 5 }
+	}
+	clamp_variable = {
+	var = PRC_Army_Loyalty_dummy
+	max = 0
+	min = -50
+	}
+
+	set_variable = { PRC.PRC_Army_Decay = PRC.PRC_Army_Loyalty_dummy }
+	set_variable = { PRC.PRC_Civ_Decay = PRC.PRC_Civilian_Loyalty_dummy }
+
+	
+	add_to_variable = { PRC_Army_Loyalty = PRC_Army_Decay }
+	add_to_variable = { PRC_Civilian_Loyalty = PRC_Civ_Decay }
+
+	PRC_apply_relationship_effect = yes
+}
+
+PRC_military_coup = {
+	custom_effect_tooltip = PRC_elimination_of_citizenry
+	add_ideas = PRC_Mil_Gov
+	PRC = {
+		set_country_flag = PRC_military
+		set_country_flag = PRC_no_bonuses_from_civ
+		set_country_flag = PRC_destroyed_citzenry
+		set_temp_variable = {TNO_economy_subtype_temp = 6}
+		econ_subtype_change = yes 
+	}
+	set_variable = { PRC_Civilian_Power = 0 }
+	set_variable = { PRC_Civilian_Loyalty = 0 }
+
+	hidden_effect = {
+		country_event = { id = PRC.101 days = 50 random_days = 10 }
+		every_owned_state = {
+			limit = { check_variable = { THIS.PRC_Owner = -1 } }
+			set_variable = { THIS.PRC_Owner = 0 }
+		}
+	}
+
+}
+
+PRC_citizen_coup = {
+	custom_effect_tooltip = PRC_elimination_of_military
+	PRC = {
+		set_country_flag = PRC_civilian
+		set_country_flag = PRC_no_bonuses_from_mil
+		set_country_flag = PRC_destroyed_military
+		set_temp_variable = {TNO_economy_subtype_temp = 2}
+		econ_subtype_change = yes 
+	}
+
+	set_variable = { PRC_Army_Power = 0 }
+	add_ideas = PRC_Civ_Gov
+	set_variable = { PRC_Army_Loyalty = 0 }
+
+	hidden_effect = {
+		country_event = { id = PRC.98 days = 50 random_days = 10 }
+		PRC = {
+			every_owned_state = {
+				limit = { check_variable = { THIS.PRC_Owner = 1 } }
+				set_variable = { THIS.PRC_Owner = 0 }
+			}
+		}
+	}
+}
+
+PRC_Improve_union_status = {
+	if = {
+		limit = {has_idea = PRC_old_union}
+		swap_ideas = {
+			remove_idea =PRC_old_union
+			add_idea = PRC_old_union_1
+		}
+	}
+	else_if = {
+		limit = {has_idea = PRC_old_union_1}
+		swap_ideas = {
+			remove_idea = PRC_old_union_1
+			add_idea = PRC_new_union
+		}
+	}
+}
+
+PRC_add_civ_status_effect = {
+	set_variable = { THIS.PRC_Owner = 1 }
+
+	add_to_variable = { PRC.PRC_Civilian_Power = 10 }
+	add_to_variable = { PRC.PRC_Civilian_Loyalty = 10 }
+	PRC_apply_relationship_effect = yes
+}
+
+PRC_add_mil_status_effect = {
+	set_variable = { THIS.PRC_Owner = -1 }
+	add_to_variable = { PRC.PRC_Army_Power = 10 }
+	add_to_variable = { PRC.PRC_Army_Loyalty = 10 }
+	PRC_apply_relationship_effect = yes
+}
+
+MEN_buff_mengjiang = {
+#此scripted effect原位于改组国民政府用于增加gaw难度，与华司机无关，1.3后可能以删除，于此保留占位符以防报错
+}

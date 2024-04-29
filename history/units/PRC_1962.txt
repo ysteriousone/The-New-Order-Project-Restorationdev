@@ -1,4 +1,15 @@
 ﻿division_template = {
+	name = "Elitnaya Strelkovaya Diviziya"
+	division_names_group = PRC_INF_01
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+		elite_infantry = { x = 1 y = 0 }
+		elite_infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
 	name = "Strelkovaya Diviziya"
 	division_names_group = PRC_INF_01
 	regiments = {
@@ -21,8 +32,36 @@ division_template = {
 	}
 }
 
+division_template = {	
+	name = "Vozdushno-Desantnaya Diviziya"	
+	division_names_group = PRC_PAR_01
+	template_counter = 44	
+	regiments = {	
+		elite_infantry = { x = 0 y = 0 }	
+		elite_infantry = { x = 0 y = 1 }	
+		elite_infantry = { x = 1 y = 0 }	
+		elite_infantry = { x = 1 y = 1 }	
+	}	
+	support = {	
+		engineer = { x = 0 y = 0 }	
+		air_assault = { x = 0 y = 1 }	
+		transport_helicopter_company = { x = 0 y = 2 }	
+	}	
+}
+
+division_template = {
+	name = "Tankovaya Diviziya"
+	division_names_group = SOV_ARM_01 #04
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+}
+
 units = {
 	division = {
+		#name = "36th Rifle Division"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 36
@@ -34,6 +73,7 @@ units = {
 	}
 
 	division = {
+		#name = "57th Rifle Division"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 57
@@ -45,6 +85,18 @@ units = {
 	}
 
 	division = {
+		#name = "321st Rifle Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 321
+		}
+		location="10695"
+		division_template= "Strelkovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division = {
+		#name = "4th Guard Cavalry Division"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 304
@@ -53,6 +105,28 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+	}
+	division = {
+		#name = "111th Tank Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location="10539"
+		division_template= "Tankovaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		#name = "1st Guards Airborne Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location="10627"
+		division_template= "Vozdushno-Desantnaya Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
 	}
 }
 

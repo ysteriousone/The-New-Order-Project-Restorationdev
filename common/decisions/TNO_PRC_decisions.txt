@@ -1,0 +1,536 @@
+PRC_The_Red_Army = {
+	PRC_Finish_Army_Modernization = {
+		visible = {
+			NOT = { has_country_flag = PRC_Modernized_Army }
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Finish_Army_Modernization_trigger
+				check_variable = { PRC_Army_Modernization > 99.9 }
+			}
+		}
+
+		custom_cost_trigger = { always = yes }
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Finish_Army_Modernization"
+			army_experience = 40
+			clr_country_flag = PRC_Army_Modernization_Project
+			set_country_flag = PRC_Modernized_Army
+			country_event = PRC.23
+			TNO_improve_army_professionalism_high = yes
+			hidden_effect = { TNO_improve_army_professionalism_high = yes }
+
+			custom_effect_tooltip = PRC_Finish_Army_Modernization_tt
+			add_to_variable = { PRC_RA_army_armor_attack_factor = 0.15 }
+			add_to_variable = { PRC_RA_army_armor_speed_factor = 0.15 }
+			add_to_variable = { PRC_RA_army_org = 0.15 }
+			add_to_variable = { PRC_RA_army_sub_unit_air_assault_attack_factor = 0.15 }
+
+			add_to_variable = { PRC_RA_army_infantry_attack_factor = 0.15 }
+			add_to_variable = { PRC_RA_army_infantry_defence_factor = 0.15 }
+			add_to_variable = { PRC_RA_training_time_army = -0.15 }
+			add_to_variable = { PRC_RA_experience_gain_army_factor = 0.15 }
+			PRC_update_dynamic_modifier_values = yes
+		}
+	}
+
+	PRC_Modernize_Mechanized_Equipments = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Modernize_Mechanized_Equipments_trigger_tt
+				NOT = { has_country_flag = PRC_Modernization_decision }
+			}
+		}
+
+		visible = {
+			has_country_flag = PRC_Army_Modernization_Project
+			NOT = { has_country_flag = PRC_Modernized_Army }
+		}
+
+		custom_cost_trigger = {
+			has_army_experience > 15
+		}
+
+		custom_cost_text = custom_cost_PRC_Modernize_Mechanized_Equipments
+
+		days_remove = 35
+
+		days_re_enable = 45
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Modernize_Mechanized_Equipments"
+			hidden_effect = {
+				army_experience = -15
+			}
+			set_country_flag = PRC_Modernization_decision
+			set_temp_variable = { debt_temp = 0.005 }
+			econ_national_debt_change = yes
+		}
+
+		modifier = {
+			army_org_factor = -0.10
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Modernize_Mechanized_Equipments"
+			clr_country_flag = PRC_Modernization_decision
+			custom_effect_tooltip = PRC_Army_Modernization_2_tt
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = APC
+				category = armor
+			}
+			add_to_variable = { PRC_Army_Modernization_monthly_change = 2 }
+			clamp_variable = { var = PRC_Army_Modernization min = 0 max = 100 }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				check_variable = { modifier@army_org_factor < -0.30 }
+			}
+		}
+	}
+
+	PRC_Helicopter_Investiment = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Modernize_Mechanized_Equipments_trigger_tt
+				NOT = { has_country_flag = PRC_Modernization_decision }
+			}
+		}
+
+		visible = {
+			has_country_flag = PRC_Army_Modernization_Project
+			NOT = { has_country_flag = PRC_Modernized_Army }
+		}
+
+		custom_cost_trigger = {
+			has_army_experience > 15
+		}
+
+		custom_cost_text = custom_cost_PRC_Modernize_Mechanized_Equipments
+
+		days_remove = 35
+
+		days_re_enable = 45
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Helicopter_Investiment"
+			set_temp_variable = { debt_temp = 0.005 }
+			econ_national_debt_change = yes
+			hidden_effect = {
+				army_experience = -15
+			}
+			set_country_flag = PRC_Modernization_decision
+		}
+
+		modifier = {
+			army_org_factor = -0.10
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Helicopter_Investiment"
+			clr_country_flag = PRC_Modernization_decision
+			custom_effect_tooltip = PRC_Army_Modernization_2_tt
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = helicopter
+			}
+			add_to_variable = { PRC_Army_Modernization_monthly_change = 2 }
+			clamp_variable = { var = PRC_Army_Modernization min = 0 max = 100 }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				check_variable = { modifier@army_org_factor < -0.30 }
+			}
+		}
+	}
+
+	PRC_Better_Guns = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Modernize_Mechanized_Equipments_trigger_tt
+				NOT = { has_country_flag = PRC_Modernization_decision }
+			}
+		}
+
+		visible = {
+			has_country_flag = PRC_Army_Modernization_Project
+			NOT = { has_country_flag = PRC_Modernized_Army }
+		}
+
+		custom_cost_trigger = {
+			has_army_experience > 15
+		}
+
+		custom_cost_text = custom_cost_PRC_Modernize_Mechanized_Equipments
+
+		days_remove = 35
+
+		days_re_enable = 45
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Better_Guns"
+			set_temp_variable = { debt_temp = 0.005 }
+			econ_national_debt_change = yes
+			hidden_effect = {
+				army_experience = -15
+			}
+			set_country_flag = PRC_Modernization_decision
+		}
+
+		modifier = {
+			army_org_factor = -0.10
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Better_Guns"
+			clr_country_flag = PRC_Modernization_decision
+			custom_effect_tooltip = PRC_Army_Modernization_2_tt
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+			add_to_variable = { PRC_Army_Modernization_monthly_change = 2 }
+			clamp_variable = { var = PRC_Army_Modernization min = 0 max = 100 }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				check_variable = { modifier@army_org_factor < -0.30 }
+			}
+		}
+	}
+
+	PRC_Planes_Investiment = {
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Modernize_Mechanized_Equipments_trigger_tt
+				NOT = { has_country_flag = PRC_Modernization_decision }
+			}
+		}
+
+		visible = {
+			has_country_flag = PRC_Army_Modernization_Project
+			NOT = { has_country_flag = PRC_Modernized_Army }
+		}
+
+		custom_cost_trigger = {
+			has_army_experience > 15
+		}
+
+		custom_cost_text = custom_cost_PRC_Modernize_Mechanized_Equipments
+
+		days_remove = 35
+
+		days_re_enable = 45
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Better_Guns"
+			set_temp_variable = { debt_temp = 0.005 }
+			econ_national_debt_change = yes
+			hidden_effect = {
+				army_experience = -15
+			}
+			set_country_flag = PRC_Modernization_decision
+		}
+
+		modifier = {
+			army_org_factor = -0.10
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Better_Guns"
+			clr_country_flag = PRC_Modernization_decision
+			custom_effect_tooltip = PRC_Army_Modernization_2_tt
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = air_equipment
+			}
+			add_to_variable = { PRC_Army_Modernization_monthly_change = 2 }
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				check_variable = { modifier@army_org_factor < -0.30 }
+			}
+		}
+	}
+}
+
+PRC_The_Conference = {
+	PRC_Enforce_Goverment_Authority = {
+		cost = 60
+		days_remove = 70
+		days_re_enable = 70
+		icon = GFX_decision_generic_prepare_civil_war
+		available = {
+			has_stability < 0.5
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Enforce_Goverment_Authority"
+			add_stability = 0.10
+			TNO_improve_political_parties_policy_effectiveness_med = yes
+		}
+
+		modifier = {
+			political_power_gain = -0.25
+		}
+	}
+
+	PRC_Pursuit_Favors_from_Military = {
+		available = {
+			NOT = { has_decision = PRC_Pursuit_Favors_from_Civilian_Administration }
+		}
+		icon = GFX_decision_generic_military_parade
+		cost = 45
+		days_remove = 28
+		days_re_enable = 28
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Pursuit_Favors_from_Military"
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Pursuit_Favors_from_Military"
+			PRC_increase_Army_Loyalty_high = yes
+			PRC_increase_Army_Power_low = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				has_stability < 0.35
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.25
+					check_variable = { PRC_Army_Power > 85 }
+					check_variable = { PRC_Army_Loyalty > 75 }
+				}
+			}
+		}
+	}
+
+	PRC_Pursuit_Favors_from_Civilian_Administration = {
+		available = {
+			NOT = { has_decision = PRC_Pursuit_Favors_from_Military }
+		}
+		icon = GFX_decision_generic_civil_support
+		cost = 35
+		days_remove = 28
+		days_re_enable = 28
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Pursuit_Favors_from_Civilian_Administration"
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Pursuit_Favors_from_Civilian_Administration"
+			PRC_increase_Civilian_Loyalty_high = yes
+			PRC_increase_Civilian_Power_low = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				has_stability < 0.35
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.25
+					check_variable = { PRC_Civilian_Power > 80 }
+					check_variable = { PRC_Civilian_Loyalty > 75 }
+				}
+			}
+		}
+	}
+
+	PRC_Weaken_Military_Power = {
+		available = {
+			NOT = { has_decision = PRC_Weaken_Civilian_Power }
+		}
+		cost = 55
+		days_remove = 28
+		days_re_enable = 28
+		icon = GFX_decision_generic_political_discourse
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Weaken_Military_Power"
+			PRC_decrease_Army_Loyalty_high = yes
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Weaken_Military_Power"
+			PRC_decrease_Army_Power_med = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				has_stability < 0.35
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.25
+					check_variable = { PRC_Army_Power > 85 }
+					check_variable = { PRC_Army_Loyalty > 75 }
+				}
+			}
+		}
+	}
+
+	PRC_Weaken_Civilian_Power = {
+		available = {
+			NOT = { has_decision = PRC_Weaken_Military_Power }
+		}
+		icon = GFX_decision_generic_use_force
+		cost = 45
+		days_remove = 28
+		days_re_enable = 28
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Weaken_Civilian_Power"
+			PRC_decrease_Civilian_Loyalty_high = yes
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Weaken_Civilian_Power"
+			PRC_decrease_Civilian_Power_med = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				has_stability < 0.35
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.25
+					check_variable = { PRC_Civilian_Power > 80 }
+					check_variable = { PRC_Civilian_Loyalty > 75 }
+				}
+			}
+		}
+	}
+
+	PRC_Empower_Military_Power = {
+		available = {
+			NOT = { has_decision = PRC_Empower_Civilian_Power }
+		}
+		cost = 55
+		days_remove = 28
+		days_re_enable = 28
+		icon = GFX_decision_generic_political_discourse
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Empower_Military_Power"
+			PRC_decrease_Civilian_Loyalty_high = yes
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Empower_Military_Power"
+			PRC_increase_Army_Power_med = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				has_stability < 0.35
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.25
+					check_variable = { PRC_Army_Power > 90 }
+					check_variable = { PRC_Civilian_Loyalty < 50 }
+				}
+			}
+		}
+	}
+
+	PRC_Empower_Civilian_Power = {
+		available = {
+			NOT = { has_decision = PRC_Empower_Military_Power }
+		}
+		icon = GFX_decision_generic_use_force
+		cost = 45
+		days_remove = 28
+		days_re_enable = 28
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision PRC_Weaken_Civilian_Power"
+			PRC_decrease_Army_Loyalty_high = yes
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Remove PRC_Weaken_Civilian_Power"
+			PRC_increase_Civilian_Power_med = yes
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.2
+				has_stability < 0.35
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.25
+					check_variable = { PRC_Civilian_Power > 90 }
+					check_variable = { PRC_Army_Loyalty < 50 }
+				}
+			}
+		}
+	}
+}
