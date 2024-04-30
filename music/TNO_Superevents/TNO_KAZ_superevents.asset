@@ -1,0 +1,34 @@
+music = {
+	name = "TNO_SE_AKTOBE_KAZAKH_REUNIFICATION"
+	file = "Aktobe.ogg"
+}
+
+music = {
+	name = "TNO_SE_AKTAU_KAZAKH_REUNIFICATION"
+	file = "Aktau.ogg"
+}
+
+music = {
+	name = "TNO_SE_NOWA_POLSKA_KAZAKH_PACIFICATION"
+	file = "Nowa_Polska.ogg"
+}
+
+music = {
+	name = "TNO_SE_PAVLODAR_KAZAKH_REUNIFICATION"
+	file = "Pavlodar.ogg"
+}
+
+music = {
+	name = "TNO_SE_KYZYLORDA_KAZAKH_REUNIFICATION"
+	file = "Kyzylorda.ogg"
+}
+
+music = {
+	name = "TNO_SE_KOKSHETAU_KAZAKH_REUNIFICATION"
+	file = "Kokshetau.ogg"
+}
+
+music = {
+	name = "TNO_SE_KOSTANAY_KAZAKH_REUNIFICATION"
+	file = "Kostanay.ogg"
+}

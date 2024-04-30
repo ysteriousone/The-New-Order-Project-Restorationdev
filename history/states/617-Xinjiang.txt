@@ -24,13 +24,12 @@ state={
 		}
 		victory_points = { 4709 15 }
 		victory_points = { 1703 5 }
-		victory_points = { 12656 5 }
 		set_state_flag = state_renamings
 
 	}
 
 	provinces={
-		1703 4682 4709 4770 7702 7792 7850 10545 10614 12526 12601 12656
+		1703 4682 4709 4770 7702 7792 10545 10614 12656
 	}
 	manpower=2150500
 	buildings_max_level_factor=1.000

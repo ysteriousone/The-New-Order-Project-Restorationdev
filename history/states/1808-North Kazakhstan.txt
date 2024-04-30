@@ -3,8 +3,8 @@ state={
 	name="STATE_1808"
 
 	history={
-		owner = KAZ
-		add_core_of = KAZ
+		owner = KOK
+		add_core_of = KOK
 		buildings = {
 			infrastructure = 2
 			thermoelectric_plant = 1

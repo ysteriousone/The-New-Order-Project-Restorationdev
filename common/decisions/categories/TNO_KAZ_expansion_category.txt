@@ -1,0 +1,12 @@
+kazakh_expansion_category = {
+	icon = GFX_decision_category_border_war
+	picture = GFX_ONG_secure_the_front
+
+	allowed = {
+		is_kazakh_nation = yes
+	}
+	visible = {
+		has_global_flag = KAZ_UNIFIED
+		has_country_flag = RUS_regional_stage
+	}
+}

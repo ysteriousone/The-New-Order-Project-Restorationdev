@@ -26,6 +26,9 @@ set_variable = { TNO_economy_subtype = token:Econ_Subtype_Anarchic }
 
 set_country_flag = TNO_eliminate_building_demand
 set_country_flag = can_not_use_econ_system
+set_country_flag = TNO_eliminate_military_spending
+set_country_flag = TNO_exclude_from_econ_ranking
+country_lock_all_division_template = yes
 
 create_country_leader = {
 	name = ZZZ_anarchy
@@ -135,8 +138,13 @@ add_to_array = { global.russian_warlords = DRL }
 add_to_array = { global.russian_warlords = MGN }
 add_to_array = { global.russian_warlords = URL }
 
+add_to_array = { global.russian_warlords = ARL }
+add_to_array = { global.russian_warlords = AKT }
+add_to_array = { global.russian_warlords = NPL }
 add_to_array = { global.russian_warlords = KAZ }
-add_to_array = { global.russian_warlords = KZR }
+add_to_array = { global.russian_warlords = DER }
+add_to_array = { global.russian_warlords = KOK }
+add_to_array = { global.russian_warlords = PAV }
 
 add_to_array = { global.russian_warlords = OMS }
 add_to_array = { global.russian_warlords = TYM }

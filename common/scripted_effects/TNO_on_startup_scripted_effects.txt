@@ -90,6 +90,8 @@ TNO_startup_nation = {
 					OR = {
 						econ_can_use_economy_system = yes 
 						NOT = { has_country_flag = starting_tag }
+						tag = NRL
+						tag = OMO
 					}
 				}
 			

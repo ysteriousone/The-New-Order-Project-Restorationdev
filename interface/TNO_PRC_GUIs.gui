@@ -1,0 +1,391 @@
+guiTypes = {
+	containerWindowType = {
+		name = "PRC_Army_Decisions_GUI"
+		size = { width = 500 height = 790 }
+		position = { x = 0 y = 0 }
+		containerWindowType = {
+			name = "progbar_container"
+			position = { x = 24 y = 90 }
+			size = { width = 452 height = 31 }
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_crt_1b_tile"
+			}
+			iconType = {
+				name = "PRC_Modernization_ProgressBar"
+				spriteType = "GFX_NOV_Election_GUI_Bar"
+				position = { x = 2 y = 1 }
+			}
+		}
+		instantTextboxType = {
+			name = "PRC_status"
+			position = { x = 95 y = 25 }
+			font = "aldrich_30_outline"
+			text = "PRC_Army_Mod_text"
+			format = center
+			maxWidth = 300
+		}
+		instantTextboxType = {
+			name = "PRC_status_mod"
+			position = { x = 95 y = 55 }
+			font = "aldrich_24_outline"
+			text = "PRC_Army_Mod_tt"
+			format = center
+			maxWidth = 300
+		}
+		@PRC_Y_ARMY_CONTAINER = -30
+		containerWindowType = {
+			name = "PRC_Army_Decisions_First_Row"
+			position = { x = 0 y = @PRC_Y_ARMY_CONTAINER }
+			size = { width = 500 height = 250 }
+			buttonType = {
+				name = "PRC_1_Name"
+				position = { x = 10 y = 164 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_1_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_1_Modifier"
+				position = { x = 10 y = 214 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_1_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_1_Interact_Plus"
+				position = { x = 10 y = 264 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_1_Interact_Minus"
+				position = { x = 123 y = 264 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+
+			iconType = {
+				name = "PRC_1_2_Exclusive_Icon"
+				spriteType = "GFX_focus_link_exclusive"
+				position = { x = 243 y = 218 }
+			}
+
+			buttonType = {
+				name = "PRC_2_Name"
+				position = { x = 280 y = 164 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_2_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_2_Modifier"
+				position = { x = 280 y = 214 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_2_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_2_Interact_Plus"
+				position = { x = 280 y = 264 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_2_Interact_Minus"
+				position = { x = 393 y = 264 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "PRC_Army_Decisions_Second_Row"
+			position = { x = 0 y = @PRC_Y_ARMY_CONTAINER }
+			size = { width = 500 height = 250 }
+			buttonType = {
+				name = "PRC_3_Name"
+				position = { x = 10 y = 324 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_3_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_3_Modifier"
+				position = { x = 10 y = 374 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_3_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_3_Interact_Plus"
+				position = { x = 10 y = 424 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_3_Interact_Minus"
+				position = { x = 123 y = 424 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+
+			iconType = {
+				name = "PRC_3_4_Exclusive_Icon"
+				spriteType = "GFX_focus_link_exclusive"
+				position = { x = 243 y = 378 }
+			}
+
+			buttonType = {
+				name = "PRC_4_Name"
+				position = { x = 280 y = 324 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_4_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_4_Modifier"
+				position = { x = 280 y = 374 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_4_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_4_Interact_Plus"
+				position = { x = 280 y = 424 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_4_Interact_Minus"
+				position = { x = 393 y = 424 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "PRC_Army_Decisions_Third_Row"
+			position = { x = 0 y = @PRC_Y_ARMY_CONTAINER }
+			size = { width = 500 height = 250 }
+			buttonType = {
+				name = "PRC_5_Name"
+				position = { x = 10 y = 484 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_5_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_5_Modifier"
+				position = { x = 10 y = 534 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_5_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_5_Interact_Plus"
+				position = { x = 10 y = 584 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_5_Interact_Minus"
+				position = { x = 123 y = 584 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+
+			iconType = {
+				name = "PRC_5_6_Exclusive_Icon"
+				spriteType = "GFX_focus_link_exclusive"
+				position = { x = 243 y = 538 }
+			}
+
+			buttonType = {
+				name = "PRC_6_Name"
+				position = { x = 280 y = 484 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_6_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_6_Modifier"
+				position = { x = 280 y = 534 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_6_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_6_Interact_Plus"
+				position = { x = 280 y = 584 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Training_Minus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_6_Interact_Minus"
+				position = { x = 393 y = 584 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Training_Plus_5_Text"
+				format = center
+			}
+		}
+		containerWindowType = {
+			name = "PRC_Army_Decisions_Fourth_Row"
+			position = { x = 0 y = @PRC_Y_ARMY_CONTAINER }
+			size = { width = 500 height = 250 }
+			buttonType = {
+				name = "PRC_7_Name"
+				position = { x = 10 y = 644 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_7_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_7_Modifier"
+				position = { x = 10 y = 694 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_7_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_7_Interact_Plus"
+				position = { x = 10 y = 744 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_7_Interact_Minus"
+				position = { x = 123 y = 744 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+
+			iconType = {
+				name = "PRC_7_8_Exclusive_Icon"
+				spriteType = "GFX_focus_link_exclusive"
+				position = { x = 243 y = 698 }
+			}
+
+			buttonType = {
+				name = "PRC_8_Name"
+				position = { x = 280 y = 644 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_22_outline"
+				text = PRC_8_Name_tt
+				format = center
+			}
+			buttonType = {
+				name = "PRC_8_Modifier"
+				position = { x = 280 y = 694 }
+				spriteType = "GFX_PRC_army_info"
+				font = "aldrich_24_outline"
+				text = "PRC_8_Modifier_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_8_Interact_Plus"
+				position = { x = 280 y = 744 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Plus_5_Text"
+				format = center
+			}
+			buttonType = {
+				name = "PRC_8_Interact_Minus"
+				position = { x = 393 y = 744 }
+				spriteType = "GFX_PRC_interactions_button"
+				font = "aldrich_20_outline"
+				text = "PRC_Minus_5_Text"
+				format = center
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "PRC_State_Container"
+		position = { x = 435 y = 5 }
+		size = { width = 320 height = 270 }
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_techtree_bg"
+		}
+
+		instantTextboxType = {
+			name = "PRC_status"
+			position = { x = 25 y = 15 }
+			font = "aldrich_24_outline"
+			text="PRC_owner_tt"
+			format = center
+			maxWidth = 280
+		}
+	
+		buttonType = {
+			name = "PRC_remove_status"
+			position = { x = 45 y = 80 }
+			spriteType = "GFX_PRC_army_info"
+			font = "aldrich_24_outline"
+			text = "PRC_remove_status_tt"
+			format = center
+			pdx_tooltip = "PRC_remove_status_ttip"
+		}
+			
+		buttonType = {
+			name = "PRC_add_civ_status"
+			position = { x = 45 y = 130 }
+			spriteType = "GFX_PRC_army_info"
+			font = "aldrich_24_outline"
+			text = "PRC_add_civ_status_tt"
+			format = center
+			pdx_tooltip = "PRC_add_civ_status_ttip"
+		}
+			
+		buttonType = {
+			name = "PRC_add_mil_status"
+			position = { x = 45 y = 180 }
+			spriteType = "GFX_PRC_army_info"
+			font = "aldrich_24_outline"
+			text = "PRC_add_mil_status_tt"
+			format = center
+			pdx_tooltip = "PRC_add_mil_status_ttip"
+		}
+	}
+}

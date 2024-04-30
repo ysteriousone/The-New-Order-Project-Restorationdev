@@ -15,8 +15,10 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 }
 
@@ -41,7 +43,26 @@ units = {
 		location = "12121"
 		division_template = "Kenestik Jayaw"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.5
+	}
+	division = {
+		#name = "203rd Rifle Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 203
+		}
+		location = "12121"
+		division_template = "Kenestik Jayaw"
+		start_experience_factor = 0.4
+	}
+	division = {
+		#name = "203rd Rifle Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 203
+		}
+		location = "12121"
+		division_template = "Kenestik Jayaw"
+		start_experience_factor = 0.4
 	}
 	division = {
 		#name = "105th Infantry Division"
@@ -52,28 +73,24 @@ units = {
 		location = "1239"
 		division_template = "Kenestik Jayaw"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.4
 	}
 	division = {
 		#name = "8ya Gvardyeiskaya Strelk. Div.
 		location = "1375"
 		division_template = "Kenestik Jayaw"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "Momyshuly Guard"
 		location = "10619"
 		division_template = "Kenestik Kavaleriya"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.6
 	}
 	division = {
 		name = "Altay Guard"
 		location = "4224"
 		division_template = "Kenestik Kavaleriya"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
 	}
 	division = {
 		#name = "78th Tank Division"
@@ -84,6 +101,5 @@ units = {
 		location = "12329"
 		division_template = "Kenestik Tank"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.4
 	}
 }

@@ -25,7 +25,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 214
+			highlight_state_targets = {
+				state = 214
+			}
 		}
 
 		# on_map_mode = map_only
@@ -81,7 +83,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 861
+			highlight_state_targets = {
+				state = 861
+			}
 		}
 
 		# on_map_mode = map_only
@@ -131,7 +135,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 869
+			highlight_state_targets = {
+				state = 869
+			}
 		}
 
 		# on_map_mode = map_only
@@ -191,7 +197,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 351
+			highlight_state_targets = {
+				state = 351
+			}
 		}
 
 		# on_map_mode = map_only
@@ -246,7 +254,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 397
+			highlight_state_targets = {
+				state = 397
+			}
 		}
 
 		# on_map_mode = map_only
@@ -295,7 +305,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 866
+			highlight_state_targets = {
+				state = 866
+			}
 		}
 
 		# on_map_mode = map_only
@@ -347,7 +359,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 753
+			highlight_state_targets = {
+				state = 753
+			}
 		}
 
 		# on_map_mode = map_only
@@ -403,7 +417,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 400
+			highlight_state_targets = {
+				state = 400
+			}
 		}
 
 		# on_map_mode = map_only
@@ -460,7 +476,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 249
+			highlight_state_targets = {
+				state = 249
+			}
 		}
 
 		# on_map_mode = map_only
@@ -511,7 +529,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 252
+			highlight_state_targets = {
+				state = 252
+			}
 		}
 
 		# on_map_mode = map_only
@@ -562,7 +582,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 651
+			highlight_state_targets = {
+				state = 651
+			}
 		}
 
 		# on_map_mode = map_only
@@ -623,7 +645,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 850
+			highlight_state_targets = {
+				state = 850
+			}
 		}
 
 		# on_map_mode = map_only
@@ -678,7 +702,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 215
+			highlight_state_targets = {
+				state = 215
+			}
 		}
 
 		# on_map_mode = map_only
@@ -730,7 +756,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 1359
+			highlight_state_targets = {
+				state = 1359
+			}
 		}
 
 		# on_map_mode = map_only
@@ -754,6 +782,12 @@ RUS_coring_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_kola remove"
 			add_state_core = 1359
 			add_state_core = 213
+			if = {
+				limit = {
+					owns_state = 1724
+				}
+				add_state_core = 1724
+			}
 			if = {
 				limit = {
 					owns_state = 147
@@ -792,7 +826,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 859
+			highlight_state_targets = {
+				state = 859
+			}
 		}
 
 		# on_map_mode = map_only
@@ -848,7 +884,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 652
+			highlight_state_targets = {
+				state = 652
+			}
 		}
 
 		# on_map_mode = map_only
@@ -901,7 +939,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 848
+			highlight_state_targets = {
+				state = 848
+			}
 		}
 
 		# on_map_mode = map_only
@@ -950,7 +990,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 582
+			highlight_state_targets = {
+				state = 582
+			}
 		}
 
 		# on_map_mode = map_only
@@ -998,7 +1040,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 846
+			highlight_state_targets = {
+				state = 846
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1046,7 +1090,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 863
+			highlight_state_targets = {
+				state = 863
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1094,7 +1140,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 579
+			highlight_state_targets = {
+				state = 579
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1151,7 +1199,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 845
+			highlight_state_targets = {
+				state = 845
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1205,7 +1255,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 653
+			highlight_state_targets = {
+				state = 653
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1257,7 +1309,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 573
+			highlight_state_targets = {
+				state = 573
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1312,7 +1366,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 403
+			highlight_state_targets = {
+				state = 403
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1362,7 +1418,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 571
+			highlight_state_targets = {
+				state = 571
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1423,7 +1481,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 578
+			highlight_state_targets = {
+				state = 578
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1479,7 +1539,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 570
+			highlight_state_targets = {
+				state = 570
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1536,7 +1598,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 569
+			highlight_state_targets = {
+				state = 569
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1592,7 +1656,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 654
+			highlight_state_targets = {
+				state = 654
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1640,7 +1706,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 757
+			highlight_state_targets = {
+				state = 757
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1702,7 +1770,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 568
+			highlight_state_targets = {
+				state = 568
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1752,7 +1822,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 329
+			highlight_state_targets = {
+				state = 329
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1800,7 +1872,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 566
+			highlight_state_targets = {
+				state = 566
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1851,7 +1925,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 564
+			highlight_state_targets = {
+				state = 564
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1900,7 +1976,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 574
+			highlight_state_targets = {
+				state = 574
+			}
 		}
 
 		# on_map_mode = map_only
@@ -1949,7 +2027,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 563
+			highlight_state_targets = {
+				state = 563
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2003,7 +2083,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 561
+			highlight_state_targets = {
+				state = 561
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2053,7 +2135,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 562
+			highlight_state_targets = {
+				state = 562
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2104,7 +2188,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 890
+			highlight_state_targets = {
+				state = 890
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2161,7 +2247,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 759
+			highlight_state_targets = {
+				state = 759
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2211,7 +2299,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 637
+			highlight_state_targets = {
+				state = 637
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2270,7 +2360,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 1646
+			highlight_state_targets = {
+				state = 1646
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2308,19 +2400,27 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 407
+			controls_state = 406
 		}
 
 		visible = {
+            owns_state = 406
 			owns_state = 407
 			NOT = {
 				407 = {
+					is_core_of = ROOT
+				}
+				406 = {
 					is_core_of = ROOT
 				}
 			}
 		}
 
 		highlight_states = {
-			state = 407
+			highlight_state_targets = {
+				state = 407
+				state = 406
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2343,6 +2443,7 @@ RUS_coring_category = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_uralsk remove"
 			add_state_core = 407
+			add_state_core = 406
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -2356,24 +2457,21 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 402
-			controls_state = 406
 		}
 
 		visible = {
 			owns_state = 402
-			owns_state = 406
 			NOT = {
 				402 = {
-					is_core_of = ROOT
-				}
-				406 = {
 					is_core_of = ROOT
 				}
 			}
 		}
 
 		highlight_states = {
-			state = 402
+			highlight_state_targets = {
+				state = 402
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2396,7 +2494,6 @@ RUS_coring_category = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_khromtau remove"
 			add_state_core = 402
-			add_state_core = 406
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -2422,7 +2519,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 583
+			highlight_state_targets = {
+				state = 583
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2452,20 +2551,75 @@ RUS_coring_category = {
 		}
 	}
 
+	RUS_coring_integrate_aktau = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 2016
+		}
+
+		visible = {
+			owns_state = 2016
+			NOT = {
+				2016 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2016
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_aktau remove"
+			add_state_core = 2016
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
 	RUS_coring_integrate_kokshetau = {
 
 		icon = GFX_decision_generic_form_nation
 
 		available = {
 			controls_state = 590
+			controls_state = 1807
 			controls_state = 1808
 		}
 
 		visible = {
 			owns_state = 590
+			owns_state = 1807
 			owns_state = 1808
 			NOT = {
 				590 = {
+					is_core_of = ROOT
+				}
+				1807 = {
 					is_core_of = ROOT
 				}
 				1808 = {
@@ -2475,7 +2629,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 590
+			highlight_state_targets = {
+				state = 590
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2498,6 +2654,7 @@ RUS_coring_category = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_kokshetau remove"
 			add_state_core = 590
+			add_state_core = 1807
 			add_state_core = 1808
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -2534,7 +2691,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 588
+			highlight_state_targets = {
+				state = 588
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2573,7 +2732,6 @@ RUS_coring_category = {
 		available = {
 			controls_state = 404
 			controls_state = 589
-			controls_state = 1807
 			controls_state = 1803
 			controls_state = 1802
 			controls_state = 587
@@ -2587,7 +2745,6 @@ RUS_coring_category = {
 			owns_state = 1802
 			owns_state = 587
 			owns_state = 1804
-			owns_state = 1807
 			NOT = {
 				589 = {
 					is_core_of = ROOT
@@ -2604,9 +2761,6 @@ RUS_coring_category = {
 				587 = {
 					is_core_of = ROOT
 				}
-				1807 = {
-					is_core_of = ROOT
-				}
 				1802 = {
 					is_core_of = ROOT
 				}
@@ -2614,7 +2768,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 589
+			highlight_state_targets = {
+				state = 589
+			}
 		}
 
 		# on_map_mode = map_only
@@ -2641,7 +2797,6 @@ RUS_coring_category = {
 			add_state_core = 1804
 			add_state_core = 1803
 			add_state_core = 587
-			add_state_core = 1807
 			add_state_core = 1802
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -2650,6 +2805,546 @@ RUS_coring_category = {
 		}
 	}
 
+	RUS_coring_integrate_uzbekistan = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 1467
+			controls_state = 405
+			controls_state = 1468
+			controls_state = 585
+			controls_state = 750
+		}
+
+		visible = {
+			owns_state = 1467
+			owns_state = 405
+			owns_state = 1468
+			owns_state = 585
+			owns_state = 750
+			NOT = {
+				1467 = {
+					is_core_of = ROOT
+				}
+				405 = {
+					is_core_of = ROOT
+				}
+				1468 = {
+					is_core_of = ROOT
+				}
+				585 = {
+					is_core_of = ROOT
+				}
+				750 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 585
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_uzbekistan remove"
+			add_state_core = 1467
+			add_state_core = 405
+			add_state_core = 1468
+			add_state_core = 585
+			add_state_core = 750
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
+	RUS_coring_integrate_turkmenistan = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 584
+		}
+
+		visible = {
+			owns_state = 584
+			NOT = {
+				584 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 584
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_turkmenistan remove"
+			add_state_core = 584
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
+	RUS_coring_integrate_tajikistan = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 742
+		}
+
+		visible = {
+			owns_state = 742
+			NOT = {
+				742 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 742
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_tajikistan remove"
+			add_state_core = 742
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
+	RUS_coring_integrate_xinjiang = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 618
+			controls_state = 957
+			controls_state = 617
+			controls_state = 619
+			controls_state = 1964
+			controls_state = 958
+		}
+
+		visible = {
+			owns_state = 618
+			owns_state = 957
+			owns_state = 617
+			owns_state = 619
+			owns_state = 1964
+			owns_state = 958
+			NOT = {
+				618 = {
+					is_core_of = ROOT
+				}
+				957 = {
+					is_core_of = ROOT
+				}
+				617 = {
+					is_core_of = ROOT
+				}
+				619 = {
+					is_core_of = ROOT
+				}
+				1964 = {
+					is_core_of = ROOT
+				}
+				958 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 617
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_xinjiang remove"
+			add_state_core = 618
+			add_state_core = 957
+			add_state_core = 617
+			add_state_core = 619
+			add_state_core = 1964
+			add_state_core = 958
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
+	RUS_coring_integrate_afghanistan = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 1465
+			controls_state = 1885
+			controls_state = 1470
+			controls_state = 1471
+			controls_state = 1474
+			controls_state = 1884
+			controls_state = 1469
+			controls_state = 267
+			controls_state = 1473
+			controls_state = 1883
+			controls_state = 415
+			controls_state = 1472
+			controls_state = 1533
+			controls_state = 929
+			controls_state = 1889
+			controls_state = 1890
+			controls_state = 1899
+			controls_state = 1897
+			controls_state = 1898
+			controls_state = 1895
+			controls_state = 1896
+			controls_state = 442
+			controls_state = 1894
+			controls_state = 1893
+			controls_state = 1891
+			controls_state = 1892
+			controls_state = 1534
+			controls_state = 445
+			controls_state = 749
+			controls_state = 444
+		}
+
+		visible = {
+			owns_state = 1465
+			owns_state = 1885
+			owns_state = 1470
+			owns_state = 1471
+			owns_state = 1474
+			owns_state = 1884
+			owns_state = 1469
+			owns_state = 267
+			owns_state = 1473
+			owns_state = 1883
+			owns_state = 415
+			owns_state = 1472
+			owns_state = 1533
+			owns_state = 929
+			owns_state = 1889
+			owns_state = 1890
+			owns_state = 1899
+			owns_state = 1897
+			owns_state = 1898
+			owns_state = 1895
+			owns_state = 1896
+			owns_state = 442
+			owns_state = 1894
+			owns_state = 1893
+			owns_state = 1891
+			owns_state = 1892
+			owns_state = 1534
+			owns_state = 445
+			owns_state = 749
+			owns_state = 444
+			NOT = {
+				1465 = {
+					is_core_of = ROOT
+				}
+				1885 = {
+					is_core_of = ROOT
+				}
+				1470 = {
+					is_core_of = ROOT
+				}
+				1471 = {
+					is_core_of = ROOT
+				}
+				1474 = {
+					is_core_of = ROOT
+				}
+				1884 = {
+					is_core_of = ROOT
+				}
+				1469 = {
+					is_core_of = ROOT
+				}
+				267 = {
+					is_core_of = ROOT
+				}
+				1473 = {
+					is_core_of = ROOT
+				}
+				1883 = {
+					is_core_of = ROOT
+				}
+				415 = {
+					is_core_of = ROOT
+				}
+				1472 = {
+					is_core_of = ROOT
+				}
+				1533 = {
+					is_core_of = ROOT
+				}
+				929 = {
+					is_core_of = ROOT
+				}
+				1889 = {
+					is_core_of = ROOT
+				}
+				1890 = {
+					is_core_of = ROOT
+				}
+				1899 = {
+					is_core_of = ROOT
+				}
+				1897 = {
+					is_core_of = ROOT
+				}
+				1898 = {
+					is_core_of = ROOT
+				}
+				1895 = {
+					is_core_of = ROOT
+				}
+				1896 = {
+					is_core_of = ROOT
+				}
+				442 = {
+					is_core_of = ROOT
+				}
+				1894 = {
+					is_core_of = ROOT
+				}
+				1893 = {
+					is_core_of = ROOT
+				}
+				1891 = {
+					is_core_of = ROOT
+				}
+				1892 = {
+					is_core_of = ROOT
+				}
+				1534 = {
+					is_core_of = ROOT
+				}
+				445 = {
+					is_core_of = ROOT
+				}
+				749 = {
+					is_core_of = ROOT
+				}
+				444 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 216
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0095
+			political_power_gain = -0.65
+			gdp_growth_modifier = -0.8
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = 200
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_afghanistan remove"
+			add_state_core = 1465
+			add_state_core = 1885
+			add_state_core = 1470
+			add_state_core = 1471
+			add_state_core = 1474
+			add_state_core = 1884
+			add_state_core = 1469
+			add_state_core = 267
+			add_state_core = 1473
+			add_state_core = 1883
+			add_state_core = 415
+			add_state_core = 1472
+			add_state_core = 1533
+			add_state_core = 929
+			add_state_core = 1889
+			add_state_core = 1890
+			add_state_core = 1899
+			add_state_core = 1897
+			add_state_core = 1898
+			add_state_core = 1895
+			add_state_core = 1896
+			add_state_core = 442
+			add_state_core = 1894
+			add_state_core = 1893
+			add_state_core = 1891
+			add_state_core = 1892
+			add_state_core = 1534
+			add_state_core = 445
+			add_state_core = 749
+			add_state_core = 444
+			add_stability = 0.085
+			set_temp_variable = { gdp_growth_temp = 0.06 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
+	RUS_coring_integrate_kyrgyzstan = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 1466
+			controls_state = 586
+			controls_state = 732
+		}
+
+		visible = {
+			owns_state = 1466
+			owns_state = 586
+			owns_state = 732
+			NOT = {
+				1466 = {
+					is_core_of = ROOT
+				}
+				586 = {
+					is_core_of = ROOT
+				}
+				732 = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 586
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.001
+			political_power_gain = -0.25
+			gdp_growth_modifier = -0.15
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_western_mongolia remove"
+			add_state_core = 1466
+			add_state_core = 586
+			add_state_core = 732
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
 	RUS_coring_integrate_western_mongolia = {
 
 		icon = GFX_decision_generic_form_nation
@@ -2668,7 +3363,9 @@ RUS_coring_category = {
 		}
 
 		highlight_states = {
-			state = 814
+			highlight_state_targets = {
+				state = 814
+			}
 		}
 
 		# on_map_mode = map_only

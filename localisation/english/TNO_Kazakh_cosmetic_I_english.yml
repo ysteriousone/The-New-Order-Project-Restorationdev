@@ -1,0 +1,41 @@
+﻿l_english:
+ #Kazakhstan
+ AKT_regional_unifier_national_socialism: "Kazakh State"
+ AKT_regional_unifier_national_socialism_DEF: "Kazakh State"
+ AKT_regional_unifier_national_socialism_ADJ: "Kazakh"
+ AKT_regional_unifier_ultranationalism: "Kazakh State"
+ AKT_regional_unifier_ultranationalism_DEF: "Kazakh State"
+ AKT_regional_unifier_ultranationalism_ADJ: "Kazakh"
+ 
+ ARL_regional_unifier_despotism: "Kazakh National Republic"
+ ARL_regional_unifier_despotism_DEF: "the Kazakh National Republic"
+ ARL_regional_unifier_despotism_ADJ: "Kazakh"
+ 
+ DER_regional_unifier_despotism: "Islamic Republic of Kazakhstan"
+ DER_regional_unifier_despotism_DEF: "the Islamic Republic of Kazakhstan"
+ DER_regional_unifier_despotism_ADJ: "Kazakh"
+ 
+ KAZ_regional_unifier_communist: "Kazakh Soviet Socialist Republic"
+ KAZ_regional_unifier_communist_DEF: "the Kazakh Soviet Socialist Republic"
+ KAZ_regional_unifier_communist_ADJ: "Kazakh"
+ 
+ KOK_regional_unifier_despotism: "Kazakh Khanate"
+ KOK_regional_unifier_despotism_DEF: "the Kazakh Khanate"
+ KOK_regional_unifier_despotism_ADJ: "Kazakh"
+ 
+ PAV_regional_unifier_liberal_conservatism: "Republic of Kazakhstan"
+ PAV_regional_unifier_liberal_conservatism_DEF: "the Republic of Kazakhstan"
+ PAV_regional_unifier_liberal_conservatism_ADJ: "Kazakh"
+ PAV_regional_unifier_liberalism: "Republic of Kazakhstan"
+ PAV_regional_unifier_liberalism_DEF: "the Republic of Kazakhstan"
+ PAV_regional_unifier_liberalism_ADJ: "Kazakh"
+ PAV_regional_unifier_conservatism: "Republic of Kazakhstan"
+ PAV_regional_unifier_conservatism_DEF: "the Republic of Kazakhstan"
+ PAV_regional_unifier_conservatism_ADJ: "Kazakh"
+ 
+ KAZ_NPL_progressivism: "Republic of Kazakhstan"
+ ARL_NPL_paternalism: "Republic of Aktobe"
+ KAZ_NPL_progressivism_DEF: "the Republic of Kazakhstan"
+ ARL_NPL_paternalism_DEF: "the Republic of Aktobe"
+ KAZ_NPL_progressivism_ADJ: "Kazakh"
+ ARL_NPL_paternalism_ADJ: "Aktobe"

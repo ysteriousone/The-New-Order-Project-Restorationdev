@@ -320,6 +320,7 @@
  STATE_192: "Odesa"
  STATE_192_rus: "Odessa"
  STATE_193: "Jagodina"
+ STATE_193_com: "Svetozarevo"
  STATE_194: "Minsk-Land"
  STATE_195: "Saint Petersburg"
  STATE_195_ger: "Sankt Petersburg"
@@ -2682,6 +2683,7 @@
  STATE_2013: "Suffolk"
  STATE_2014: "Essex"
  STATE_2015: "Kent"
+ STATE_2016: "Aktau"
 
  ##Dynamic state names for KKKmerica no I'm not gonna put them in order fuck imperialism
  STATE_629_kkk: "THE 50TH STATE, HAWAII"

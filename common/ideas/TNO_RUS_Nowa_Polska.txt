@@ -1,0 +1,388 @@
+ideas = {
+	country = {
+		NPL_Spychalski_Bizarre_Dictatorship_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_nation_of_survivors_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_Spychalski_Bizarre_Dictatorship
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				socialist_acceptance = 10
+				communist_acceptance = 10
+			}
+		}
+		NPL_nation_of_survivors_0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_nation_of_survivors"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_nation_of_survivors
+			modifier = {
+				army_core_defence_factor = 0.2
+				stability_factor = 0.2
+				conscription_factor = -0.2
+			}
+		}
+		NPL_nation_of_survivors_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_nation_of_survivors_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_nation_of_survivors
+			modifier = {
+				army_core_defence_factor = 0.25
+				stability_factor = 0.15
+				conscription_factor = -0.2
+			}
+		}
+		NPL_nation_of_survivors_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_nation_of_survivors_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_nation_of_survivors
+			modifier = {
+				army_core_defence_factor = 0.30
+				stability_factor = 0.15
+				conscription_factor = -0.2
+			}
+		}
+		NPL_polish_rule_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_rule_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_Polish_Minority_rule
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.25
+				conscription_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		NPL_polish_rule_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_rule_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_Polish_Minority_rule
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = 0.20
+				conscription_factor = -0.15
+				army_org_factor = 0.05
+			}
+		}
+		NPL_polish_rule_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_rule_3"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_Polish_Minority_rule
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = 0.25
+				conscription_factor = -0.2
+				army_org_factor = 0.2
+			}
+		}
+		NPL_polish_rule_4 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_rule_4"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_Polish_Minority_rule
+			modifier = {
+				stability_factor = -0.3
+				political_power_gain = 0.50
+				conscription_factor = -0.45
+				army_org_factor = 0.25
+			}
+		}
+		NPL_polish_rule_5 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_rule_5"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = NPL_Polish_Minority_rule
+			modifier = {
+				stability_factor = -0.5
+				political_power_gain = 0.75
+				conscription_factor = -0.60
+				army_org_factor = 0.3
+			}
+		}
+		NPL_food_rationing = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_food_rationing"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				consumer_goods_use_modifier = -0.15
+				political_power_gain = -0.40
+			}
+		}
+		NPL_grain_rationing = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_grain_rationing"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				consumer_goods_use_modifier = -0.20
+				political_power_gain = -0.75
+			}
+		}
+		NPL_both_rationing_0 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_both_rationing_0"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				consumer_goods_use_modifier = -0.10
+				political_power_gain = -0.25
+			}
+		}
+		NPL_both_rationing_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_both_rationing_1"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				consumer_goods_use_modifier = 0.10
+				political_power_gain = -0.75
+			}
+		}
+		NPL_anarchy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_anarchy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = WRS_rations
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = -0.30
+				consumer_goods_use_modifier = 0.50
+				political_power_gain = -1.00
+				conscription_factor = -0.70
+				army_attack_factor = -0.75
+				army_defence_factor = -0.75
+			}
+		}
+		NPL_polish_guns = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_guns"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.3
+					reliability_factor = -0.2
+				}
+			}
+		}
+		NPL_legitimizing_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_legitimizing_government"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.75
+			}
+		}
+		NPL_polish_scientists = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_polish_scientists"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		NPL_caspian_sea_trade = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_revitalized_economy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_use_modifier = -0.075
+				political_power_gain = 0.50
+			}
+		}
+		NPL_revitalizing_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_revitalizing_economy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				consumer_goods_use_modifier = -0.075
+			}
+		}
+		NPL_revitalized_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_revitalized_economy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_use_modifier = -0.10
+			}
+		}
+		NPL_The_Polish_Line = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_The_Polish_Line"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				production_speed_bunker_factor = 0.20
+			}
+		}
+		NPL_agencja_wywiadu_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NPL_agencja_wywiadu_idea"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				decryption_factor = 0.10
+				political_power_gain = -0.50
+			}
+			research_bonus = {
+				computing_tech = 0.05
+				encryption_tech = 0.07
+				decryption_tech = 0.07
+			}
+		}
+	}
+	hidden_ideas = {
+		NPL_base_idea = {
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.5
+			}
+		}
+	}
+}

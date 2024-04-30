@@ -1,0 +1,190 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_NPL_minister_Edward_Osobka_Morawski"
+		texturefile = "gfx/interface/ideas/ministers/NPL/NPL_minister_Edward_Osobka_Morawski.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_minister_Adam_Rapacki"
+		texturefile = "gfx/interface/ideas/ministers/NPL/NPL_minister_Adam_Rapacki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_minister_Stefan_Jedrychowski"
+		texturefile = "gfx/interface/ideas/ministers/NPL/NPL_minister_Stefan_Jedrychowski.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_minister_Florian_Siwicki"
+		texturefile = "gfx/interface/ideas/ministers/NPL/NPL_minister_Florian_Siwicki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_minister_Czeslaw_Kiszczak"
+		texturefile = "gfx/interface/ideas/ministers/NPL/NPL_minister_Czeslaw_Kiszczak.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_minister_Ryszard_Kuklinski"
+		texturefile = "gfx/interface/ideas/ministers/NPL/NPL_minister_Ryszard_Kuklinski.dds"
+	}
+
+	### Aktobe ###
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Nikolay_Onoprienko"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Nikolay_Onoprienko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Bayken_Ashimov"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Bayken_Ashimov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Shakhmardan_Yesenov"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Shakhmardan_Yesenov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Viktor_Boychenko"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Viktor_Boychenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Kayyrgali_Ismagul"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Kayyrgali_Ismagul.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Sadyk_Zhaksygul"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Sadyk_Zhaksygul.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Fedor_Ozmitel"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Fedor_Ozmitel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Kashagan_Jamangarayev"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Kashagan_Jamangarayev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_minister_Vladimir_Breusov"
+		texturefile = "gfx/interface/ideas/ministers/ARL/ARL_minister_Vladimir_Breusov.dds"
+	}
+
+	### Kokshetau ###
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Abu_Khan"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Abu_Khan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Yergaliy_Baskarbayev"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Yergaliy_Baskarbayev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Vasily_Demidenko"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Vasily_Demidenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Kamil_Makhmeyev"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Kamil_Makhmeyev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Vasily_Benberin"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Vasily_Benberin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Vasily_Bovt"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Vasily_Bovt.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_minister_Viktor_Bulavsky"
+		texturefile = "gfx/interface/ideas/ministers/KOK/KOK_minister_Viktor_Bulavsky.dds"
+	}
+
+	### Kostanay ###
+	spriteType = {
+		name = "GFX_idea_DER_minister_Nikolay_Zabelkin"
+		texturefile = "gfx/interface/ideas/ministers/DER/DER_minister_Nikolay_Zabelkin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_minister_Alyubay_Dairov"
+		texturefile = "gfx/interface/ideas/ministers/DER/DER_minister_Alyubay_Dairov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_minister_Sadwaqas_Ghylmani"
+		texturefile = "gfx/interface/ideas/ministers/DER/DER_minister_Sadwaqas_Ghylmani.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_minister_Vasily_Afanasyev"
+		texturefile = "gfx/interface/ideas/ministers/DER/DER_minister_Vasily_Afanasyev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_minister_Sergey_Gudenko"
+		texturefile = "gfx/interface/ideas/ministers/DER/DER_minister_Sergey_Gudenko.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_minister_Seytkasim_Ashirov"
+		texturefile = "gfx/interface/ideas/ministers/DER/DER_minister_Seytkasim_Ashirov.dds"
+	}
+
+	### Kyzylorda ###
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Zhumabay_Shayakhmetov"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Zhumabay_Shayakhmetov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Sagadat_Nurmagambetov"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Sagadat_Nurmagambetov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Ismail_Yusupov"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Ismail_Yusupov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Dinmukhamed_Kunayev"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Dinmukhamed_Kunayev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Rakhimzhan_Qoshqarbaev"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Rakhimzhan_Qoshqarbaev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Serikkazy_Bekbosunov"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Serikkazy_Bekbosunov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_minister_Mao_Anying"
+		texturefile = "gfx/interface/ideas/ministers/KAZ/KAZ_minister_Mao_Anying.dds"
+	}
+
+	### Pavlodar ###
+	spriteType = {
+		name = "GFX_idea_PAV_minister_Turar_Ryskulov"
+		texturefile = "gfx/interface/ideas/ministers/PAV/PAV_minister_Turar_Ryskulov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAV_minister_Altay_Amanzholov"
+		texturefile = "gfx/interface/ideas/ministers/PAV/PAV_minister_Altay_Amanzholov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAV_minister_Ilyas_Yesenberlin"
+		texturefile = "gfx/interface/ideas/ministers/PAV/PAV_minister_Ilyas_Yesenberlin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAV_minister_Omargali_Kudyshev"
+		texturefile = "gfx/interface/ideas/ministers/PAV/PAV_minister_Omargali_Kudushev.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAV_minister_Kapay_Iskakov"
+		texturefile = "gfx/interface/ideas/ministers/PAV/PAV_minister_Kapay_Iskakov.dds"
+	}
+	
+	### Aktau ###
+	spriteType = {
+		name = "GFX_idea_AKT_minister_Asylkhan_Turgan"
+		texturefile = "gfx/interface/ideas/ministers/AKT/AKT_minister_Asylkhan_Turgan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_minister_Dzhanysbek_Kusmangali"
+		texturefile = "gfx/interface/ideas/ministers/AKT/AKT_minister_Dzhanysbek_Kusmangali.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_minister_Khasan_Bekturgan"
+		texturefile = "gfx/interface/ideas/ministers/AKT/AKT_minister_Khasan_Bekturgan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_minister_Wakhab_Sultan"
+		texturefile = "gfx/interface/ideas/ministers/AKT/AKT_minister_Wakhab_Sultan.dds"
+	}
+}

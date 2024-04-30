@@ -1,0 +1,217 @@
+characters = {
+	# Leaders
+	ARL_Nikolay_Onoprienko = {
+		name = ARL_Nikolay_Onoprienko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Nikolay_Onoprienko.dds"
+				small = "GFX_idea_ARL_minister_Nikolay_Onoprienko"
+			}
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Nikolay_Onoprienko.dds"
+				small = "GFX_idea_ARL_minister_Nikolay_Onoprienko"
+			}
+		}
+
+		country_leader = {
+			desc = "POLITICS_NIKOLAY_ONOPRIENKO_DESC"
+			expire = "1999.1.1.1"
+			ideology = despotism_national_renewal_subtype
+			id = -1
+		}
+
+		field_marshal = {
+			traits = { war_hero politically_connected thorough_planner organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 1
+			legacy_id = 3476
+		}
+
+		advisor = {
+			slot = head_of_government
+			idea_token = ARL_Nikolay_Onoprienko_hog
+			allowed = { original_tag = ARL }
+			traits = {
+				head_of_government
+				hog_respected_war_hero
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Ministers
+	ARL_Bayken_Ashimov = {
+		name = ARL_Bayken_Ashimov
+		portraits = { civilian = { small = "GFX_idea_ARL_minister_Bayken_Ashimov" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = ARL_Bayken_Ashimov_for
+			allowed = { original_tag = ARL }
+			traits = {
+				foreign_minister
+				for_fierce_negotiator
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	ARL_Shakhmardan_Yesenov = {
+		name = ARL_Shakhmardan_Yesenov
+		portraits = { civilian = { small = "GFX_idea_ARL_minister_Shakhmardan_Yesenov" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = ARL_Shakhmardan_Yesenov_eco
+			allowed = { original_tag = ARL }
+			traits = {
+				economy_minister
+				eco_industrialiser
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	ARL_Viktor_Boychenko = {
+		name = ARL_Viktor_Boychenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Viktor_Boychenko.dds"
+				small = "GFX_idea_ARL_minister_Viktor_Boychenko"
+			}
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Viktor_Boychenko.dds"
+				small = "GFX_idea_ARL_minister_Viktor_Boychenko"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected infantry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 3480
+		}
+
+		advisor = {
+			slot = security_minister
+			idea_token = ARL_Viktor_Boychenko_sec
+			allowed = { original_tag = ARL }
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Commanders
+	ARL_Kayyrgali_Ismagul = {
+		name = ARL_Kayyrgali_Ismagul
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Kayyrgali_Ismagul.dds"
+				small = "GFX_idea_ARL_minister_Kayyrgali_Ismagul"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist war_hero organizer defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+			#legacy_id = 3341
+		}
+	}
+
+	ARL_Sadyk_Zhaksygul = {
+		name = ARL_Sadyk_Zhaksygul
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Sadyk_Zhaksygul.dds"
+				small = "GFX_idea_ARL_minister_Sadyk_Zhaksygul"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			#legacy_id = 3488
+		}
+	}
+
+	ARL_Fedor_Ozmitel = {
+		name = ARL_Fedor_Ozmitel
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Fedor_Ozmitel.dds"
+				small = "GFX_idea_ARL_minister_Fedor_Ozmitel"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist war_hero organizer defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+			#legacy_id = 3341
+		}
+	}
+
+	ARL_Kashagan_Jamangarayev = {
+		name = ARL_Kashagan_Jamangarayev
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Kashagan_Jamangarayev.dds"
+				small = "GFX_idea_ARL_minister_Kashagan_Jamangarayev"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			#legacy_id = 3488
+		}
+	}
+
+	ARL_Vladimir_Breusov = {
+		name = ARL_Vladimir_Breusov
+		portraits = {
+			army = {
+				large = "gfx/leaders/ARL/Portrait_Aktobe_Vladimir_Breusov.dds"
+				small = "GFX_idea_ARL_minister_Vladimir_Breusov"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist trait_cautious infantry_leader	}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = 3479
+		}
+	}
+}

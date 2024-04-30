@@ -325,24 +325,10 @@ defined_text = {
 				original_tag = FRS
 			}
 			event_target:winning_country = {
-				OR = {
-					original_tag = BRG
-					original_tag = BRT
-				}
+				original_tag = BRG
 			}
 		}
-		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BRG_FRA
-	}
-	text = {
-		trigger = {
-			event_target:losing_country = {
-				original_tag = BRT
-			}
-			event_target:winning_country = {
-				original_tag = FRS
-			}
-		}
-		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BRITTANY
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BRG_FRS
 	}
 	text = {
 		trigger = {
@@ -748,8 +734,8 @@ defined_text = {
 				has_country_leader = {
 					character = KOM_Sergey_Taboritsky
 					ruling_only = yes
+				}
 			}
-		}
 		}
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_RUS_tabby
 	}
@@ -1093,14 +1079,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			event_target:losing_country = {
-				original_tag = MON
-			}
-		}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_MON
-	}
-	text = {
-		trigger = {
 			event_target:winning_country = {
 				OR = {
 					tag = MEN
@@ -1230,7 +1208,7 @@ defined_text = {
 				original_tag = BRG
 			}
 		}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_FRA
+		localization_key = TNO_PEACE_POPUP_FLAVOR_FRS
 	}
 	text = {
 		trigger = {
@@ -1792,50 +1770,58 @@ defined_text = {
 		trigger = {
 			event_target:losing_country = {
 				original_tag = KAZ
-				has_country_leader = {
-					character = KAZ_Zhumabek_Tashenev
-					ruling_only = yes
 			}
 		}
-	}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_KAZ_TASHENEV
+		localization_key = TNO_PEACE_POPUP_FLAVOR_KAZ
 	}
 	text = {
 		trigger = {
 			event_target:losing_country = {
-				original_tag = KAZ
-				has_country_leader = {
-					character = KAZ_Sagadat_Nurmagambetov
-					ruling_only = yes
+				original_tag = AKT
 			}
 		}
-	}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_KAZ_NURMAGAMBETOV
+		localization_key = TNO_PEACE_POPUP_FLAVOR_AKT
 	}
 	text = {
 		trigger = {
 			event_target:losing_country = {
-				original_tag = KZR
-				has_country_leader = {
-					character = KZR_Nikolai_Shchelokov
-					ruling_only = yes
-			}
+				original_tag = ARL
 			}
 		}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_KZR_SHCHELOKOV
+		localization_key = TNO_PEACE_POPUP_FLAVOR_ARL
 	}
 	text = {
 		trigger = {
 			event_target:losing_country = {
-				original_tag = KZR
-				has_country_leader = {
-					character = KZR_Mikhail_Solomentsev
-					ruling_only = yes
+				original_tag = NPL
 			}
 		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_NPL
 	}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_KZR_SOLOMENTSEV
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = KOK
 			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_KOK
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = PAV
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_PAV
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = DER
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_DER
+	}
 	text = {
 		trigger = {
 			event_target:losing_country = {
@@ -2460,8 +2446,8 @@ defined_text = {
 		localization_key = TNO_PEACE_POPUP_FLAVOR_MSK_SNP
 	}
 	text = {
-		trigger = { 
-			event_target:losing_country = { original_tag = PAU } 
+		trigger = {
+			event_target:losing_country = { original_tag = PAU }
 			NOT = { has_global_flag = SGR_Slave_Revolt }
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_MSK_PAU
@@ -3136,14 +3122,6 @@ defined_text = {
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_GGN
 	}
-	text = {
-		trigger = {
-			event_target:losing_country = {
-				original_tag = BRT
-			}
-		}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_BRT
-	}
 
 	#Oil Crisis
 	text = { #Yemen
@@ -3388,7 +3366,7 @@ defined_text = {
 				NOT = { original_tag = BRG }
 			}
 		}
-		localization_key = TNO_PEACE_POPUP_FLAVOR_FRA_CW
+		localization_key = TNO_PEACE_POPUP_FLAVOR_FRS_CW
 	}
 
 	text = {
@@ -3488,9 +3466,20 @@ defined_text = {
 		trigger = {
 			event_target:losing_country = {
 				original_tag = CRO
+				NOT = { has_cosmetic_tag = CRO_Yugoslavia }
 			}
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_CRO
+	}
+
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = CRO
+				has_cosmetic_tag = CRO_Yugoslavia
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_CRO_YUGO
 	}
 
 	text = {
@@ -3509,6 +3498,33 @@ defined_text = {
 			}
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_SLF
+	}
+
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = GRE
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_GRE
+	}
+
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MLY
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MLY
+	}
+
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SHO
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_SHO
 	}
 
 	text = {

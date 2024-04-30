@@ -1,0 +1,44 @@
+
+
+music = {
+	song = "TNO_SE_AKTOBE_KAZAKH_REUNIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_AKTAU_KAZAKH_REUNIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_NOWA_POLSKA_KAZAKH_PACIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_PAVLODAR_KAZAKH_REUNIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_KYZYLORDA_KAZAKH_REUNIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_KOKSHETAU_KAZAKH_REUNIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_KOSTANAY_KAZAKH_REUNIFICATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}

@@ -3,7 +3,7 @@
 
 AMR_rodz_econ_development_category = {
 	AMR_amur_gold = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		available = {
 
 		}
@@ -23,14 +23,14 @@ AMR_rodz_econ_development_category = {
 				modifier = AMR_labor_unto_redemption_dynamic_modifier
 			}
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.02}
-			add_to_variable = {AMR_rodz_econ_labor_income = 0.1}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.02 }
+			add_to_variable = { AMR_rodz_econ_labor_income = 0.1 }
 			custom_effect_tooltip = AMR_rodz_improve_income
 			561 = {
 				set_temp_variable = { temp_state_value_addition = 0.06 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 		}
@@ -57,12 +57,12 @@ AMR_rodz_econ_development_category = {
 				modifier = AMR_labor_unto_redemption_dynamic_modifier
 			}
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.02}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.02 }
 			561 = {
 				set_temp_variable = { temp_state_value_addition = 0.06 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -74,7 +74,7 @@ AMR_rodz_econ_development_category = {
 				set_temp_variable = { temp_state_value_addition = 0.06 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -86,7 +86,7 @@ AMR_rodz_econ_development_category = {
 				set_temp_variable = { temp_state_value_addition = 0.06 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -121,12 +121,12 @@ AMR_rodz_econ_development_category = {
 				modifier = AMR_labor_unto_redemption_dynamic_modifier
 			}
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.02}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.02 }
 			561 = {
 				set_temp_variable = { temp_state_value_addition = 0.18 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 			add_resource = {
@@ -143,7 +143,7 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_start_zeya_dam = {
-		icon = GFX_decision_gibraltar_dam
+		icon = GFX_decision_generic_dam
 		available = {
 
 		}
@@ -168,7 +168,7 @@ AMR_rodz_econ_development_category = {
 			561 = {
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 			}
 		}
@@ -203,9 +203,9 @@ AMR_rodz_econ_development_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_oil_for_food remove"
 			custom_effect_tooltip = AMR_oil_for_food_tt
 			hidden_effect = {
-				add_to_variable = {AMR_rodz_pop_growth_oil_for_food = 0.025}
-				add_to_variable = {AMR_rodz_poverty_oil_for_food = 0.01}
-				add_to_variable = {AMR_rodz_fuel_gain_oil_for_food = -0.05 }
+				add_to_variable = { AMR_rodz_pop_growth_oil_for_food = 0.025 }
+				add_to_variable = { AMR_rodz_poverty_oil_for_food = 0.01 }
+				add_to_variable = { AMR_rodz_fuel_gain_oil_for_food = -0.05 }
 				add_dynamic_modifier = {
 					modifier = AMR_oil_for_food_dynamic_modifier
 				}
@@ -236,7 +236,7 @@ AMR_rodz_econ_development_category = {
 			561 = {
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -247,7 +247,7 @@ AMR_rodz_econ_development_category = {
 			1364 = {
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -259,7 +259,7 @@ AMR_rodz_econ_development_category = {
 			714 = {#need to find Longjiang, remember to blame Rei if wrong
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -291,7 +291,7 @@ AMR_rodz_econ_development_category = {
 		ai_will_do = { base = 50 }
 		fire_only_once = yes
 		cost = 25
-		modifier = { poverty_monthly_rate = -0.02}
+		modifier = { poverty_monthly_rate = -0.02 }
 		days_remove = 60
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_yakutsk_working_undesirables"
@@ -302,7 +302,7 @@ AMR_rodz_econ_development_category = {
 			add_dynamic_modifier = {
 				modifier = AMR_labor_unto_redemption_dynamic_modifier
 			}
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.02}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.02 }
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
 			760 = {
 				add_manpower = -6000
@@ -310,14 +310,14 @@ AMR_rodz_econ_development_category = {
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_yakutsk_working_undesirables remove"
-			add_to_variable = {AMR_rodz_poverty_oil_for_food = 0.01}
+			add_to_variable = { AMR_rodz_poverty_oil_for_food = 0.01 }
 			TNO_worsen_industrial_expertise_low = yes
 			574 = {
 				add_manpower = 4800
 				set_temp_variable = { temp_state_value_addition = 0.02 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 
@@ -331,16 +331,16 @@ AMR_rodz_econ_development_category = {
 				set_temp_variable = { temp_state_value_addition = 0.05 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 		}
 	}
 
 	AMR_expand_Magadan = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		visible = {
-			check_variable = {AMR_rodz_econ_pop_debuff < -0.07}
+			check_variable = { AMR_rodz_econ_pop_debuff < -0.07 }
 			has_country_flag = zeya_lj_railline
 			has_country_flag = zeya_dam
 		}
@@ -355,7 +355,7 @@ AMR_rodz_econ_development_category = {
 		days_remove = 90
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_expand_Magadan"
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.02}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.02 }
 			TNO_improve_trade_laws_policy_effectiveness_low = yes
 			TNO_improve_penal_system_policy_effectiveness_low = yes
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
@@ -364,7 +364,7 @@ AMR_rodz_econ_development_category = {
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_expand_Magadan remove"
-			set_variable = {AMR_FST_decisions = 2}
+			set_variable = { AMR_FST_decisions = 2 }
 			clr_country_flag = zeya_lj_railline
 			clr_country_flag = zeya_dam
 			562 = {
@@ -385,16 +385,16 @@ AMR_rodz_econ_development_category = {
 					instant_build = yes
 				}
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 		}
 	}
 
 	AMR_road_of_bones_v2 = {
-		icon = GFX_decision_death_road
+		icon = GFX_decision_generic_death_road
 		visible = {
-			check_variable = {AMR_FST_decisions > 1}
+			check_variable = { AMR_FST_decisions > 1 }
 		}
 		available = {
 		}
@@ -415,7 +415,7 @@ AMR_rodz_econ_development_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_road_of_bones_v2 remove"
 			561 = {
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -427,19 +427,19 @@ AMR_rodz_econ_development_category = {
 			}
 			562 = {
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
 				}
-				set_temp_variable = { temp_state_value_addition = 0.04}
+				set_temp_variable = { temp_state_value_addition = 0.04 }
 				econ_state_value_change_addition = yes
 			}
 			574 = {
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -464,7 +464,7 @@ AMR_rodz_econ_development_category = {
 		cost = 35
 		days_remove = 90
 		fire_only_once = yes
-		modifier = {poverty_monthly_rate = -0.05}
+		modifier = { poverty_monthly_rate = -0.05 }
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_break_Yakutsk"
 			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.025 }
@@ -478,7 +478,7 @@ AMR_rodz_econ_development_category = {
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_break_Yakutsk remove"
-			add_to_variable = {AMR_rodz_poverty_oil_for_food = 0.02}
+			add_to_variable = { AMR_rodz_poverty_oil_for_food = 0.02 }
 			custom_effect_tooltip = AMR_yakutsk_relocation
 			TNO_improve_slavery_policy_effectiveness_low = yes
 			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.015 }
@@ -531,9 +531,9 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_export_crops = {
-		icon = GFX_decision_industrial_farm
+		icon = GFX_decision_generic_industrial_farm
 		visible = {
-			check_variable = {AMR_FST_decisions > 1}
+			check_variable = { AMR_FST_decisions > 1 }
 		}
 		available = {
 		}
@@ -543,27 +543,27 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_export_crops"
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.025}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.025 }
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
-			set_temp_variable = { temp_econ_spending_amount = 0.08}
+			set_temp_variable = { temp_econ_spending_amount = 0.08 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_worsen_agriculture_low = yes
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_export_crops remove"
-			add_to_variable = {AMR_rodz_econ_labor_income = 0.075}
+			add_to_variable = { AMR_rodz_econ_labor_income = 0.075 }
 			TNO_improve_slavery_policy_effectiveness_low = yes
 			custom_effect_tooltip = AMR_rodz_improve_income
 			1364 = {
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 				set_temp_variable = { temp_state_value_addition = 0.1 }
 				econ_state_value_change_addition = yes
 			}
 			561 = {
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 				set_temp_variable = { temp_state_value_addition = 0.13 }
 				econ_state_value_change_addition = yes
@@ -573,9 +573,9 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_Zeya_dam_P2 = {
-		icon = GFX_decision_gibraltar_dam
+		icon = GFX_decision_generic_dam
 		visible = {
-			check_variable = {AMR_FST_decisions > 1}
+			check_variable = { AMR_FST_decisions > 1 }
 		}
 		available = {
 		}
@@ -585,13 +585,13 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_Zeya_dam_P2"
-			set_temp_variable = { temp_econ_spending_amount = 0.35}
+			set_temp_variable = { temp_econ_spending_amount = 0.35 }
 			econ_spend_money_once_effect_raw_money = yes
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_Zeya_dam_P2 remove"
 			set_country_flag = Zeya_dam_P2_complete
-			add_to_variable = {AMR_rodz_econ_labor_income = 0.05}
+			add_to_variable = { AMR_rodz_econ_labor_income = 0.05 }
 			custom_effect_tooltip = AMR_rodz_improve_income
 			TNO_improve_industrial_expertise_low = yes
 			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.03 }
@@ -614,7 +614,7 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_japanese_experts ={
-		icon = GFX_decision_factory_generic_red
+		icon = GFX_decision_generic_factory_red
 		visible = {
 			has_country_flag = Zeya_dam_P2_complete
 			has_country_flag = Rodz_exporting_crops
@@ -634,7 +634,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_japanese_experts"
-			set_temp_variable = { temp_econ_spending_amount = 0.12}
+			set_temp_variable = { temp_econ_spending_amount = 0.12 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_worsen_slavery_policy_effectiveness_low = yes
 			TNO_worsen_penal_system_policy_effectiveness_low = yes
@@ -643,7 +643,7 @@ AMR_rodz_econ_development_category = {
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_japanese_experts remove"
-			set_variable = {AMR_FST_decisions = 3}
+			set_variable = { AMR_FST_decisions = 3 }
 			562 = {
 				add_building_construction = {
 					type = infrastructure
@@ -662,10 +662,10 @@ AMR_rodz_econ_development_category = {
 					instant_build = yes
 				}
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 			}
-			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.02}
+			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.02 }
 			econ_GDP_boost_once_percentage = yes
 			clr_country_flag = Zeya_dam_P2_complete
 			clr_country_flag = Rodz_exporting_crops
@@ -677,7 +677,7 @@ AMR_rodz_econ_development_category = {
 	AMR_ruthless_industrialization = {
 		icon = GFX_decision_generic_heavy_industry
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -688,9 +688,9 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_ruthless_industrialization"
-			set_temp_variable = { temp_econ_spending_amount = 0.3}
+			set_temp_variable = { temp_econ_spending_amount = 0.3 }
 			econ_spend_money_once_effect_raw_money = yes
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.025}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.025 }
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
 		}
 
@@ -701,7 +701,7 @@ AMR_rodz_econ_development_category = {
 			1364 = {
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 				set_temp_variable = { temp_state_value_addition = 0.125 }
 				econ_state_value_change_addition = yes
@@ -709,7 +709,7 @@ AMR_rodz_econ_development_category = {
 			564 = {
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2.5}
+					modifier = { state_GDP_growth_modifier = 2.5 }
 				}
 				set_temp_variable = { temp_state_value_addition = 0.075 }
 				econ_state_value_change_addition = yes
@@ -717,7 +717,7 @@ AMR_rodz_econ_development_category = {
 			566 = {
 
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 				set_temp_variable = { temp_state_value_addition = 0.150 }
 				econ_state_value_change_addition = yes
@@ -729,9 +729,9 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_manchurian_pipeline = {
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -742,15 +742,15 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_manchurian_pipeline"
-			set_temp_variable = { temp_econ_spending_amount = 0.07}
+			set_temp_variable = { temp_econ_spending_amount = 0.07 }
 			econ_spend_money_once_effect_raw_money = yes
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.025}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.025 }
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
 		}
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_manchurian_pipeline remove"
-			add_to_variable = {AMR_rodz_econ_labor_income = 0.15}
+			add_to_variable = { AMR_rodz_econ_labor_income = 0.15 }
 			custom_effect_tooltip = AMR_rodz_improve_income
 			563 = {
 				set_temp_variable = { temp_state_value_addition = 0.08 }
@@ -778,9 +778,9 @@ AMR_rodz_econ_development_category = {
 		}
 	}
 	AMR_fujitsu_western_plants = {
-		icon = GFX_decision_factory_generic_red
+		icon = GFX_decision_generic_factory_red
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -791,7 +791,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_fujitsu_western_plants"
-			set_temp_variable = { temp_econ_spending_amount = 0.2}
+			set_temp_variable = { temp_econ_spending_amount = 0.2 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_improve_income_taxation_policy_effectiveness_low = yes
 			TNO_improve_industrial_equipment_low = yes
@@ -809,21 +809,21 @@ AMR_rodz_econ_development_category = {
 				set_temp_variable = { temp_state_value_addition = 0.075 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 			}
 			564 = {
 				set_temp_variable = { temp_state_value_addition = 0.075 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 			}
 			566 = {
 				set_temp_variable = { temp_state_value_addition = 0.12 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 0.5}
+					modifier = { state_GDP_growth_modifier = 0.5 }
 				}
 			}
 			set_country_flag = Fujitsu_done
@@ -831,9 +831,9 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_nissan_west = {
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -844,7 +844,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_nissan_west"
-			set_temp_variable = { temp_econ_spending_amount = 0.2}
+			set_temp_variable = { temp_econ_spending_amount = 0.2 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_improve_income_taxation_policy_effectiveness_low = yes
 			TNO_improve_industrial_equipment_low = yes
@@ -859,24 +859,24 @@ AMR_rodz_econ_development_category = {
 				category = motorized_equipment
 			}
 			562 = {
-				set_temp_variable = { temp_state_value_addition = 0.1}
+				set_temp_variable = { temp_state_value_addition = 0.1 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 			574 = {
 				set_temp_variable = { temp_state_value_addition = 0.05 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 			561 = {
-				set_temp_variable = { temp_state_value_addition = 0.1}
+				set_temp_variable = { temp_state_value_addition = 0.1 }
 				econ_state_value_change_addition = yes
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 			set_country_flag = Hitachi_done
@@ -886,7 +886,7 @@ AMR_rodz_econ_development_category = {
 	AMR_sphere_training_ground = {
 		icon = GFX_decision_generic_assault
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -899,7 +899,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_sphere_training_ground"
-			set_temp_variable = { temp_econ_spending_amount = 0.1}
+			set_temp_variable = { temp_econ_spending_amount = 0.1 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_improve_training_policy_effectiveness_med = yes
 			TNO_improve_draft_exemptions_policy_effectiveness_med = yes
@@ -915,7 +915,7 @@ AMR_rodz_econ_development_category = {
 	AMR_oil_for_food_2 = {
 		icon = GFX_decision_generic_supply
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 			has_dynamic_modifier = { modifier = AMR_oil_for_food_dynamic_modifier }
 		}
 		custom_cost_trigger = {
@@ -931,9 +931,9 @@ AMR_rodz_econ_development_category = {
 		days_remove = 60
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_oil_for_food_2"
-			set_temp_variable = { temp_econ_spending_amount = 0.1}
+			set_temp_variable = { temp_econ_spending_amount = 0.1 }
 			econ_spend_money_once_effect_raw_money = yes
-			add_to_variable = {AMR_rodz_fuel_gain_oil_for_food = -0.20}
+			add_to_variable = { AMR_rodz_fuel_gain_oil_for_food = -0.20 }
 			add_fuel = -35000
 			add_political_power = -25
 		}
@@ -941,15 +941,15 @@ AMR_rodz_econ_development_category = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_oil_for_food_2 remove"
 			custom_effect_tooltip = AMR_oil_for_food_tt
-			add_to_variable = {AMR_rodz_poverty_oil_for_food = 0.02}
-			add_to_variable = {AMR_rodz_pop_growth_oil_for_food = 0.05}
+			add_to_variable = { AMR_rodz_poverty_oil_for_food = 0.02 }
+			add_to_variable = { AMR_rodz_pop_growth_oil_for_food = 0.05 }
 		}
 	}
 
 	AMR_expand_Magadan_2 = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		visible = {
-			check_variable = {AMR_FST_decisions > 2}
+			check_variable = { AMR_FST_decisions > 2 }
 			has_country_flag = Hitachi_done
 			has_country_flag = Fujitsu_done
 			has_country_flag = pipeline_built
@@ -967,7 +967,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_expand_Magadan_2"
-			set_temp_variable = { temp_econ_spending_amount = 0.16}
+			set_temp_variable = { temp_econ_spending_amount = 0.16 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_improve_trade_laws_policy_effectiveness_med = yes
 		}
@@ -976,14 +976,14 @@ AMR_rodz_econ_development_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_expand_Magadan_2 remove"
 			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.03 }
 			econ_GDP_boost_once_percentage = yes
-			set_variable= {AMR_FST_decisions = 4}
+			set_variable= { AMR_FST_decisions = 4 }
 		}
 	}
 
 	AMR_smash_Tomsk = {
-		icon = GFX_decision_destroy_city
+		icon = GFX_decision_generic_destroy_city
 		visible = {
-			check_variable = {AMR_FST_decisions > 3}
+			check_variable = { AMR_FST_decisions > 3 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -994,14 +994,14 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_smash_Tomsk"
-			set_temp_variable = { temp_econ_spending_amount = 0.2}
+			set_temp_variable = { temp_econ_spending_amount = 0.2 }
 			econ_spend_money_once_effect_raw_money = yes
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.025}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.025 }
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
 			TNO_worsen_academic_base_low = yes
 			TNO_improve_penal_system_policy_effectiveness_low = yes
 		}
-		modifier = {poverty_monthly_rate = -0.4}
+		modifier = { poverty_monthly_rate = -0.4 }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_smash_Tomsk remove"
 			custom_effect_tooltip = AMR_tomsk_reorganization
@@ -1074,9 +1074,9 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_erase_communal_legacy = {
-		icon = GFX_decision_revolt
+		icon = GFX_decision_generic_revolt
 		visible = {
-			check_variable = {AMR_FST_decisions > 3}
+			check_variable = { AMR_FST_decisions > 3 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -1087,13 +1087,13 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_erase_communal_legacy"
-			set_temp_variable = { temp_econ_spending_amount = 0.2}
+			set_temp_variable = { temp_econ_spending_amount = 0.2 }
 			econ_spend_money_once_effect_raw_money = yes
-			add_to_variable = {AMR_rodz_econ_pop_debuff = -0.025}
+			add_to_variable = { AMR_rodz_econ_pop_debuff = -0.025 }
 			custom_effect_tooltip = AMR_rodz_worsen_pop_growth
 			TNO_improve_penal_system_policy_effectiveness_low = yes
 		}
-		modifier = {poverty_monthly_rate = -0.3}
+		modifier = { poverty_monthly_rate = -0.3 }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_erase_communal_legacy remove"
 			568 = {
@@ -1162,7 +1162,7 @@ AMR_rodz_econ_development_category = {
 	AMR_novosib_mitsubishi = {
 		icon = GFX_decision_generic_heavy_industry
 		visible = {
-			check_variable = {AMR_FST_decisions > 3}
+			check_variable = { AMR_FST_decisions > 3 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -1173,7 +1173,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_novosib_mitsubishi"
-			set_temp_variable = { temp_econ_spending_amount = 0.17}
+			set_temp_variable = { temp_econ_spending_amount = 0.17 }
 			econ_spend_money_once_effect_raw_money = yes
 		}
 		remove_effect = {
@@ -1203,7 +1203,7 @@ AMR_rodz_econ_development_category = {
 	AMR_sib_class_collab = {
 		icon = GFX_decision_generic_civil_support
 		visible = {
-			check_variable = {AMR_FST_decisions > 3}
+			check_variable = { AMR_FST_decisions > 3 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -1214,7 +1214,7 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_sib_class_collab"
-			set_temp_variable = { temp_econ_spending_amount = 0.18}
+			set_temp_variable = { temp_econ_spending_amount = 0.18 }
 			econ_spend_money_once_effect_raw_money = yes
 			TNO_improve_trade_unions_policy_effectiveness_low = yes
 		}
@@ -1249,9 +1249,9 @@ AMR_rodz_econ_development_category = {
 	}
 
 	AMR_finish_Zeya= {
-		icon = GFX_decision_gibraltar_dam
+		icon = GFX_decision_generic_dam
 		visible = {
-			check_variable = {AMR_FST_decisions > 3}
+			check_variable = { AMR_FST_decisions > 3 }
 		}
 		ai_will_do = { base = 50 }
 		available = {
@@ -1262,12 +1262,12 @@ AMR_rodz_econ_development_category = {
 		fire_only_once = yes
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_finish_Zeya"
-			set_temp_variable = { temp_econ_spending_amount = 0.4}
+			set_temp_variable = { temp_econ_spending_amount = 0.4 }
 			econ_spend_money_once_effect_raw_money = yes
 		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision AMR_finish_Zeya remove"
-			set_temp_variable = {temp_econ_GDP_boost_percentage = 0.025}
+			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.025 }
 			econ_GDP_boost_once_percentage = yes
 			561 = {
 
@@ -1296,7 +1296,7 @@ MAG_DECCAT_economic_development_werbell = {
 
 	# Phase 1
 		MAG_DEC_econmic_development_werbell_initiate_staff_recruitment = {
-			icon = GFX_MAG_decision_werbell_staff_recruitment
+			icon = GFX_decision_MAG_werbell_staff_recruitment
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1313,7 +1313,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_establish_combat_platform = {
-			icon = GFX_MAG_decision_werbell_combat_unit
+			icon = GFX_decision_MAG_werbell_combat_unit
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1332,7 +1332,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_1_construct_brig = {
-			icon = GFX_MAG_decision_werbell_brig
+			icon = GFX_decision_MAG_werbell_brig
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1358,7 +1358,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_construct_base_development_platform = {
-			icon = GFX_MAG_decision_werbell_base_development
+			icon = GFX_decision_MAG_werbell_base_development
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1404,7 +1404,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_construct_support_platform = {
-			icon = GFX_MAG_decision_werbell_support_unit
+			icon = GFX_decision_MAG_werbell_support_unit
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1428,7 +1428,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_construct_intel_platform = {
-			icon = GFX_MAG_decision_werbell_intel_unit
+			icon = GFX_decision_MAG_werbell_intel_unit
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1456,7 +1456,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_construct_medical_platform = {
-			icon = GFX_MAG_decision_werbell_medical_unit
+			icon = GFX_decision_MAG_werbell_medical_unit
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1482,7 +1482,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_construct_rd_platform = {
-			icon = GFX_MAG_decision_werbell_rd_unit
+			icon = GFX_decision_MAG_werbell_rd_unit
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1513,7 +1513,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econmic_development_werbell_expand_command_platform = {
-			icon = GFX_MAG_decision_werbell_command_unit
+			icon = GFX_decision_MAG_werbell_command_unit
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 1 }
 			}
@@ -1557,7 +1557,7 @@ MAG_DECCAT_economic_development_werbell = {
 		}
 	# Phase 2
 		MAG_DEC_econ_werbell_2_expanded_staff_recruitment = {
-			icon = GFX_MAG_decision_werbell_staff_recruitment
+			icon = GFX_decision_MAG_werbell_staff_recruitment
 			visible = { check_variable = { MAG_econ_werbell_phase = 2 } }
 			cost = 40
 			days_remove = 60
@@ -1574,7 +1574,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_2_near_waters_exploitation = {
-			icon = GFX_decision_aircraft_carrier
+			icon = GFX_decision_generic_aircraft_carrier
 			visible = { check_variable = { MAG_econ_werbell_phase = 2 } }
 			cost = 25
 			days_remove = 60
@@ -1604,7 +1604,7 @@ MAG_DECCAT_economic_development_werbell = {
 			}
 		}
 		MAG_DEC_econ_werbell_2_establish_combat_unit_fobs = {
-			icon = GFX_MAG_decision_werbell_combat_unit
+			icon = GFX_decision_MAG_werbell_combat_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 2 } }
 			available = {
 				has_completed_focus = MAG_WA_a_global_reach
@@ -1630,7 +1630,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_2_construct_base_development_fobs = {
-			icon = GFX_MAG_decision_werbell_base_development
+			icon = GFX_decision_MAG_werbell_base_development
 			visible = { check_variable = { MAG_econ_werbell_phase = 2 } }
 			cost = 50
 			days_remove = 140
@@ -1829,7 +1829,7 @@ MAG_DECCAT_economic_development_werbell = {
 		}
 	# Phase 3
 		MAG_DEC_econ_werbell_3_far_waters_exploitation = {
-			icon = GFX_decision_aircraft_carrier
+			icon = GFX_decision_generic_aircraft_carrier
 			visible = { check_variable = { MAG_econ_werbell_phase = 3 } }
 			cost = 40
 			days_remove = 90
@@ -1872,7 +1872,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_3_pacific_combat_unit_fobs = {
-			icon = GFX_MAG_decision_werbell_combat_unit
+			icon = GFX_decision_MAG_werbell_combat_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 3 } }
 			cost = 75
 			days_remove = 180
@@ -1895,7 +1895,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_3_construct_intel_fobs = {
-			icon = GFX_MAG_decision_werbell_intel_unit
+			icon = GFX_decision_MAG_werbell_intel_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 3 } }
 			cost = 75
 			days_remove = 140
@@ -1929,7 +1929,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_3_construct_support_fobs = {
-			icon = GFX_MAG_decision_werbell_support_unit
+			icon = GFX_decision_MAG_werbell_support_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 3 } }
 			cost = 75
 			days_remove = 140
@@ -1972,7 +1972,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_3_a_pacific_pirate_armada = {
-			icon = GFX_decision_red_skull
+			icon = GFX_decision_generic_red_skull
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 3 }
 				has_dynamic_modifier = { modifier = MAG_econ_werbell_dark_economy_modifier }
@@ -2116,7 +2116,7 @@ MAG_DECCAT_economic_development_werbell = {
 		}
 	# Phase 4
 		MAG_DEC_econ_werbell_4_global_recruitment_drive = {
-			icon = GFX_MAG_decision_werbell_staff_recruitment
+			icon = GFX_decision_MAG_werbell_staff_recruitment
 			visible = { check_variable = { MAG_econ_werbell_phase = 4 } }
 			cost = 80
 			days_remove = 60
@@ -2133,7 +2133,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_4_atlantic_combat_unit_fobs = {
-			icon = GFX_MAG_decision_werbell_combat_unit
+			icon = GFX_decision_MAG_werbell_combat_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 4 } }
 			cost = 120
 			days_remove = 90
@@ -2151,7 +2151,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_4_construct_ai_lab = {
-			icon = GFX_MAG_decision_werbell_rd_unit
+			icon = GFX_decision_MAG_werbell_rd_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 4 } }
 			cost = 100
 			days_remove = 90
@@ -2175,7 +2175,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_4_construct_medical_fob_and_sick_bay = {
-			icon = GFX_MAG_decision_werbell_medical_unit
+			icon = GFX_decision_MAG_werbell_medical_unit
 			visible = { check_variable = { MAG_econ_werbell_phase = 4 } }
 			cost = 50
 			days_remove = 70
@@ -2198,7 +2198,7 @@ MAG_DECCAT_economic_development_werbell = {
 			ai_will_do = { factor = 100 }
 		}
 		MAG_DEC_econ_werbell_4_the_crimson_corsairs_of_the_caribbean = {
-			icon = GFX_decision_red_skull
+			icon = GFX_decision_generic_red_skull
 			visible = {
 				check_variable = { MAG_econ_werbell_phase = 4 }
 				has_dynamic_modifier = { modifier = MAG_econ_werbell_dark_economy_modifier }
@@ -2276,7 +2276,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_1_decs = 1}
+			add_to_variable = { MAG_matty_phase_1_decs = 1 }
 			every_owned_state = {
 				limit = {
 					OR = {
@@ -2310,7 +2310,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_1_decs = 1}
+			add_to_variable = { MAG_matty_phase_1_decs = 1 }
 			every_owned_state = {
 				limit = {
 					OR = {
@@ -2344,7 +2344,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_1_decs = 1}
+			add_to_variable = { MAG_matty_phase_1_decs = 1 }
 			566 = {
 				add_building_construction = {
 					type = infrastructure
@@ -2381,7 +2381,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_1_decs = 1}
+			add_to_variable = { MAG_matty_phase_1_decs = 1 }
 			TNO_improve_agriculture_low = yes
 			swap_ideas = {
 				remove_idea = MAG_russia_last_port_of_call_1
@@ -2391,7 +2391,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		}
 	}
 	MAG_DEC_MAT_golden_opportunities_in_amur = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		visible = {
 			check_variable = { MAG_matty_econ_phase = 1 }
 		}
@@ -2404,7 +2404,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_1_decs = 1}
+			add_to_variable = { MAG_matty_phase_1_decs = 1 }
 			561 = {
 				add_state_modifier = { modifier = { state_GDP_growth_modifier = 1.00 } }
 				set_temp_variable = { temp_state_value_addition = 0.06 }
@@ -2434,7 +2434,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			set_variable = {MAG_matty_econ_phase = 2}
+			set_variable = { MAG_matty_econ_phase = 2 }
 			swap_ideas = {
 				remove_idea = MAG_russia_last_port_of_call_2
 				add_idea = MAG_russia_last_port_of_call_3
@@ -2510,7 +2510,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_2_decs = 1}
+			add_to_variable = { MAG_matty_phase_2_decs = 1 }
 			566 = {
 				add_building_construction = {
 					type = infrastructure
@@ -2544,7 +2544,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_2_decs = 1}
+			add_to_variable = { MAG_matty_phase_2_decs = 1 }
 			562 = {
 				add_state_modifier = { modifier = { state_GDP_growth_modifier = 0.75 } }
 				set_temp_variable = { temp_state_value_addition = 0.05 }
@@ -2606,7 +2606,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		}
 	}
 	MAG_DEC_MAT_the_siberian_minning_economy = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		visible = {
 			check_variable = { MAG_matty_econ_phase = 2 }
 		}
@@ -2764,7 +2764,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			set_variable = {MAG_matty_econ_phase = 31}
+			set_variable = { MAG_matty_econ_phase = 31 }
 			swap_ideas = {
 				remove_idea = MAG_russia_last_port_of_call_4
 				add_idea = MAG_russia_last_port_of_call_5
@@ -2823,7 +2823,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			set_variable = {MAG_matty_econ_phase = 32}
+			set_variable = { MAG_matty_econ_phase = 32 }
 			swap_ideas = {
 				remove_idea = MAG_russia_last_port_of_call_4
 				add_idea = MAG_russia_last_port_of_call_10
@@ -2871,7 +2871,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_3_decs_matty = 1}
+			add_to_variable = { MAG_matty_phase_3_decs_matty = 1 }
 			swap_ideas = {
 				remove_idea = MAG_russia_last_port_of_call_10
 				add_idea = MAG_russia_last_port_of_call_11
@@ -2896,7 +2896,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_3_decs_matty = 1}
+			add_to_variable = { MAG_matty_phase_3_decs_matty = 1 }
 			set_temp_variable = { gdp_growth_temp = 0.2 }
 			econ_gdp_growth_change = yes
 			TNO_improve_poverty_low = yes
@@ -2926,7 +2926,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_3_decs_matty = 1}
+			add_to_variable = { MAG_matty_phase_3_decs_matty = 1 }
 			set_temp_variable = { gdp_growth_temp = 0.5 }
 			econ_gdp_growth_change = yes
 			TNO_worsen_regulations_policy_effectiveness_low = yes
@@ -2975,7 +2975,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		}
 	}
 	MAG_DEC_MAT_westward_corporate_expansion = {
-		icon = GFX_decision_handshake
+		icon = GFX_decision_generic_handshake
 		visible = {
 			check_variable = { MAG_matty_econ_phase = 32 }
 		}
@@ -3026,7 +3026,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_3_decs_petlin = 1}
+			add_to_variable = { MAG_matty_phase_3_decs_petlin = 1 }
 			if = {
 				limit = {
 					has_idea = MAG_russia_last_port_of_call_5
@@ -3085,7 +3085,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_3_decs_petlin = 1}
+			add_to_variable = { MAG_matty_phase_3_decs_petlin = 1 }
 			set_temp_variable = { gdp_growth_temp = 0.25 }
 			econ_gdp_growth_change = yes
 			TNO_improve_industrial_expertise_low = yes
@@ -3132,7 +3132,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			add_to_variable = {MAG_matty_phase_3_decs_petlin = 1}
+			add_to_variable = { MAG_matty_phase_3_decs_petlin = 1 }
 			set_temp_variable = { gdp_growth_temp = 0.25 }
 			econ_gdp_growth_change = yes
 			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.025 }
@@ -3178,7 +3178,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		fire_only_once = yes
 		ai_will_do = { factor = 100 }
 		remove_effect = {
-			set_variable = {MAG_matty_econ_phase = 41}
+			set_variable = { MAG_matty_econ_phase = 41 }
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
 			swap_ideas = {
@@ -3335,7 +3335,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 	}
 	### Petlin ###
 	MAG_DEC_MAT_russo_american_free_trade_agreement = {
-		icon = GFX_decision_handshake
+		icon = GFX_decision_generic_handshake
 		visible = {
 			check_variable = { MAG_matty_econ_phase = 41 }
 		}
@@ -3380,7 +3380,7 @@ MAG_DECCAT_economic_development_my_man_matty = {
 		}
 	}
 	MAG_DEC_MAT_restore_tomsks_universities = {
-		icon = GFX_decision_research_generic
+		icon = GFX_decision_generic_research
 		visible = {
 			check_variable = { MAG_matty_econ_phase = 41 }
 		}
@@ -3614,7 +3614,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_restoration_of_Irkutsk_hps = {
-		icon = GFX_decision_gibraltar_dam
+		icon = GFX_decision_generic_dam
 		available = {
 		}
 		visible = {
@@ -3685,7 +3685,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_expand_the_port_of_magadan = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { CHT_phase_1_count > 4 }
@@ -3732,7 +3732,7 @@ CHT_chessboard_category = {
 	### PHASE 2 ###
 
 	CHT_expand_resource_exploitation_yakutia = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		available = {
 
 		}
@@ -3784,7 +3784,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_expand_resource_exploitation_irkutsk = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		available = {
 
 		}
@@ -3922,7 +3922,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_develop_magadan_for_large_scale_shipping = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 
 		}
@@ -4011,7 +4011,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_imperial_heart_of_siberia = {
-		icon = GFX_decision_chess_king
+		icon = GFX_decision_generic_chess_king
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { CHT_phase_2_count > 3 }
@@ -4060,7 +4060,7 @@ CHT_chessboard_category = {
 		# Info Decision #
 
 	CHT_Phase_3_Info = {
-		icon = decision_category_generic
+		icon = GFX_decision_category_generic
 		available = {
 			custom_trigger_tooltip = {
 				always = no
@@ -4164,7 +4164,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_modernize_irkutsk_hps = {
-		icon = GFX_decision_gibraltar_dam
+		icon = GFX_decision_generic_dam
 		available = {
 
 		}
@@ -4210,7 +4210,7 @@ CHT_chessboard_category = {
 		## Shepunov Edition ##
 
 	CHT_invest_in_uranium_extraction = {
-		icon = GFX_decision_reactor
+		icon = GFX_decision_generic_reactor
 		available = {
 
 		}
@@ -4291,7 +4291,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_invite_zaibatsu_investments = {
-		icon = GFX_decision_handshake
+		icon = GFX_decision_generic_handshake
 		available = {
 
 		}
@@ -4420,7 +4420,7 @@ CHT_chessboard_category = {
 		## Shared Phase 3 Final ##
 
 	CHT_prepare_for_the_westward_expansion = {
-		icon = GFX_decision_generic_siberia_superregional
+		icon = GFX_decision_diplo_siberia_superregional
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { CHT_phase_3_count > 2 }
@@ -4469,7 +4469,7 @@ CHT_chessboard_category = {
 		# Info Decision #
 
 	CHT_Phase_4_Info = {
-		icon = decision_category_generic
+		icon = GFX_decision_category_generic
 		available = {
 			custom_trigger_tooltip = {
 				always = no
@@ -4566,7 +4566,7 @@ CHT_chessboard_category = {
 	}
 
 	CHT_novosibirsk_naval_program = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 
 		}
@@ -4612,7 +4612,7 @@ CHT_chessboard_category = {
 		## Mikhail Edition ##
 
 	CHT_stolypin_land_grants_program = {
-		icon = GFX_decision_mega_farm
+		icon = GFX_decision_generic_farm
 		available = {
 
 		}
@@ -4731,7 +4731,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_begin_the_eigth_five_year_plan = {
-		icon = GFX_decision_document_socialism
+		icon = GFX_decision_generic_document_socialism
 		available = {
 
 		}
@@ -4931,7 +4931,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_restoration_of_irkutsk_hps = {
-		icon = GFX_decision_gibraltar_dam
+		icon = GFX_decision_generic_dam
 		available = {
 		}
 		visible = {
@@ -4967,7 +4967,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_revive_amurs_agricultural_sector = {
-		icon = GFX_decision_industrial_farm
+		icon = GFX_decision_generic_industrial_farm
 		available = {
 		}
 		visible = {
@@ -5008,7 +5008,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_expand_the_port_of_magadan = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { IRK_phase_1_count > 4 }
@@ -5054,7 +5054,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_rapid_factory_modernization = {
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 		available = {
 		}
 		visible = {
@@ -5112,7 +5112,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_revive_the_mining_industry = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		available = {
 		}
 		visible = {
@@ -5278,7 +5278,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_the_open_coastal_city_of_magadan = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { IRK_phase_2_count > 4 }
@@ -5336,7 +5336,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_the_industrial_harbor_of_magadan = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { IRK_phase_2_count > 4 }
@@ -5419,7 +5419,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_the_second_industrialization_wave = {
-		icon = GFX_decision_factory_generic_red
+		icon = GFX_decision_generic_factory_red
 		available = {
 		}
 		visible = {
@@ -5585,7 +5585,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_petropavlovsk_kamchatsky_open_coastal_city = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		available = {
 			has_country_flag = IRK_has_completed_across_the_pacific
 		}
@@ -5630,7 +5630,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_the_ninth_five_year_plan_state = {
-		icon = GFX_decision_document_socialism
+		icon = GFX_decision_generic_document_socialism
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { IRK_phase_3_yag_count > 3 }
@@ -5663,7 +5663,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_third_industrialization_wave = {
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 		available = {
 			has_country_flag = IRK_second_industrialization_wave_finished
 		}
@@ -5698,7 +5698,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_coal_mining_boom = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		available = {
 		}
 		visible = {
@@ -5796,7 +5796,7 @@ IRK_five_year_plans = {
 	}
 
 	IRK_the_ninth_five_year_plan_party = {
-		icon = GFX_decision_document_socialism
+		icon = GFX_decision_generic_document_socialism
 		available = {
 			custom_trigger_tooltip = {
 				check_variable = { IRK_phase_3_party_count > 4 }
@@ -6222,7 +6222,7 @@ centsib_norilsk_category = {
 	}
 
 	RUS_Norilsk_Expand_Mining_Operations = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		ai_will_do = {
 			factor = 50
 		}
@@ -6252,7 +6252,7 @@ centsib_norilsk_category = {
 	}
 
 	RUS_Norilsk_Expand_Petroleum_Excavation = {
-		icon = GFX_decision_oil_extraction
+		icon = GFX_decision_generic_oil_extraction
 		ai_will_do = {
 			factor = 50
 		}
@@ -6281,7 +6281,7 @@ centsib_norilsk_category = {
 	}
 
 	RUS_Norilsk_Modernized_Fright_Train_Network = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		ai_will_do = {
 			factor = 50
 		}
@@ -6332,7 +6332,7 @@ centsib_norilsk_category = {
 	}
 
 	RUS_Norilsk_Expand_Resource_Fields = {
-		icon = GFX_decision_oil_extraction
+		icon = GFX_decision_generic_oil_extraction
 		ai_will_do = {
 			factor = 50
 		}
@@ -6369,7 +6369,7 @@ centsib_norilsk_category = {
 	}
 
 	RUS_Norilsk_Summer_Ports = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -6393,7 +6393,7 @@ centsib_norilsk_category = {
 					instant_build = yes
 				}
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 2}
+					modifier = { state_GDP_growth_modifier = 2 }
 				}
 			}
 		}
@@ -6425,7 +6425,7 @@ centsib_norilsk_category = {
 					instant_build = yes
 				}
 				add_state_modifier = {
-					modifier = {state_GDP_growth_modifier = 1}
+					modifier = { state_GDP_growth_modifier = 1 }
 				}
 			}
 		}
@@ -6488,7 +6488,7 @@ centsib_norilsk_category = {
 
 RUS_FE_repopulation_decisions = {
 	RUS_FE_manpower_repop_dec_1 = {
-		icon = GFX_decision_mega_farm
+		icon = GFX_decision_generic_farm
 
 		ai_will_do = {
 			factor = 50
@@ -6508,8 +6508,8 @@ RUS_FE_repopulation_decisions = {
 					tag = AMR
 				}
 				social_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.15}
-				add_to_variable = {RUS_FE_repop_pp_gain = -0.05}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.15 }
+				add_to_variable = { RUS_FE_repop_pp_gain = -0.05 }
 				TNO_improve_gender_rights_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6517,7 +6517,7 @@ RUS_FE_repopulation_decisions = {
 					tag = CHT
 				}
 				social_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.10 }
 				add_dynamic_modifier = { modifier = RUS_FE_repop_program_CHT }
 				TNO_improve_gender_rights_policy_effectiveness_low = yes
 			}
@@ -6526,7 +6526,7 @@ RUS_FE_repopulation_decisions = {
 					tag = MAG
 				}
 				social_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.10 }
 				add_dynamic_modifier = { modifier = RUS_FE_repop_program_MAG }
 				TNO_improve_gender_rights_policy_effectiveness_low = yes
 			}
@@ -6535,7 +6535,7 @@ RUS_FE_repopulation_decisions = {
 					tag = BRY
 				}
 				social_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.075}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.075 }
 				add_dynamic_modifier = { modifier = RUS_FE_repop_program_BRY }
 				TNO_worsen_gender_rights_policy_effectiveness_low = yes
 			}
@@ -6544,7 +6544,7 @@ RUS_FE_repopulation_decisions = {
 					tag = IRK
 				}
 				social_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.10 }
 				TNO_worsen_gender_rights_policy_effectiveness_low = yes
 			}
 		}
@@ -6558,7 +6558,7 @@ RUS_FE_repopulation_decisions = {
 	}
 
 	RUS_FE_manpower_repop_dec_2 = {
-		icon = GFX_decision_mega_farm
+		icon = GFX_decision_generic_farm
 
 		ai_will_do = {
 			factor = 50
@@ -6582,8 +6582,8 @@ RUS_FE_repopulation_decisions = {
 					tag = AMR
 				}
 				social_funding_maximal_increase_med = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.15}
-				add_to_variable = {RUS_FE_repop_pp_gain = -0.10}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.15 }
+				add_to_variable = { RUS_FE_repop_pp_gain = -0.10 }
 				TNO_improve_gender_rights_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6591,8 +6591,8 @@ RUS_FE_repopulation_decisions = {
 					tag = CHT
 				}
 				social_funding_maximal_increase_med = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.10}
-				add_to_variable = {RUS_FE_repop_pp_gain = -0.05}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.10 }
+				add_to_variable = { RUS_FE_repop_pp_gain = -0.05 }
 				TNO_improve_gender_rights_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6600,16 +6600,16 @@ RUS_FE_repopulation_decisions = {
 					tag = MAG
 				}
 				social_funding_maximal_increase_med = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.10 }
 				TNO_improve_gender_rights_policy_effectiveness_low = yes
 			}
 			if = {
 				limit = {
 					tag = BRY
 				}
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.075}
-				add_to_variable = {RUS_FE_repop_factory_output = -0.05}
-				add_to_variable = {RUS_FE_repop_dockyard_output = -0.05}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.075 }
+				add_to_variable = { RUS_FE_repop_factory_output = -0.05 }
+				add_to_variable = { RUS_FE_repop_dockyard_output = -0.05 }
 				TNO_worsen_gender_rights_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6617,9 +6617,9 @@ RUS_FE_repopulation_decisions = {
 					tag = IRK
 				}
 				social_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_repop_monthly_pop = 0.10}
-				add_to_variable = {RUS_FE_repop_factory_output = -0.05}
-				add_to_variable = {RUS_FE_repop_dockyard_output = -0.05}
+				add_to_variable = { RUS_FE_repop_monthly_pop = 0.10 }
+				add_to_variable = { RUS_FE_repop_factory_output = -0.05 }
+				add_to_variable = { RUS_FE_repop_dockyard_output = -0.05 }
 				TNO_worsen_gender_rights_policy_effectiveness_low = yes
 			}
 		}
@@ -6633,7 +6633,7 @@ RUS_FE_repopulation_decisions = {
 	}
 
 	RUS_FE_manpower_repop_dec_3 = {
-		icon = GFX_decision_mega_farm
+		icon = GFX_decision_generic_farm
 
 		ai_will_do = {
 			factor = 50
@@ -6672,7 +6672,7 @@ RUS_FE_repopulation_decisions = {
 			custom_effect_tooltip = RUS_FE_manpower_repop_dec_3_tt
 			set_country_flag = RUS_FE_manpower_repop_3_ongoing
 			social_funding_maximal_increase_med = yes
-			add_to_variable = {RUS_FE_repop_monthly_pop = 0.15}
+			add_to_variable = { RUS_FE_repop_monthly_pop = 0.15 }
 			TNO_improve_gender_rights_policy_effectiveness_low = yes
 		}
 
@@ -6685,7 +6685,7 @@ RUS_FE_repopulation_decisions = {
 	}
 
 	RUS_FE_manpower_repop_dec_4 = {
-		icon = GFX_decision_mega_farm
+		icon = GFX_decision_generic_farm
 
 		ai_will_do = {
 			factor = 50
@@ -6808,7 +6808,7 @@ RUS_FE_repopulation_decisions = {
 		}
 	}
 	RUS_FE_manpower_immigration_dec_1 = {
-		icon = GFX_COG_invitation_decision
+		icon = GFX_decision_generic_invitation
 
 		ai_will_do = {
 			factor = 50
@@ -6841,8 +6841,8 @@ RUS_FE_repopulation_decisions = {
 					tag = AMR
 				}
 				admin_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.05}
-				add_dynamic_modifier = {modifier = RUS_FE_immigration_program_AMR}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.05 }
+				add_dynamic_modifier = { modifier = RUS_FE_immigration_program_AMR }
 				TNO_worsen_immigration_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6850,18 +6850,18 @@ RUS_FE_repopulation_decisions = {
 					tag = CHT
 				}
 				admin_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
-				add_to_variable = {RUS_FE_immigration_misc_revenue = 0.025}
-				add_dynamic_modifier = {modifier = RUS_FE_immigration_program_CHT}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
+				add_to_variable = { RUS_FE_immigration_misc_revenue = 0.025 }
+				add_dynamic_modifier = { modifier = RUS_FE_immigration_program_CHT }
 			}
 			if = {
 				limit = {
 					tag = MAG
 				}
 				admin_funding_maximal_increase_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
-				add_to_variable = {RUS_FE_immigration_misc_revenue = 0.025}
-				add_dynamic_modifier = {modifier = RUS_FE_immigration_program_MAG}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
+				add_to_variable = { RUS_FE_immigration_misc_revenue = 0.025 }
+				add_dynamic_modifier = { modifier = RUS_FE_immigration_program_MAG }
 				TNO_improve_immigration_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6871,9 +6871,9 @@ RUS_FE_repopulation_decisions = {
 				tno_immigration_improve = yes
 				admin_funding_maximal_increase_low = yes
 				TNO_improve_immigration_policy_effectiveness_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
-				add_to_variable = {RUS_FE_immigration_construction_speed = 0.10}
-				add_dynamic_modifier = {modifier = RUS_FE_immigration_program_BRY}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
+				add_to_variable = { RUS_FE_immigration_construction_speed = 0.10 }
+				add_dynamic_modifier = { modifier = RUS_FE_immigration_program_BRY }
 			}
 			if = {
 				limit = {
@@ -6881,7 +6881,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_low = yes
 				TNO_improve_immigration_policy_effectiveness_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.075}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.075 }
 			}
 		}
 
@@ -6894,7 +6894,7 @@ RUS_FE_repopulation_decisions = {
 	}
 
 	RUS_FE_manpower_immigration_dec_2 = {
-		icon = GFX_COG_invitation_decision
+		icon = GFX_decision_generic_invitation
 
 		ai_will_do = {
 			factor = 50
@@ -6920,7 +6920,7 @@ RUS_FE_repopulation_decisions = {
 				admin_funding_maximal_increase_med = yes
 				TNO_improve_industrial_equipment_low = yes
 				TNO_worsen_security_policy_effectiveness_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.05}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.05 }
 				TNO_worsen_immigration_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6929,7 +6929,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_low = yes
 				TNO_improve_admin_efficiency_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
 			}
 			if = {
 				limit = {
@@ -6937,7 +6937,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_low = yes
 				TNO_improve_admin_efficiency_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
 				TNO_improve_immigration_policy_effectiveness_low = yes
 			}
 			if = {
@@ -6946,7 +6946,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_low = yes
 				TNO_improve_industrial_expertise_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
 			}
 			if = {
 				limit = {
@@ -6954,7 +6954,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_med = yes
 				TNO_improve_immigration_policy_effectiveness_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.075}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.075 }
 				TNO_worsen_poverty_low = yes
 			}
 		}
@@ -6969,7 +6969,7 @@ RUS_FE_repopulation_decisions = {
 	}
 
 	RUS_FE_manpower_immigration_dec_3 = {
-		icon = GFX_COG_invitation_decision
+		icon = GFX_decision_generic_invitation
 
 		ai_will_do = {
 			factor = 50
@@ -7040,7 +7040,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_low = yes
 				TNO_worsen_slavery_policy_effectiveness_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.05}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.05 }
 				TNO_improve_poverty_low = yes
 				social_funding_maximal_increase_low = yes
 				set_temp_variable = { temp_econ_spending_amount = 0.05 }
@@ -7055,8 +7055,8 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_med = yes
 				TNO_improve_industrial_expertise_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.15}
-				add_to_variable = {RUS_FE_immigration_misc_revenue = 0.035}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.15 }
+				add_to_variable = { RUS_FE_immigration_misc_revenue = 0.035 }
 				add_popularity = {
 					ideology = despotism
 					popularity = 0.03
@@ -7070,8 +7070,8 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_med = yes
 				TNO_improve_industrial_expertise_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.15}
-				add_to_variable = {RUS_FE_immigration_misc_revenue = 0.035}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.15 }
+				add_to_variable = { RUS_FE_immigration_misc_revenue = 0.035 }
 				add_popularity = {
 					ideology = paternalism
 					popularity = 0.03
@@ -7084,8 +7084,8 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_med = yes
 				TNO_improve_academic_base_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.15}
-				add_to_variable = {RUS_FE_immigration_misc_revenue = 0.05}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.15 }
+				add_to_variable = { RUS_FE_immigration_misc_revenue = 0.05 }
 				add_popularity = {
 					ideology = paternalism
 					popularity = 0.03
@@ -7105,7 +7105,7 @@ RUS_FE_repopulation_decisions = {
 				}
 				admin_funding_maximal_increase_low = yes
 				TNO_improve_poverty_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.15}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.15 }
 			}
 			if = {
 				limit = {
@@ -7114,7 +7114,7 @@ RUS_FE_repopulation_decisions = {
 				admin_funding_maximal_increase_low = yes
 				social_funding_maximal_increase_low = yes
 				TNO_worsen_security_policy_effectiveness_low = yes
-				add_to_variable = {RUS_FE_immigration_monthly_pop = 0.10}
+				add_to_variable = { RUS_FE_immigration_monthly_pop = 0.10 }
 			}
 		}
 
@@ -7130,7 +7130,7 @@ RUS_FE_repopulation_decisions = {
 siberia_development_decision_category = {
 	SIB_improve_resource_extraction_infrastructure = {
 
-		icon = GFX_decision_oil_extraction
+		icon = GFX_decision_generic_oil_extraction
 
 		ai_will_do = {
 			factor = 30
@@ -7158,7 +7158,7 @@ siberia_development_decision_category = {
 
 	SIB_streamline_production_facilities = {
 
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 
 		ai_will_do = {
 			factor = 30
@@ -7477,7 +7477,7 @@ warlord_development_decision_category = {
 	}
 	warlord_development_industrial_investments = {
 
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 
 		modifier = {
 			consumer_goods_production_factor = -0.1
@@ -7557,7 +7557,7 @@ warlord_development_decision_category = {
 	}
 	warlord_development_research_focus = {
 
-		icon = GFX_decision_research_generic
+		icon = GFX_decision_generic_research
 
 		ai_will_do = {
 			factor = 20
@@ -7611,24 +7611,24 @@ warlord_development_decision_category = {
 
 		cost = 75
 
+		fixed_random_seed = no
+
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision warlord_development_train_troops"
 		}
-		fixed_random_seed = no
+
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove warlord_development_train_troops"
+			TNO_improve_army_professionalism_low = yes
 			random_list = {
-				30 = {
+				33 = {
 					TNO_improve_military_supervision_policy_effectiveness_low = yes
 				}
-				30 = {
+				33 = {
 					TNO_improve_training_policy_effectiveness_low = yes
 				}
-				30 = {
+				33 = {
 					TNO_improve_conscription_policy_effectiveness_low = yes
-				}
-				20 = {
-					TNO_improve_army_professionalism_low = yes
 				}
 			}
 			add_manpower = 1000
@@ -7881,7 +7881,7 @@ regional_development_decision_category = {
 
 	regional_democratic_advance_developmental_subsidies = {
 
-		icon = GFX_decision_factory_generic_blue
+		icon = GFX_decision_generic_factory_blue
 
 		available = {
 			custom_trigger_tooltip = {
@@ -8157,7 +8157,7 @@ regional_development_decision_category = {
 
 	regional_left_escalate_land_reform_programs = {
 
-		icon = GFX_decision_mega_farm
+		icon = GFX_decision_generic_farm
 
 		available = {
 			custom_trigger_tooltip = {
@@ -8284,7 +8284,7 @@ regional_development_decision_category = {
 	}
 	regional_right_consolidate_state_resource_corporations = {
 
-		icon = GFX_decision_oil_extraction
+		icon = GFX_decision_generic_oil_extraction
 
 		available = {
 			custom_trigger_tooltip = {
@@ -8611,7 +8611,7 @@ regional_development_decision_category = {
 
 	regional_invest_in_scientific_research = {
 
-		icon = GFX_decision_research_generic
+		icon = GFX_decision_generic_research
 		available = {
 		}
 		visible = {
@@ -8730,7 +8730,7 @@ regional_development_decision_category = {
 
 	regional_import_heavy_machinery = {
 
-		icon = GFX_decision_destroy_city
+		icon = GFX_decision_generic_destroy_city
 
 		available = {
 		}
@@ -8879,7 +8879,7 @@ regional_development_decision_category = {
 
 	regional_encourage_agricultural_mechanization = {
 
-		icon = GFX_decision_industrial_farm
+		icon = GFX_decision_generic_industrial_farm
 
 		available = {
 		}
@@ -8982,7 +8982,7 @@ regional_development_decision_category = {
 
 	regional_encourage_returning_expatriates = {
 
-		icon = GFX_COG_invitation_decision
+		icon = GFX_decision_generic_invitation
 
 		available = {
 		}

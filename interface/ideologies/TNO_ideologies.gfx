@@ -1,10 +1,6 @@
 spriteTypes = {
 	# --- Subideologies --- #
 	spriteType = {
-		name = "GFX_ideology_ultranationalism_ultracommunism_subtype"
-		texturefile = "gfx/interface/ideologies/ultracommunism.dds"
-	}
-	spriteType = {
 		name = "GFX_ideology_national_socialism_ariocriollismo_subtype"
 		texturefile = "gfx/interface/ideologies/national_socialism_ariocriollismo_subtype.dds"
 	}
@@ -51,6 +47,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_despotism_interim_government_subtype"
 		texturefile = "gfx/interface/ideologies/despotism_interim_government_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_despotism_national_renewal_subtype"
+		texturefile = "gfx/interface/ideologies/despotism_national_renewal_subtype.dds"
 	}
 	spriteType = {
 		name = "GFX_ideology_ultranationalism_slavo_aryanism_subtype"

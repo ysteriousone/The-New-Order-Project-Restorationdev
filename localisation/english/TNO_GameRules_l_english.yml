@@ -6,11 +6,11 @@
  RULE_OPTION_BRITAIN_OLD_DESC:0 "Enable the §Yold§! British content. §OThis option will be removed once the new content has advanced to cover the whole decade§!."
 
  ### Halloween zombie event rules
- ZOMBIE_EASTEREGG_STATUS: "£TNO_game_rule_flag_ZOM_zombie   Arrival of Artaud"
- RULE_OPTION_DEFAULT_ZOMBIES: "Himmler doesnt make the Portal"
- RULE_OPTION_DEFAULT_ZOMBIES_DESC: "§GDisable the Artaud event.§!"
- RULE_OPTION_ZOMBIES_ACTIVE: "§RBehold, a Pale Reality!§!"
- RULE_OPTION_ZOMBIES_ACTIVE_DESC: "§RAnd the rider's name is Antonin Artaud.§!"
+ ZOMBIE_EASTEREGG_STATUS: "£TNO_game_rule_flag_ZOM_zombie   Halloween Event"
+ RULE_OPTION_DEFAULT_ZOMBIES: "Disabled"
+ RULE_OPTION_DEFAULT_ZOMBIES_DESC: "§GDisable the undead event.§!"
+ RULE_OPTION_ZOMBIES_ACTIVE: "§RBreak the Seal§!"
+ RULE_OPTION_ZOMBIES_ACTIVE_DESC: "§REnable the undead event.§!"
 
  ### 2022 April Fools - Pony Bukharin
  PONY_BUKHARIN_STATUS: "£TNO_game_rule_flag_OMO_Harmonious_State_communist   Project Ferus"
@@ -81,7 +81,7 @@ GER_SPEER_JAP_TARIFF: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_JAP   Spee
 RULE_OPTION_GER_SPEER_JAP_TARIFF_RANDOM: "Default - Random AI"
 RULE_OPTION_GER_SPEER_JAP_TARIFF_RANDOM_DESC: "§FUnder Speer, §sGermany§! will decide to negotiate with §VJapan§! over the status of tariffs, and potential changes to them. The initial demands from §VJapan§! are expected to be radical, with demands to withhold almost all tariffs and trade restrictions, and will concern many in §sGermany§! that local industries will be subsumed by companies from the §eSphere§!. Many §sGerman§! delegates would prefer a more hardline agreement, including one that would preserve many tariffs, with the goal of preventing such an overwhelming surge. However, there are risks in the talks breaking down, derailing détente attempts.§!"
 RULE_OPTION_GER_SPEER_JAP_TARIFF_FIRST: "£TNO_game_rule_flag_JAP   Germany Accepts the First Deal"
-RULE_OPTION_GER_SPEER_JAP_TARIFF_FIRST_DESC: "§FIn a shocking move, the §sGerman§! delegation will decide to accept the initial demands of the Japanese, pledging to remove all tariffs on §VJapanese§! goods for the next five years. Many within the delegation will be concerned that §sGermany's§! destiny would be to become an economic vassal of the §eCo-Prosperity Sphere§!, as cheaply-manufactured goods from the §eSphere§! begin to flood European markets, competing with local businesses and megacorporations.§!"
+RULE_OPTION_GER_SPEER_JAP_TARIFF_FIRST_DESC: "§FIn a shocking move, the §sGerman§! delegation will decide to accept the initial demands of the Japanese, pledging to remove all tariffs on §VJapanese§! goods for the next five years. Many within the delegation will be concerned that §sGermany's§! destiny would be to become an economic vassal of the §eCo-Prosperity Sphere§!, as cheaply-manufactured goods from the §eSphere§! begin to flood European markets, competing with local businesses and conglomerates.§!"
 RULE_OPTION_GER_SPEER_JAP_TARIFF_SECOND: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_JAP   Germany Accepts the Second Deal"
 RULE_OPTION_GER_SPEER_JAP_TARIFF_SECOND_DESC: "§F§gHelmut Schmidt§!, not wanting to repeat the mistakes of §qAdolf Hitler§!, will seek out and negotiate a compromise. Whilst making sure to reduce the extremes of §VJapan's deal§!, the §sGerman§! delegation will accept wide-reaching reductions of tariffs, in return for concessions from §VJapan§! on different fronts. He will request that the §stwo§! §Vnations§! will cooperate more on security and research, whilst at the same time carefully offering certain alternative benefits regarding trade. He will, however, be careful to not push too far.§!"
 RULE_OPTION_GER_SPEER_JAP_TARIFF_THIRD: "£TNO_game_rule_flag_GER   Japan Accepts the Final Deal"
@@ -93,7 +93,7 @@ RULE_OPTION_GER_SPEER_JAP_TARIFF_FAIL_DESC: "§FWith deals continually rejected 
 
 GER_SPEER_JAP_INVESTMENT: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_JAP   Speer's Germany and Japan - Investment Negotiations"
 RULE_OPTION_GER_SPEER_JAP_INVESTMENT_RANDOM: "Default - Random AI"
-RULE_OPTION_GER_SPEER_JAP_INVESTMENT_RANDOM_DESC: "§FWith an economy still deeply damaged from the immediate post-Hitler anarchy, and with megacorporations able to reclaim, and even expand their past monopolies, Helmut Schmidt will decide to probe the potential of receiving Japanese investment. He will request that they invest in underperforming sectors of the German economy, particularly those with smaller businesses, with the intent of increasing employment and expanding the German middle class, through increasing the number of available employers. Whether the move will succeed, though, will still be up in the air.§!"
+RULE_OPTION_GER_SPEER_JAP_INVESTMENT_RANDOM_DESC: "§FWith an economy still deeply damaged from the immediate post-Hitler anarchy, and with conglomerates able to reclaim, and even expand their past monopolies, Helmut Schmidt will decide to probe the potential of receiving Japanese investment. He will request that they invest in underperforming sectors of the German economy, particularly those with smaller businesses, with the intent of increasing employment and expanding the German middle class, through increasing the number of available employers. Whether the move will succeed, though, will still be up in the air.§!"
 RULE_OPTION_GER_SPEER_JAP_INVESTMENT_FIRST: "£TNO_game_rule_flag_JAP   Germany Accepts the First Deal"
 RULE_OPTION_GER_SPEER_JAP_INVESTMENT_FIRST_DESC: "§FThe §sGerman delegation§! will come to the conclusion that, in order to prevent a deterioration of relations and to preserve the idea, the first deal from §VJapan§! should be accepted, with little renegotiation. They will argue that some investment is better than none, especially with the state that the §sGerman economy§! would be in without any further aid. §gHelmut Schmidt§! and §gLudwig Erhard§! will be underwhelmed with the aid provided, and will likely consider further investments in the future, but will prefer minor investment over testing the §VSphere's§! §xgoodwill§!...§!"
 RULE_OPTION_GER_SPEER_JAP_INVESTMENT_SECOND: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_JAP   Germany Accepts the Second Deal"
@@ -231,7 +231,7 @@ RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_RANDOM_DESC: "§F§RRequires:§!\n§MInvestigation Success - Casemate§! in §Y£TNO_game_rule_flag_IRE   Ireland - Investigation§!§!"
 RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_ULS_ORANGE_STATE: "£TNO_game_rule_flag_ULS_volunteer_army   Ulster fights off Ireland"
 RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_ULS_ORANGE_STATE_DESC: "§FUlster withstands Irish attack.§!"
-RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_IRE_REPUBLIC_OF_IRELAND: "£TNO_game_rule_flag_IRE   Ireland supresses the uprising"
+RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_IRE_REPUBLIC_OF_IRELAND: "£TNO_game_rule_flag_IRE   Ireland suppresses the uprising"
 RULE_OPTION_PAISLEY_IRE_WAR_OUTCOME_IRE_REPUBLIC_OF_IRELAND_DESC: "§F§LIreland§! crushes §LPaisley§!'s rebellion and restores order in Ulster.§!"
 
 # Twomey - IRE war
@@ -262,20 +262,6 @@ RULE_OPTION_IRE_ECONOMY_CORISH_DESC: "§F§PCorish§!'s New Republic plan sugges
 #RULE_OPTION_BRG_STABILITY_ROUTE_RANDOM_DESC: "§F§oGermany§! was vulnerable during §hHimmler§!'s failed coup - as with most of the §sHeer§! busy in the East with the §eWest Russian War§!, §oGermany§! could easily be overrun by enraged §hHimmler loyalists§! if the were executed. Hitler's solution was to grant §hHimmler Ordensstaat-Burgund§!, a fiefdom comprised of §YBelgium§! and §MNorthern France§! where he and the §qSS§! are free to realize their vision in exchange for non-interference in §oGerman§! politics.\n\n§RAs a plot-integral country, Burgundy is scripted to never collapse as the AI.§!§!"
 #RULE_OPTION_BRG_STABILITY_ROUTE_COLLAPSE: "£TNO_game_rule_flag_PIC  £TNO_game_rule_flag_BEL_ultranationalism  £TNO_game_rule_flag_FLR  £TNO_game_rule_flag_RPY   The Nightmare Ends"
 #RULE_OPTION_BRG_STABILITY_ROUTE_COLLAPSE_DESC: "§FFor all its claims of maintaining absolute control over the state and its population, the §hBurgundian System§! is an inherently unstable and impractical ideology - a lesson §hBurgundy§! will learn §Rthe hard way§! in 1965, as its scarce resources are stretched to the breaking point in managing and repressing the new §MFrench§! territories, and the §qUltranationalist§! SS collaborators and the §VRed Poppy§! native resistance will use the chaos as an opportunity to revolt from the §hShadow State§!.§!"
-
-# Republic of Brittany [Ideology]
-
-#BRT_IDEOLOGY_ROUTE: "£TNO_game_rule_flag_BRT   Republic of Brittany"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_RANDOM: "Default - Random AI"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_RANDOM_DESC: "§FWhen §MFrance§! was forcibly torn apart to create §hBurgundy§!, §sOlier Mordrel§! proposed to §oGermany§! that an independent and loyal §sBrittany§! would be far more useful than the ruined §MFrench State§!. When the §oReich§! fell into economic chaos, §sBrittany§! turned to the Black Market to survive, and it quickly became the hole where goods from the rest of the world could freely flow into §oEurope§!. However, §sBrittany§! is far from a united nation, and an impending power struggle may shape the nation's future for years to come.§!"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_FASCISM: "£TNO_game_rule_flag_BRT   Olier Mordrel remains in control"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_FASCISM_DESC: "§FThrough it all, §sOlier Mordrel§! will resist the power struggle and maintain a firm grasp over §sBrittany§!'s leadership, ensuring the status quo of §JFascism§! is maintained and §JBrittany§! continues operating its wide-reaching black market for profit, and profit alone.§!"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_AUTHDEM: "£TNO_game_rule_flag_BRT   Raymond Delaporte seizes power"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_AUTHDEM_DESC: "§FThe §LReformist Raymond Delaporte§! will emerge victorious in the power struggle, and will strive to restore §LDemocracy§! to §LBrittany§!, liberalizing the government and retooling the black market into a force for good. §LDelaporte§!'s policies help ensure that §LBrittany§!'s future will be one of §LAuthoritarian Democracy§!.§!"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_NATSOC: "£TNO_game_rule_flag_BRT   Célestin Lainé usurps leadership"
-#RULE_OPTION_BRT_IDEOLOGY_ROUTE_NATSOC_DESC: "§FThe hardliner §oCélestin Lainé§! will oust the §LBreton government§! in a coup, and will enact a fiercely nationalistic and repressive dictatorship among §oNational Socialist§! values, aligning himself with §hBurgundy§! and massively expanding §oBrittany§!'s black market to downright unsavory extents.§!"
-
-
 
 # The Netherlands [Ideology]
 
@@ -311,7 +297,7 @@ RULE_OPTION_DEN_PATH_CONSERVATIVE_DEMOCRACY_DESC: "§FAs the §rReich§! plunges
 RULE_OPTION_DEN_PATH_NATIONAL_SOCIALISM: "£TNO_game_rule_flag_DEN_fascism   The White Swastika"
 RULE_OPTION_DEN_PATH_NATIONAL_SOCIALISM_DESC: "§FAs the §rReich§! plunges into chaos, §CDenmark§! tries to determine its destiny. In the early morning hours, the paramilitary divisions of the §oNational Socialist People's Party of Denmark§! took over the capital of §CDenmark§!. They declared a new administration, §xleaving§! §LBest§!'s government in history. A fierce §onational socialist§!, §oKnud Børge Martinsen§! is fully open to §Rcollaborating§! with §rGermany§! if the §rReich§! decides to let him rule as the §xFører§! of a sovereign §CDenmark§!.§!"
 
-# Slovak State (Slovakia) [Politics/Faction]
+# Slovak Republic (Slovakia) [Politics/Faction]
 
 SLO_ULTIMATUM: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_SLO_authoritarian_democracy   Germany and Slovakia - The Ultimatum"
 RULE_OPTION_SLO_ULTIMATUM_RANDOM: "Default - Ramdom AI"
@@ -565,7 +551,7 @@ RULE_OPTION_UPA_LEADER_PATH_STETSKO_DESC: "§FThree men will compete for the loy
 
 FUK_LEADER_PATH: "£TNO_game_rule_flag_FUK   Republic of Ukraine - Pillars of the Revolution"
 RULE_OPTION_FUK_LEADER_PATH_RANDOM: "Default - Random AI"
-RULE_OPTION_FUK_LEADER_PATH_RANDOM_DESC: "§F\n\n§RRequires:§!\n§M£TNO_game_rule_flag_FUK   §mRepublic of Ukraine§! Victory§! in §Y£TNO_game_rule_flag_UKR  £TNO_game_rule_flag_UKS  £TNO_game_rule_flag_BOV  £TNO_game_rule_flag_FUK   Ukrainian Civil War§!§!"
+RULE_OPTION_FUK_LEADER_PATH_RANDOM_DESC: "§FAfter almost half a century of oppression, freedom has come to Ukraine under the banner of the Ukrainian National Revolutionary Army. However, while they are united in the cause of a new Ukraine, the movement is divided into three camps: §athe hardcore anti-German partisans§!, §cthe left-wing populistic nationalists§!, and even §gcrypto-fascist ex-collaborators§!. These groups have very different ideas for a post-civil war Ukraine, and the balancing act of maintaining the alliance must be conducted carefully.\n\n§RRequires:§!\n§M£TNO_game_rule_flag_FUK   §mRepublic of Ukraine§! Victory§! in §Y£TNO_game_rule_flag_UKR  £TNO_game_rule_flag_UKS  £TNO_game_rule_flag_BOV  £TNO_game_rule_flag_FUK   Ukrainian Civil War§!§!"
 RULE_OPTION_FUK_LEADER_PATH_COLLABORATOR: "§gCollaborators§! victory"
 RULE_OPTION_FUK_LEADER_PATH_COLLABORATOR_DESC: "§FThe result of the first election of §mFree Ukraine§! will lead to §LOleksander Ohloblyn§! taking power at the head of a post-§gcollaborationist§! and §Jnationalist§! faction. Though he purports to love democracy and the §mRepublic of Free Ukraine§!, he will preoccupy himself with cozying up to the §qGermans§! in a vain attempt to preserve that §mRepublic§!, and in that process transform into a §gcollaborationist§! §sdictator§!.\n\nThe §gCollaborators§! are the current and former collaborators who assist the §DUNRA§!. These are the policemen, mayors, and small-time officials within the §QUNC§! who see the current status of the §jReichskommissariat§! as unacceptable. They are a diverse group—fascists, §Jnationalists§!, and §Lopportunists§! all find a home within the §gCollaborators§!. But their collaboration and fascistic elements alarm the §cPopulists§! and §aPartisans§!: for what worse fate could befall a free §mUkraine§! than §Jfascist§! restoration?§!"
 RULE_OPTION_FUK_LEADER_PATH_PARTISAN: "§aPartisans§! victory"
@@ -1329,7 +1315,7 @@ RULE_GROUP_TNO_RULES_BALKANS: "£TNO_game_rule_flag_BUL  £TNO_game_rule_flag_GR
 
 ROMANIA_HOSTAGE_CRISIS: "£TNO_game_rule_flag_ROM   Romania - Odessa Hostage Crisis"
 RULE_OPTION_ROMANIA_HOSTAGE_CRISIS_RANDOM: "Default - Random AI"
-RULE_OPTION_ROMANIA_HOSTAGE_CRISIS_RANDOM_DESC: "§FShocking news will be heard from Odessa, as UPA guerrillas will seize control of a local VoMi office, taking the occupants inside hostage—and worse yet, the affected office will be the headquarters of Area Command XXV of Sonderkommando R, the group representing Black Sea Germans within the Transnistrian Governorate and a source of anger for the neglected Ukrainian locals.\n\n In response, the President of the Council of Ministers of Romania Penescu will announce a German-supported rescue operation to neutralise the terrorists and safely resolve the crisis. Meanwhile, Gherman Pântea, mayor of Odesa, will announce a state of emergency in the city having immediate effect. The fate of the hostages and the resulting occurrences will be left up to chance.§!"
+RULE_OPTION_ROMANIA_HOSTAGE_CRISIS_RANDOM_DESC: "§FShocking news will be heard from Odessa, as UPA guerrillas will seize control of a local VoMi office, taking the occupants inside hostage—and worse yet, the affected office will be the headquarters of Area Command XXV of Sonderkommando R, the group representing Black Sea Germans within the Transnistrian Governorate and a source of anger for the neglected Ukrainian locals.\n\nIn response, the President of the Council of Ministers of Romania Penescu will announce a German-supported rescue operation to neutralise the terrorists and safely resolve the crisis. Meanwhile, Gherman Pântea, mayor of Odesa, will announce a state of emergency in the city having immediate effect. The fate of the hostages and the resulting occurrences will be left up to chance.§!"
 RULE_OPTION_ROMANIA_HOSTAGE_CRISIS_FAILS: "Rescue §Rfails§! - §iPenescu§! §Yresigns§!"
 RULE_OPTION_ROMANIA_HOSTAGE_CRISIS_FAILS_DESC: "§FThe President of the Council of Ministers of Romania, Nicolae Penescu, will announce a German-supported rescue operation to neutralise the terrorists and safely resolve the crisis. Meanwhile, Gherman Pântea, mayor of Odesa, will announce a state of emergency in the city having immediate effect.\n\nIn this operation, the hostages will be slain, and this will be followed by a scandal—the Tiraspol affair. It will emerge that Penescu employed Nichita P. Smochina, a scholar who had worked with Ion Antonescu to fabricate ethnographic and other evidence to justify the need to occupy and fight in Transnistria. Being left with no choice but to take responsibility, Penescu will hand in his resignation to the King.\n\nThis will result in Mihai Farcasansu and the National Liberal Party unseating the PNT in the 1964 election, guiding Romania down the road of §mNational Liberalism§!, pursuing urbanization and privatization.§!§!"
 RULE_OPTION_ROMANIA_HOSTAGE_CRISIS_BOMBED: "Rescue §Gsucceeds§! - §iPenescu§! is §Rbombed§!"
@@ -1343,7 +1329,7 @@ ROMANIA_1968_ELECTIONS: "£TNO_game_rule_flag_ROM   Romania - 1968 Elections"
 RULE_OPTION_ROMANIA_1968_ELECTIONS_RANDOM: "Default - Random AI"
 RULE_OPTION_ROMANIA_1968_ELECTIONS_RANDOM_DESC: "§FFour years have passed since the election of sixty-four, and the time has again come for Romanians across the country to vote for their nation's leadership. The victors of four years ago seek to preserve their governance as their rival party brings forth new names to attract voters. The people must choose carefully for §edark clouds§!, and §yopportunities§! gather on the horizon.§!"
 RULE_OPTION_ROMANIA_1968_ELECTIONS_PENESCU: "§iNicolae Penescu§! is reelected"
-RULE_OPTION_ROMANIA_1968_ELECTIONS_PENESCU_DESC: "§FHaving presided over a successful hostage-rescue operation and retaining the general regard he was held in by the people of Romania before and during his time in power, Nicolae Penescu will proceed through the elections with minimal issue.\n\n The PNȚ  will maintain dominance within parliament, and the PNȚ will keep its majority in the Romanian parliament. This will lead Romania to continue down the path of §iAgrarianism§!.\n\n§RRequires:§!\n§MRescue §Gsucceeds§! - §iPenescu§! §Gsurvives§!§! in §Y£TNO_game_rule_flag_ROM   Romania - Odessa Hostage Crisis§!§!"
+RULE_OPTION_ROMANIA_1968_ELECTIONS_PENESCU_DESC: "§FHaving presided over a successful hostage-rescue operation and retaining the general regard he was held in by the people of Romania before and during his time in power, Nicolae Penescu will proceed through the elections with minimal issue.\n\nThe PNȚ  will maintain dominance within parliament, and the PNȚ will keep its majority in the Romanian parliament. This will lead Romania to continue down the path of §iAgrarianism§!.\n\n§RRequires:§!\n§MRescue §Gsucceeds§! - §iPenescu§! §Gsurvives§!§! in §Y£TNO_game_rule_flag_ROM   Romania - Odessa Hostage Crisis§!§!"
 RULE_OPTION_ROMANIA_1968_ELECTIONS_RATIU: "§iIon Ratiu§! is reelected"
 RULE_OPTION_ROMANIA_1968_ELECTIONS_RATIU_DESC: "§FIon Ratiu and the Center of the National Peasants Party have defended their majority; their §iAgrarian§! leadership will continue to guide Romania into the future. Requires Ion Ratiu Elected in the 1964 Romanian Elections.\n\n§RRequires:§!\n§MRescue§! §Rfails§! - §iPenescu§! is §Rbombed§! in §Y£TNO_game_rule_flag_ROM   Romania - Odessa Hostage Crisis§!§!"
 RULE_OPTION_ROMANIA_1968_ELECTIONS_CAMPEANU: "§MRadu Campeanu§! is elected"
@@ -1423,24 +1409,24 @@ RULE_OPTION_COLLAB_SERBIA_PATH_NATSOC_DESC: "§FJust as quickly as they lose the
 SOCIALIST_SER_CHAIRMAN_PATH: "£TNO_game_rule_flag_SER_NLM   Partisan Serbia - New Leader"
 RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_RANDOM_DESC: "§FFew peoples on Earth have suffered so thoroughly as a result of centuries of imperialist oppression as the people of Serbia, and now, with the Third Reich and their allies in the grips of chaos, the partisan forces of the Serbian Communists have ousted the Government of National Salvation, paving the way for the final liberation of the Serbian people; all that remains is the question of leadership, and who among them will rise to lead Serbia against the black tide of Fascism.\n\n§RRequires:§!\n§M£TNO_game_rule_flag_SER_NLM   National Liberation Movement for Serbia Victory§! in §Y£TNO_game_rule_flag_SER_NLM   £TNO_game_rule_flag_GMS_COLLAB   The Serbian National Uprising§!§!"
-RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_YOUNG_GUARD: "£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   §LDobrica Cosic§! is elected"
-RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_YOUNG_GUARD_DESC: ""
+RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_YOUNG_GUARD: "£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   §LDobrica Ćosić§! is elected"
+RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_YOUNG_GUARD_DESC: "§FGaining broad support thanks to his populist rhetoric, §LDobrica Ćosić§! and his Young Guard successfully marginalized the §ecommunists§! while leading the §LSocialist Party of Serbia§! to victory in the election. Between his popularity, the lack of coherent opposition, and the liberal use of intimidation tactics, he will win control of the office of president and national legislature. Serbia will go down the path of §LSocial Nationalism§!.§!"
 RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_COMMUNIST_RANKOVIC: "£TNO_game_rule_flag_SER_NLM   §eAleksandar Ranković§! is elected"
-RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_COMMUNIST_RANKOVIC_DESC: "§FOf all the guerrilla forces to resist the Nazi Occupation, hardly any have drawn as much ire as that of the Yugoslavian Partizans of the south Balkans, and despite Italy's triumph over Tito in Dalmattia, the ambitions of the Communist Partizans find a foothold in the former Yugoslavian crownlands of Serbia, ralling arounds, the nationalists of the conservative wing of the Communists under Aleksandar Ranković, setting the stage for Serbian liberation from German Reich through force of will.§!"
+RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_COMMUNIST_RANKOVIC_DESC: "§FOf all the guerrilla forces to resist the Nazi Occupation, hardly any have drawn as much ire as that of the Yugoslavian Partizans of the south Balkans, and despite Italy's triumph over Tito in Dalmattia, the ambitions of the Communist Partizans find a foothold in the former Yugoslavian crownlands of Serbia, ralling arounds, the nationalists of the conservative wing of the Communists under Aleksandar Ranković, setting the stage for Serbian liberation from German Reich through force of will. Serbia will go down the path of §eNational Communism§!.§!"
 RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_COMMUNIST_TITO: "£TNO_game_rule_flag_SER_NLM   §eVladimir Copic§! is elected"
-RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_COMMUNIST_TITO_DESC: ""
+RULE_OPTION_SOCIALIST_SER_CHAIRMAN_PATH_COMMUNIST_TITO_DESC: "§FSince the §dHabsburgs§! and the §nOttomans§!, the Balkan peoples have known oppression and subjugation. However, with the election of §eVladimir Copic§!, a former §eRed Army§! veteran and volunteer in the Spanish Civil War, a new §eRed Dawn§! will shine over §QSerbia§!. Like heroes of old, he and his comrades will stop at nothing to root out the §qNew Order§! from §QSerbia§!'s soil. Serbia will go down the path of §eBolshevism§!.§!"
 
 # Socialist Serbia - Democratic Discontent
 
 SOCIALIST_SER_ELECTIONS_UNREST: "£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   Serbia - Oil Crisis Elections"
 RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_RANDOM: "Default - Random AI"
-RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_RANDOM_DESC: "§F§M£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   §LDobrica Cosic§! is elected§! in §Y£TNO_game_rule_flag_SER_NLM   Partisan Serbia - New Leader§!§!"
+RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_RANDOM_DESC: "§FThe Oil Crisis has brought the young, socialist Serbian state to its knees, amplifying the already widespread unpopularity of the §LSPS§! and its leader, §LDobrica Ćosić§!. An election may be the key to the republic's stability, but can the SPS pull off a third victory?\n\n§RRequires:§!\n§M£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   §LDobrica Cosic§! is elected§! in §Y£TNO_game_rule_flag_SER_NLM   Partisan Serbia - New Leader§!§!"
 RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPS: "§LSPS§! wins"
-RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPS_DESC: ""
+RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPS_DESC: "§FDespite massive mobilization by the 'Otpor movement, the SPS will utterly defeat their rivals in the elections, claiming victory for the third time. As the resistance crumbles after ensuing crackdowns, Serbia's future is set in stone: the country will be ruled by a nationalist, socialist, §LDominant-Party Democracy§!.§!"
 RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPS_SRS: "§LSPS-SRS§! Coalition wins"
-RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPS_SRS_DESC: ""
+RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPS_SRS_DESC: "§FIn an unexpected twist, the SPS will reach out to the Serbian Radical Party, one of the leading parties of the Otpor movement, guaranteeing power in return for the latter joining them in a coalition ticket. Veljko Guberina, leader of the SRS, will accept, ensuring a sweeping victory that will see Serbian nationalism consolidated under §LSocial Nationalism§!.§!"
 RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPRING: "§GSerbian Spring§!"
-RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPRING_DESC: ""
+RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPRING_DESC: "§FDespite everything the SPS threw at them, the Otpor movement remained united and mobilized the nation's unrest in a shocking, total victory in the election. As Dobrica Ćosić is peacefully removed from power, the Otpor movement, with its left-wing marginalized while its center and right ascend, §Gwill set a new course for free and fair elections, to the people's jubilation§!.§!"
 
 # Chetnik Serbia - Democratic Discontent
 
@@ -1458,13 +1444,13 @@ RULE_OPTION_SOCIALIST_SER_ELECTIONS_UNREST_SPRING_DESC: ""
 
 SER_DEM_ELECTION: "£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   Serbia - Provisional Elections"
 RULE_OPTION_SER_DEM_ELECTION_RANDOM: "Default - Random AI"
-RULE_OPTION_SER_DEM_ELECTION_RANDOM_DESC: "§F\n\n§RRequires:§!\n§GSerbian Spring§! in §Y£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   Serbia - Oil Crisis Elections§!§!"
+RULE_OPTION_SER_DEM_ELECTION_RANDOM_DESC: "§FThe fall of the §LSPS§! has brought about a new set of free elections in the §QSerbian Republic§!, with the triumphant Optor movement parties campaigning across the country. With the downfall of the movement's left-wing due to actions by the SPS, the elections are dominated by the resistance's centrists and rightists, but who will prevail remains to be seen.\n\n§RRequires:§!\n§GSerbian Spring§! in §Y£TNO_game_rule_flag_SER_ASNOS_POST_WAR_YOUNG_SOCIALISTS   Serbia - Oil Crisis Elections§!§!"
 RULE_OPTION_SER_DEM_ELECTION_DS: "§BDoS - DS§! wins"
-RULE_OPTION_SER_DEM_ELECTION_DS_DESC: ""
+RULE_OPTION_SER_DEM_ELECTION_DS_DESC: "§FAn unwavering fighter for freedom and liberalism, Borislav Pekić will lead the Demokratska opozicija Srbije (Demokratska Stranka) to victory in Serbia's elections. Passionate for liberal democracy and staunchly opposed to tyranny, he and the DS will seek to fulfill the people's expectations in desperate times by granting them the freedom they deserve under a §BBig Tent§! government.§!"
 RULE_OPTION_SER_DEM_ELECTION_SLS: "§iDoS - SLS§! wins"
-RULE_OPTION_SER_DEM_ELECTION_SLS_DESC: ""
+RULE_OPTION_SER_DEM_ELECTION_SLS_DESC: "§FDemokratska opozicija Srbije (Srpska Liberalna Stranka), led by Nikola Milošević, will win the election. Despite being comrades in arms with the DS during the resistance, the SLS rejected republicanism and sought to establish a constitutional monarchy while also refusing the Radical's desire for coalition. They will begin their agenda by pursuing a rapid break from the SPS regime under a §iPopulist Conservative§! leadership.§!"
 RULE_OPTION_SER_DEM_ELECTION_SRS: "§LSRS§! wins"
-RULE_OPTION_SER_DEM_ELECTION_SRS_DESC: ""
+RULE_OPTION_SER_DEM_ELECTION_SRS_DESC: "§FUnlike many in the Optor movement, Velko Guberina does not have roots in the partisan movements against Germany, but by presenting himself and the Srpska Radikalna Stranka as a competent force to safeguard the Serbian nation, will take the election. His leadership will call out to the country's patriots for national unity under a §LNational Conservative§! government.§!"
 
 # Bulgaria - the Macedonian crisis
 
@@ -1488,7 +1474,7 @@ RULE_OPTION_BUL_BORIS_III_PATH_ULTRAMILITARISM_DESC: "§FFollowing the fortunate
 
 # Bulgaria - War or Negotiation with Macedonia?
 
-BUL_MAC_NEGOTIATION_OUTCOME: "£TNO_game_rule_flag_BUL  £TNO_game_rule_flag_MAC  Bulgaria - Negotiations or War?"
+BUL_MAC_NEGOTIATION_OUTCOME: "£TNO_game_rule_flag_BUL  £TNO_game_rule_flag_MAC   Bulgaria - Negotiations or War?"
 RULE_OPTION_BUL_MAC_NEGOTIATION_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_BUL_MAC_NEGOTIATION_OUTCOME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§MBoris III flees§! in £TNO_game_rule_flag_BUL   §YBulgaria - Macedonian Crisis§!"
 RULE_OPTION_BUL_MAC_NEGOTIATION_OUTCOME_WAR: "War"
@@ -1498,7 +1484,7 @@ RULE_OPTION_BUL_MAC_NEGOTIATION_OUTCOME_READY_TO_NEGOTIATE_DESC: "§FThe §LFath
 
 # Bulgaria - War or Fate of the Negotiation
 
-BUL_MAC_NEGOTIATION_PATH: "£TNO_game_rule_flag_BUL  £TNO_game_rule_flag_MAC  Bulgaria - Fate of the Macedonia Negotiation"
+BUL_MAC_NEGOTIATION_PATH: "£TNO_game_rule_flag_BUL  £TNO_game_rule_flag_MAC   Bulgaria - Fate of the Macedonia Negotiation"
 RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_RANDOM_DESC: "§F\n\n§RRequires:§!\n§MNegotiate with Macedonia§! in §Y£TNO_game_rule_flag_BUL   Bulgaria - Macedonian Crisis§!"
 RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_FEDERATION: "Federation"
@@ -1507,6 +1493,16 @@ RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_AUTONOMY: "Autonomy"
 RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_AUTONOMY_DESC: "§FThe negotiation will be successful and Macedonia will be part of Bulgaria as an autonomous region.§!"
 RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_FAILED: "Negotiation Fails"
 RULE_OPTION_BUL_MAC_NEGOTIATION_PATH_FAILED_DESC: "§FThe negotiation with Macedonia will fail and Macedonia will be free under a §eNational Communist§! regime.§!"
+
+# Bulgaria - Who wins Bulgaria or Macedonia?
+
+BUL_MAC_WAR_PATH: "£TNO_game_rule_flag_BUL  £TNO_game_rule_flag_MAC   Bulgaria - Fate of the Second Macedonian War"
+RULE_OPTION_BUL_MAC_WAR_PATH_RANDOM: "Default - Random AI"
+RULE_OPTION_BUL_MAC_WAR_PATH_RANDOM_DESC: "§F\n\n§RRequires:§!\n§MNegotiation Fails§! OR §MWar§! in §Y£TNO_game_rule_flag_BUL   Bulgaria - Macedonian Crisis§!"
+RULE_OPTION_BUL_MAC_WAR_PATH_MACEDONIA_VICTORY: "Macedonia"
+RULE_OPTION_BUL_MAC_WAR_PATH_MACEDONIA_VICTORY_DESC: "§FThe Cheren Offensive will be a failure and Macedonia will achieve independence.§!"
+RULE_OPTION_BUL_MAC_WAR_PATH_BULGARIA_VICTORY: "Bulgaria"
+RULE_OPTION_BUL_MAC_WAR_PATH_BULGARIA_VICTORY_DESC: "§FThe Cheren Offensive will be successful and Macedonia will be integrated directly into Bulgaria.§!"
 
 # Bulgaria - the Elections
 
@@ -1755,7 +1751,7 @@ TUR_ELECTION_71_PATH: "£TNO_game_rule_flag_TUR   Turkey - 1971 General Election
 RULE_OPTION_TUR_ELECTION_71_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_TUR_ELECTION_71_PATH_RANDOM_DESC: "§F§STurkish§! §MDemocracy§! §Gendures§!, miraculously against the many §Yforces§! §Ragainst§! it. As §STurkey§! finds itself ferried to another §Yelection§! in 1971, filled with possibilities of how §STurkish§! society may look, all run from a plethora of potential candidates. Parties ranging from some form of the §CCHP§!, §QDP§!, or even the §LMHP§! just to name a few, and all depend on prior events, may find themselves in power as a result of these elections. Whoever wins though, Turkey will find its government secure, at least for the near future.§!"
 RULE_OPTION_TUR_ELECTION_71_PATH_TIP: "§VTIP§! is §Gelected§!"
-RULE_OPTION_TUR_ELECTION_71_PATH_TIP_DESC: "§FThe 1971 election in §STurkey§! is poised to be an especially turbulent event, with 6 parties contesting the presidency. The §VWorker's Party of Turkey§!, or §VTIP§!, has emerged victorious. Led by syndicalist §VBehice Boran§!, she promises the implementation of a universal basic income for all Turkish citizens, as well as several other leftist policies. It remains to be seen how the conservative political scene will react to this upset.\n\n§RRequires:§!\nCHP isn't left"
+RULE_OPTION_TUR_ELECTION_71_PATH_TIP_DESC: "§FThe 1971 election in §STurkey§! is poised to be an especially turbulent event, with 6 parties contesting the presidency. The §VWorkers' Party of Turkey§!, or §VTIP§!, has emerged victorious. Led by syndicalist §VBehice Boran§!, she promises the implementation of a universal basic income for all Turkish citizens, as well as several other leftist policies. It remains to be seen how the conservative political scene will react to this upset.\n\n§RRequires:§!\nCHP isn't left"
 RULE_OPTION_TUR_ELECTION_71_PATH_SODEP: "§MSODEP§! is §Gelected§!"
 RULE_OPTION_TUR_ELECTION_71_PATH_SODEP_DESC: "§FThe 1971 election in §STurkey§! is poised to be an especially turbulent event, with 6 parties contesting the presidency. The §MSocial Democracy party§!, or §MSODEP§!, has emerged victorious. Led by Liberal Democrat §MTurkan Akyol,§! she promises to expand welfare and extend the rights of minority groups around the country. This has been met with fierce resistance from both sides of Turkish politics, leaving the government in a precarious situation.\n\n§RRequires:§!\nCHP isn't left"
 RULE_OPTION_TUR_ELECTION_71_PATH_LCHP: "§CCHP§! is §Gelected§!"
@@ -1785,7 +1781,7 @@ RULE_OPTION_GRE_FATE_CIANO_PATH_BAD_DESC: "§FCiano's §nItaly§! is one where t
 
 GRE_PATH_ELECTION: "£TNO_game_rule_flag_GRE   Greece - 1964 General Elections"
 RULE_OPTION_GRE_PATH_ELECTION_RANDOM: "Default - Random AI"
-RULE_OPTION_GRE_PATH_ELECTION_RANDOM_DESC: "§FThe independence of the Greek state having been secured and democracy being established, elections to determine who will lead Greece into the future shall occur. Their outcome will not be guaranteed, and the results shall lie in the will of the electorate....\n\n§RRequires:§!\n§YRepublic§! in §Y£TNO_game_rule_flag_GRE   Greece - Republic or Dictatorship?§!"
+RULE_OPTION_GRE_PATH_ELECTION_RANDOM_DESC: "§FThe independence of the Greek state having been secured and democracy being established, elections to determine who will lead Greece into the future shall occur. Their outcome will not be guaranteed, and the results shall lie in the will of the electorate...\n\n§RRequires:§!\n§YRepublic§! in §Y£TNO_game_rule_flag_GRE   Greece - Republic or Dictatorship?§!"
 RULE_OPTION_GRE_PATH_ELECTION_SD: "§PKomninos Pyromaglou§! is §Gelected§!"
 RULE_OPTION_GRE_PATH_ELECTION_SD_DESC: "§FThe independence of the Greek state having been secured and democracy being established, elections to determine who will lead Greece into the future shall occur. In these elections, §PKomninos Pyromaglou§! and the left leaning §PEDA§! will secure victory. Greece will follow the path of §PSocial Democracy§!"
 RULE_OPTION_GRE_PATH_ELECTION_CD: "§iPanagiotis Kanellopoulos§! is §Gelected§!"
@@ -1874,10 +1870,10 @@ RULE_OPTION_SPA_IBERIAN_WARS_OTCOME_FSR_DESC: "§FThe §wIberian§! Peninsula is
 SPR_PATH: "£TNO_game_rule_flag_SPR_Republic   Spanish Republic - Coup"
 RULE_OPTION_SPR_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_SPR_PATH_RANDOM_DESC: "§F§pThe Spanish Republic§! will be a §Mliberal-minded faction§! governed by anti-Franco dissident §MTorcuato Fernández-Miranda§!, pushing for a restoration of a §mdemocratic§! §fSpain§!. However, as the war drags on, optimism among the populace may begin to fade, which could push the government into passing some §edire measures indeed...§!\n\n§RRequires:§!\n§YThe Iberian Wars is still going on§!"
-RULE_OPTION_SPR_PATH_KINGDOM: "Restore Monarchy"
+RULE_OPTION_SPR_PATH_KINGDOM: "£TNO_game_rule_flag_SPR_Kingdom   Restore Monarchy"
 RULE_OPTION_SPR_PATH_KINGDOM_DESC: "§FAs the Second Spanish Civil War wages on, morale within the Spanish Republic shall first falter, and then plummet. Many will begin to view the government as naive, doomed, or even misguided. Not wanting this to be their downfall, Torcuato Fernández-Miranda will successfully forge a deal in desperation; the monarchy, led by King Juan III, shall be coronated and installed as the head of state, whilst his government shall focus on internal affairs more directly. This move may come as a shock, but Fernández-Miranda won't mind, so long as stability within the former Republic's border shall be saved.§!"
-#RULE_OPTION_SPR_PATH_MILITARY_COUP: "Military coup"
-#RULE_OPTION_SPR_PATH_MILITARY_COUP_DESC: ""
+RULE_OPTION_SPR_PATH_MILITARY_COUP: "£TNO_game_rule_flag_SPR_military   Military coup"
+RULE_OPTION_SPR_PATH_MILITARY_COUP_DESC: ""
 
 # Morocco Civil War
 
@@ -1972,7 +1968,7 @@ RULE_OPTION_ENG_COLLAB_ROUTE_COUP_DESC: "§RThe §JBritish People's Party§! has
 
 ENG_OLDGUARDS_ROUTE: "£TNO_game_rule_flag_ENG   Collaborator Britain - Lord Portsmouth's Ministry"
 RULE_OPTION_ENG_OLDGUARDS_ROUTE_RANDOM: "Default - Random AI"
-RULE_OPTION_ENG_OLDGUARDS_ROUTE_RANDOM_DESC: "§F§JGerard Wallop§!, the Earl of Portsmouth, has become Prime Minister with the backing of his friends and allies in the §JOld Guard§!, having been the heir apparent to §JDomvile§! before the uprising. However, §JWallop§! himself possesses many strange and eccentric beliefs, wishing that §cEngland§! could return to a time when dutiful peasants tilled the land and real lords managed their estates with piety and nobility, all under the careful gaze of a just and divinely-appointed King.\n\n Now finding himself the most powerful man in §cBritain§!, §JWallop§! has the chance to try and make his dreams a reality, to attempt a revival of the §cEnglish§! spirit of old through §JSocial Credit§!. However, going down such a path would be to the horror of most of the §JOld Guard§! who support him, and §JWallop§! must choose between sacrificing his personal ambitions to enshrine the §JBritish Fascism§! of old, or gambling it all to see §Lhis vision§! become reality.\n\n§RRequires:§!\n§M§JBPP Old Guard§! Win§! in §Y£TNO_game_rule_flag_ENG   Collaborator Britain - Aftermath of The Uprising§!§!"
+RULE_OPTION_ENG_OLDGUARDS_ROUTE_RANDOM_DESC: "§F§JGerard Wallop§!, the Earl of Portsmouth, has become Prime Minister with the backing of his friends and allies in the §JOld Guard§!, having been the heir apparent to §JDomvile§! before the uprising. However, §JWallop§! himself possesses many strange and eccentric beliefs, wishing that §cEngland§! could return to a time when dutiful peasants tilled the land and real lords managed their estates with piety and nobility, all under the careful gaze of a just and divinely-appointed King.\n\nNow finding himself the most powerful man in §cBritain§!, §JWallop§! has the chance to try and make his dreams a reality, to attempt a revival of the §cEnglish§! spirit of old through §JSocial Credit§!. However, going down such a path would be to the horror of most of the §JOld Guard§! who support him, and §JWallop§! must choose between sacrificing his personal ambitions to enshrine the §JBritish Fascism§! of old, or gambling it all to see §Lhis vision§! become reality.\n\n§RRequires:§!\n§M§JBPP Old Guard§! Win§! in §Y£TNO_game_rule_flag_ENG   Collaborator Britain - Aftermath of The Uprising§!§!"
 RULE_OPTION_ENG_OLDGUARDS_ROUTE_OG: "The §JOld Guard§! Endure"
 RULE_OPTION_ENG_OLDGUARDS_ROUTE_OG_DESC: "§FAccepting that pursuing his §Ypersonal beliefs§! above all would destroy his support and risk losing everything he has striven for over the years, §JWallop§! will set aside his own plans for §cBritain§! and adopt those of the wider §JOld Guard§!, accepting his role as their heir and continuing the legacy of §JChesterton§! and §JDomvile§! into the 1960s.§!"
 RULE_OPTION_ENG_OLDGUARDS_ROUTE_SC: "§JWallop§! Unrestrained"
@@ -1995,7 +1991,7 @@ RULE_OPTION_ENG_CHANNEL_CRISIS_OFN_DESC: "§FThe §kChannel Crisis§! will concl
 
 ENG_RESISTANCE_ROUTE: "£TNO_game_rule_flag_ENG   Free Britain - Aftermath Of The Uprising"
 RULE_OPTION_ENG_RESISTANCE_ROUTE_RANDOM: "Default - Random AI"
-RULE_OPTION_ENG_RESISTANCE_ROUTE_RANDOM_DESC: "§FAs bells ring out all over the country, and celebrations erupt in every village, town and city now that §cBritain§! is §Gfree§!, those who led the nation to victory find themselves in a far less joyous mood. The Left Resistance and the Special Operations Executive have worked together for many long and hard years, yet significant differences remain between the two groups - primarily on what the newly-§SFree Britain§! should be like.\n\n The §MSOE§! and their exile allies want the return of the old §cBritain§! - a total reversal of the decades of occupation and vassalage to the world before the war. This view is not shared by the §VLeft Resistance§!, who demand a fairer §cBritain§! for the §Vworking class§! with a codified constitution to be established at long last. Should a deal not be reached, those on the fringes may come out of the shadows, and take the nation in a wholly §Yunexpected direction§!.\n\n§RRequires:§!\n§xNOT§! £TNO_game_rule_flag_GER   §RSealion II§! in §Y£TNO_game_rule_flag_ENG  £TNO_game_rule_flag_USA  £TNO_game_rule_flag_GER   Free Britain - The Channel Crisis§!§!"
+RULE_OPTION_ENG_RESISTANCE_ROUTE_RANDOM_DESC: "§FAs bells ring out all over the country, and celebrations erupt in every village, town and city now that §cBritain§! is §Gfree§!, those who led the nation to victory find themselves in a far less joyous mood. The Left Resistance and the Special Operations Executive have worked together for many long and hard years, yet significant differences remain between the two groups - primarily on what the newly-§SFree Britain§! should be like.\n\nThe §MSOE§! and their exile allies want the return of the old §cBritain§! - a total reversal of the decades of occupation and vassalage to the world before the war. This view is not shared by the §VLeft Resistance§!, who demand a fairer §cBritain§! for the §Vworking class§! with a codified constitution to be established at long last. Should a deal not be reached, those on the fringes may come out of the shadows, and take the nation in a wholly §Yunexpected direction§!.\n\n§RRequires:§!\n§xNOT§! £TNO_game_rule_flag_GER   §RSealion II§! in §Y£TNO_game_rule_flag_ENG  £TNO_game_rule_flag_USA  £TNO_game_rule_flag_GER   Free Britain - The Channel Crisis§!§!"
 RULE_OPTION_ENG_RESISTANCE_ROUTE_PATCON: "£TNO_game_rule_flag_ENG_HMMLR1   §iPaternalist Tories§! Elected"
 RULE_OPTION_ENG_RESISTANCE_ROUTE_PATCON_DESC: "§F§iHarold Macmillan§!, Prime Minister of the §SExiles§!, shall be elected as Prime Minister of the §SUnited Kingdom§!, defeating the internal opposition of §iKeith Joseph§! and external challenger §PMichael Foot§! with promises to bring the shattered isles back together again. In a revival of the §iDisraeli§! spirit that launched the modern §iTories§!, §iMacmillan§! will seek to accomplish this by seeking closer ties to the §mOFN§! and §mUSA§!, as well as working with §PLabour§! to support the §Pwelfare state§! and helping reconcile social change with the concerns of §isocial conservatives§!, much to the chagrin of more §Lhard right§!-leaning members within his §iown party§!.§!"
 RULE_OPTION_ENG_RESISTANCE_ROUTE_FREMAR: "£TNO_game_rule_flag_ENG_HMMLR1   §iFree-Market Tories§! Elected"
@@ -2003,7 +1999,7 @@ RULE_OPTION_ENG_RESISTANCE_ROUTE_FREMAR_DESC: "§F§iKeith Joseph§!, a firebran
 RULE_OPTION_ENG_RESISTANCE_ROUTE_LABOUR: "£TNO_game_rule_flag_ENG_HMMLR1   §PLabour Party§! Elected"
 RULE_OPTION_ENG_RESISTANCE_ROUTE_LABOUR_DESC: "§F§PMichael Foot§!, the Modern Cato, shall be elected as Prime Minister of the §SUnited Kingdom§!, swept to power with a mandate to bring §PDemocratic Socialism§! to §SBritain§! for the first time. As PM, §PFoot§! will expand and further fund the new §Pwelfare state§!, enacting §Vsocialist§! economics and attempting to overcome some of the compromises the §VLeft Resistance§! had to make with the §MSOE§!, to the fierce opposition of the §iConservatives§! and §MLabour Right§! alike.§!"
 RULE_OPTION_ENG_RESISTANCE_ROUTE_REVSOC: "£TNO_game_rule_flag_ENG_commonwealth_britain   §VThe British Revolution§!"
-RULE_OPTION_ENG_RESISTANCE_ROUTE_REVSOC_DESC: "§FUnable to strike a deal, the §eCommunist§! wing of §VLeft Resistance§! shall start to rapidly gain influence among the disillusioned moderates, eventually winning over §VJack Jones§! himself, launching a §Rcoup§! against §sKnight§! and the §MSOE§!.\n\n The §Sexiles§! can only watch as the hopes for a restoration of the §SBritain§! they once knew are torn to pieces by the victorious §VLR§!, with §VJack Jones§!' §VBritish Worker's Front§! quickly sweeping the first elections against §PLabour§!, with a record low turnout being recorded due to the active §Rsuppression§! of any opposition, and total §Rdisenfranchisement§! of much of the §iright-wing§! electorate. A new §eBritain§! has emerged, and it is one whose flag is, and always will be, §edeepest red§!.§!"
+RULE_OPTION_ENG_RESISTANCE_ROUTE_REVSOC_DESC: "With §sKnight§! and the §MSOE§! refusing to compromise with demands for additional democratic reforms, the §VLeft Resistance§! decides to take matters into their own hands and quickly ousts §sKnight§! and the §MSOE§! from power. §VJack Jones§! soon establishes the §RCommonwealth§! §Wof§! §GBritain§!, a parliamentary republic in which the §VBritish Workers' Front§!, the successor to the §VLeft Resistance§!, has a commanding majority in parliament with §VJones§! as Prime Minister. The §VBritish Workers' Front§! is united by the goal of establishing a truly socialistic economy in the hands of the §cworkers§!, yet there remain deep divisions within that Jones must quash lest the Front §xcollapses.§!"
 
 # England - English Civil War Buffs
 
@@ -2102,7 +2098,7 @@ RULE_OPTION_ECW_OUTCOME_COLLAB_DESC: "§FIt is 1956 all over again, led by §JRo
 #RULE_OPTION_HMMLR_COUP_NO: "§GNo§! Coup"
 #RULE_OPTION_HMMLR_COUP_NO_DESC: "§FThe careful manoeuvring and politicking of the incumbent government has held back scheming extremists of all kinds who sought to disturb the balance of powers in England from realizing their twisted and bizarre visions for England. Their plots will be forever relegated to the dustbin of history and forgotten. Peace and stability has been maintained over England as democracy continues to live on for another day.§!"
 #RULE_OPTION_HMMLR_COUP_BIRCH: "£TNO_game_rule_flag_ENG_communist   §eBirch§! Coup"
-#RULE_OPTION_HMMLR_COUP_BIRCH_DESC: "§FIt was the aftermath of the §SHMMLR§!'s victory over the §ccollaborationist government§! that made the people of §cEngland§! ready to take a chance at something new; to remedy the mistakes of the former §eGreat Britain§! through the leadership of the venerable §VHarold Wilson§! and the §Vsocialist§! §Greformers§!, but such a §Psocietal revolution§! carries the easy potential to §qbackfire§!; enter §eReg Birch§!, the leader of the Pollitite faction of the §eFar Left§! and leader of the newly christened "Worker's Commonwealth" following a coup d'etat against the §VWilson§! government, a devoted §eMarxist-Leninist§!, §eBirch§!'s rise to power came as a result of §VWilson§!'s attempt to sideline the Politites and curb their influence, only to inadvertently galvanize the §eFar Left§! towards §eBirch§! and his §Rhardline§! §eCommunist§! orthodoxy, §eBukharinism§!, and with the former seat of the British Monarchy firmly in §eBirch§!'s hands, he intends to shape a vision of Albion far different from what came before; militantly opposed to both the §JFascist§! hegemonies lurking beyond the §cEnglish§! channel as well as the §Mcapitalistic democracies§! across the pond, it remains to be seen what this deeply transformative shift in §cEnglish§! society shall entail for the future of its people.\n\n§RRequires:§!\n£TNO_game_rule_flag_ENG_commonwealth_britain   §YThe§! §VSLP§! §Ywins the elections§! in £TNO_game_rule_flag_ENG_HMMLR_Reconstruction   §YHMMLR - Reconstruction§!"
+#RULE_OPTION_HMMLR_COUP_BIRCH_DESC: "§FIt was the aftermath of the §SHMMLR§!'s victory over the §ccollaborationist government§! that made the people of §cEngland§! ready to take a chance at something new; to remedy the mistakes of the former §eGreat Britain§! through the leadership of the venerable §VHarold Wilson§! and the §Vsocialist§! §Greformers§!, but such a §Psocietal revolution§! carries the easy potential to §qbackfire§!; enter §eReg Birch§!, the leader of the Pollitite faction of the §eFar Left§! and leader of the newly christened "Workers' Commonwealth" following a coup d'etat against the §VWilson§! government, a devoted §eMarxist-Leninist§!, §eBirch§!'s rise to power came as a result of §VWilson§!'s attempt to sideline the Politites and curb their influence, only to inadvertently galvanize the §eFar Left§! towards §eBirch§! and his §Rhardline§! §eCommunist§! orthodoxy, §eBukharinism§!, and with the former seat of the British Monarchy firmly in §eBirch§!'s hands, he intends to shape a vision of Albion far different from what came before; militantly opposed to both the §JFascist§! hegemonies lurking beyond the §cEnglish§! channel as well as the §Mcapitalistic democracies§! across the pond, it remains to be seen what this deeply transformative shift in §cEnglish§! society shall entail for the future of its people.\n\n§RRequires:§!\n£TNO_game_rule_flag_ENG_commonwealth_britain   §YThe§! §VSLP§! §Ywins the elections§! in £TNO_game_rule_flag_ENG_HMMLR_Reconstruction   §YHMMLR - Reconstruction§!"
 #RULE_OPTION_HMMLR_COUP_YDL: "£TNO_game_rule_flag_ENG_united_kingdom  £TNO_game_rule_flag_ENG_commonwealth_britain   §sYDL§! Coup"
 #RULE_OPTION_HMMLR_COUP_YDL_DESC: "§FIn an unexpected development, §cEngland§!'s reborn era of §Mliberal democratic§! rule has been cut short by the heroic former leader of the §SHMMLR§! Organization, §LClaude Auchinleck§!, and his wartime ally, §eBill Alexander§!, under the premise of the "§sYoung Democracy Law§!". The §smilitary§! of the §sInterim Government§! duopoly that now lords over §cEngland§! has cited recent political §Yinstability§! and nascent §Rchaos§! as the justification for their §Rintervention§! and promises the §Grestoration§! of civil governance once the situation has been §Ystabilised§! and the framework for a §Gbetter democracy§! has been laid down. The deadline for said restoration remains §qunknown§!.\n\n§RRequires:§!\n§YNOT§! £TNO_game_rule_flag_ENG_commonwealth_britain   §YThe§! §sMSA§! §Ywins the elections§! in £TNO_game_rule_flag_ENG_HMMLR_Reconstruction   §YHMMLR - Reconstruction§!"
 
@@ -2190,7 +2186,7 @@ RULE_OPTION_ECW_OUTCOME_COLLAB_DESC: "§FIt is 1956 all over again, led by §JRo
 
 #ENG_WALES_REUNIFICATION: "£TNO_game_rule_flag_ENG  £TNO_game_rule_flag_WAL   England and Wales - Reunification"
 #RULE_OPTION_ENG_WALES_REUNIFICATION_RANDOM: "Default - Random AI"
-#RULE_OPTION_ENG_WALES_REUNIFICATION_RANDOM_DESC: "§FOperation: Sealion did more than spell the end of the British Empire, it did the unthinkable in splintering the British Mainland; it is from this that the former Principality of Wales found itself separated from England for the first time since the Middle Ages, and despite two decades passing in the interregnum since the Second World War, the English Civil War saw a paradigm shift that now brings Albion and her sister Prydain upon each others doorstep yet again, with England intent on reintegration of their western province, and time will tell if a amicable reunion can be achieved, or if conflict will brew on the Isles once again.§!"
+#RULE_OPTION_ENG_WALES_REUNIFICATION_RANDOM_DESC: "§FOperation: Sealion did more than spell the end of the British Empire, it did the unthinkable in splintering the British Mainland; it is from this that the former Principality of Wales found itself separated from England for the first time since the Middle Ages, and despite two decades passing in the interregnum since the Second World War, the English Civil War saw a paradigm shift that now brings Albion and her sister Prydain upon each others doorstep yet again, with England intent on reintegration of their western province, and time will tell if an amicable reunion can be achieved, or if conflict will brew on the Isles once again.§!"
 #RULE_OPTION_ENG_WALES_REUNIFICATION_PEACEFUL: "£TNO_game_rule_flag_ENG  £TNO_game_rule_flag_WAL   Wales peacefully rejoins England"
 #RULE_OPTION_ENG_WALES_REUNIFICATION_PEACEFUL_DESC: "§FThere are some kinships between people that even the worst of wars can't hope to destroy, even beneath the shadow of the Nazis and their New World Order, it is there that the heirs of Henry V find themselves with one another, still scarred from the Second World War, yet the brotherhood between England and Wales endures; the efforts between the governments of England and Wales are successful, and the Celtic people of the former Principality formally rejoin with the English, and promptly re-annexed by the English government, joining the two peoples for the first time in decades.§!"
 #RULE_OPTION_ENG_WALES_REUNIFICATION_WAR: "£TNO_game_rule_flag_WAL   Wales §RRejects§! Annexation"
@@ -2299,7 +2295,7 @@ RULE_OPTION_USA_LEADER_ROUTE_1964_NPP_DESC: "§FThe prevailing candidate from th
 
 # The West African Reconstruction - Outcomes
 
-WAR_FFR_OUTCOME: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_FRA_FREE   The USA - Fate of the West African Reconstruction"
+WAR_FFR_OUTCOME: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_FFR   The USA - Fate of the West African Reconstruction"
 RULE_OPTION_WAR_FFR_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_WAR_FFR_OUTCOME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YFree France won in the West African War§!"
 RULE_OPTION_WAR_FFR_OUTCOME_SUCCESSFUL: "§GSuccessful§! Reconstruction"
@@ -2696,7 +2692,7 @@ RULE_OPTION_FATE_OF_GRENADA_TRI_DESC: "§FGrenada will be incorporated into  Tri
 TRINIDAD_BPR: "£TNO_game_rule_flag_TRI   The Black Power Revolution"
 RULE_OPTION_TRINIDAD_BPR_RANDOM: "Default - Random AI"
 RULE_OPTION_TRINIDAD_BPR_RANDOM_DESC: "§FThe future of §xTrinidad and Tobago§! hangs on by a thread. The §Vsocialists§!, discontent by how things were run by the current administration, will attempt to overthrow their rulers in a time where both social tensions and an economic recession is in full swing.\n\n§RRequires:§!\n§RNOT§! §MUnitary WIF§! in §Y£TNO_game_rule_flag_WIN  £TNO_game_rule_flag_TRI  The Trinidadian Proposal§!"
-RULE_OPTION_TRINIDAD_BPR_SUCCESS: "£TNO_game_rule_flag_TRI_communist   §VThe Revolution§! Succeeds"
+RULE_OPTION_TRINIDAD_BPR_SUCCESS: "£TNO_game_rule_flag_TRI_socialist   §VThe Revolution§! Succeeds"
 RULE_OPTION_TRINIDAD_BPR_SUCCESS_DESC: "§FDiscontent over the social upheavals and the economic inequalities that it conjured by being too close to the American imperialists, §VMakandal Daaga§!, a socialist revolutionary, will overthrow the OFN-aligned government and promise a better future for all Afro and Indo people living in the island. Trinidad will follow the path of §VLeft-Wing Nationalism§!.§!"
 RULE_OPTION_TRINIDAD_BPR_FAILURE: "£TNO_game_rule_flag_TRI   §YThe Status Quo§! Remains"
 RULE_OPTION_TRINIDAD_BPR_FAILURE_DESC: "§FWhether it is part of the Federation under Norman Manley, or an independent island under Eric Williams, the Trinidadians are content with the current system, rejecting the socialist revolution and remain devoted as an OFN-aligned state, continuing its adherence to §MLiberalism§!.§!"
@@ -2866,6 +2862,18 @@ RULE_OPTION_HAI_1967_REFERENDUM_CANTAVE_DESC: ""
 RULE_OPTION_HAI_1967_REFERENDUM_MAGLOIRE: "§LMagloire§! §Rdeposes§! §sCantave§!"
 RULE_OPTION_HAI_1967_REFERENDUM_MAGLOIRE_DESC: ""
 
+# Haiti - Regime Reorganization [Socialist Republic]
+
+HAI_SOCIALIST_REGIME: "£TNO_game_rule_flag_HAI_communist_rev   Haiti - Socialist Regime"
+RULE_OPTION_HAI_SOCIALIST_REGIME_RANDOM: "Default - Random AI"
+RULE_OPTION_HAI_SOCIALIST_REGIME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§M£TNO_game_rule_flag_HAC   PPLN crushed the Government§! §YOR§! §M£TNO_game_rule_flag_HAC   War - PPLN Victory§! in §Y£TNO_game_rule_flag_HAI  £TNO_game_rule_flag_HAC   PPLN Uprising§!§!"
+RULE_OPTION_HAI_SOCIALIST_REGIME_ALEXIS: "§VAlexis§! takes power"
+RULE_OPTION_HAI_SOCIALIST_REGIME_ALEXIS_DESC: ""
+RULE_OPTION_HAI_SOCIALIST_REGIME_HUDICOURT: "§VHudicourt§! takes power"
+RULE_OPTION_HAI_SOCIALIST_REGIME_HUDICOURT_DESC: "§F\n\n§RRequires:§!\n§MAmazonism entrenched§! in §Y£TNO_game_rule_flag_DOM   Dominican Republic - Anti-Radical Coup§!\n§xOR§!\n§xNOT§! §MAmazonism entrenched§! in §Y£TNO_game_rule_flag_DOM   Dominican Republic - Anti-Radical Coup§! §YAND§! §xNOT§! §M£TNO_game_rule_flag_JAP  £TNO_game_rule_flag_CAO   Pan-African Liberation Front Victory§! in §Y£TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR   West African War§!§!"
+RULE_OPTION_HAI_SOCIALIST_REGIME_AMBROISE: "§eAmbroise§! takes power"
+RULE_OPTION_HAI_SOCIALIST_REGIME_AMBROISE_DESC: ""
+
 # Hinche Negotiations
 
 HINCHE_NEGOTIATIONS: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_DOM  £TNO_game_rule_flag_HAI   Hinche Negotiations"
@@ -2904,7 +2912,7 @@ RULE_OPTION_ECU_THIRD_REVOLUTION_SOCIALIST_DESC: "§FAs instability grips the na
 
 #Brazil - Visit to Sphere
 
-BRA_SPHERE_VISIT: "£TNO_game_rule_flag_BRA  £TNO_game_rule_flag_JAP  Brazil - Visit to the Sphere"
+BRA_SPHERE_VISIT: "£TNO_game_rule_flag_BRA  £TNO_game_rule_flag_JAP   Brazil - Visit to the Sphere"
 RULE_OPTION_BRA_SPHERE_VISIT_RANDOM: "Default - Random AI"
 RULE_OPTION_BRA_SPHERE_VISIT_RANDOM_DESC: "§FTo further the industrialization of Brazil and acquire finances for the Amazonian Highway project, President §KHenrique Lott§! dispatches his Vice President, §QJânio Quadros§!, to visit the §VCo-prosperity Sphere§!'s giants of Japan and China to finalize a trade deal. The Vice President is infamous for his eccentricities and ambition. His conduct during the journey could end anywhere from an §Gexcellent triumph§! for himself and Brazil to an §Rutter disaster§! for his nation's international relations.§!"
 RULE_OPTION_BRA_SPHERE_VISIT_FULL_SUCCESS: "§GSuccess§! - §iQuadros' Great Leap Forward§!"
@@ -3160,7 +3168,7 @@ RULE_OPTION_SUR_INDEPENDENCE_COUP_DESC: ""
 
 STC_BANZER_COUP: "£TNO_game_rule_flag_STC   Santa Cruz - Banzer's Coup"
 RULE_OPTION_STC_BANZER_COUP_RANDOM: "Default - Random AI" 
-RULE_OPTION_STC_BANZER_COUP_RANDOM_DESC: "§F\n\n§RRequires:§!\n§MFULNA Victory§! in £TNO_game_rule_flag_PAR   §YParaguay Bush War§!"
+RULE_OPTION_STC_BANZER_COUP_RANDOM_DESC: "§F\n\n§RRequires:§!\n§MFULNA Victory§! in £TNO_game_rule_flag_PAR   §YParaguay - Paraguay Bush War§!"
 RULE_OPTION_STC_BANZER_COUP_SUCCESS: "Coup Succeeds"
 RULE_OPTION_STC_BANZER_COUP_SUCCESS_DESC: ""
 RULE_OPTION_STC_BANZER_COUP_FAIL: "Coup Fails"
@@ -3206,7 +3214,7 @@ PAR_BATTLE_ASUNCION: "£TNO_game_rule_flag_PAR   Paraguay -  Battle of Asunción
 RULE_OPTION_PAR_BATTLE_ASUNCION_RANDOM: "Default - Random AI"
 RULE_OPTION_PAR_BATTLE_ASUNCION_RANDOM_DESC: "§FAfter FULNA's victory in the Paraguay Bush War, the differences between the Paraguayan Communist Party and the other rebel groups will culminate in a torrent of bloodshed on the streets of Asunción.\n\n§RRequires:§!\n§YFULNA Victory in £TNO_game_rule_flag_PAR   Paraguay Bush War§!"
 RULE_OPTION_PAR_BATTLE_ASUNCION_COMMUNIST_VICTORY: "§eCommuniste§! §GVictory§!"
-RULE_OPTION_PAR_BATTLE_ASUNCION_COMMUNIST_VICTORY_DESC: "§FBy baiting the Liberals and Febrerists into the outskirts of the city, Guevara will succesfully ambush their foes, allowing the communists under Miguel Ángel Soler to raise the hammer and sickle towards the whole country, affirming Paraguay's future into another authoritarian regime- this time under §eCommunism§!, dooming the country's future to war with the Triple Alliance.§!"
+RULE_OPTION_PAR_BATTLE_ASUNCION_COMMUNIST_VICTORY_DESC: "§FBy baiting the Liberals and Febrerists into the outskirts of the city, Guevara will successfully ambush their foes, allowing the communists under Miguel Ángel Soler to raise the hammer and sickle towards the whole country, affirming Paraguay's future into another authoritarian regime- this time under §eCommunism§!, dooming the country's future to war with the Triple Alliance.§!"
 RULE_OPTION_PAR_BATTLE_ASUNCION_COMMUNIST_DEFEAT: "§eCommunist§! §RDefeat§!"
 RULE_OPTION_PAR_BATTLE_ASUNCION_COMMUNIST_DEFEAT_DESC: "§FThe Febrerists, Liberals, and the moderate elements in the country will depose the socialist regime, under Estibagarra's brilliant maneuvers against the communists, thus reestablishing democratic institutions and holding its first elections in two decades.§!"
 
@@ -3394,11 +3402,15 @@ CHL_SKELETON_CHRISTMAS_WAR: "£TNO_game_rule_flag_CHL  £TNO_game_rule_flag_ARG 
 
 RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_RANDOM: "Default - Random AI"
 RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_RANDOM_DESC: "§FMinor border disputes between Argentina and Chile lead to a buildup of tensions in 1965. If the nations cannot find a way to solve these disputes through negotiations and diplomacy, an armed conflict may break out on their southern border.§!"
-
-RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_YES: "Christmas War Happens"
-RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_YES_DESC: "§FAfter multiple attempts at negotiation and both nations failing to reach a diplomatic compromise, tensions turn into open conflict and a localized war breaks out in southern Patagonia.§!"
-
-RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_NO: "Christmas War Averted"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_ARG: "£TNO_game_rule_flag_ARG   Total §mArgentin§! Victory"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_ARG_DESC: "§FWith the diplomatic talks between §VChile§! and §mArgentina§! having failed, the dispute in southern Patagonia will turn violent and §xwar§! will break out. While §VChile§! will try to retake their lost land, their counteroffensive will fail, with §mArgentina§! keeping its upper hand. Not only will they maintain their hold over Laguna del Desietro, but push further and take Capitán Prat. This will mark a definitive victory for §mArgentina§! in the §aChristmas War§!, and a total humiliation for the §VChilean government§!.§!"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_HOLD: "£TNO_game_rule_flag_ARG   §mArgentine§! holds Laguna del Desierto"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_HOLD_DESC: "§FWith the diplomatic talks between §VChile§! and §mArgentina§! having failed, the dispute in southern Patagonia will turn violent and §xwar§! will break out. While §VChile§! will try to retake their lost land, their counteroffensive will fail, with §mArgentina§! managing to hold out. However, their attempts to push their advantage will fail, with their offensive to take  Capitán Prat hitting a brick wall, and thus ending the §xwar§!. While an §mArgentine§! victory, it is far from the overwhelming success one of §nSouth America's§! most powerful countries hoped for.§!"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_RETAKE: "£TNO_game_rule_flag_CHL   §VChile§! retakes Laguna del Desierto"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_RETAKE_DESC: "§FWith the diplomatic talks between §VChile§! and §mArgentina§! having failed, the dispute in southern Patagonia will turn violent and §xwar§! will break out. The §aChristmas, War§! as it will be known, starts with success for §VChile§!, as they will succeed in retaking Laguna del Desietro. Energized by the early success, §VChile§! will try to build on their victory by taking the §mArgentine§! town of Calafate. However, this attack will be repulsed, leading to the re-establishment of borders from before the dispute.§!"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_CHL: "£TNO_game_rule_flag_CHL   Total VChile§! Victory"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_CHL_DESC: "§FWith the diplomatic talks between §VChile§! and §mArgentina§! having failed, the dispute in southern Patagonia will turn violent and §xwar§! will break out. In the conflict, §VChile§! will come out overwhelmingly successful, not only managing to retake Laguna del Desietro but also seizing Calafrante in the counter-offensive. Even after fierce attacks by §mArgentina§!, §VChile§! will maintain its control of the territory, marking a definitive victory for the mountainous country in the §aChristmas War§! over its eastern neighbor.§!"
+RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_NO: "§aChristmas War§! §GAverted§!"
 RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_NO_DESC: "§FTensions defuse and the conflict deescalates as Argentina and Chile reach a diplomatic agreement with regards to their southern borders. While relations between the two nations are not fully healed, this can represent a new path for South American diplomacy.§!"
 
 # Chile - Alessandri's Term
@@ -3682,9 +3694,9 @@ RULE_OPTION_URG_66_ELECTION_PATH_UCB_DESC: "§FThe Unión Colorado y Batllista u
 URG_MORATORIO_COUP: "£TNO_game_rule_flag_URG   Uruguay - Pablo Moratorio Coup"
 RULE_OPTION_URG_MORATORIO_COUP_RANDOM: "Default - Random AI"
 RULE_OPTION_URG_MORATORIO_COUP_RANDOM_DESC: "§FWith Moratorio feeling increasingly nervous about Aguerrondo bending the knee too much for Perón, he will begin to think about preparing a palace coup to save Uruguay from Peronism. Ultimately it will be left to luck to decide if cool-heads prevail and Moratorio sticks with Aguerrondo, or if he enlists Ventura Rodríguez's help into removing the man he once helped.\n\n§RRequires:§!\n§sAguerrondo's§! §RCoup§! option is chosen in £TNO_game_rule_flag_URG  §YUruguayan Coup D'etat§!"
-RULE_OPTION_URG_MORATORIO_COUP_YES: "Coup happens"
+RULE_OPTION_URG_MORATORIO_COUP_YES: "Coup is Successful"
 RULE_OPTION_URG_MORATORIO_COUP_YES_DESC: "§FWith Moratorio feeling increasingly nervous about Aguerrondo bending the knee too much for Perón, he will begin to think about preparing a palace coup to save Uruguay from Peronism. He will join forces with Aguerrondo's Minister of the Interior and once trusted man, Ventura Rodríguez, to do it. Uruguay will follow the path of §sDespotism§!, for now at least...§!"
-RULE_OPTION_URG_MORATORIO_COUP_NO: "Coup doesn't happen"
+RULE_OPTION_URG_MORATORIO_COUP_NO: "Coup is Not Successful"
 RULE_OPTION_URG_MORATORIO_COUP_NO_DESC: "§FWith Moratorio feeling increasingly nervous about Aguerrondo bending the knee too much for Perón, he will begin to think about preparing a palace coup to save Uruguay from Peronism. Ultimately he will feel that his fears were unfounded and Aguerrondo will be able to remain in power and be elected President in the 1966 elections. Uruguay will follow the path of §sAristocratic Conservatism§!.§!"
 
 
@@ -3693,9 +3705,9 @@ RULE_OPTION_URG_MORATORIO_COUP_NO_DESC: "§FWith Moratorio feeling increasingly 
 URG_GESTIDO_REVOLUTION: "£TNO_game_rule_flag_URG   Uruguay - Gestido's Revolution"
 RULE_OPTION_URG_GESTIDO_REVOLUTION_RANDOM: "Default - Random AI"
 RULE_OPTION_URG_GESTIDO_REVOLUTION_RANDOM_DESC: "§FThe removal of Ribas as Interim President by Charlone will create a window of opportunity for the exiled democratic opposition to launch a revolution to free Uruguay from §LMarzism§!. With both sides backed by foreign powers, it seems that fortune will be the one to determine which side will triumph at the end.\n\n§RRequires:§!\n§MMarzist §RCoup§! in £TNO_game_rule_flag_URG  §YUruguayan Coup D'etat§!"
-RULE_OPTION_URG_GESTIDO_REVOLUTION_YES: "Revolution happens"
+RULE_OPTION_URG_GESTIDO_REVOLUTION_YES: "Revolution is Successful"
 RULE_OPTION_URG_GESTIDO_REVOLUTION_YES_DESC: "§FThe removal of Ribas as Interim President by Charlone will create a window of opportunity for the exiled democratic opposition to launch a revolution to free Uruguay from §LMarzism§!. The revolution will triumph in the end, and general §LÓscar Gestido§! will feel relieved that he has redeemed himself by evoking the legacy of Basilio Muñoz and Juan José López Silveira.§!"
-RULE_OPTION_URG_GESTIDO_REVOLUTION_NO: "Revolution doesn't happen"
+RULE_OPTION_URG_GESTIDO_REVOLUTION_NO: "Revolution is Not Successful"
 RULE_OPTION_URG_GESTIDO_REVOLUTION_NO_DESC: "§FThe removal of Ribas as Interim President by Charlone will create a window of opportunity for the exiled democratic opposition to launch a revolution to free Uruguay from §LMarzism§!. Ultimately the revolution will be defeated, showing again that the lessons of 1904 and 1935 still hold true, armed revolts have no place in the modern age of the 20th century. With his reign secured, Charlone will ensure that §LGabriel Terra Illaraz§! is chosen as President in the 1966 elections.§!"
 
 #Colombia - Pinilla Check
@@ -3716,7 +3728,7 @@ RULE_OPTION_COL_FN_ELECTION_RANDOM_DESC: "§FWith the civil war over and the §M
 RULE_OPTION_COL_FN_ELECTION_LIBERAL_VICTORY: "§MLiberals§! §GElected§!"
 RULE_OPTION_COL_FN_ELECTION_LIBERAL_VICTORY_DESC: "§FThe §MLiberal Party§! of §MAlberto Lleras Camargo§! will win the §Yelection§! on a platform of §MProgressive Liberalism§!. Promising to work with the §iConservatives§! for a §nstronger§! §Mdemocracy§!, he hopes to §Kheal§! the §edeep trauma§! that §fColombia§! has endured and create an §ninclusive§! §frepublic§! for all.§!"
 RULE_OPTION_COL_FN_ELECTION_CONSERVATIVE_VICTORY: "§iConservatives§! §GElected§!"
-RULE_OPTION_COL_FN_ELECTION_CONSERVATIVE_VICTORY_DESC: "§FThe §iConservative Party§! of §iRoberto Urdaneta Arbeláez§! will win the §Yelection§! on a platform of §iChristian Conservatism§!. Promising to work with the §MLiberals§! for a §nstronger§! §Mdemocracy§!, he hopes to §Kbuild lasting bridges§! with them and bring lasting §Mstability§! to §fColombia§!.§!"
+RULE_OPTION_COL_FN_ELECTION_CONSERVATIVE_VICTORY_DESC: "§FThe §iConservative Party§! of §iGuillermo León Valencia§! will win the §Yelection§! on a platform of §iChristian Conservatism§!. Promising to work with the §MLiberals§! for a §nstronger§! §Mdemocracy§!, he hopes to §Kbuild lasting bridges§! with them and bring lasting §Mstability§! to §fColombia§!.§!"
 
 # Colombia - Postwar Elections
 
@@ -3936,7 +3948,7 @@ RULE_GROUP_TNO_RULES_DAI_TOA_KYOEIKEN: "£TNO_game_rule_flag_CHI  £TNO_game_rul
 
 
 # Yunnan - What path should we use for integration?
-YUN_TYPE_PATH: "£TNO_game_rule_flag_YUN  Yunnan - The Two Brothers"
+YUN_TYPE_PATH: "£TNO_game_rule_flag_YUN   Yunnan - The Two Brothers"
 RULE_OPTION_YUN_TYPE_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_YUN_TYPE_PATH_RANDOM_DESC: "§F§EYunnan§! and §PGuizhou§! have always stood §Ytogether§! like brothers, and in this same spirit have come to cooperate closely in many matters. §sLu Han§!, therefore, now seeks to §Gunite§! the two regions one way or another - whether by §Rblood§! or §Gby negotiation§!. After all, sometimes there is a need for the elder brother to invoke his §Lauthority§!.§!"
 RULE_OPTION_YUN_TYPE_PATH_YES_CONFERENCE: "United at Last"
@@ -3945,7 +3957,7 @@ RULE_OPTION_YUN_TYPE_PATH_NOT_CONFERENCE: "One and Indivisible"
 RULE_OPTION_YUN_TYPE_PATH_NOT_CONFERENCE_DESC: "§FThe §cChinese§! Southwest must be §Ysecured§! at the earliest possible moment, and §sLu Han§! decides that the opportunity is ripe to begin a §smilitary campaign§!, seeing §sHe Yingquin§! as nothing but an obstacle. §EYunnan§! and §PGuizhou§! are §Yunited§! by §Rforce§! of §sarms§!.§!"
 
 # Yunnan - Decentralization or Centralization?
-YUN_INTEGRATION_OUTCOME: "£TNO_game_rule_flag_YUN  Yunnan - Administration of the Southwest"
+YUN_INTEGRATION_OUTCOME: "£TNO_game_rule_flag_YUN   Yunnan - Administration of the Southwest"
 RULE_OPTION_YUN_INTEGRATION_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_YUN_INTEGRATION_OUTCOME_RANDOM_DESC: "§FThe provinces of Yunnan and Guizhou may be siblings unified in spirit by the eternal bond of flesh and blood, but they are far from twins. Each province operates in an administrative manner that is fairly distinct from that of its sibling, so as the time to end the unlawful separation that has divided the provinces nears, the question of how such a union would function remains the sole dividing factor. Some suggest the implementation of a centralised union directly administered from Kunming to streamline bureaucracy and enhance administrative efficiency, while others preach the necessity of a decentralised union that better allows each sibling to manage their individual economic and administrative intricacies.\n\n§RRequires:§!\n§YYunnan has chosen the 'United at Last' option of integration§!"
 RULE_OPTION_YUN_INTEGRATION_OUTCOME_CENTRALIZED: "Centralized"
@@ -4114,7 +4126,7 @@ RULE_OPTION_VIN_VIET_MINH_OFFENSIVE_DEFEAT_DESC: ""
 
 # Laos - 1962 Parliamentary Elections
 
-LAO_62_ELECTION_PATH: "£TNO_game_rule_flag_LAO  Laos - 1962 Parliamentary Elections"
+LAO_62_ELECTION_PATH: "£TNO_game_rule_flag_LAO   Laos - 1962 Parliamentary Elections"
 RULE_OPTION_LAO_62_ELECTION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_62_ELECTION_PATH_RANDOM_DESC: ""
 RULE_OPTION_LAO_62_ELECTION_PATH_CONSERVATISM: "§iIndependent-Progressive§! Coalition Wins"
@@ -4128,7 +4140,7 @@ RULE_OPTION_LAO_62_ELECTION_PATH_NATIONAL_COMMUNISM_DESC: ""
 
 # Laos - 1967 Parliamentary Elections
 
-LAO_67_ELECTION_PATH: "£TNO_game_rule_flag_LAO  Laos - 1967 Parliamentary Elections"
+LAO_67_ELECTION_PATH: "£TNO_game_rule_flag_LAO   Laos - 1967 Parliamentary Elections"
 RULE_OPTION_LAO_67_ELECTION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_67_ELECTION_PATH_RANDOM_DESC: ""
 RULE_OPTION_LAO_67_ELECTION_PATH_INDEPENDENT_PROGRESSIVE: "§iIndependent-Progressive§! Coalition Wins"
@@ -4144,7 +4156,7 @@ RULE_OPTION_LAO_67_ELECTION_PATH_INDEPENDENT_ROYALIST_DESC: "§F\n\n§RRequires:
 
 # Laos - Opium War
 
-LAO_OPIUM_WAR_PATH: "£TNO_game_rule_flag_LAO  Laos - Opium War"
+LAO_OPIUM_WAR_PATH: "£TNO_game_rule_flag_LAO   Laos - Opium War"
 RULE_OPTION_LAO_OPIUM_WAR_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_OPIUM_WAR_PATH_RANDOM_DESC: ""
 RULE_OPTION_LAO_OPIUM_WAR_PATH_SUCCESS: "Victory"
@@ -4154,7 +4166,7 @@ RULE_OPTION_LAO_OPIUM_WAR_PATH_FAIL_DESC: ""
 
 # Laos - Monarchy Referendum
 
-LAO_MONARCHY_REFERENDUM_OUTCOME: "£TNO_game_rule_flag_LAO  Laos - Monarchy Referendum"
+LAO_MONARCHY_REFERENDUM_OUTCOME: "£TNO_game_rule_flag_LAO   Laos - Monarchy Referendum"
 RULE_OPTION_LAO_MONARCHY_REFERENDUM_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_MONARCHY_REFERENDUM_OUTCOME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§RNOT§!\n§iIndependent-Royalist§! Coalition Wins in  £TNO_game_rule_flag_LAO  Laos - 1967 Parliamentary Elections\n§RNOT§!\n§MVictory§! in  £TNO_game_rule_flag_LAO  Laos - Opium War"
 RULE_OPTION_LAO_MONARCHY_REFERENDUM_OUTCOME_SUCCESS: "Monarchy is §Rabolished§!"
@@ -4164,7 +4176,7 @@ RULE_OPTION_LAO_MONARCHY_REFERENDUM_OUTCOME_FAIL_DESC: ""
 
 # Laos - First Republican Elections
 
-LAO_FIRST_REPUBLICAN_ELECTION_PATH: "£TNO_game_rule_flag_LAO  Laos - First Republican Elections"
+LAO_FIRST_REPUBLICAN_ELECTION_PATH: "£TNO_game_rule_flag_LAO   Laos - First Republican Elections"
 RULE_OPTION_LAO_FIRST_REPUBLICAN_ELECTION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_FIRST_REPUBLICAN_ELECTION_PATH_RANDOM_DESC: ""
 RULE_OPTION_LAO_FIRST_REPUBLICAN_ELECTION_PATH_NATIONAL_COMMUNISM: "§eSopuhanouvong§! wins"
@@ -4174,7 +4186,7 @@ RULE_OPTION_LAO_FIRST_REPUBLICAN_ELECTION_PATH_LIBERALISM_DESC: ""
 
 # Laos - The New Monarch
 
-LAO_NEW_KING_PATH: "£TNO_game_rule_flag_LAO  Laos - The New Monarch"
+LAO_NEW_KING_PATH: "£TNO_game_rule_flag_LAO   Laos - The New Monarch"
 RULE_OPTION_LAO_NEW_KING_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_NEW_KING_PATH_RANDOM_DESC: "§F\n\n§RRequires:§!\nMonarchy §Gstays§! in  £TNO_game_rule_flag_LAO  Laos - Monarchy Referendum"
 RULE_OPTION_LAO_NEW_KING_PATH_SISAVANG: "Sisavang Vong is chosen"
@@ -4184,7 +4196,7 @@ RULE_OPTION_LAO_NEW_KING_PATH_BOUN_DESC: ""
 
 # Laos - Monarch Cabinet
 
-LAO_MONARCH_CABINET: "£TNO_game_rule_flag_LAO  Laos - Laos - Monarch Cabinet"
+LAO_MONARCH_CABINET: "£TNO_game_rule_flag_LAO   Laos - Monarch Cabinet"
 RULE_OPTION_LAO_MONARCH_CABINET_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_MONARCH_CABINET_RANDOM_DESC: ""
 RULE_OPTION_LAO_MONARCH_CABINET_ROYALIST_NATIONAL_UNION: "§VRoyalist-National Union§! Cabinet is appointed"
@@ -4196,7 +4208,7 @@ RULE_OPTION_LAO_MONARCH_CABINET_INDEPENDENT_DESC: ""
 
 # Laos - Second Republican Elections
 
-LAO_SECOND_REPUBLICAN_ELECTION: "£TNO_game_rule_flag_LAO  Laos - Second Republican Elections"
+LAO_SECOND_REPUBLICAN_ELECTION: "£TNO_game_rule_flag_LAO   Laos - Second Republican Elections"
 RULE_OPTION_LAO_SECOND_REPUBLICAN_ELECTION_RANDOM: "Default - Random AI"
 RULE_OPTION_LAO_SECOND_REPUBLICAN_ELECTION_RANDOM_DESC: ""
 RULE_OPTION_LAO_SECOND_REPUBLICAN_ELECTION_SOCIALIST: "§VSouphanouvong§! wins"
@@ -4266,11 +4278,11 @@ RULE_OPTION_CAM_ELECTION_SISOWATH_DESC: "§FIn a surprising turn of events, Siso
 
 MAN_PATH: "£TNO_game_rule_flag_MAN   Manchuria - Emperor Puyi's Successor"
 RULE_OPTION_MANCHU_PATH_RANDOM: "Default - Random AI"
-RULE_OPTION_MANCHU_PATH_RANDOM_DESC: "§FEmperor Puyi's health has always been frail. In 1967, he will die from a combination of kidney cancer and heart failure. This is a conundrum in Manchukuo, whose structure as a state did not allow for an imposition of a constitution. Four forces vie for the dominance of the §wManchurian§! Government: the §sCourt Faction§!, led by Prince Pujie; the §sManchurian Imperial Army§!, headed by Sejima Ryuzo; the §oKwantung Army§!, under the command of General Katakura Tadashi; and the unified §JBureaucracy§!, led by Gu Ciheng.§!"
+RULE_OPTION_MANCHU_PATH_RANDOM_DESC: "§FEmperor Puyi's health has always been frail. In 1967, he will die from a combination of kidney cancer and heart failure. This is a conundrum in Manchukuo, whose structure as a state did not allow for an imposition of a constitution. Four forces vie for the dominance of the §wManchurian§! Government: the §sCourt Faction§!, led by Prince Pujie; the §sManchurian Imperial Army§!, headed by Sejima Ryūzō; the §oKwantung Army§!, under the command of General Katakura Tadashi; and the unified §JBureaucracy§!, led by Gu Ciheng.§!"
 RULE_OPTION_MANCHU_PATH_PUJIE: "£TNO_game_rule_flag_MAN   §sPrince Pujie§! §GAscendant§!"
 RULE_OPTION_MANCHU_PATH_PUJIE_DESC: "§FPrince Pujie, following the tradition of Qing law, was disinherited in favor of the Emperor's elder son. Puyi died childless, however, and without a formalization of the succession law, his path will be difficult and long. In this scenario, Prince Pujie manages to secure the succession and ascend to the throne of §wManchuria§!, reigning as its second Emperor. His rule promises to bring a Manchukuo that is closer in spirit to its pan-Asian ideals. Manchuria will follow the path of §sAristocratic Conservatism§!.§!"
 RULE_OPTION_MANCHU_PATH_IMPERIAL_ARMY: "£TNO_game_rule_flag_MAN   §sImperial Army§! §RCoup§!"
-RULE_OPTION_MANCHU_PATH_IMPERIAL_ARMY_DESC: "§F§sSejima Ryuzo§!'s path is intertwined with that of §wManchuria§!. A rising star in the Kwantung Army's Manchurian Faction, He has managed to accrue enough influence within the state and government of Manchukuo to dispense entirely with the pretense of a monarchy. Sejima promises an economic renewal, a new era of growth and modernization that will restore §wManchuria§! back into its place among the Asian nations. Manchuria will follow the path of a §sMilitary Junta§!.§!"
+RULE_OPTION_MANCHU_PATH_IMPERIAL_ARMY_DESC: "§F§sSejima Ryūzō§!'s path is intertwined with that of §wManchuria§!. A rising star in the Kwantung Army's Manchurian Faction, He has managed to accrue enough influence within the state and government of Manchukuo to dispense entirely with the pretense of a monarchy. Sejima promises an economic renewal, a new era of growth and modernization that will restore §wManchuria§! back into its place among the Asian nations. Manchuria will follow the path of a §sMilitary Junta§!.§!"
 RULE_OPTION_MANCHU_PATH_KWANTUNG_ARMY: "£TNO_game_rule_flag_MAN   §oKwantung Army§! §RCoup§!"
 RULE_OPTION_MANCHU_PATH_KWANTUNG_ARMY_DESC: "§F§oKatakura Tadashi§! grew in §qTojo§!'s shadow. When Tojo died in his retirement in §wManchuria§! in 1952, he saw himself as the heir of his legacy. The Revolutionary Right of the §oKwantung Army§! is as restive as ever, and no less suspicious for all the two decades that passed. Their coup would re-establish §wManchuria§! as the frontier of §VJapanese§! security concerns: a dagger pointed at the heart of Russia in the north and §WChina§! in the south. Manchuria will follow the path of §oStratocratic Corporatism§!.§!"
 RULE_OPTION_MANCHU_PATH_BUREAUCRACY: "£TNO_game_rule_flag_MAN   §JBureaucracy§! §RSeize power§!"
@@ -4292,11 +4304,11 @@ RULE_OPTION_GNG_PATH_THE_SILICON_VISIONARY_DESC: "§FThe Legislative Council wil
 
 GNG_HITACHI_COUP: "£TNO_game_rule_flag_GNG   Guangdong - Hitachi Coup"
 RULE_OPTION_GNG_HITACHI_COUP_RANDOM: "Default - Random AI"
-RULE_OPTION_GNG_HITACHI_COUP_RANDOM_DESC: "§FThroughout all great empires and republics in human history, there has been one underlying theme. The most dire threat to a nation is itself. Whether it is the machinations of scheming Alexandrian generals, not content to even let the body of the Conqueror grow cold, or it is the Bolshevik agitators armed with pickets, pistols and an iron will, it remains the same. Why should £GFX_GNG_Guangdong_texticon §SGuangdong§! be §Rany different§!?\n\nWithin the damp shadows, a titan plots. £MAN_mangyo_texticon §VMangyō§! - discontent to let Guangdong stand on her own merits - has organised one of its subsidiaries, £GNG_Hitachi_texticon §kHitachi§!, to probe the fledgling state for any potential weaknesses. Once found, £GNG_Hitachi_texticon §kHitachi§! and its leader, §kKomai Kenichiro§!, is to use whatever means possible to topple the state. While an easier task said than done, £GNG_Hitachi_texticon §kHitachi§! has more than a few aces up their own sleeve. Not least of which, being the possible backing of the £GNG_kenpeitai_texticon §eKenpeitai§!...§!"
+RULE_OPTION_GNG_HITACHI_COUP_RANDOM_DESC: "§FThroughout all great empires and republics in human history, there has been one underlying theme. The most dire threat to a nation is itself. Whether it is the machinations of scheming Alexandrian generals, not content to even let the body of the Conqueror grow cold, or it is the Bolshevik agitators armed with pickets, pistols and an iron will, it remains the same. Why should £GFX_GNG_Guangdong_texticon §SGuangdong§! be §Rany different§!?\n\nWithin the damp shadows, a titan plots. £MAN_mangyo_texticon §VMangyō§! - discontent to let Guangdong stand on her own merits - has organised one of its subsidiaries, £GNG_Hitachi_texticon §kHitachi§!, to probe the fledgling state for any potential weaknesses. Once found, £GNG_Hitachi_texticon §kHitachi§! and its leader, §kKomai Kenichirō§!, is to use whatever means possible to topple the state. While an easier task said than done, £GNG_Hitachi_texticon §kHitachi§! has more than a few aces up their own sleeve. Not least of which, being the possible backing of the £GNG_kenpeitai_texticon §eKenpeitai§!...§!"
 RULE_OPTION_GNG_HITACHI_COUP_YES: "£GNG_Hitachi_texticon §kHitachi Coup§! §RSucceeds§!"
 RULE_OPTION_GNG_HITACHI_COUP_YES_DESC: "§FOne singular night. In the space of six hours, the course of South Chinese history has been changed §Rforever§!. What months of preparation, planning and deals has culminated in, Komai has executed in one, final masterstroke. The Big Four Corporations in £GFX_GNG_Guangdong_texticon §SGuangdong§! lie shattered, their leaders in limbo of what their place in §kKomai's§! new order shall be, and £GNG_Hitachi_texticon §kHitachi§! rules as its maestro, its leader, its God.\n\nChaos has descended upon £GFX_GNG_Guangdong_texticon §SGuangdong§!, with many refusing to accept the hostile takeover. Riots have spread like wildfire, and with brutality not seen since Japan's subjugation of Asia, have been quashed in their entirety. While £MAN_manchukuo_texticon §fManchuria§! may celebrate, £GNG_chinese_nation_texticon §MChina§! may weep and £GNG_japanese_nation_texticon §jJapan§! shall look on in muted silence, the question of what §kKomai's§! Guangdong shall truly look like forms. Nobody is quite sure, but one thing is for certain.\n\n§RThose who will not bow to Komai, will be hanged by him.§!"
 RULE_OPTION_GNG_HITACHI_COUP_NO: "Hitachi Coup §GFails§!"
-RULE_OPTION_GNG_HITACHI_COUP_NO_DESC: "§FThe £MAN_manchukuo_texticon §fManchurian§! dogs are beaten. The aged bureaucrats inside that smelting pit of a nation have made their final gambit for the legacy of Japanese Asia - and they have failed. §kKomai Kenichiro's§! attempt to rally the malcontents of £GFX_GNG_Guangdong_texticon §SGuangdong§! into a cohesive force has resulted in a dismal defeat for £MAN_manchukuo_texticon §fManchukuo§!, with nothing but ashes and the near-collapse of the £GNG_kenpeitai_texticon §eKenpeitai§! in £GFX_GNG_Guangdong_texticon §SGuangdong§! to show for it. §SThe Chief Executive§!, whether it was through his popularity with the people or his Machiavellian cunning, outmanoeuvred £GNG_Hitachi_texticon §kHitachi§! and has but destroyed their legacy inside the nation. £GNG_Hitachi_texticon §kHitachi§! lives, but as a caged parakeet.\n\nWith the threat of Komai gone, the Chief Executive can turn his attention to more pressing matters, like the reaction to the Oil Crisis or ensuring that his legacy inside the §SJewel of the Pearl River§! remains intact, long after he is gone. £MAN_manchukuo_texticon §fManchuria§! has taken their singular shot at the King - and they have missed. If only by inches.§!"
+RULE_OPTION_GNG_HITACHI_COUP_NO_DESC: "§FThe £MAN_manchukuo_texticon §fManchurian§! dogs are beaten. The aged bureaucrats inside that smelting pit of a nation have made their final gambit for the legacy of Japanese Asia - and they have failed. §kKomai Kenichirō's§! attempt to rally the malcontents of £GFX_GNG_Guangdong_texticon §SGuangdong§! into a cohesive force has resulted in a dismal defeat for £MAN_manchukuo_texticon §fManchukuo§!, with nothing but ashes and the near-collapse of the £GNG_kenpeitai_texticon §eKenpeitai§! in £GFX_GNG_Guangdong_texticon §SGuangdong§! to show for it. §SThe Chief Executive§!, whether it was through his popularity with the people or his Machiavellian cunning, outmanoeuvred £GNG_Hitachi_texticon §kHitachi§! and has but destroyed their legacy inside the nation. £GNG_Hitachi_texticon §kHitachi§! lives, but as a caged parakeet.\n\nWith the threat of Komai gone, the Chief Executive can turn his attention to more pressing matters, like the reaction to the Oil Crisis or ensuring that his legacy inside the §SJewel of the Pearl River§! remains intact, long after he is gone. £MAN_manchukuo_texticon §fManchuria§! has taken their singular shot at the King - and they have missed. If only by inches.§!"
 
 # Guangdong - CE Morita 
 
@@ -4338,9 +4350,9 @@ RULE_OPTION_GNG_IBUKA_RECONCILIATION_DESC: "§FIf this path is chosen, §mIbuka 
 
 GNG_KOMAI: "£TNO_game_rule_flag_GNG   Guangdong - CE Komai"
 RULE_OPTION_GNG_KOMAI_RANDOM: "Default - Random AI"
-RULE_OPTION_GNG_KOMAI_RANDOM_DESC: "§FUnlike his peers, §kKomai Kenichiro§! is not a "native" to £GFX_GNG_Guangdong_texticon §SGuangdong§!. Neither are the other leaders, but §kKomai§! has only recently started to call the Pearl River Delta his home. The truth is, Guangdong is not his home. §RGuangdong is a weapon§!. It is a loaded gun that he shall point at the heart of everything wrong with the nation. Not only has Guangdong become the throbbing heart of the Sphere's excess and its apathy, it wears its sins like a badge of honour. While the other Chief Executives may dance to their own ignorant melody, §kKomai§! realises that if this cancer is left to fester, it will grow and consume the entirety of Asia.\n\nArmed with a ruthlessness and a wit that his peers can barely grasp, §kKomai Kenichiro§! intends to apply the oldest trick known to man to deal with the rot inside the nation. Slash and burn. £MAN_manchukuo_texticon §fManchuria§! recoils back from its step, content at a job well done. Surely, with such a loyal puppet in charge, £GFX_GNG_Guangdong_texticon §SGuangdong§! will become just another segment in £MAN_mangyo_texticon §VMangyō's§! vast empire, right?\n\n§RGuangdong is Komai's weapon and a weapon does not discriminate. It only kills.§!\n\n§RRequires:§!\n§MHitachi Coup Succeeds§! in  £TNO_game_rule_flag_GNG   §YGuangdong - Hitachi Coup§!"
+RULE_OPTION_GNG_KOMAI_RANDOM_DESC: "§FUnlike his peers, §kKomai Kenichirō§! is not a "native" to £GFX_GNG_Guangdong_texticon §SGuangdong§!. Neither are the other leaders, but §kKomai§! has only recently started to call the Pearl River Delta his home. The truth is, Guangdong is not his home. §RGuangdong is a weapon§!. It is a loaded gun that he shall point at the heart of everything wrong with the nation. Not only has Guangdong become the throbbing heart of the Sphere's excess and its apathy, it wears its sins like a badge of honour. While the other Chief Executives may dance to their own ignorant melody, §kKomai§! realises that if this cancer is left to fester, it will grow and consume the entirety of Asia.\n\nArmed with a ruthlessness and a wit that his peers can barely grasp, §kKomai Kenichirō§! intends to apply the oldest trick known to man to deal with the rot inside the nation. Slash and burn. £MAN_manchukuo_texticon §fManchuria§! recoils back from its step, content at a job well done. Surely, with such a loyal puppet in charge, £GFX_GNG_Guangdong_texticon §SGuangdong§! will become just another segment in £MAN_mangyo_texticon §VMangyō's§! vast empire, right?\n\n§RGuangdong is Komai's weapon and a weapon does not discriminate. It only kills.§!\n\n§RRequires:§!\n§MHitachi Coup Succeeds§! in  £TNO_game_rule_flag_GNG   §YGuangdong - Hitachi Coup§!"
 RULE_OPTION_GNG_KOMAI_PERSONALIST: "£GNG_Hitachi_texticon §kGuangdong's Caesar§!"
-RULE_OPTION_GNG_KOMAI_PERSONALIST_DESC: "§FFor all intents and purposes, §kKomai Kenichiro§! is the God of the Pearl River. £MAN_manchukuo_texticon §fManchukuo§! and the Reform Bureaucrats thought that they could hold him back, hold back his talent, his ambition? The only thing that the aged court officials and homesick bureaucrats in §fHsinking§! had over £GFX_GNG_Guangdong_texticon §SGuangdong§! was §khim§!. In their feeble attempt to stay relevant, they attempted to cast strings upon his extremities and make §kKomai§! dance to their discordant tune. The funding and the support was amusing, for a while, until the day came for his ascension to the Throne.\n\nWhat influence  that £MAN_manchukuo_texticon §fManchukuo§! had over §kKomai§! and £GNG_Hitachi_texticon §kHitachi§! is §Rgone now§!. The only thing left to do is to subjugate the peoples of the §SPearl River§! under his ironclad vision. A society that works in tandem with its master in pursuing nothing but utter perfection. Sometimes, §kperfection must be built§! §xoff the blood of the unworthy§!.§!"
+RULE_OPTION_GNG_KOMAI_PERSONALIST_DESC: "§FFor all intents and purposes, §kKomai Kenichirō§! is the God of the Pearl River. £MAN_manchukuo_texticon §fManchukuo§! and the Reform Bureaucrats thought that they could hold him back, hold back his talent, his ambition? The only thing that the aged court officials and homesick bureaucrats in §fHsinking§! had over £GFX_GNG_Guangdong_texticon §SGuangdong§! was §khim§!. In their feeble attempt to stay relevant, they attempted to cast strings upon his extremities and make §kKomai§! dance to their discordant tune. The funding and the support was amusing, for a while, until the day came for his ascension to the Throne.\n\nWhat influence  that £MAN_manchukuo_texticon §fManchukuo§! had over §kKomai§! and £GNG_Hitachi_texticon §kHitachi§! is §Rgone now§!. The only thing left to do is to subjugate the peoples of the §SPearl River§! under his ironclad vision. A society that works in tandem with its master in pursuing nothing but utter perfection. Sometimes, §kperfection must be built§! §xoff the blood of the unworthy§!.§!"
 RULE_OPTION_GNG_KOMAI_MANCHURIA: "£MAN_manchukuo_texticon §fManchuria's Puppet§!"
 RULE_OPTION_GNG_KOMAI_MANCHURIA_DESC: "§F£GFX_GNG_Guangdong_texticon §SGuangdong§! was §Rnever fit §! to be a state. Not a real one, anyway. It was born dying, sick and feeble. It had no culture, no ethnicity and no reason to keep itself together under its own rule. It was a sick child, too fragile to even stand on its own feet. That's why £MAN_manchukuo_texticon §fManchukuo§! had to intervene. Utilising an agent embedded inside the state, £MAN_manchukuo_texticon §fManchukuo§! thought it fit to keep the integrity of the Pan-Asian Dream whole, from any subversive threats that would bring anarchy and disorder to Asia.\n\n§VThe Riots§! have fully subjugated Guangdong under £MAN_manchukuo_texticon §fManchukuo's§! heel, it too quashing any half-baked dreams of independence that its agent inside Guangdong could fathom. Now, it calls upon £MAN_manchukuo_texticon §fManchuria§! and its reams of hungry would-be billionaires who scour their new possession to create a state that can truly call itself - §VPan-Asian§!.§!"
 
@@ -4371,7 +4383,7 @@ RULE_OPTION_GNG_AI_ORDINANCES_YES_DESC: "§FThe AI will pass non-scripted ordina
 #RULE_OPTION_VIN_PATH_REPUBLIC_DESC: "§FFollowing the death of their leader §eHo Chi Minh§!, the §eCommunist Party of Vietnam§! will sit down once again with the §sgovernment§! for peace talks. The resulting Nagasaki Accords will finally bring peace to the troubled country. The Accords provide for Emperor §sBao Dai's§! abdication following national elections and for the elevation of §YVietnam's§! status in the §VCo-Prosperity Sphere§!.\n\n§YVietnam's§! future will be one of §sAbsolute Monarchy§!, for now.§!"
 #RULE_OPTION_VIN_PATH_CONSTITUTIONAL_MONARCHY: "£TNO_game_rule_flag_VIN   §sConstitution Adopted§!"
 #RULE_OPTION_VIN_PATH_CONSTITUTIONAL_MONARCHY_DESC: "§FFollowing the death of their leader §eHo Chi Minh§!, the §eViet Minh§! will sit down once again with the §sgovernment§! for peace talks. A Constitution will be adopted, limiting Emperor §sBao Dai's§! powers and planning a referendum on the monarchy following his death. While neither side will acheive the decisive victory they desire, the people of §YVietnam§! will be satisfied with the new peace.\n\n§YVietnam's§! future will be one of §sAbsolute Monarchy§!, for now.§!"
-#RULE_OPTION_VIN_PATH_HO_CHI_MINH: "£TNO_game_rule_flag_VIN_communist   §eCommunists Swept Into Power§!"
+#RULE_OPTION_VIN_PATH_HO_CHI_MINH: "£TNO_game_rule_flag_VIC   §eCommunists Swept Into Power§!"
 #RULE_OPTION_VIN_PATH_HO_CHI_MINH_DESC: "§FUnder the auspices of their leader §eHo Chi Minh§!, the §eCommunist Party of Vietnam§! will sit down once again with the §sgovernment§! for peace talks. The resulting Nagasaki Accords will finally bring peace to the troubled country, providing for Emperor §sBao Dai's§! abdication following national elections and strengthened ties with §VJapan§!. However, the §eCommunist Party of Vietnam§! will dominate the elections, sweeping §eHo Chi Minh§! into the Presidency and moving Vietnam decisively away from the §VRising Sun's§! grasp. While the elderly §eHo Chi Minh§! hasn't long left to live, passing peacefully shortly after attaining the Presidency, his successor §eTruong Chinh§! will carry on "Uncle Ho's" legacy and implement his vision of an agrarian, socialist, and free §YVietnam§!.\n\n§YVietnam's§! future will be one of §eMao Zedong Thought§!.§!"
 
 # Johor - The Constitution Referendum of 1970
@@ -4836,7 +4848,7 @@ RULE_OPTION_KOM_NDA_RANDOM_DESC: "§FThe National Democracy Act proposed by Pres
 RULE_OPTION_KOM_NDA_PASS: "The Bill §GPasses§!"
 RULE_OPTION_KOM_NDA_PASS_DESC: "§FDue to Shafarevich and his cronies controlling most of the Komi parliament, the National Democracy Act will pass without trouble, solidifying Shafarevich's power in the country, molding it under his §sAristocratic Conservative§! leadership.§!"
 RULE_OPTION_KOM_NDA_PASS_ILLEGAL: "The Bill §RPasses§! Illegally"
-RULE_OPTION_KOM_NDA_PASS_ILLEGAL_DESC: "§FWhile the Komi parliament will succesfully block Shafarevich's initiative to transform Komi into a subtle dictatorship, the former academic has already amassed enough power and influence at this point, and would override the Parliament's decision by signing the Act into law himself, dooming Komi under his §sAristocratic Conservative§! leadership, while §Rincreasing§! the chances of a §Vcoup§!.§!"
+RULE_OPTION_KOM_NDA_PASS_ILLEGAL_DESC: "§FWhile the Komi parliament will successfully block Shafarevich's initiative to transform Komi into a subtle dictatorship, the former academic has already amassed enough power and influence at this point, and would override the Parliament's decision by signing the Act into law himself, dooming Komi under his §sAristocratic Conservative§! leadership, while §Rincreasing§! the chances of a §Vcoup§!.§!"
 
 # Right Komi - The Successor
 
@@ -4991,7 +5003,7 @@ RULE_OPTION_WEST_RUSSIA_UNIFICATION_OUTCOME_SAM_SAMARA_DESC: "§FSamara will uni
 
 # The Project INDRIK (Tukha)
 
-WRS_INDRIK_PATH: "£TNO_game_rule_flag_WRS_RUS_tukha  The West Russian Revolutionary Front - The Project INDRIK"
+WRS_INDRIK_PATH: "£TNO_game_rule_flag_WRS_RUS_tukha   The West Russian Revolutionary Front - The Project INDRIK"
 RULE_OPTION_WRS_INDRIK_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_WRS_INDRIK_PATH_RANDOM_DESC: "§FSpurred on by Grand Marshal Mikhail §eTukhachevsky§!'s insistence on creating a modernized and effective §eRed Army§! for the modern age, the R&D department of the §cWest Russian Revolutionary Front§! undertakes Project §RINDRIK§!: a series of trials to develop advanced new weapons and equipment, from cutting-edge firearms to chemical and biological weapons of mass destruction. Under this setting, the outcome of the projects will be left wholly to chance, with some projects more likely to succeed than others.\n\n§RRequires:§!\n§M£TNO_game_rule_flag_PLS   §eTukhachevsky§! Gains the Upper Hand§! in §Y£TNO_game_rule_flag_WRS   West Russian Revolutionary Front§!"
 RULE_OPTION_WRS_INDRIK_PATH_SUCCESS: "§GFull success§!"
@@ -5279,9 +5291,9 @@ RULE_OPTION_CENTRAL_SIBERIA_UNIFICATION_OUTCOME_KEM_KEMEROVO_DESC: "§FKemerovo 
 RULE_OPTION_CENTRAL_SIBERIA_UNIFICATION_OUTCOME_SBA_BLACK_ARMY: "£TNO_game_rule_flag_SBA   Siberian Black Army unites Central Siberia"
 RULE_OPTION_CENTRAL_SIBERIA_UNIFICATION_OUTCOME_SBA_BLACK_ARMY_DESC: "§FThe Siberian Black Army will unite Central Siberia.§!"
 
-# Central Siberia - Worker's Uprising [War Outcome]
+# Central Siberia - Workers' Uprising [War Outcome]
 
-WORKERS_UPRISING_OUTCOME: "£TNO_game_rule_flag_KAL   Central Siberia - Siberian Worker's Uprising"
+WORKERS_UPRISING_OUTCOME: "£TNO_game_rule_flag_KAL   Central Siberia - Siberian Workers' Uprising"
 RULE_OPTION_WORKERS_UPRISING_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_WORKERS_UPRISING_OUTCOME_RANDOM_DESC: "§F\n\n§GThe chosen side will gain a large combat bonus that will be removed once they have unified Central Siberia.§!"
 RULE_OPTION_WORKERS_UPRISING_OUTCOME_CSB: "Workers' Defeat"
@@ -5841,7 +5853,7 @@ RULE_OPTION_YEM_WAR_OUTCOME_NYM_DESC: "§FYemen will defeat Saudi Arabia and cre
 ### The African Continent ######
 ################################
 
-RULE_GROUP_TNO_RULES_AFRICA_CONTINENT: "£TNO_game_rule_flag_GRO  £TNO_game_rule_flag_COG_GER  £TNO_game_rule_flag_ANG_GER  £TNO_game_rule_flag_SAF  £TNO_game_rule_flag_CAO  £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_SLG  £TNO_game_rule_flag_ILG_italy_vic  £TNO_game_rule_flag_GRO   Country Paths - The African Continent"
+RULE_GROUP_TNO_RULES_AFRICA_CONTINENT: "£TNO_game_rule_flag_GRO  £TNO_game_rule_flag_COG_GER  £TNO_game_rule_flag_ANG_GER  £TNO_game_rule_flag_SAF  £TNO_game_rule_flag_CAO  £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_SLG  £TNO_game_rule_flag_ILG_italy_vic  £TNO_game_rule_flag_GRO   Country Paths - The African Continent"
 
 
 ## Union of South Africa [Politics]
@@ -5866,9 +5878,9 @@ RULE_OPTION_SAF_COPE_ROUTE_BOER_DESC: "§FSettling on taking the fight to the §
 
 #ANG_PATH: "£TNO_game_rule_flag_ANG_GER   Schenck's Choice"
 #RULE_OPTION_ANG_PATH_DEFAULT: "Default - Keeping our Heads Down"
-#RULE_OPTION_ANG_PATH_DEFAULT_DESC: "§FUpon the start of the Afrika-Schild itervention in the South Africa War. Schenck will have a choice to either staying loyal to Germany or work towards a independent Angola in secret.\n\n§RBy default, the AI is scripted to always stay loyal to Germany.§!"
+#RULE_OPTION_ANG_PATH_DEFAULT_DESC: "§FUpon the start of the Afrika-Schild itervention in the South Africa War. Schenck will have a choice to either staying loyal to Germany or work towards an independent Angola in secret.\n\n§RBy default, the AI is scripted to always stay loyal to Germany.§!"
 #RULE_OPTION_ANG_PATH_ANGOLA: "A Better Tomorrow"
-#RULE_OPTION_ANG_PATH_ANGOLA_DESC: "§FSchenck will work towards a independent Angola in secret.\n\n§wWarning§!: This path is not available to the AI by default. Choosing this option may lead to unintended consequences.§!"
+#RULE_OPTION_ANG_PATH_ANGOLA_DESC: "§FSchenck will work towards an independent Angola in secret.\n\n§wWarning§!: This path is not available to the AI by default. Choosing this option may lead to unintended consequences.§!"
 
 # OFN African Mandates - The OFN Mandate's Fate [Stability]
 
@@ -5904,7 +5916,7 @@ RULE_OPTION_UGD_FATE_OKELLO_DESC: "§FAfter the Quelimane Conference, General We
 
 # OFN Congo Decolonization Fate of Orungu
 
-ORU_DECOLONIZATION_FATE: "£TNO_game_rule_flag_COG_USA  £TNO_game_rule_flag_GAB  £TNO_game_rule_flag_BZZ  OFN Congo Decolonization - Independent Loango"
+ORU_DECOLONIZATION_FATE: "£TNO_game_rule_flag_COG_USA  £TNO_game_rule_flag_GAB  £TNO_game_rule_flag_BZZ   OFN Congo Decolonization - Independent Loango"
 RULE_OPTION_ORU_DECOLONIZATION_FATE_RANDOM: "Default - Random AI"
 RULE_OPTION_ORU_DECOLONIZATION_FATE_RANDOM_DESC: "§FThe processes of dismantling European colonialism in Central Africa brings with it the question of where the borders should be drawn, in the case of the Congo, a debate ensues over the status of the former French Congo in the west in Loango; the military administration will decide whether to separate the western Congo into an independent nation, or to unite the region to a unified Congolese state.\n\n§RRequires:§!\n§YThe OFN Mandate in Congo hasn't collapsed§!"
 RULE_OPTION_ORU_DECOLONIZATION_FATE_GREAT_ORUNGU: "£TNO_game_rule_flag_GAB  United Orungu"
@@ -5915,7 +5927,7 @@ RULE_OPTION_ORU_DECOLONIZATION_FATE_FREE_BRZ_DESC: "§FLoango will be separated 
 
 # OFN Congo Decolonization Kasa Vubu or Ileo
 
-CFS_DECOLONIZATION_FATE: "£TNO_game_rule_flag_COG_USA  £TNO_game_rule_flag_COG_FED_REP  OFN Congo Decolonization - Congo Leader"
+CFS_DECOLONIZATION_FATE: "£TNO_game_rule_flag_COG_USA  £TNO_game_rule_flag_COG_FED_REP   OFN Congo Decolonization - Congo Leader"
 RULE_OPTION_CFS_DECOLONIZATION_FATE_RANDOM: "Default - Random AI"
 RULE_OPTION_CFS_DECOLONIZATION_FATE_RANDOM_DESC: "§FIt is finished. It wasn't an easy road by any means, but the American mandate has achieved its objective - to ensure that Congo decolonizes peacefully. As the Americans and their OFN allies deservedly pat themselves on the back for what is a job well done, it is now time to decide who will lead Congo into a newer, more prosperous era. By sheer coincidence the choice is between two Josephs: Joseph Kasa-Vubu and Joseph Iléo. While Kasa-Vubu is preferred by the Americans for his ideological alignment, there have been a number of concerning reports about his potential collaboration with the German Reichskommissariats. Joseph Iléo doesn't have as many connections to the army, which may pose a problem, but it could be a risk worth taking.\n\n§RRequires:§!\n§YThe OFN Mandate in Congo hasn't collapsed§!"
 RULE_OPTION_CFS_DECOLONIZATION_FATE_KASA_VUBU: "£TNO_game_rule_flag_COG_FED_REP  §MKasa Vubu§!"
@@ -5923,7 +5935,7 @@ RULE_OPTION_CFS_DECOLONIZATION_FATE_KASA_VUBU_DESC: "§F§MJoseph Kasa-Vubu§!, 
 RULE_OPTION_CFS_DECOLONIZATION_FATE_ILEO: "£TNO_game_rule_flag_COG_FED_REP  §iJoseph Ileo§!"
 RULE_OPTION_CFS_DECOLONIZATION_FATE_ILEO_DESC: "§FMake no mistake: §iJoseph Iléo§! was clearly the second-best choice for some time. After the recent revelations of Joseph Kasa-Vubu's potential collaboration with the German Reichskommissariats, many around the country have scrambled for a credible alternative, finding it in Iléo. Make no mistake: Iléo is a staunch anti-imperialist and is critical of American imperialism in his country. But he's also willing to work with the Americans, has some connections in the army, and could be seen as a safer pair of hands compared to Kasa-Vubu. Congo will follow the path of §iChristian Conservatism§!.§!"
 
-# Congo Civil War - Ileo or Adoula
+# Congolese Civil War - Ileo or Adoula
 
 COG_FED_REP_PATH: "£TNO_game_rule_flag_COG_FED_REP   Congolese Civil War - Congo Leader"
 RULE_OPTION_COG_FED_REP_PATH_RANDOM: "Default - Random AI"
@@ -5957,12 +5969,12 @@ RULE_OPTION_ANG_ROOT_UNITA_DESC: "§FAfter a small power struggle in Angola, the
 
 # OFN East Africa Decolonization Fate of Mozambique
 
-MZB_PATH: "£TNO_game_rule_flag_MZB_USA  £TNO_game_rule_flag_MZB_communist   OFN East Africa Decolonization - Mozambique Leader"
+MZB_PATH: "£TNO_game_rule_flag_MZB_USA  £TNO_game_rule_flag_GAZ   OFN East Africa Decolonization - Mozambique Leader"
 RULE_OPTION_MZB_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_MZB_PATH_RANDOM_DESC: "§FMozambique has long been under foreign domination. First under the Portuguese, then under the Germans. But now, Angola is getting its independence. However, the question of who should be given the reigns of the state still looms over the country. There are two major candidates, both members of the Mozambique Liberation Front. One of them is Eduardo Mondlane. Despite being a socialist, Mondlane sees cooperation as necessary with the OFN. However, he'll ask all American troops to leave Angola. There's also Samora Machel. Also, a socialist; the only difference is that Machel will align with Japan and the CPS.\n\n§RRequires:§!\n§YThe OFN East Africa hasn't collapsed!§!"
-RULE_OPTION_MZB_PATH_MONDLANE: "£TNO_game_rule_flag_MZB_communist  §VEduardo Mondlane§! is Appointed"
+RULE_OPTION_MZB_PATH_MONDLANE: "£TNO_game_rule_flag_GAZ  §VEduardo Mondlane§! is Appointed"
 RULE_OPTION_MZB_PATH_MONDLANE_DESC: "§FAfter long hours of discussion, the United States has decided who shall gain control of the independent Mozambican state. The leader chosen was Eduardo Mondlane. Mondlane, unlike his counterpart, believes that some degree of OFN intervention is needed to reconstruct Mozambique. However, after Mozambique is rebuilt, he will maintain a neutral stance and ask American soldiers to leave Mozambique. Politically, he remains a leftist socialist and a nationalist, like most of the members of the MLF. Mozambique will follow the path of §VLeft-Wing Nationalism§!.§!"
-RULE_OPTION_MZB_PATH_MACHEL: "£TNO_game_rule_flag_MZB_communist  §VSamora Machel§! is Appointed"
+RULE_OPTION_MZB_PATH_MACHEL: "£TNO_game_rule_flag_GAZ  §VSamora Machel§! is Appointed"
 RULE_OPTION_MZB_PATH_MACHEL_DESC: "§FAfter long hours of discussion, the United States has decided who shall gain control of the independent Mozambican state. The leader chosen was Samora Machel. Still a member of the MLF, Machel remains a left-wing nationalist, some say more socialist than Mondlane. He also differs from Mondlane in that Samora Machel views any OFN intervention as neo-colonial imperialism. If he takes power, he immediately breaks away from America and joins the Japanese sphere of influence. Mozambique will follow the path of §VLeft-Wing Nationalism§!.§!"
 
 
@@ -6052,14 +6064,14 @@ RULE_OPTION_BAROTSELAND_ACCORDS_OUTCOME_NO_DESC: ""
 
 # West African Crisis Scenario
 
-WEST_AFRICAN_CRISIS_SCENARIO: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   West Africa Crisis Scenario"
+WEST_AFRICAN_CRISIS_SCENARIO: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   West Africa Crisis Scenario"
 RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_RANDOM: "Default - Random AI"
 RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_RANDOM_DESC: "§FTensions in West Africa have reached a boiling point. §mFree France§! and §KCameroon§! have been feuding over influence in other countries, and the §BWolofians§! are also looking for allies in Africa. War seems to be §Rinevitable§!, and the only thing left to be decided is how and when it shall happen. Either §BGhana§! will break out into civil war, dragging in the §KPALF§! and the §mFrench§!, or §BWolofia§! will unite with the §mFrench§! to fend off §VPan-Africanism§!, or a brutal three-way conflict will break out between the §BWest African Alliance§!, the §mFrench Military Alliance§! and the §KPan-African Liberation Front§!, but one thing is certain: the peace will not last.§!"
 RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_WAA_VS_PALF: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_CAO   §BWAA§! vs §KPALF§!"
 RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_WAA_VS_PALF_DESC: "§FIn what some may view as a surprising move, the §mFrench§! have entered an alliance on equal terms with multiple African nations, the most influential of those being §BWolofia§!. However, this has done nothing to stop the §KPALF§!, who have now declared war. Two possible futures await West Africa. Will the §mFrench§! win, and possibly build the groundwork for cooperation between African regimes? Or will the §KPALF§! finally kick out the Europeans and their bootlickers?§!"
-RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_WAA_VS_FMA_VS_PALF: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   §BWAA§! vs §mFMA§! vs §KPALF§!"
+RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_WAA_VS_FMA_VS_PALF: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   §BWAA§! vs §mFMA§! vs §KPALF§!"
 RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_WAA_VS_FMA_VS_PALF_DESC: "§FIn a surprising turn of events, §mFree France§! has declared war on §BWolofia§!, and the §KPALF§! has struck a surprise attack on both factions. Now, West Africa is stuck in a §Rbrutal struggle§!, with all sides vying for dominance. Will the §KPALF§! win, and kick out the imperialists? Will the §mFrench§! win, and come closer to reclamation? Or will the §BWAA§! win, and make a new future for Africa?§!"
-RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_FMA_VS_PALF: "£TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   §mFMA§! vs §KPALF§!"
+RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_FMA_VS_PALF: "£TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   §mFMA§! vs §KPALF§!"
 RULE_OPTION_WEST_AFRICAN_CRISIS_SCENARIO_FMA_VS_PALF_DESC: "§FThe illusion of stability in West Africa has finally ended. Intervention in the §RGhanian civil war§! has led to war between the §KPALF§! and the §mFMA§!. This conflict will surely be a long and bloody one, and only two outcomes are possible. Will the §mFrench§! prevail, and be one step closer towards their ultimate goal of liberating their §Qhomeland§!? Or will the §KPALF§! succeed, and bring a new §Vred dawn§! to West Africa?§!"
 
 # West African War - Gulf Of Guinea Campaign
@@ -6075,7 +6087,7 @@ RULE_OPTION_GULF_OF_GUINEA_NO_INCIDENT: "§YStalemate§!"
 RULE_OPTION_GULF_OF_GUINEA_NO_INCIDENT_DESC: "§FAfter several weeks of tension around American and Japanese intervention in the West African Conflict fought between the free French exiles and the pan-African Cameroonians, a confrontation occurred between the two major powers. They both attempted to disrupt the supply lines of their opponents; however, the scuffle ended in a stalemate, and both the CPS and the OFN retreated. The conflict will not escalate, and no major powers will be able to send additional support or volunteers to the countries embroiled in the WAC.§!"
 
 # Wolofia - Fate of Fuuta Fulbe
-FTF_OUTCOME: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FTF  Wolofia - Fate of Fuuta Fulbe"
+FTF_OUTCOME: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FTF   Wolofia - Fate of Fuuta Fulbe"
 RULE_OPTION_FTF_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_FTF_OUTCOME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YWAA won in the West Africa War and USA reconstruction failed§!"
 RULE_OPTION_FTF_OUTCOME_COUP: "£TNO_game_rule_flag_FTF   §iCoup§!"
@@ -6084,13 +6096,22 @@ RULE_OPTION_FTF_OUTCOME_INVASION: "£TNO_game_rule_flag_WOL   §sInvasion§!"
 RULE_OPTION_FTF_OUTCOME_INVASION_DESC: ""
 
 # Nigeria - Leader Choice
-NGA_LEADER_CHOICE: "£TNO_game_rule_flag_NGA  Nigeria - Leader Choice"
+NGA_LEADER_CHOICE: "£TNO_game_rule_flag_NGA   Nigeria - Leader Choice"
 RULE_OPTION_NGA_LEADER_CHOICE_RANDOM: "Default - Random AI"
-RULE_OPTION_NGA_LEADER_CHOICE_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YCameroon was collapsed§!"
+RULE_OPTION_NGA_LEADER_CHOICE_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YCameroon was collapsed§!§!"
 RULE_OPTION_NGA_LEADER_CHOICE_PATERNALISM: "§LNnamdi Azikiwe§! Takes Power"
 RULE_OPTION_NGA_LEADER_CHOICE_PATERNALISM_DESC: ""
 RULE_OPTION_NGA_LEADER_CHOICE_DESPOTISM: "§sYakubu Gowon§! Takes Power"
 RULE_OPTION_NGA_LEADER_CHOICE_DESPOTISM_DESC: ""
+
+# Liberia - Econ Sphere
+LIB_ECON_SPHERE: "£TNO_game_rule_flag_LIB   Liberia - Economic Sphere"
+RULE_OPTION_LIB_ECON_SPHERE_RANDOM: "Default - Random AI"
+RULE_OPTION_LIB_ECON_SPHERE_RANDOM_DESC: "§F§ILiberia§! has long been a product of §MUS§! resettlement and colonization and as a result, has fostered close economic ties to the country since its inception. Any attempts by §gTubman§! to strengthen §ILiberia's§! economic independence and expand trade patterns have been met with a reduction of §MUS§! aid and trade, damaging the economy. However, with the §xWest African War§! over and the §KWest African Federation§! established, the newly promised economic cooperation has renewed interest in reducing §MAmerican§! economic reliance. Yet as for §gTubman's§! exact response, it remains up in the air, left to fate.§!"
+RULE_OPTION_LIB_ECON_SPHERE_USA: "£TNO_game_rule_flag_USA   §gLiberia§! stays §MAmerican Sphere§!"
+RULE_OPTION_LIB_ECON_SPHERE_USA_DESC: "§FIn its quest to establish its own economic ties, §ILiberia§! will decide to stick to its tried and true economic partner, the §MUnited States§!. With its generous amount of aid, and the unpredictable and continuously shifting alliances of §qWest§! §KAfrica§!, §ILiberia§! will see the wisodm in sticking to its roots and staying the §MOFN's§! original foothold in §nAfrica§!.§!"
+RULE_OPTION_LIB_ECON_SPHERE_WOL: "£TNO_game_rule_flag_WOL   §gLiberia§! joins §KWest African Zone§!"
+RULE_OPTION_LIB_ECON_SPHERE_WOL_DESC: "§FIn its quest to establish itself diplomatically as an independent nation, §ILiberia§! will begin distancing itself from the economic sphere of the §MUS§! and instead, deepen its ties to the §KWest African Zone§!. While this is not the end of §ILiberian§! §MAmerican§! relations, both in economics and diplomacy, it will mark a turn of §ILiberia§! to the third world and a true member of the §qWest§! §KAfrican§! community.\n\n§RRequires:§!\n£TNO_game_rule_flag_WOL   §MWest African Alliance Victory§! in £TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR   §YWest African War§!\n§xAND§!\n§RNOT§! §MSuccessful Reconstruction§! in £TNO_game_rule_flag_USA  £TNO_game_rule_flag_FFR   §YThe USA - Fate of the West African Reconstruction§!§!"
 
 # Algerian War
 
@@ -6117,6 +6138,8 @@ RULE_OPTION_SAF_SOUTH_AFRICAN_WAR_OUTCOME_SAF_DESC: "§FIn one of the most §Kgi
 SAF_SECOND_SOUTH_AFRICAN_WAR_OUTCOME: "£TNO_game_rule_flag_SAF  £TNO_game_rule_flag_SLF  £TNO_game_rule_flag_BOR  £TNO_game_rule_flag_SFG   Second South African Civil War"
 RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_RANDOM_DESC: "§F§jSouth Africa§! has sat in a state of limbo ever since the §qGerman§! victory in the South African War, and reports have been sporadic at best as to the state of the country now that it lies under the thumb of §oHans Hüttig§!'s monster state to the north. After years of silence, however, it appears that the §JAfrikaner Volkstaat§!'s days are numbered. Following a request by §oHans Hüttig§! to begin the process of annexation into his monster state, general §JMagnus Malan§! will coup the §JBoer§! government, and cut all ties with the Germans.\n\nFollowing this, the §JBoer§! state will spiral into a second civil war, with loyalists to the old government raising their flags in rebellion to the south, and §qGerman forces§! invading the country from the north at §oHüttig's§! behest. Despite this, §JMalan§! declares, via a televised address, his intention to defeat both the rebels and the §qGerman§! invaders.\n\n§RRequires:§!\n§YThe Second South African Civil War has happened§!"
+RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_NONE: "§GWar Averted§!"
+RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_NONE_DESC: "§FWith the §oGroßafrikanischer Reichsstaat§! forming out of the former three major §sGerman colonies§! in Africa, and the §OSouth African War§! over, it will focus inward, dealing with exploitation, domestic security, and governance of itself. As a result, it will take a more laissez-faire approach to the §JVolkstaat§! created after the war, collapsing before it can truly address policy in the area. As a result, the §JVolkstaat§! will continue to exist as an §JAfrikaaner§! state, without having to worry about meddling or the possibility of a civil war.§!"
 RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_SAF: "£TNO_game_rule_flag_SAF   §jSouth Africa§! §GVictory§!"
 RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_SAF_DESC: "§FIn a remarkable turnaround from the outcome of the first South African War, §LMulder's§! rebellion will emerge §Gvictorious§! in the fighting. Along with a broad coalition of politicians from the defunct §BUnited Party§!, the former teacher will reestablish §jSouth Africa§! on the ruins of the former §JAfrikaner Volkstaat§! he once helped to create.§!"
 RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_SLF: "£TNO_game_rule_flag_SLF  £TNO_game_rule_flag_ZUL  £TNO_game_rule_flag_CDL   §gSouth African Alliance§! §GVictory§!"
@@ -6312,17 +6335,6 @@ RULE_OPTION_IND_72_ELECTION_PATH_PATERNALIST_DESC: ""
 RULE_OPTION_IND_72_ELECTION_PATH_FASCIST: "§JBJS§! elected"
 RULE_OPTION_IND_72_ELECTION_PATH_FASCIST_DESC: ""
 
-# Kazakhstan - Regime Change
-KAZ_PATH: "£TNO_game_rule_flag_KAZ   Kazakhstan - 12th Kazakh Party Congress"
-RULE_OPTION_KAZ_PATH_RANDOM: "Default - Random AI"
-RULE_OPTION_KAZ_PATH_RANDOM_DESC: "§FHistorically, the §VParty Congress§! in §KKazakhstan§! has been nothing more than a rubber stamp for the policy of the §VPresidium of the Communist Party§! in that country. Congress after congress essentially passed in silence, the only real sound worth noting being that of rubber stamps striking ink pads and paper.\n\n But the §VXII Party Congress§! will be different. An §Oanti-Party§! faction will attempt to unseat the sitting §VFirst Secretary§!, to no avail at first, but the outcome of what follows will be left to chance.§!"
-RULE_OPTION_KAZ_PATH_KUNAEV: "§RKunaev§! Holds"
-RULE_OPTION_KAZ_PATH_KUNAEV_DESC: "§FSecretary §RKunaev§!, consolidating power within the party will mitigate all attempts to remove him, maintaining his position within the §VKazakh Communist Party§!. Relying on an isolated and sidelined faction of §YKazakh§! §RBukharinists§! that had otherwise held little influence under the preceding administration, §RKunaev§! will embark on a departure of §KKazakhstan§! from its §VMarxist-Leninst§! past, following the path of §RBolshevism§!.§!"
-RULE_OPTION_KAZ_PATH_YUSUPOV: "§OYusupov§! Wins"
-RULE_OPTION_KAZ_PATH_YUSUPOV_DESC: "§FIn a surprising turn of events, §RDinmukhamed Kunaev§!, condemned and unceremoniously humiliated by §VKazakh Communist Party§! officials, will resign from his post as §VFirst Secretary§! of the §VKazakh Communist Party§!, citing failures in agrarian policy and national security.\n\n§VKunaev's§! successor, an Uyghur §VQKP§! leader by the name of §OIsmail Yusupov§! will rise to the position of §VFirst Secretary§!. Fairly unknown, many have little expectations for §OYusupov§!'s administration to surpass his predecessors in accomplishment. Placing his goals in plans to "redesign §KKazakhstan§!'s agrarian output", §OYusupov§! will toe the line between the interests of the §YKazakh§! and §MRussian§! communities, following the path of §JCommunism§!.§!"
-RULE_OPTION_KAZ_PATH_FITIN: "§eFitin§!'s Coup"
-RULE_OPTION_KAZ_PATH_FITIN_DESC: "§FIn a shocking and unexpected end to what should otherwise have been a routine meeting, the §eNKVD§!, citing a failure of the previous administration in securing itself from anti-communist banditry, has intervened in the §VXII Party Congress§! of the §!Kazakh Communist Party§!, resulting in §MRussian§! §eNKVD§! chief §ePavel Fitin§!, a long-time ally of §VShayakhmetov§!, seizing power as §VFirst Secretary§!.\n\nWith the security forces of both the military and the police firmly on the side of §eFitin§!, §YKazakh§! resistance from §YKazakh students and intellectuals§! will amount to nothing against §eFitin§!'s regime. With §eFitin§!'s primary interests being in the development of peace, national security, and reconnecting §KKazakhstan§! and its §VSoviet§! legacy to the §MRussian§! sphere, §KKazakhstan§! will follow the path of §VMarxism-Leninism§!.§!"
-
 # Turkmenistan - Regime Change
 TRK_PATH: "£TNO_game_rule_flag_TRK   Turkmenistan - Elections"
 RULE_OPTION_TRK_PATH_RANDOM: "Default - Random AI"
@@ -6347,7 +6359,7 @@ RULE_OPTION_TRK_OFN_COUP_NO_DESC: ""
 
 KYR_PATH: "£TNO_game_rule_flag_KYR_SSR   Kyrgyzstan - Regime Change"
 RULE_OPTION_KYR_PATH_RANDOM: "Default - Random AI"
-RULE_OPTION_KYR_PATH_RANDOM_DESC: "§FFew places were in a place to witness the chaos of Central Asia's collapse following Russia's disintegration more keenly than in the former Soviet state of Kyrgyzstan; with the former Russian bureaucracy having long since fled to the US, the newly independent nation is lead by Kalinur Usenbekov, a Soviet Kyrgyz war hero known for his egalitarian interpretation of Marxism-Leninism, with the support of Turdakun Usubaliev, an former Soviet turned Kyrgyzstani politician with aligned with Burkarhinist Orthodoxy; troubling times lie ahead, however: after failing to repulse the Afghan invasion of Tajikistan and forced to pay heavy reparations, it will not belong before the ideological division between Usenbekov and Usubaliev reaches a boiling point, culminating in a coup attempt in 1968, it is yet unknown whether ether man's dueling visions of Kyrgyzstan's future will emerge.§!"
+RULE_OPTION_KYR_PATH_RANDOM_DESC: "§FFew places were in a place to witness the chaos of Central Asia's collapse following Russia's disintegration more keenly than in the former Soviet state of Kyrgyzstan; with the former Russian bureaucracy having long since fled to the US, the newly independent nation is lead by Kalinur Usenbekov, a Soviet Kyrgyz war hero known for his egalitarian interpretation of Marxism-Leninism, with the support of Turdakun Usubaliev, a former Soviet turned Kyrgyzstani politician with aligned with Burkarhinist Orthodoxy; troubling times lie ahead, however: after failing to repulse the Afghan invasion of Tajikistan and forced to pay heavy reparations, it will not belong before the ideological division between Usenbekov and Usubaliev reaches a boiling point, culminating in a coup attempt in 1968, it is yet unknown whether ether man's dueling visions of Kyrgyzstan's future will emerge.§!"
 RULE_OPTION_KYR_PATH_ISLAMIST: "§sIRUO§! §Rtakes power§!"
 RULE_OPTION_KYR_PATH_ISLAMIST_DESC: "§FThe §sIRUO§! under §sTurdakun Usubaliev§! will overthrow §eUsenbekov's Communist Regime§!, so that Kyrgyzstan will be under §sTheocracy§!"
 RULE_OPTION_KYR_PATH_STABILITY: "§eKKP§! §Gstays§!"
@@ -6423,13 +6435,21 @@ RULE_OPTION_CA_CONFERENCE_AFG_DESC: "§F§eJapan§!, and §qGermany§! compete f
 
 # Kazakhstan Unification [War Outcome]
 
-KAZAKHSTAN_UNIFICATION_OUTCOME: "£TNO_game_rule_flag_KAZ  £TNO_game_rule_flag_KAZ_Nurmagambetov_1  £TNO_game_rule_flag_KZR  £TNO_game_rule_flag_KZR_Shchelokov_1   The Kazakh Civil War"
+KAZAKHSTAN_UNIFICATION_OUTCOME: "£TNO_game_rule_flag_KAZ  £TNO_game_rule_flag_PAV  £TNO_game_rule_flag_KOK  £TNO_game_rule_flag_DER  £TNO_game_rule_flag_ARL  £TNO_game_rule_flag_NPL   Kazakhstan Unification"
 RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_RANDOM: "Default - Random AI"
-RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_RANDOM_DESC: "§FAs a result of the existing communist leadership of §KKazakhstan§! failing to improve conditions for the local §YKazakhs§!, §YKazakh§! leaders seize authority of the §VKazakh Soviet Socialist Republic§!, one of the last remaining bastions of the §VSoviet Union§!. Displeasuring the faction of §MRussian§! commissars, local §MRussian§! leaders will organise a party meeting independent of the §YKazakh§!-dominated §VQKP§!.\n\nDividing the country between a §MRussian§!-dominated North and a §YKazakh§!-dominated South, §KKazakhstan§! will collapse into a civil war, with each faction fighting for §KKazakhstan§!'s destiny - remaining or distancing from §MRussia§!. Various §MRussian§! unifiers will seize the opportunity to back factions with varying degrees of strengthening ties with §MRussia§!.§!"
-RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ: "£TNO_game_rule_flag_KAZ  £TNO_game_rule_flag_KAZ_Nurmagambetov_1   Kazakh Victory"
-RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_DESC: "§FDespite the support afforded by various §MRussian§! benefactors in the north who have backed §Mpro-Russian factions§! who favour strengthened ties with §MRussia§!, the §YKazakh§!-centric authority in Alma-Ata shall prevail over §mRussian Kazakhstan§!, and will install a §YKazakh§! regime over the lands of §KKazakhstan§!, §Ysevering its ties with §MRussia§!§!.§!"
-RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KZR: "£TNO_game_rule_flag_KZR  £TNO_game_rule_flag_KZR_Shchelokov_1   Russian Victory"
-RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KZR_DESC: "§FMuch to the pleasure of the §MRussian§! statelets north of §KKazakhstan§! which have invested themselves in backing the §Mpro-Russian splinter groups§!, §mRussian Kazakhstan§! will prevail over the local §YKazakh§!-centric authority. Returning §KKazakhstan§! to the §MRussian§! sphere, §mKazakhstan shall be bound to §MRussia§!, §Rperhaps forever§!.§!"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_RANDOM_DESC: "\n\n§GThe chosen side will gain a large combat bonus that will be removed once they have unified Kazakhstan.§!"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_KYZYLORDA: "£TNO_game_rule_flag_KAZ   Kyzylorda Victory"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_KYZYLORDA_DESC: "Kyzylorda under §eBauyrzhan Momyshuly§! will unify all Kazakhstan and it'll be called the Kazakh Soviet Socialist Republic. Kazakhstan will follow the path of §eNational Communism§!."
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_PAV_PAVLODAR: "£TNO_game_rule_flag_PAV   Pavlodar Victory"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_PAV_PAVLODAR_DESC: "Pavlodar under §BSabit Mukanov§! will unify all Kazakhstan and it'll be called the Republic of Kazakhstan. Kazakhstan will follow the path of §BLiberal Conservatism§!."
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KOK_KOKSHETAU: "£TNO_game_rule_flag_KOK   Kokshetau Victory"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KOK_KOKSHETAU_DESC: "Kokshetau under §sAbu Khan§! will unify all Kazakhstan and it'll be called the Khanate of Kazakhstan. Kazakhstan will follow the path of §sWarlordism§!."
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_DER_KOSTANAY: "£TNO_game_rule_flag_DER   Kostanay Victory"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_DER_KOSTANAY_DESC: "Kostanay under §sNikolai Zabelkin§! will unify all Kazakhstan and it'll be called the Islamic Republic of Kazakhstan. Kazakhstan will follow the path of §sTheocracy§!."
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_ARL_AKTOBE: "£TNO_game_rule_flag_ARL   Aktobe Victory"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_ARL_AKTOBE_DESC: "Aktobe under §sNikolai Onoprienko§! will unify all Kazakhstan and it'll be called National Republic of Kazakhstan. Kazakhstan will follow the path of §sMilitary Junta§!."
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_NPL_NOWA_POLSKA: "£TNO_game_rule_flag_NPL   Nova Polska Victory"
+RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_NPL_NOWA_POLSKA_DESC: "Nowa Polska will win in the battle for Kazakhstan and will secure New Poland's future by eliminating all the Kazakh warlords creating the Republic of Aktobe under §LPaternalist§!'s regime in the former both Aktobe and Kostanay, and in the Eastern Kazakhstan will be created the Republic of Kazakhstan under a §PProgressive§!'s government."
 
 ##############################
 ### Oceania ###
@@ -6568,6 +6588,16 @@ RULE_OPTION_THIRD_COLOMBIA_CIVIL_WAR_OUTCOME_CLL_DESC: "§FThe §sUnited Democra
 RULE_OPTION_THIRD_COLOMBIA_CIVIL_WAR_OUTCOME_CLD: "£TNO_game_rule_flag_CLD_CCW3   §oBolivarian Republic of Colombia§! wins"
 RULE_OPTION_THIRD_COLOMBIA_CIVIL_WAR_OUTCOME_CLD_DESC: "§F§oJose Camacho Carreño§! and the §oNationalist Action Party§! will emerge victorious in the Third Colombian Civil War. It is clear from the rubble and ruin that Colombia has a lot to do if it wishes to repair the damage from each of these wars.\n But for Carreño and the §oNAP§!, that is very much a secondary objective - or even a tertiary one. Their goal is to enforce their stranglehold on Colombia's land, government, and people: to show that fascism has triumphed in Colombia once and for all.§!"
 
+# Bolivia-Santa Cruz War buff
+
+BOL_STC_WAR_OUTCOME: "£TNO_game_rule_flag_BOL  £TNO_game_rule_flag_STC   Bolivia-Santa Cruz War"
+RULE_OPTION_BOL_STC_WAR_OUTCOME_RANDOM: "Default - Random AI"
+RULE_OPTION_BOL_STC_WAR_OUTCOME_RANDOM_DESC: "§FThe breakaway state of §KSanta Cruz§! has served the §iParaguayan§! government as a shield against vengeful §LBolivia§! to the west, safeguarded by §iParaguay§!'s army in return. However, the downfall of §iParaguay§!'s §Jfascist§! regime has left §KSanta Cruz§! vulnerable, and §LBolivia§! is now preparing to re-assert its authority over its wayward §Keast§!. Victory for either side is unknown, but all know that §Rblood shall flow§! across the §LTibet of the Americas§!…\n\n§RRequires:§!\n§MFULNA Victory§! in £TNO_game_rule_flag_PAR   §YParaguay - Paraguay Bush War§!§!"
+RULE_OPTION_BOL_STC_WAR_OUTCOME_BOL: "£TNO_game_rule_flag_BOL   §LBolivia§! wins"
+RULE_OPTION_BOL_STC_WAR_OUTCOME_BOL_DESC: "§FAfter decades of humiliation, the §LBolivian§! people shall celebrate a decisive §Gvictory§! as its army smashes §KSanta Cruz§!'s meager defenses and exhausted §iParaguayan§! allies. The government will embark on a difficult journey to re-integrate the §KEast§!, and its justice for the collaborators shall be harsh, but the government shall be set on the right track and its people hopeful for §Gsuccess§!.§!"
+RULE_OPTION_BOL_STC_WAR_OUTCOME_STC: "£TNO_game_rule_flag_STC   §KSanta Cruz§! wins"
+RULE_OPTION_BOL_STC_WAR_OUTCOME_STC_DESC: "§FHow often can a country march from one war to another and face humiliation? How many times must a people have their hopes and dreams dashed and causes lost in mud and blood? In the process, §LBolivia§! will again be defeated by perfidious §iParaguay§! and its collaborators, losing even more land. South America holds its breath as §KSanta Cruz§! rises and §LBolivia§! falls into §Rchaos§!.§!"
+
 # South Africa Referendum - Monarchy or Republic
 
 SAF_REFERENDUM: "£TNO_game_rule_flag_SAF   South Africa Referendum - Monarchy or Republic"
@@ -6602,15 +6632,15 @@ RULE_OPTION_MOZAMBIQUE_CIVIL_WAR_OUTCOME_DEVASTATION: "§RThe Mozambican Abattoi
 RULE_OPTION_MOZAMBIQUE_CIVIL_WAR_OUTCOME_DEVASTATION_DESC: "§FThe vultures shall feed well in Mozambique, as the brutal civil war shall extend beyond any hope of recovery. No victory shall be had for any faction, no conqueror shall gloat over his defeated foes, and no future shall be in sight years on from the coup. The many exhausted warlords within shall turn the country into a mass grave, too tired, weak and defeatist to administer the final blows. Foreign support for any faction will dry up, as potential focus on the region becomes a depressing sidenote and as priorities shift elsewhere, as superpowers grow to perceive such moves as pointless.§!"
 
 # West African War
-WEST_AFRICAN_WAR: "£TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FRA_FREE   West African War"
+WEST_AFRICAN_WAR: "£TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR   West African War"
 RULE_OPTION_WEST_AFRICAN_WAR_RANDOM: "Default - Random AI"
 RULE_OPTION_WEST_AFRICAN_WAR_RANDOM_DESC: ""
 RULE_OPTION_WEST_AFRICAN_WAR_PALF: "£TNO_game_rule_flag_JAP  £TNO_game_rule_flag_CAO   §KPan-African Liberation Front§! Victory"
 RULE_OPTION_WEST_AFRICAN_WAR_PALF_DESC: ""
 RULE_OPTION_WEST_AFRICAN_WAR_WAA: "£TNO_game_rule_flag_WOL   §BWest African Alliance§! Victory"
-RULE_OPTION_WEST_AFRICAN_WAR_WAA_DESC: "§F\n\n§RRequires:§!\n§Y§RNOT§! £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   §mFMA§! vs §KPALF§! in £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   West Africa Crisis Scenario§!"
-RULE_OPTION_WEST_AFRICAN_WAR_FMA: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_FRA_FREE   §mFrench Military Alliance§! Victory"
-RULE_OPTION_WEST_AFRICAN_WAR_FMA_DESC: "§F\n\n§RRequires:§!\n§Y§RNOT§! £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_CAO   §BWAA§! vs §KPALF§! in £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   West Africa Crisis Scenario§!"
+RULE_OPTION_WEST_AFRICAN_WAR_WAA_DESC: "§F\n\n§RRequires:§!\n§Y§RNOT§! £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   §mFMA§! vs §KPALF§! in £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   West Africa Crisis Scenario§!"
+RULE_OPTION_WEST_AFRICAN_WAR_FMA: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_FFR   §mFrench Military Alliance§! Victory"
+RULE_OPTION_WEST_AFRICAN_WAR_FMA_DESC: "§F\n\n§RRequires:§!\n§Y§RNOT§! £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_CAO   §BWAA§! vs §KPALF§! in £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   West Africa Crisis Scenario§!"
 
 # Lebanese Civil War buff
 
@@ -6624,10 +6654,10 @@ RULE_OPTION_LEBANON_CIVIL_WAR_OUTCOME_SLB_DESC: "§FThe §VSocialist Lebanese Re
 
 # Congo-Beafrica War buff
 
-CPR_INVADING_OUTCOME: "£TNO_game_rule_flag_CPR  £TNO_game_rule_flag_CAF  Popular Republic of the Congo - invasion of Bêafrîka"
+CPR_INVADING_OUTCOME: "£TNO_game_rule_flag_CPR  £TNO_game_rule_flag_CAF   Popular Republic of the Congo - invasion of Bêafrîka"
 RULE_OPTION_CPR_INVADING_OUTCOME_RANDOM: "Default - Random AI"
-RULE_OPTION_CPR_INVADING_OUTCOME_RANDOM_DESC: "§FFollowing its victory in the Congo Civil War, the Popular Republic of the Congo will set its eyes towards its neighbor, Bêafrîka, and invade it in an attempt to overthrow its capitalist regime and establishing a friendly pan-African government.\n\n§RRequires:§!\n§YPan-African Congo has won in the Congo Civil War§!"
-RULE_OPTION_CPR_INVADING_OUTCOME_WIN: "£TNO_game_rule_flag_CPR  §VThe Popular Republic of the Congo§! Gets Buffed "
+RULE_OPTION_CPR_INVADING_OUTCOME_RANDOM_DESC: "§FFollowing its victory in the Congolese Civil War, the Popular Republic of the Congo will set its eyes towards its neighbor, Bêafrîka, and invade it in an attempt to overthrow its capitalist regime and establishing a friendly pan-African government.\n\n§RRequires:§!\n§YPan-African Congo has won in the Congolese Civil War§!"
+RULE_OPTION_CPR_INVADING_OUTCOME_WIN: "£TNO_game_rule_flag_CPR   §VThe Popular Republic of the Congo§! Gets Buffed "
 RULE_OPTION_CPR_INVADING_OUTCOME_WIN_DESC: ""Following its succesful invasion of Bêafrîka, the §VPopular Republic of the Congo§! will establish a friendly pan-African government led by §VAbel Goumba§!.§!"
 
 # OFN African Mandates - The OFN Congo Mandate's Fate [Stability]
@@ -6683,14 +6713,35 @@ RULE_OPTION_GRO_DEVASTATION_2_DESC: "§FWith the death of Hans Hüttig, the Reic
 RULE_OPTION_GRO_DEVASTATION_3: "§RThird§! Stage"
 RULE_OPTION_GRO_DEVASTATION_3_DESC: "§FWith the death of Hans Hüttig, the Reichsstaat has now completely collapsed. Hüttig - and the fear of crossing him - was the only component holding the state together, and his death has led to a total breakdown of Germany authority in Africa.\n\nThere is nothing left in this continent. There are no birds, no beasts, no buildings: the earth is nothing but barren, charred, dirt and the remains of those destroyed. The damage done in the last few years is irreversible. The few survivors left - only the most ruthless and radical - fight savagely over the ruins of this world.\n\n§RNote:§!\nThis option will block Mozambique and Congolese Civil Wars but will retain its Angolan counterpart.§!"
 
-#Großafrikanischer Reichsstaat - Fate of Joshua Nkomo
-#ZIM_NKOMO_OUTCOME: "£TNO_game_rule_flag_GRO_REICHSSTAAT  £TNO_game_rule_flag_ZIM   Fate of Joshua Nkomo"
-#RULE_OPTION_ZIM_NKOMO_OUTCOME_RANDOM: "Default - Random AI"
-#RULE_OPTION_ZIM_NKOMO_OUTCOME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YGroßafrikanscher Reichsstaat must control Zimbabwe§!"
-#RULE_OPTION_ZIM_NKOMO_OUTCOME_ALIVE: "Nkomo §Vsurvives§!"
-#RULE_OPTION_ZIM_NKOMO_OUTCOME_ALIVE_DESC: ""
-#RULE_OPTION_ZIM_NKOMO_OUTCOME_DEAD: "Nkomo §qdead§!"
-#RULE_OPTION_ZIM_NKOMO_OUTCOME_DEAD_DESC: ""
+# Zimbabwe
+
+ZIM_GRORELEASE: "£TNO_game_rule_flag_GRO_REICHSSTAAT  £TNO_game_rule_flag_ZIM   Elimination of Joshua Nkomo"
+RULE_OPTION_ZIM_GRORELEASE_RANDOM: "Default - Random AI"
+RULE_OPTION_ZIM_GRORELEASE_RANDOM_DESC: "§FThe demented charnel house that is the §qGroßafrikanscher Reichsstaat§! limps to one massacre after another on its march towards death and now turns its attention to the rebellious peoples of Zimbabwe. Aiming for a decapitating strike, the Germans will seek to assassinate the popular Pan-Africanist §VJoshua Nkomo§!, whose death would open the door for §qlocal warlords§! to fill in the void once the Reichstaat meets its end…§!"
+RULE_OPTION_ZIM_GRORELEASE_1: "§VNkomo§! survives"
+RULE_OPTION_ZIM_GRORELEASE_1_DESC: "§FThe reports of Joshua Nkomo's death were highly exaggerated; instead, he continued his struggle against German colonialism from the shadows. With the Reichstaat's downfall, Nkomo will lead the Zimbabwe African People's Union as leader of the newly freed nation toward §VAfrican Socialism§!.\n\n§RRequires:§!\n§MFirst Stage§! in £TNO_game_rule_flag_GRO_REICHSSTAAT   §YGroßafrikanscher Reichsstaat Stage of the Devastation§!§!"
+RULE_OPTION_ZIM_GRORELEASE_2: "§VNkomo§! dead"
+RULE_OPTION_ZIM_GRORELEASE_2_DESC: "§FJoshua Nkomo will perish at the hands of the Germans, and the power vacuum left behind will filled in by Robert Mugabe, head of the local warlords. Following the Reichstaat's end, he and his §qUltramilitarist§! Zimbabwe African National Union will seize power in Zimbabwe.§!"
+
+# Zimbabwe - Econ Sphere
+
+ZIM_ECONSPHERE: "£TNO_game_rule_flag_ZIM   Zimbabwe - Economic Sphere"
+RULE_OPTION_ZIM_ECONSPHERE_RANDOM: "Default - Random AI"
+RULE_OPTION_ZIM_ECONSPHERE_RANDOM_DESC: "§FIn the wake of its monumental triumph in the West African War, the §KPan-African Liberation Front§! will begin campaigning for broad economic cooperation between its members and other free African states by creating the Pan-African Community for Economic Mutal Assistance. Should §KPACMEA§! succeed, it would make the §KPALF§! a vital actor for Africa going forward. The leadership of Zimbabwe, carefully observing and of similar ideology toward the PALF, must carefully consider the risks and benefits of joining the economic bloc.§!"
+RULE_OPTION_ZIM_ECONSPHERE_CAO: "§KPACMEA§! Alignment"
+RULE_OPTION_ZIM_ECONSPHERE_CAO_DESC: "§FDeciding that Zimbabwe and the §KPACMEA§! have similar values of African nationalism and socialism, §VJoshua Nkomo§!'s government will request entrance into the economic bloc. The Zimbabwe African People's Union will economically align with West Africa, especially §KCameroon§!.\n\n§RRequires:§!\n£TNO_game_rule_flag_JAP  £TNO_game_rule_flag_CAO   §MPan-African Liberation Front Victory§! in £TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR   §YWest African War§!\n§yAND§!\n§MNkomo survives§! in §Y£TNO_game_rule_flag_GRO_REICHSSTAAT  £TNO_game_rule_flag_ZIM   Elimination of Joshua Nkomo§!§!"
+RULE_OPTION_ZIM_ECONSPHERE_ZZZ: "§YNonaligned§!"
+RULE_OPTION_ZIM_ECONSPHERE_ZZZ_DESC: "§FWary of foreign economic dominance, even from similar governments, §VJoshua Nkomo§!'s Zimbabwe African People's Union will decline to join the §KPACMEA§!. Zimbabwe will remain an unaligned nation in post-colonial Africa.§!"
+
+# Tanganyika - Econ Sphere
+
+TNZ_ECONSPHERE: "£TNO_game_rule_flag_TNZ   Tanganyika - Economic Sphere"
+RULE_OPTION_TNZ_ECONSPHERE_RANDOM: "Default - Random AI"
+RULE_OPTION_TNZ_ECONSPHERE_RANDOM_DESC: ""
+RULE_OPTION_TNZ_ECONSPHERE_CAO: "§KPACMEA§! Alignment"
+RULE_OPTION_TNZ_ECONSPHERE_CAO_DESC: "§F\n\n§RRequires:§!\n£TNO_game_rule_flag_JAP  £TNO_game_rule_flag_CAO   §MPan-African Liberation Front Victory§! in £TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR   §YWest African War§!\n§yAND§!\n§RNOT§! §MStable§! in £TNO_game_rule_flag_ANG_USA   §YOFN African Mandates - The OFN Angola Mandate's Fate§!§!"
+RULE_OPTION_TNZ_ECONSPHERE_ZZZ: "§YNonaligned§!"
+RULE_OPTION_TNZ_ECONSPHERE_ZZZ_DESC: "§F\n\n§RRequires:§!\n§RNOT§! £TNO_game_rule_flag_JAP  £TNO_game_rule_flag_CAO   §MPan-African Liberation Front Victory§! in £TNO_game_rule_flag_CAO  £TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR   §YWest African War§!\n§yAND§!\n§RNOT§! §MSecond Stage§! §YOR§! §MThird Stage§! in £TNO_game_rule_flag_GRO_REICHSSTAAT   §YGroßafrikanscher Reichsstaat Stage of the Devastation§!§!"
 
 #Mozambique - U.S. Intervention in Mozambique's Civil War
 GAZ_USA_PATH: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_GZO  £TNO_game_rule_flag_GZS   The USA - Intervention in Mozambique's Civil War"
@@ -6701,7 +6752,7 @@ RULE_OPTION_GAZ_USA_PATH_SUPPORT_SOCIALIST_DESC: ""
 RULE_OPTION_GAZ_USA_PATH_SUPPORT_PUPPET: "£TNO_game_rule_flag_GZS Support §PSimango§!"
 RULE_OPTION_GAZ_USA_PATH_SUPPORT_PUPPET_DESC: ""
 
-# Congo Civil War buff
+# Congolese Civil War buff
 
 CONGO_CIVIL_WAR_OUTCOME: "£TNO_game_rule_flag_CPR  £TNO_game_rule_flag_AZD  £TNO_game_rule_flag_CFS  £TNO_game_rule_flag_KTG_fascism  £TNO_game_rule_flag_KSI  £TNO_game_rule_flag_COG_FED_REP  £TNO_game_rule_flag_GRO_fascism   Congolese Civil War"
 RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_RANDOM: "Default - Random AI"
@@ -6717,17 +6768,31 @@ RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_INDEPENDENT_DESC: "§FThe Corporate State of
 RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_FEDERAL: "£TNO_game_rule_flag_USA  £TNO_game_rule_flag_COG_FED_REP  Federal Republic of Congo Victory"
 RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_FEDERAL_DESC: "§FThe Federal Republic of Congo and then it will join OFN. Congo's future will be one of §MLiberalism§!.\n\n§RRequires:§!\n§YTotal OFN victory in the South African War and then the OFN Mandate in Congo has collapsed§!"
 RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_GRO: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_GRO_fascism  German Forces Get Buffed"
-RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_GRO_DESC: "§FThe Remnants of the Reichsstaat will completely crush their native rivals in the Congo Civil War, returning German influence to the dark continent and cementing their grip over the Congo.\n\n§RRequires:§!\n§YGroßafrikanscher Reichsstaat has collapsed on the first or second stage of devastation.§!"
+RULE_OPTION_CONGO_CIVIL_WAR_OUTCOME_GRO_DESC: "§FThe Remnants of the Reichsstaat will completely crush their native rivals in the Congolese Civil War, returning German influence to the dark continent and cementing their grip over the Congo.\n\n§RRequires:§!\n§YGroßafrikanscher Reichsstaat has collapsed on the first or second stage of devastation.§!"
 
 # Botswana-Zimbabwe War war buff [Outcome]
 
 BTS_ZIM_WAR_OUTCOME: "£TNO_game_rule_flag_ZIM  £TNO_game_rule_flag_BTS   The Botswana-Zimbabwe War"
 RULE_OPTION_BTS_ZIM_WAR_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_BTS_ZIM_WAR_OUTCOME_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YGroßafrikanscher Reichsstaat has collapsed at the first or second stage of devastation§!"
-RULE_OPTION_BTS_ZIM_WAR_OUTCOME_ZIM: "£TNO_game_rule_flag_ZIM  Zimbabwe Victory"
+RULE_OPTION_BTS_ZIM_WAR_OUTCOME_ZIM: "£TNO_game_rule_flag_ZIM   Zimbabwe Victory"
 RULE_OPTION_BTS_ZIM_WAR_OUTCOME_ZIM_DESC: ""
-RULE_OPTION_BTS_ZIM_WAR_OUTCOME_BTS: "£TNO_game_rule_flag_BTS  Botswana Victory"
+RULE_OPTION_BTS_ZIM_WAR_OUTCOME_BTS: "£TNO_game_rule_flag_BTS   Botswana Victory"
 RULE_OPTION_BTS_ZIM_WAR_OUTCOME_BTS_DESC: ""
+
+# Tanganyika reclamation of the coast war buff [Outcome]
+
+TNZ_ZZB_WAR_OUTCOME: "£TNO_game_rule_flag_TNZ  £TNO_game_rule_flag_ZZB_ultranationalism   Tanganyika Reclamation of the Coast"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_RANDOM: "Default - Random AI"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_RANDOM_DESC: "§FWith the §sRiechstaat§! destroyed, both §YTanganyika§! and §EZanzibar§! will emerge out of the chaos as independent states who fought for their freedom. §yTanganyika§! is a non-aligned §xsocialist§! nation led by its president §xJulius Nyerere§!. Meanwhile, §EZanzibar§! emerged as an §sArab Sultanate§!. However, this period of Arab rule is shortlived as a coup d'état proclaims the §EPeople's Republic of Zanzibar§! led by §qJohn Okello§!.\n\n§qOkello§! however will prove to be a poor governor, due to his unstable personality. Seeing an opening, §YTanganyika§! will launch an invasion of §EZanzibar§! hoping to take their coastal territories to expand the nation's own §Yeconomic opportunities§!. However, where the wind blows in the conflict is up to fate.§!"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_ZZB: "£TNO_game_rule_flag_ZZB_ultranationalism   §EZanzibar§! wins"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_ZZB_DESC: "§FDespite their intentions, §YTanganyika's§! invasion of §EZanzibar§! will be a complete failure. Having not just rebuffed the attacks by their western neighbor, §EZanzibar§! will go further and annex the entire country, leaving §YTanganyika§! a thing of the past. With the new nation headed by §EZanzibar's§! §qJohn Okello§!, the new nation will have difficulties in moving past its history tied to the slave trade. The road to amending cultural differences will be long, and only time will tell if the people of Tanganyika will accept Okello.§!"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_COAST: "£TNO_game_rule_flag_TNZ  £TNO_game_rule_flag_ZZB   §YTanganyika§! takes the coast"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_COAST_DESC: "§FAs expected, §YTanganyika's§! invasion of §EZanzibar§! will be a success, taking the coastal possessions that §EZanzibar§! once held. This new access to the sea will allow §YTanganyika§! to expand its §Yeconomic development§! potential, and forge wider relations outside of Africa as a result. However, for §EZanzibar§!, now confined to their islands, §qOkello's§! failure will see him ousted and the sultanate restored in his place. §EZanzibar§! will then be under an §sinterim government§! under §sMir Abodo Gajian Baloch§!, as §EZanzibar§! returns to its past.\n\n§RRequires:§!\n§Y§RNOT§! §MThird Stage§! in £TNO_game_rule_flag_GRO_REICHSSTAAT   §YGroßafrikanscher Reichsstaat Stage of the Devastation§!§!"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_PUPPET: "£TNO_game_rule_flag_TNZ  £TNO_game_rule_flag_ZZB   §YTanganyika§! puppets §EZanzibar§!"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_PUPPET_DESC: "§FAs expected, §YTanganyika's§! invasion of §EZanzibar§! will be a success, taking the coastal possessions that §EZanzibar§! once held. Not only that, but §YTanganyika§! will be able to exert such a great influence on the island country, that §EZanzibar§! will find itself a puppet of §YTanganyika§! in everything but name. This new access to the sea will allow §YTanganyika§! to expand its §Yeconomic development§! potential, and forge wider relations outside of Africa as a result. Meanwhile, §EZanzibar will create a §xpan-African socialist§!, directed by §YTanganyika§! and led by §xAbdulrahman Mohamed Babu§!.\n\n§RRequires:§!\n§Y§RNOT§! §MThird Stage§! in £TNO_game_rule_flag_GRO_REICHSSTAAT   §YGroßafrikanscher Reichsstaat Stage of the Devastation§!§!"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_ANNEX: "£TNO_game_rule_flag_TNZ   §YTanganyika§! annexes §EZanzibar§!"
+RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_ANNEX_DESC: "§FThe war between §YTanganyika§! and §EZanzibar§! will result in an overwhelming victory for §YTanganyika§!. Not only will the mainland country take the coast, but they will also push further, annexing the §EPeople's Republic of Zanzibar§! outright. Newly founded, §yTanzania§! led by §xJulius Nyerere§! will be able to expand its §Yeconomic development§! potential, and forge wider relations outside of Africa as a result. Furthermore, the annexation will serve to strengthen §yTanzania§! in the Cold War as they serve as pioneers in the liberation and unification of Africa.§!"
 
 # Katanga War war buff [Outcome]
 
@@ -6817,7 +6882,7 @@ Custom_TNO_ostland_civil_war: "Ostland Civil War Combat Bonus"
 
 # Serbian Civil War buff
 
-SERBIA_CIVIL_WAR_OUTCOME: "£TNO_game_rule_flag_SER_NLM   £TNO_game_rule_flag_GMS_COLLAB   The Serbian National Uprising"
+SERBIA_CIVIL_WAR_OUTCOME: "£TNO_game_rule_flag_SER_NLM  £TNO_game_rule_flag_GMS_COLLAB   The Serbian National Uprising"
 RULE_OPTION_SERBIA_CIVIL_WAR_OUTCOME_RANDOM: "Default - Random AI"
 RULE_OPTION_SERBIA_CIVIL_WAR_OUTCOME_RANDOM_DESC: "§FEven beneath the black clouds of the New World Order, the legacy of the Balkans and Serbia in particular as the ever-indefatigable 'powder keg' is somehow still able to live up to the name; While Germany and Italy are both distracted with internal problems and regional conflict, the collaborationist government in Belgrade is rocked by the death of Prime Minister Dimitrije Ljotić in the midst of growing instability. Seeing an opportunity to oust the Naziphile regime, a revitalized National Liberation Army is formed under the leadership of Aleksandar Ranković to eject the ultraright regime once and for all.\n\nThe government in Belgrade, led by the nationalist Dragomir Jovanović, is under crushing pressure to maintain control of Serbia. Although his position is temporary,  Jovanović already sees his influence as he works to halt the National Liberation Army at every turn.§!"
 RULE_OPTION_SERBIA_CIVIL_WAR_OUTCOME_SER: "£TNO_game_rule_flag_SER_NLM   §eNational Liberation Movement for Serbia§! Victory"
@@ -6837,7 +6902,7 @@ RULE_GROUP_TNO_RULES_EAST_ASIA: "£TNO_game_rule_flag_CHI  £TNO_game_rule_flag_
 RULE_GROUP_TNO_RULES_ASIA_ARABIA: "£TNO_game_rule_flag_SAU  £TNO_game_rule_flag_GUL_ITA   Country Paths - Arabian Peninsula"
 RULE_GROUP_TNO_RULES_ASIA_THE_LEVANT: "£TNO_game_rule_flag_IME  £TNO_game_rule_flag_SNS   Country Paths - The Levant"
 RULE_GROUP_TNO_RULES_NORTHERN_AFRICA: "£TNO_game_rule_flag_EGY  £TNO_game_rule_flag_ILG  £TNO_game_rule_flag_SLG   Country Paths - Northern Africa"
-RULE_GROUP_TNO_RULES_WESTERN_AFRICA: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FRA_FREE  £TNO_game_rule_flag_CAO   Country Paths - Western Africa"
+RULE_GROUP_TNO_RULES_WESTERN_AFRICA: "£TNO_game_rule_flag_WOL  £TNO_game_rule_flag_FFR  £TNO_game_rule_flag_CAO   Country Paths - Western Africa"
 RULE_GROUP_TNO_RULES_SOUTHERN_AFRICA: "£TNO_game_rule_flag_GRO  £TNO_game_rule_flag_COG_GER  £TNO_game_rule_flag_ANG_GER  £TNO_game_rule_flag_SAF   Country Paths - Southern Africa"
 RULE_GROUP_TNO_RULES_EASTERN_AFRICA: "Country Paths - Eastern Africa"
 RULE_GROUP_TNO_RULES_CENTRAL_AFRICA: "Country Paths - Central Africa"
@@ -6862,7 +6927,7 @@ RULE_OPTION_ETH_ETHIOPIAN_CIVIL_WAR_OUTCOME_ORM_DESC: ""
 
 # France - Post-Reclamation Election
 
-FRA_POST_RECLAMATION_ELECTION: "£TNO_game_rule_flag_FRA_FREE   France - Post-Reclamation Election"
+FRA_POST_RECLAMATION_ELECTION: "£TNO_game_rule_flag_FFR   France - Post-Reclamation Election"
 RULE_OPTION_FRA_POST_RECLAMATION_ELECTION_RANDOM: "Default - Random AI"
 RULE_OPTION_FRA_POST_RECLAMATION_ELECTION_RANDOM_DESC: "§F\n\n§RRequires:§!\n§YFree France controls European France§!"
 RULE_OPTION_FRA_POST_RECLAMATION_ELECTION_DE_GAULLE: "de Gaulle/Chaban-Delmas is elected"
@@ -6916,7 +6981,7 @@ RULE_OPTION_IBR_DIVORCE_FATE_PRO_PORTUGAL_DESC: "§FPortugal will get more benef
 
 # Free France and Iberian Union - Negotiations [Politics]
 
-FREE_FRANCE_IBERIA_NEGOTIATIONS_PATH: "£TNO_game_rule_flag_IBR  £TNO_game_rule_flag_FRA_FREE   Free France and Iberian Union - Negotiations"
+FREE_FRANCE_IBERIA_NEGOTIATIONS_PATH: "£TNO_game_rule_flag_IBR  £TNO_game_rule_flag_FFR   Free France and Iberian Union - Negotiations"
 RULE_OPTION_FREE_FRANCE_IBERIA_NEGOTIATIONS_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_FREE_FRANCE_IBERIA_NEGOTIATIONS_PATH_RANDOM_DESC: ""
 RULE_OPTION_FREE_FRANCE_IBERIA_NEGOTIATIONS_PATH_SUCCESS: "§GSuccessful§! Negotiations"
@@ -6934,7 +6999,7 @@ RULE_OPTION_ITA_COUP_CHEAT_DISABLED_DESC: ""
 
 # Bormann's Germany and Norway - Negotiation
 
-NOR_GER_NEGOTIATION_PATH: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_NOR_Collab  £TNO_game_rule_flag_NOR_Free  Bormann's Germany and Norway - Negotiation"
+NOR_GER_NEGOTIATION_PATH: "£TNO_game_rule_flag_GER  £TNO_game_rule_flag_NOR_Collab  £TNO_game_rule_flag_NOR_Free   Bormann's Germany and Norway - Negotiation"
 RULE_OPTION_NOR_GER_NEGOTIATION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_NOR_GER_NEGOTIATION_PATH_RANDOM_DESC: ""
 RULE_OPTION_NOR_GER_NEGOTIATION_PATH_FASCIST_PUPPET: "£TNO_game_rule_flag_NOR_Collab  Puppet Status"
@@ -7223,7 +7288,7 @@ RULE_OPTION_MAG_WORLD_DIPLOMACY_NO_DESC: "§FMexico, New Zealand, Canada and Aus
 
 # Sverdlovsk - Trade with Italy
 
-SVR_ITA_TRADE: "£TNO_game_rule_flag_SVR  £TNO_game_rule_flag_ITA  Sverdlovsk - Trade with Italy"
+SVR_ITA_TRADE: "£TNO_game_rule_flag_SVR  £TNO_game_rule_flag_ITA   Sverdlovsk - Trade with Italy"
 RULE_OPTION_SVR_ITA_TRADE_RANDOM: "Default - Random AI"
 RULE_OPTION_SVR_ITA_TRADE_RANDOM_DESC: ""
 RULE_OPTION_SVR_ITA_TRADE_AGREE: "Italy accepts"
@@ -7234,7 +7299,7 @@ RULE_OPTION_SVR_ITA_TRADE_REFUSE_DESC: ""
 
 # Democratic Komi - Integration of Vologda
 
-KOM_VOL_INTEGRATION_PATH: "£TNO_game_rule_flag_KOM  £TNO_game_rule_flag_VOL  Democratic Komi - Integration of Vologda"
+KOM_VOL_INTEGRATION_PATH: "£TNO_game_rule_flag_KOM  £TNO_game_rule_flag_VOL   Democratic Komi - Integration of Vologda"
 RULE_OPTION_KOM_VOL_INTEGRATION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_KOM_VOL_INTEGRATION_PATH_RANDOM_DESC: ""
 RULE_OPTION_KOM_VOL_INTEGRATION_PATH_YES: "Vologda accepts"
@@ -7244,7 +7309,7 @@ RULE_OPTION_KOM_VOL_INTEGRATION_PATH_NO_DESC: ""
 
 # West Siberian Warlord - Ultimatum to Vorkuta
 
-WSB_VOR_ULTIMATUM: "£TNO_game_rule_flag_VOR  West Siberian Warlord - Ultimatum to Vorkuta"
+WSB_VOR_ULTIMATUM: "£TNO_game_rule_flag_VOR   West Siberian Warlord - Ultimatum to Vorkuta"
 RULE_OPTION_WSB_VOR_ULTIMATUM_RANDOM: "Default - Random AI"
 RULE_OPTION_WSB_VOR_ULTIMATUM_RANDOM_DESC: ""
 RULE_OPTION_WSB_VOR_ULTIMATUM_YES: "Vorkuta accepts"
@@ -7254,7 +7319,7 @@ RULE_OPTION_WSB_VOR_ULTIMATUM_NO_DESC: ""
 
 # Komi Republic - Integration of Tatarstan
 
-KOM_TAR_INTEGRATION_PATH: "£TNO_game_rule_flag_KOM  £TNO_game_rule_flag_TAR  Komi Republic - Integration of Tatarstan"
+KOM_TAR_INTEGRATION_PATH: "£TNO_game_rule_flag_KOM  £TNO_game_rule_flag_TAR   Komi Republic - Integration of Tatarstan"
 RULE_OPTION_KOM_TAR_INTEGRATION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_KOM_TAR_INTEGRATION_PATH_RANDOM_DESC: ""
 RULE_OPTION_KOM_TAR_INTEGRATION_PATH_YES: "Tatarstan accepts"
@@ -7264,7 +7329,7 @@ RULE_OPTION_KOM_TAR_INTEGRATION_PATH_NO_DESC: ""
 
 # Komi Republic - Integration of Bashkiria
 
-KOM_BKR_INTEGRATION_PATH: "£TNO_game_rule_flag_KOM  £TNO_game_rule_flag_BKR  Komi Republic - Integration of Bashkorstan"
+KOM_BKR_INTEGRATION_PATH: "£TNO_game_rule_flag_KOM  £TNO_game_rule_flag_BKR   Komi Republic - Integration of Bashkorstan"
 RULE_OPTION_KOM_BKR_INTEGRATION_PATH_RANDOM: "Default - Random AI"
 RULE_OPTION_KOM_BKR_INTEGRATION_PATH_RANDOM_DESC: ""
 RULE_OPTION_KOM_BKR_INTEGRATION_PATH_YES: "Bashkorstan accepts"
@@ -7274,7 +7339,7 @@ RULE_OPTION_KOM_BKR_INTEGRATION_PATH_NO_DESC: ""
 
 # Serov's Komi - Party Struggles [Ideology]
 
-KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES: "£TNO_game_rule_flag_KOM_REGIONAL_SEROV  Serov's Komi - Party Struggles"
+KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES: "£TNO_game_rule_flag_KOM_REGIONAL_SEROV   Serov's Komi - Party Struggles"
 RULE_OPTION_KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES_RANDOM: "Default - Random AI"
 RULE_OPTION_KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES_RANDOM_DESC: ""
 RULE_OPTION_KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES_LEFT: "Leftist Dominance"

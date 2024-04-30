@@ -1,0 +1,292 @@
+add_namespace = release_dummy
+
+###CENTRAL ASIA
+
+country_event = {
+	id = release_dummy.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.5"}
+	title = release_dummy.5.t
+	desc = release_dummy.5.d
+	picture = GFX_report_event_komi_bombing_2
+
+	is_triggered_only = yes
+	trigger = { #halts event if shattered between pulse effect and event firing
+		NOT = {
+			has_global_flag = RUS_shattered_kazakhstan
+			has_global_flag = KAZ_UNIFIED
+		}
+	}
+
+	option = {
+		name = release_dummy.5.a
+		random_country = {
+			limit = {
+				is_kazakh_nation = yes
+			}
+			hidden_effect = {
+				add_war_support = 0.05
+				add_manpower = 10000
+			}
+			random_country = {
+				limit = {
+					is_kazakh_nation = yes
+					NOT = {
+						tag = NPL
+					}
+					is_neighbor_of = PREV
+					NOT = {
+						has_war = yes
+					}
+				}
+				hidden_effect = {
+					add_manpower = 15000
+				}
+				declare_war_on = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+#country_event = { #Steppe Wars II - Attack of the Clones
+#	id = release_dummy.6
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.6"}
+#	title = release_dummy.6.t
+#	desc = release_dummy.6.d
+#	picture = GFX_report_event_komi_bombing_2
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = release_dummy.6.a
+#		random_country = {
+#			limit = {
+#				is_kazakh_nation = yes
+#				NOT = {
+#					tag = NPL
+#				}
+#			}
+#			hidden_effect = {
+#				add_war_support = 0.05
+#				add_manpower = 10000
+#			}
+#			random_country = {
+#				limit = {
+#					is_kazakh_nation = yes
+#					NOT = {
+#						tag = NPL
+#					}
+#					is_neighbor_of = PREV
+#					NOT = {
+#						has_war = yes
+#					}
+#				}
+#				hidden_effect = {
+#					add_manpower = 15000
+#				}
+#				declare_war_on = {
+#					target = PREV
+#					type = annex_everything
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#country_event = { #Steppe Wars III - Revenge of the Sith
+#	id = release_dummy.7
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.7"}
+#	title = release_dummy.7.t
+#	desc = release_dummy.7.d
+#	picture = GFX_report_event_komi_bombing_2
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = release_dummy.7.a
+#		random_country = {
+#			limit = {
+#				is_kazakh_nation = yes
+#				NOT = {
+#					tag = NPL
+#				}
+#			}
+#			hidden_effect = {
+#				add_war_support = 0.05
+#				add_manpower = 10000
+#			}
+#			random_country = {
+#				limit = {
+#					is_kazakh_nation = yes
+#					NOT = {
+#						tag = NPL
+#					}
+#					is_neighbor_of = PREV
+#					NOT = {
+#						has_war = yes
+#					}
+#				}
+#				hidden_effect = {
+#					add_manpower = 15000
+#				}
+#				declare_war_on = {
+#					target = PREV
+#					type = annex_everything
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#country_event = { #Steppe Wars IV - A New Hope
+#	id = release_dummy.8
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.8"}
+#	title = release_dummy.8.t
+#	desc = release_dummy.8.d
+#	picture = GFX_report_event_komi_bombing_2
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = release_dummy.8.a
+#		random_country = {
+#			limit = {
+#				is_kazakh_nation = yes
+#				NOT = {
+#					tag = NPL
+#				}
+#			}
+#			hidden_effect = {
+#				add_war_support = 0.05
+#				add_manpower = 10000
+#			}
+#			random_country = {
+#				limit = {
+#					is_kazakh_nation = yes
+#					NOT = {
+#						tag = NPL
+#					}
+#					is_neighbor_of = PREV
+#					NOT = {
+#						has_war = yes
+#					}
+#				}
+#				hidden_effect = {
+#					add_manpower = 15000
+#				}
+#				declare_war_on = {
+#					target = PREV
+#					type = annex_everything
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#country_event = { #Steppe Wars V - The Empire Strikes Back
+#	id = release_dummy.9
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.9"}
+#	title = release_dummy.9.t
+#	desc = release_dummy.9.d
+#	picture = GFX_report_event_komi_bombing_2
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = release_dummy.9.a
+#		random_country = {
+#			limit = {
+#				is_kazakh_nation = yes
+#				NOT = {
+#					tag = NPL
+#				}
+#			}
+#			hidden_effect = {
+#				add_war_support = 0.05
+#				add_manpower = 10000
+#			}
+#			random_country = {
+#				limit = {
+#					is_kazakh_nation = yes
+#					NOT = {
+#						tag = NPL
+#					}
+#					is_neighbor_of = PREV
+#					NOT = {
+#						has_war = yes
+#					}
+#				}
+#				hidden_effect = {
+#					add_manpower = 15000
+#				}
+#				declare_war_on = {
+#					target = PREV
+#					type = annex_everything
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#country_event = { #Steppe Wars VI - Return of the Jedi
+#	id = release_dummy.10
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.10"}
+#	title = release_dummy.10.t
+#	desc = release_dummy.10.d
+#	picture = GFX_report_event_komi_bombing_2
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = release_dummy.10.a
+#		random_country = {
+#			limit = {
+#				is_kazakh_nation = yes
+#				NOT = {
+#					tag = NPL
+#				}
+#			}
+#			hidden_effect = {
+#				add_war_support = 0.05
+#				add_manpower = 10000
+#			}
+#			random_country = {
+#				limit = {
+#					is_kazakh_nation = yes
+#					NOT = {
+#						tag = NPL
+#					}
+#					is_neighbor_of = PREV
+#					NOT = {
+#						has_war = yes
+#					}
+#				}
+#				hidden_effect = {
+#					add_manpower = 15000
+#				}
+#				declare_war_on = {
+#					target = PREV
+#					type = annex_everything
+#				}
+#			}
+#		}
+#	}
+#}
+
+
+country_event = { #Found SocIntern
+	id = release_dummy.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event release_dummy.50"}
+	title = release_dummy.50.t
+	desc = release_dummy.50.d
+	picture = GFX_report_event_komi_bombing_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = release_dummy.50.a
+		TNO_run_socintern_script = yes
+	}
+}

@@ -3,11 +3,11 @@ on_actions = {
 	on_startup = {
 		effect = {
 			AMR = {
-				country_event = { id = amur.33 days = 35 random = 24 } #Bolotov intro
-				country_event = { id = amur.34 days = 42 random = 24 } #Shekherev intro
-				country_event = { id = amur.35 days = 28 random = 24 } #Spasovsky intro
-				country_event = { id = amur.36 days = 14 random = 24 } #Okhotin intro
-				country_event = { id = amur.84 days = 100 random = 24 } #Mura
+				country_event = { id = amur.33 days = 35 random_hours = 24 } #Bolotov intro
+				country_event = { id = amur.34 days = 42 random_hours = 24 } #Shekherev intro
+				country_event = { id = amur.35 days = 28 random_hours = 24 } #Spasovsky intro
+				country_event = { id = amur.36 days = 14 random_hours = 24 } #Okhotin intro
+				country_event = { id = amur.84 days = 100 random_hours = 24 } #Mura
 				country_event = { id = amur.65 days = 3900 } #Yockey event
 				set_variable = {
 					AMR_NAJUA = 100
@@ -19,8 +19,8 @@ on_actions = {
 				country_event = { id = BRY.1 days = 1 } #The Revolution Reborn - Intro event
 				country_event = { id = IRK.74 days = 5 } #A Split in the Family - BRY/IRK shared event chain
 				country_event = { id = IRK.75 days = 15 } #Two Brothers - BRY/IRK shared event
-				country_event = { id = BRY.55 days = 304 random = 72 } #Adrift on the Tide of Memory
-				country_event = { id = BRY.56 days = 3358 random = 24 } #Farewell, Red October
+				country_event = { id = BRY.55 days = 304 random_hours = 72 } #Adrift on the Tide of Memory
+				country_event = { id = BRY.56 days = 3358 random_hours = 24 } #Farewell, Red October
 				add_timed_idea = { idea = RUS_FE_the_flight_east days = 790 }
 				if = {
 					limit = {
@@ -35,24 +35,24 @@ on_actions = {
 			}
 
 			USA = {
-				country_event = { id = RUS_tourist.1 days = 14 random = 240 } #Steve Chain
+				country_event = { id = RUS_tourist.1 days = 14 random_hours = 240 } #Steve Chain
 			}
 
 			TOM = {
 				country_event = { id = TOM.1 days = 1 } #Intro event
-				country_event = { id = TOM.5 days = 379 random = 48 } #Radio Show
+				country_event = { id = TOM.5 days = 379 random_hours = 48 } #Radio Show
 				country_event = { id = TOM.8 days = 19 } #Shosta intro event
 				country_event = { id = TOM.10 days = 92 } #The Death of Pasternak
 				country_event = { id = TOM.12 days = 33 } #Kharms intro event
-				country_event = { id = TOM.15 days = 1205 random = 96 } #Big Damn Hero
-				country_event = { id = TOM.19 days = 1605 random = 96 } #Music to My Ears
-				country_event = { id = TOM.20 days = 125 random = 96 } #History of Siberian Expansion
-				country_event = { id = TOM.21 days = 50 random = 48 } #The Revolt of the Masses
-				country_event = { id = TOM.24 days = 2920 random = 48 } #What Does It All Mean?
+				country_event = { id = TOM.15 days = 1205 random_hours = 96 } #Big Damn Hero
+				country_event = { id = TOM.19 days = 1605 random_hours = 96 } #Music to My Ears
+				country_event = { id = TOM.20 days = 125 random_hours = 96 } #History of Siberian Expansion
+				country_event = { id = TOM.21 days = 50 random_hours = 48 } #The Revolt of the Masses
+				country_event = { id = TOM.24 days = 2920 random_hours = 48 } #What Does It All Mean?
 				country_event = { id = TOM.34 days = 403 } #The Planet of Storms
 				country_event = { id = TOM.47 days = 47 } #Sakharov intro event
 				country_event = { id = TOM.48 days = 61 } #Likachyov intro event
-				country_event = { id = TOM.88 days = 2945 random = 900 } #The Winds of Change
+				country_event = { id = TOM.88 days = 2945 random_hours = 900 } #The Winds of Change
 				country_event = { id = TOM.89 days = 1420 } #Alienation
 				country_event = { id = TOM.158 days = 1390 } #The Democratic Process
 				country_event = { id = TOM.103 days = 406 } #The Humanist Heir
@@ -65,7 +65,7 @@ on_actions = {
 				country_event = { id = TOM.133 days = 1520 } #Culture event 1966 autumn people's music festival
 				country_event = { id = TOM_elections.0 days = 1860 } #1967 Elections
 				country_event = { id = TOM_petrov.1 days = 14 } #Petrov Salon chain start
-				country_event = { id = tukha.86 days = 48 random = 24 } #Across the Lines - Tukha letter to Shostakovich in Tomsk
+				country_event = { id = tukha.86 days = 48 random_hours = 24 } #Across the Lines - Tukha letter to Shostakovich in Tomsk
 				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
 			}
 
@@ -92,27 +92,22 @@ on_actions = {
 
 			TYM = {
 				country_event = { id = TYM.1 days = 1 } #The Ghost of Stalin
-				country_event = { id = TYM.103 days = 5 random = 5}
-				country_event = { id = TYM.104 days = 7 random = 5}
-				country_event = { id = TYM.105 days = 12 random = 5 }
-				country_event = { id = TYM.106 days = 30 random = 10}
-				country_event = { id = TYM.107 days = 370 random = 60}
+				country_event = { id = TYM.103 days = 5 random_hours = 5 }
+				country_event = { id = TYM.104 days = 7 random_hours = 5 }
+				country_event = { id = TYM.105 days = 12 random_hours = 5 }
+				country_event = { id = TYM.106 days = 30 random_hours = 10 }
+				country_event = { id = TYM.107 days = 370 random_hours = 60 }
 				country_event = { id = TYM.71 days = 90 } #The Aviators over the People's Republic
 			}
 
 			KEM = {
-				country_event = { id = KEM.6 days = 14 random = 24 } #Yuriy intro
-				country_event = { id = KEM.9 days = 21 random = 24 } #Lydia intro
-				country_event = { id = KEM.16 days = 52 random = 24 } #Wolves in the Throne Room
-				country_event = { id = KEM.22 days = 75 random = 48 } #Old Soldiers
-				country_event = { id = KEM.25 days = 750 random = 240 } #The Nurse
+				country_event = { id = KEM.6 days = 14 random_hours = 24 } #Yuriy intro
+				country_event = { id = KEM.9 days = 21 random_hours = 24 } #Lydia intro
+				country_event = { id = KEM.16 days = 52 random_hours = 24 } #Wolves in the Throne Room
+				country_event = { id = KEM.22 days = 75 random_hours = 48 } #Old Soldiers
+				country_event = { id = KEM.25 days = 750 random_hours = 240 } #The Nurse
 				country_event = { id = kemreg.27 days = 3690 } #The Death of King Rurik II
 				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
-			}
-
-			OMO = {
-				if = { limit = { OMO_2022_aprilfools_gamerule_active = no} }
-					country_event = { id = OMO.1 days = 1270 random = 10 }
 			}
 
 			SBA = {
@@ -121,80 +116,80 @@ on_actions = {
 			}
 
 			VYT = {
-				country_event = { id = VYT.2 days = 52 random = 20 } #Hill 483
-				country_event = { id = VYT.5 days = 68 random = 25 } #An Imperial Donation
-				country_event = { id = VYT.8 days = 102 random = 60 } #The Court Tongue
-				country_event = { id = VYT.9 days = 156 random = 50 } #Equality Before The Law
-				country_event = { id = VYT.27 days = 200 random = 2400 } #Uneasy Lies The Head
-				country_event = { id = VYT.46 days = 75 random = 24 } #Rivkin chain
+				country_event = { id = VYT.2 days = 52 random_hours = 20 } #Hill 483
+				country_event = { id = VYT.5 days = 68 random_hours = 25 } #An Imperial Donation
+				country_event = { id = VYT.8 days = 102 random_hours = 60 } #The Court Tongue
+				country_event = { id = VYT.9 days = 156 random_hours = 50 } #Equality Before The Law
+				country_event = { id = VYT.27 days = 200 random_hours = 2400 } #Uneasy Lies The Head
+				country_event = { id = VYT.46 days = 75 random_hours = 24 } #Rivkin chain
 				country_event = { id = VYT.55 days = 14 } #The Firebrand
 				country_event = { id = VYT.56 days = 7 } #The Reformer
 				country_event = { id = VYT.57 days = 28 } #The Sage
-				country_event = { id = VYT.61 days = 85 random = 72 } #From Distant Shores
-				country_event = { id = VYT.62 days = 45 random = 72 } #Broken Wing
-				country_event = { id = VYT.66 days = 225 random = 120 } #The Old Guard
+				country_event = { id = VYT.61 days = 85 random_hours = 72 } #From Distant Shores
+				country_event = { id = VYT.62 days = 45 random_hours = 72 } #Broken Wing
+				country_event = { id = VYT.66 days = 225 random_hours = 120 } #The Old Guard
 			}
 
 			MAG = {
 				country_event = { id = MAG.1 days = 1 } #The Last of the True - Intro Event
-				country_event = { id = MAG.29 days = 150 random = 48 } #Trading Faces - "John Wayne" shows up
-				country_event = { id = MAG.30 days = 50 random = 48 } #The Vozhd's Due
-				country_event = { id = MAG.31 days = 125 random = 48 } #Sic Semper Tyrannis
-				country_event = { id = MAG.32 days = 175 random = 48 } #Movie Night
-				country_event = { id = MAG.35 days = 75 random = 48 } #Second Thoughts
-				country_event = { id = MAG.37 days = 30 random = 48 } #Night Terrors
-				country_event = { id = MAG.39 days = 25 random = 48 } #All in a Days Work
+				country_event = { id = MAG.29 days = 150 random_hours = 48 } #Trading Faces - "John Wayne" shows up
+				country_event = { id = MAG.30 days = 50 random_hours = 48 } #The Vozhd's Due
+				country_event = { id = MAG.31 days = 125 random_hours = 48 } #Sic Semper Tyrannis
+				country_event = { id = MAG.32 days = 175 random_hours = 48 } #Movie Night
+				country_event = { id = MAG.35 days = 75 random_hours = 48 } #Second Thoughts
+				country_event = { id = MAG.37 days = 30 random_hours = 48 } #Night Terrors
+				country_event = { id = MAG.39 days = 25 random_hours = 48 } #All in a Days Work
 				add_timed_idea = { idea = RUS_FE_the_flight_east days = 790 }
 			}
 
 			KOM = {
-				country_event = { id = KOM.358 days = 212 random = 20 }
-				# country_event = { id = komi.44 days = 20 random = 50 }
-				# country_event = { id = komi.45 days = 60 random = 50 }
-				# country_event = { id = komi.46 days = 100 random = 50 }
-				country_event = { id = komi.50 days = 265 random = 25 }
-				country_event = { id = KOM.90 days = 170 random = 50 }
-				country_event = { id = andropov.1 days = 40 random = 20 }
-				country_event = { id = andropov.2 days = 200 random = 20 }
-				country_event = { id = komiintro.1 days = 7 random = 24 }
+				country_event = { id = KOM.358 days = 212 random_hours = 20 }
+				# country_event = { id = komi.44 days = 20 random_hours = 50 }
+				# country_event = { id = komi.45 days = 60 random_hours = 50 }
+				# country_event = { id = komi.46 days = 100 random_hours = 50 }
+				country_event = { id = komi.50 days = 265 random_hours = 25 }
+				country_event = { id = KOM.90 days = 170 random_hours = 50 }
+				country_event = { id = andropov.1 days = 40 random_hours = 20 }
+				country_event = { id = andropov.2 days = 200 random_hours = 20 }
+				country_event = { id = komiintro.1 days = 7 random_hours = 24 }
 				random_list = {
 					20 = {
-						country_event = { id = komi.1 days = 60 random = 4380 }
-						country_event = { id = komi.6 days = 120 random = 4380 }
-						country_event = { id = komi.7 days = 180 random = 4380 }
-						country_event = { id = komi.8 days = 90 random = 4380 }
-						country_event = { id = komi.11 days = 210 random = 4380 }
+						country_event = { id = komi.1 days = 60 random_hours = 4380 }
+						country_event = { id = komi.6 days = 120 random_hours = 4380 }
+						country_event = { id = komi.7 days = 180 random_hours = 4380 }
+						country_event = { id = komi.8 days = 90 random_hours = 4380 }
+						country_event = { id = komi.11 days = 210 random_hours = 4380 }
 					}
 					20 = {
-						country_event = { id = komi.1 days = 60 random = 4380 }
-						country_event = { id = komi.5 days = 120 random = 4380 }
-						country_event = { id = komi.2 days = 180 random = 4380 }
-						country_event = { id = komi.9 days = 90 random = 4380 }
-						country_event = { id = komi.11 days = 210 random = 4380 }
-						country_event = { id = komi.24 days = 270 random = 4380 }
+						country_event = { id = komi.1 days = 60 random_hours = 4380 }
+						country_event = { id = komi.5 days = 120 random_hours = 4380 }
+						country_event = { id = komi.2 days = 180 random_hours = 4380 }
+						country_event = { id = komi.9 days = 90 random_hours = 4380 }
+						country_event = { id = komi.11 days = 210 random_hours = 4380 }
+						country_event = { id = komi.24 days = 270 random_hours = 4380 }
 					}
 					20 = {
-						country_event = { id = komi.2 days = 60 random = 4380 }
-						country_event = { id = komi.5 days = 120 random = 4380 }
-						country_event = { id = komi.6 days = 180 random = 4380 }
-						country_event = { id = komi.10 days = 90 random = 4380 }
-						country_event = { id = komi.11 days = 210 random = 4380 }
+						country_event = { id = komi.2 days = 60 random_hours = 4380 }
+						country_event = { id = komi.5 days = 120 random_hours = 4380 }
+						country_event = { id = komi.6 days = 180 random_hours = 4380 }
+						country_event = { id = komi.10 days = 90 random_hours = 4380 }
+						country_event = { id = komi.11 days = 210 random_hours = 4380 }
 					}
 					20 = {
-						country_event = { id = komi.2 days = 60 random = 4380 }
-						country_event = { id = komi.4 days = 120 random = 4380 }
-						country_event = { id = komi.7 days = 180 random = 4380 }
-						country_event = { id = komi.8 days = 90 random = 4380 }
-						country_event = { id = komi.10 days = 210 random = 4380 }
-						country_event = { id = komi.24 days = 210 random = 4380 }
+						country_event = { id = komi.2 days = 60 random_hours = 4380 }
+						country_event = { id = komi.4 days = 120 random_hours = 4380 }
+						country_event = { id = komi.7 days = 180 random_hours = 4380 }
+						country_event = { id = komi.8 days = 90 random_hours = 4380 }
+						country_event = { id = komi.10 days = 210 random_hours = 4380 }
+						country_event = { id = komi.24 days = 210 random_hours = 4380 }
 					}
 					20 = {
-						country_event = { id = komi.4 days = 60 random = 4380 }
-						country_event = { id = komi.7 days = 120 random = 4380 }
-						country_event = { id = komi.2 days = 180 random = 4380 }
-						country_event = { id = komi.9 days = 90 random = 4380 }
-						country_event = { id = komi.10 days = 210 random = 4380 }
-						country_event = { id = komi.24 days = 300 random = 4380 }
+						country_event = { id = komi.4 days = 60 random_hours = 4380 }
+						country_event = { id = komi.7 days = 120 random_hours = 4380 }
+						country_event = { id = komi.2 days = 180 random_hours = 4380 }
+						country_event = { id = komi.9 days = 90 random_hours = 4380 }
+						country_event = { id = komi.10 days = 210 random_hours = 4380 }
+						country_event = { id = komi.24 days = 300 random_hours = 4380 }
 					}
 				}
 				if = {
@@ -202,7 +197,7 @@ on_actions = {
 						has_game_rule = {
 							rule = KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES
 							option = KOM_SEROV_PARTY_IDEOLOGY_STRUGGLES_LEFT
-			}
+						}
 					}
 					set_country_flag = KOM_SEROV_LEFT_FLAG
 				}
@@ -224,8 +219,8 @@ on_actions = {
 				country_event = { id = omsk.7 days = 198 } #Bandits Attack
 				country_event = { id = omsk.9 days = 297 } #Karbyshev's Birthday
 				country_event = { id = omsk.14 days = 390 } #Bombings Easing Up
-				country_event = { id = omsk.42 days = 375 random = 48 } #The Shadowmaster
-				country_event = { id = omsk.48 days = 60 random = 48 } #The Aviators over the Black League
+				country_event = { id = omsk.42 days = 375 random_hours = 48 } #The Shadowmaster
+				country_event = { id = omsk.48 days = 60 random_hours = 48 } #The Aviators over the Black League
 
 				if = {
 					limit = {
@@ -249,38 +244,38 @@ on_actions = {
 			}
 
 			ORE = {
-				country_event = { id = ORE.142 days = 182 random = 500 }
-				country_event = { id = ORE.143 days = 83 random = 500 }
-				country_event = { id = ORE.144 days = 38 random = 500 }
+				country_event = { id = ORE.142 days = 182 random_hours = 500 }
+				country_event = { id = ORE.143 days = 83 random_hours = 500 }
+				country_event = { id = ORE.144 days = 38 random_hours = 500 }
 				
 				country_event = { id = ORE.101 days = 489 }
 			}
 
 			DRL = {
-				country_event = { id = DRL.318 days = 10 random = 500 } #10 days since last flavor
-				country_event = { id = DRL.276 days = 45 random = 500 } #35 days since last flavor
-				country_event = { id = DRL.315 days = 70 random = 500 } #25 days since last flavor
-				country_event = { id = DRL.316 days = 90 random = 500 } #20 days since last flavor
-				country_event = { id = DRL.277 days = 145 random = 500 } #55 days since last flavor
-				country_event = { id = DRL.335 days = 170 random = 500 } #25 days since last flavor
-				country_event = { id = DRL.342 days = 200 random = 500 } #30 days since last flavor
-				country_event = { id = DRL.305 days = 230 random = 500 } #30 days since last flavor
-				country_event = { id = DRL.349 days = 270 random = 500 } #40 days since last flavor
-				country_event = { id = DRL.322 days = 310 random = 500 } #40 days since last flavor
-				country_event = { id = DRL.285 days = 350 random = 500 } #40 days since last flavor
-				country_event = { id = DRL.278 days = 410 random = 500 } #60 days since last flavor
-				country_event = { id = DRL.280 days = 495 random = 500 } #85 days since last flavor
-				country_event = { id = DRL.280 days = 575 random = 500 } #80 days since last flavor
-				country_event = { id = DRL.286 days = 625 random = 500 } #50 days since last flavor
-				country_event = { id = DRL.283 days = 715 random = 500 } #90 days since last flavor
-				country_event = { id = DRL.284 days = 800 random = 500 } #85 days since last flavor
-				country_event = { id = DRL.282 days = 850 random = 500 } #50 days since last flavor
-				country_event = { id = DRL.287 days = 890 random = 500 } #40 days since last flavor
-				country_event = { id = DRL.376 days = 950 random = 500 } #60 days since last flavor
+				country_event = { id = DRL.318 days = 10 random_hours = 500 } #10 days since last flavor
+				country_event = { id = DRL.276 days = 45 random_hours = 500 } #35 days since last flavor
+				country_event = { id = DRL.315 days = 70 random_hours = 500 } #25 days since last flavor
+				country_event = { id = DRL.316 days = 90 random_hours = 500 } #20 days since last flavor
+				country_event = { id = DRL.277 days = 145 random_hours = 500 } #55 days since last flavor
+				country_event = { id = DRL.335 days = 170 random_hours = 500 } #25 days since last flavor
+				country_event = { id = DRL.342 days = 200 random_hours = 500 } #30 days since last flavor
+				country_event = { id = DRL.305 days = 230 random_hours = 500 } #30 days since last flavor
+				country_event = { id = DRL.349 days = 270 random_hours = 500 } #40 days since last flavor
+				country_event = { id = DRL.322 days = 310 random_hours = 500 } #40 days since last flavor
+				country_event = { id = DRL.285 days = 350 random_hours = 500 } #40 days since last flavor
+				country_event = { id = DRL.278 days = 410 random_hours = 500 } #60 days since last flavor
+				country_event = { id = DRL.280 days = 495 random_hours = 500 } #85 days since last flavor
+				country_event = { id = DRL.280 days = 575 random_hours = 500 } #80 days since last flavor
+				country_event = { id = DRL.286 days = 625 random_hours = 500 } #50 days since last flavor
+				country_event = { id = DRL.283 days = 715 random_hours = 500 } #90 days since last flavor
+				country_event = { id = DRL.284 days = 800 random_hours = 500 } #85 days since last flavor
+				country_event = { id = DRL.282 days = 850 random_hours = 500 } #50 days since last flavor
+				country_event = { id = DRL.287 days = 890 random_hours = 500 } #40 days since last flavor
+				country_event = { id = DRL.376 days = 950 random_hours = 500 } #60 days since last flavor
 			}
 
 			PRM = {
-				country_event = { id = PRM_initial.30 days = 365 random = 500 } #
+				country_event = { id = PRM_initial.30 days = 365 random_hours = 500 } #
 			}
 
 			YAK = {
@@ -300,61 +295,52 @@ on_actions = {
 			}
 
 			SAM = {
-				country_event = { id = SAM.304 days = 66 random = 72 } #Curious Origins
+				country_event = { id = SAM.304 days = 66 random_hours = 72 } #Curious Origins
 				country_event = { id = SAM.305 days = 40 } #The Monthly Shipment
 				country_event = { id = SAM.306 days = 80 } #The Iron Harvest
 				country_event = { id = SAM.307 days = 120 } #Tsarists and Liberators
 				country_event = { id = SAM.308 days = 160 } #Strikes in Samara
 				country_event = { id = SAM.309 days = 200 } #News from the East
 				country_event = { id = SAM.310 days = 25 } #A New Factory for Old Guns
-				country_event = { id = SAM.312 days = 100 random = 72 } #Will of the People
+				country_event = { id = SAM.312 days = 100 random_hours = 72 } #Will of the People
 			}
 
 			SVR = {
-				country_event = { id = SVR.5 days = 100 random = 72 } #Do Your Duty
-				country_event = { id = SVR.34 days = 24 random = 72 } #Batov Intro
-				country_event = { id = SVR.38 days = 58 random = 72 } #A Difference of Opinion
-				country_event = { id = SVR.44 days = 38 random = 72 } #Foundations of Democracy
+				country_event = { id = SVR.5 days = 100 random_hours = 72 } #Do Your Duty
+				country_event = { id = SVR.34 days = 24 random_hours = 72 } #Batov Intro
+				country_event = { id = SVR.38 days = 58 random_hours = 72 } #A Difference of Opinion
+				country_event = { id = SVR.44 days = 38 random_hours = 72 } #Foundations of Democracy
 				country_event = { id = SVR.110 days = 45 } #Start of event chain - Not so Red Army
-				country_event = { id = SVR.151 days = 165 random = 48 } #The Aviators over the Military District
+				country_event = { id = SVR.151 days = 165 random_hours = 48 } #The Aviators over the Military District
 			}
 
 			NOV = {
 				country_event = { id = NOV.9 days = 21 } #Shukshin intro event
 				country_event = { id = NOV.14 days = 14 } #Narodnik intro
-				country_event = { id = NOV.28 days = 28 random = 50 } #Up in the Air
-				country_event = { id = NOV.28 days = 60 random = 50 } #Narodnik intro event
-				country_event = { id = NOV.39 days = 70 random = 50 } #Weekly Business
-				country_event = { id = NOV.46 days = 100 random = 30 } #A Day on the Kit Farm
+				country_event = { id = NOV.28 days = 28 random_hours = 50 } #Up in the Air
+				country_event = { id = NOV.28 days = 60 random_hours = 50 } #Narodnik intro event
+				country_event = { id = NOV.39 days = 70 random_hours = 50 } #Weekly Business
+				country_event = { id = NOV.46 days = 100 random_hours = 30 } #A Day on the Kit Farm
 				country_event = { id = NOV.47 days = 35 } #Megacorp event
-				country_event = { id = NOV_regional.19 days = 1860 random = 48 } #Kharitonov event
-				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
-			}
-
-			PRC = {
-				country_event = { id = PRC_flavor.1 days = 1860 random = 48 } #Distant Days
-				country_event = { id = PRC_flavor.2 days = 2920 random = 48 } #In Old Ossetia
-				country_event = { id = PRC_flavor.3 days = 1580 random = 50 } #Echoes of Khalkhin Gol
-				country_event = { id = PRC_flavor.4 days = 60 random = 50 } #Path of Peace
-				country_event = { id = PRC_flavor.5 days = 90 random = 50 } #For Glory Once More
+				country_event = { id = NOV_regional.19 days = 1860 random_hours = 48 } #Kharitonov event
 				add_timed_idea = { idea = CEN_SIB_the_flight_east days = 790 }
 			}
 
 			ZLT = {
-				country_event = { id = ZLT.17 days = 72 random = 24 } #A Simple Tinkerer
-				country_event = { id = ZLT.18 days = 150 random = 24 } #The Aviators over the Republic
+				country_event = { id = ZLT.17 days = 72 random_hours = 24 } #A Simple Tinkerer
+				country_event = { id = ZLT.18 days = 150 random_hours = 24 } #The Aviators over the Republic
 			}
 
 			URL = {
-				country_event = { id = URL.100 days = 5 random = 500 } #Village bombing
-				country_event = { id = URL.101 days = 100 random = 500 } #Mendriks makes a book of poetry
-				country_event = { id = URL.104 days = 300 random = 500 } #Prisoner from Kolyma
-				country_event = { id = URL.106 days = 600 random = 500 } #The Wandering Shephard
-				country_event = { id = URL.112 days = 30 random = 500 } #The Long March Remembered
-				country_event = { id = URL.113 days = 60 random = 500 } #What Remains
-				country_event = { id = URL.115 days = 75 random = 500 } #Guns, Bread, and Labor
-				country_event = { id = URL.117 days = 20 random = 500 } #Guard Relief Brigade
-				country_event = { id = URL.118 days = 125 random = 500 } #The Leshy
+				country_event = { id = URL.100 days = 5 random_hours = 500 } #Village bombing
+				country_event = { id = URL.101 days = 100 random_hours = 500 } #Mendriks makes a book of poetry
+				country_event = { id = URL.104 days = 300 random_hours = 500 } #Prisoner from Kolyma
+				country_event = { id = URL.106 days = 600 random_hours = 500 } #The Wandering Shephard
+				country_event = { id = URL.112 days = 30 random_hours = 500 } #The Long March Remembered
+				country_event = { id = URL.113 days = 60 random_hours = 500 } #What Remains
+				country_event = { id = URL.115 days = 75 random_hours = 500 } #Guns, Bread, and Labor
+				country_event = { id = URL.117 days = 20 random_hours = 500 } #Guard Relief Brigade
+				country_event = { id = URL.118 days = 125 random_hours = 500 } #The Leshy
 			}
 
 			ONG = {
@@ -369,12 +355,12 @@ on_actions = {
 			CHT = {
 				country_event = { id = CHT.1 days = 1 } #Intro Event
 				country_event = { id = CHT.2 days = 182 } #Death of Semyonov
-				country_event = { id = CHT.18 days = 91 random = 24 } #Letter 1
-				country_event = { id = CHT.26 days = 14 random = 24 } #The Webweaver
-				country_event = { id = CHT.27 days = 50 random = 24 } #The Kingmaker
-				country_event = { id = CHT.28 days = 68 random = 24 } #The Young General
-				country_event = { id = CHT.29 days = 125 random = 24 } #The Strongman
-				country_event = { id = CHT.30 days = 68 random = 24 } #Passing the Torch
+				country_event = { id = CHT.18 days = 91 random_hours = 24 } #Letter 1
+				country_event = { id = CHT.26 days = 14 random_hours = 24 } #The Webweaver
+				country_event = { id = CHT.27 days = 50 random_hours = 24 } #The Kingmaker
+				country_event = { id = CHT.28 days = 68 random_hours = 24 } #The Young General
+				country_event = { id = CHT.29 days = 125 random_hours = 24 } #The Strongman
+				country_event = { id = CHT.30 days = 68 random_hours = 24 } #Passing the Torch
 				country_event = { id = CHT_regional.53 days = 2527 } #Death of a Stranger
 				country_event = { id = CHT_regional.55 days = 2355 } #
 				add_timed_idea = { idea = RUS_FE_the_flight_east days = 790 }
@@ -382,8 +368,8 @@ on_actions = {
 
 			WRS = {
 				set_country_flag = WRS_reformed_flag
-				country_event = { id = tukha.86 days = 48 random = 24 } #Across the Lines - Tukha letter to Shostakovich in Tomsk
-				country_event = { id = WRS.89 days = 2555 random = 24 } #
+				country_event = { id = tukha.86 days = 48 random_hours = 24 } #Across the Lines - Tukha letter to Shostakovich in Tomsk
+				country_event = { id = WRS.89 days = 2555 random_hours = 24 } #
 			}
 
 			IRK = {
@@ -416,7 +402,7 @@ on_actions = {
 						is_west_siberian_nation = yes
 					}
 				}
-				set_country_flag = zlt_sphere_of_influence
+				set_country_flag = ZLT_sphere_of_influence
 			}
 
 			ZLT = {
@@ -437,16 +423,13 @@ on_actions = {
 					}
 				}
 			}
-			KAZ = { 
-				country_event = { id = KAZ_skeleton.1 days = 627 }
-			}
 			#Culture Events
 			DRL = {
-				country_event = { id = DRL.352 days = 150 random = 3600 } #Black Square
-				country_event = { id = DRL.353 days = 300 random = 2400 } #Drunken Party
-				country_event = { id = DRL.354 days = 450 random = 4800 } #The Last Stand
-				country_event = { id = DRL.355 days = 600 random = 1200 } #A New Game
-				country_event = { id = DRL.356 days = 250 random = 4000 } #A Fight Gone Horribly Right
+				country_event = { id = DRL.352 days = 150 random_hours = 3600 } #Black Square
+				country_event = { id = DRL.353 days = 300 random_hours = 2400 } #Drunken Party
+				country_event = { id = DRL.354 days = 450 random_hours = 4800 } #The Last Stand
+				country_event = { id = DRL.355 days = 600 random_hours = 1200 } #A New Game
+				country_event = { id = DRL.356 days = 250 random_hours = 4000 } #A Fight Gone Horribly Right
 			}
 
 			SAM = {
@@ -467,7 +450,7 @@ on_actions = {
 					}
 					is_central_siberian_nation = yes
 				}
-				country_event = { id = KRS.2 days = 221 random = 24 }
+				country_event = { id = RUS.4 days = 221 random_hours = 24 }
 			}
 
 			every_country = {
@@ -477,7 +460,7 @@ on_actions = {
 						is_russian_nation = yes
 					}
 				}
-				country_event = { id = RUS.12 days = 21 random = 24 } #The Modern Bogatyr
+				country_event = { id = RUS.12 days = 21 random_hours = 24 } #The Modern Bogatyr
 			}
 		}
 	}
@@ -599,8 +582,23 @@ on_actions = {
 			KAZ = {
 				set_variable = { RUS_integration_cost_days = 55 }
 			}
-			KZR = {
-				set_variable = { RUS_integration_cost_days = 55 }
+			ARL = {
+				set_variable = { RUS_integration_cost_days = 50 }
+			}
+			AKT = {
+				set_variable = { RUS_integration_cost_days = 120 }
+			}
+			DER = {
+				set_variable = { RUS_integration_cost_days = 70 }
+			}
+			PAV = {
+				set_variable = { RUS_integration_cost_days = 40 }
+			}
+			KOK = {
+				set_variable = { RUS_integration_cost_days = 100 }
+			}
+			NPL = {
+				set_variable = { RUS_integration_cost_days = 120 }
 			}
 
 
@@ -748,18 +746,6 @@ on_actions = {
 				set_variable = { RUS_siberian_plan_resources = 0 }
 				set_variable = { RUS_siberian_plan_efficiency_gain = 0 }
 				SIB_gui_pulse_effect = yes
-
-				set_country_flag = PRC_political_path_decisions
-				set_variable = { PRC_Army_Power = 80 }
-				set_variable = { PRC_Army_Loyalty = 85 }
-				set_variable = { PRC_Civilian_Power = 30 }
-				set_variable = { PRC_Civilian_Loyalty = 60 }
-				add_dynamic_modifier = { modifier = PRC_army_civilian_support }
-				PRC_clamp_regional_vars = yes
-				PRC_monthly_decay_estates = yes
-				814 = {
-					set_variable = { PRC_Owner = -1 }
-				}
 			}
 
 			ORE = {
@@ -889,9 +875,9 @@ on_actions = {
 			every_country = {
 				limit = {
 					NOT = {
-							has_idea = KOM_socintern_member
-							has_idea = KOM_socintern_associate
-						}
+						has_idea = KOM_socintern_member
+						has_idea = KOM_socintern_associate
+					}
 					OR = {
 						has_government = communist
 						has_government = socialist
@@ -921,6 +907,7 @@ on_actions = {
 
 			VOL = { set_country_flag = cannot_raid }
 			ORE = { set_country_flag = cannot_raid }
+			NPL = { set_country_flag = cannot_raid }
 			FAV = { set_country_flag = cannot_raid }
 			URL = { set_country_flag = cannot_raid }
 
@@ -1061,56 +1048,6 @@ on_actions = {
 		}
 	}
 
-	on_monthly_PRC = {
-		effect = {
-			if = {
-				limit = { PRC = { is_ai = yes } }
-				every_owned_state = {
-					limit = {
-						PRC_can_assign_status = yes
-					}
-					if = {
-						limit = {
-							PRC = { has_country_flag = PRC_destroyed_citzenry }
-						}
-						PRC_add_mil_status_effect = yes
-					}
-					else_if = {
-						limit = {
-							PRC = { has_country_flag = PRC_destroyed_military }
-						}
-						PRC_add_civ_status_effect = yes
-					}
-					else = {
-						PRC = {
-							set_temp_variable = { PRC_total = 0 }
-							set_variable = { PRC_mil_chance = 1 }
-							set_variable = { PRC_civ_chance = 1 }
-							if = {
-								limit = { # More state controlled by military
-									check_variable = { PRC_total < 0 }
-								}
-								# Subtract a negative number is adding it's absolute value
-								subtract_from_variable = { PRC_civ_chance = PRC_total }
-							}
-							else = { # More state controlled by citzenry / balanced
-								add_to_variable = { PRC_mil_chance = PRC_total }
-							}
-						}
-						random_list = {
-							PRC.PRC_civ_chance = {
-								PRC_add_civ_status_effect = yes
-							}
-							PRC.PRC_mil_chance = {
-								PRC_add_mil_status_effect = yes
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	on_weekly_FIN = {
 		effect = {
 			if = {
@@ -1119,20 +1056,54 @@ on_actions = {
 				}
 				WSR = {
 					add_to_variable = { MPRInterventionProgress = MPRInterventionProgressGain }
+					clamp_variable = { var = MPRInterventionProgress max = 100 }
 				}
 			}
 		}
 	}
-	on_monthly_OMO = {
+
+	on_monthly_FIN = {
 		effect = {
-			OMO = {
+			if = {
+				limit = { country_exists = ONG }
 				if = {
 					limit = {
-						has_dynamic_modifier = {
-							modifier = OMO_out_of_time
-						}
+						ONG = { has_idea = ONG_finland_dependence_low }
 					}
-					add_to_variable = { OMO_surrender_limit = -0.05 }
+					FIN = {
+						set_temp_variable = { temp_econ_spending_amount = 0.025 }
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					ONG = {
+						set_temp_variable = { temp_econ_GDP_boost_flat = 0.025 }
+						econ_GDP_boost_once_flat = yes
+					}
+				}
+				else_if = {
+					limit = {
+						ONG = { has_idea = ONG_finland_dependence_medium }
+					}
+					FIN = {
+						set_temp_variable = { temp_econ_spending_amount = 0.05 }
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					ONG = {
+						set_temp_variable = { temp_econ_GDP_boost_flat = 0.05 }
+						econ_GDP_boost_once_flat = yes
+					}
+				}
+				else_if = {
+					limit = {
+						ONG = { has_idea = ONG_finland_dependence_high }
+					}
+					FIN = {
+						set_temp_variable = { temp_econ_spending_amount = 0.075 }
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					ONG = {
+						set_temp_variable = { temp_econ_GDP_boost_flat = 0.075 }
+						econ_GDP_boost_once_flat = yes
+					}
 				}
 			}
 		}
@@ -1282,7 +1253,7 @@ on_actions = {
 					}
 				}
 				OMS = {
-					country_event = { id = omsk.46 days = 36 random = 72 }
+					country_event = { id = omsk.46 days = 36 random_hours = 72 }
 				}
 			}
 			else_if = {
@@ -1299,7 +1270,7 @@ on_actions = {
 					}
 				}
 				OMS = {
-					country_event = { id = omsk.47 days = 36 random = 72 }
+					country_event = { id = omsk.47 days = 36 random_hours = 72 }
 					country_event = { id = omskexp.19 days = 2 }
 				}
 			}
@@ -1488,7 +1459,7 @@ on_actions = {
 					}
 				}
 				BRY = {
-					country_event = { id = BRY.85 days = 36 random = 72 }
+					country_event = { id = BRY.85 days = 36 random_hours = 72 }
 				}
 			}
 			else_if = {
@@ -1521,7 +1492,7 @@ on_actions = {
 					}
 				}
 				IRK = {
-					country_event = { id = IRK_superregional.22 days = 36 random = 72 }
+					country_event = { id = IRK_superregional.22 days = 36 random_hours = 72 }
 				}
 			}
 			else_if = {
@@ -1538,7 +1509,7 @@ on_actions = {
 					}
 				}
 				IRK = {
-					country_event = { id = IRK_superregional.21 days = 36 random = 72 }
+					country_event = { id = IRK_superregional.21 days = 36 random_hours = 72 }
 				}
 			}
 			else_if = {
@@ -1571,7 +1542,7 @@ on_actions = {
 					}
 				}
 				BRY = {
-					country_event = { id = BRY.85 days = 36 random = 72 }
+					country_event = { id = BRY.85 days = 36 random_hours = 72 }
 				}
 			}
 			else_if = {
@@ -1608,7 +1579,7 @@ on_actions = {
 					}
 				}
 				TOM = {
-					country_event = { id = TOM.156 days = 24 random = 72 }
+					country_event = { id = TOM.156 days = 24 random_hours = 72 }
 				}
 			}
 			#else_if = {
@@ -1658,7 +1629,7 @@ on_actions = {
 					}
 				}
 				VYT = {
-					country_event = { id = VYT.65 days = 7 random = 36 }
+					country_event = { id = VYT.65 days = 7 random_hours = 36 }
 				}
 			}
 			else_if = {
@@ -1945,7 +1916,7 @@ on_actions = {
 							NOT = {
 								has_idea = KOM_unrestricted_arsenal
 								has_idea = KOM_unrestricted_arsenal_2
-						}
+							}
 						}
 						set_country_flag = RUS_OWNS_SYKTYVKAR_ARSENAL
 						country_event = { id = RUS_wonder.2 hours = 1 }
@@ -1959,7 +1930,7 @@ on_actions = {
 							NOT = {
 								has_idea = KOM_unrestricted_arsenal
 								has_idea = KOM_unrestricted_arsenal_2
-						}
+							}
 						}
 						clr_country_flag = RUS_OWNS_SYKTYVKAR_ARSENAL
 						country_event = { id = RUS_wonder.5 hours = 1 }
@@ -2446,9 +2417,9 @@ on_actions = {
 						OR = {
 							has_war = no
 							any_enemy_country = {
-							is_russian_nation = no
+								is_russian_nation = no
+							}
 						}
-					}
 					}
 					set_variable = { RUS_surrender_limit = 0 }
 					clr_country_flag = RUS_war_start

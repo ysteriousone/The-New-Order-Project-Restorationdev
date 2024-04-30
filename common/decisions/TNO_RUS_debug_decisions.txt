@@ -263,6 +263,20 @@ RUS_generic_debug = {
 		}
 	}
 
+	RUS_unite_kazakhstan = {
+		icon = GFX_decision_generic_form_nation
+
+		allowed = {
+			is_kazakh_nation = yes
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_unite_kazakhstan"
+			unite_kazakhstan = yes
+		}
+	}
+
+	#
+
 	RUS_unite_wrs = {
 		icon = GFX_decision_generic_form_nation
 
@@ -844,7 +858,6 @@ OMO_debug_category = {
 					tno_safety_limited_regulations
 				}
 				every_country = {
-					limit = { is_ai = no }
 					news_event = WORLD.104
 				}
 			}

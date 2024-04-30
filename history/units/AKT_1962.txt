@@ -1,0 +1,80 @@
+﻿division_template = {
+	name = "Jayaw Bolim"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+division_template = {
+	name = "Miliciya Bolimsesi"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Motorizovanniy Bolim"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+division_template = {
+	name = "Qarw-jaraq Bolimsesi"
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+	}
+}
+
+units = {
+	division = {
+		name = "1-y Blyusrettik Bolim 'Jogargı Lider'"
+		location = "11701"
+		division_template = "Miliciya Bolimsesi"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4-y Motor Bolim 'Kusmangali'"
+		location = "11701"
+		division_template = "Motorizovanniy Bolim"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "3-y Jayaw Bolim 'Gaziz'"
+		location = "11701"
+		division_template = "Jayaw Bolim"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2-y Jayaw Bolim 'Aktau'"
+		location = "475"
+		division_template = "Jayaw Bolim"
+		start_experience_factor = 0.1
+	}
+}

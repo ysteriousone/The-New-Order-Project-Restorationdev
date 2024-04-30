@@ -1,75 +1,33 @@
 characters = {
 	# Leaders
-	KAZ_Dinmukhamed_Kunaev = {
-		name = KAZ_Dinmukhamed_Kunaev
+	KAZ_Bauryzhan_Momyshuly = {
+		name = KAZ_Bauryzhan_Momyshuly
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Dinmukhamed_Kunaev.dds"
-				small = "GFX_idea_KAZ_minister_Dinmukhamed_Kunaev"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Bauryzhan_Momyshuly.dds"
+				small = "GFX_idea_KAZ_minister_Bauryzhan_Momyshuly"
+			}
+			army = {
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Bauryzhan_Momyshuly.dds"
+				small = "GFX_idea_KAZ_minister_Bauryzhan_Momyshuly"
 			}
 		}
-		country_leader = {
-			desc = "POLITICS_DINMUKHAMED_KUNAEV_DESC"
-			expire = "1999.1.1.1"
-			ideology = communist_subtype
-			id = -1
-		}
-		advisor = {
-			slot = economy_minister
-			idea_token = KAZ_Dinmukhamed_Kunaev_eco
-			allowed = { original_tag = KAZ }
-			traits = {
-				economy_minister
-				eco_mixed_economy
-			}
-			ledger = civilian
-			cost = -1
-			can_be_fired = no
-			ai_will_do = { factor = 0 }
-		}
-	}
 
-	KAZ_Stanislaw_Skrzeszewski = {
-		name = KAZ_Stanislaw_Skrzeszewski
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Stanislaw_Skrzeszewski.dds"
-			}
-		}
 		country_leader = {
-			desc = "POLITICS_STANISLAW_SKRZESZEWSKI_DESC"
-			expire = "1999.1.1.1"
-			ideology = communist_subtype
-			id = -1
-		}
-	}
-
-	KAZ_Pavel_Fitin = {
-		name = KAZ_Pavel_Fitin
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Pavel_Fitin.dds"
-			}
-		}
-		country_leader = {
-			desc = "POLITICS_PAVEL_FITIN_DESC"
-			expire = "1999.1.1.1"
-			ideology = communist_marxism_leninism_subtype
-			id = -1
-		}
-	}
-	KAZ_Zhumabek_Tashenev = {
-		name = KAZ_Zhumabek_Tashenev
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Zhumabek_Tashenev.dds"
-			}
-		}
-		country_leader = {
-			desc = "POLITICS_ZHUMABEK_TASHENEV_DESC"
+			desc = "POLITICS_BAURYZHAN_MOMYSHULY_DESC"
 			expire = "1999.1.1.1"
 			ideology = communist_national_communism_subtype
 			id = -1
+		}
+
+		field_marshal = {
+			traits = { war_hero brilliant_strategist inspirational_leader organizer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id = 3491
 		}
 	}
 
@@ -78,19 +36,13 @@ characters = {
 		name = KAZ_Sagadat_Nurmagambetov
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Sagadat_Nurmagambetov.dds"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Sagadat_Nurmagambetov.dds"
 				small = "GFX_idea_KAZ_minister_Sagadat_Nurmagambetov"
 			}
 			army = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Sagadat_Nurmagambetov.dds"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Sagadat_Nurmagambetov.dds"
 				small = "GFX_idea_KAZ_minister_Sagadat_Nurmagambetov"
 			}
-		}
-		country_leader = {
-			desc = "POLITICS_SAGADAT_NURMAGAMBETOV_DESC"
-			expire = "1999.1.1.1"
-			ideology = despotism_partisan_movement_subtype
-			id = -1
 		}
 		corps_commander = {
 			traits = { inflexible_strategist war_hero organizer }
@@ -102,6 +54,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 3492
 		}
+
 		advisor = {
 			slot = head_of_government
 			idea_token = KAZ_Sagadat_Nurmagambetov_hog
@@ -119,18 +72,7 @@ characters = {
 
 	KAZ_Ismail_Yusupov = {
 		name = KAZ_Ismail_Yusupov
-		portraits = { 
-			civilian = { 
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Ismail_Yusupov.dds"
-				small = "GFX_idea_KAZ_minister_Ismail_Yusupov" 
-			}
-		}
-		country_leader = {
-			desc = "POLITICS_ISMAIL_YUSUPOV_DESC"
-			expire = "1999.1.1.1"
-			ideology = communist_subtype
-			id = -1
-		}
+		portraits = { civilian = { small = "GFX_idea_KAZ_minister_Ismail_Yusupov" } }
 		advisor = {
 			slot = foreign_minister
 			idea_token = KAZ_Ismail_Yusupov_for
@@ -146,15 +88,33 @@ characters = {
 		}
 	}
 
+	KAZ_Dinmukhamed_Kunayev = {
+		name = KAZ_Dinmukhamed_Kunayev
+		portraits = { civilian = { small = "GFX_idea_KAZ_minister_Dinmukhamed_Kunayev" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = KAZ_Dinmukhamed_Kunayev_eco
+			allowed = { original_tag = KAZ }
+			traits = {
+				economy_minister
+				eco_mixed_economy
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
 	KAZ_Rakhimzhan_Qoshqarbaev = {
 		name = KAZ_Rakhimzhan_Qoshqarbaev
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Rakhimzhan_Qoshqarbaev.dds"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Rakhimzhan_Qoshqarbaev.dds"
 				small = "GFX_idea_KAZ_minister_Rakhimzhan_Qoshqarbaev"
 			}
 			army = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Rakhimzhan_Qoshqarbaev.dds"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Rakhimzhan_Qoshqarbaev.dds"
 				small = "GFX_idea_KAZ_minister_Rakhimzhan_Qoshqarbaev"
 			}
 		}
@@ -184,30 +144,12 @@ characters = {
 	}
 
 	# Commanders
-	KAZ_Bauryzhan_Momyshuly = {
-		name = KAZ_Bauryzhan_Momyshuly
-		portraits = {
-			army = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Bauryzhan_Momyshuly.dds"
-			}
-		}
-
-		field_marshal = {
-			traits = { war_hero brilliant_strategist inspirational_leader organizer }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 2
-			legacy_id = 3491
-		}
-	}
-
 	KAZ_Serikkazy_Bekbosunov = {
 		name = KAZ_Serikkazy_Bekbosunov
 		portraits = {
 			army = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Serikkazy_Bekbosunov.dds"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Serikkazy_Bekbosunov.dds"
+				small = "GFX_idea_KAZ_minister_Serikkazy_Bekbosunov"
 			}
 		}
 		corps_commander = {
@@ -225,7 +167,8 @@ characters = {
 		name = KAZ_Mao_Anying
 		portraits = {
 			army = {
-				large = "gfx/leaders/KAZ/Portrait_Kazakhstan_Mao_Anying.dds"
+				large = "gfx/leaders/KAZ/Portrait_Kyzylorda_Mao_Anying.dds"
+				small = "GFX_idea_KAZ_minister_Mao_Anying"
 			}
 		}
 		corps_commander = {

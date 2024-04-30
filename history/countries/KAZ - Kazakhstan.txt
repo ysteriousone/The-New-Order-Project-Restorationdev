@@ -4,8 +4,6 @@ capital = 589
 recruit_character = KAZ_Generic_Vacant
 
 
-
-
 oob = "KAZ_1962"
 set_air_oob = "KAZ_1962_air"
 
@@ -14,51 +12,51 @@ set_politics = {
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+
 }
 
 set_popularities = {
-	communist = 72
-	socialist = 3
+	communist = 70
+	socialist = 30
 	progressivism = 0
-	liberalism = 4
-	liberal_conservatism = 0
-	conservatism = 4
-	despotism = 4
-	paternalism = 8
-	fascism = 5
+	liberalism = 0
+
+	despotism = 0
+	conservatism = 0
+	paternalism = 0
+	fascism = 0
 	national_socialism = 0
 	ultranationalism = 0
+	
 }
 
 # Leaders
-recruit_character = KAZ_Dinmukhamed_Kunaev
-recruit_character = KAZ_Ismail_Yusupov # ForMin
-recruit_character = KAZ_Pavel_Fitin
-recruit_character = KAZ_Stanislaw_Skrzeszewski
-recruit_character = KAZ_Zhumabek_Tashenev
-recruit_character = KAZ_Sagadat_Nurmagambetov # HoG and General
+recruit_character = KAZ_Bauryzhan_Momyshuly # HoS, Field Marshal
 
 # Ministers
+recruit_character = KAZ_Sagadat_Nurmagambetov # HoG and General
+recruit_character = KAZ_Ismail_Yusupov # ForMin
+recruit_character = KAZ_Dinmukhamed_Kunayev # EconMin
 recruit_character = KAZ_Rakhimzhan_Qoshqarbaev # SecMin and General
 
-
 # Commanders
-recruit_character = KAZ_Bauryzhan_Momyshuly # Field Marshal
 recruit_character = KAZ_Serikkazy_Bekbosunov
 recruit_character = KAZ_Mao_Anying
 
 add_ideas = {
 	##STANDARD##
-
-	KAZ_the_gates_of_hell
-	KAZ_red_kenesary_watches
-	KAZ_spymasters_legion
+	KAZ_kaz_red_army
+	KAZ_base_idea
+	KAZ_bandit_plague
 	RUS_warlord_manpower
 	RUS_warlord_econ
+	KAZ_red_army_state
+	KAZ_new_soviet_democracy
+	##construction_level_not_applicable
 	###MINISTERS###
 	KAZ_Sagadat_Nurmagambetov_hog
 	KAZ_Ismail_Yusupov_for
-	KAZ_Dinmukhamed_Kunaev_eco
+	KAZ_Dinmukhamed_Kunayev_eco
 	KAZ_Rakhimzhan_Qoshqarbaev_sec
 	##POLITICAL LAWS##
 	tno_political_parties_one_party_state
@@ -87,7 +85,7 @@ add_ideas = {
 	tno_minimum_wage_acceptable_minimum
 	tno_max_workhours_12_hour_work_day
 	tno_pensions_low_pensions
-	tno_unemployment_low_subsidieS
+	tno_unemployment_low_subsidies
 	##MISC LAWS##
 	tno_refugees_vetted_entry
 	tno_women_combat_roles
@@ -98,7 +96,7 @@ add_ideas = {
 	tno_minorities_equal_rights
 	tno_child_labor_illegal
 	##SOCIETAL DEVELOPMENT##
-	tno_army_professionalism_cronyism
+	tno_army_professionalism_political_interference
 	tno_industrial_expertise_nascent
 	tno_industrial_equipment_manufacturing_lines
 	tno_healthcare_nascent
@@ -129,6 +127,7 @@ set_technology = {
 	infantry_at = 1
 	infantry_at_upgrade_1 = 1
 	motorized_infantry = 1
+	tech_special_forces = 1
 	#infantry_aa = 1
 	#infantry_aa2 = 1
 	##SUPPORT##
@@ -138,23 +137,8 @@ set_technology = {
 	tech_recon = 1
 	tech_recon2 = 1
 	##ARTY##
-	artillery4 = 1
-	antiair5 = 1
+
 	##ARMOR##
-	advanced_light_tank = 1
-	advanced_medium_tank = 1
-	mechanised_infantry3 = 1
-
-	APC_1950 = 1
-	APC_1950_basic_turret = 1
-	#APC_1950_basic_engine = 1
-
-	IFV_1950 = 1
-
-	MBT_1950 = 1
-
-	AC_1945 = 1
-	AC_1950 = 1
 
 	##AIRCRAFT##
 	early_fighter = 1
@@ -175,6 +159,7 @@ set_technology = {
 	##ENGINEERING##
 	electronic_mechanical_engineering = 1
 	radio = 1
+	radio_detection = 1
 	mechanical_computing = 1
 	computing_machine = 1
 	basic_encryption = 1
@@ -182,10 +167,161 @@ set_technology = {
 	##INDUSTRY##
 	ww2_line_production = 1
 	batch_production_1 = 1
+	building_construction_1 = 1
 	resource_extraction_methods = 1
 	excavation0 = 1
 	energy_technology_1 = 1
-	building_construction_1 = 1
 	social_construction_1 = 1
 	military_construction_1 = 1
+}
+
+# NSB tech #
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		IFV_1945 = 1
+		MBT_1945 = 1
+		APC_1945 = 1
+
+		APC_1950 = 1
+		APC_1950_basic_turret = 1
+		#APC_1950_basic_engine = 1
+
+		IFV_1950 = 1
+
+		MBT_1950 = 1
+
+		Heavy_1945 = 1
+
+		AC_1945 = 1
+		AC_1950 = 1
+
+		artillery_1945 = 1
+		antiair_1945 = 1
+		antiair_1950 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		NSB_APC_1945 = 1
+		NSB_APC_1950 = 1
+		#
+
+		NSB_IFV_1945 = 1
+		NSB_IFV_1945_modules_1 = 1
+		NSB_IFV_1945_modules_2 = 1
+		NSB_IFV_1950 = 1
+
+		NSB_MBT_1945 = 1
+		NSB_MBT_1945_modules_1 = 1
+		NSB_MBT_1945_modules_2 = 1
+		NSB_MBT_1950 = 1
+
+		NSB_AC_1945 = 1
+		NSB_AC_1950 = 1
+
+		NSB_Heavy_1945 = 1
+
+		NSB_Armour_1 = 1
+		NSB_Engine_1 = 1
+
+		NSB_artillery_1945 = 1
+
+		NSB_antiair_1945 = 1
+		NSB_antiair_1950 = 1
+	}
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 1000
+	producer = KAZ
+}
+
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 250
+	producer = KAZ
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 100
+	producer = KAZ
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 300
+	producer = KAZ
+}
+
+# NSB #
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "T-34-85"
+		type = MBT_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = MBT_cannon
+			turret_type_slot = MBT_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = secondary_turret_hmg
+		}
+		icon = GFX_WRS_MBT_1945_medium
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 6
+		}
+	}
+
+	create_equipment_variant = {
+		name = "T-70"
+		type = IFV_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = IFV_cannon
+			turret_type_slot = IFV_one_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		
+		icon = GFX_WRS_IFV_1945_medium
+		upgrades = {
+			tank_nsb_engine_upgrade = 4
+			tank_nsb_armor_upgrade = 4
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "BTR-50"
+		type = APC_chassis_1
+		parent_version = 0
+		modules = {
+			APC_designation_slot = APC_infantry
+			APC_armament_slot = APC_infantry_weapon
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = command_optics
+		}
+		
+		icon = GFX_WRS_APC_1950_medium
+		upgrades = {
+			ac_nsb_engine_upgrade = 8
+			ac_nsb_armor_upgrade = 4
+		}
+	}
 }

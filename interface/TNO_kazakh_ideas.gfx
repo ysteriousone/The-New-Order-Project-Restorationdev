@@ -1,0 +1,124 @@
+spriteTypes = {
+	###Kazakhstan I think
+
+	spriteType = {
+		name = "GFX_idea_NPL_nation_of_survivors"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_NPL_nation_of_survivors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_Spychalski_Bizarre_Dictatorship"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_NPL_Spychalski_Bizarre_Dictatorship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NPL_Polish_Minority_rule"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_NPL_Polish_Minority_rule.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_national_renewal"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_national_renewal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_Khromtau_Security_Forces"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_Khromtau_Security_Forces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_Army_Manual"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_Army_Manual.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_breakneck_industrialization"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_breakneck_industrialization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_spreading_famine"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_spreading_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_Defensive_Surveys"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_Defensive_Surveys.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARL_Renovated_Land_Registry"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_ARL_Renovated_Land_Registry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_death_to_russians"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AKT_death_to_russians.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_Kazakh_Horsemen"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AKT_Kazakh_Horsemen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_Pure_Kazakh_State"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AKT_Pure_Kazakh_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_Russian_Slaves"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AKT_Russian_Slaves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_Steppe_Survivors"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AKT_Steppe_Survivors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AKT_Chosen_of_Tengri"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_AKT_Chosen_of_Tengri.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PAV_idealistic_revolutionaries"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_PAV_idealistic_revolutionaries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOK_new_khan"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_KOK_the_new_khan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_islamic_brigades"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_islamic_anti_bandit_brigades.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_Arm_Them_All"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_Arm_Them_All.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_preparing_militias"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_Preparing_The_Militias.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_Cleansing_the_Bandits"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_Cleansing_the_Bandits.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_ready_against_the_raids"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_Ready_Against_the_Raids.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_reappropriating_industry"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_reappropriating_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_A_Godly_State"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_A_Godly_State.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_DER_factory_sabotage"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_DER_factory_sabotage.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_kaz_red_army"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_KAZ_kazakh_red_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KAZ_Bandit_Plague"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_KAZ_Bandit_Plague.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TRK_Fragmented_Tribes"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_TRK_Fragmented_Tribes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_TRK_The_Question_of_Identity"
+		texturefile = "gfx/interface/ideas/national_spirits/idea_TRK_The_Question_of_Identity.dds"
+	}
+}

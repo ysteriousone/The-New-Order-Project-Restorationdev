@@ -1,0 +1,193 @@
+characters = {
+	# Leaders
+	PAV_Sabit_Mukanov = {
+		name = PAV_Sabit_Mukanov
+		portraits = { civilian = { large = "gfx/leaders/PAV/Portrait_Pavlodar_Sabit_Mukanov.dds" } }
+		country_leader = {
+			desc = "POLITICS_SABIT_MUKANOV_DESC"
+			expire = "1999.1.1.1"
+			ideology = liberal_conservatism_subtype
+			id = -1
+		}
+	}
+	PAV_Mukhagali_Makatayev = {
+		name = PAV_Mukhagali_Makatayev
+		portraits = {
+			civilian = { large = "gfx/leaders/PAV/Portrait_Pavlodar_Mukaghali_Makatayev.dds" }
+		}
+		country_leader = {
+			expire = "2010.6.10.1"
+			ideology = progressivism_democratic_socialism_subtype
+			id = -1
+		}
+	}
+	PAV_Vladimir_Gurkin = {
+		name = PAV_Vladimir_Gurkin
+		portraits = {
+			civilian = { large = "gfx/leaders/PAV/Portrait_Pavlodar_Vladimir_Gurkin.dds" }
+		}
+		country_leader = {
+			expire = "2010.6.10.1"
+			ideology = communist_bolshevism_subtype
+			id = -1
+		}
+	}
+
+	# Ministers
+	PAV_Turar_Ryskulov = {
+		name = PAV_Turar_Ryskulov
+		portraits = { civilian = { small = "GFX_idea_PAV_minister_Turar_Ryskulov" } }
+		advisor = {
+			slot = head_of_government
+			idea_token = PAV_Turar_Ryskulov_hog
+			allowed = { original_tag = PAV }
+			traits = {
+				head_of_government
+				hog_silent_workhorse
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	PAV_Altay_Amanzholov = {
+		name = PAV_Altay_Amanzholov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PAV/Portrait_Pavlodar_Altay_Amanzholov.dds"
+				small = "GFX_idea_PAV_minister_Altay_Amanzholov"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ALTAY_AMANZHOLOV_DESC"
+			expire = "1999.1.1.1"
+			ideology = paternalism_controlled_democracy_subtype
+			id = -1
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = PAV_Altay_Amanzholov_for
+			allowed = { original_tag = PAV }
+			traits = {
+				foreign_minister
+				for_great_compromiser
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	PAV_Ilyas_Yesenberlin = {
+		name = PAV_Ilyas_Yesenberlin
+		portraits = { civilian = { small = "GFX_idea_PAV_minister_Ilyas_Yesenberlin" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = PAV_Ilyas_Yesenberlin_eco
+			allowed = { original_tag = PAV }
+			traits = {
+				economy_minister
+				eco_keynesian_economy
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	PAV_Omargali_Kudyshev = {
+		name = PAV_Omargali_Kudyshev
+		portraits = {
+			civilian = { small = "GFX_idea_PAV_minister_Omargali_Kudyshev" }
+		}
+
+		advisor = {
+			slot = security_minister
+			idea_token = PAV_Omargali_Kudyshev_sec
+			allowed = { original_tag = PAV }
+			traits = {
+				security_minister
+				sec_compassionate_gentleman
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Commanders
+	PAV_Kapay_Iskakov = {
+		name = PAV_Kapay_Iskakov
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAV/Portrait_Pavlodar_Kapay_Iskakov.dds"
+				small = "GFX_idea_PAV_minister_Kapay_Iskakov"
+			}
+		}
+		field_marshal = {
+			traits = { war_hero infantry_leader	}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3496
+		}
+	}
+	PAV_Vasily_Golovchenko = {
+		name = PAV_Vasily_Golovchenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAV/Portrait_Pavlodar_Vasily_Golovchenko.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero infantry_leader reckless }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 3496
+		}
+	}
+	PAV_Pavel_Zurba = {
+		name = PAV_Pavel_Zurba
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAV/Portrait_Pavlodar_Pavel_Zurba.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero сautious engineer_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 3496
+		}
+	}
+	PAV_Nikolai_Zverev = {
+		name = PAV_Nikolai_Zverev
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAV/Portrait_Pavlodar_Nikolai_Zverev.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero reckless inflexible_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = 3496
+		}
+	}
+}

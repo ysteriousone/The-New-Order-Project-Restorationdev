@@ -18,6 +18,7 @@
 
  RUS_generic_debug: "Russian Generic Debug"
  RUS_generic_debug_desc: "Insert witty placeholder loc."
+ RUS_toggle_country_specifc_debug: "Toggle Country-Specifc Debug Decisions"
  RUS_unite_west_russia: "Unite §YWest Russia§!"
  RUS_unite_west_siberia: "Unite §YWest Siberia§!"
  RUS_unite_central_siberia: "Unite §YCentral Siberia§!"
@@ -109,6 +110,13 @@
  RUS_coring_integrate_kokshetau: "Integrate §YKokshetau§!"
  RUS_coring_integrate_pavlodar: "Integrate §YPavlodar§!"
  RUS_coring_integrate_kyzylorda: "Integrate §YAlmaty§!"
+ RUS_coring_integrate_uzbekistan: "Integrate §YUzbekistan§!"
+ RUS_coring_integrate_turkmenistan: "Integrate §YTurkmenistan§!"
+ RUS_coring_integrate_tajikistan: "Integrate §YTajikistan§!"
+ RUS_coring_integrate_xinjiang: "Integrate §YXinjiang§!"
+ RUS_coring_integrate_afghanistan: "Integrate §YAfghanistan§!"
+ RUS_coring_integrate_uzbekistan: "Integrate §YUzbekistan§!"
+ RUS_coring_integrate_kyrgyzstan: "Integrate §YKyrgyzstan§!"
  RUS_coring_integrate_western_mongolia: "Integrate §YWestern Mongolia§!"
  RUS_integration_cost_days_decrease_tt: "This will §Gslightly decrease coring time§!.\n"
  RUS_integration_cost_days_increase_tt: "This will §Rslightly increase coring time§!.\n"
@@ -508,6 +516,7 @@
 
  RUS_RWS_nukes_chasing_the_sun_desc: "Although it will be a long time before we have an operational nuclear weapon, we have successfully built the infrastructure necessary to ensure that we eventually will.\n\nOur laboratories and research facilities are constructed and secured. Our educational institutions are turning out scientists with the necessary skills. Our agencies have secured both domestic and foreign sources of fissile material. All that is left is time.\n\nWhen that day comes, and we complete our first nuclear test, we can take pride both in our accomplishments, and in the knowledge that [GetRussiaNameNuke] will, at long, long last, be free of outside interference."
 
+ tno_can_research_nuclear_tech: "Has begun to develop £tech_mod §YNuclear Technology§!"
  tno_can_research_nuclear_tech_tt: "£tech_mod §YNuclear Technology§! will become available to research."
  
  RUS_name_eurasia_nuke: "Eurasia"
@@ -579,8 +588,6 @@
  RUS_heirs_of_harbin_desc: "In the aftermath of the Russian Civil War, the remainder of the White Army retreated into Harbin as exiles, nursing their wounds and plotting the overthrow of the Soviet Union. Before long, however, fascism coalesced within the city. Under the leadership of Rodzaevsky and Matkovsky, the Russian Fascist Party (RFP) soon became the premier party of the Russian émigrés. As the Union collapsed, the Whites and the RFP formed a united front against the Bolsheviks and for a time, they were successful - until infighting split them apart. Now the three splinters vie for power, each claiming to be the rightful heir of Harbin."
  RUS_the_true_heir_of_harbin: "The True Heir of Harbin"
  RUS_the_true_heir_of_harbin_desc: "With the end of turmoil in the Russian Far East, one faction emerged victorious, becoming the leading front for White Russian émigrés by defeating the splitters and the Bolsheviks. After initial success in the Siberian campaign, the Harbin exiles found themselves stranded in a foreign land, and what little united them disappeared revealing deep-seated divisions between tsarists, hardline fascists, and corporatists. Now that every other contender for Russian dominance in the region has been defeated, this faction can proudly claim the mantle of the only true heir of Harbin."
- RUS_petty_warlords_fiefdom: "Petty Warlord's Fiefdom"
- RUS_petty_warlords_fiefdom_desc: "Beyond being the domain of a charismatic, or non-charismatic warlord, few things unite our statelet into one cohesive unit. It falls onto our ruler's shoulders to properly weld his fief into a possible contender for the reunification of Russia."
  RUS_shattered_ambitions: "Shattered Ambitions"
  RUS_shattered_ambitions_desc: "Once again, the Russians have tried to unify, and once again, foreign powers have beaten them back down. Some of the warlords have been able to regain control over their fiefdoms, but they rule over a people who have been broken in both body and spirit. It will take decades before they come close to reaching their past might."
 
@@ -722,7 +729,7 @@
  attract_canadian_mining_companies_desc: "We lack the means, the machine and the know how to exploit the riches of the far-eastern soil. By attracting some strategic companies, we might be able to develop our land further"
  american_econ_mission: "American Economic Mission"
  american_econ_mission_desc: "Our privileged ties to the Americans has given us access to American capital and American businessmen has shown interest in our land. Let's coordinate their effort, to make Russia richer!"
- Russo_manchu_mining_companies: "In a weird turn of event, here are the Russian demanding the manchus to help them exploit the land. This temporary embarassment hides however a superb opportunity: always hungry for more material, more metal, the manchurians have proven expert at clawing ressources out of the earth and turn it into money. Quite a nice ability for our oh so starved for money country."
+ Russo_manchu_mining_companies: "In a weird turn of event, here are the Russian demanding the manchus to help them exploit the land. This temporary embarassment hides however a superb opportunity: always hungry for more material, more metal, the manchurians have proven expert at clawing resources out of the earth and turn it into money. Quite a nice ability for our oh so starved for money country."
  jap_econ_mission: "Japanese Economic Mission"
  jap_econ_mission_desc: "Our ties to Japan and our proximity should be the perfect invitation for their business to expand further in our land. Let's coordinate those efforts"
  
@@ -921,7 +928,7 @@
  RUS_FE_IRK_immigration_decision_2_tt: "§G+7.5%§! Population Growth\nEvery month for 1 year, §G2000§! people shall move to §YYakutsk§!"
  RUS_FE_IRK_immigration_decision_3_name: "A Socialist Utopia in the East"
  RUS_FE_IRK_immigration_decision_3_tt: "§G+10%§! Population Growth\nEvery month for 1 year, §G3000§! people shall move to the states of §YYakutsk§!"
- 
+
  RUS_FE_manpower_repop_dec_1: "[GetSibManpowerRepopDec1Name]"
  RUS_FE_manpower_repop_dec_1_tt: "[GetSibManpowerRepopDec1TT]"
  RUS_FE_manpower_repop_dec_2: "[GetSibManpowerRepopDec2Name]"
@@ -1200,9 +1207,9 @@
  RUS.3.desc: "Luxuries such as tea and coffee were once rare commodities during the chaos of the late 50s and early 60s. Only available to those with both money and connections and utterly out of reach for most of the population.\n\nHowever, as Russia stabilized, access to the global economy has drastically improved, and now once rare commodities are being imported in increasingly large amounts. Chocolate, fruits, foreign wines, and of course, coffee and tea. Now, access to caffeinated beverages is no longer a luxury restricted to the privileged few, but an increasingly common (if still pricey) drink of choice for many of our citizens."
  RUS.3.a: "A toast to our future success!"
 
- RUS.4.t: ""
- RUS.4.desc: ""
- RUS.4.a: ""
+ RUS.4.t: "The People's Apocalypse"
+ RUS.4.desc: "A nation of writers, poets, and scholars, the universities of Tomsk produce more manuscripts and manifestoes than most people care to count. Yet one piece, published anonymously, has begun to spread controversy far and wide throughout Siberia. 'The People's Apocalypse' tells the story of a faceless scholar's journey throughout the fall of the Central Siberian Republic, progressively encountering those who the author identifies as the four horsemen of the apocalypse: Ivan Zavoloko, Genrikh Yagoda, Alexander Pokryshkin and Nikolai Andreev.\n\nAwaking in Oyrotia after falling ill, the scholar finds the people reduced to babbling madmen, clawing out their own eyes and pulling apart their scalps from a pestilence brought to the land from Zavoloko, poisoning his people with an elixir named faith and weakening the body of the Republic. Chased away by the blind and corrupted, the scholar soon finds himself witness to the lands being set ablaze and the free thinkers abducted and persecuted by Yagoda as blue faced demons wage war against the people. Fleeing the slaughter they come upon endless roads buried under living skeletons, famine consuming the land from Pokryshkin's terrible betrayal, before finally witnessing Andreev's betrayal at Krasnoyarsk, piercing the heart of a nameless soldier embodying the noble Republic.\n\nCondemning the four men as bringing about the end of the promised People's Realm, the story ends with the land destroyed and all four being consumed by madness under the weight of their own evil, turning to stone as hideous reminders of their deeds, though it is left unanswered whether anyone will survive this end of days to remember what has been lost."
+ RUS.4.a: "A haunting tale."
 
  RUS.5.t: ""
  RUS.5.desc: ""
@@ -1909,7 +1916,7 @@
  RUS_tourist.28.a: "Why does a free society have fucking thought police?"
 
  RUS_tourist.29.t: "An Interesting Opportunity"
- RUS_tourist.29.d: "Frontier guardsmen, stationed along the border with the Black Army, have reported the detainment of an unusual group of entrants.\n\nThe entrants, initially observed rapidly exiting the Black Army's territory and entering our own, were immediately detained on suspicion of their origins. They were then searched and interrogated for evidence of anarchist literature or leanings.\n\nHowever, it soon became evident that they were not anarchists at all, but rather the entourage of a singular American tourist, himself also detained, who is attempting to cross Russia from east to west while compiling a log of all the states visited. It was immediately suggested that this offered considerable opportunity.\n\nIf the American is invited to Krasnoyarsk, if he can be shown the dedication of the Provisional Government to democratic ideals, and our intent to spread them over all of Russia, we could potentially win a very significant diplomatic victory. Gifts will of course be arranged.\n\nWe will therefore escort him to Krasnoyarsk, as well as arrange both a tour of the city and an audience with General Andreev. We will show him why our state is superior to those around us, and in so doing, prove that the lands of both the anarchists to the east and the madman to the west would be far better served under our control.\n\nIt is most pleasing when such an possibility presents itself."
+ RUS_tourist.29.d: "Frontier guardsmen, stationed along the border with the Black Army, have reported the detainment of an unusual group of entrants.\n\nThe entrants, initially observed rapidly exiting the Black Army's territory and entering our own, were immediately detained on suspicion of their origins. They were then searched and interrogated for evidence of anarchist literature or leanings.\n\nHowever, it soon became evident that they were not anarchists at all, but rather the entourage of a singular American tourist, himself also detained, who is attempting to cross Russia from east to west while compiling a log of all the states visited. It was immediately suggested that this offered considerable opportunity.\n\nIf the American is invited to Krasnoyarsk, if he can be shown the dedication of the Provisional Government to democratic ideals, and our intent to spread them over all of Russia, we could potentially win a very significant diplomatic victory. Gifts will of course be arranged.\n\nWe will therefore escort him to Krasnoyarsk, as well as arrange both a tour of the city and an audience with General Andreev. We will show him why our state is superior to those around us, and in so doing, prove that the lands of both the anarchists to the east and the madman to the west would be far better served under our control.\n\nIt is most pleasing when such a possibility presents itself."
  RUS_tourist.29.a: "One must not waste such chances."
 
  RUS_tourist.30.t: "Entry 11: The Provisional Government of Krasnoyarsk"
@@ -2172,7 +2179,7 @@
  RUS_tourist.91.a: "Send him home."
  
  RUS_tourist.92.t: "Finnair Flight 192"
- RUS_tourist.92.d: "Jon Erlingsson, a longtime employee of the Reykjavík International Airport, never thought he would do anything unique in his lifetime, or meet anyone particularly special. He was proven wrong today; and not for a reason he expected.\n\nSometime before noon, a Finnish airlines flight landed in Reykjavík International. While usually nothing out of the ordinary for planes from the east to be stopping here for refueling, Finnair Flight 192 was carrying a celebrity on board. Steve Smith, although just an average college student from the Midwest United States, was recently mad enough to travel the entirety of the Russian anarchy and live to tell the tale. A few days ago, he was detained by Finnish border patrol for trespassing into Finnish territory from Onega, and is now being deported back to the USA. Naturally, Steve's story has created a bit of a buzz around spheres aligned with the United States.\n\nJon was assigned to baggage handling today, and a distinctly unique suitcase rolled his way off the conveyor belt. The luggage itself was clearly vintage, probably something from the times of the Soviet Union, yet had a uniquely American flair to it. Despite all of the scratches and rust, stickers, souvenirs, and photographs adorned the luggage both inside and out. Jon would be holding a piece of history.\n\n"Excuse me, I think you have my luggage, sir." Jon met eyes with Steve, and in a panic, Jon extended his hand out for a handshake. Steve, with a smile, shook Jon's hand and nodded.\n\n Jon wasn't the most familiar with English, but he knew he had to try. "If you don't mind, can I get a picture? For my kids. They're fascinated by adventure stories."\n\n"Oh, I can do more than that. When I get back to the States and publish my book, give them a call. I'll have them send your family one for free."\n\n"Gunnar! Get over here with the camera, we have a celebrity in our midst!""
+ RUS_tourist.92.d: "Jon Erlingsson, a longtime employee of the Reykjavík International Airport, never thought he would do anything unique in his lifetime, or meet anyone particularly special. He was proven wrong today; and not for a reason he expected.\n\nSometime before noon, a Finnish airlines flight landed in Reykjavík International. While usually nothing out of the ordinary for planes from the east to be stopping here for refueling, Finnair Flight 192 was carrying a celebrity on board. Steve Smith, although just an average college student from the Midwest United States, was recently mad enough to travel the entirety of the Russian anarchy and live to tell the tale. A few days ago, he was detained by Finnish border patrol for trespassing into Finnish territory from Onega, and is now being deported back to the USA. Naturally, Steve's story has created a bit of a buzz around spheres aligned with the United States.\n\nJon was assigned to baggage handling today, and a distinctly unique suitcase rolled his way off the conveyor belt. The luggage itself was clearly vintage, probably something from the times of the Soviet Union, yet had a uniquely American flair to it. Despite all of the scratches and rust, stickers, souvenirs, and photographs adorned the luggage both inside and out. Jon would be holding a piece of history.\n\n"Excuse me, I think you have my luggage, sir." Jon met eyes with Steve, and in a panic, Jon extended his hand out for a handshake. Steve, with a smile, shook Jon's hand and nodded.\n\nJon wasn't the most familiar with English, but he knew he had to try. "If you don't mind, can I get a picture? For my kids. They're fascinated by adventure stories."\n\n"Oh, I can do more than that. When I get back to the States and publish my book, give them a call. I'll have them send your family one for free."\n\n"Gunnar! Get over here with the camera, we have a celebrity in our midst!""
  RUS_tourist.92.a: "Quite an adventure indeed."
 
  RUS_tourist.93.t: "Homecoming"
@@ -2491,7 +2498,7 @@
  RUS_news.65.a: "When you stare into the abyss..."
  
  RUS_news.66.t: "[Get_newspaper_header]The Triumph of Ordosocialism"
- RUS_news.66.desc: "Many international commentators and historians throughout the years have noted the stark effect the triumph of the Reich in the 40s had on international ideals. The victory of national socialism transformed the world forever, and this grim metamorphosis is no more apparent than on the lands of Russia. The Ordosocialist Worker's Party, hailing from the now defunct Komi Republic, has reunited the shattered warlords, under the careful gaze of General Secretary Ivan Serov.\n\nClaiming to be the next stage of socialist thought, ordosocialism seemingly combines Marxism with radical nationalism and xenophobia. Pledging to combat the forces of 'hereditary reactionaries' wherever they lie, and 'spread the ordosocialist revolution', it would seem that the Russian National Soviet Republic is poised to become a powerful player on the geopolitical stage, and the world trembles at the thought.\n"
+ RUS_news.66.desc: "Many international commentators and historians throughout the years have noted the stark effect the triumph of the Reich in the 40s had on international ideals. The victory of national socialism transformed the world forever, and this grim metamorphosis is no more apparent than on the lands of Russia. The Ordosocialist Workers' Party, hailing from the now defunct Komi Republic, has reunited the shattered warlords, under the careful gaze of General Secretary Ivan Serov.\n\nClaiming to be the next stage of socialist thought, ordosocialism seemingly combines Marxism with radical nationalism and xenophobia. Pledging to combat the forces of 'hereditary reactionaries' wherever they lie, and 'spread the ordosocialist revolution', it would seem that the Russian National Soviet Republic is poised to become a powerful player on the geopolitical stage, and the world trembles at the thought.\n"
  RUS_news.66.a: "Class and Nation."
  
  RUS_news.67.t: "[Get_newspaper_header]The Holy Russian Empire"
@@ -2670,7 +2677,7 @@
  KAZ_WORLD.6.a: "Kazakhstan, a province once more."
   
  KAZ_WORLD.7.t: "[Get_newspaper_header]Chairman Kunaev Resigns"
- KAZ_WORLD.7.desc: "Kazakhstan is split as its leader, Chairman Dinmukhamed "Dimash" Kunaev, resigned amidst plans for greater Kazakh self-rule. Recognized as pro-Kazakh, his inability to address famine and banditry weakened his image, boosting National Communists who ousted him in today's party meeting.\n\nHis economic minister, Zhumbatek Tashenev, took power to pursue further Kazakhification and market socialist reforms. Viewing it as unlawful independence, Russian leaders in the country's north have outright rejected his government.\n\nAs a result, northern regions have seceded as Russian militias began mobilizing under the leadership of Nikolai Schelokov, a regional police chief. Localized armed conflicts are now increasingly being reported as the nation descends into civil war."
+ KAZ_WORLD.7.desc: "Kazakhstan is split as its leader, Chairman Dinmukhamed "Dimash" Kunaev, resigned amidst plans for greater Kazakh self-rule. Recognized as pro-Kazakh, his inability to address famine and banditry weakened his image, boosting National Communists who ousted him in today's party meeting.\n\nHis economic minister, Zhumbatek Tashenev, took power to pursue further Kazakhification and market socialist reforms. Viewing it as unlawful independence, Russian leaders in the country's north have outright rejected his government.\n\nAs a result, northern regions have seceded as Russian militias began mobilizing under the leadership of Nikolai Shchelokov, a regional police chief. Localized armed conflicts are now increasingly being reported as the nation descends into civil war."
  KAZ_WORLD.7.a: "The endgame begins for Red Kazakhstan"
  
  KAZ_WORLD.8.t: "[Get_newspaper_header]The Kazakh Civil War"

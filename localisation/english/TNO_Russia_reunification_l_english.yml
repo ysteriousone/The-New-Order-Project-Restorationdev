@@ -7,6 +7,7 @@
  russian_total_reunification_desc: ""
 
  russian_reunification: "Russian Reunification"
+ kazakhstan_reunification: "Kazakhstan Reunification"
  siberian_reunification: "Siberian Reunification"
  
  can_form_west_russia_tt: "Controls all §YWest Russian§! states\n"
@@ -692,7 +693,7 @@
  russia_unification.0.a: "Worrying."
 
  russia_unification.1.t: "A Grand Showdown"
- russia_unification.1.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. The [GetOtherRegionalName] shall fall."
+ russia_unification.1.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. [GetOtherRegionalDefCap] shall fall."
  russia_unification.1.a: "Let us see who will stand tall in the end."
  
  russia_unification.2.t: "Extending the Olive Branch"
@@ -700,7 +701,7 @@
  russia_unification.2.a: "Pushing ever onwards."
 
  russia_unification.3.t: "A Grand Showdown"
- russia_unification.3.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. The [GetOtherRegionalName] shall fall."
+ russia_unification.3.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. [GetOtherRegionalDefCap] shall fall."
  russia_unification.3.a: "Let us see who will stand tall in the end."
 
  russia_unification.4.t: "Extending the Olive Branch"
@@ -708,7 +709,7 @@
  russia_unification.4.a: "Pushing ever onwards."
 
  russia_unification.5.t: "A Grand Showdown"
- russia_unification.5.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. The [GetOtherRegionalName] shall fall."
+ russia_unification.5.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. [GetOtherRegionalDefCap] shall fall."
  russia_unification.5.a: "Let us see who will stand tall in the end."
 
  russia_unification.6.t: "Extending the Olive Branch"
@@ -716,7 +717,7 @@
  russia_unification.6.a: "Pushing ever onwards."
 
  russia_unification.7.t: "A Grand Showdown"
- russia_unification.7.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. The [GetOtherRegionalName] shall fall."
+ russia_unification.7.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. [GetOtherRegionalDefCap] shall fall."
  russia_unification.7.a: "Let us see who will stand tall in the end."
 
  russia_unification.8.t: "Extending the Olive Branch"
@@ -756,7 +757,7 @@
  russia_unification.16.a: "Here they come."
 
  russia_unification.17.t: "A Grand Showdown"
- russia_unification.17.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. The [GetOtherRegionalName] shall fall."
+ russia_unification.17.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. [GetOtherRegionalDefCap] shall fall."
  russia_unification.17.a: "The final conflict."
 
  russia_unification.18.t: "Extending the Olive Branch"
@@ -764,7 +765,7 @@
  russia_unification.18.a: "Pushing ever onwards."
 
  russia_unification.19.t: "A Grand Showdown"
- russia_unification.19.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. The [GetOtherRegionalName] shall fall."
+ russia_unification.19.d: "The [ROOT.GetName] has overcome its obstacles and conquered all other nations in its way - either through peaceful unification, or forceful war. Now it stands at a precipice. The vast territories of Russia are expansive, and while the [ROOT.GetName] controls a significant portion of it, there is still much more to conquer. We must begin preparing for a war that will challenge our military unlike all the other wars that have come before us. [GetOtherRegionalDefCap] shall fall."
  russia_unification.19.a: "The final conflict."
 
  russia_unification.20.t: "Extending the Olive Branch"
@@ -810,7 +811,7 @@
  russia_unification.25.a: "A shame."
 
  russia_unification.26.t: "NAP Accepted"
- russia_unification.26.d: "[FROM.GetNameDef] has accepted our non-aggression pact! The effects of it shall come into play immediately, and if both sides are strict on enforcing it, it should mean lasting peace between our two nations. Not only that, the pact will bring a sense of solidarity in the war-torn lands of Russia."
+ russia_unification.26.d: "[FROM.GetNameDefCap] has accepted our non-aggression pact! The effects of it shall come into play immediately, and if both sides are strict on enforcing it, it should mean lasting peace between our two nations. Not only that, the pact will bring a sense of solidarity in the war-torn lands of Russia."
  russia_unification.26.a: "Onwards!"
 
  russia_unification.27.t: "Foreign Trade Deal Proposed"
@@ -828,7 +829,7 @@
  russia_unification.29.a: "Prosperity comes a deal at a time."
 
  russia_unification.30.t: "Our Partners Decline"
- russia_unification.30.d: "[From.GetNameDef] has seen it fit to deny our trade deal. This news comes to us as highly unfortunate - the potential for a trading partner in war-torn Russia has now decreased by one state. If we wish to expand our economy like this, we must shift our focus elsewhere."
+ russia_unification.30.d: "[From.GetNameDefCap] has seen it fit to deny our trade deal. This news comes to us as highly unfortunate - the potential for a trading partner in war-torn Russia has now decreased by one state. If we wish to expand our economy like this, we must shift our focus elsewhere."
  russia_unification.30.a: "Not every attempt is a success."
 
  russia_unification.31.t: "Incentivizing Our Allies"
@@ -850,11 +851,11 @@
  russia_unification.34.b: "Unification is our goal, let them be."
 
  russia_unification.35.t: "Our Efforts Condemned!"
- russia_unification.35.d: "[From.GetNameDef] has rejected our funding! It seems as if they would rather determine what they shall do on their own terms, rather than us giving them a push they could use. While this has had a negative effect of growing suspicions between their government and ours, it hasn't completely ruined talks of unification - even if it turned out to be a waste of funds."
+ russia_unification.35.d: "[From.GetNameDefCap] has rejected our funding! It seems as if they would rather determine what they shall do on their own terms, rather than us giving them a push they could use. While this has had a negative effect of growing suspicions between their government and ours, it hasn't completely ruined talks of unification - even if it turned out to be a waste of funds."
  russia_unification.35.a: "Diplomacy marches on."
 
- russia_unification.36.t: "Amnesty for our Efforts"
- russia_unification.36.d: "[From.GetNameDef] has been quiet in their reaction about our public endorsement of the various pro-unification groups in their country. If they were against it, there was no reason to be silent about our interference, but they seem content with letting us meddle in their affairs. We are grateful for that, and in time, so shall their citizens."
+ russia_unification.36.t: "Amnesty for Our Efforts"
+ russia_unification.36.d: "[From.GetNameDefCap] has been quiet in their reaction about our public endorsement of the various pro-unification groups in their country. If they were against it, there was no reason to be silent about our interference, but they seem content with letting us meddle in their affairs. We are grateful for that, and in time, so shall their citizens."
  russia_unification.36.a: "One step closer."
 
  russia_unification.37.t: "[GetOtherRegionalName] Proposes Joint Exercises!"
@@ -1048,7 +1049,7 @@
  russia_unification.125.a: "A shame."
 
  russia_unification.126.t: "NAP Accepted"
- russia_unification.126.d: "[FROM.GetNameDef] has accepted our non-aggression pact! The effects of it shall come into play immediately, and if both sides are strict on enforcing it, it should mean lasting peace between our two nations. Not only that, the pact will bring a sense of solidarity in the war-torn lands of Russia."
+ russia_unification.126.d: "[FROM.GetNameDefCap] has accepted our non-aggression pact! The effects of it shall come into play immediately, and if both sides are strict on enforcing it, it should mean lasting peace between our two nations. Not only that, the pact will bring a sense of solidarity in the war-torn lands of Russia."
  russia_unification.126.a: "Onwards!"
 
  russia_unification.127.t: "Foreign Trade Deal Proposed"
@@ -1066,7 +1067,7 @@
  russia_unification.129.a: "Prosperity comes a deal at a time."
 
  russia_unification.130.t: "Our Partners Decline"
- russia_unification.130.d: "[From.GetNameDef] has seen it fit to deny our trade deal. This news comes to us as highly unfortunate - the potential for a trading partner in war-torn Russia has now decreased by one state. If we wish to expand our economy like this, we must shift our focus elsewhere."
+ russia_unification.130.d: "[From.GetNameDefCap] has seen it fit to deny our trade deal. This news comes to us as highly unfortunate - the potential for a trading partner in war-torn Russia has now decreased by one state. If we wish to expand our economy like this, we must shift our focus elsewhere."
  russia_unification.130.a: "Not every attempt is a success."
 
  russia_unification.131.t: "Incentivizing Our Allies"
@@ -1088,11 +1089,11 @@
  russia_unification.134.b: "Unification is our goal, let them be."
 
  russia_unification.135.t: "Our Efforts Condemned!"
- russia_unification.135.d: "[From.GetNameDef] has rejected our funding! It seems as if they would rather determine what they shall do on their own terms, rather than us giving them a push they could use. While this has had a negative effect of growing suspicions between their government and ours, it hasn't completely ruined talks of unification - even if it turned out to be a waste of funds."
+ russia_unification.135.d: "[From.GetNameDefCap] has rejected our funding! It seems as if they would rather determine what they shall do on their own terms, rather than us giving them a push they could use. While this has had a negative effect of growing suspicions between their government and ours, it hasn't completely ruined talks of unification - even if it turned out to be a waste of funds."
  russia_unification.135.a: "Diplomacy marches on."
 
  russia_unification.136.t: "Amnesty for our Efforts"
- russia_unification.136.d: "[From.GetNameDef] has been quiet in their reaction about our public endorsement of the various pro-unification groups in their country. If they were against it, there was no reason to be silent about our interference, but they seem content with letting us meddle in their affairs. We are grateful for that, and in time, so shall their citizens."
+ russia_unification.136.d: "[From.GetNameDefCap] has been quiet in their reaction about our public endorsement of the various pro-unification groups in their country. If they were against it, there was no reason to be silent about our interference, but they seem content with letting us meddle in their affairs. We are grateful for that, and in time, so shall their citizens."
  russia_unification.136.a: "One step closer."
 
  russia_unification.137.t: "[GetOtherRegionalName] Proposes Joint Exercises!"

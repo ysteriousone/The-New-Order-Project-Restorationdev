@@ -1,0 +1,178 @@
+characters = {
+	# Leaders
+	NPL_Marian_Spychalski = {
+		name = NPL_Marian_Spychalski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NPL/Portrait_Nowa_Polska_Marian_Spychalski.dds"
+				small = "GFX_idea_NPL_minister_Marian_Spychalski"
+			}
+			army = {
+				large = "gfx/leaders/NPL/Portrait_Nowa_Polska_Marian_Spychalski.dds"
+				small = "GFX_idea_NPL_minister_Marian_Spychalski"
+			}
+		}
+
+		country_leader = {
+			desc = "POLITICS_MARIAN_SPYCHALSKI_DESC"
+			expire = "1999.1.1.1"
+			ideology = communist_national_communism_subtype
+			id = -1
+		}
+
+		country_leader = {
+			desc = "POLITICS_MARIAN_SPYCHALSKI_DESC"
+			expire = "1999.1.1.1"
+			ideology = socialist_left_wing_nationalism_subtype
+			id = -1
+		}
+
+		country_leader = {
+			desc = "POLITICS_MARIAN_SPYCHALSKI_DESC"
+			expire = "1999.1.1.1"
+			ideology = paternalism_social_nationalism_subtype
+			id = -1
+		}
+
+		field_marshal = {
+			traits = { war_hero defensive_doctrine }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3501
+		}
+	}
+
+	# Ministers
+	NPL_Edward_Osobka_Morawski = {
+		name = NPL_Edward_Osobka_Morawski
+		portraits = { civilian = { small = "GFX_idea_NPL_minister_Edward_Osobka_Morawski" } }
+		advisor = {
+			slot = head_of_government
+			idea_token = NPL_Edward_Osobka_Morawski_hog
+			allowed = { original_tag = NPL }
+			traits = {
+				head_of_government
+				hog_ambitious_union_boss
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	NPL_Adam_Rapacki = {
+		name = NPL_Adam_Rapacki
+		portraits = { civilian = { small = "GFX_idea_NPL_minister_Adam_Rapacki" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = NPL_Adam_Rapacki_for
+			allowed = { original_tag = NPL }
+			traits = {
+				foreign_minister
+				for_seasoned_ambassador
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	NPL_Stefan_Jedrychowski = {
+		name = NPL_Stefan_Jedrychowski
+		portraits = { civilian = { small = "GFX_idea_NPL_minister_Stefan_Jedrychowski" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = NPL_Stefan_Jedrychowski_eco
+			allowed = { original_tag = NPL }
+			traits = {
+				economy_minister
+				eco_union_man
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	NPL_Florian_Siwicki = {
+		name = NPL_Florian_Siwicki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NPL/Portrait_Nowa_Polska_Florian_Siwicki.dds"
+				small = "GFX_idea_NPL_minister_Florian_Siwicki"
+			}
+			army = {
+				large = "gfx/leaders/NPL/Portrait_Nowa_Polska_Florian_Siwicki.dds"
+				small = "GFX_idea_NPL_minister_Florian_Siwicki"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 3503
+		}
+
+		advisor = {
+			slot = security_minister
+			idea_token = NPL_Florian_Siwicki_sec
+			allowed = { original_tag = NPL }
+			traits = {
+				security_minister
+				sec_army_instructor
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Commanders
+	NPL_Czeslaw_Kiszczak = {
+		name = NPL_Czeslaw_Kiszczak
+		portraits = {
+			army = {
+				large = "gfx/leaders/NPL/Portrait_Nowa_Polska_Czeslaw_Kiszczak.dds"
+				small = "GFX_idea_NPL_minister_Czeslaw_Kiszczak"
+			}
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3502
+		}
+	}
+
+	NPL_Ryszard_Kuklinski = {
+		name = NPL_Ryszard_Kuklinski
+		portraits = {
+			army = {
+				large = "gfx/leaders/NPL/Portrait_Nowa_Polska_Ryszard_Kuklinski.dds"
+				small = "GFX_idea_NPL_minister_Ryszard_Kuklinski"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3504
+		}
+	}
+}

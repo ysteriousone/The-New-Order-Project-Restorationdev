@@ -1,0 +1,30 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SE_KOKSHETAU_KAZAKH_REUNIFICATION"
+		textureFile = "gfx/superevent_pictures/Kokshetau.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_AKTAU_KAZAKH_REUNIFICATION"
+		textureFile = "gfx/superevent_pictures/Aktau.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_NOWA_POLSKA_KAZAKH_PACIFICATION"
+		textureFile = "gfx/superevent_pictures/Nowa_Polska.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_PAVLODAR_KAZAKH_REUNIFICATION"
+		textureFile = "gfx/superevent_pictures/Pavlodar.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_KYZYLORDA_KAZAKH_REUNIFICATION"
+		textureFile = "gfx/superevent_pictures/Kyzylorda.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_KOSTANAY_KAZAKH_REUNIFICATION"
+		textureFile = "gfx/superevent_pictures/Kostanay.dds"
+	}
+	spriteType = {
+		name = "GFX_SE_AKTOBE_KAZAKH_REUNIFICATION"
+		textureFile = "gfx/superevent_pictures/Aktobe.dds"
+	}
+}

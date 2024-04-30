@@ -1,0 +1,173 @@
+ideas = {
+	country = {
+		DER_islamic_brigades = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_islamic_brigades"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_islamic_brigades
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+		DER_islamic_brigades_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_islamic_brigades"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_islamic_brigades
+			modifier = {
+				army_morale_factor = 0.2
+				army_org_factor = -0.075
+				stability_factor = 0.125
+			}
+		}
+		DER_islamic_brigades_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_islamic_brigades"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_islamic_brigades
+			modifier = {
+				army_morale_factor = 0.3
+				army_org_factor = -0.05
+				stability_factor = 0.15
+			}
+		}
+		DER_arm_them_all_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_arm_them_all_idea"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_Arm_Them_All
+			equipment_bonus = { infantry_equipment = { instant = yes build_cost_ic = -0.10 } }
+		}
+		DER_preparing_militias = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_arm_them_all_idea"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_Preparing_The_Militias
+			modifier = {
+				army_attack_factor = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		DER_cleansing_the_bandits = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_arm_them_all_idea"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_Cleansing_the_Bandits
+			modifier = {
+				war_support_factor = -0.15
+			}
+		}
+		DER_ready_against_the_raids = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_ready_against_the_raids"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_Ready_Against_the_Raids
+			modifier = {
+				army_core_defence_factor = 0.15
+				#enemy_#partisan_effect = -0.10
+			}
+		}
+		DER_factory_sabotage = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_factory_sabotage"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_factory_sabotage
+			modifier = {
+				industrial_capacity_factory = -0.15
+				consumer_goods_use_modifier = 0.15
+			}
+		}
+		DER_reappropriating_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_reappropriating_industry"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_reappropriating_industry
+			modifier = {
+				production_speed_buildings_factor = 0.30
+				industry_repair_factor = 0.20
+				consumer_goods_use_modifier = 0.15
+			}
+		}
+		DER_godly_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DER_godly_state"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = DER_A_Godly_State
+			modifier = {
+				stability_factor = 0.3
+				army_core_attack_factor = 0.2
+				army_org_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		DER_base_idea = {
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.10
+			}
+		}
+	}
+}

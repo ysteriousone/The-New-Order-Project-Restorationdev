@@ -20,11 +20,12 @@ state={
 		victory_points = { 4823 3 }
 		victory_points = { 1708 1 }
 		victory_points = { 4751 3 }
+		victory_points = { 12656 5 }
 		set_state_flag = state_renamings
 
 	}
 
 	provinces={
-		1708 1783 1844 4714 4788 4823 4849 7693 7737 7866 10674 10691 12590 12737 4751 
+		1708 1783 1844 4714 4788 4823 4849 7693 7737 7866 10674 10691 12590 12737 4751 12601 12526 7850
 	}
 }

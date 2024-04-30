@@ -351,6 +351,47 @@
  URL_regional_unifier_paternalism_DEF: "the United Ural Defense League"
  
  #Kazakhstan - 1776
+ 
+ AKT_regional_unifier_national_socialism: "Kazakh State"
+ AKT_regional_unifier_national_socialism_DEF: "Kazakh State"
+ AKT_regional_unifier_national_socialism_ADJ: "Kazakh"
+ AKT_regional_unifier_ultranationalism: "Kazakh State"
+ AKT_regional_unifier_ultranationalism_DEF: "Kazakh State"
+ AKT_regional_unifier_ultranationalism_ADJ: "Kazakh"
+ 
+ ARL_regional_unifier_despotism: "Kazakh National Republic"
+ ARL_regional_unifier_despotism_DEF: "the Kazakh National Republic"
+ ARL_regional_unifier_despotism_ADJ: "Kazakh"
+ 
+ DER_regional_unifier_despotism: "Islamic Republic of Kazakhstan"
+ DER_regional_unifier_despotism_DEF: "the Islamic Republic of Kazakhstan"
+ DER_regional_unifier_despotism_ADJ: "Kazakh"
+ 
+ KAZ_regional_unifier_communist: "Kazakh Soviet Socialist Republic"
+ KAZ_regional_unifier_communist_DEF: "the Kazakh Soviet Socialist Republic"
+ KAZ_regional_unifier_communist_ADJ: "Kazakh"
+ 
+ KOK_regional_unifier_despotism: "Kazakh Khanate"
+ KOK_regional_unifier_despotism_DEF: "the Kazakh Khanate"
+ KOK_regional_unifier_despotism_ADJ: "Kazakh"
+ 
+ PAV_regional_unifier_liberal_conservatism: "Republic of Kazakhstan"
+ PAV_regional_unifier_liberal_conservatism_DEF: "the Republic of Kazakhstan"
+ PAV_regional_unifier_liberal_conservatism_ADJ: "Kazakh"
+ PAV_regional_unifier_liberalism: "Republic of Kazakhstan"
+ PAV_regional_unifier_liberalism_DEF: "the Republic of Kazakhstan"
+ PAV_regional_unifier_liberalism_ADJ: "Kazakh"
+ PAV_regional_unifier_conservatism: "Republic of Kazakhstan"
+ PAV_regional_unifier_conservatism_DEF: "the Republic of Kazakhstan"
+ PAV_regional_unifier_conservatism_ADJ: "Kazakh"
+ 
+ KAZ_NPL_progressivism: "Republic of Kazakhstan"
+ ARL_NPL_paternalism: "Republic of Aktobe"
+ KAZ_NPL_progressivism_DEF: "the Republic of Kazakhstan"
+ ARL_NPL_paternalism_DEF: "the Republic of Aktobe"
+ KAZ_NPL_progressivism_ADJ: "Kazakh"
+ ARL_NPL_paternalism_ADJ: "Aktobe"
+ 
  KAZ_1776: "Republic of Kazakhstan"
  KAZ_1776_DEF: "the Republic of Kazakhstan"
  KAZ_1776_ADJ: "Kazakh"
@@ -461,11 +502,11 @@
  ###RUSSIANS
 
  #Omsk
- OMS_POTEMKIN_RUS: "Soviet Black League"
- OMS_POTEMKIN_RUS_DEF: "the Soviet Black League"
+ OMS_POTEMKIN_RUS: "Russian National Reclamation Government"
+ OMS_POTEMKIN_RUS_DEF: "the Russian National Reclamation Government"
  OMS_POTEMKIN_RUS_ADJ: "Russian"
- OMS_RUS_ultranationalism: "Soviet Black League"
- OMS_RUS_ultranationalism_DEF: "the Soviet Black League"
+ OMS_RUS_ultranationalism: "Russian National Reclamation Government"
+ OMS_RUS_ultranationalism_DEF: "the Russian National Reclamation Government"
  OMS_RUS_ultranationalism_ADJ: "Russian"
 
  #Tyumen
@@ -729,10 +770,8 @@
  RUS_anarchist_socialist_DEF: "the Russian Free Territories"
  RUS_black: "Black Russia"
  RUS_black_DEF: "Black Russia"
- RUS_ssr_communist: "Russian SSR"
- RUS_ssr_communist_DEF: "the Russian Soviet Socialist Republic"
- RUS_ssr_socialist: "Russian SSR"
- RUS_ssr_socialist_DEF: "the Russian Soviet Socialist Republic"
+ RUS_ssr: "Russian SSR"
+ RUS_ssr_DEF: "the Russian Soviet Socialist Republic"
  
  RUS_empire_despotism: "Russian Empire"
  RUS_empire_despotism_DEF: "the Russian Empire"

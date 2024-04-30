@@ -1,0 +1,228 @@
+ideas = { #Pavlodar in reality
+
+	country = {
+		PAV_idealistic_revolutionaries = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_idealistic_revolutionaries"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PAV_idealistic_revolutionaries
+			modifier = {
+				army_morale_factor = 0.1
+				stability_factor = 0.1
+
+			}
+		}
+
+		PAV_young_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_young_democracy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = -0.2
+				defence = 0.2
+				political_power_gain = 0.5
+
+
+			}
+		}
+
+		PAV_stable_democracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_stable_democracy"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.1
+				defence = 0.2
+				political_power_gain = 0.2
+
+
+			}
+		}
+
+		PAV_loose_production_standards = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_loose_production_standards"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					reliability = -0.05
+					instant = yes
+				}
+			}
+
+
+		}
+
+		PAV_high_production_standards = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_high_production_standards"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05
+					soft_attack = 0.1
+					instant = yes
+				}
+			}
+
+
+		}
+
+		PAV_more_manpower = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_more_manpower"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				conscription = 0.015
+
+
+			}
+		}
+
+		PAV_motivated_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_motivated_army"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+
+
+			}
+		}
+
+		PAV_unmotivated_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_unmotivated_army"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				army_org_factor = -0.10
+				army_morale_factor = -0.10
+
+
+			}
+		}
+
+		PAV_stabilizing = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_stabilizing"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_weekly = 0.005
+
+
+			}
+		}
+
+		PAV_qudp_dominance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_qudp_dominance"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				drift_defence_factor = 0.25
+				political_power_gain = 0.2
+
+
+			}
+		}
+
+		PAV_amanzholov_secure = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PAV_amanzholov_secure"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = 0.05
+
+
+			}
+		}
+	}
+	hidden_ideas = {
+		PAV_base_idea = {
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.3
+			}
+		}
+	}
+
+}

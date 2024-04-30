@@ -33,7 +33,7 @@
  TNO_PEACE_POPUP_WAR_CONCLUSION_SAF_WIN: "The §YSouth African War§! has come to a close, with §Y[winning_country.GetNameWithFlag]§![GetWinnerAllies] finally defeating §Y[losing_country.GetNameWithFlag]§![GetLoserAllies]."
  TNO_PEACE_POPUP_WAR_CONCLUSION_SAF_LOSE: "The §YSouth African War§! has come to a close, with §Y[winning_country.GetNameWithFlag]§![GetWinnerAllies] finally defeating §Y[losing_country.GetNameWithFlag]§![GetLoserAllies]."
  
- TNO_PEACE_POPUP_WAR_CONCLUSION_BRG_FRA: "§Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas] seized land from §Y[losing_country.GetNameWithFlag]§! in the chaos of §YThe German Civil War§!"
+ TNO_PEACE_POPUP_WAR_CONCLUSION_BRG_FRS: "§Y[winning_country.GetNameWithFlag]§![GetWinnerAlliesWithHas] seized land from §Y[losing_country.GetNameWithFlag]§! in the chaos of §YThe German Civil War§!"
 
  TNO_PEACE_POPUP_WAR_CONCLUSION_GCW: "The delicate balance of power in §YThe German Civil War§! continues to shift as §Y[winning_country.GetNameWithFlag]§![GetWinnerAllies] conquers §Y[losing_country.GetNameWithFlag]§![GetLoserAllies]"
 
@@ -104,8 +104,6 @@
 
  TNO_PEACE_POPUP_WAR_SCOTLAND_WIN: "§Y[winning_country.GetNameWithFlag]§! have conquered §Y[losing_country.GetNameWithFlag]§! and have inherited the Isle."
  TNO_PEACE_POPUP_WAR_SCOTLAND_LOSE: "§Y[winning_country.GetNameWithFlag]§! has conquered the isles once again, eliminating §Y[losing_country.GetNameWithFlag]§! in its way."
- 
- TNO_PEACE_POPUP_WAR_CONCLUSION_BRITTANY: "§Y[winning_country.GetNameWithFlag]§! has reclaimed §Y[losing_country.GetNameWithFlag]§!, bringing them one step closer on their return to §YParis§!."
 
  TNO_PEACE_POPUP_WAR_CONCLUSION_COL_CW: "In the scorched valleys and razed jungles of §YColombia§!, §Y[winning_country.GetNameWithFlag]§! has defeated §Y[losing_country.GetNameWithFlag]§!."
  TNO_PEACE_POPUP_WAR_CONCLUSION_FRA_CW: "§Y[winning_country.GetNameWithFlag]§! has beaten §Y[losing_country.GetNameWithFlag]§! in the chaos of §YThe French Civil War§!."
@@ -163,9 +161,8 @@
  #GAW flavor
  TNO_PEACE_POPUP_FLAVOR_CHI_GAW: "As Japanese troops march through Shanghai, Beijing, and Nanjing, the hope of freedom is squashed. Japan has won the war against China, and consequently the eastern world as a whole."
  
- #BRG-BRT-FRA flavor
- TNO_PEACE_POPUP_FLAVOR_FRA: "A shadow falls over France."
- TNO_PEACE_POPUP_FLAVOR_BRT: "Ar chas doñv a 'yelo da ouez."
+ #BRG-FRA flavor
+ TNO_PEACE_POPUP_FLAVOR_FRS: "A shadow falls over France."
  
  #Iberian Wars
  TNO_PEACE_POPUP_FLAVOR_SPR: "Hemos pasado!"
@@ -295,10 +292,13 @@
  TNO_PEACE_POPUP_FLAVOR_URL: "Part of a journey is the end."
 
  # Kazakhstan CW
- TNO_PEACE_POPUP_FLAVOR_KAZ_TASHENEV: "Kazakhstan is forever bound to the Russian giant."
- TNO_PEACE_POPUP_FLAVOR_KAZ_NURMAGAMBETOV: "The mutineers ride into the night."
- TNO_PEACE_POPUP_FLAVOR_KZR_SHCHELOKOV: "Shchelokov runs out of answers."
- TNO_PEACE_POPUP_FLAVOR_KZR_SOLOMENTSEV: "The grip of the Union is forever shattered."
+ TNO_PEACE_POPUP_FLAVOR_NPL: "Poland is lost once more."
+ TNO_PEACE_POPUP_FLAVOR_ARL: "Chairman Onoprienko's experiment has ended in failure."
+ TNO_PEACE_POPUP_FLAVOR_AKT: "Only embers remain in Aktau's furnaces."
+ TNO_PEACE_POPUP_FLAVOR_KAZ: "The soldiers too will take strike action, they'll break ranks and fight no more..."
+ TNO_PEACE_POPUP_FLAVOR_DER: "Indeed Allah is the most Forgiving, the Merciful!"
+ TNO_PEACE_POPUP_FLAVOR_PAV: "The sweetest flower that ever grew is withered to the stalk."
+ TNO_PEACE_POPUP_FLAVOR_KOK: "The Khan could not outride history."
  
  # April Fools 2022
  TNO_PEACE_POPUP_FLAVOR_OMO_AF_2022: "Harmony could not survive in a land full of discord."
@@ -446,7 +446,7 @@
  TNO_PEACE_POPUP_FLAVOR_IRB: "If history will write its course, then the Baloch say they won't live as slaves anymore."
 
  # French Civil War
- TNO_PEACE_POPUP_FLAVOR_FRA_CW: "Vous avez souffert. Vous souffrirez encore. Votre vie sera dure. Ce n'est pas moi qui vous bercerait de paroles trompeuses."
+ TNO_PEACE_POPUP_FLAVOR_FRS_CW: "Vous avez souffert. Vous souffrirez encore. Votre vie sera dure. Ce n'est pas moi qui vous bercerait de paroles trompeuses."
  TNO_PEACE_POPUP_FLAVOR_FRV_CW: "Que nous importe la mort menaçante\nPour notre cause, soyons prêts à souffrir!"
  TNO_PEACE_POPUP_FLAVOR_FRM_CW: "The organization shall remain secret forevermore."
  TNO_PEACE_POPUP_FLAVOR_FMM_CW: "A genoux nous fîmes le serment,\nMiliciens de mourir en chantant,\nS'il le faut pour la Nouvelle France!"
@@ -460,10 +460,10 @@
  TNO_PEACE_POPUP_FLAVOR_CLL_CW: "Nothing more cruel and inhuman than a war. Nothing more desirable than peace. But peace has its causes, it is an effect. The effect of respect for mutual rights."
  TNO_PEACE_POPUP_FLAVOR_CLC_CW: "The specter of homicidal violence has appeared in Colombian history whenever it was believed that the hypocritical respect for formalities could replace the obedience of moral obligations."
  TNO_PEACE_POPUP_FLAVOR_COL_CW: "There is a trivial truth, since there is no doubt or uncertainty in saying it, which, however, is important to always keep in mind: we are all going to die. We know that simply because we are alive."
- TNO_PEACE_POPUP_FLAVOR_CLD_CW: ""It is necessary to suffer all the heat of the sun and all the hardships of a conqueror, since our campaign is about conquering the universe." - Francisco José de Caldas"
- TNO_PEACE_POPUP_FLAVOR_NAZI: "If nature opposes us, we will fight against it and make it obey us - Simón Bolívar"
- TNO_PEACE_POPUP_FLAVOR_PARTISANS: "Only you understand that you entangled the years to waste and the years of reflection in a single twisted intense activity. You lived the advance and the reverse at the same time. - Andrés Caicedo"
- TNO_PEACE_POPUP_FLAVOR_ARIO: "We are Bolivarians. The Supreme Father of America conscientiously judges us to the point of honoring our lips like stirrup peons kissing his boots. - José Camacho Carreño"
+ TNO_PEACE_POPUP_FLAVOR_CLD_CW: "It is necessary to suffer all the heat of the sun and all the hardships of a conqueror, since our campaign is about conquering the universe."
+ TNO_PEACE_POPUP_FLAVOR_NAZI: "If nature opposes us, we will fight against it and make it obey us."
+ TNO_PEACE_POPUP_FLAVOR_PARTISANS: "Only you understand that you entangled the years to waste and the years of reflection in a single twisted intense activity. You lived the advance and the reverse at the same time."
+ TNO_PEACE_POPUP_FLAVOR_ARIO: "We are Bolivarians. The Supreme Father of America conscientiously judges us to the point of honoring our lips like stirrup peons kissing his boots."
  
  # Hispaniola
  TNO_PEACE_POPUP_FLAVOR_Trujillo: "God in Heaven; Trujillo Six Feet Under."
@@ -471,8 +471,16 @@
  TNO_PEACE_POPUP_FLAVOR_CAL_DOM: "History will absolve them." # Castro inspired
 
  # Croatia
- TNO_PEACE_POPUP_FLAVOR_CRO: "This is the graveyard of the living, this is horrible because it is the worst to live and already be dead."
+ TNO_PEACE_POPUP_FLAVOR_CRO: "This is the graveyard of the living. It is horrible, because it is the worst to live and already be dead."
+ TNO_PEACE_POPUP_FLAVOR_CRO_YUGO: "The peoples of Yugoslavia do not want Fascism. They do not want a totalitarian regime. They do not want to become slaves of the Italians."
 
 # Second South African Civil War
  TNO_PEACE_POPUP_FLAVOR_ZUL: "The sons and daughters of the proud Nguni people fall silent once more."
  TNO_PEACE_POPUP_FLAVOR_SLF: "After climbing a great hill, one only finds that there are many more hills to climb."
+
+ # Greece
+ TNO_PEACE_POPUP_FLAVOR_GRE: "In peace, sons bury their fathers. In war, fathers bury their sons."
+
+ #Malaya 
+ TNO_PEACE_POPUP_FLAVOR_MLY: "Their struggle for liberation will have to wait."
+ TNO_PEACE_POPUP_FLAVOR_SHO: "The first blow to Pan-Asianism."

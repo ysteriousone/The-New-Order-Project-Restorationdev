@@ -1,0 +1,114 @@
+#################################
+### Central Asia World Events ###
+#################################
+news_event = {
+	id = WORLD.1100 #Kyzyl Orda unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1100"}
+	title = WORLD.1100.t
+	desc = WORLD.1100.desc
+	picture = GFX_news_event_KAZ_kyzyl_orda_unification
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1100.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_KYZYLORDA_KAZAKH_REUNIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}
+
+news_event = {
+	id = WORLD.1101 #Kokshetau unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1101"}
+	title = WORLD.1101.t
+	desc = WORLD.1101.desc
+	picture = GFX_news_event_KOK_kokshetau_unification
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1101.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_KOKSHETAU_KAZAKH_REUNIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}
+
+news_event = {
+	id = WORLD.1102 #Pavlodar unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1102"}
+	title = WORLD.1102.t
+	desc = WORLD.1102.desc
+	picture = GFX_news_event_PAV_pavlodar_unification
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1102.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_PAVLODAR_KAZAKH_REUNIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}
+
+news_event = {
+	id = WORLD.1103 #Khromtau unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1103"}
+	title = WORLD.1103.t
+	desc = WORLD.1103.desc
+	picture = GFX_news_event_ARL_khromtau_unification
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1103.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_AKTOBE_KAZAKH_REUNIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}
+
+news_event = {
+	id = WORLD.1104 #Aktau unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1104"}
+	title = WORLD.1104.t
+	desc = WORLD.1104.desc
+	picture = GFX_news_event_AKT_aktau_unification
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1104.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_AKTAU_KAZAKH_REUNIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}
+
+news_event = {
+	id = WORLD.1105 #Nowa Polska unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1105"}
+	title = WORLD.1105.t
+	desc = WORLD.1105.desc
+	picture = GFX_news_event_NPL_nowa_polska_victory
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1105.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_NOWA_POLSKA_KAZAKH_PACIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}
+
+news_event = {
+	id = WORLD.1106 #Kostanay unifies Kazakhstan
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.1106"}
+	title = WORLD.1106.t
+	desc = WORLD.1106.desc
+	picture = GFX_news_event_DER_kostanay_unification
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.1106.a
+		set_temp_variable = { TNO_temp_super_event = token:SE_KOSTANAY_KAZAKH_REUNIFICATION }
+	    TNO_fire_super_event = yes
+	}
+}

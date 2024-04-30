@@ -14,8 +14,8 @@ russian_raiding_category = {
 
 		fire_only_once = no
 
-		days_re_enable = 60
-		days_remove = 30
+		days_re_enable = 40
+		days_remove = 15
 
 		complete_effect = {
 			set_temp_variable = { temp_month_income_spent = 3 }
@@ -30,7 +30,7 @@ russian_raiding_category = {
 	}
 
 	russia_prepare_raid = {
-		icon = GFX_decision_border_war
+		icon = GFX_decision_generic_border_war_alt
 
 		available = {
 			any_owned_state = {
@@ -146,7 +146,7 @@ russian_raiding_category = {
 
 		cancel_effect = {
 			clr_country_flag = russia_preparing_raid
-			FROM = { clr_country_flag = russia_is_raid_target}
+			FROM = { clr_country_flag = russia_is_raid_target }
 		}
 
 		complete_effect = {
@@ -202,13 +202,15 @@ russian_raiding_category = {
 	}
 
 	russia_initiate_raid = {
-		icon = GFX_decision_border_war
+		icon = GFX_decision_generic_border_war_alt
 
 		activation = { always = no } #Activated from effect
 
 		available = {
-			var:FROM.attacker_state_vs_@ROOT = {
-				is_fully_controlled_by = ROOT
+			ROOT = {
+				var:FROM.attacker_state_vs_@ROOT = {
+					is_fully_controlled_by = ROOT
+				}
 			}
 			divisions_in_border_state = {
 				state = var:FROM.attacker_state_vs_@ROOT
@@ -218,7 +220,9 @@ russian_raiding_category = {
 		}
 
 		highlight_states = {
-			state = var:FROM.defender_state_vs_@ROOT
+			highlight_states_trigger = {
+				state = var:FROM.defender_state_vs_@ROOT
+			}
 		}
 
 		ai_will_do = {
@@ -277,7 +281,7 @@ russian_raiding_category = {
 	}
 
 	russia_raid_in_progress = {
-		icon = GFX_decision_border_war
+		icon = GFX_decision_generic_border_war_alt
 
 		allowed = { always = no } #Activated from effect
 
@@ -285,7 +289,9 @@ russian_raiding_category = {
 			NOT = { has_border_war = yes }
 		}
 		highlight_states = {
-			state = var:FROM.attacker_state_vs_@ROOT
+			highlight_states_trigger = {
+				state = var:FROM.attacker_state_vs_@ROOT
+			}
 		}
 
 		cancel_trigger = {
@@ -328,7 +334,7 @@ russian_raiding_category = {
 	}
 
 	russia_spend_raid_loot_academic_base = {
-		icon = GFX_decision_generic_political_discourse
+		icon = GFX_decision_generic_building_school
 		visible = {
 			always = yes
 		}
@@ -388,7 +394,7 @@ russian_raiding_category = {
 	}
 
 	russia_spend_raid_loot_research_facilities = {
-		icon = GFX_decision_research_generic
+		icon = GFX_decision_generic_research
 		visible = {
 			always = yes
 		}
@@ -552,7 +558,7 @@ russian_raiding_category = {
 	}
 
 	russia_spend_raid_loot_agriculture = {
-		icon = GFX_decision_industrial_farm
+		icon = GFX_decision_generic_industrial_farm
 		visible = {
 			always = yes
 		}
@@ -1267,7 +1273,7 @@ RUS_nuke_development_category = {
 far_east_naval_category = {
 	
 	RUS_FEN_recover_schematics = {
-		icon = GFX_decision_document_target
+		icon = GFX_decision_generic_document_target
 		ai_will_do = {
 			factor = 50
 		}
@@ -1298,7 +1304,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_fleet_modernization = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1369,7 +1375,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_naval_program = {
-	icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1388,7 +1394,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_state_fishing_fleet = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1412,7 +1418,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_state_fishing_fleets = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1443,7 +1449,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_state_fishing_armada = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1474,7 +1480,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_sell_10_convoys = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1500,7 +1506,7 @@ far_east_naval_category = {
 	}
 
 	RUS_FEN_sell_100_convoys = {
-		icon = GFX_decision_shipyard
+		icon = GFX_decision_generic_shipyard
 		ai_will_do = {
 			factor = 50
 		}
@@ -1582,7 +1588,7 @@ far_east_sakha_category = {
 	}
 
 	RUS_Sakha_Begin_Drilling = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		ai_will_do = {
 			factor = 50
 		}
@@ -1663,7 +1669,7 @@ far_east_sakha_category = {
 	}
 
 	RUS_Sakha_Mir_Excavation = {
-		icon = GFX_decision_mining
+		icon = GFX_decision_generic_mining
 		ai_will_do = {
 			factor = 50
 		}
@@ -1719,7 +1725,7 @@ far_east_sakha_category = {
 	}
 
 	RUS_Udachnaya_Excavation = {
-		icon = GFX_ANG_diamond_icon
+		icon = GFX_decision_generic_diamond
 		ai_will_do = {
 			factor = 50
 		}
@@ -1867,7 +1873,7 @@ far_east_sakha_category = {
 RUS_lenin_enbalmed_category = {
 	RUS_lenin_leave_be = { #Keep him in Tyumen
 
-		icon = GFX_decision_document_building
+		icon = GFX_decision_generic_document_building
 
 		available = {
 			NOT = {
@@ -1904,7 +1910,7 @@ RUS_lenin_enbalmed_category = {
 	}
 	RUS_lenin_mausoleum = { #Having his body on public display will give us legitimacy as the heir of the Soviet Union
 
-		icon = GFX_decision_document_socialism
+		icon = GFX_decision_generic_document_socialism
 
 		available = {
 			OR = {
@@ -2001,7 +2007,7 @@ RUS_lenin_enbalmed_category = {
 	}
 	RUS_bury_lenin_moderate = { #Bury him, we neither want to disrespect nor glorify him
 
-		icon = GFX_decision_document_cancel
+		icon = GFX_decision_generic_document_cancel
 
 		available = {
 			OR = {

@@ -1,0 +1,1610 @@
+add_namespace = RUS_kazakhstan # General Kazakhstan Events
+add_namespace = RUS_race_to_kazakhstan # Race to Kazakhstan Events
+
+### General Kazakhstan Events ###
+country_event = { #Nowa Polska Kills Kazakhstan Event
+	id = RUS_kazakhstan.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_kazakhstan.1"
+		hidden_effect = {
+			set_global_flag = RUS_shattered_kazakhstan
+			NPL = {
+				2016 = {
+					add_core_of = NPL
+				}
+				set_autonomy = {
+					target = ARL
+					autonomy_state = autonomy_client_state
+				}
+				transfer_state = 2016
+				clear_global_event_target = RUS_kazakhstan_unifier
+				587 = { remove_core_of = ARL }
+			}
+			ARL = {
+				set_politics = {
+					ruling_party = paternalism
+				}
+				create_country_leader = {
+					name = "Rudolf Dzipanov"
+					desc = "POLITICS_RUDOLF_DZIPANOV_DESC"
+					picture = "gfx/leaders/NPL/Portrait_Nowa_Polska_Rudolf_Dzipanov.dds"
+					expire = "1999.1.1"
+					ideology = paternalism_subtype
+					traits = { }
+				}
+				406 = { remove_core_of = ARL }
+				583 = {
+					add_core_of = ARL
+				}
+				transfer_state = 402
+				transfer_state = 583
+				set_cosmetic_tag = ARL_NPL
+				add_popularity = {
+					ideology = paternalism
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = progressivism
+					popularity = 0.05
+				}
+				remove_ideas = {
+					ARL_national_renewal
+					ARL_renovated_land_registry_3
+	                ARL_defensive_surveys
+	                ARL_arms_manuals
+	                ARL_security_forces_final
+	                ARL_breakneck_industrialization
+				}
+			}
+			KAZ = {
+				set_politics = {
+					ruling_party = progressivism
+				}
+				create_country_leader = {
+					name = "Isatai Abdukarimov"
+					desc = "POLITICS_ISATAI_ABDUKARIMOV_DESC"
+					picture = "gfx/leaders/KAZ/Portrait_Kazakhstan_Isatai_Abdukarimov.dds"
+					expire = "1999.1.1"
+					ideology = progressivism_subtype
+					traits = { }
+				}
+				588 = {
+					add_core_of = KAZ
+				}
+				590 = {
+					add_core_of = KAZ
+				}
+				1805 = {
+					add_core_of = KAZ
+				}
+				1806 = { 
+					add_core_of = KAZ
+				}
+				1808 = {
+					add_core_of = KAZ
+				}
+				transfer_state = 587
+				transfer_state = 589
+				transfer_state = 404
+				transfer_state = 588
+				transfer_state = 590
+				transfer_state = 1802
+				transfer_state = 1803
+				transfer_state = 1804
+				transfer_state = 1805
+				transfer_state = 1806
+				transfer_state = 1807
+				transfer_state = 1808
+				set_cosmetic_tag = KAZ_NPL
+				set_capital = { state = 589 }
+				add_popularity = {
+					ideology = progressivism
+					popularity = 0.40
+				}
+				add_popularity = {
+					ideology = conservatism
+					popularity = 0.10
+				}
+				add_popularity = {
+					ideology = paternalism
+					popularity = 0.15
+				}
+				remove_ideas = {
+					KAZ_kaz_red_army
+				    KAZ_red_army_state
+	                KAZ_new_soviet_democracy
+				}
+				remove_ideas = {
+					KAZ_bandit_plague
+				}
+				save_global_event_target_as = RUS_kazakhstan_unifier
+			}
+		}
+	}
+	title = RUS_kazakhstan.1.t
+	desc = RUS_kazakhstan.1.desc
+	#picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = RUS_kazakhstan.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+### Race to Kazakhstan Events ###
+country_event = {  #Daily pulse
+	id = RUS_race_to_kazakhstan.0
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.0"}
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = RUS_KAZAKH_CRISIS_OVER }
+			}
+			country_event = { id = RUS_race_to_kazakhstan.0 days = 1 }
+		}
+		if = {
+			limit = { has_global_flag = RUS_shattered_kazakhstan }
+			RUS_calculate_Nowa_Polska_influence_modifiers = yes
+			add_to_variable = { RUS_NPL_Influence = RUS_NPL_Influence_Daily_Ticker_End }
+		}
+		RUS_calculate_kazakhstan_influence_modifiers = yes
+		add_to_variable = { RUS_KAZ_Influence = RUS_KAZ_Influence_Daily_Ticker_End }
+	}
+	option = {
+		name = RUS_race_to_kazakhstan.0.a
+	}
+}
+
+country_event = { #Russia
+	id = RUS_race_to_kazakhstan.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.1"}
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			has_country_flag = BEGUN_KAZAKH_CRISIS
+		}
+	}
+	immediate = {
+		set_variable = { global.RUS_KAZ_progess = 0 }
+		set_country_flag = BEGUN_KAZAKH_CRISIS
+		set_country_flag = URALS_CRISIS_KAZ_INFLUENCE_0
+		KZK = { set_country_flag = WSR_INFLUENCE_LEVEL_3 }
+		set_variable = { RUS_KAZ_Influence = 0 }
+		if = {
+			limit = {
+				has_global_flag = RUS_shattered_kazakhstan
+				country_exists = NPL
+			}
+			set_country_flag = URALS_CRISIS_NPL_INFLUENCE_0
+			NPL = { set_country_flag = WSR_INFLUENCE_LEVEL_3 }
+			set_variable = { RUS_NPL_Influence = 0 }
+		}
+		set_variable = { RUS_NPL_Influence = 0 }
+		RUS_calculate_kazakhstan_influence_calculators = yes
+		country_event = { id = RUS_race_to_kazakhstan.0 }
+		SIB = {
+			country_event = { id = RUS_race_to_kazakhstan.2 }
+		}
+	}
+	option = {
+		name = RUS_race_to_kazakhstan.1.a
+	}
+}
+
+country_event = { #Siberia
+	id = RUS_race_to_kazakhstan.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: RUS_race_to_kazakhstan.2"}
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			has_country_flag = BEGUN_KAZAKH_CRISIS
+		}
+	}
+	immediate = {
+		set_variable = { global.RUS_KAZ_progess = 0 }
+		set_country_flag = BEGUN_KAZAKH_CRISIS
+		set_country_flag = URALS_CRISIS_KAZ_INFLUENCE_0
+		KZK = { set_country_flag = WSB_INFLUENCE_LEVEL_3 }
+		set_variable = { RUS_KAZ_Influence = 0 }
+		if = {
+			limit = {
+				has_global_flag = RUS_shattered_kazakhstan
+				country_exists = NPL
+			}
+			set_country_flag = URALS_CRISIS_NPL_INFLUENCE_0
+			NPL = { set_country_flag = WSR_INFLUENCE_LEVEL_3 }
+			set_variable = { RUS_NPL_Influence = 0 }
+		}
+		RUS_calculate_kazakhstan_influence_calculators = yes
+		country_event = { id = RUS_race_to_kazakhstan.0 }
+		RWS = {
+			country_event = { id = RUS_race_to_kazakhstan.1 }
+		}
+	}
+	option = {
+		name = RUS_race_to_kazakhstan.2.a
+	}
+}
+
+country_event = { #Kazakhstan - we've been integrated!
+	id = RUS_race_to_kazakhstan.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.3"}
+	title = RUS_race_to_kazakhstan.3.t
+	desc = RUS_race_to_kazakhstan.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Accept it
+		name = RUS_race_to_kazakhstan.3.a
+		ai_chance = {
+			factor = 30
+		}
+		FROM = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.4
+				days = 2
+			}
+		}
+	}
+	option = { #Cooperate
+		name = RUS_race_to_kazakhstan.3.b
+		ai_chance = {
+			factor = 0
+		}
+		FROM = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.5
+				days = 2
+			}
+		}
+	}
+	option = { #Resist!
+		name = RUS_race_to_kazakhstan.3.c
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 50
+				FROM = {
+					OR = {
+						has_government = despotism
+						has_government = fascism
+						has_government = national_socialism
+						has_government = esoteric_nazism
+					}
+				}
+			}
+		}
+		set_autonomy = {
+			target = KZK
+			autonomy_state = autonomy_free
+		}
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.6
+					days = 2
+				}
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.7
+					days = 1
+				}
+				end_puppet = KZK
+			}
+			KZK = {
+				clr_country_flag = WSR_INFLUENCE_LEVEL_6
+				set_country_flag = WSR_INFLUENCE_LEVEL_2
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.6
+					days = 1
+				}
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.7
+					days = 1
+				}
+				end_puppet = KZK
+			}
+			KZK = {
+				clr_country_flag = WSB_INFLUENCE_LEVEL_6
+				set_country_flag = WSB_INFLUENCE_LEVEL_2
+			}
+		}
+	}
+}
+
+country_event = { #Kazakhstan accepts integration
+	id = RUS_race_to_kazakhstan.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.4"}
+	title = RUS_race_to_kazakhstan.4.t
+	desc = RUS_race_to_kazakhstan.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.4.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				annex_country = { target = KZK transfer_troops = yes }
+				KZK = {	every_unit_leader = { set_nationality = RWS } }
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				annex_country = { target = KZK transfer_troops = yes }
+				KZK = {	every_unit_leader = { set_nationality = SIB } }
+			}
+		}
+	}
+}
+
+country_event = { #Kazakhstan accepts Cooperation
+	id = RUS_race_to_kazakhstan.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.5"}
+	title = RUS_race_to_kazakhstan.5.t
+	desc = RUS_race_to_kazakhstan.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.5.a
+		KZK = { save_party_popularities = yes }
+		hidden_effect = {
+			set_autonomy = { target = KZK autonomy_state = autonomy_free }
+		}
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				set_autonomy = { target = KZK autonomous_state = autonomy_integrated_puppet }
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				set_autonomy = { target = KZK autonomous_state = autonomy_integrated_puppet }
+			}
+		}
+		KZK = { apply_party_popularities = yes }
+	}
+}
+
+country_event = { #Kazakhstan asks for help - Defender Perspective
+	id = RUS_race_to_kazakhstan.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.6"}
+	title = RUS_race_to_kazakhstan.6.t
+	desc = RUS_race_to_kazakhstan.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Yes, we'll help - Fire event to integrator and Kazakhstan
+		name = RUS_race_to_kazakhstan.6.a
+		add_war_support = 0.015
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.8
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.8
+					days = 1
+				}
+			}
+		}
+		KZK = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.9
+				days = 1
+			}
+		}
+	}
+	option = { #No. - Fire event to Kazakhstan
+		name = RUS_race_to_kazakhstan.6.b
+		add_political_power = -25
+		add_stability = -0.015
+		KZK = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.10
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Kazakhstan resists!
+	id = RUS_race_to_kazakhstan.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan7"}
+	title = RUS_race_to_kazakhstan.7.t
+	desc = RUS_race_to_kazakhstan.7.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.7.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Rival protects Kazakhstan, issues ultimatum - Integrator Perspective
+	id = RUS_race_to_kazakhstan.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.8"}
+	title = RUS_race_to_kazakhstan.8.t
+	desc = RUS_race_to_kazakhstan.8.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #No. - Fire event to defender and Kazakhstan
+		name = RUS_race_to_kazakhstan.8.a
+		add_war_support = 0.025
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.11
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.11
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #Stand down. - Fire event to defender and Kazakhstan
+		name = RUS_race_to_kazakhstan.8.b
+		add_political_power = -50
+		add_stability = -0.025
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.12
+					days = 1
+				}
+			}
+			clr_global_flag = RWS_INTEGRATING_KAZ
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.12
+					days = 1
+				}
+			}
+			clr_global_flag = SIB_INTEGRATING_KAZ
+		}
+		KZK = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.13
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Kazakhstan - we will be defended!
+	id = RUS_race_to_kazakhstan.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.9"}
+	title = RUS_race_to_kazakhstan.9.t
+	desc = RUS_race_to_kazakhstan.9.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.9.a
+		add_political_power = 25
+	}
+}
+
+country_event = { #Kazakhstan - nobody is coming to save us
+	id = RUS_race_to_kazakhstan.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.10"}
+	title = RUS_race_to_kazakhstan.10.t
+	desc = RUS_race_to_kazakhstan.10.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.10.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = { #Integrator Will Not Back Down - Kazakhstan - Defender Perspective
+	id = RUS_race_to_kazakhstan.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.11"}
+	title = RUS_race_to_kazakhstan.11.t
+	desc = RUS_race_to_kazakhstan.11.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #War, then.
+		name = RUS_race_to_kazakhstan.11.a
+		add_war_support = 0.05
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.14
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.14
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #No war, give up Kazakhstan.
+		name = RUS_race_to_kazakhstan.11.b
+		add_political_power = -100
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.15
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.15
+					days = 1
+				}
+			}
+		}
+		URL = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.13
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = { #Integrator Backs Down - Kazakhstan - Defender Perspective
+	id = RUS_race_to_kazakhstan.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.12"}
+	title = RUS_race_to_kazakhstan.12.t
+	desc = RUS_race_to_kazakhstan.12.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.12.a
+	}
+}
+
+country_event = { #Defender betrays us - Kazakhstan - Kazakhstan Perspective
+	id = RUS_race_to_kazakhstan.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.13"}
+	title = RUS_race_to_kazakhstan.13.t
+	desc = RUS_race_to_kazakhstan.13.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = RUS_race_to_kazakhstan.13.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.16
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.16
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #Resist
+		name = RUS_race_to_kazakhstan.13.b
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.17
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.17
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Defender declares war - Kazakhstan - Integrator Perspective
+	id = RUS_race_to_kazakhstan.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.14"}
+	title = RUS_race_to_kazakhstan.14.t
+	desc = RUS_race_to_kazakhstan.14.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.14.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			SIB = {
+				declare_war_on = {
+					target = RWS
+					type = annex_everything
+				}
+			}
+			SIB = {
+				declare_war_on = {
+					target = KZK
+					type = annex_everything
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			RWS = {
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+				}
+			}
+			RWS = {
+				declare_war_on = {
+					target = KZK
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Defender betrays Kazakhstan - Integrator Perspective
+	id = RUS_race_to_kazakhstan.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.15"}
+	title = RUS_race_to_kazakhstan.15.t
+	desc = RUS_race_to_kazakhstan.15.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.15.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Kazakhstan Surrenders - Integrator Perspective
+	id = RUS_race_to_kazakhstan.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.16"}
+	title = RUS_race_to_kazakhstan.16.t
+	desc = RUS_race_to_kazakhstan.16.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.16.a
+		KZK = { save_party_popularities = yes }
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				set_autonomy = {
+					target = KZK
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				set_autonomy = {
+					target = KZK
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+		}
+		KZK = { apply_party_popularities = yes }
+	}
+}
+
+country_event = { #Kazakhstan War - Integrator Perspective
+	id = RUS_race_to_kazakhstan.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.17"}
+	title = RUS_race_to_kazakhstan.17.t
+	desc = RUS_race_to_kazakhstan.17.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.17.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_KAZ
+			}
+			RWS = {
+				declare_war_on = {
+					target = KZK
+					type = annex_everything
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_KAZ
+			}
+			SIB = {
+				declare_war_on = {
+					target = KZK
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Kazakhstan - Russia prepares to invade
+	id = RUS_race_to_kazakhstan.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.18"}
+	title = RUS_race_to_kazakhstan.18.t
+	desc = RUS_race_to_kazakhstan.18.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.18.a
+		add_war_support = 0.25
+		add_manpower = 7500
+	}
+}
+
+
+country_event = { #Nowa Polska - we've been integrated!
+	id = RUS_race_to_kazakhstan.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.19"}
+	title = RUS_race_to_kazakhstan.19.t
+	desc = RUS_race_to_kazakhstan.19.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Accept it
+		name = RUS_race_to_kazakhstan.19.a
+		ai_chance = {
+			factor = 30
+		}
+		FROM = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.20
+				days = 2
+			}
+		}
+	}
+	option = { #Cooperate
+		name = RUS_race_to_kazakhstan.19.b
+		ai_chance = {
+			factor = 0
+		}
+		FROM = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.21
+				days = 2
+			}
+		}
+	}
+	option = { #Resist!
+		name = RUS_race_to_kazakhstan.19.c
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 50
+				FROM = {
+					OR = {
+						has_government = despotism
+						has_government = fascism
+						has_government = national_socialism
+						has_government = esoteric_nazism
+					}
+				}
+			}
+		}
+		set_autonomy = {
+			target = NPL
+			autonomy_state = autonomy_free
+		}
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.22
+					days = 2
+				}
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.23
+					days = 1
+				}
+				end_puppet = NPL
+			}
+			NPL = {
+				clr_country_flag = WSR_INFLUENCE_LEVEL_6
+				set_country_flag = WSR_INFLUENCE_LEVEL_2
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.22
+					days = 1
+				}
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.23
+					days = 1
+				}
+				end_puppet = NPL
+			}
+			NPL = {
+				clr_country_flag = WSB_INFLUENCE_LEVEL_6
+				set_country_flag = WSB_INFLUENCE_LEVEL_2
+			}
+		}
+	}
+}
+
+country_event = { #Nowa Polska accepts integration
+	id = RUS_race_to_kazakhstan.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.20"}
+	title = RUS_race_to_kazakhstan.20.t
+	desc = RUS_race_to_kazakhstan.20.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.20.a
+
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				annex_country = { target = NPL transfer_troops = yes }
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				annex_country = { target = NPL transfer_troops = yes }
+			}
+		}
+	}
+}
+
+country_event = { #Nowa Polska accepts Cooperation
+	id = RUS_race_to_kazakhstan.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.21"}
+	title = RUS_race_to_kazakhstan.21.t
+	desc = RUS_race_to_kazakhstan.21.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.21.a
+		NPL = { save_party_popularities = yes }
+		hidden_effect = {
+			set_autonomy = { target = NPL autonomy_state = autonomy_free }
+		}
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				set_autonomy = { target = NPL autonomous_state = autonomy_integrated_puppet }
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				set_autonomy = { target = NPL autonomous_state = autonomy_integrated_puppet }
+			}
+		}
+		NPL = { apply_party_popularities = yes }
+	}
+}
+
+country_event = { #Nowa Polska asks for help - Defender Perspective
+	id = RUS_race_to_kazakhstan.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.22"}
+	title = RUS_race_to_kazakhstan.22.t
+	desc = RUS_race_to_kazakhstan.22.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Yes, we'll help - Fire event to integrator and Nowa Polska
+		name = RUS_race_to_kazakhstan.22.a
+		add_war_support = 0.015
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.24
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.24
+					days = 1
+				}
+			}
+		}
+		NPL = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.25
+				days = 1
+			}
+		}
+	}
+	option = { #No. - Fire event to Nowa Polska
+		name = RUS_race_to_kazakhstan.22.b
+		add_political_power = -25
+		add_stability = -0.015
+		NPL = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.26
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Nowa Polska resists!
+	id = RUS_race_to_kazakhstan.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan7"}
+	title = RUS_race_to_kazakhstan.23.t
+	desc = RUS_race_to_kazakhstan.23.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.23.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Rival protects Nowa Polska, issues ultimatum - Integrator Perspective
+	id = RUS_race_to_kazakhstan.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.24"}
+	title = RUS_race_to_kazakhstan.24.t
+	desc = RUS_race_to_kazakhstan.24.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #No. - Fire event to defender and Nowa Polska
+		name = RUS_race_to_kazakhstan.24.a
+		add_war_support = 0.025
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.27
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.27
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #Stand down. - Fire event to defender and Nowa Polska
+		name = RUS_race_to_kazakhstan.24.b
+		add_political_power = -50
+		add_stability = -0.025
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.28
+					days = 1
+				}
+			}
+			clr_global_flag = RWS_INTEGRATING_NPL
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.28
+					days = 1
+				}
+			}
+			clr_global_flag = SIB_INTEGRATING_NPL
+		}
+		NPL = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.29
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = { #Nowa Polska - we will be defended!
+	id = RUS_race_to_kazakhstan.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.25"}
+	title = RUS_race_to_kazakhstan.25.t
+	desc = RUS_race_to_kazakhstan.25.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.25.a
+		add_political_power = 25
+	}
+}
+
+country_event = { #Nowa Polska - nobody is coming to save us
+	id = RUS_race_to_kazakhstan.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.26"}
+	title = RUS_race_to_kazakhstan.26.t
+	desc = RUS_race_to_kazakhstan.26.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.26.a
+		add_war_support = 0.1
+	}
+}
+
+country_event = { #Integrator Will Not Back Down - Nowa Polska - Defender Perspective
+	id = RUS_race_to_kazakhstan.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.27"}
+	title = RUS_race_to_kazakhstan.27.t
+	desc = RUS_race_to_kazakhstan.27.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #War, then.
+		name = RUS_race_to_kazakhstan.27.a
+		add_war_support = 0.05
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.30
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.30
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #No war, give up Nowa Polska.
+		name = RUS_race_to_kazakhstan.27.b
+		add_political_power = -100
+		add_stability = -0.05
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.31
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.31
+					days = 1
+				}
+			}
+		}
+		URL = {
+			country_event = {
+				id = RUS_race_to_kazakhstan.29
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = { #Integrator Backs Down - Nowa Polska - Defender Perspective
+	id = RUS_race_to_kazakhstan.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.28"}
+	title = RUS_race_to_kazakhstan.28.t
+	desc = RUS_race_to_kazakhstan.28.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.28.a
+	}
+}
+
+country_event = { #Defender betrays us - Nowa Polska - Nowa Polska Perspective
+	id = RUS_race_to_kazakhstan.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.29"}
+	title = RUS_race_to_kazakhstan.29.t
+	desc = RUS_race_to_kazakhstan.29.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = RUS_race_to_kazakhstan.29.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.32
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.32
+					days = 1
+				}
+			}
+		}
+	}
+	option = { #Resist
+		name = RUS_race_to_kazakhstan.29.b
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.33
+					days = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				country_event = {
+					id = RUS_race_to_kazakhstan.33
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Defender declares war - Nowa Polska - Integrator Perspective
+	id = RUS_race_to_kazakhstan.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.30"}
+	title = RUS_race_to_kazakhstan.30.t
+	desc = RUS_race_to_kazakhstan.30.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.30.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				declare_war_on = {
+					target = RWS
+					type = annex_everything
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Defender betrays Nowa Polska - Integrator Perspective
+	id = RUS_race_to_kazakhstan.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.31"}
+	title = RUS_race_to_kazakhstan.31.t
+	desc = RUS_race_to_kazakhstan.31.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.31.a
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Nowa Polska Surrenders - Integrator Perspective
+	id = RUS_race_to_kazakhstan.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.32"}
+	title = RUS_race_to_kazakhstan.32.t
+	desc = RUS_race_to_kazakhstan.32.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.32.a
+		NPL = { save_party_popularities = yes }
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				set_autonomy = {
+					target = NPL
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				set_autonomy = {
+					target = NPL
+					autonomous_state = autonomy_integrated_puppet
+				}
+			}
+		}
+		NPL = { apply_party_popularities = yes }
+	}
+}
+
+country_event = { #Nowa Polska War - Integrator Perspective
+	id = RUS_race_to_kazakhstan.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.33"}
+	title = RUS_race_to_kazakhstan.33.t
+	desc = RUS_race_to_kazakhstan.33.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.33.a
+		if = {
+			limit = {
+				has_global_flag = RWS_INTEGRATING_NPL
+			}
+			RWS = {
+				declare_war_on = {
+					target = NPL
+					type = annex_everything
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = SIB_INTEGRATING_NPL
+			}
+			SIB = {
+				declare_war_on = {
+					target = NPL
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Nowa Polska - Russia prepares to invade
+	id = RUS_race_to_kazakhstan.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.34"}
+	title = RUS_race_to_kazakhstan.34.t
+	desc = RUS_race_to_kazakhstan.34.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.34.a
+		add_war_support = 0.25
+		add_manpower = 7500
+	}
+}
+
+country_event = { #Russia - Defeat
+	id = RUS_race_to_kazakhstan.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.35"}
+	title = RUS_race_to_kazakhstan.35.t
+	desc = RUS_race_to_kazakhstan.35.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = {
+		name = RUS_race_to_kazakhstan.35.a
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				has_war_with = KZK
+			}
+			white_peace = KZK
+		}
+		if = {
+			limit = {
+				has_war_with = NPL
+			}
+			white_peace = NPL
+		}
+	}
+	option = {
+		name = RUS_race_to_kazakhstan.35.a
+		ai_chance = { factor = 0 }
+		add_war_support = -0.10
+	}
+}
+
+country_event = { #Opponent launches general military intervention
+	id = RUS_race_to_kazakhstan.36
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_race_to_kazakhstan.36"
+		set_country_flag = RUS_kazakhstan_choice
+	}
+	title = RUS_race_to_kazakhstan.36.t
+	desc = RUS_race_to_kazakhstan.36.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+
+	option = { #Defend Southern Urals
+		name = RUS_race_to_kazakhstan.36.a
+		ai_chance = {
+			factor = 30
+		}
+		if = {
+			limit = {
+				tag = RWS
+			}
+			RWS = {
+				declare_war_on = {
+					target = SIB
+					type = annex_everything
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SIB
+			}
+			SIB = {
+				declare_war_on = {
+					target = RWS
+					type = annex_everything
+				}
+			}
+		}
+	}
+	option = { #Declare war on Kazakhstan too
+		name = RUS_race_to_kazakhstan.36.b
+		ai_chance = {
+			factor = 120
+		}
+		if = {
+			limit = {
+				KZK = {
+					exists = yes
+				}
+			}
+			declare_war_on = {
+				target = KZK
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				NPL = {
+					exists = yes
+				}
+			}
+			declare_war_on = {
+				target = NPL
+				type = annex_everything
+			}
+		}
+	}
+	option = { #Do nothing
+		name = RUS_race_to_kazakhstan.36.c
+		ai_chance = {
+			factor = 80
+		}
+		add_stability = -0.1
+	}
+}

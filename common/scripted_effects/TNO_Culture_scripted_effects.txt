@@ -1435,6 +1435,8 @@ TNO_setup_cultures = {
 	#Kazakh Culture
 	set_variable = { 406.nationality = 180 }
 	set_variable = { 587.nationality = 180 }
+	set_variable = { 2016.nationality = 180 }
+    set_variable = { 618.nationality = 180 }
 
 	#Turkmen/Turkic Culture
 	set_variable = { 584.nationality = 181 }
@@ -2054,7 +2056,6 @@ TNO_setup_cultures = {
 	#Xibei
 	set_variable = { 957.nationality = 300 }
 	set_variable = { 617.nationality = 300 }
-	set_variable = { 618.nationality = 300 }
 
 	#Jiaoliao
 	set_variable = { 597.nationality = 301 }

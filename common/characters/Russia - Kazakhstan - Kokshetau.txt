@@ -1,0 +1,164 @@
+characters = {
+	# Leaders
+	KOK_Abu_Khan = {
+		name = KOK_Abu_Khan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KOK/Portrait_Kokshetau_Abu_Khan.dds"
+				small = "GFX_idea_KOK_minister_Abu_Khan"
+			}
+			army = {
+				large = "gfx/leaders/KOK/Portrait_Kokshetau_Abu_Khan.dds"
+				small = "GFX_idea_KOK_minister_Abu_Khan"
+			}
+		}
+
+		country_leader = {
+			desc = "POLITICS_ABU_KHAN_DESC"
+			expire = "1999.1.1.1"
+			ideology = despotism_warlordism_subtype
+			id = -1
+		}
+
+		field_marshal = {
+			traits = { trait_reckless cavalry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 3481
+		}
+
+		advisor = {
+			slot = head_of_government
+			idea_token = KOK_Abu_Khan_hog
+			allowed = { original_tag = KOK }
+			traits = {
+				head_of_government
+				hog_ambitious_union_boss
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Ministers
+	KOK_Yergaliy_Baskarbayev = {
+		name = KOK_Yergaliy_Baskarbayev
+		portraits = { civilian = { small = "GFX_idea_KOK_minister_Yergaliy_Baskarbayev" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = KOK_Yergaliy_Baskarbayev_for
+			allowed = { original_tag = KOK }
+			traits = {
+				foreign_minister
+				for_iron_fisted_brute
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	KOK_Vasily_Demidenko = {
+		name = KOK_Vasily_Demidenko
+		portraits = { civilian = { small = "GFX_idea_KOK_minister_Vasily_Demidenko" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = KOK_Vasily_Demidenko_eco
+			allowed = { original_tag = KOK }
+			traits = {
+				economy_minister
+				eco_military_entrepreneur
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	KOK_Kamil_Makhmeyev = {
+		name = KOK_Kamil_Makhmeyev
+		portraits = {
+			civilian = { small = "GFX_idea_KOK_minister_Kamil_Makhmeyev" }
+			army = { small = "GFX_idea_KOK_minister_Kamil_Makhmeyev" }
+		}
+
+		advisor = {
+			slot = security_minister
+			idea_token = KOK_Kamil_Makhmeyev_sec
+			allowed = { original_tag = KOK }
+			traits = {
+				security_minister
+				sec_efficient_sociopath
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Commanders
+	KOK_Vasily_Benberin = {
+		name = KOK_Vasily_Benberin
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOK/Portrait_Kokshetau_Vasily_Benberin.dds"
+				small = "GFX_idea_KOK_minister_Vasily_Benberin"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 3482
+		}
+	}
+
+	KOK_Vasily_Bovt = {
+		name = KOK_Vasily_Bovt
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOK/Portrait_Kokshetau_Vasily_Bovt.dds"
+				small = "GFX_idea_KOK_minister_Vasily_Bovt"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 3483
+		}
+	}
+
+	KOK_Viktor_Bulavsky = {
+		name = KOK_Viktor_Bulavsky
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOK/Portrait_Kokshetau_Viktor_Bulavsky.dds"
+				small = "GFX_idea_KOK_minister_Viktor_Bulavsky"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 3484
+		}
+	}
+}

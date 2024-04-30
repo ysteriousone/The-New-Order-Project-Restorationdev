@@ -14,6 +14,15 @@ remove_all_ministers = {
 	}
 }
 
+remove_all_high_command = {
+	hidden_effect = {
+		remove_ideas_with_trait = high_command
+		remove_ideas_with_trait = army_chief
+		remove_ideas_with_trait = air_chief
+		remove_ideas_with_trait = navy_chief
+	}
+}
+
 #fill empty minister slots
 fill_empty_minister = {
 	if = {
@@ -87,10 +96,6 @@ fire_nuclear_war = {
 	set_global_flag = TNO_world_tension_WW3
 	#news_event = { id = WORLD.100 hours = 1 }
 	ZZZ = {
-		#add_named_threat = {
-		#	threat = 100
-		#	name = threat.45.t
-		#}
 		set_cosmetic_tag = ZZZ_nuclear
 		fire_nukes = yes
 		set_global_flag = NUCLEAR_WAR
@@ -99,7 +104,7 @@ fire_nuclear_war = {
 	}
 	set_global_flag = TNO_my_world_is_on_fire_how_about_yours
 	every_country = {
-		load_focus_tree = blank_no_tree_apoc
+		load_focus_tree = ZZZ_blank_focus
 		if = {
 			limit = { is_ai = no }
 			set_temp_variable = { TNO_temp_super_event = token:SE_NUCLEAR_WAR }
@@ -571,6 +576,22 @@ random_get_superreg = {
 	else = { unite_siberia = yes }
 }
 
+unite_kazakhstan = {
+	every_other_country = {
+		limit = {
+			is_kazakh_nation = yes
+		}
+		PREV = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+	}
+	activate_decision = kazakhstan_reunification
+}
+
+
 random_get_regionals = {
 	if = {
 		limit = {
@@ -695,7 +716,7 @@ TNO_div_limiter_calculate_unit_cap = {
 	}
 }
 
-TNO_cancel_border_war_country_scope = {
+TNO_cancel_border_war_scope = {
 	every_owned_state = {
 		limit = {
 			has_border_war = yes
@@ -704,71 +725,47 @@ TNO_cancel_border_war_country_scope = {
 			limit = {
 				has_border_war = yes
 			}
-			if = {
-				limit = {
-					has_border_war_between = {
-						attacker = THIS
-						defender = PREV
-					}
-				}
-				cancel_border_war = {
-					dont_fire_events = yes
-					defender = PREV
-					attacker = THIS
-				}
-				log = "[GetDateText]: [Root.GetName]: ABORTED BORDER WAR BETWEEN [THIS.GetName] AND [PREV.GetName]"
+			set_temp_variable = {
+				attacker_scope = THIS
+				defender_scope = PREV
 			}
-			if = {
-				limit = {
-					has_border_war_between = {
-						attacker = PREV
-						defender = THIS
-					}
-				}
-				cancel_border_war = {
-					dont_fire_events = yes
-					defender = THIS
-					attacker = PREV
-				}
-				log = "[GetDateText]: [Root.GetName]: ABORTED BORDER WAR BETWEEN [PREV.GetName] AND [THIS.GetName]"
-			}
+			TNO_cancel_border_war_effect = yes
 		}
 	}
 }
 
-TNO_cancel_border_war_state_scope = {
-	every_neighbor_state = {
+TNO_cancel_border_war_effect = {
+	if = {
 		limit = {
-			has_border_war = yes
+			has_border_war_between = {
+				attacker = ROOT.attacker_scope
+				defender = ROOT.defender_scope
+			}
 		}
-		if = {
-			limit = {
-				has_border_war_between = {
-					attacker = THIS
-					defender = PREV
-				}
-			}
-			cancel_border_war = {
-				dont_fire_events = yes
-				defender = PREV
-				attacker = THIS
-			}
-			log = "[GetDateText]: [Root.GetName]: ABORTED BORDER WAR BETWEEN [THIS.GetName] AND [PREV.GetName]"
+		cancel_border_war = {
+			dont_fire_events = yes
+			defender = ROOT.defender_scope
+			attacker = ROOT.attacker_scope
 		}
-		if = {
-			limit = {
-				has_border_war_between = {
-					attacker = PREV
-					defender = THIS
-				}
+		log = "[GetDateText]: [Root.GetName]: ABORTED BORDER WAR BETWEEN [ROOT.attacker_scope.GetName] AND [ROOT.defender_scope.GetName]"
+	}
+	if = {
+		limit = {
+			has_border_war_between = {
+				attacker = ROOT.defender_scope
+				defender = ROOT.attacker_scope
 			}
-			cancel_border_war = {
-				dont_fire_events = yes
-				defender = THIS
-				attacker = PREV
-			}
-			log = "[GetDateText]: [Root.GetName]: ABORTED BORDER WAR BETWEEN [PREV.GetName] AND [THIS.GetName]"
 		}
+		cancel_border_war = {
+			dont_fire_events = yes
+			defender = ROOT.attacker_scope
+			attacker = ROOT.defender_scope
+		}
+		log = "[GetDateText]: [Root.GetName]: ABORTED BORDER WAR BETWEEN [ROOT.defender_scope.GetName] AND [ROOT.attacker_scope.GetName]"
+	}
+	# Add additional logging to identify the states causing the issue
+	else = {
+		log = "[GetDateText]: [Root.GetName]: NO BORDER WAR FOUND BETWEEN [ROOT.attacker_scope.GetName] and [ROOT.defender_scope.GetName]"
 	}
 }
 
@@ -1043,14 +1040,14 @@ TNO_Oil_Crisis_reduce_effects = { # Can be fired up to 5 times until the OC modi
 	log = "[GetDateText]: [Root.GetName]: TNO_Oil_Crisis effects reduced ([?OC_dynamic_modifier_counter])"
 	if = {
 		limit = {
-			NOT = {tag = IBR}
+			NOT = { tag = IBR }
 			check_variable = { OC_dynamic_modifier_counter < 4 }
 		}
 		custom_effect_tooltip = TNO_Oil_Crisis_reduce_effects_tooltip
 	}
 	else_if = {
 		limit = {
-			NOT = {tag = IBR}
+			NOT = { tag = IBR }
 			check_variable = { OC_dynamic_modifier_counter = 4 }
 		}
 		custom_effect_tooltip = TNO_Oil_Crisis_remove_modifier_tooltip
@@ -1353,19 +1350,19 @@ WAC_test_state_for_cores_waa = {
 					is_core_of = global.WAC_WAA_faction^idx
 				}
 			}
-			set_variable = {ZZZ.WAC_WAA_2_country_to_restore = global.WAC_WAA_faction^idx}
+			set_variable = { ZZZ.WAC_WAA_2_country_to_restore = global.WAC_WAA_faction^idx }
 		}
 	}
 	if = {
 		limit = {
 			NOT = {
-				check_variable = {ZZZ.WAC_WAA_2_country_to_restore = 0}
+				check_variable = { ZZZ.WAC_WAA_2_country_to_restore = 0 }
 			}
 		}
-		set_variable = {ZZZ.WAC_WAA_2_country_restore = 1}
+		set_variable = { ZZZ.WAC_WAA_2_country_restore = 1 }
 	}
 	clear_array = throwaway_array_for_wac
-	add_to_array = {throwaway_array_for_wac = ZZZ.WAC_WAA_2_country_to_restore}
+	add_to_array = { throwaway_array_for_wac = ZZZ.WAC_WAA_2_country_to_restore }
 	for_each_scope_loop = {
 		array = throwaway_array_for_wac
 		
@@ -1384,19 +1381,19 @@ WAC_test_state_for_cores_fma = {
 					is_core_of = global.WAC_FMA_faction^idx
 				}
 			}
-			set_variable = {ZZZ.WAC_FMA_2_country_to_restore = global.WAC_FMA_faction^idx}
+			set_variable = { ZZZ.WAC_FMA_2_country_to_restore = global.WAC_FMA_faction^idx }
 		}
 	}
 	if = {
 		limit = {
 			NOT = {
-				check_variable = {ZZZ.WAC_FMA_2_country_to_restore = 0}
+				check_variable = { ZZZ.WAC_FMA_2_country_to_restore = 0 }
 			}
 		}
-		set_variable = {ZZZ.WAC_FMA_2_country_restore = 1}
+		set_variable = { ZZZ.WAC_FMA_2_country_restore = 1 }
 	}
 	clear_array = throwaway_array_for_fma
-	add_to_array = {throwaway_array_for_fma = ZZZ.WAC_FMA_2_country_to_restore}
+	add_to_array = { throwaway_array_for_fma = ZZZ.WAC_FMA_2_country_to_restore }
 	for_each_scope_loop = {
 		array = throwaway_array_for_fma
 		
@@ -1415,19 +1412,19 @@ WAC_test_state_for_cores_palf = {
 					is_core_of = global.WAC_PALF_faction^idx
 				}
 			}
-			set_variable = {ZZZ.WAC_PALF_2_country_to_restore = global.WAC_PALF_faction^idx}
+			set_variable = { ZZZ.WAC_PALF_2_country_to_restore = global.WAC_PALF_faction^idx }
 		}
 	}
 	if = {
 		limit = {
 			NOT = {
-				check_variable = {ZZZ.WAC_PALF_2_country_to_restore = 0}
+				check_variable = { ZZZ.WAC_PALF_2_country_to_restore = 0 }
 			}
 		}
-		set_variable = {ZZZ.WAC_PALF_2_country_restore = 1}
+		set_variable = { ZZZ.WAC_PALF_2_country_restore = 1 }
 	}
 	clear_array = throwaway_array_for_palf
-	add_to_array = {throwaway_array_for_palf = ZZZ.WAC_PALF_2_country_to_restore}
+	add_to_array = { throwaway_array_for_palf = ZZZ.WAC_PALF_2_country_to_restore }
 	for_each_scope_loop = {
 		array = throwaway_array_for_palf
 		
@@ -1441,7 +1438,7 @@ WAC_test_state_for_cores_mano = {
 				is_core_of = LIB
 			}
 		}
-		set_variable = {ZZZ.WAC_MANO_country_to_restore = 1}
+		set_variable = { ZZZ.WAC_MANO_country_to_restore = 1 }
 		LIB = {
 			save_global_event_target_as = wac_mano_country
 		}
@@ -1452,13 +1449,13 @@ WAC_test_state_for_cores_mano = {
 				is_core_of = MDI
 			}
 		}
-		set_variable = {ZZZ.WAC_MANO_country_to_restore = 1}
+		set_variable = { ZZZ.WAC_MANO_country_to_restore = 1 }
 		MDI = {
 			save_global_event_target_as = wac_mano_country
 		}
 	}
 	else = {
-		set_variable = {ZZZ.WAC_MANO_country_to_restore = 0}
+		set_variable = { ZZZ.WAC_MANO_country_to_restore = 0 }
 	}
 }
 SAW_test_state_for_cores_as = {
@@ -1468,7 +1465,7 @@ SAW_test_state_for_cores_as = {
 				is_core_of = GRO
 			}
 		}
-		set_variable = {ZZZ.SAW_AS_country_to_restore = 1}
+		set_variable = { ZZZ.SAW_AS_country_to_restore = 1 }
 		GRO = {
 			save_global_event_target_as = saw_as_country
 		}
@@ -1479,7 +1476,7 @@ SAW_test_state_for_cores_as = {
 				is_core_of = ANG
 			}
 		}
-		set_variable = {ZZZ.SAW_AS_country_to_restore = 1}
+		set_variable = { ZZZ.SAW_AS_country_to_restore = 1 }
 		ANG = {
 			save_global_event_target_as = saw_as_country
 		}
@@ -1490,7 +1487,7 @@ SAW_test_state_for_cores_as = {
 				is_core_of = BOR
 			}
 		}
-		set_variable = {ZZZ.SAW_AS_country_to_restore = 1}
+		set_variable = { ZZZ.SAW_AS_country_to_restore = 1 }
 		BOR = {
 			save_global_event_target_as = saw_as_country
 		}
@@ -1501,13 +1498,13 @@ SAW_test_state_for_cores_as = {
 				is_core_of = COG
 			}
 		}
-		set_variable = {ZZZ.SAW_AS_country_to_restore = 1}
+		set_variable = { ZZZ.SAW_AS_country_to_restore = 1 }
 		COG = {
 			save_global_event_target_as = saw_as_country
 		}
 	}
 	else = {
-		set_variable = {ZZZ.SAW_AS_country_to_restore = 0}
+		set_variable = { ZZZ.SAW_AS_country_to_restore = 0 }
 	}
 }
 WAC_check_offset = {

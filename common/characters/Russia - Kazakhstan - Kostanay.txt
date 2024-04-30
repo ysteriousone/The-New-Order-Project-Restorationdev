@@ -1,0 +1,160 @@
+characters = {
+	# Leaders
+	DER_Nikolay_Zabelkin = {
+		name = DER_Nikolay_Zabelkin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DER/Portrait_Kostanay_Nikolay_Zabelkin.dds"
+				small = "GFX_idea_DER_minister_Nikolay_Zabelkin"
+			}
+			army = {
+				large = "gfx/leaders/DER/Portrait_Kostanay_Nikolay_Zabelkin.dds"
+				small = "GFX_idea_DER_minister_Nikolay_Zabelkin"
+			}
+		}
+
+		country_leader = {
+			desc = "POLITICS_NIKOLAI_ZABELKIN_DESC"
+			expire = "1999.1.1.1"
+			ideology = despotism_theocracy_subtype
+			id = -1
+		}
+
+		field_marshal = {
+			traits = { war_hero defensive_doctrine inspirational_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 3486
+		}
+
+		advisor = {
+			slot = head_of_government
+			idea_token = DER_Nikolay_Zabelkin_hog
+			allowed = { original_tag = DER }
+			traits = {
+				head_of_government
+				hog_respected_war_hero
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Ministers
+	DER_Alyubay_Dairov = {
+		name = DER_Alyubay_Dairov
+		portraits = { civilian = { small = "GFX_idea_DER_minister_Alyubay_Dairov" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = DER_Alyubay_Dairov_for
+			allowed = { original_tag = DER }
+			traits = {
+				foreign_minister
+				for_general_staffer
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	DER_Sadwaqas_Ghylmani = {
+		name = DER_Sadwaqas_Ghylmani
+		portraits = { civilian = { small = "GFX_idea_DER_minister_Sadwaqas_Ghylmani" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = DER_Sadwaqas_Ghylmani_eco
+			allowed = { original_tag = DER }
+			traits = {
+				economy_minister
+				eco_mixed_economy
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	DER_Vasily_Afanasyev = {
+		name = DER_Vasily_Afanasyev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DER/Portrait_Kostanay_Vasily_Afanasyev.dds"
+				small = "GFX_idea_DER_minister_Vasily_Afanasyev"
+			}
+			army = {
+				large = "gfx/leaders/DER/Portrait_Kostanay_Vasily_Afanasyev.dds"
+				small = "GFX_idea_DER_minister_Vasily_Afanasyev"
+			}
+		}
+		corps_commander = {
+			traits = { trickster guerilla_fighter }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 3489
+		}
+
+		advisor = {
+			slot = security_minister
+			idea_token = DER_Vasily_Afanasyev_sec
+			allowed = { original_tag = DER }
+			traits = {
+				security_minister
+				sec_guerilla_fighter
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	# Commanders
+	DER_Sergey_Gudenko = {
+		name = DER_Sergey_Gudenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/DER/Portrait_Kostanay_Sergey_Gudenko.dds"
+				small = "GFX_idea_DER_minister_Sergey_Gudenko"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist war_hero organizer defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+			#legacy_id = 3341
+		}
+	}
+
+	DER_Seytkasim_Ashirov = {
+		name = DER_Seytkasim_Ashirov
+		portraits = {
+			army = {
+				large = "gfx/leaders/DER/Portrait_Kostanay_Seytkasim_Ashirov.dds"
+				small = "GFX_idea_DER_minister_Seytkasim_Ashirov"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			#legacy_id = 3488
+		}
+	}
+}

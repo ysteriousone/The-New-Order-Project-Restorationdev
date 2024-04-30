@@ -18,7 +18,6 @@ is_russian_unifier = {
 		original_tag = SBA
 		original_tag = NOV
 		original_tag = KEM
-		original_tag = PRC
 
 		original_tag = CHT
 		original_tag = AMR
@@ -26,6 +25,18 @@ is_russian_unifier = {
 		original_tag = BRY
 		original_tag = IRK
 		original_tag = OMO #For Ferus
+	}
+}
+
+is_kazakh_unifier = {
+	OR = {
+		original_tag = DER
+		original_tag = KAZ
+		original_tag = NPL
+		original_tag = KOK
+		original_tag = PAV
+		original_tag = AKT
+		original_tag = ARL
 	}
 }
 
@@ -69,6 +80,7 @@ is_central_siberian_nation = {
 		original_tag = PRC
 		original_tag = KRS
 		original_tag = KAL
+		original_tag = TAN
 	}
 }
 
@@ -121,12 +133,13 @@ is_wasteland = {
 
 is_kazakh_nation = {
 	OR = {
+		original_tag = DER
 		original_tag = KAZ
-		original_tag = KZR
-
-		original_tag = TMK
-		original_tag = TML
-		original_tag = TMP
+		original_tag = KOK
+		original_tag = NPL
+		original_tag = PAV
+		original_tag = AKT
+		original_tag = ARL
 	}
 }
 
@@ -286,6 +299,20 @@ can_form_west_siberia = {
 	}
 }
 
+can_form_kazakhstan = {
+	AND = {
+		owns_state = 402
+		owns_state = 404
+		owns_state = 406
+		owns_state = 407
+		owns_state = 583
+		owns_state = 587
+		owns_state = 588
+		owns_state = 589
+		owns_state = 590
+	}
+}
+
 can_form_central_siberia = {
 	AND = {
 		owns_state = 40
@@ -348,6 +375,14 @@ can_form_kazakhstan = {
 		owns_state = 588
 		owns_state = 589
 		owns_state = 590
+		owns_state = 1802
+		owns_state = 1803
+		owns_state = 1804
+		owns_state = 1805
+		owns_state = 1806
+		owns_state = 1807
+		owns_state = 1808
+		owns_state = 2016
 	}
 }
 
@@ -1378,16 +1413,5 @@ RUS_consider_aryan_regime = {
 			character = PRM_Velimir
 			ruling_only = yes
 		}
-	}
-}
-
-PRC_can_assign_status = {
-	check_variable = { THIS.PRC_Owner = 0 }
-	OR = {
-		AND = {
-			NOT = { is_core_of = PRC }
-			PRC = { has_country_flag = PRC_can_give_non_cores }
-		}
-		is_core_of = PRC
 	}
 }

@@ -1,0 +1,226 @@
+ideas = {
+	country = {
+		ARL_national_renewal = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_national_renewal"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_national_renewal
+			modifier = {
+				army_org_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ARL_renovated_land_registry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_renovated_land_registry"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Renovated_Land_Registry
+			modifier = {
+				global_building_slots_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ARL_renovated_land_registry_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_renovated_land_registry_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Renovated_Land_Registry
+			modifier = {
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		ARL_renovated_land_registry_3 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_renovated_land_registry_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Renovated_Land_Registry
+			modifier = {
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.15
+			}
+		}
+		ARL_defensive_surveys = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_renovated_land_registry_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Defensive_Surveys
+			modifier = {
+				army_core_defence_factor = 0.10
+			}
+		}
+		ARL_arms_manuals = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_arms_manuals"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Army_Manual
+			equipment_bonus = { infantry_equipment = { instant = yes build_cost_ic = -0.15 } }
+		}
+		ARL_security_forces = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_security_forces"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Khromtau_Security_Forces
+			modifier = {
+				army_org_factor = 0.10
+				army_core_defence_factor = 0.05
+			}
+		}
+		ARL_security_forces_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_security_forces_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Khromtau_Security_Forces
+			modifier = {
+				army_org_factor = 0.15
+				army_core_defence_factor = 0.10
+			}
+		}
+		ARL_security_forces_desert = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_security_forces_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Khromtau_Security_Forces
+			modifier = {
+				army_org_factor = 0.15
+				army_core_defence_factor = 0.10
+				heat_attrition_factor = -0.25
+				acclimatization_hot_climate_gain_factor = 0.10
+			}
+		}
+		ARL_security_forces_mobility = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_security_forces_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Khromtau_Security_Forces
+			modifier = {
+				army_org_factor = 0.20
+				army_core_defence_factor = 0.10
+				army_speed_factor = 0.10
+			}
+		}
+		ARL_security_forces_final = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_security_forces_2"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_Khromtau_Security_Forces
+			modifier = {
+				army_org_factor = 0.15
+				army_core_defence_factor = 0.10
+				heat_attrition_factor = -0.25
+				acclimatization_hot_climate_gain_factor = 0.10
+				army_speed_factor = 0.10
+			}
+		}
+		ARL_breakneck_industrialization = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_breakneck_industrialization"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_breakneck_industrialization
+			modifier = {
+				consumer_goods_use_modifier = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ARL_spreading_famine = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea ARL_spreading_famine"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ARL_spreading_famine
+			modifier = {
+				conscription_factor = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.3
+			}
+		}
+	}
+	hidden_ideas = {
+		ARL_base_idea = {
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.4
+			}
+		}
+	}
+}

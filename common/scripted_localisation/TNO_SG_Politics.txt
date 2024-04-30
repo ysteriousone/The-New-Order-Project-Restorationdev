@@ -361,10 +361,6 @@ defined_text = {
 		localization_key = conservatism_free_market_conservatism_subtype
 	}
 	text = {
-		trigger = { has_country_leader_ideology = conservatism_revisionist_zionism_subtype }
-		localization_key = conservatism_revisionist_zionism_subtype 
-	}
-	text = {
 		trigger = { has_country_leader_ideology = conservatism_silent_conservatism_subtype }
 		localization_key = conservatism_silent_conservatism_subtype
 	}
@@ -505,6 +501,10 @@ defined_text = {
 	text = {
 		trigger = { has_country_leader_ideology = despotism_interim_government_subtype }
 		localization_key = despotism_interim_government_subtype
+	}
+	text = {
+		trigger = { has_country_leader_ideology = despotism_national_renewal_subtype }
+		localization_key = despotism_national_renewal_subtype
 	}
 	text = {
 		trigger = { has_country_leader_ideology = despotism_theocracy_subtype }

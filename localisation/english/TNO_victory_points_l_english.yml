@@ -3134,14 +3134,14 @@ VICTORY_POINTS_TOOLTIP: "§G$NAME$§! victory points = §Y$POINTS$§!"
  VICTORY_POINTS_13269: "Nókis" 
 ### Kazakhstan ###
 # Aktobe
- VICTORY_POINTS_4294: "Aktobe"
- VICTORY_POINTS_4294_kaz: "Aqtöbe"
+ #VICTORY_POINTS_4294: "Aktobe"
+ VICTORY_POINTS_4294: "Aqtöbe"
  VICTORY_POINTS_4254: "Kandyagash"
  VICTORY_POINTS_475: "Beyneu"
  VICTORY_POINTS_11701: "Aktau"
 # Kokshetau
  VICTORY_POINTS_1418: "Kokshetau"
- VICTORY_POINTS_1276: "Derzhavinsk"
+ VICTORY_POINTS_1276: "Kenesary"
  VICTORY_POINTS_4850: "Sergeevka"
  VICTORY_POINTS_4238: "Atbasar"
 # Kostanay
@@ -3159,7 +3159,8 @@ VICTORY_POINTS_TOOLTIP: "§G$NAME$§! victory points = §Y$POINTS$§!"
  VICTORY_POINTS_464: "Guryev"
  VICTORY_POINTS_464_pol: "Gurjew"
  VICTORY_POINTS_11537: "Oral"
- VICTORY_POINTS_11537_pol: "Uralsk"
+ VICTORY_POINTS_11537_pol: "Nowa Warszawa"
+ #VICTORY_POINTS_11537_pol: "Uralsk"
  VICTORY_POINTS_11537_rus: "Ural'sk"
 # Pavlodar
  VICTORY_POINTS_1864: "Oskeman"

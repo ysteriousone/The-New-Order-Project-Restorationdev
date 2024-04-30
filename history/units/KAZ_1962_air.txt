@@ -1,12 +1,12 @@
 air_wings = {
 	589 = {
 		transport_plane_equipment_1 = {
-			owner = "KAZ"
+			owner = "ARL"
 			amount = 3
 		}
 		#name = ""
 		transport_plane_equipment_2 = {
-			owner = "KAZ"
+			owner = "ARL"
 			amount = 1
 		}
 		#name = ""

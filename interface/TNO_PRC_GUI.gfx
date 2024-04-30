@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_PRC_interactions_button"
+		texturefile = "gfx/interface/prc_assets/interactions_button.dds"
+	}
+	spriteType = {
+		name = "GFX_PRC_army_info"
+		texturefile = "gfx/interface/prc_assets/army_info.dds"
+	}
+	spriteType = {
+		name = "GFX_PRC_army_info_disabled"
+		texturefile = "gfx/interface/prc_assets/army_info_disabled.dds"
+	}
+}

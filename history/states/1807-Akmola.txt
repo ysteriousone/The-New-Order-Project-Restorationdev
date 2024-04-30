@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = KAZ
-		add_core_of = KAZ
+		owner = KOK
+		add_core_of = KOK
 		buildings = {
 			infrastructure = 2
 			barracks = 1
@@ -23,7 +23,7 @@ state={
 		}
 	}
 	provinces={
-		12285 1276 4309 4238 7326 10268 12194 12111 1223 4281 10211 10239 10308 1680 10633
+		12285 1276 4309 4238 7326 4281 10211 10239 10308 1680 10633
 	}
 	manpower=959729
 	buildings_max_level_factor=1.000

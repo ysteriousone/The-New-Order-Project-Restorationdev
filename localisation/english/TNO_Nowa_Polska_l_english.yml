@@ -1,7 +1,4 @@
 ﻿l_english:
- NPL: "Nowa Polska"
- NPL_DEF: "the Polish Autonomous Soviet Socialist Republic"
- NPL_ADJ: "Polish"
  ### Parties ###
  NPL_communist_party: "PPR"
  NPL_communist_party_long: "Polska Partia Robotnicza"
@@ -143,7 +140,7 @@
  NPL_Native_Unrest_monthly_decrease_tt: "§YMonthly Native Unrest:§! §G-0.75%§!\n"
  NPL_Native_Unrest_monthly_greatly_decrease_tt: "§YMonthly Native Unrest:§! §G-0.75%§!\n"
 
- NPL_Native_Unrest_monthly_minor_increase_tt: "§YMonthly Native Unrest:§! §R+0.25%§!\n"
+ NPL_Native_Unrest_monthly_minor_increase_tt: "§YMonthly Native Unrest:§! §R+0.25%§! \n"
  NPL_Native_Unrest_monthly_increase_tt: "§YMonthly Native Unrest:§! §R+0.50%§!\n"
  NPL_Native_Unrest_monthly_greatly_increase_tt: "§YMonthly Native Unrest:§! §R+0.75%§!\n"
 

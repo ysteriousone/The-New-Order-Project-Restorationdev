@@ -1,0 +1,12 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_air_assault_old_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_paratroop_icon.dds"
+		noOfFrames = 2
+	}	
+	spriteType = {
+		name = "GFX_unit_air_assault_old_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paratroop_icon.dds"
+		noOfFrames = 2
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_MON_Yuumjaagiin_Tsedenbal"
+		texturefile = "gfx/leaders/MON/Portrait_Mongolia_Yuumjaagiin_Tsedenbal.dds"
+	}
+}

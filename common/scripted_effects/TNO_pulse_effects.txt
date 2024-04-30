@@ -30,12 +30,6 @@ first_every_month_script = {
 		add_to_variable = { econ_graph_month = 1 }
 	}
 
-	PRC = {
-		add_to_variable = { PRC_Army_Modernization = PRC_Army_Modernization_monthly_change }
-		PRC_monthly_decay_estates = yes
-	}
-
-
 	every_country = {
 		set_variable = { total_pop_m = 0 }
 		set_variable = { total_core_pop_m = 0 }
@@ -171,6 +165,7 @@ first_every_month_script = {
 
 			if = {
 				limit = {
+					AND = {
 						check_variable = {
 							IRA_Power > 89
 						}
@@ -181,6 +176,7 @@ first_every_month_script = {
 							has_country_flag = SE_troubles
 						}
 					}
+				}
 				country_event = IRE_crisis.51
 			}
 
@@ -389,8 +385,10 @@ first_every_month_script = {
 		limit = {
 			KOM = {
 				exists = yes
+				AND = {
 					check_variable = { KOM_leader_status^5 = 1 }
 					check_variable = { KOM_leader_status^2 = 1 }
+				}
 				NOT = {
 					has_country_flag = KOM_prison_chain_started
 				}
@@ -405,10 +403,7 @@ first_every_month_script = {
 		limit = {
 			KOM = {
 				exists = yes
-				has_country_leader = {
-					character = KOM_Sergey_Taboritsky
-					ruling_only = yes
-				}
+				has_government = esoteric_nazism
 				has_country_flag = KOM_CLOCK_START_RUNNING
 				NOT = { has_global_flag = russian_total_reunification }
 			}
@@ -417,22 +412,26 @@ first_every_month_script = {
 			add_to_variable = { KOM_tabby_time_accumulated = KOM_tabby_time_progress }
 			if = {
 				limit = {
+					AND = {
 						check_variable = { KOM_tabby_time_accumulated > 99 }
 						NOT = {
 							check_variable = { KOM_tabby_time_hours > 23 }
 						}
 					}
+				}
 				set_variable = { KOM_tabby_time_accumulated = 0 }
 				add_to_variable = { KOM_tabby_time_hours = 1 }
 				KOM_tabby_fire_journal_event = yes
 			}
 			if = {
 				limit = {
+					AND = {
 						check_variable = { KOM_tabby_time_accumulated < -99 }
 						NOT = {
 							check_variable = { KOM_tabby_time_hours < 2 }
 						}
 					}
+				}
 				set_variable = { KOM_tabby_time_accumulated = 0 }
 				subtract_from_variable = { KOM_tabby_time_hours = 1 }
 			}
@@ -630,6 +629,7 @@ first_every_month_script = {
 
 	if = {
 		limit = {
+			AND = {
 				JAP = {
 					is_ai = yes
 				}
@@ -643,11 +643,13 @@ first_every_month_script = {
 					is_ai = yes
 				}
 			}
+		}
 		set_global_flag = DISABLE_AI_CRISES
 	}
 
 	if = {
 		limit = {
+			AND = {
 				OR = {
 					JAP = {
 						is_ai = no
@@ -664,6 +666,7 @@ first_every_month_script = {
 				}
 				has_global_flag = DISABLE_AI_CRISES
 			}
+		}
 		clr_global_flag = DISABLE_AI_CRISES
 	}
 
@@ -700,6 +703,53 @@ first_every_month_script = {
 	}
 	if = {
 		limit = {
+			AND = {
+				NOT = {
+					country_exists = KZK
+					country_exists = NPL
+				}
+				NOT = {
+					has_global_flag = RUS_KAZAKH_CRISIS_OVER
+				}
+			}
+		}
+		set_global_flag = RUS_KAZAKH_CRISIS_OVER
+		every_country = {
+			limit = {
+				NOT = {
+					tag = URL
+					tag = ORE
+					tag = MGN
+					tag = DRL
+				}
+			}
+			clr_global_flag = RWS_INTEGRATING_KAZ
+			clr_global_flag = SIB_INTEGRATING_KAZ
+			clr_global_flag = SIB_INTEGRATING_NPL
+			clr_global_flag = RWS_INTEGRATING_NPL
+			clr_country_flag = BEGUN_KAZAKH_CRISIS
+			clr_country_flag = URALS_CRISIS_KAZ_INFLUENCE_0
+			clr_country_flag = URALS_CRISIS_NPL_INFLUENCE_0
+			clr_country_flag = URALS_CRISIS_KAZ_INFLUENCE_1
+			clr_country_flag = URALS_CRISIS_NPL_INFLUENCE_1
+			clr_country_flag = URALS_CRISIS_KAZ_INFLUENCE_2
+			clr_country_flag = URALS_CRISIS_NPL_INFLUENCE_2
+			clr_country_flag = URALS_CRISIS_KAZ_INFLUENCE_3
+			clr_country_flag = URALS_CRISIS_NPL_INFLUENCE_3
+			clr_country_flag = WSR_INFLUENCE_LEVEL_1
+			clr_country_flag = WSR_INFLUENCE_LEVEL_2
+			clr_country_flag = WSR_INFLUENCE_LEVEL_3
+			clr_country_flag = WSR_INFLUENCE_LEVEL_4
+			clr_country_flag = WSR_INFLUENCE_LEVEL_5
+			clr_country_flag = WSB_INFLUENCE_LEVEL_1
+			clr_country_flag = WSB_INFLUENCE_LEVEL_2
+			clr_country_flag = WSB_INFLUENCE_LEVEL_3
+			clr_country_flag = WSB_INFLUENCE_LEVEL_4
+			clr_country_flag = WSB_INFLUENCE_LEVEL_5
+		}
+	}
+	if = {
+		limit = {
 			SBA = {
 				exists = yes
 				NOT = {
@@ -710,6 +760,23 @@ first_every_month_script = {
 		}
 		SBA = {
 			SBA_set_black_army_control = yes
+		}
+	}
+
+	if = {
+		limit = {
+			date > 1963.10.05
+			NOT = {
+				has_global_flag = RUS_shattered_kazakhstan
+				has_global_flag = KAZ_UNIFIED
+			}
+		}
+		ZZZ = {
+			country_event = {
+				id = release_dummy.5
+				days = 5
+				random = 18
+			}
 		}
 	}
 
@@ -735,6 +802,34 @@ first_every_month_script = {
 			TYM_Famine_Check = yes
 		}
 	}
+
+	#if = {
+	#	limit = {
+	#		KOK = {
+	#			exists = yes
+	#		}
+	#	}
+	#	KOK = {
+	#		#khanate_legitimacy_overflow_check = yes
+	#		khanate_legitimacy_idea_assignment = yes
+	#
+	#		if = {
+	#			limit = {
+	#				NOT = { has_country_flag = KOK_FAIR_KHAN }
+	#			}
+	#			khanate_monthly_unrest_calc = yes
+	#			khanate_vibe_check = yes
+	#			khanate_slave_bonus_scaling = yes
+	#			khanate_monthly_slave_gain = yes
+	#		}
+	#		if = {
+	#			limit = {
+	#				check_variable = { khanate_slave_unrest_monthly > 0.01 }
+	#			}
+	#			khanate_unrest_increase = yes
+	#		}
+	#	}
+	#}
 
 	if = {
 		limit = {
@@ -843,9 +938,9 @@ first_every_month_script = {
 	every_country = {
 		if = {
 			limit = {
-					has_country_flag = SOCINTERN_LEADER
-					exists = no
-				}
+				has_country_flag = SOCINTERN_LEADER
+				exists = no
+			}
 			set_global_flag = RESET_COMINTERN_LEADER
 		}
 	}
@@ -995,6 +1090,24 @@ first_every_month_script = {
 			}
 		}
 	}
+
+	#if = {
+		#	limit = {
+			#		NPL = {
+				#			exists = yes
+				#			NOT = {
+					#				has_country_flag = NPL_revolt
+					#			}
+				#		}
+			#	}
+		#	NPL = {
+			#		add_to_variable = { NPL_Polish_Approval = NPL_Polish_Approval_monthly }
+			#		add_to_variable = { NPL_Native_Unrest = NPL_Native_Unrest_monthly }
+			#		add_to_variable = { NPL_Food_Security = NPL_Food_Security_monthly }
+			#		NPL_clamp_all_variables = yes
+			#		NPL_check_all_variables = yes
+			#	}
+		#}
 
 	if = {
 		limit = { has_global_flag = Iberian_Wars }
@@ -1468,6 +1581,21 @@ first_every_month_script = {
 			lysenko_army_readiness_check = yes
 		}
 	}
+
+	# ARC stuff
+	set_temp_variable = { random_chance_var = random }
+	if = {
+		limit = {
+			check_variable = { global.ARC_unity < -4 }
+			NOT = {
+				has_global_flag = ARC_post_war_conference
+			}
+		}
+		every_country = {
+			limit = { has_country_flag = joined_ARC }
+			country_event = { id = ARC.34 }
+		}
+	}
 	OST = {
 		if = {
 			limit = { has_idea = OST_harsh_economic_integration }
@@ -1719,7 +1847,6 @@ first_every_month_script = {
 				check_variable = { PRM_months_since_sacrifice < 8}
 				NOT = {
 					has_idea = RUS_terror_bombing
-					has_country_flag = RUS_superregional_stage
 				}
 			}
 			add_to_variable = { PRM_months_since_sacrifice = 1 }
@@ -1738,14 +1865,14 @@ first_every_month_script = {
 				country_event = {
 					id = PRM.1312
 					days = 2
-					random_hours = 200
+					random = 200
 				}
 			}
 			else = {
 				country_event = {
 					id = PRM.8
 					days = 2
-					random_hours = 200
+					random = 200
 				}
 			}
 		}
@@ -1754,13 +1881,6 @@ first_every_month_script = {
 	ENG = {
 		if = {
 			limit = {
-				has_game_rule = {
-					rule = BRITAIN_CONTENT_STATUS
-					option = BRITAIN_OLD
-				}
-			}
-			if = {
-				limit = {
 				has_global_flag = ENG_Faction_Start_Flag
 			}
 			add_to_variable = {
@@ -1797,6 +1917,7 @@ first_every_month_script = {
 		#MONTY COUP
 		if = {
 			limit = {
+				AND = {
 					is_ai = no
 					OR = {
 						has_country_leader = {
@@ -1804,12 +1925,13 @@ first_every_month_script = {
 							ruling_only = yes
 						}
 						has_country_leader = {
-							character = ENG_Harold_Macmillan
+							character = ENG_Harold_MacMillan
 							ruling_only = yes
 						}
 					}
 					check_variable = { ParliamentMechanic_GovStab < 0.1 }
 				}
+			}
 			country_event = {
 				id = ENG_Corn_crisis.21
 				days = 5
@@ -1819,6 +1941,7 @@ first_every_month_script = {
 		#BUTLER COUP
 		if = {
 			limit = {
+				AND = {
 					is_ai = no
 					has_country_leader = {
 						character = ENG_Margaret_Thatcher
@@ -1826,6 +1949,7 @@ first_every_month_script = {
 					}
 					check_variable = { ENG_OG_Party_Lead > 0.9 }
 				}
+			}
 			country_event = {
 				id = ENG_Government_Changes.14
 				days = 5
@@ -1835,6 +1959,7 @@ first_every_month_script = {
 		#YDL COUP
 		if = {
 			limit = {
+				AND = {
 					is_ai = no
 					OR = {
 						has_country_flag = NDL_victorious
@@ -1842,12 +1967,12 @@ first_every_month_script = {
 					}
 					check_variable = { ParliamentMechanic_GovStab < 0.1 }
 				}
+			}
 			country_event = {
 				id = ENG_Government_Changes.9
 				days = 5
 			}
 		}
-	}
 	}
 	update_state_population_custom_growth = yes
 }
@@ -1887,104 +2012,104 @@ societal_development_monthly_check = {
 	add_to_variable = { industrial_equipment_counter = modifier@industrial_equipment_monthly_rate }
 
 	if = {
-		limit = { check_variable = { admin_efficiency_counter > 239.99 } }
+		limit = { check_variable = { admin_efficiency_counter > 239 } }
 		country_event = societal_development.1102
 		add_to_variable = { admin_efficiency_counter = -240 }
 		multiply_variable = { admin_efficiency_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { admin_efficiency_counter < -239.99 } }
+		limit = { check_variable = { admin_efficiency_counter < -239 } }
 		country_event = societal_development.1103
 		add_to_variable = { admin_efficiency_counter = 240 }
 		multiply_variable = { admin_efficiency_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { academic_base_counter > 239.99 } }
+		limit = { check_variable = { academic_base_counter > 239 } }
 		country_event = societal_development.1104
 		add_to_variable = { academic_base_counter = -240 }
 		multiply_variable = { academic_base_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { academic_base_counter < -239.99 } }
+		limit = { check_variable = { academic_base_counter < -239 } }
 		country_event = societal_development.1105
 		add_to_variable = { academic_base_counter = 240 }
 		multiply_variable = { academic_base_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { research_facilities_counter > 239.99 } }
+		limit = { check_variable = { research_facilities_counter > 239 } }
 		country_event = societal_development.1106
 		add_to_variable = { research_facilities_counter = -240 }
 		multiply_variable = { research_facilities_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { research_facilities_counter < -239.99 } }
+		limit = { check_variable = { research_facilities_counter < -239 } }
 		country_event = societal_development.1107
 		add_to_variable = { research_facilities_counter = 240 }
 		multiply_variable = { research_facilities_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { industrial_expertise_counter > 239.99 } }
+		limit = { check_variable = { industrial_expertise_counter > 239 } }
 		country_event = societal_development.1110
 		add_to_variable = { industrial_expertise_counter = -240 }
 		multiply_variable = { industrial_expertise_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { industrial_expertise_counter < -239.99 } }
+		limit = { check_variable = { industrial_expertise_counter < -239 } }
 		country_event = societal_development.1111
 		add_to_variable = { industrial_expertise_counter = 240 }
 		multiply_variable = { industrial_expertise_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { industrial_equipment_counter > 239.99 } }
+		limit = { check_variable = { industrial_equipment_counter > 239 } }
 		country_event = societal_development.1112
 		add_to_variable = { industrial_equipment_counter = -240 }
 		multiply_variable = { industrial_equipment_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { industrial_equipment_counter < -239.99 } }
+		limit = { check_variable = { industrial_equipment_counter < -239 } }
 		country_event = societal_development.1113
 		add_to_variable = { industrial_equipment_counter = 240 }
 		multiply_variable = { industrial_equipment_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { agriculture_counter > 239.99 } }
+		limit = { check_variable = { agriculture_counter > 239 } }
 		country_event = societal_development.1114
 		add_to_variable = { agriculture_counter = -240 }
 		multiply_variable = { agriculture_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { agriculture_counter < -239.99 } }
+		limit = { check_variable = { agriculture_counter < -239 } }
 		country_event = societal_development.1115
 		add_to_variable = { agriculture_counter = 240 }
 		multiply_variable = { agriculture_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { healthcare_counter > 239.99 } }
+		limit = { check_variable = { healthcare_counter > 239 } }
 		country_event = societal_development.1108
 		add_to_variable = { healthcare_counter = -240 }
 		multiply_variable = { healthcare_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { healthcare_counter < -239.99 } }
+		limit = { check_variable = { healthcare_counter < -239 } }
 		country_event = societal_development.1109
 		add_to_variable = { healthcare_counter = 240 }
 		multiply_variable = { healthcare_monthly_change = 0.25 }
 	}
 
 	if = {
-		limit = { check_variable = { army_professionalism_counter > 239.99 } }
+		limit = { check_variable = { army_professionalism_counter > 239 } }
 		country_event = societal_development.1116
 		add_to_variable = { army_professionalism_counter = -240 }
 		multiply_variable = { army_professionalism_monthly_change = 0.25 }
 	}
 	else_if = {
-		limit = { check_variable = { army_professionalism_counter < -239.99 } }
+		limit = { check_variable = { army_professionalism_counter < -239 } }
 		country_event = societal_development.1117
 		add_to_variable = { army_professionalism_counter = 240 }
 		multiply_variable = { army_professionalism_monthly_change = 0.25 }

@@ -6,7 +6,7 @@ on_actions = {
 				set_variable = { rubberband_inflation_rate = 0 }
 				set_variable = { sales_tax_rate = 0.025 }
 				set_variable = { consumer_goods_use_modifier = 1 }
-				set_variable = { civilian_costs_variable = 0 } #Can be added to in case a effect specificly seeks to raise civilian expenditures beyond the normal provisions of the system
+				set_variable = { civilian_costs_variable = 0 } #Can be added to in case an effect specificly seeks to raise civilian expenditures beyond the normal provisions of the system
 				set_variable = { economic_centralization = 50 }
 			}
 
@@ -22,9 +22,9 @@ on_actions = {
 				set_variable = { national_debt = 254.517 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				set_variable = { economic_centralization = 38 }
-				
+
 				set_temp_variable = { temp_credit_rating = 10 }
 				set_temp_variable = { temp_credit_rating_min = 10 }
 				set_temp_variable = { temp_credit_rating_max = 10 }
@@ -56,10 +56,10 @@ on_actions = {
 				set_variable = { economic_centralization = 62 }
 
 				initiate_display_vars = yes
-				
+
 				# States
 				634 = { set_variable = { defined_state_value = 10 } } # Solomon islands, they're filthy rich for some reason.
-				
+
 			}
 			ULS = {
 				set_variable = { GDP = 0.434 } #in billions
@@ -126,7 +126,7 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_max = 8 }
 				set_temp_variable = { temp_credit_rating = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 			PAD = {
@@ -144,7 +144,7 @@ on_actions = {
 				set_variable = { base_inflation_rate = 2.5 }
 
 				initiate_display_vars = yes
-				
+
 				# State values in MILLIONS. Make sure they add up to GDP in BILLIONS
 				1378 = { set_variable = { defined_state_value = 22 } } # Andorra
 			}
@@ -179,7 +179,7 @@ on_actions = {
 				set_variable = { base_inflation_rate = 1.0 }
 
 				initiate_display_vars = yes
-				
+
 				# State values in MILLIONS. Make sure they add up to GDP in BILLIONS
 				1379 = { set_variable = { defined_state_value = 1 } } # Vatican City
 			}
@@ -262,7 +262,7 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_max = 10 }
 				set_temp_variable = { temp_credit_rating = 9 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 			BRG = {
@@ -285,7 +285,7 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_max = 3 }
 				set_temp_variable = { temp_credit_rating = 1 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 			CHI = {
@@ -322,9 +322,9 @@ on_actions = {
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { base_inflation_rate = 3.2 }
-						
+
 				set_variable = { economic_centralization = 66 }
-						
+
 				set_temp_variable = { temp_credit_rating = 8 }
 				set_temp_variable = { temp_credit_rating_min = 8 }
 				set_temp_variable = { temp_credit_rating_max = 8 }
@@ -337,7 +337,7 @@ on_actions = {
 				set_variable = { GDP_growth = 6.8 }
 				set_variable = { income_tax_rate = 0.15 }
 				set_variable = { business_tax_rate = 0.08 }
-				set_variable = { sales_tax_rate = 0.03 } 
+				set_variable = { sales_tax_rate = 0.03 }
 				set_variable = { poverty_rate = 67 }
 				set_variable = { poverty_monthly_change = 0.20 }
 				set_variable = { money_reserves = 0.0 } #in billions
@@ -485,14 +485,14 @@ on_actions = {
 					set_variable = { poverty_monthly_change = 0.04 }
 					set_variable = { money_reserves = 0.0 } #in billions
 					set_variable = { national_debt = 42.13 } #in billions
-				
+
 					set_variable = { economic_centralization = 55 }
 
 					set_temp_variable = { temp_credit_rating = 6 }
 					set_temp_variable = { temp_credit_rating_min = 3 }
 					set_temp_variable = { temp_credit_rating_max = 9 }
 					econ_initialize_credit_rating_system = yes
-				
+
 					set_variable = { misc_income = 0.085 }
 					set_variable = { misc_costs = 0.0 }
 
@@ -634,7 +634,7 @@ on_actions = {
 				set_variable = { national_debt = 0.513 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.1 }
-				
+
 				initiate_display_vars = yes
 			}
 			GRE = {
@@ -695,7 +695,7 @@ on_actions = {
 				set_variable = { national_debt = 2.254 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -740,12 +740,12 @@ on_actions = {
 				set_variable = { poverty_rate = 91.5 }
 				set_variable = { poverty_monthly_change = 0.1 }
 				set_variable = { money_reserves = 0.0 } #in billions
-				set_variable = { national_debt = 2.812} #in billions
+				set_variable = { national_debt = 2.812 } #in billions
 				set_variable = { misc_income = 1.878 }
 				set_variable = { misc_costs = 0.071 }
-				
+
 				set_variable = { economic_centralization = 40 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -766,9 +766,9 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 2 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 35 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -805,15 +805,15 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 3 }
 				set_temp_variable = { temp_credit_rating_max = 6 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 65 }
-				
+
 				initiate_display_vars = yes
 			}
 
 			SAF = {
 				##Variable Initiation
-				
+
 				set_variable = { GDP = 8.278 } #in billions
 				set_variable = { GDP_growth = 6.0 }
 				set_variable = { income_tax_rate = 0.2 }
@@ -882,7 +882,7 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating = 6 }
 				set_temp_variable = { temp_credit_rating_min = 3 }
 				set_temp_variable = { temp_credit_rating_max = 8 }
-				
+
 				econ_initialize_credit_rating_system = yes
 				initiate_display_vars = yes
 			}
@@ -992,9 +992,9 @@ on_actions = {
 				set_variable = { base_inflation_rate = 3.3 }
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.252 }
-				
+
 				set_variable = { economic_centralization = 60 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -1043,9 +1043,9 @@ on_actions = {
 				set_variable = { national_debt = 2.561 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				set_variable = { economic_centralization = 70 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -1061,7 +1061,7 @@ on_actions = {
 				set_variable = { national_debt = 6.34 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -1089,20 +1089,20 @@ on_actions = {
 				set_variable = { poverty_rate = 84.62 }
 				set_variable = { poverty_monthly_change = -0.01 }
 				set_variable = { money_reserves = 0.0 } #in billions
-				set_variable = { national_debt = 3.34} #in billions
+				set_variable = { national_debt = 3.34 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { base_inflation_rate = 1.1 }
-				
+
 				### Credit Rating
 				### this does go here, right?
 				set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 3 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 80 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -1134,10 +1134,10 @@ on_actions = {
 				set_variable = { national_debt = 0.678 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				initiate_display_vars = yes
 			}
-			
+
 			CAU = {
 				set_variable = { GDP = 3.28 } #in billions
 				set_variable = { GDP_growth = 4.2 }
@@ -1150,7 +1150,7 @@ on_actions = {
 				set_variable = { national_debt = 1.23 } #in billions
 				set_variable = { misc_income = 0.25 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -1214,7 +1214,7 @@ on_actions = {
 				set_variable = { business_tax_rate = 0.17 }
 				set_variable = { base_inflation_rate = 0.07 }
 				initiate_display_vars = yes
-				
+
 				# State values in MILLIONS. Make sure they add up to GDP in BILLIONS
 				839 = { set_variable = { defined_state_value = 50.53 } } # Rosso
 			}
@@ -1462,9 +1462,9 @@ on_actions = {
 				set_variable = { BRA_misc_income = 3 }
 				set_variable = { BRA_misc_costs = 3 }
 				set_variable = { base_inflation_rate = 31.3 }
-				
+
 				set_variable = { economic_centralization = 45 }
-				
+
 				set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 3 }
 				set_temp_variable = { temp_credit_rating_max = 10 }
@@ -1486,9 +1486,9 @@ on_actions = {
 				set_variable = { misc_income = 0.05 }
 				set_variable = { misc_costs = 0.00 }
 				set_variable = { base_inflation_rate = 16.7 }
-				
+
 				set_variable = { economic_centralization = 20 }
-				
+
 				set_temp_variable = { temp_credit_rating = 6 }
 				set_temp_variable = { temp_credit_rating_min = 4 }
 				set_temp_variable = { temp_credit_rating_max = 10 }
@@ -1768,7 +1768,7 @@ on_actions = {
 
 				initiate_display_vars = yes
 			}
-			
+
 			FRI = {
 				##Variable Initiation
 				set_variable = { GDP = 5.851 } #in billions
@@ -1849,7 +1849,7 @@ on_actions = {
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { base_inflation_rate = 1.7 }
-				
+
 				## Credit Rating
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
@@ -1921,7 +1921,7 @@ on_actions = {
 
 				initiate_display_vars = yes
 			}
-			
+
 			THA = {
 				set_variable = { GDP = 3.74 } #in billions
 				set_variable = { GDP_growth = 1.7 }
@@ -1960,7 +1960,7 @@ on_actions = {
 				set_variable = { poverty_rate = 71 }
 				set_variable = { poverty_monthly_change = 0.1 }
 				set_variable = { money_reserves = 0.0 } #in billions
-				set_variable = { national_debt = 1.30} #in billions
+				set_variable = { national_debt = 1.30 } #in billions
 				set_variable = { misc_income = 0.41 }
 				set_variable = { misc_costs = 0.2 }
 				set_variable = { base_inflation_rate = 1.3 }
@@ -2014,7 +2014,7 @@ on_actions = {
 				set_variable = { national_debt = 0.0 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2202,7 +2202,7 @@ on_actions = {
 
 				initiate_display_vars = yes
 			}
-			
+
 			SNS = {
 				##Variable Initiation
 				set_variable = { GDP = 0.676 } #in billions
@@ -2217,7 +2217,7 @@ on_actions = {
 				set_variable = { misc_costs = 0.0 }
 				initiate_display_vars = yes
 			}
-			
+
 			BKU = {
 				##Variable Initiation
 				set_variable = { GDP = 0.46 } #in billions
@@ -2398,7 +2398,7 @@ on_actions = {
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { economic_centralization = 0 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2437,10 +2437,10 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 2 }
 				econ_initialize_credit_rating_system = yes
-	
+
 				initiate_display_vars = yes
 			}
-			
+
 			ZLT = { #guns,guns,cash
 				set_variable = { GDP = 1.49 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 2.4 }
@@ -2449,7 +2449,7 @@ on_actions = {
 				set_variable = { poverty_rate = 45.9 }
 				set_variable = { poverty_monthly_change = 0.1 }
 				set_variable = { money_reserves = 0.3 } #in billions #already converted to billion
-				set_variable = { national_debt = 0.981} #billions #already converted to billion
+				set_variable = { national_debt = 0.981 } #billions #already converted to billion
 				set_variable = { misc_income = 0.2 }#already converted to billion
 				set_variable = { misc_costs = 0.4 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.8 }
@@ -2458,9 +2458,9 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 3 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 35 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2504,7 +2504,7 @@ on_actions = {
 
 				initiate_display_vars = yes
 			}
-			
+
 			CHT = { #
 				set_variable = { GDP = 0.176 } #in billions
 				set_variable = { GDP_growth = 0.9 }
@@ -2517,14 +2517,14 @@ on_actions = {
 				set_variable = { misc_income = 0.01 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { base_inflation_rate = 1.0 }
-				
+
 				set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 60 }
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2540,22 +2540,22 @@ on_actions = {
 				set_variable = { misc_income = 0.1 }#already converted to billion
 				set_variable = { misc_costs = 0.2 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.8 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 45 }
-				
+
 				initiate_display_vars = yes
 
 				# State values in MILLIONS. Make sure they add up to GDP in BILLIONS
 				565 = { set_variable = { defined_state_value = 23.37 } } # Verkhneudinsk
 				564 = { set_variable = { defined_state_value = 209.45 } } # Taksimo
 			}
-			
+
 			IRK = {
 				set_variable = { GDP = 0.525 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 1.5 }
@@ -2568,18 +2568,18 @@ on_actions = {
 				set_variable = { misc_income = 0.3 }#already converted to billion
 				set_variable = { misc_costs = 0.0 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.2 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 60 }
-				
+
 				initiate_display_vars = yes
 			}
-			
+
 			OMO = { # what's an economy?
 				set_variable = { GDP = 0.045 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 0.65 }
@@ -2592,24 +2592,50 @@ on_actions = {
 				set_variable = { misc_income = 0.1 }#already converted to billion
 				set_variable = { misc_costs = 0 } #already converted to billion
 				set_variable = { base_inflation_rate = 0.02 }
-				
+
 				set_variable = { economic_centralization = 10 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 2 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 3 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 				891 = { set_variable = { defined_state_value = 9.36 } } # Chukotka
-				575 = { set_variable = { defined_state_value = 13.08 } } # Evenk
 				889 = { set_variable = { defined_state_value = 2.38 } } # Zhigansky
 				759 = { set_variable = { defined_state_value = 3.17 } } # Oymyakonsky
-				761 = { set_variable = { defined_state_value = 4.08 } } # Olenk
 				890 = { set_variable = { defined_state_value = 9.08 } } # Vilyuy
+				644 = { set_variable = { defined_state_value = 21.01 } } # Omolon
 			}
-			
+
+			NRL = { # what's an economy? 2
+				set_variable = { GDP = 0.030 } #in billions #already converted to billion
+				set_variable = { GDP_growth = 0.65 }
+				set_variable = { income_tax_rate = 0.22 }
+				set_variable = { business_tax_rate = 0.15 }
+				set_variable = { poverty_rate = 83.5 }
+				set_variable = { poverty_monthly_change = 0.01 }
+				set_variable = { money_reserves = 0.0 } #in billions #already converted to billion
+				set_variable = { national_debt = 0.00 }#I don't think Chaos has debt
+				set_variable = { misc_income = 0.1 }#already converted to billion
+				set_variable = { misc_costs = 0 } #already converted to billion
+				set_variable = { base_inflation_rate = 0.02 }
+
+				set_variable = { economic_centralization = 10 }
+
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 2 }
+				set_temp_variable = { temp_credit_rating_min = 1 }
+				set_temp_variable = { temp_credit_rating_max = 3 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+				516 = { set_variable = { defined_state_value = 12.84 } } # Norilsk
+				575 = { set_variable = { defined_state_value = 13.08 } } # Evenk
+				761 = { set_variable = { defined_state_value = 4.08 } } # Olenk
+			}
+
 			SBA = { #GDP sounds kinda statist ngl
 				set_variable = { GDP = 0.335 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 1.24 }
@@ -2622,16 +2648,16 @@ on_actions = {
 				set_variable = { misc_income = 0.1 }#already converted to billion
 				set_variable = { misc_costs = 0.2 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.14 }
-				
+
 				set_variable = { economic_centralization = 35 }
-			
-				
+
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 11 }
 				set_temp_variable = { temp_credit_rating_min = 11 }
 				set_temp_variable = { temp_credit_rating_max = 11 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2652,12 +2678,12 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 3 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 25 }
-				
+
 				initiate_display_vars = yes
 			}
-			
+
 			MGN = { #big mountain expy
 				set_variable = { GDP = 0.12 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 0.7 }
@@ -2675,12 +2701,12 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 4 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 
 			TOM = { #hogwarts country
-				set_variable = { GDP = 0.825 } #in billions #already converted to billion
+				set_variable = { GDP = 0.790 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 1.5 }
 				set_variable = { income_tax_rate = 0.33 }
 				set_variable = { business_tax_rate = 0.42 }
@@ -2703,10 +2729,9 @@ on_actions = {
 				888 = { set_variable = { defined_state_value = 84.118 } } # Lesosibirsk
 				576 = { set_variable = { defined_state_value = 14.016 } } # Bahkta
 				577 = { set_variable = { defined_state_value = 52.635 } } # Kolpashevo
-				516 = { set_variable = { defined_state_value = 35.392 } } # Norilsk
 			}
 
-			
+
 			NOV = { #centrism and its benefits
 				set_variable = { GDP = 2.3 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 2.1 }
@@ -2719,9 +2744,9 @@ on_actions = {
 				set_variable = { misc_income = 0 } #already converted to billion
 				set_variable = { misc_costs = 0 } #already converted to billion
 				set_variable = { base_inflation_rate = 2.5 }
-				
+
 				set_variable = { economic_centralization = 25 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 3 }
@@ -2733,10 +2758,10 @@ on_actions = {
 				# Military Costs
 				set_temp_variable = { military_costs_temp = 0.9 }
 				econ_military_costs_tooltip = yes
-				
+
 				initiate_display_vars = yes
 			}
-			
+
 			KEM = { #inside you there are two wolves (quip by motharchoddar)
 				set_variable = { GDP = 1.87 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 1.1 }
@@ -2749,15 +2774,15 @@ on_actions = {
 				set_variable = { misc_income = 0 } #already converted to billion
 				set_variable = { misc_costs = 0 } #already converted to billion
 				set_variable = { base_inflation_rate = 2.5 }
-				
+
 				set_variable = { economic_centralization = 65 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 4 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2779,7 +2804,7 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_max = 4 }
 				set_variable = { economic_centralization = 70 }
 				econ_initialize_credit_rating_system = yes
-				
+
 
 				initiate_display_vars = yes
 			}
@@ -2796,9 +2821,9 @@ on_actions = {
 				set_variable = { misc_income = 0.00 }#already converted to billion
 				set_variable = { misc_costs = 0.00 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.2 }
-				
+
 				set_variable = { economic_centralization = 75 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
@@ -2821,9 +2846,9 @@ on_actions = {
 				set_variable = { misc_income = 0.00 }#already converted to billion
 				set_variable = { misc_costs = 0.00 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.6 }
-				
+
 				set_variable = { economic_centralization = 55 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
@@ -2833,7 +2858,7 @@ on_actions = {
 
 				initiate_display_vars = yes
 			}
-			
+
 			OMS = { #
 				set_variable = { GDP = 0.32 } #in billions
 				set_variable = { GDP_growth = 0.6 }
@@ -2846,21 +2871,21 @@ on_actions = {
 				set_variable = { misc_income = 0.03 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { base_inflation_rate = 1.1 }
-				
+
 				set_variable = { economic_centralization = 65 }
-				
+
 				set_temp_variable = { temp_credit_rating = 2 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				# Civilian Costs
 				set_temp_variable = { civilian_costs_temp = 0.04 }
 				econ_civilian_costs_tooltip = yes
 				# Military Costs
 				set_temp_variable = { military_costs_temp = 0.15 }
 				econ_military_costs_tooltip = yes
-				
+
 				initiate_display_vars = yes
 			}
 			MAG = { #least americanaboo in russia
@@ -2880,9 +2905,9 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 2 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-					
+
 				set_variable = { economic_centralization = 60 }
-					
+
 				initiate_display_vars = yes
 			}
 
@@ -2903,12 +2928,12 @@ on_actions = {
 				set_temp_variable = { temp_credit_rating_min = 2 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				set_variable = { economic_centralization = 60 }
-				
+
 				initiate_display_vars = yes
 			}
-			
+
 			VYT = { #wholesome tsarism
 				set_variable = { GDP = 0.914 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 1.3 }
@@ -2932,12 +2957,12 @@ on_actions = {
 				# Military Costs
 				set_temp_variable = { military_costs_temp = 0.0 }
 				econ_military_costs_tooltip = yes
-				
+
 				set_variable = { economic_centralization = 55 }
-				
+
 				initiate_display_vars = yes
 			}
-			
+
 			ORE = { #comrades isnt an economy fascist
 				set_variable = { GDP = 0.9 } #in billions #already converted to billion
 				set_variable = { GDP_growth = 3.8 }
@@ -2950,9 +2975,9 @@ on_actions = {
 				set_variable = { misc_income = 0.05 }#already converted to billion
 				set_variable = { misc_costs = 0.0 } #already converted to billion
 				set_variable = { base_inflation_rate = 3.1 }
-				
+
 				set_variable = { economic_centralization = 20 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 2 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
@@ -2964,7 +2989,7 @@ on_actions = {
 				# Military Costs
 				set_temp_variable = { military_costs_temp = 0.01 }
 				econ_military_costs_tooltip = yes
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -2980,15 +3005,15 @@ on_actions = {
 				set_variable = { misc_income = 0 } #already converted to billion
 				set_variable = { misc_costs = 0 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.12 }
-				
+
 				set_variable = { economic_centralization = 65 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 2 }
 				set_temp_variable = { temp_credit_rating_min = 1 }
 				set_temp_variable = { temp_credit_rating_max = 4 }
 				econ_initialize_credit_rating_system = yes
-				
+
 				initiate_display_vars = yes
 			}
 
@@ -3143,9 +3168,9 @@ on_actions = {
 				set_variable = { misc_income = 0.00 }#already converted to billion
 				set_variable = { misc_costs = 0.00 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.04 }
-				
+
 				set_variable = { economic_centralization = 80 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
@@ -3188,9 +3213,9 @@ on_actions = {
 				set_variable = { misc_income = 0.00 }#already converted to billion
 				set_variable = { misc_costs = 0.00 } #already converted to billion
 				set_variable = { base_inflation_rate = 1.04 }
-				
+
 				set_variable = { economic_centralization = 35 }
-				
+
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
@@ -3219,7 +3244,7 @@ on_actions = {
 				econ_initialize_credit_rating_system = yes
 
 				initiate_display_vars = yes
-				
+
 				# State values in MILLIONS. Make sure they add up to GDP in BILLIONS
 				654 = { set_variable = { defined_state_value = 40.72 } } # Gorno-Altaysk
 			}
@@ -3264,7 +3289,7 @@ on_actions = {
 				econ_initialize_credit_rating_system = yes
 
 				initiate_display_vars = yes
-				
+
 				# State values in MILLIONS. Make sure they add up to GDP in BILLIONS
 				637 = { set_variable = { defined_state_value = 71.72 } } # Kamchatka
 			}
@@ -3296,7 +3321,7 @@ on_actions = {
 				set_variable = { income_tax_rate = 0.20 }
 				set_variable = { business_tax_rate = 0.30 }
 				set_variable = { poverty_rate = 95.3 }
-				set_variable = { base_inflation_rate = 1}
+				set_variable = { base_inflation_rate = 1 }
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
@@ -3313,12 +3338,12 @@ on_actions = {
 			}
 
 			KAZ = {
-				set_variable = { GDP = 2.894 } #in billions #already converted to billion.
+				set_variable = { GDP = 4.894 } #in billions #already converted to billion.
 				set_variable = { GDP_growth = 1.4 }
 				set_variable = { income_tax_rate = 0.35 }
 				set_variable = { business_tax_rate = 0.55 }
-				set_variable = { poverty_rate = 83.3 }
-				set_variable = { base_inflation_rate = 0.9}
+				set_variable = { poverty_rate = 53.3 }
+				set_variable = { base_inflation_rate = 0.5 }
 				### Credit Rating
 				set_temp_variable = { temp_credit_rating = 3 }
 				set_temp_variable = { temp_credit_rating_min = 2 }
@@ -3328,6 +3353,103 @@ on_actions = {
 				initiate_display_vars = yes
 			}
 
+			NPL = {
+				set_variable = { GDP = 2.187 } #in billions #already converted to billion.
+				set_variable = { GDP_growth = 1.2 }
+				set_variable = { income_tax_rate = 0.40 }
+				set_variable = { business_tax_rate = 0.55 }
+				set_variable = { poverty_rate = 58.3 }
+				set_variable = { base_inflation_rate = 1}
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 3 }
+				set_temp_variable = { temp_credit_rating_min = 2 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+			}
+
+			
+			ARL = {
+				set_variable = { GDP = 2.404 } #in billions #already converted to billion.
+				set_variable = { GDP_growth = 1.4 }
+				set_variable = { income_tax_rate = 0.30 }
+				set_variable = { business_tax_rate = 0.45 }
+				set_variable = { poverty_rate = 44.2 }
+				set_variable = { base_inflation_rate = 0.5}
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 3 }
+				set_temp_variable = { temp_credit_rating_min = 2 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+			}
+
+			AKT = {
+				set_variable = { GDP = 2.301 } #in billions #already converted to billion.
+				set_variable = { GDP_growth = 1.1 }
+				set_variable = { income_tax_rate = 0.35 }
+				set_variable = { business_tax_rate = 0.40 }
+				set_variable = { poverty_rate = 57.3 }
+				set_variable = { base_inflation_rate = 0.5}
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 3 }
+				set_temp_variable = { temp_credit_rating_min = 2 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+			}
+			
+			DER = {
+				set_variable = { GDP = 2.234 } #in billions #already converted to billion.
+				set_variable = { GDP_growth = 1.2 }
+				set_variable = { income_tax_rate = 0.35 }
+				set_variable = { business_tax_rate = 0.30 }
+				set_variable = { poverty_rate = 57.3 }
+				set_variable = { base_inflation_rate = 0.5}
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 3 }
+				set_temp_variable = { temp_credit_rating_min = 2 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+			}
+
+			KOK = {
+				set_variable = { GDP = 1.971 } #in billions #already converted to billion.
+				set_variable = { GDP_growth = 1.2 }
+				set_variable = { income_tax_rate = 0.25 }
+				set_variable = { business_tax_rate = 0.30 }
+				set_variable = { poverty_rate = 66.3 }
+				set_variable = { base_inflation_rate = 0.5}
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 3 }
+				set_temp_variable = { temp_credit_rating_min = 2 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
+				
+				initiate_display_vars = yes
+			}
+
+			PAV = {
+				set_variable = { GDP = 2.224 } #in billions #already converted to billion.
+				set_variable = { GDP_growth = 1.8 }
+				set_variable = { income_tax_rate = 0.35 }
+				set_variable = { business_tax_rate = 0.50 }
+				set_variable = { poverty_rate = 49.3 }
+				set_variable = { base_inflation_rate = 0.4}
+				### Credit Rating
+				set_temp_variable = { temp_credit_rating = 3 }
+				set_temp_variable = { temp_credit_rating_min = 2 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
+
+				initiate_display_vars = yes
+			}
+			
 			MNT = {
 				##Variable Initiation
 				set_variable = { GDP = 0.095 } #in billions #already converted to billion.
@@ -3362,7 +3484,7 @@ on_actions = {
 				set_variable = { base_inflation_rate = 0.86 }
 				initiate_display_vars = yes
 			}
-	
+
 			GRN = {
 				##Variable Initiation
 				set_variable = { GDP = 0.032 } #in billions
@@ -3373,16 +3495,17 @@ on_actions = {
 				initiate_display_vars = yes
 			}
 
-			every_country = { econ_reload_poverty_effects = yes }
-			
+			every_country = {
+				econ_reload_poverty_effects = yes
+				set_variable = { gdpc = gdp }
+				divide_variable = { gdpc = total_pop_m }
+			}
+
 			every_country = {
 				limit = {
 					exists = yes
 					econ_can_use_economy_system = yes
 				}
-
-				set_variable = { gdpc = gdp }
-				divide_variable = { gdpc = total_pop_m }
 
 				### This needs to be here instead of TNO_startup_nation because it uses vars set here, maybe they should be moved?
 				calculate_total_inflation = yes
@@ -3413,7 +3536,8 @@ on_actions = {
 				add_to_array = {
 					array = global.cube_table_for_buildings
 					value = 0.84
-				}add_to_array = {
+				}
+				add_to_array = {
 					array = global.cube_table_for_buildings
 					value = 0.93
 				}
@@ -3461,6 +3585,7 @@ on_actions = {
 					value = FROM
 				}
 			}
+
 			FROM = {
 				clear_array = TNO_trade_partners
 				every_other_country = {

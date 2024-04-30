@@ -338,18 +338,32 @@ is_european_nation = {
 	}
 }
 
-CSS_is_south_american_nation = {
+is_south_american_nation = {
 	OR = {
 		tag = ARG
 		tag = BRA
 		tag = CHL
 		tag = PAR
+		tag = STC
+		tag = PAC
 		tag = URG
 		tag = PRU
 		tag = BOL
 		tag = ECU
+		tag = GAX
 		tag = COL
+		tag = CLL
+		tag = CLC
+		tag = CLD
 		tag = VEN
+		tag = GUY
+		tag = SUR
+		tag = GUC
+
+		tag = TDF
+		tag = ARP
+		tag = BRP
+		tag = URP
 	}
 }
 
@@ -648,18 +662,12 @@ has_far_right_ruling_party = {
 econ_can_add_modifier_military = {
 	NOT = {
 		has_idea = military_budget_cuts
-		has_idea = military_budget_boost
-		has_idea = military_budget_cuts_heavy
-		has_idea = bankrupt_military
 	}
 }
 
 econ_can_add_modifier_civilian = {
 	NOT = {
 		has_idea = civilian_budget_cuts
-		has_idea = civilian_budget_boost
-		has_idea = civilian_budget_cuts_heavy
-		has_idea = bankrupt_civilian
 	}
 }
 

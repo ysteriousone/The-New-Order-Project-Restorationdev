@@ -1,0 +1,38 @@
+spriteTypes = {
+
+
+    spriteType = {
+		name = "GFX_news_event_AKT_aktau_unification"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_AKT_aktau_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_ARL_khromtau_unification"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_ARL_khromtau_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_KOK_kokshetau_unification"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_KOK_kokshetau_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_DER_kostanay_unification"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_DER_kostanay_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_KAZ_kyzyl_orda_unification"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_KAZ_kyzyl_orda_unification.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_NPL_nowa_polska_victory"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_NPL_nowa_polska_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_PAV_pavlodar_unification"
+		texturefile = "gfx/event_pictures/news_event/Kazakhstan_Reunification/news_event_PAV_pavlodar_unification.dds"
+	}
+}

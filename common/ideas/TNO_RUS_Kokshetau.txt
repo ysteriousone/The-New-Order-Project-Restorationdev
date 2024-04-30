@@ -1,0 +1,69 @@
+ideas = {
+	country = {
+
+		KOK_new_khan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOK_new_khan"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = KOK_new_khan
+			modifier = {
+				war_support_factor = 0.2
+				offence = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+
+		KOK_steppe_riders = {
+			name = KOK_steppe_riders
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOK_steppe_riders"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Kazakh_Horsemen
+			modifier = {
+				cavalry_attack_factor = 0.1
+				out_of_supply_factor = -0.2
+				army_speed_factor = 0.1
+			}
+		}
+
+		#selfish useless rabble
+		KOK_bandit_rabble = {
+			name = KOK_bandit_rabble
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KOK_bandit_rabble"}
+			allowed = {
+
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = PHI_Mass_Banditry
+			modifier = {
+				army_org_factor = -0.2
+				army_defence_factor = -0.1
+				training_time_army_factor = -0.25
+			}
+		}
+	}
+	hidden_ideas = {
+		KOK_base_idea = {
+			modifier = {
+				stability_factor = 0.3
+				war_support_factor = 0.4
+			}
+		}
+	}
+}

@@ -1,0 +1,142 @@
+ideas = {
+	country = {
+		AKT_death_to_russians = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_death_to_russians"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_death_to_russians
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.3
+				conscription_factor = -0.35
+			}
+		}
+		AKT_pure_kazakh_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_pure_kazakh_state"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Pure_Kazakh_State
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.3
+				political_power_gain = 0.5
+			}
+		}
+		AKT_Russian_Slaves = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_Russian_Slaves"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Russian_Slaves
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				stability_factor = -0.10
+			}
+		}
+		AKT_Kazakh_Horsemen = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_Kazakh_Horsemen"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Kazakh_Horsemen
+			modifier = {
+				army_infantry_attack_factor = 0.10
+				recon_factor = 0.10
+			}
+		}
+		AKT_Steppe_Survivors = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_Steppe_Survivors"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Steppe_Survivors
+			modifier = {
+				army_org_factor = 0.10
+				army_morale_factor = 0.10
+			}
+		}
+		AKT_Chosen_of_Tengri = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_Chosen_of_Tengri"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = AKT_Chosen_of_Tengri
+			modifier = {
+				army_core_attack_factor = 0.20
+				army_core_defence_factor = 0.20
+			}
+		}
+		AKT_Kazakh_Zealots = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_Kazakh_Zealots"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture =
+			modifier = {
+				conscription_factor = 0.20
+				conscription = 0.02
+			}
+		}
+		AKT_Joint_Army_Assistance_Program = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea AKT_Joint_Army_Assistance_Program"}
+			allowed = {
+				always = no
+			}
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = MAD_german_garrisons_5
+			modifier = {
+				experience_gain_army = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		AKT_base_idea = {
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.5
+			}
+		}
+	}
+}

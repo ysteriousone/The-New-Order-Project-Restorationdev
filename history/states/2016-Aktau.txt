@@ -1,0 +1,31 @@
+
+state={
+	id=2016
+	name="STATE_2016"
+	resources={
+		rubber = 1
+	}
+
+	history={
+		owner = AKT
+		buildings = {
+			infrastructure = 2
+			thermoelectric_plant = 2
+			prisons = 1
+		}
+		add_core_of = AKT
+		victory_points = {
+			11701 3 
+		}
+		victory_points = {
+			475 1 
+		}
+	}
+
+	provinces={
+		10348 12383 13263 10406 13267 4563 4620 11701 1517 7541 7641 4523 3593 13008 13279 10262 642 475
+	}
+	manpower=494352
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

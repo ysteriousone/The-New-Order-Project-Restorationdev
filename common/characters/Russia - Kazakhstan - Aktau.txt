@@ -1,0 +1,124 @@
+characters = {
+	# Leaders
+	AKT_Safa_Gaziz = {
+		name = AKT_Safa_Gaziz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AKT/Portrait_AKT_Safa_Gaziz.dds"
+			}
+			army = {
+				large = "gfx/leaders/TMP/Portrait_TMP_Safa_Gaziz_AM.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_SAFA_AKTAU_DESC"
+			expire = "1999.1.1"
+			ideology = ultranationalism_ultramilitarism_subtype
+			traits = { }
+			id = -1
+		}
+		field_marshal = {
+			traits = { harsh_leader politically_connected inspirational_leader infantry_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 3471
+		}
+	}
+
+	# Ministers
+	AKT_Asylkhan_Turgan = {
+		name = AKT_Asylkhan_Turgan
+		portraits = { civilian = { small = "GFX_idea_AKT_minister_Asylkhan_Turgan" } }
+		advisor = {
+			slot = head_of_government
+			idea_token = AKT_Asylkhan_Turgan_hog
+			allowed = { original_tag = AKT }
+			traits = {
+				head_of_government
+				hog_silent_workhorse
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	AKT_Wakhab_Sultan = {
+		name = AKT_Wakhab_Sultan
+		portraits = { civilian = { small = "GFX_idea_AKT_minister_Wakhab_Sultan" } }
+		advisor = {
+			slot = foreign_minister
+			idea_token = AKT_Wakhab_Sultan_for
+			allowed = { original_tag = AKT }
+			traits = {
+				foreign_minister
+				for_great_compromiser
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	AKT_Khasan_Bekturgan = {
+		name = AKT_Khasan_Bekturgan
+		portraits = { civilian = { small = "GFX_idea_AKT_minister_Khasan_Bekturgan" } }
+		advisor = {
+			slot = economy_minister
+			idea_token = AKT_Khasan_Bekturgan_eco
+			allowed = { original_tag = AKT }
+			traits = {
+				economy_minister
+				eco_military_entrepreneur
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+
+	AKT_Dzhanysbek_Kusmangali = {
+		name = AKT_Dzhanysbek_Kusmangali
+		portraits = {
+			civilian = { small = "GFX_idea_AKT_minister_Dzhanysbek_Kusmangali" }
+		}
+
+		advisor = {
+			slot = security_minister
+			idea_token = AKT_Dzhanysbek_Kusmangali_sec
+			allowed = { original_tag = AKT }
+			traits = {
+				security_minister
+				sec_secret_police_chief
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	
+	AKT_Anuar_Abutalipov = {
+		name = AKT_Anuar_Abutalipov
+		portraits = {
+			army = {
+				large = "gfx/leaders/PAV/Portrait_AKT_Anuar_Abualipov.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero сautious engineer_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = 3496
+		}
+	}
+}

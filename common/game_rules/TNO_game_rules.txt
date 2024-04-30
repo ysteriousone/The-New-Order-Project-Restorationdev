@@ -3551,6 +3551,29 @@ BUL_MAC_NEGOTIATION_PATH = {
 	}
 }
 
+BUL_MAC_WAR_PATH = {
+	name = BUL_MAC_WAR_PATH
+	group = "RULE_GROUP_TNO_RULES_BALKANS"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_BUL_MAC_WAR_PATH_RANDOM"
+		desc = "RULE_OPTION_BUL_MAC_WAR_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RULE_OPTION_BUL_MAC_WAR_PATH_MACEDONIA_VICTORY
+		text = "RULE_OPTION_BUL_MAC_WAR_PATH_MACEDONIA_VICTORY"
+		desc = "RULE_OPTION_BUL_MAC_WAR_PATH_MACEDONIA_VICTORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RULE_OPTION_BUL_MAC_WAR_PATH_BULGARIA_VICTORY
+		text = "RULE_OPTION_BUL_MAC_WAR_PATH_BULGARIA_VICTORY"
+		desc = "RULE_OPTION_BUL_MAC_WAR_PATH_BULGARIA_VICTORY_DESC"
+		allow_achievements = yes
+	}
+}
+
 BUL_ELECTION_OUTCOME = {
 	name = BUL_ELECTION_OUTCOME
 	group = "RULE_GROUP_TNO_RULES_BALKANS"
@@ -4249,12 +4272,12 @@ SPR_PATH = {
 		desc = "RULE_OPTION_SPR_PATH_KINGDOM_DESC"
 		allow_achievements = yes
 	}
-	#option = {
-	#	name = SPR_PATH_MILITARY_COUP
-	#	text = "RULE_OPTION_SPR_PATH_MILITARY_COUP"
-	#	desc = "RULE_OPTION_SPR_PATH_MILITARY_COUP_DESC"
-	#	allow_achievements = yes
-	#}
+	option = {
+		name = SPR_PATH_MILITARY_COUP
+		text = "RULE_OPTION_SPR_PATH_MILITARY_COUP"
+		desc = "RULE_OPTION_SPR_PATH_MILITARY_COUP_DESC"
+		allow_achievements = yes
+	}
 }
 
 # Iberia Wars - Falangist Spain
@@ -6557,6 +6580,37 @@ HAI_1967_REFERENDUM = {
 	}
 }
 
+# Haiti - Regime Reorganization [Socialist Republic]
+
+HAI_SOCIALIST_REGIME = {
+	name = HAI_SOCIALIST_REGIME
+	group = "RULE_GROUP_TNO_RULES_THE_CARIBBEAN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_HAI_SOCIALIST_REGIME_RANDOM"
+		desc = "RULE_OPTION_HAI_SOCIALIST_REGIME_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # Alexis
+		name = HAI_SOCIALIST_REGIME_ALEXIS
+		text = "RULE_OPTION_HAI_SOCIALIST_REGIME_ALEXIS"
+		desc = "RULE_OPTION_HAI_SOCIALIST_REGIME_ALEXIS_DESC"
+		allow_achievements = yes
+	}
+	option = { # Hudicourt
+		name = HAI_SOCIALIST_REGIME_HUDICOURT
+		text = "RULE_OPTION_HAI_SOCIALIST_REGIME_HUDICOURT"
+		desc = "RULE_OPTION_HAI_SOCIALIST_REGIME_HUDICOURT_DESC"
+		allow_achievements = yes
+	}
+	option = { # Ambroise
+		name = HAI_SOCIALIST_REGIME_AMBROISE
+		text = "RULE_OPTION_HAI_SOCIALIST_REGIME_AMBROISE"
+		desc = "RULE_OPTION_HAI_SOCIALIST_REGIME_AMBROISE_DESC"
+		allow_achievements = yes
+	}
+}
+
 # Hinche Negotiations
 
 HINCHE_NEGOTIATIONS = {
@@ -7994,7 +8048,7 @@ PAR_elections = {
 # Chile
 
 CHL_SKELETON_CHRISTMAS_WAR = { # Christmas War
-	name = "CHL_SKELETON_CHRISTMAS_WAR"
+	name = CHL_SKELETON_CHRISTMAS_WAR
 	group = "RULE_GROUP_TNO_RULES_SOUTH_AMERICA_MINORS"
 	option = {
 		name = DEFAULT
@@ -8003,13 +8057,31 @@ CHL_SKELETON_CHRISTMAS_WAR = { # Christmas War
 		allow_achievements = yes
 	}
 	option = {
-		name = "CHL_SKELETON_CHRISTMAS_WAR_YES"
-		text = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_YES"
-		desc = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_YES_DESC"
+		name = CHL_SKELETON_CHRISTMAS_WAR_ARG
+		text = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_ARG"
+		desc = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_ARG_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "CHL_SKELETON_CHRISTMAS_WAR_NO"
+		name = CHL_SKELETON_CHRISTMAS_WAR_HOLD
+		text = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_HOLD"
+		desc = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_HOLD_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CHL_SKELETON_CHRISTMAS_WAR_RETAKE
+		text = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_RETAKE"
+		desc = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_RETAKE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CHL_SKELETON_CHRISTMAS_WAR_CHL
+		text = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_CHL"
+		desc = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_CHL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CHL_SKELETON_CHRISTMAS_WAR_NO
 		text = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_NO"
 		desc = "RULE_OPTION_CHL_SKELETON_CHRISTMAS_WAR_NO_DESC"
 		allow_achievements = yes
@@ -10770,35 +10842,6 @@ AFG_DAOUD_KHAN = {
 
 # Kazakhstan - Regime Change
 
-KAZ_PATH = {
-	name = KAZ_PATH
-	group = "RULE_GROUP_TNO_RULES_CENTRAL_ASIA"
-	option = { # Random
-		name = DEFAULT
-		text = "RULE_OPTION_KAZ_PATH_RANDOM"
-		desc = "RULE_OPTION_KAZ_PATH_RANDOM_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = KAZ_PATH_KUNAEV
-		text = "RULE_OPTION_KAZ_PATH_KUNAEV"
-		desc = "RULE_OPTION_KAZ_PATH_KUNAEV_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = KAZ_PATH_YUSUPOV
-		text = "RULE_OPTION_KAZ_PATH_YUSUPOV"
-		desc = "RULE_OPTION_KAZ_PATH_YUSUPOV_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = KAZ_PATH_FITIN
-		text = "RULE_OPTION_KAZ_PATH_FITIN"
-		desc = "RULE_OPTION_KAZ_PATH_FITIN_DESC"
-		allow_achievements = yes
-	}
-}
-
 # Turkmenistan - Regime Change
 
 TRK_PATH = {
@@ -13529,6 +13572,31 @@ NGA_LEADER_CHOICE = {
 	}
 }
 
+# Liberia - Econ Sphere
+
+LIB_ECON_SPHERE = {
+	name = LIB_ECON_SPHERE
+	group = "RULE_GROUP_TNO_RULES_WESTERN_AFRICA"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_LIB_ECON_SPHERE_RANDOM"
+		desc = "RULE_OPTION_LIB_ECON_SPHERE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LIB_ECON_SPHERE_USA
+		text = "RULE_OPTION_LIB_ECON_SPHERE_USA"
+		desc = "RULE_OPTION_LIB_ECON_SPHERE_USA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LIB_ECON_SPHERE_WOL
+		text = "RULE_OPTION_LIB_ECON_SPHERE_WOL"
+		desc = "RULE_OPTION_LIB_ECON_SPHERE_WOL_DESC"
+		allow_achievements = yes
+	}
+}
+
 ################################
 ### CENTRAL AFRICA ######
 ################################
@@ -13689,7 +13757,7 @@ KTG_DECOLONIZATION_FATE = {
 	}
 }
 
-# Congo Civil War - Ileo or Aboula [Ideology]
+# Congolese Civil War - Ileo or Aboula [Ideology]
 
 COG_FED_REP_PATH = {
 	name = COG_FED_REP_PATH
@@ -13910,6 +13978,81 @@ GRO_DEVASTATION = {
 		name = "GRO_DEVASTATION_3"
 		text = "RULE_OPTION_GRO_DEVASTATION_3"
 		desc = "RULE_OPTION_GRO_DEVASTATION_3_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Zimbabwe
+
+ZIM_GRORELEASE = {
+	name = ZIM_GRORELEASE
+	group = "RULE_GROUP_TNO_RULES_EASTERN_AFRICA"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_ZIM_GRORELEASE_RANDOM"
+		desc = "RULE_OPTION_ZIM_GRORELEASE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ZIM_GRORELEASE_1
+		text = "RULE_OPTION_ZIM_GRORELEASE_1"
+		desc = "RULE_OPTION_ZIM_GRORELEASE_1_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ZIM_GRORELEASE_2
+		text = "RULE_OPTION_ZIM_GRORELEASE_2"
+		desc = "RULE_OPTION_ZIM_GRORELEASE_2_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Zimbabwe - Econ Sphere
+
+ZIM_ECONSPHERE = {
+	name = ZIM_ECONSPHERE
+	group = "RULE_GROUP_TNO_RULES_EASTERN_AFRICA"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_ZIM_ECONSPHERE_RANDOM"
+		desc = "RULE_OPTION_ZIM_ECONSPHERE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ZIM_ECONSPHERE_CAO
+		text = "RULE_OPTION_ZIM_ECONSPHERE_CAO"
+		desc = "RULE_OPTION_ZIM_ECONSPHERE_CAO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ZIM_ECONSPHERE_ZZZ
+		text = "RULE_OPTION_ZIM_ECONSPHERE_ZZZ"
+		desc = "RULE_OPTION_ZIM_ECONSPHERE_ZZZ_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Tanganyika - Econ Sphere
+
+TNZ_ECONSPHERE = {
+	name = TNZ_ECONSPHERE
+	group = "RULE_GROUP_TNO_RULES_EASTERN_AFRICA"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_TNZ_ECONSPHERE_RANDOM"
+		desc = "RULE_OPTION_TNZ_ECONSPHERE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TNZ_ECONSPHERE_CAO
+		text = "RULE_OPTION_TNZ_ECONSPHERE_CAO"
+		desc = "RULE_OPTION_TNZ_ECONSPHERE_CAO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TNZ_ECONSPHERE_ZZZ
+		text = "RULE_OPTION_TNZ_ECONSPHERE_ZZZ"
+		desc = "RULE_OPTION_TNZ_ECONSPHERE_ZZZ_DESC"
 		allow_achievements = yes
 	}
 }
@@ -15754,15 +15897,39 @@ kazakhstan_unification_outcome = {
 		allow_achievements = yes
 	}
 	option = {
-		name = KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ
-		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ"
-		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_DESC"
+		name = KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_KYZYLORDA
+		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_KYZYLORDA"
+		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KAZ_KYZYLORDA_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = KAZAKHSTAN_UNIFICATION_OUTCOME_KZR
-		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KZR"
-		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KZR_DESC"
+		name = KAZAKHSTAN_UNIFICATION_OUTCOME_PAV_PAVLODAR
+		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_PAV_PAVLODAR"
+		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_PAV_PAVLODAR_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = KAZAKHSTAN_UNIFICATION_OUTCOME_KOK_KOKSHETAU
+		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KOK_KOKSHETAU"
+		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_KOK_KOKSHETAU_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = KAZAKHSTAN_UNIFICATION_OUTCOME_DER_KOSTANAY
+		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_DER_KOSTANAY"
+		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_DER_KOSTANAY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = KAZAKHSTAN_UNIFICATION_OUTCOME_ARL_AKTOBE
+		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_ARL_AKTOBE"
+		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_ARL_AKTOBE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = KAZAKHSTAN_UNIFICATION_OUTCOME_NPL_NOWA_POLSKA
+		text = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_NPL_NOWA_POLSKA"
+		desc = "RULE_OPTION_KAZAKHSTAN_UNIFICATION_OUTCOME_NPL_NOWA_POLSKA_DESC"
 		allow_achievements = yes
 	}
 }
@@ -16255,6 +16422,12 @@ SAF_SECOND_SOUTH_AFRICAN_WAR_OUTCOME = {
 		allow_achievements = yes
 	}
 	option = {
+		name = SAF_SECOND_SOUTH_AFRICAN_WAR_OUTCOME_NONE
+		text = "RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_NONE"
+		desc = "RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_NONE_DESC"
+		allow_achievements = yes
+	}
+	option = {
 		name = SAF_SECOND_SOUTH_AFRICAN_WAR_OUTCOME_SAF
 		text = "RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_SAF"
 		desc = "RULE_OPTION_SECOND_SAF_SOUTH_AFRICAN_WAR_OUTCOME_SAF_DESC"
@@ -16429,7 +16602,7 @@ MOZAMBIQUE_CIVIL_WAR_OUTCOME = {
 	}
 }
 
-# OFN African Mandates - Congo Civil War Outcome
+# OFN African Mandates - Congolese Civil War Outcome
 
 congo_civil_war_outcome = {
 	name = CONGO_CIVIL_WAR_OUTCOME
@@ -16544,6 +16717,41 @@ BTS_ZIM_WAR_OUTCOME = {
 		name = BTS_ZIM_WAR_OUTCOME_BTS
 		text = "RULE_OPTION_BTS_ZIM_WAR_OUTCOME_BTS"
 		desc = "RULE_OPTION_BTS_ZIM_WAR_OUTCOME_BTS_DESC"
+		allow_achievements = yes
+	}
+}
+
+TNZ_ZZB_WAR_OUTCOME = {
+	name = TNZ_ZZB_WAR_OUTCOME
+	group = "RULE_GROUP_TNO_RULES_CHEATS_AND_BUFFS_AFRICA"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_RANDOM"
+		desc = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_RANDOM_DESC"
+		allow_achievements = yes
+	}	
+	option = {
+		name = TNZ_ZZB_WAR_OUTCOME_ZZB
+		text = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_ZZB"
+		desc = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_ZZB_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TNZ_ZZB_WAR_OUTCOME_TNZ_COAST
+		text = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_COAST"
+		desc = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_COAST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TNZ_ZZB_WAR_OUTCOME_TNZ_PUPPET
+		text = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_PUPPET"
+		desc = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_PUPPET_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = TNZ_ZZB_WAR_OUTCOME_TNZ_ANNEX
+		text = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_ANNEX"
+		desc = "RULE_OPTION_TNZ_ZZB_WAR_OUTCOME_TNZ_ANNEX_DESC"
 		allow_achievements = yes
 	}
 }
@@ -16786,6 +16994,31 @@ TRUJILLO_BLITZ_OUTCOME = {
 		desc = "RULE_OPTION_TRUJILLO_BLITZ_OUTCOME_HAI_DESC"
 		allow_achievements = yes
 	}	
+}
+
+# Bolivia-Santa Cruz War Outcome
+
+BOL_STC_WAR_OUTCOME = {
+	name = BOL_STC_WAR_OUTCOME
+	group = "RULE_GROUP_TNO_RULES_CHEATS_AND_BUFFS_AMERICA"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_BOL_STC_WAR_OUTCOME_RANDOM"
+		desc = "RULE_OPTION_BOL_STC_WAR_OUTCOME_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BOL_STC_WAR_OUTCOME_BOL
+		text = "RULE_OPTION_BOL_STC_WAR_OUTCOME_BOL"
+		desc = "RULE_OPTION_BOL_STC_WAR_OUTCOME_BOL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BOL_STC_WAR_OUTCOME_STC
+		text = "RULE_OPTION_BOL_STC_WAR_OUTCOME_STC"
+		desc = "RULE_OPTION_BOL_STC_WAR_OUTCOME_STC_DESC"
+		allow_achievements = yes
+	}
 }
 
 # The United States of America (USA) - RFK's Assassination [Politics]
@@ -17653,29 +17886,6 @@ BRA_bill_pass_cheat = {
 #		name = "SAR_COUNTER_REVOLUTION_OUTCOME_NO"
 #		text = "RULE_OPTION_SAR_COUNTER_REVOLUTION_OUTCOME_NO"
 #		desc = "RULE_OPTION_SAR_COUNTER_REVOLUTION_OUTCOME_NO_DESC"
-#		allow_achievements = yes
-#	}
-#}
-
-#ZIM_NKOMO_OUTCOME = {
-#	name = ZIM_NKOMO_OUTCOME
-#	group = "RULE_GROUP_TNO_RULES_SOUTHERN_AFRICA"
-#	option = {
-#		name = DEFAULT
-#		text = "RULE_OPTION_ZIM_NKOMO_OUTCOME_RANDOM"
-#		desc = "RULE_OPTION_ZIM_NKOMO_OUTCOME_RANDOM_DESC"
-#		allow_achievements = yes
-#	}
-#	option = {
-#		name = "ZIM_NKOMO_OUTCOME_ALIVE"
-#		text = "RULE_OPTION_ZIM_NKOMO_OUTCOME_ALIVE"
-#		desc = "RULE_OPTION_ZIM_NKOMO_OUTCOME_ALIVE_DESC"
-#		allow_achievements = yes
-#	}
-#	option = {
-#		name = "ZIM_NKOMO_OUTCOME_DEAD"
-#		text = "RULE_OPTION_ZIM_NKOMO_OUTCOME_DEAD"
-#		desc = "RULE_OPTION_ZIM_NKOMO_OUTCOME_DEAD_DESC"
 #		allow_achievements = yes
 #	}
 #}

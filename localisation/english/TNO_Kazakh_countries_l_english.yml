@@ -1,0 +1,32 @@
+﻿l_english:
+ ###  ██████╗ ██████╗ ██╗   ██╗███╗   ██╗████████╗██████╗ ██╗   ██╗    ███╗   ██╗ █████╗ ███╗   ███╗███████╗███████╗ ###
+ ### ██╔════╝██╔═══██╗██║   ██║████╗  ██║╚══██╔══╝██╔══██╗╚██╗ ██╔╝    ████╗  ██║██╔══██╗████╗ ████║██╔════╝██╔════╝ ###
+ ### ██║     ██║   ██║██║   ██║██╔██╗ ██║   ██║   ██████╔╝ ╚████╔╝     ██╔██╗ ██║███████║██╔████╔██║█████╗  ███████╗ ###
+ ### ██║     ██║   ██║██║   ██║██║╚██╗██║   ██║   ██╔══██╗  ╚██╔╝      ██║╚██╗██║██╔══██║██║╚██╔╝██║██╔══╝  ╚════██║ ###
+ ### ╚██████╗╚██████╔╝╚██████╔╝██║ ╚████║   ██║   ██║  ██║   ██║       ██║ ╚████║██║  ██║██║ ╚═╝ ██║███████╗███████║ ###
+ ###  ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝   ╚═╝       ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝ ###
+ ## Country tags are sorted alphabetically
+ ## MAKE SURE THAT WHATEVER YOU ADD CONFORMS TO THE ALPHABETICAL ORDER
+ ## If not then I'm going to appear on your bedroom at 2AM brandishing an axe
+
+ # A
+
+ AKT: "Aktau"
+ AKT_DEF: "the State of Aktau"
+ AKT_ADJ: "Aktau"
+
+ ARL: "Aktobe"
+ ARL_DEF: "the National Republic of Aktobe"
+ ARL_ADJ: "Aktobe"
+
+ DER: "Kostanay"
+ DER_DEF: "the Islamic Republic of Kostanay"
+ DER_ADJ: "Kostanayan"
+ 
+ PAV: "Pavlodar"
+ PAV_DEF: "the Republic of Pavlodar"
+ PAV_ADJ: "Pavlodar"
+
+ NPL: "Nowa Polska"
+ NPL_DEF: "the Polish Autonomous Soviet Socialist Republic"
+ NPL_ADJ: "Polish"
