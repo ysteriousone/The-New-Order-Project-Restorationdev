@@ -1,0 +1,647 @@
+focus_tree = {
+	id = SER_Uprising
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SER
+		}
+	}
+	default = no
+	
+	focus = {
+		id = SER_mobilize_the_partisans
+		icon = goal_WRS_The_Red_Junta
+		
+		x = 1
+		y = 1
+		
+		cost = 2
+		available = {
+			has_government = despotism
+		}
+		
+		completion_reward = {
+			108 = {
+				create_unit = {
+					division = "name = \"Deveta srpska narodnooslobodilacka brigada\" division_template = \"Partizanska Brigada\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = SER
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_organize_workers_battalions
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 0
+		y = 1
+		relative_position_id = SER_mobilize_the_partisans
+		
+		cost = 2
+		prerequisite = { focus = SER_mobilize_the_partisans }
+		
+		completion_reward = {
+			add_manpower = 20000
+			add_war_support = 0.02
+		}
+	}
+	
+	focus = {
+		id = SER_rally_the_Chetniks
+		icon = goal_VYT_The_Imerial_Russian_Army
+		
+		x = 5
+		y = 1
+		
+		cost = 2
+		available = {
+			has_government = despotism
+		}
+		
+		completion_reward = {
+			108 = {
+				create_unit = {
+					division = "name = \"Cetnicka brigada Draža Mihailović\" division_template = \"Partizanska Brigada\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = SER
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_za_Kralja_i_Srbiju
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 0
+		y = 1
+		relative_position_id = SER_rally_the_Chetniks
+		
+		cost = 2
+		prerequisite = { focus = SER_rally_the_Chetniks }
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = SER_for_the_King_and_Serbia
+				days = 90
+			}
+		}
+	}
+
+	focus = {
+		id = SER_yugoslav_fraternity
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 2
+		y = 2
+		relative_position_id = SER_mobilize_the_partisans
+		
+		cost = 2
+		prerequisite = { focus = SER_organize_workers_battalions }
+		prerequisite = { focus = SER_za_Kralja_i_Srbiju }
+		
+		completion_reward = {
+			108 = {
+				create_unit = {
+					division = "name = \"Hrvatska legija\" division_template = \"Partizanska Brigada\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = SER
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_put_the_young_guard_in_line
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = -2
+		y = 0
+		relative_position_id = SER_yugoslav_fraternity
+		
+		cost = 2
+		prerequisite = { focus = SER_organize_workers_battalions }
+		
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.02
+			add_war_support = 0.03
+			if = {
+				limit = {
+					has_idea = SER_A_Divided_Front
+				}
+				swap_ideas = {
+					remove_idea = SER_A_Divided_Front
+					add_idea = SER_A_Divided_Front_2
+				}
+				add_popularity = {
+					ideology = paternalism
+					popularity = -0.02
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_connections_in_America
+		icon = goal_align_america
+		
+		x = 2
+		y = 0
+		relative_position_id = SER_yugoslav_fraternity
+		
+		cost = 2
+		prerequisite = { focus = SER_za_Kralja_i_Srbiju }
+		
+		completion_reward = {
+			add_political_power = 50
+			set_temp_variable = { money_reserves_temp = 0.05 }
+			econ_money_reserves_change_raw_money = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+				producer = USA
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_primacy_of_the_Partisans
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = -1
+		y = 1
+		relative_position_id = SER_yugoslav_fraternity
+		
+		cost = 1
+		prerequisite = { focus = SER_put_the_young_guard_in_line }
+		prerequisite = { focus = SER_yugoslav_fraternity }
+		mutually_exclusive = { focus = SER_primacy_of_the_Chetniks }
+		
+		completion_reward = {
+			add_stability = 0.02
+			add_war_support = -0.02
+			add_popularity = {
+				ideology = communist
+				popularity = 0.06
+			}
+			add_popularity = {
+				ideology = paternalism
+				popularity = 0.04
+			}		
+		}
+	}
+	
+	focus = {
+		id = SER_primacy_of_the_Chetniks
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 1
+		relative_position_id = SER_yugoslav_fraternity
+		
+		cost = 1
+		prerequisite = { focus = SER_connections_in_America }
+		prerequisite = { focus = SER_yugoslav_fraternity }
+		mutually_exclusive = {focus = SER_primacy_of_the_Partisans }
+		
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = despotism_1
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = SER_the_little_we_can_salvage
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 9
+		y = 1
+		
+		cost = 2
+		available = {
+			has_government = despotism
+		}
+		
+		completion_reward = {
+			add_ideas = SER_national_autarky
+		}
+	}
+	
+	focus = {
+		id = SER_the_little_we_can_produce
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 2
+		y = 0
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		available = {
+			has_government = despotism
+		}
+		
+		completion_reward = {
+			add_ideas = SER_makeshift_war_industry
+		}
+	}
+	
+	focus = {
+		id = SER_the_little_we_have_hidden
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 4
+		y = 0
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		available = {
+			has_government = despotism
+		}
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 400
+				producer = SER
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = SER
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_centralize_logistics
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 2
+		y = 1
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		prerequisite = { focus = SER_the_little_we_can_salvage }
+		prerequisite = { focus = SER_the_little_we_can_produce }
+		prerequisite = { focus = SER_the_little_we_have_hidden }
+		
+		completion_reward = {
+			add_stability = 0.02
+			swap_ideas = {
+				remove_idea = SER_national_autarky
+				add_idea = SER_centralized_supplying
+			}
+			swap_ideas = {
+				remove_idea = SER_makeshift_war_industry
+				add_idea = SER_centralized_supplying
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_study_their_tactics
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 2
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		prerequisite = { focus = SER_centralize_logistics }
+		
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_study_their_equipment
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 3
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		prerequisite = { focus = SER_study_their_tactics }
+		
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = motorized_equipment
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_rationalize_production
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 3
+		y = 2
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		prerequisite = { focus = SER_centralize_logistics }
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SER_centralized_supplying
+				add_idea = SER_centralized_supplying_2
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_armored_guerrilla
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 3
+		y = 3
+		relative_position_id = SER_the_little_we_can_salvage
+		
+		cost = 2
+		prerequisite = { focus = SER_rationalize_production }
+		
+		completion_reward = {
+			108 = {
+				create_unit = {
+					division = "name = \"1. Oklopna Divizija\" division_template = \"Tank Divizija\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = SER
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SER_the_war_in_the_shadows
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 17
+		y = 1
+		
+		cost = 1
+		available = {
+			has_government = despotism
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				create_intelligence_agency = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_cut_their_lines
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = -1
+		y = 1
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 1
+		prerequisite = { focus = SER_the_war_in_the_shadows }
+		
+		completion_reward = {
+			GMS = { 
+				add_stability = -0.05
+				add_war_support = -0.05
+				add_manpower = -500
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -100
+				}
+				random_controlled_state = {
+					damage_building = {
+					type = infrastructure
+					damage = 0.5
+					}
+				}
+				random_controlled_state = {
+					damage_building = {
+					type = infrastructure
+					damage = 0.5
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_finding_is_finding_retaking_is_stealing
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = -1
+		y = 2
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 2
+		prerequisite = { focus = SER_cut_their_lines }
+		
+		completion_reward = {
+			GMS = { 
+				add_manpower = -200
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -100
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -30
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = GMS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = GMS
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 30
+				producer = GMS
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_convince_the_moderates
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = -1
+		y = 3
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 2
+		prerequisite = { focus = SER_finding_is_finding_retaking_is_stealing }
+		
+		completion_reward = {
+			GMS = {
+				add_manpower = -20000
+				add_war_support = -0.05
+				add_stability = -0.02
+				add_popularity = {
+					ideology = ultranationalism
+					popularity = -0.05
+				}
+			}
+			add_manpower = 20000
+			add_popularity = {
+				ideology = despotism_1
+				popularity = 0.02
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_the_struggle_for_freedom
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 1
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 2
+		prerequisite = { focus = SER_the_war_in_the_shadows }
+		
+		completion_reward = {
+			add_stability = 0.01
+			add_war_support = 0.02
+			add_political_power = 20
+			swap_ideas = {
+				remove_idea = SER_Death_To_Fascism_Freedom_To_The_People
+				add_idea = SER_Death_To_Fascism_Freedom_To_The_People_2
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_your_life_for_Serbia
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 2
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 2
+		prerequisite = { focus = SER_the_struggle_for_freedom }
+		
+		completion_reward = {
+			add_war_support = 0.01
+			manpower = 2000
+			swap_ideas = {
+				remove_idea = SER_Death_To_Fascism_Freedom_To_The_People_2
+				add_idea = SER_Death_To_Fascism_Freedom_To_The_People_3
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_silence_the_defeatists
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 2
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 2
+		prerequisite = { focus = SER_the_struggle_for_freedom }
+		
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.03
+			add_war_support = 0.02
+			swap_ideas = {
+				remove_idea = tno_press_rights_censored_press
+				add_idea = tno_press_rights_propaganda_press
+			}
+			swap_ideas = {
+				remove_idea = tno_public_meetings_regulated
+				add_idea = tno_public_meetings_outlawed
+			}
+		}
+	}
+	
+	focus = {
+		id = SER_your_life_for_Serbia
+		icon = GFX_TNO_generic_soviet_legacy
+		
+		x = 1
+		y = 3
+		relative_position_id = SER_the_war_in_the_shadows
+		
+		cost = 2
+		prerequisite = { focus = SER_silence_the_defeatists }
+		
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_war_support = -0.03
+			add_manpower = 10000
+			swap_ideas = {
+				remove_idea = tno_max_workhours_14_hour_work_day
+				add_idea = tno_max_workhours_unlimited_work_day
+			}
+			swap_ideas = {
+				remove_idea = tno_conscription_broadened_conscription
+				add_idea = tno_conscription_service_by_requirement
+			}
+		}
+	}
+	
+	
+}
+
+	
