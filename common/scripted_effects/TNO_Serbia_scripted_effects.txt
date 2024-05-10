@@ -46,9 +46,10 @@ SER_blow_up_the_country = {
 	hidden_effect = {
 		set_popularities = {
 			communist = 23
-			socialist = 19
+			socialist = 9
 			progressivism = 6
-			despotism = 52
+			despotism = 43
+			despotism_1 = 19
 		}
 		econ_leave_sphere = yes
 	}
@@ -91,8 +92,15 @@ SER_blow_up_the_country = {
 		long_name = SER_despotism_party_NLM_long
 		name = SER_despotism_party_NLM
 	}
-	set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+	set_party_name = {
+		ideology = despotism_1
+		long_name = SER_despotism_1_party_NLM_long
+		name = SER_despotism_1_party_NLM
+	}
+	set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+	set_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
 	econ_type_change = yes
+	econ_subtype_change = yes
 	remove_all_ministers = yes
 	add_ideas = {
 		SER_Petar_Stambolic_hog
@@ -104,6 +112,18 @@ SER_blow_up_the_country = {
 		SER_A_Divided_Front
 		SER_Death_To_Fascism_Freedom_To_The_People
 		SER_Violence
+	}
+	swap_ideas = {
+		remove_idea = tno_press_rights_state_press_only
+		add_idea = tno_press_rights_censored_press
+	}
+	swap_ideas = {
+		remove_idea = tno_political_parties_one_party_state
+		add_idea = tno_political_parties_controlled_opposition
+	}
+	swap_ideas = {
+		remove_idea = tno_military_supervision_kill_em_all
+		add_idea = tno_military_supervision_no_supervision
 	}
 	
 	GMS = {

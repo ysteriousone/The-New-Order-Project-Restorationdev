@@ -365,6 +365,108 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		
+		SER_A_Divided_Front_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_A_Divided_Front" }
+
+			picture = SER_Generational_Divide
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.05
+				political_power_gain = -0.1
+				stability_factor = -0.03
+			}
+		}
+	
+		
+		SER_for_the_King_and_Serbia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_for_the_King_and_Serbia" }
+
+			picture = PRM_work_for_your_nation
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.075
+				army_defence_factor = 0.1
+			}
+		}
+		
+		SER_national_autarky = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_national_autarky" }
+
+			picture = PRM_work_for_your_nation
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				production_lack_of_resource_penalty_factor = -0.10
+			}
+		}
+		
+		SER_makeshift_war_industry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_the_little_we_can_produce" }
+
+			picture = PRM_work_for_your_nation
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		SER_centralized_supplying = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_centralized_supplying" }
+		
+			picture = PRM_work_for_your_nation
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				production_lack_of_resource_penalty_factor = -0.10
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		SER_centralized_supplying_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SER_centralized_supplying_2" }
+		
+			picture = PRM_work_for_your_nation
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				production_lack_of_resource_penalty_factor = -0.20
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.08
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
 		SER_Death_To_Fascism_Freedom_To_The_People = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_Death_To_Fascism_Freedom_To_The_People" }
 
@@ -378,6 +480,41 @@ ideas = {
 				war_support_factor = 0.1
 				stability_factor = 0.1
 				conscription_factor = 0.1
+			}
+		}
+		
+		SER_Death_To_Fascism_Freedom_To_The_People_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_Death_To_Fascism_Freedom_To_The_People_2" }
+
+			picture = SER_Death_To_Fascism_Freedom_To_The_People
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				conscription_factor = 0.1
+				weekly_manpower = 200
+			}
+		}
+		
+		SER_Death_To_Fascism_Freedom_To_The_People_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SER_Death_To_Fascism_Freedom_To_The_People_3" }
+
+			picture = SER_Death_To_Fascism_Freedom_To_The_People
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				conscription_factor = 0.2
+				weekly_manpower = 400
+				weekly_casualties_war_support = 0.005
 			}
 		}
 
