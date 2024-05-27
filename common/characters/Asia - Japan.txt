@@ -58,21 +58,6 @@ characters = {
 			id = -1
 		}
 	}
-	JAP_kaya_okinori = {
-		name = JAP_kaya_okinori
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/JAP/Portrait_Japan_Kaya_Okinori.dds"
-			}
-		}
-		country_leader = {
-			desc = "POLITICS_KAYA_OKINORI_DESC"
-			ideology = despotism_managerial_state_subtype
-			traits = { committed_bureaucrat }
-			expire = "1989.1.1.1"
-			id = -1
-		}
-	}
 	JAP_no_leader = {
 		name = JAP_no_leader
 		portraits = {
@@ -109,6 +94,14 @@ characters = {
 			can_be_fired = no
 			ai_will_do = { factor = 0 }
 		}
+				country_leader = {
+			desc = "KISHI_DESC"
+			ideology = ultranationalism_reactionary_nationalism_subtype 
+			traits = { hothead_firebrand }
+			expire = "1989.1.1.1"
+			id = -1
+		}
+		
 	}
 	JAP_ikeda_masanosuke = {
 		name = JAP_ikeda_masanosuke
@@ -117,13 +110,6 @@ characters = {
 				large = "gfx/leaders/JAP/Portrait_Japan_Ikeda_Masanosuke.dds"
 				small = "GFX_idea_JAP_Masanosuke_Ikeda"
 			}
-		}
-		country_leader = {
-			desc = "POLITICS_IKEDA_MASANOSUKE_DESC"
-			ideology = fascism_corporatism_subtype
-			traits = { hothead_firebrand }
-			expire = "1989.1.1.1"
-			id = -1
 		}
 		advisor = {
 			slot = security_minister
@@ -137,6 +123,21 @@ characters = {
 			cost = -1
 			can_be_fired = no
 			ai_will_do = { factor = 0 }
+		}
+	}
+	JAP_Konoe_Fumimaro = {
+		name = JAP_Konoe_Fumimaro
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/Portrait_Japan_Konoe_Fumimaro.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_KONOE_DESC"
+			ideology = fascism_reform_bureaucracy_subtype
+			traits = { hothead_firebrand }
+			expire = "1989.1.1.1"
+			id = -1
 		}
 	}
 	JAP_higashikuni_naruhiko = {
@@ -163,7 +164,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_HIROHITO_DESC"
-			ideology = fascism_corporatism_subtype
+			ideology = despotism_absolute_monarchy_subtype
 			traits = {}
 			expire = "1989.1.1.1"
 			id = -1

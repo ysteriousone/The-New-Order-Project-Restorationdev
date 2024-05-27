@@ -16,6 +16,10 @@ country_event = { #Nowa Polska Kills Kazakhstan Event
 					target = ARL
 					autonomy_state = autonomy_client_state
 				}
+			    set_autonomy = {
+					target = KAZ
+					autonomy_state = autonomy_client_state
+				}
 				transfer_state = 2016
 				clear_global_event_target = RUS_kazakhstan_unifier
 				587 = { remove_core_of = ARL }

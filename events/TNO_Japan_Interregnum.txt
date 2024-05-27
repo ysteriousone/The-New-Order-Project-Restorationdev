@@ -67,6 +67,7 @@ transfer_state = 1817
 	}
 }
 load_focus_tree = JAP_showa_emperor
+
 }
 }
 country_event = {

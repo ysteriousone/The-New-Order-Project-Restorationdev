@@ -1,5 +1,6 @@
 capital = 64
 
+
 # Vacant
 recruit_character = GER_Generic_Vacant
 

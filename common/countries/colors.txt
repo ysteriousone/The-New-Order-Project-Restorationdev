@@ -53,6 +53,14 @@ GER = {
 	color = rgb { 60 60 60 }
 	color_ui = rgb { 60 60 60 }
 }
+CCP = {
+	color = rgb { 47 0 0  }
+	color_ui = rgb { 47 0 0 }
+}
+ROC = {
+	color = rgb { 33 0 127  }
+	color_ui = rgb { 33 0 127 }
+}
 GO4 = {
 	color = rgb { 45 45 45 }
 	color_ui = rgb { 45 45 45}
@@ -2293,7 +2301,7 @@ D15 = {
 
 ### Misc ###
 
-ASF = {
+PLA = {
 	color = rgb { 109 32 32 }
 	color_ui = rgb { 109 32 32 }
 }

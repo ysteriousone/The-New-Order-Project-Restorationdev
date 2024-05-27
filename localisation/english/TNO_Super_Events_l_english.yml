@@ -426,10 +426,10 @@ SE_JUSHIN_COUP_D: "I discovered freedom for the first time in England.\n- Hirohi
 SE_JUSHIN_COUP_A: "Banzai!"
 TNO_SE_JUSHIN_COUP: "THE SHOWA §RRESTORATION§"
 
-SE_MUTOS_COUP: "THE END OF THE YOKUSANKAI"
-SE_MUTOS_COUP_D: "Whether the rage of heaven or the cries of earth, the roar of the epoch is thundering now.\n - Ode of the Shōwa Restoration, 1930"
-SE_MUTOS_COUP_A: "Storm Clouds Gather"
-TNO_SE_MUTOS_COUP: "THE END OF THE YOKUSANKAI"
+SE_MUTOS_COUP: "ORDER 44"
+SE_MUTOS_COUP_D: "Comedy is an escape, not from truth but from despair; a narrow escape into faith.\n -Christopher Fry"
+SE_MUTOS_COUP_A: "God Save Us"
+TNO_SE_MUTOS_COUP: "ORDER 44"
 
 SE_FRENCH_RECLAMATION: "THE RECLAMATION WARS"
 SE_FRENCH_RECLAMATION_D: "A revolution can be neither made nor stopped. The only thing that can be done is for one of several of its children to give it a direction by dint of victories.\n- Napoleon I"

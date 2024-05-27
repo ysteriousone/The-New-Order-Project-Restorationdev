@@ -26,12 +26,325 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 100
 			add_manpower = 1000
-			world_event = { id = WORLD.20000}
 			}
 		}
+    focus = {
+		id = JAP_Path_to_Glory
+		
+    mutually_exclusive = {focus = JAP_Takagi_pmship
+		focus = JAP_Kishi_Pmship}
+		icon = GFX_JAP_showa_constitution
+		x = 0
+		y = 1
+		cost = 5
+    prerequisite = { focus = JAP_Showa_Restoration? }
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			world_event = {WORLD.20000}
+		set_politics = {
+				ruling_party = despotism
+		}
+		world_event = { WORLD.20000}
+			}
+		}
+		
+	   focus = {
+		id = JAP_Kishi_Pmship
+        mutually_exclusive = {focus = JAP_Takagi_pmship
+		focus = JAP_Path_to_Glory}
+		icon = GFX_JAP_PM_Kishi
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_Showa_Restoration? }
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+		set_politics = {
+				ruling_party = ultranationalism
+		}
+			}
+		}
+	focus = {
+		id = JAP_Nobosuke_Reforms
+
+		icon = GFX_JAP_PM_Kishi
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = { focus = JAP_Kishi_Pmship }
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Reforms_Succeed
+        mutually_exclusive = {focus =  JAP_Reforms_Fail }
+		icon = GFX_JAP_PM_Kishi
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = JAP_Nobosuke_Reforms }
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Continue_on_corporate_monopoly
+        mutually_exclusive = {focus =  JAP_Reforms_Succeed }
+		icon = GFX_JAP_PM_Kishi
+		x = 2
+		y = 4
+		cost = 5
+		prerequisite = { focus = JAP_Nobosuke_Reforms }
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Fate_of_Mantetsu
+        mutually_exclusive = {focus =  JAP_Reforms_Succeed }
+		icon = GFX_JAP_PM_Kishi
+		x = 2
+		y = 5
+		cost = 5
+		prerequisite = { focus = JAP_Continue_on_corporate_monopoly }
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Reforms_Fail
+        mutually_exclusive = {focus =  JAP_Reforms_Succeed }
+		icon = GFX_JAP_PM_Kishi
+		x = 5
+		y = 3
+		cost = 5
+		prerequisite = { focus = JAP_Nobosuke_Reforms }
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			set_cosmetic_tag = JAP_Kishi
+			load_focus_tree = JAP_Kishi_Savinkov_larp
+			}
+		}
+		
+		
+    focus = {
+		id = JAP_Takagi_pmship
+		
+    mutually_exclusive = {focus = JAP_Kishi_Pmship
+		focus = JAP_Path_to_Glory}
+		icon = GFX_JAP_PM_Takagi
+		x = -4
+		y = 1
+		cost = 5
+		
+		prerequisite = { focus = JAP_Showa_Restoration? }
+
+		available = {
+
+		}
+		completion_reward = { 
+				set_politics = {
+				ruling_party = conservatism
+		}
+
+			}
+		}
+focus = {
+		id = JAP_New_Showa_constitution
+		prerequisite = {
+		focus = JAP_Takagi_pmship
+		}
+		icon = GFX_JAP_PM_Takagi
+		x = -4
+		y = 2
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = { 
+
+			}
+			}
+focus = {
+		id = JAP_True_Liberators_of_Asia
+		prerequisite = {
+		focus = JAP_New_Showa_constitution
+		}
+		icon = GFX_JAP_PM_Takagi
+		x = -4
+		y = 3
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = { 
+
+			}
+			}
+
+focus = {
+		id = JAP_Tokyo_Trials
+		prerequisite = {
+		focus = JAP_True_Liberators_of_Asia
+		}
+		icon = GFX_JAP_PM_Takagi
+		x = -5
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = { 
+
+			}
+			}
+focus = {
+		id = JAP_Talks_with_Uncle_Sam
+		prerequisite = {
+		focus = JAP_True_Liberators_of_Asia
+		}
+		icon = GFX_JAP_PM_Takagi
+		x = -3
+		y = 4
+		cost = 5
+
+		available = {
+
+		}
+		completion_reward = { 
+
+			}
+			}
 	
 	
-	
+	focus = {
+		id = JAP_Recovering_from_the_crisis
+
+		icon = GFX_generic_anglo_soldier
+		x = 10
+		y = 0
+		cost = 2
+
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Issues_of_The_Zaibatsus
+
+		icon = GFX_generic_anglo_soldier
+		x = 10
+		y = 1
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Recovering_from_the_crisis 
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_The_Economic_Debate
+
+		icon = GFX_generic_anglo_soldier
+		x = 10
+		y = 2
+		cost = 2
+        prerequisite = {
+		focus =  JAP_Issues_of_The_Zaibatsus
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Military_Rhetoric
+
+		icon = GFX_generic_anglo_soldier
+		x = 8
+		y = 3
+		cost = 2
+		mutually_exclusive = {focus =  JAP_Civil_Rhetoric }
+        prerequisite = {
+		focus =  JAP_The_Economic_Debate
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}
+	focus = {
+		id = JAP_Civil_Rhetoric
+
+		icon = GFX_generic_anglo_soldier
+		x = 11
+		y = 3
+		cost = 2
+		mutually_exclusive = { focus =  JAP_Military_Rhetoric }
+        prerequisite = {
+		focus =  JAP_The_Economic_Debate
+		}
+		available = {
+
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 1000
+			}
+		}		
 	
 	
 }

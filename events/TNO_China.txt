@@ -4,14 +4,7 @@
 
 add_namespace = chi
 
-#hey guys it's me, depressed chinese man roniius, here to take you through a tour of the china events
-#hey guys it's me, Der Reiskanzler aka Sino, here to assist Roniius in his magical endeavours
-#whats good its baron von boof here to take china and make it into a thing
-#BFKelleher made a few changes here.
-#tiberium on the way to fuck up your china for the roman empire
-#charlesthe50th https://storywriter.amazon.com/drafts/Wd7oFSAGa3f3
-#Wendell, oh god
-#CPR added world tension stuff
+add_namespace = chi_collapse
 
 country_event = { #Intro Event
 	id = chi.1
@@ -31,6 +24,43 @@ country_event = { #Intro Event
 		}
 	}
 }
+
+country_event = { #Chaos and shit
+	id = chi_collapse.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event chi_collapse.1"}
+	title = chi_collapse.1.t
+	desc = chi_collapse.1.d
+	picture = GFX_report_event_CHI_nanjing_city
+
+	is_triggered_only = yes
+
+	option = {
+		name = chi_collapse.1.a
+		NCC = {
+		transfer_state = 1022
+		transfer_state = 1021
+		transfer_state = 1020
+		transfer_state = 597
+		}
+		JAP = {
+		transfer_state = 813
+		set_autonomy = { target = NCC autonomy_state = autonomy_puppet }
+		}
+		MAN = {
+		country_event = { id = manchuria.3 }
+	}
+			set_politics = {
+				ruling_party = paternalism
+		}
+	GUX = {
+	country_event = { id = Guanxi.1 }
+	}
+	
+}
+}
+
+
+
 
 #i just wanted to put a star wars reference in yeah not happening roniius
 

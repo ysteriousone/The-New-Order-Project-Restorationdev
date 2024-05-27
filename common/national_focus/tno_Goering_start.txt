@@ -19,6 +19,89 @@
 		completion_reward = {
 		add_political_power = 10
 		add_manpower = 1000
+		add_war_support = 0.01
+
+			}
+		}
+	focus = {
+		id = GGR_Planning_Ahead
+		icon = GFX_GER_GGR_der_burgerkrieg
+		x = 0
+		y = 2
+	   prerequisite = { focus = GGR_Der_Bruderkreig
+						}
+       cost = 3
+		completion_reward = {
+		add_war_support = 0.1
+
+			}
+		}
+	focus = {
+		id = GGR_Ost_Plan
+		icon = GFX_GER_GGR_der_burgerkrieg
+		x = 3
+		y = 3
+	   prerequisite = { focus = GGR_Planning_Ahead
+						}
+       cost = 2
+		completion_reward = {
+		add_war_support = 0.1
+
+			}
+		}
+   focus = {
+		id = GGR_Offensive_plan_against_Heydrich
+		icon = GFX_GER_GGR_der_burgerkrieg
+		x = 3
+		y = 4
+	   prerequisite = { focus = GGR_Ost_Plan
+						}
+       cost = 1
+		completion_reward = {
+		add_war_support = 0.1
+
+			}
+		}
+		
+	focus = {
+		id = GGR_Partisan_Warfare
+		icon = GFX_GER_GGR_der_burgerkrieg
+		x = 4
+		y = 5
+	   prerequisite = { focus = GGR_Offensive_plan_against_Heydrich
+						}
+	 mutually_exclusive = {focus = GGR_Fight_like_Men }
+       cost = 2
+		completion_reward = {
+	transfer_state = 97
+			97 = {
+		create_unit = {
+					division = "name = \"Anti-Heydrich Brigades\" division_template = \"Bürgerwehr\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = GGR
+				}
+	   		create_unit = {
+					division = "name = \"Anti-Heydrich Brigades\" division_template = \"Bürgerwehr\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = GGR
+				}
+			create_unit = {
+					division = "name = \"Anti-Heydrich Brigades\" division_template = \"Bürgerwehr\" start_experience_factor = 0.6 start_equipment_factor = 0.8"
+					owner = GGR
+				}
+				}
+
+			}
+		}
+	focus = {
+		id = GGR_Fight_like_Men
+		icon = GFX_GER_GGR_der_burgerkrieg
+		x = 2
+		y = 5
+	   prerequisite = { focus = GGR_Offensive_plan_against_Heydrich
+						}
+	 mutually_exclusive = {focus = GGR_Partisan_Warfare }
+       cost = 1
+		completion_reward = {
+		add_war_support = 0.1
 
 			}
 		}

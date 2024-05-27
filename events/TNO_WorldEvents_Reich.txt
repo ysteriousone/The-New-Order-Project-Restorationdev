@@ -377,9 +377,13 @@ news_event = { #Göring Wins The GCW
 			add_to_variable = { FIN_party_pops^4 = -1 }
 			add_to_variable = { FIN_party_pops^5 = 2 }
 			add_to_variable = { FIN_party_pops^7 = 2 }
+			}
+			hidden_effect = {
+            set_cosmetic_tag = GER_Goering
+			}
+		
 		}
 	}
-}
 
 news_event = { #Heydrich Wins The GCW
 	id = WORLD_REICH.15

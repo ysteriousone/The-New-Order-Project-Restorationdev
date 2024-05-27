@@ -2,6 +2,19 @@ OST_GER = {
 	color = rgb { 102 100 86 }
 	color_ui = rgb { 102 100 86 }
 }
+GER_Goering = {
+	color = rgb { 41 58 63 }
+	color_ui = rgb { 41 58 63  }
+}
+
+SHX_Beijing = {
+	color = rgb { 5 85 166 }
+	color_ui = rgb { 5 85 166 }
+}
+JAP_Kishi = {
+	color = rgb { 48 48 48 }
+	color_ui = rgb { 5 85 166 }
+}
 
 UKR_GER = {
 	color = rgb { 88 94 101 }

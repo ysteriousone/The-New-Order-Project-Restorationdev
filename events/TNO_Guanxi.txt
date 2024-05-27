@@ -1,0 +1,21 @@
+# by RevMon
+
+add_namespace = Guanxi
+
+country_event = { # Arise ye who refuse to be slaves!
+	id = Guanxi.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Guanxi.1"}
+ 	title = Guanxi.1.t
+ 	desc = Guanxi.1.d
+ 	picture = GFX_report_event_lazar_generic_1
+	
+	is_triggered_only = yes
+ 	
+ 	option = {
+		name = Guanxi.1.a
+		PLA = {
+		transfer_state = 594
+		add_state_core = 594
+		}
+ 	}
+}

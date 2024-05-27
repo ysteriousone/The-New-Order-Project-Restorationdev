@@ -10,6 +10,17 @@
  ## If not then I'm going to appear on your bedroom at 2AM brandishing an axe
 
  # A
+ ROC: "Kuomintang Army in Xinjiang"
+ ROC_DEF: "Nationalist China"
+ ROC_ADJ: "Chinese
+ 
+ CCP: "Chinese Communist Party"
+ CCP_DEF: "The Chinese Communist Party"
+ CCP_ADJ: "Chinese"
+ 
+ PLA: "People's Liberation Army"
+ PLA_DEF: "The People's Republic of China"
+ PLA_ADJ: "Chinese"
  
  PAV: "Pavlodar"
  PAV_DEF: "Pavlodar"
@@ -39,7 +50,7 @@
  GMS_DEF: "SS Ordensstaat Banat"
  GMS_ADJ: "Banat"
 
- NPL: "Nowa Polska"
+ NPL: "New Poland"
  NPL_DEF: "The Exiled Republic of Poland"
  NPL_ADJ: "Polish"
  

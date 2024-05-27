@@ -1,4 +1,4 @@
-# CURRENT TAG COUNT: 517 (Master)
+# CURRENT TAG COUNT: 519 (Master)
 #
 # Index - Tag organized into extremely relative geographic regions/political groups
 #	Europe
@@ -277,6 +277,9 @@ VIC = "countries/Asia - Sphere.txt"				# Viet Minh
 LAO = "countries/Asia - Sphere.txt"				# Laos
 CAM = "countries/Asia - Sphere.txt"				# Cambodia
 THA = "countries/Asia - Sphere.txt"				# Thailand
+PLA = "countries/Asia.txt"				        # Peoples Liberation Army
+ROC = "countries/Asia.txt"				        # Kuomintang
+CCP = "countries/Asia.txt"				        # CCP
 
 SHO = "countries/Japan - Overseas.txt"			# Shonan
 MLY = "countries/Asia.txt"						# UMAJF Malaya
@@ -672,7 +675,6 @@ PKT = "countries/West Europe.txt"				# Zollverein - Sphere Tag
 OFN = "countries/West Europe.txt"				# OFN - Unused?
 ADN = "countries/West Europe.txt"				# Andean Pact - Sphere Tag
 CME = "countries/West Europe.txt"               # COMECON - Sphere Tag
-ASF = "countries/Australianworkersfront.txt"    # Australian Workers Front
 AUD = "countries/Austria.txt"                   # Austrian Resistance
 GO4 = "countries/Gang of Four.txt"              # SHMIDTBROSLESSGOO
 ZZZ = "countries/West Europe.txt"				# Anarchy - SHOULD BE LAST TAG ALWAYS

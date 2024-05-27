@@ -530,7 +530,7 @@ set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
 set_variable = { economic_centralization = 75}
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1961.11.14"
 	election_frequency = 60
 	elections_allowed = no
@@ -542,10 +542,20 @@ set_popularities = {
 	paternalism_2 = 0
 	despotism = 0
 	liberal_conservatism = 0
-	conservatism = 0
-	fascism = 0
-	fascism_2 = 0
-	national_socialism = 100
+	conservatism = 25
+	fascism = 25
+	fascism_2 = 25
+	national_socialism = 25
+}
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = ""
+	picture = Portrait_ENG_Oswald_Mosley.dds
+	expire = "1965.1.1"
+	ideology = fascism_fascist_populism_subtype
+	traits = {
+		#
+	}
 }
 
 set_variable = { communist_1_var = token:ENG_communist_1 }

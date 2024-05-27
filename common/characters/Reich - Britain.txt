@@ -2,19 +2,6 @@ characters = {
 	######################################## LEADERS AND MINISTERS ##########################################################
 
 	####Collab####
-	ENG_Barry_Domvile = {
-		name = ENG_Barry_Domvile
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/ENG/Portrait_ENG_Barry_Domvile.dds"
-			}
-		}
-		country_leader = {
-			desc = "POLITICS_BARRY_DOMVILE_DESC"
-			expire = "1994.4.20"
-			ideology = fascism_british_fascism_1_subtype
-		}
-	}
 
 	ENG_Andrew_Fountaine = {
 		name = ENG_Andrew_Fountaine

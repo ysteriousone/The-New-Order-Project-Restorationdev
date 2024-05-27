@@ -9,6 +9,7 @@ recruit_character = JAP_kido_kouichi
 recruit_character = JAP_takagi_soukichi
 recruit_character = JAP_kaya_okinori
 recruit_character = JAP_no_leader
+recruit_character = JAP_Konoe_Fumimaro
 
 # Country Leaders
 recruit_character = JAP_ikeda_masanosuke

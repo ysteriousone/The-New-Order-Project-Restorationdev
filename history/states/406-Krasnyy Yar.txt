@@ -18,6 +18,7 @@ state={
 			464 1 
 		}
 		add_core_of = NPL
+		set_demilitarized_zone = yes
 
 	}
 

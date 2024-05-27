@@ -4,9 +4,9 @@
  GRO_DEF:0 "die Afrikaner-Abwehrfront"
  GRO_ADJ:0 "Afrikaner"
 
- GRO_GER:0 "Reichskommissariat Ostafrika"
- GRO_GER_DEF:0 "Reichskommissariat Ostafrika"
- GRO_GER_ADJ:0 "Ostafrikan"
+ GRO_GER:0 "Reichskommissariat Mittleafrika"
+ GRO_GER_DEF:0 "Reichskommissariat Mittleafrika"
+ GRO_GER_ADJ:0 "German"
 
  ##### Investigation stuff #####
  GRO_investigation_gui_case_title_tt:0 "Offizielle Untersuchung des Ostafrikanischen Büros"

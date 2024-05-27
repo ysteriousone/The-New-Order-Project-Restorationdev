@@ -200,6 +200,10 @@ focus_tree = {
 
 		}
 		completion_reward = {
+		       add_popularity = {
+				ideology = liberalism 
+				popularity = 0.10
+	   }
 			add_political_power = 100
 			add_stability = 0.01
 			}
@@ -249,6 +253,10 @@ focus_tree = {
 
 		}
 		completion_reward = {
+		       add_popularity = {
+				ideology = liberalism 
+				popularity = 0.10
+	   }
 			add_political_power = 100
 			add_stability = 0.01
 			}
@@ -262,7 +270,7 @@ focus_tree = {
 		icon = GFX_DRL_When_The_World_Stopped_Making_Sense
 		x = 0
 		y = 7
-		cost = 5
+		cost = 1
 
 		available = {
 
@@ -281,16 +289,19 @@ focus_tree = {
 		}
 		icon = GFX_DRL_When_The_World_Stopped_Making_Sense
 		x = 0
-		y = 7
-		cost = 5
+		y = 8
+		cost = 2
 
 		available = {
 
 		}
+		prerequisite = { focus = GER_Reclaiming_our_Empire }
 		completion_reward = {
 		custom_effect_tooltip = GER_reclaiming_europe_tooltip
 			add_political_power = 100
 			add_stability = 0.01
+			POL = {
+			country_event = {event pol.9}
 	
 			}
 		}

@@ -5,6 +5,7 @@
 add_namespace = HUN_skeleton
 add_namespace = HUN_WORLD
 add_namespace = HUN_Speer
+add_namespace = HUN_Austria_Hungary
 
 # HUN_skeleton.1   - Nov  2nd  1963 - Electoral Reform
 # HUN_skeleton.100 - Jan  21st 1964 - Struggle for the Military
@@ -34,7 +35,56 @@ country_event = { # Oberlander Gaming
 		}
 	set_politics = { ruling_party = national_socialism }
 		}
+		}
+		
+country_event = { # OOH YES OHHH YESSS
+	id = HUN_Austria_Hungary.1
+	title = HUN_Speer.1.t
+	desc = HUN_Speer.1.desc
+	is_triggered_only = yes
+			trigger = {
+   NOT = {
+   country_exists = ROM
+   country_exists = SLO
+   }
+		}
+	#picture =
 
+	immediate = { log = "[GetDateText]: [Root.GetName]: event HUN_Austria_Hungary.1" }
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #All hail Otto!
+
+		name = HUN_Austria_Hungary.1.a
+        HUN = {
+		add_state_core = 1763
+		add_state_core = 71
+		add_state_core = 1762
+		add_state_core = 70
+		transfer_state = 1763
+		transfer_state = 71
+		transfer_state = 1762
+		transfer_state = 70
+		transfer_state = 84
+		transfer_state = 1287
+		transfer_state = 83
+		}
+		GMS = {
+		transfer_state = 82
+		}
+		BUL = {
+		transfer_state = 1283
+		}
+		POL = {
+		transfer_state = 80
+		add_state_core = 80
+		}
+		
+		}
+		
+}
 country_event = { # Electoral Reform
 	id = HUN_skeleton.1
 	title = HUN_skeleton.1.t

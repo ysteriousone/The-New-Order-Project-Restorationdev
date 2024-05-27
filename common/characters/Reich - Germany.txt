@@ -671,7 +671,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_HERMANN_GORING_DESC"
-			ideology = national_socialism_subtype
+			ideology = national_socialism_reformed_national_socialism_subtype
 			traits = { dictator uncle_of_the_reich }
 			expire = "1999.1.1.1"
 			id = -1

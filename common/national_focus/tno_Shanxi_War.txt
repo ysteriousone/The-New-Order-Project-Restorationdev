@@ -256,7 +256,125 @@ focus = {
 	set_cosmetic_tag = SHX_Beijing
 	}
 	}
-	}		
+focus = {
+		id = SHX_Ma_Clique_victorious
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 1
+		y = 15
+       cost = 3
+	   prerequisite = { focus = SHX_Retirement_Of_the_Hero
+						} 
+		completion_reward = {
+	recruit_character = QIN_ma_jiyuan
+	annex_country = { 
+	target = QIN
+	transfer_troops =  yes
+	}
+	}
+	}
+focus = {
+		id = SHX_Federalise_China
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 1
+		y = 16
+       cost = 3
+	   prerequisite = { focus = SHX_Ma_Clique_victorious
+						} 
+		completion_reward = {
+	}
+	}	
+	focus = {
+		id = SHX_Shadows_of_the_Father
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 2
+		y = 17
+       cost = 3
+	   prerequisite = { focus = SHX_Federalise_China
+						} 
+		completion_reward = {
+	}
+	}
+		focus = {
+		id = SHX_The_Future
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = -2
+		y = 17
+       cost = 3
+	   prerequisite = { focus = SHX_Federalise_China
+						} 
+		completion_reward = {
+	}
+	}
+	focus = {
+		id = SHX_March_Eastwards
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 1
+		y = 18
+       cost = 3
+	   prerequisite = { focus = SHX_The_Future
+						} 
+		completion_reward = {
+		    	declare_war_on = {
+    	target = XIN
+    	type = annex_everything
+	}
+	    	declare_war_on = {
+    	target = TIB
+    	type = annex_everything
+	}
+	    	declare_war_on = {
+    	target = ROC
+    	type = annex_everything
+	}
+	    	declare_war_on = {
+    	target = CCP
+    	type = annex_everything
+	}
+	declare_war_on = {
+    	target = ETR
+    	type = annex_everything
+	}
+	}
+	}
+		focus = {
+		id = SHX_Federalise_Xinjiang_and_Tibet
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 1
+		y = 19
+       cost = 3
+	   prerequisite = { focus = SHX_The_Future
+						}
+	available =  {
+	NOT = {
+	country_exists = TIB
+	country_exists = ROC
+	country_exists = CCP
+	country_exists = XIN
+	country_exists = ETR
+		completion_reward = {
+		release_nation = ETR
+		release_nation = TIB
+      set_autonomy = { target = ETR autonomy_state = autonomy_military_government }
+	  set_autonomy = { target = TIB autonomy_state = autonomy_military_government }
+	}
+	}
+	}
+	}
+focus = {
+		id = SHX_Qinghai_Qinghai_Qinghai
+		icon = GFX_YUN_What_Did_You_Do_In_The_War
+		x = 1
+		y = 20
+       cost = 3
+	   prerequisite = { focus = SHX_Federalise_China
+						}
+		completion_reward = {
+			declare_war_on = {
+    	target = CHI
+    	type = annex_everything
+	}
+	}
+	}
 
 
 	
