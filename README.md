@@ -1,2 +1,2 @@
 Welcome to the TNO submod called TNO:Project Restoration!
-The mod will add more assets, audios, characters, leaders and more. Unfortunately, the mod is still in development and the tentative release date is 2025 or 2026, but don't worry, if you are a member of our team, you will play test. Sure, it has some bugs or glitches, but remember that we are still developing it and things will get better in the future!
+The mod will add more assets, audios, characters, leaders and more. Unfortunately, the mod is still in development and the tentative release date is 2025 or 2026, but don't worry, if you aren't a member of our team, you will play test. Sure, it has some bugs or glitches, but remember that we are still developing it and things will get better in the future!
