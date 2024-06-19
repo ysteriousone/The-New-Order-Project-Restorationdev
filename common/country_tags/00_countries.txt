@@ -231,6 +231,7 @@ KOR = "countries/Japan - Overseas.txt"			# Korea - for resistance
 CHI = "countries/China.txt"						# China
 MAN = "countries/China.txt"						# Manchukuo
 MEN = "countries/China.txt"						# Menjiang
+MON = "countries/Mongolia.txt"        # Mongolia
 YUN = "countries/China.txt"						# Yunnan Province
 GUX = "countries/China.txt"						# Guangxi Province
 GUZ = "countries/China.txt"						# Guizhou Province
